@@ -1,0 +1,4058 @@
+[
+  {
+    "id": "q0001",
+    "category": "Storia",
+    "difficulty": "facile",
+    "text": "In che anno è iniziata la Seconda Guerra Mondiale?",
+    "answers": [
+      "1939",
+      "1914",
+      "1945",
+      "1929"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0002",
+    "category": "Storia",
+    "difficulty": "facile",
+    "text": "Chi era il primo imperatore romano?",
+    "answers": [
+      "Nerone",
+      "Augusto",
+      "Giulio Cesare",
+      "Traiano"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0003",
+    "category": "Storia",
+    "difficulty": "facile",
+    "text": "In quale anno è caduto il Muro di Berlino?",
+    "answers": [
+      "1985",
+      "1991",
+      "1989",
+      "1979"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0004",
+    "category": "Storia",
+    "difficulty": "facile",
+    "text": "Chi ha scoperto l'America nel 1492?",
+    "answers": [
+      "Marco Polo",
+      "Vasco da Gama",
+      "Amerigo Vespucci",
+      "Cristoforo Colombo"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "q0005",
+    "category": "Storia",
+    "difficulty": "facile",
+    "text": "Quale civiltà costruì le piramidi di Giza?",
+    "answers": [
+      "Sumeri",
+      "Egizi",
+      "Babilonesi",
+      "Fenici"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0006",
+    "category": "Storia",
+    "difficulty": "facile",
+    "text": "In quale città si trova il Colosseo?",
+    "answers": [
+      "Napoli",
+      "Firenze",
+      "Roma",
+      "Milano"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0007",
+    "category": "Storia",
+    "difficulty": "facile",
+    "text": "Chi fu il primo presidente degli Stati Uniti?",
+    "answers": [
+      "Abraham Lincoln",
+      "Thomas Jefferson",
+      "John Adams",
+      "George Washington"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "q0008",
+    "category": "Storia",
+    "difficulty": "facile",
+    "text": "Quale evento ha dato inizio alla Rivoluzione Francese?",
+    "answers": [
+      "La presa della Bastiglia",
+      "La battaglia di Waterloo",
+      "L'incoronazione di Napoleone",
+      "La marcia su Roma"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0009",
+    "category": "Storia",
+    "difficulty": "medio",
+    "text": "Chi era il condottiero cartaginese che attraversò le Alpi con gli elefanti?",
+    "answers": [
+      "Amilcare",
+      "Annibale",
+      "Asdrubale",
+      "Magone"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0010",
+    "category": "Storia",
+    "difficulty": "medio",
+    "text": "In quale anno fu firmata la Magna Carta?",
+    "answers": [
+      "1215",
+      "1315",
+      "1066",
+      "1492"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0011",
+    "category": "Storia",
+    "difficulty": "medio",
+    "text": "Quale dinastia regnò in Cina più a lungo?",
+    "answers": [
+      "Ming",
+      "Qing",
+      "Zhou",
+      "Han"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0012",
+    "category": "Storia",
+    "difficulty": "medio",
+    "text": "Chi vinse la battaglia di Waterloo contro Napoleone?",
+    "answers": [
+      "Wellington",
+      "Nelson",
+      "Bismarck",
+      "Metternich"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0013",
+    "category": "Storia",
+    "difficulty": "medio",
+    "text": "In che anno l'Italia divenne una repubblica?",
+    "answers": [
+      "1946",
+      "1948",
+      "1861",
+      "1918"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0014",
+    "category": "Storia",
+    "difficulty": "medio",
+    "text": "Quale trattato pose fine alla Prima Guerra Mondiale?",
+    "answers": [
+      "Trattato di Versailles",
+      "Trattato di Vienna",
+      "Trattato di Utrecht",
+      "Trattato di Yalta"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0015",
+    "category": "Storia",
+    "difficulty": "medio",
+    "text": "Chi fu l'ultimo zar di Russia?",
+    "answers": [
+      "Alessandro III",
+      "Nicola II",
+      "Pietro il Grande",
+      "Ivan il Terribile"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0016",
+    "category": "Storia",
+    "difficulty": "medio",
+    "text": "Quale imperatore fece costruire il Colosseo?",
+    "answers": [
+      "Nerone",
+      "Vespasiano",
+      "Adriano",
+      "Costantino"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0017",
+    "category": "Storia",
+    "difficulty": "difficile",
+    "text": "In quale anno scoppiò la Guerra dei Cent'anni?",
+    "answers": [
+      "1337",
+      "1453",
+      "1215",
+      "1309"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0018",
+    "category": "Storia",
+    "difficulty": "difficile",
+    "text": "Chi firmò l'editto di Nantes nel 1598?",
+    "answers": [
+      "Luigi XIV",
+      "Enrico IV",
+      "Francesco I",
+      "Carlo IX"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0019",
+    "category": "Storia",
+    "difficulty": "difficile",
+    "text": "Quale battaglia segnò la fine dell'impero di Napoleone in Russia?",
+    "answers": [
+      "Borodino",
+      "Austerlitz",
+      "Lipsia",
+      "Jena"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0020",
+    "category": "Storia",
+    "difficulty": "difficile",
+    "text": "Chi era il sovrano prussiano al momento dell'unificazione tedesca del 1871?",
+    "answers": [
+      "Federico Guglielmo III",
+      "Guglielmo I",
+      "Guglielmo II",
+      "Ottone von Bismarck"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0021",
+    "category": "Storia",
+    "difficulty": "difficile",
+    "text": "In quale anno fu fondata la Repubblica di Weimar?",
+    "answers": [
+      "1919",
+      "1933",
+      "1918",
+      "1923"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0022",
+    "category": "Storia",
+    "difficulty": "difficile",
+    "text": "Quale sultano ottomano conquistò Costantinopoli nel 1453?",
+    "answers": [
+      "Solimano il Magnifico",
+      "Maometto II",
+      "Selim I",
+      "Bayezid II"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0023",
+    "category": "Storia",
+    "difficulty": "difficile",
+    "text": "Chi fu il primo console della Repubblica Romana citato dalla tradizione?",
+    "answers": [
+      "Bruto",
+      "Cincinnato",
+      "Coriolano",
+      "Publio Valerio"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0024",
+    "category": "Storia",
+    "difficulty": "difficile",
+    "text": "In quale anno si tenne il Congresso di Vienna?",
+    "answers": [
+      "1815",
+      "1848",
+      "1789",
+      "1830"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0025",
+    "category": "Geografia",
+    "difficulty": "facile",
+    "text": "Qual è la capitale della Francia?",
+    "answers": [
+      "Lione",
+      "Marsiglia",
+      "Parigi",
+      "Nizza"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0026",
+    "category": "Geografia",
+    "difficulty": "facile",
+    "text": "Qual è il fiume più lungo del mondo?",
+    "answers": [
+      "Rio delle Amazzoni",
+      "Nilo",
+      "Mississippi",
+      "Yangtze"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0027",
+    "category": "Geografia",
+    "difficulty": "facile",
+    "text": "In quale continente si trova l'Egitto?",
+    "answers": [
+      "Asia",
+      "Africa",
+      "Europa",
+      "Oceania"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0028",
+    "category": "Geografia",
+    "difficulty": "facile",
+    "text": "Qual è il paese più popoloso al mondo?",
+    "answers": [
+      "Stati Uniti",
+      "Cina",
+      "India",
+      "Indonesia"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0029",
+    "category": "Geografia",
+    "difficulty": "facile",
+    "text": "Qual è la montagna più alta del mondo?",
+    "answers": [
+      "K2",
+      "Monte Bianco",
+      "Everest",
+      "Kilimangiaro"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0030",
+    "category": "Geografia",
+    "difficulty": "facile",
+    "text": "Qual è la capitale del Giappone?",
+    "answers": [
+      "Osaka",
+      "Tokyo",
+      "Kyoto",
+      "Nagoya"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0031",
+    "category": "Geografia",
+    "difficulty": "facile",
+    "text": "Quale oceano è il più grande?",
+    "answers": [
+      "Atlantico",
+      "Indiano",
+      "Artico",
+      "Pacifico"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "q0032",
+    "category": "Geografia",
+    "difficulty": "facile",
+    "text": "In quale stato si trova la Statua della Libertà?",
+    "answers": [
+      "Stati Uniti",
+      "Canada",
+      "Regno Unito",
+      "Francia"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0033",
+    "category": "Geografia",
+    "difficulty": "medio",
+    "text": "Qual è la capitale dell'Australia?",
+    "answers": [
+      "Sydney",
+      "Melbourne",
+      "Canberra",
+      "Perth"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0034",
+    "category": "Geografia",
+    "difficulty": "medio",
+    "text": "Quale stretto separa l'Europa dall'Africa?",
+    "answers": [
+      "Bosforo",
+      "Gibilterra",
+      "Messina",
+      "Dardanelli"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0035",
+    "category": "Geografia",
+    "difficulty": "medio",
+    "text": "Qual è il deserto più grande del mondo?",
+    "answers": [
+      "Sahara",
+      "Gobi",
+      "Antartide",
+      "Kalahari"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0036",
+    "category": "Geografia",
+    "difficulty": "medio",
+    "text": "In quale paese si trovano le rovine di Machu Picchu?",
+    "answers": [
+      "Bolivia",
+      "Cile",
+      "Perù",
+      "Ecuador"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0037",
+    "category": "Geografia",
+    "difficulty": "medio",
+    "text": "Qual è il lago più profondo del mondo?",
+    "answers": [
+      "Lago Superiore",
+      "Lago Baikal",
+      "Mar Caspio",
+      "Lago Tanganica"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0038",
+    "category": "Geografia",
+    "difficulty": "medio",
+    "text": "Quale paese ha più fusi orari?",
+    "answers": [
+      "Russia",
+      "Stati Uniti",
+      "Cina",
+      "Francia"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "q0039",
+    "category": "Geografia",
+    "difficulty": "medio",
+    "text": "Qual è la capitale del Canada?",
+    "answers": [
+      "Toronto",
+      "Vancouver",
+      "Ottawa",
+      "Montreal"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0040",
+    "category": "Geografia",
+    "difficulty": "medio",
+    "text": "In quale mare si trova l'isola di Cipro?",
+    "answers": [
+      "Mar Nero",
+      "Mar Egeo",
+      "Mar Mediterraneo",
+      "Mar Adriatico"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0041",
+    "category": "Geografia",
+    "difficulty": "difficile",
+    "text": "Qual è la capitale del Kazakistan?",
+    "answers": [
+      "Almaty",
+      "Astana",
+      "Bishkek",
+      "Tashkent"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0042",
+    "category": "Geografia",
+    "difficulty": "difficile",
+    "text": "Quale fiume attraversa più paesi al mondo?",
+    "answers": [
+      "Nilo",
+      "Danubio",
+      "Rio delle Amazzoni",
+      "Volga"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0043",
+    "category": "Geografia",
+    "difficulty": "difficile",
+    "text": "Qual è il punto più basso della superficie terrestre emersa?",
+    "answers": [
+      "Death Valley",
+      "Mar Morto",
+      "Depressione di Qattara",
+      "Bacino del Turpan"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0044",
+    "category": "Geografia",
+    "difficulty": "difficile",
+    "text": "Quale paese confina con il maggior numero di stati?",
+    "answers": [
+      "Russia",
+      "Cina",
+      "Brasile",
+      "Cina e Russia ex aequo"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "q0045",
+    "category": "Geografia",
+    "difficulty": "difficile",
+    "text": "Qual è la capitale della Mongolia?",
+    "answers": [
+      "Ulaanbaatar",
+      "Almaty",
+      "Bishkek",
+      "Astana"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0046",
+    "category": "Geografia",
+    "difficulty": "difficile",
+    "text": "In quale arcipelago si trova l'isola di Krakatoa?",
+    "answers": [
+      "Filippine",
+      "Indonesia",
+      "Papua Nuova Guinea",
+      "Malesia"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0047",
+    "category": "Geografia",
+    "difficulty": "difficile",
+    "text": "Qual è lo stato più piccolo del mondo per superficie?",
+    "answers": [
+      "Monaco",
+      "San Marino",
+      "Città del Vaticano",
+      "Liechtenstein"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0048",
+    "category": "Geografia",
+    "difficulty": "difficile",
+    "text": "Quale catena montuosa separa l'Europa dall'Asia?",
+    "answers": [
+      "Alpi",
+      "Carpazi",
+      "Monti Urali",
+      "Caucaso"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0049",
+    "category": "Scienza e Natura",
+    "difficulty": "facile",
+    "text": "Qual è il pianeta più vicino al Sole?",
+    "answers": [
+      "Venere",
+      "Terra",
+      "Mercurio",
+      "Marte"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0050",
+    "category": "Scienza e Natura",
+    "difficulty": "facile",
+    "text": "Quale gas respiriamo principalmente per vivere?",
+    "answers": [
+      "Anidride carbonica",
+      "Ossigeno",
+      "Azoto",
+      "Idrogeno"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0051",
+    "category": "Scienza e Natura",
+    "difficulty": "facile",
+    "text": "Quante zampe ha un ragno?",
+    "answers": [
+      "6",
+      "8",
+      "10",
+      "4"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0052",
+    "category": "Scienza e Natura",
+    "difficulty": "facile",
+    "text": "Qual è l'organo che pompa il sangue nel corpo umano?",
+    "answers": [
+      "Fegato",
+      "Polmone",
+      "Cuore",
+      "Rene"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0053",
+    "category": "Scienza e Natura",
+    "difficulty": "facile",
+    "text": "Di che colore è la clorofilla?",
+    "answers": [
+      "Rossa",
+      "Blu",
+      "Verde",
+      "Gialla"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0054",
+    "category": "Scienza e Natura",
+    "difficulty": "facile",
+    "text": "Quanti pianeti ci sono nel sistema solare?",
+    "answers": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0055",
+    "category": "Scienza e Natura",
+    "difficulty": "facile",
+    "text": "Qual è l'animale più grande del mondo?",
+    "answers": [
+      "Elefante africano",
+      "Balena azzurra",
+      "Squalo balena",
+      "Giraffa"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0056",
+    "category": "Scienza e Natura",
+    "difficulty": "facile",
+    "text": "Quale stato della materia ha forma e volume propri?",
+    "answers": [
+      "Liquido",
+      "Gassoso",
+      "Solido",
+      "Plasma"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0057",
+    "category": "Scienza e Natura",
+    "difficulty": "medio",
+    "text": "Qual è l'unità di misura della forza nel Sistema Internazionale?",
+    "answers": [
+      "Joule",
+      "Watt",
+      "Newton",
+      "Pascal"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0058",
+    "category": "Scienza e Natura",
+    "difficulty": "medio",
+    "text": "Quale scienziato ha formulato la teoria della relatività?",
+    "answers": [
+      "Newton",
+      "Einstein",
+      "Bohr",
+      "Galilei"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0059",
+    "category": "Scienza e Natura",
+    "difficulty": "medio",
+    "text": "Quanti cromosomi ha una cellula umana normale?",
+    "answers": [
+      "44",
+      "46",
+      "48",
+      "42"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0060",
+    "category": "Scienza e Natura",
+    "difficulty": "medio",
+    "text": "Qual è il metallo liquido a temperatura ambiente?",
+    "answers": [
+      "Piombo",
+      "Mercurio",
+      "Stagno",
+      "Zinco"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0061",
+    "category": "Scienza e Natura",
+    "difficulty": "medio",
+    "text": "Come si chiama il processo con cui le piante producono energia dalla luce?",
+    "answers": [
+      "Respirazione",
+      "Fotosintesi",
+      "Fermentazione",
+      "Osmosi"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0062",
+    "category": "Scienza e Natura",
+    "difficulty": "medio",
+    "text": "Quale osso è il più lungo del corpo umano?",
+    "answers": [
+      "Tibia",
+      "Omero",
+      "Femore",
+      "Radio"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0063",
+    "category": "Scienza e Natura",
+    "difficulty": "medio",
+    "text": "Qual è la velocità della luce nel vuoto (circa)?",
+    "answers": [
+      "300.000 km/s",
+      "150.000 km/s",
+      "1.000.000 km/s",
+      "30.000 km/s"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0064",
+    "category": "Scienza e Natura",
+    "difficulty": "medio",
+    "text": "Quale scienziato scoprì la penicillina?",
+    "answers": [
+      "Pasteur",
+      "Fleming",
+      "Koch",
+      "Darwin"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0065",
+    "category": "Scienza e Natura",
+    "difficulty": "difficile",
+    "text": "Qual è il numero atomico dell'idrogeno?",
+    "answers": [
+      "0",
+      "1",
+      "2",
+      "14"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0066",
+    "category": "Scienza e Natura",
+    "difficulty": "difficile",
+    "text": "Come si chiama la teoria che descrive l'espansione dell'universo da un punto iniziale?",
+    "answers": [
+      "Teoria della relatività",
+      "Big Bang",
+      "Teoria delle stringhe",
+      "Meccanica quantistica"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0067",
+    "category": "Scienza e Natura",
+    "difficulty": "difficile",
+    "text": "Quale enzima avvia la duplicazione del DNA?",
+    "answers": [
+      "Ligasi",
+      "DNA polimerasi",
+      "Elicasi",
+      "RNA polimerasi"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0068",
+    "category": "Scienza e Natura",
+    "difficulty": "difficile",
+    "text": "Qual è l'elemento più abbondante nell'universo?",
+    "answers": [
+      "Ossigeno",
+      "Elio",
+      "Idrogeno",
+      "Carbonio"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0069",
+    "category": "Scienza e Natura",
+    "difficulty": "difficile",
+    "text": "Chi ha formulato le leggi del moto planetario basate sulle orbite ellittiche?",
+    "answers": [
+      "Copernico",
+      "Keplero",
+      "Galilei",
+      "Newton"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0070",
+    "category": "Scienza e Natura",
+    "difficulty": "difficile",
+    "text": "Come si chiama la particella priva di carica presente nel nucleo atomico?",
+    "answers": [
+      "Protone",
+      "Elettrone",
+      "Neutrone",
+      "Positrone"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0071",
+    "category": "Scienza e Natura",
+    "difficulty": "difficile",
+    "text": "Qual è il nome del confine oltre il quale nulla può sfuggire a un buco nero?",
+    "answers": [
+      "Orizzonte degli eventi",
+      "Singolarità",
+      "Ergosfera",
+      "Disco di accrescimento"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0072",
+    "category": "Scienza e Natura",
+    "difficulty": "difficile",
+    "text": "Quale scienziata vinse due premi Nobel in due discipline diverse?",
+    "answers": [
+      "Rosalind Franklin",
+      "Marie Curie",
+      "Lise Meitner",
+      "Dorothy Hodgkin"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0073",
+    "category": "Sport",
+    "difficulty": "facile",
+    "text": "Quanti giocatori compongono una squadra di calcio in campo?",
+    "answers": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0074",
+    "category": "Sport",
+    "difficulty": "facile",
+    "text": "In quale sport si usa una racchetta e una pallina gialla su erba o cemento?",
+    "answers": [
+      "Squash",
+      "Tennis",
+      "Badminton",
+      "Ping pong"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0075",
+    "category": "Sport",
+    "difficulty": "facile",
+    "text": "Ogni quanti anni si svolgono le Olimpiadi estive?",
+    "answers": [
+      "2",
+      "4",
+      "5",
+      "3"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0076",
+    "category": "Sport",
+    "difficulty": "facile",
+    "text": "Quale sport si gioca a Wimbledon?",
+    "answers": [
+      "Golf",
+      "Tennis",
+      "Cricket",
+      "Rugby"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0077",
+    "category": "Sport",
+    "difficulty": "facile",
+    "text": "Quanti punti vale un canestro da tre nel basket?",
+    "answers": [
+      "2",
+      "3",
+      "4",
+      "1"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0078",
+    "category": "Sport",
+    "difficulty": "facile",
+    "text": "In quale paese sono nate le Olimpiadi antiche?",
+    "answers": [
+      "Italia",
+      "Grecia",
+      "Egitto",
+      "Francia"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0079",
+    "category": "Sport",
+    "difficulty": "facile",
+    "text": "Quale colore di maglia indossa il leader del Tour de France?",
+    "answers": [
+      "Rosa",
+      "Verde",
+      "Gialla",
+      "Bianca"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0080",
+    "category": "Sport",
+    "difficulty": "facile",
+    "text": "Quanti set si giocano al massimo in una finale maschile del Grande Slam di tennis?",
+    "answers": [
+      "3",
+      "5",
+      "7",
+      "4"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0081",
+    "category": "Sport",
+    "difficulty": "medio",
+    "text": "In quale sport si vince conquistando un \"grande slam\"?",
+    "answers": [
+      "Tennis",
+      "Calcio",
+      "Rugby",
+      "Basket"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0082",
+    "category": "Sport",
+    "difficulty": "medio",
+    "text": "Quale nazione ha vinto più Coppe del Mondo di calcio maschile?",
+    "answers": [
+      "Germania",
+      "Argentina",
+      "Brasile",
+      "Italia"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0083",
+    "category": "Sport",
+    "difficulty": "medio",
+    "text": "Quanti giocatori ci sono in una squadra di pallavolo in campo?",
+    "answers": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0084",
+    "category": "Sport",
+    "difficulty": "medio",
+    "text": "In quale città si sono svolte le Olimpiadi del 1960?",
+    "answers": [
+      "Tokyo",
+      "Roma",
+      "Melbourne",
+      "Città del Messico"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0085",
+    "category": "Sport",
+    "difficulty": "medio",
+    "text": "Qual è la distanza di una maratona?",
+    "answers": [
+      "40,2 km",
+      "42,195 km",
+      "38 km",
+      "45 km"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0086",
+    "category": "Sport",
+    "difficulty": "medio",
+    "text": "In quale sport si usa il termine \"birdie\"?",
+    "answers": [
+      "Golf",
+      "Tennis",
+      "Baseball",
+      "Bowling"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0087",
+    "category": "Sport",
+    "difficulty": "medio",
+    "text": "Quale pilota ha vinto più titoli mondiali di Formula 1?",
+    "answers": [
+      "Ayrton Senna",
+      "Michael Schumacher",
+      "Lewis Hamilton",
+      "Schumacher e Hamilton ex aequo"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "q0088",
+    "category": "Sport",
+    "difficulty": "medio",
+    "text": "In quale sport si disputa la Ryder Cup?",
+    "answers": [
+      "Golf",
+      "Tennis",
+      "Vela",
+      "Scherma"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0089",
+    "category": "Sport",
+    "difficulty": "difficile",
+    "text": "In quale anno l'Italia vinse il suo primo Mondiale di calcio?",
+    "answers": [
+      "1934",
+      "1938",
+      "1982",
+      "1930"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0090",
+    "category": "Sport",
+    "difficulty": "difficile",
+    "text": "Quale schermidore/atleta italiano ha vinto più medaglie olimpiche in assoluto?",
+    "answers": [
+      "Valentina Vezzali",
+      "Edoardo Mangiarotti",
+      "Federica Pellegrini",
+      "Niccolò Campriani"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0091",
+    "category": "Sport",
+    "difficulty": "difficile",
+    "text": "Quanti giochi olimpici invernali si sono svolti in Italia prima del 2026?",
+    "answers": [
+      "1",
+      "2",
+      "3",
+      "0"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0092",
+    "category": "Sport",
+    "difficulty": "difficile",
+    "text": "Chi detiene il record del mondo dei 100 metri piani maschili?",
+    "answers": [
+      "Tyson Gay",
+      "Usain Bolt",
+      "Justin Gatlin",
+      "Yohan Blake"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0093",
+    "category": "Sport",
+    "difficulty": "difficile",
+    "text": "In quale sport si è distinto il campione Michael Phelps?",
+    "answers": [
+      "Atletica",
+      "Nuoto",
+      "Ciclismo",
+      "Canottaggio"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0094",
+    "category": "Sport",
+    "difficulty": "difficile",
+    "text": "Quale squadra ha vinto il maggior numero di Champions League/Coppa dei Campioni?",
+    "answers": [
+      "Milan",
+      "Barcellona",
+      "Real Madrid",
+      "Bayern Monaco"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0095",
+    "category": "Sport",
+    "difficulty": "difficile",
+    "text": "In quale anno debuttò la Formula 1 come campionato mondiale?",
+    "answers": [
+      "1950",
+      "1946",
+      "1955",
+      "1960"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0096",
+    "category": "Sport",
+    "difficulty": "difficile",
+    "text": "Quale ciclista italiano ha vinto 5 Giri d'Italia?",
+    "answers": [
+      "Fausto Coppi",
+      "Gino Bartali",
+      "Felice Gimondi",
+      "Marco Pantani"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0097",
+    "category": "Cinema e TV",
+    "difficulty": "facile",
+    "text": "Chi ha diretto il film \"Titanic\" del 1997?",
+    "answers": [
+      "Steven Spielberg",
+      "James Cameron",
+      "Ridley Scott",
+      "George Lucas"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0098",
+    "category": "Cinema e TV",
+    "difficulty": "facile",
+    "text": "In quale film compare il personaggio di Harry Potter?",
+    "answers": [
+      "Il Signore degli Anelli",
+      "Harry Potter e la pietra filosofale",
+      "Le Cronache di Narnia",
+      "Percy Jackson"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0099",
+    "category": "Cinema e TV",
+    "difficulty": "facile",
+    "text": "Quale animale è il protagonista de \"Il Re Leone\"?",
+    "answers": [
+      "Tigre",
+      "Leone",
+      "Leopardo",
+      "Ghepardo"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0100",
+    "category": "Cinema e TV",
+    "difficulty": "facile",
+    "text": "Chi interpreta Iron Man nel Marvel Cinematic Universe?",
+    "answers": [
+      "Chris Evans",
+      "Chris Hemsworth",
+      "Robert Downey Jr.",
+      "Mark Ruffalo"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0101",
+    "category": "Cinema e TV",
+    "difficulty": "facile",
+    "text": "Come si chiama il robot protagonista del film Pixar del 2008?",
+    "answers": [
+      "Wall-E",
+      "Baymax",
+      "R2-D2",
+      "Optimus Prime"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0102",
+    "category": "Cinema e TV",
+    "difficulty": "facile",
+    "text": "In quale città è ambientata la serie \"Friends\"?",
+    "answers": [
+      "Los Angeles",
+      "Chicago",
+      "New York",
+      "Boston"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0103",
+    "category": "Cinema e TV",
+    "difficulty": "facile",
+    "text": "Quale attore interpreta Jack Sparrow?",
+    "answers": [
+      "Orlando Bloom",
+      "Johnny Depp",
+      "Geoffrey Rush",
+      "Javier Bardem"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0104",
+    "category": "Cinema e TV",
+    "difficulty": "facile",
+    "text": "Come si chiama la scuola di magia frequentata da Harry Potter?",
+    "answers": [
+      "Beauxbatons",
+      "Durmstrang",
+      "Hogwarts",
+      "Ilvermorny"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0105",
+    "category": "Cinema e TV",
+    "difficulty": "medio",
+    "text": "Chi ha diretto la trilogia originale de \"Il Padrino\"?",
+    "answers": [
+      "Martin Scorsese",
+      "Francis Ford Coppola",
+      "Sergio Leone",
+      "Brian De Palma"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0106",
+    "category": "Cinema e TV",
+    "difficulty": "medio",
+    "text": "Quale film ha vinto l'Oscar come miglior film nel 2020?",
+    "answers": [
+      "1917",
+      "Joker",
+      "Parasite",
+      "C'era una volta a Hollywood"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0107",
+    "category": "Cinema e TV",
+    "difficulty": "medio",
+    "text": "Chi interpreta il Joker nel film del 2019 diretto da Todd Phillips?",
+    "answers": [
+      "Jared Leto",
+      "Heath Ledger",
+      "Joaquin Phoenix",
+      "Jack Nicholson"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0108",
+    "category": "Cinema e TV",
+    "difficulty": "medio",
+    "text": "In quale serie TV compare la città immaginaria di Westeros?",
+    "answers": [
+      "Vikings",
+      "Il Trono di Spade",
+      "The Witcher",
+      "Outlander"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0109",
+    "category": "Cinema e TV",
+    "difficulty": "medio",
+    "text": "Chi ha composto la colonna sonora di \"Star Wars\"?",
+    "answers": [
+      "Hans Zimmer",
+      "John Williams",
+      "Ennio Morricone",
+      "Danny Elfman"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0110",
+    "category": "Cinema e TV",
+    "difficulty": "medio",
+    "text": "Quale regista italiano ha diretto \"La vita è bella\"?",
+    "answers": [
+      "Nanni Moretti",
+      "Roberto Benigni",
+      "Paolo Sorrentino",
+      "Matteo Garrone"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0111",
+    "category": "Cinema e TV",
+    "difficulty": "medio",
+    "text": "Chi interpreta Ellen Ripley nella saga di \"Alien\"?",
+    "answers": [
+      "Jamie Lee Curtis",
+      "Sigourney Weaver",
+      "Linda Hamilton",
+      "Uma Thurman"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0112",
+    "category": "Cinema e TV",
+    "difficulty": "medio",
+    "text": "Quale film d'animazione narra la storia di Elsa e Anna?",
+    "answers": [
+      "Frozen",
+      "Moana",
+      "Encanto",
+      "Raya"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0113",
+    "category": "Cinema e TV",
+    "difficulty": "difficile",
+    "text": "Chi ha vinto l'Oscar al miglior regista per \"Parasite\"?",
+    "answers": [
+      "Bong Joon-ho",
+      "Park Chan-wook",
+      "Kim Ki-duk",
+      "Lee Chang-dong"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0114",
+    "category": "Cinema e TV",
+    "difficulty": "difficile",
+    "text": "In quale anno uscì il primo film della saga \"Star Wars\"?",
+    "answers": [
+      "1977",
+      "1980",
+      "1975",
+      "1983"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0115",
+    "category": "Cinema e TV",
+    "difficulty": "difficile",
+    "text": "Chi ha diretto \"2001: Odissea nello spazio\"?",
+    "answers": [
+      "Ridley Scott",
+      "Stanley Kubrick",
+      "Steven Spielberg",
+      "Robert Wise"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0116",
+    "category": "Cinema e TV",
+    "difficulty": "difficile",
+    "text": "Quale attore ha rifiutato più volte il ruolo di James Bond prima di accettarlo?",
+    "answers": [
+      "Sean Connery",
+      "Roger Moore",
+      "Timothy Dalton",
+      "Pierce Brosnan"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "q0117",
+    "category": "Cinema e TV",
+    "difficulty": "difficile",
+    "text": "Chi ha diretto il film neorealista \"Ladri di biciclette\"?",
+    "answers": [
+      "Federico Fellini",
+      "Vittorio De Sica",
+      "Roberto Rossellini",
+      "Luchino Visconti"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0118",
+    "category": "Cinema e TV",
+    "difficulty": "difficile",
+    "text": "Quale film ha vinto la Palma d'Oro a Cannes nel 2021?",
+    "answers": [
+      "Titane",
+      "The Square",
+      "Parasite",
+      "Shoplifters"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0119",
+    "category": "Cinema e TV",
+    "difficulty": "difficile",
+    "text": "Chi interpretava il protagonista in \"Psyco\" di Hitchcock?",
+    "answers": [
+      "James Stewart",
+      "Cary Grant",
+      "Anthony Perkins",
+      "Gregory Peck"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0120",
+    "category": "Cinema e TV",
+    "difficulty": "difficile",
+    "text": "In quale studio è nato il primo lungometraggio Disney \"Biancaneve e i sette nani\"?",
+    "answers": [
+      "Pixar",
+      "Walt Disney Animation Studios",
+      "DreamWorks",
+      "Warner Bros"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0121",
+    "category": "Musica",
+    "difficulty": "facile",
+    "text": "Quale band inglese ha pubblicato l'album \"Abbey Road\"?",
+    "answers": [
+      "Rolling Stones",
+      "The Beatles",
+      "Queen",
+      "Pink Floyd"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0122",
+    "category": "Musica",
+    "difficulty": "facile",
+    "text": "Chi è conosciuto come il \"Re del Pop\"?",
+    "answers": [
+      "Prince",
+      "Elvis Presley",
+      "Michael Jackson",
+      "Freddie Mercury"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0123",
+    "category": "Musica",
+    "difficulty": "facile",
+    "text": "Quale strumento ha 88 tasti?",
+    "answers": [
+      "Chitarra",
+      "Pianoforte",
+      "Violino",
+      "Fisarmonica"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0124",
+    "category": "Musica",
+    "difficulty": "facile",
+    "text": "Chi ha cantato \"Bohemian Rhapsody\"?",
+    "answers": [
+      "Queen",
+      "Led Zeppelin",
+      "The Who",
+      "Deep Purple"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0125",
+    "category": "Musica",
+    "difficulty": "facile",
+    "text": "Quale cantante italiano è noto come \"Il Molleggiato\"?",
+    "answers": [
+      "Lucio Battisti",
+      "Adriano Celentano",
+      "Gianni Morandi",
+      "Little Tony"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0126",
+    "category": "Musica",
+    "difficulty": "facile",
+    "text": "Quanti sono generalmente gli archi in un'orchestra sinfonica per sezione principale?",
+    "answers": [
+      "Non è fisso, dipende dall'orchestra",
+      "Sempre 10",
+      "Sempre 20",
+      "Sempre 50"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0127",
+    "category": "Musica",
+    "difficulty": "facile",
+    "text": "Chi ha scritto l'opera \"La Traviata\"?",
+    "answers": [
+      "Giacomo Puccini",
+      "Giuseppe Verdi",
+      "Gioachino Rossini",
+      "Vincenzo Bellini"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0128",
+    "category": "Musica",
+    "difficulty": "facile",
+    "text": "Quale festival musicale italiano si tiene ogni anno a febbraio a Sanremo?",
+    "answers": [
+      "Festivalbar",
+      "Festival di Sanremo",
+      "MTV Awards",
+      "Zecchino d'Oro"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0129",
+    "category": "Musica",
+    "difficulty": "medio",
+    "text": "Chi ha composto le Quattro Stagioni?",
+    "answers": [
+      "Bach",
+      "Mozart",
+      "Vivaldi",
+      "Beethoven"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0130",
+    "category": "Musica",
+    "difficulty": "medio",
+    "text": "Quale gruppo ha pubblicato l'album \"The Dark Side of the Moon\"?",
+    "answers": [
+      "Pink Floyd",
+      "Led Zeppelin",
+      "Genesis",
+      "Yes"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0131",
+    "category": "Musica",
+    "difficulty": "medio",
+    "text": "Chi è il cantante e polistrumentista noto per l'album \"Purple Rain\"?",
+    "answers": [
+      "Michael Jackson",
+      "Prince",
+      "David Bowie",
+      "George Michael"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0132",
+    "category": "Musica",
+    "difficulty": "medio",
+    "text": "In quale città è nato il genere musicale del blues?",
+    "answers": [
+      "New York",
+      "Delta del Mississippi",
+      "Chicago",
+      "New Orleans"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0133",
+    "category": "Musica",
+    "difficulty": "medio",
+    "text": "Quale cantautore italiano ha scritto \"La canzone del sole\"?",
+    "answers": [
+      "Fabrizio De André",
+      "Lucio Battisti",
+      "Francesco Guccini",
+      "Ivano Fossati"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0134",
+    "category": "Musica",
+    "difficulty": "medio",
+    "text": "Chi ha vinto il Festival di Sanremo 2021?",
+    "answers": [
+      "Måneskin",
+      "Fedez e Francesca Michielin",
+      "Diodato",
+      "Irama"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0135",
+    "category": "Musica",
+    "difficulty": "medio",
+    "text": "Quale compositore era sordo quando scrisse la Nona Sinfonia?",
+    "answers": [
+      "Mozart",
+      "Beethoven",
+      "Brahms",
+      "Chopin"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0136",
+    "category": "Musica",
+    "difficulty": "medio",
+    "text": "Quale strumento suonava principalmente Jimi Hendrix?",
+    "answers": [
+      "Basso",
+      "Batteria",
+      "Chitarra",
+      "Tastiera"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0137",
+    "category": "Musica",
+    "difficulty": "difficile",
+    "text": "Chi ha composto l'opera \"Il flauto magico\"?",
+    "answers": [
+      "Haydn",
+      "Mozart",
+      "Beethoven",
+      "Schubert"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0138",
+    "category": "Musica",
+    "difficulty": "difficile",
+    "text": "In quale anno uscì l'album \"Sgt. Pepper's Lonely Hearts Club Band\"?",
+    "answers": [
+      "1965",
+      "1967",
+      "1969",
+      "1970"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0139",
+    "category": "Musica",
+    "difficulty": "difficile",
+    "text": "Quale compositore russo scrisse \"Il Lago dei Cigni\"?",
+    "answers": [
+      "Rachmaninov",
+      "Čajkovskij",
+      "Stravinskij",
+      "Prokof'ev"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0140",
+    "category": "Musica",
+    "difficulty": "difficile",
+    "text": "Chi ha diretto l'orchestra alla prima esecuzione della Nona Sinfonia di Beethoven?",
+    "answers": [
+      "Beethoven stesso (co-diretta)",
+      "Michael Umlauf da solo",
+      "Johann Strauss",
+      "Carl Czerny"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0141",
+    "category": "Musica",
+    "difficulty": "difficile",
+    "text": "Quale cantautore genovese è soprannominato \"il Principe\"?",
+    "answers": [
+      "Fabrizio De André",
+      "Umberto Bindi",
+      "Gino Paoli",
+      "Luigi Tenco"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0142",
+    "category": "Musica",
+    "difficulty": "difficile",
+    "text": "Quale disco dei Pink Floyd contiene il brano \"Wish You Were Here\"?",
+    "answers": [
+      "The Wall",
+      "Wish You Were Here",
+      "Animals",
+      "Meddle"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0143",
+    "category": "Musica",
+    "difficulty": "difficile",
+    "text": "Chi ha composto la colonna sonora di \"Nuovo Cinema Paradiso\"?",
+    "answers": [
+      "Nicola Piovani",
+      "Ennio Morricone",
+      "Nino Rota",
+      "Armando Trovajoli"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0144",
+    "category": "Musica",
+    "difficulty": "difficile",
+    "text": "Quale voce lirica è la più acuta tra quelle femminili?",
+    "answers": [
+      "Contralto",
+      "Mezzosoprano",
+      "Soprano",
+      "Basso"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0145",
+    "category": "Cucina",
+    "difficulty": "facile",
+    "text": "Quale ingrediente principale serve per fare il pane?",
+    "answers": [
+      "Riso",
+      "Farina",
+      "Zucchero",
+      "Latte"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0146",
+    "category": "Cucina",
+    "difficulty": "facile",
+    "text": "Da quale pianta si ricava l'olio d'oliva?",
+    "answers": [
+      "Ulivo",
+      "Girasole",
+      "Mais",
+      "Noce"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0147",
+    "category": "Cucina",
+    "difficulty": "facile",
+    "text": "Qual è l'ingrediente base della pizza margherita oltre a pomodoro e mozzarella?",
+    "answers": [
+      "Basilico",
+      "Origano",
+      "Rucola",
+      "Prezzemolo"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0148",
+    "category": "Cucina",
+    "difficulty": "facile",
+    "text": "Da quale animale si ricava il prosciutto?",
+    "answers": [
+      "Manzo",
+      "Maiale",
+      "Pollo",
+      "Agnello"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0149",
+    "category": "Cucina",
+    "difficulty": "facile",
+    "text": "Quale bevanda si ottiene fermentando l'uva?",
+    "answers": [
+      "Birra",
+      "Vino",
+      "Sidro",
+      "Whisky"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0150",
+    "category": "Cucina",
+    "difficulty": "facile",
+    "text": "Qual è il formaggio tipico usato nel tiramisù?",
+    "answers": [
+      "Ricotta",
+      "Mascarpone",
+      "Parmigiano",
+      "Stracchino"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0151",
+    "category": "Cucina",
+    "difficulty": "facile",
+    "text": "Quale cereale si usa per fare il risotto?",
+    "answers": [
+      "Orzo",
+      "Riso",
+      "Farro",
+      "Avena"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0152",
+    "category": "Cucina",
+    "difficulty": "facile",
+    "text": "Di che colore è la mozzarella di bufala?",
+    "answers": [
+      "Gialla",
+      "Bianca",
+      "Rosa",
+      "Marrone"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0153",
+    "category": "Cucina",
+    "difficulty": "medio",
+    "text": "Da quale regione italiana ha origine il Parmigiano Reggiano DOP?",
+    "answers": [
+      "Toscana",
+      "Emilia-Romagna e limitrofi",
+      "Piemonte",
+      "Sicilia"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0154",
+    "category": "Cucina",
+    "difficulty": "medio",
+    "text": "Quale spezia si ricava dal fiore del croco ed è tra le più costose al mondo?",
+    "answers": [
+      "Cannella",
+      "Zafferano",
+      "Curcuma",
+      "Cardamomo"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0155",
+    "category": "Cucina",
+    "difficulty": "medio",
+    "text": "Cosa si intende per \"mise en place\" in cucina?",
+    "answers": [
+      "Il taglio delle verdure",
+      "La preparazione degli ingredienti prima di cucinare",
+      "La presentazione del piatto",
+      "Il lavaggio delle stoviglie"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0156",
+    "category": "Cucina",
+    "difficulty": "medio",
+    "text": "Quale tecnica di cottura consiste nel cuocere a bassa temperatura sottovuoto?",
+    "answers": [
+      "Sous vide",
+      "Blanching",
+      "Brasatura",
+      "Affumicatura"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0157",
+    "category": "Cucina",
+    "difficulty": "medio",
+    "text": "Qual è l'ingrediente principale del pesto genovese oltre al basilico?",
+    "answers": [
+      "Noci",
+      "Pinoli",
+      "Mandorle",
+      "Nocciole"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0158",
+    "category": "Cucina",
+    "difficulty": "medio",
+    "text": "Da quale paese ha origine il sushi?",
+    "answers": [
+      "Cina",
+      "Corea",
+      "Giappone",
+      "Thailandia"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0159",
+    "category": "Cucina",
+    "difficulty": "medio",
+    "text": "Quale parte della pianta di zafferano si utilizza in cucina?",
+    "answers": [
+      "I petali",
+      "Gli stimmi",
+      "Le foglie",
+      "I semi"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0160",
+    "category": "Cucina",
+    "difficulty": "medio",
+    "text": "Cos'è il \"roux\" in cucina francese?",
+    "answers": [
+      "Un tipo di pane",
+      "Un composto di burro e farina per addensare",
+      "Un taglio di carne",
+      "Una salsa a base di vino"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0161",
+    "category": "Cucina",
+    "difficulty": "difficile",
+    "text": "Qual è la temperatura ideale per la maturazione della caramellizzazione dello zucchero (Maillard escluso)?",
+    "answers": [
+      "Circa 110°C",
+      "Circa 160-180°C",
+      "Circa 60°C",
+      "Circa 250°C"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0162",
+    "category": "Cucina",
+    "difficulty": "difficile",
+    "text": "Come si chiama la tecnica giapponese di taglio del pesce crudo eseguita da uno chef specializzato?",
+    "answers": [
+      "Itamae",
+      "Kaiseki",
+      "Omakase",
+      "Teppanyaki"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0163",
+    "category": "Cucina",
+    "difficulty": "difficile",
+    "text": "Quale acido conferisce al limone il suo sapore aspro?",
+    "answers": [
+      "Acido acetico",
+      "Acido citrico",
+      "Acido malico",
+      "Acido lattico"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0164",
+    "category": "Cucina",
+    "difficulty": "difficile",
+    "text": "Cosa indica la sigla DOCG per un vino italiano?",
+    "answers": [
+      "Denominazione di Origine Controllata e Garantita",
+      "Denominazione Origine Certificata Generale",
+      "Distretto Origine Controllata Garantita",
+      "Denominazione Origine Confermata Genuina"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0165",
+    "category": "Cucina",
+    "difficulty": "difficile",
+    "text": "Qual è il nome della reazione chimica tra amminoacidi e zuccheri che dora la carne in cottura?",
+    "answers": [
+      "Caramellizzazione",
+      "Reazione di Maillard",
+      "Fermentazione",
+      "Ossidazione"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0166",
+    "category": "Cucina",
+    "difficulty": "difficile",
+    "text": "Da quale regione francese ha origine il formaggio Roquefort?",
+    "answers": [
+      "Normandia",
+      "Aveyron (Roquefort-sur-Soulzon)",
+      "Bretagna",
+      "Provenza"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0167",
+    "category": "Cucina",
+    "difficulty": "difficile",
+    "text": "Quale lievito si usa tradizionalmente per il panettone?",
+    "answers": [
+      "Lievito di birra",
+      "Lievito madre",
+      "Bicarbonato",
+      "Lievito chimico"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0168",
+    "category": "Cucina",
+    "difficulty": "difficile",
+    "text": "Cos'è l'umami tra i sapori fondamentali?",
+    "answers": [
+      "Il sapore dolce intenso",
+      "Il sapore saporito/di brodo",
+      "Il sapore amaro",
+      "Il sapore acido"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0169",
+    "category": "Letteratura",
+    "difficulty": "facile",
+    "text": "Chi ha scritto \"I Promessi Sposi\"?",
+    "answers": [
+      "Dante Alighieri",
+      "Alessandro Manzoni",
+      "Giovanni Verga",
+      "Italo Calvino"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0170",
+    "category": "Letteratura",
+    "difficulty": "facile",
+    "text": "Chi è l'autore della \"Divina Commedia\"?",
+    "answers": [
+      "Petrarca",
+      "Boccaccio",
+      "Dante Alighieri",
+      "Ariosto"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0171",
+    "category": "Letteratura",
+    "difficulty": "facile",
+    "text": "Chi ha scritto \"Romeo e Giulietta\"?",
+    "answers": [
+      "Charles Dickens",
+      "William Shakespeare",
+      "Oscar Wilde",
+      "Jane Austen"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0172",
+    "category": "Letteratura",
+    "difficulty": "facile",
+    "text": "Chi è l'autore di \"Harry Potter\"?",
+    "answers": [
+      "J.R.R. Tolkien",
+      "J.K. Rowling",
+      "C.S. Lewis",
+      "Roald Dahl"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0173",
+    "category": "Letteratura",
+    "difficulty": "facile",
+    "text": "Chi ha scritto \"Pinocchio\"?",
+    "answers": [
+      "Gianni Rodari",
+      "Carlo Collodi",
+      "Italo Calvino",
+      "Edmondo De Amicis"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0174",
+    "category": "Letteratura",
+    "difficulty": "facile",
+    "text": "In quale libro compare il personaggio di Sherlock Holmes?",
+    "answers": [
+      "Creato da Arthur Conan Doyle",
+      "Creato da Agatha Christie",
+      "Creato da Edgar Allan Poe",
+      "Creato da Charles Dickens"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0175",
+    "category": "Letteratura",
+    "difficulty": "facile",
+    "text": "Chi ha scritto \"1984\"?",
+    "answers": [
+      "Aldous Huxley",
+      "George Orwell",
+      "Ray Bradbury",
+      "Philip K. Dick"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0176",
+    "category": "Letteratura",
+    "difficulty": "facile",
+    "text": "Chi è l'autore de \"Il piccolo principe\"?",
+    "answers": [
+      "Antoine de Saint-Exupéry",
+      "Jules Verne",
+      "Victor Hugo",
+      "Albert Camus"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0177",
+    "category": "Letteratura",
+    "difficulty": "medio",
+    "text": "Chi ha scritto \"Cent'anni di solitudine\"?",
+    "answers": [
+      "Jorge Luis Borges",
+      "Gabriel García Márquez",
+      "Mario Vargas Llosa",
+      "Pablo Neruda"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0178",
+    "category": "Letteratura",
+    "difficulty": "medio",
+    "text": "Quale opera di Italo Calvino narra le città immaginarie descritte a Kublai Khan?",
+    "answers": [
+      "Il barone rampante",
+      "Le città invisibili",
+      "Il sentiero dei nidi di ragno",
+      "Le cosmicomiche"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0179",
+    "category": "Letteratura",
+    "difficulty": "medio",
+    "text": "Chi ha scritto \"Delitto e castigo\"?",
+    "answers": [
+      "Tolstoj",
+      "Dostoevskij",
+      "Cechov",
+      "Gogol"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0180",
+    "category": "Letteratura",
+    "difficulty": "medio",
+    "text": "Chi è l'autore di \"Orgoglio e pregiudizio\"?",
+    "answers": [
+      "Charlotte Brontë",
+      "Jane Austen",
+      "Virginia Woolf",
+      "Emily Brontë"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0181",
+    "category": "Letteratura",
+    "difficulty": "medio",
+    "text": "Quale poeta italiano scrisse \"L'infinito\"?",
+    "answers": [
+      "Ugo Foscolo",
+      "Giacomo Leopardi",
+      "Giosuè Carducci",
+      "Gabriele D'Annunzio"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0182",
+    "category": "Letteratura",
+    "difficulty": "medio",
+    "text": "Chi ha scritto la trilogia de \"Il Signore degli Anelli\"?",
+    "answers": [
+      "C.S. Lewis",
+      "J.R.R. Tolkien",
+      "George R.R. Martin",
+      "Terry Pratchett"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0183",
+    "category": "Letteratura",
+    "difficulty": "medio",
+    "text": "Quale scrittore siciliano ha scritto \"I Malavoglia\"?",
+    "answers": [
+      "Luigi Pirandello",
+      "Giovanni Verga",
+      "Leonardo Sciascia",
+      "Vitaliano Brancati"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0184",
+    "category": "Letteratura",
+    "difficulty": "medio",
+    "text": "Chi ha scritto \"Le avventure di Alice nel Paese delle Meraviglie\"?",
+    "answers": [
+      "Lewis Carroll",
+      "J.M. Barrie",
+      "Rudyard Kipling",
+      "Beatrix Potter"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0185",
+    "category": "Letteratura",
+    "difficulty": "difficile",
+    "text": "Chi ha scritto il romanzo \"Se questo è un uomo\"?",
+    "answers": [
+      "Elie Wiesel",
+      "Primo Levi",
+      "Italo Svevo",
+      "Cesare Pavese"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0186",
+    "category": "Letteratura",
+    "difficulty": "difficile",
+    "text": "In quale opera Italo Svevo racconta la storia di Zeno Cosini?",
+    "answers": [
+      "Una vita",
+      "Senilità",
+      "La coscienza di Zeno",
+      "Il vecchio e la fanciulla"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0187",
+    "category": "Letteratura",
+    "difficulty": "difficile",
+    "text": "Chi ha vinto il Premio Nobel per la Letteratura nel 1997?",
+    "answers": [
+      "Umberto Eco",
+      "Dario Fo",
+      "Italo Calvino",
+      "Grazia Deledda"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0188",
+    "category": "Letteratura",
+    "difficulty": "difficile",
+    "text": "Quale autore russo scrisse \"Guerra e pace\"?",
+    "answers": [
+      "Dostoevskij",
+      "Tolstoj",
+      "Turgenev",
+      "Gogol"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0189",
+    "category": "Letteratura",
+    "difficulty": "difficile",
+    "text": "Chi ha scritto il poema epico \"Orlando Furioso\"?",
+    "answers": [
+      "Torquato Tasso",
+      "Ludovico Ariosto",
+      "Matteo Maria Boiardo",
+      "Luigi Pulci"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0190",
+    "category": "Letteratura",
+    "difficulty": "difficile",
+    "text": "Quale scrittrice italiana vinse il Premio Nobel per la Letteratura nel 1926?",
+    "answers": [
+      "Natalia Ginzburg",
+      "Grazia Deledda",
+      "Elsa Morante",
+      "Alba de Céspedes"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0191",
+    "category": "Letteratura",
+    "difficulty": "difficile",
+    "text": "Chi ha scritto \"Il nome della rosa\"?",
+    "answers": [
+      "Umberto Eco",
+      "Antonio Tabucchi",
+      "Alessandro Baricco",
+      "Claudio Magris"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0192",
+    "category": "Letteratura",
+    "difficulty": "difficile",
+    "text": "In quale secolo visse il poeta Francesco Petrarca?",
+    "answers": [
+      "XIII-XIV secolo",
+      "XIV secolo",
+      "XV secolo",
+      "XII secolo"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0193",
+    "category": "Arte",
+    "difficulty": "facile",
+    "text": "Chi ha dipinto la Gioconda?",
+    "answers": [
+      "Michelangelo",
+      "Raffaello",
+      "Leonardo da Vinci",
+      "Botticelli"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0194",
+    "category": "Arte",
+    "difficulty": "facile",
+    "text": "Chi ha dipinto la volta della Cappella Sistina?",
+    "answers": [
+      "Leonardo da Vinci",
+      "Michelangelo",
+      "Raffaello",
+      "Donatello"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0195",
+    "category": "Arte",
+    "difficulty": "facile",
+    "text": "Quale pittore olandese si tagliò un orecchio?",
+    "answers": [
+      "Rembrandt",
+      "Vermeer",
+      "Van Gogh",
+      "Mondrian"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0196",
+    "category": "Arte",
+    "difficulty": "facile",
+    "text": "In quale città si trova il museo del Louvre?",
+    "answers": [
+      "Londra",
+      "Roma",
+      "Parigi",
+      "Madrid"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0197",
+    "category": "Arte",
+    "difficulty": "facile",
+    "text": "Chi ha scolpito il \"David\" conservato a Firenze?",
+    "answers": [
+      "Donatello",
+      "Michelangelo",
+      "Bernini",
+      "Cellini"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0198",
+    "category": "Arte",
+    "difficulty": "facile",
+    "text": "Quale movimento artistico è associato a Pablo Picasso e Georges Braque?",
+    "answers": [
+      "Impressionismo",
+      "Cubismo",
+      "Futurismo",
+      "Surrealismo"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0199",
+    "category": "Arte",
+    "difficulty": "facile",
+    "text": "Chi ha dipinto \"La notte stellata\"?",
+    "answers": [
+      "Monet",
+      "Van Gogh",
+      "Renoir",
+      "Degas"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0200",
+    "category": "Arte",
+    "difficulty": "facile",
+    "text": "In quale città si trova la Cappella Sistina?",
+    "answers": [
+      "Firenze",
+      "Roma (Città del Vaticano)",
+      "Venezia",
+      "Milano"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0201",
+    "category": "Arte",
+    "difficulty": "medio",
+    "text": "Quale artista fondò il movimento futurista in Italia?",
+    "answers": [
+      "Umberto Boccioni",
+      "Filippo Tommaso Marinetti",
+      "Carlo Carrà",
+      "Giacomo Balla"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0202",
+    "category": "Arte",
+    "difficulty": "medio",
+    "text": "Chi ha dipinto \"Guernica\"?",
+    "answers": [
+      "Salvador Dalí",
+      "Pablo Picasso",
+      "Joan Miró",
+      "Diego Rivera"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0203",
+    "category": "Arte",
+    "difficulty": "medio",
+    "text": "Quale scultore ha realizzato \"L'estasi di Santa Teresa\"?",
+    "answers": [
+      "Michelangelo",
+      "Gian Lorenzo Bernini",
+      "Canova",
+      "Donatello"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0204",
+    "category": "Arte",
+    "difficulty": "medio",
+    "text": "Chi è considerato il padre dell'Impressionismo?",
+    "answers": [
+      "Claude Monet",
+      "Edgar Degas",
+      "Paul Cézanne",
+      "Édouard Manet"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0205",
+    "category": "Arte",
+    "difficulty": "medio",
+    "text": "In quale galleria fiorentina si trova la \"Nascita di Venere\" di Botticelli?",
+    "answers": [
+      "Palazzo Pitti",
+      "Galleria degli Uffizi",
+      "Bargello",
+      "Accademia"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0206",
+    "category": "Arte",
+    "difficulty": "medio",
+    "text": "Quale pittore spagnolo è noto per il surrealismo e i baffi arricciati?",
+    "answers": [
+      "Joan Miró",
+      "Salvador Dalí",
+      "Francisco Goya",
+      "Diego Velázquez"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0207",
+    "category": "Arte",
+    "difficulty": "medio",
+    "text": "Chi ha dipinto \"Il bacio\" (1907-1908)?",
+    "answers": [
+      "Egon Schiele",
+      "Gustav Klimt",
+      "Edvard Munch",
+      "Oskar Kokoschka"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0208",
+    "category": "Arte",
+    "difficulty": "medio",
+    "text": "Quale corrente artistica usava puntini di colore puro (pointillisme)?",
+    "answers": [
+      "Fauvismo",
+      "Puntinismo/Neoimpressionismo",
+      "Cubismo",
+      "Dadaismo"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0209",
+    "category": "Arte",
+    "difficulty": "difficile",
+    "text": "Chi ha dipinto \"Le Meninas\"?",
+    "answers": [
+      "Francisco Goya",
+      "Diego Velázquez",
+      "El Greco",
+      "Bartolomé Murillo"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0210",
+    "category": "Arte",
+    "difficulty": "difficile",
+    "text": "Quale artista rinascimentale scrisse anche trattati di anatomia e ingegneria?",
+    "answers": [
+      "Raffaello",
+      "Michelangelo",
+      "Leonardo da Vinci",
+      "Donatello"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0211",
+    "category": "Arte",
+    "difficulty": "difficile",
+    "text": "Chi ha realizzato le porte del Battistero di Firenze dette \"Porta del Paradiso\"?",
+    "answers": [
+      "Donatello",
+      "Lorenzo Ghiberti",
+      "Filippo Brunelleschi",
+      "Andrea Pisano"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0212",
+    "category": "Arte",
+    "difficulty": "difficile",
+    "text": "Quale pittore fiammingo dipinse \"Il Giardino delle Delizie\"?",
+    "answers": [
+      "Jan van Eyck",
+      "Hieronymus Bosch",
+      "Pieter Bruegel il Vecchio",
+      "Rogier van der Weyden"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0213",
+    "category": "Arte",
+    "difficulty": "difficile",
+    "text": "Chi era il mecenate della famiglia che dominò il Rinascimento fiorentino?",
+    "answers": [
+      "Famiglia Sforza",
+      "Famiglia Medici",
+      "Famiglia Borgia",
+      "Famiglia Visconti"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0214",
+    "category": "Arte",
+    "difficulty": "difficile",
+    "text": "Quale artista concettuale espose un orinatoio firmato \"R. Mutt\" nel 1917?",
+    "answers": [
+      "Man Ray",
+      "Marcel Duchamp",
+      "Kazimir Malevich",
+      "Piet Mondrian"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0215",
+    "category": "Arte",
+    "difficulty": "difficile",
+    "text": "Chi ha dipinto il ciclo di affreschi con \"La scuola di Atene\"?",
+    "answers": [
+      "Michelangelo",
+      "Raffaello",
+      "Leonardo da Vinci",
+      "Perugino"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0216",
+    "category": "Arte",
+    "difficulty": "difficile",
+    "text": "Quale scultura di Auguste Rodin raffigura un uomo pensieroso seduto?",
+    "answers": [
+      "Il bacio",
+      "Il pensatore",
+      "I borghesi di Calais",
+      "La porta dell'inferno"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0217",
+    "category": "Tecnologia",
+    "difficulty": "facile",
+    "text": "Chi ha fondato Microsoft?",
+    "answers": [
+      "Steve Jobs",
+      "Bill Gates",
+      "Mark Zuckerberg",
+      "Larry Page"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0218",
+    "category": "Tecnologia",
+    "difficulty": "facile",
+    "text": "Cosa significa l'acronimo \"PC\"?",
+    "answers": [
+      "Personal Computer",
+      "Public Connection",
+      "Private Code",
+      "Program Control"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0219",
+    "category": "Tecnologia",
+    "difficulty": "facile",
+    "text": "Quale azienda ha creato l'iPhone?",
+    "answers": [
+      "Samsung",
+      "Google",
+      "Apple",
+      "Nokia"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0220",
+    "category": "Tecnologia",
+    "difficulty": "facile",
+    "text": "Cosa si intende comunemente con \"www\"?",
+    "answers": [
+      "World Wide Web",
+      "World Web Wide",
+      "Wide World Web",
+      "Web World Wide"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0221",
+    "category": "Tecnologia",
+    "difficulty": "facile",
+    "text": "Quale social network è associato al logo di un uccellino azzurro (nome storico)?",
+    "answers": [
+      "Instagram",
+      "Twitter (poi X)",
+      "Facebook",
+      "LinkedIn"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0222",
+    "category": "Tecnologia",
+    "difficulty": "facile",
+    "text": "Cosa significa l'acronimo \"USB\"?",
+    "answers": [
+      "Universal Serial Bus",
+      "United System Board",
+      "Universal System Bus",
+      "United Serial Board"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0223",
+    "category": "Tecnologia",
+    "difficulty": "facile",
+    "text": "Chi ha co-fondato Apple insieme a Steve Wozniak?",
+    "answers": [
+      "Bill Gates",
+      "Steve Jobs",
+      "Jeff Bezos",
+      "Elon Musk"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0224",
+    "category": "Tecnologia",
+    "difficulty": "facile",
+    "text": "Quale motore di ricerca è il più usato al mondo?",
+    "answers": [
+      "Bing",
+      "Yahoo",
+      "Google",
+      "DuckDuckGo"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "q0225",
+    "category": "Tecnologia",
+    "difficulty": "medio",
+    "text": "In quale anno è stato fondato Facebook?",
+    "answers": [
+      "2002",
+      "2004",
+      "2006",
+      "2008"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0226",
+    "category": "Tecnologia",
+    "difficulty": "medio",
+    "text": "Cosa significa l'acronimo \"AI\" in italiano?",
+    "answers": [
+      "Automazione Intelligente",
+      "Intelligenza Artificiale",
+      "Algoritmo Interattivo",
+      "Analisi Informatica"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0227",
+    "category": "Tecnologia",
+    "difficulty": "medio",
+    "text": "Quale linguaggio di programmazione prende il nome da un serpente?",
+    "answers": [
+      "Java",
+      "Python",
+      "Ruby",
+      "C++"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0228",
+    "category": "Tecnologia",
+    "difficulty": "medio",
+    "text": "Chi ha co-fondato Google insieme a Larry Page?",
+    "answers": [
+      "Sergey Brin",
+      "Steve Wozniak",
+      "Elon Musk",
+      "Jeff Bezos"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0229",
+    "category": "Tecnologia",
+    "difficulty": "medio",
+    "text": "Cosa significa l'acronimo \"HTML\"?",
+    "answers": [
+      "HyperText Markup Language",
+      "High Text Modern Language",
+      "HyperTransfer Markup Language",
+      "Home Tool Markup Language"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0230",
+    "category": "Tecnologia",
+    "difficulty": "medio",
+    "text": "Quale azienda ha sviluppato il sistema operativo Android?",
+    "answers": [
+      "Apple",
+      "Google",
+      "Microsoft",
+      "Samsung"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0231",
+    "category": "Tecnologia",
+    "difficulty": "medio",
+    "text": "Cosa indica la sigla \"RAM\" in un computer?",
+    "answers": [
+      "Read Access Memory",
+      "Random Access Memory",
+      "Rapid Access Module",
+      "Read And Modify"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0232",
+    "category": "Tecnologia",
+    "difficulty": "medio",
+    "text": "In quale anno è uscito il primo iPhone?",
+    "answers": [
+      "2005",
+      "2007",
+      "2009",
+      "2010"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0233",
+    "category": "Tecnologia",
+    "difficulty": "difficile",
+    "text": "Chi è considerato l'inventore del World Wide Web?",
+    "answers": [
+      "Vint Cerf",
+      "Tim Berners-Lee",
+      "Alan Turing",
+      "Bill Gates"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0234",
+    "category": "Tecnologia",
+    "difficulty": "difficile",
+    "text": "Quale algoritmo di crittografia asimmetrica prende il nome dalle iniziali dei suoi inventori?",
+    "answers": [
+      "AES",
+      "RSA",
+      "SHA",
+      "DES"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0235",
+    "category": "Tecnologia",
+    "difficulty": "difficile",
+    "text": "In quale decennio è nato il linguaggio di programmazione C?",
+    "answers": [
+      "Anni '60",
+      "Anni '70",
+      "Anni '80",
+      "Anni '50"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0236",
+    "category": "Tecnologia",
+    "difficulty": "difficile",
+    "text": "Chi ha proposto per primo il concetto di \"macchina universale\" alla base dell'informatica moderna?",
+    "answers": [
+      "John von Neumann",
+      "Alan Turing",
+      "Charles Babbage",
+      "Ada Lovelace"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0237",
+    "category": "Tecnologia",
+    "difficulty": "difficile",
+    "text": "Quale azienda ha sviluppato il primo microprocessore commerciale, l'Intel 4004?",
+    "answers": [
+      "IBM",
+      "Intel",
+      "Texas Instruments",
+      "Motorola"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0238",
+    "category": "Tecnologia",
+    "difficulty": "difficile",
+    "text": "Come si chiama il protocollo alla base della trasmissione dati di internet insieme a IP?",
+    "answers": [
+      "FTP",
+      "TCP",
+      "SMTP",
+      "HTTP"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0239",
+    "category": "Tecnologia",
+    "difficulty": "difficile",
+    "text": "Chi è considerata la prima programmatrice della storia?",
+    "answers": [
+      "Grace Hopper",
+      "Ada Lovelace",
+      "Katherine Johnson",
+      "Hedy Lamarr"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0240",
+    "category": "Tecnologia",
+    "difficulty": "difficile",
+    "text": "Quale azienda ha creato il linguaggio Java?",
+    "answers": [
+      "Microsoft",
+      "Sun Microsystems",
+      "IBM",
+      "Oracle (dall'inizio)"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "q0241",
+    "category": "Fisica",
+    "difficulty": "facile",
+    "text": "Qual è l'unità di misura della forza nel Sistema Internazionale?",
+    "answers": [
+      "Newton",
+      "Joule",
+      "Watt",
+      "Pascal"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0242",
+    "category": "Fisica",
+    "difficulty": "facile",
+    "text": "Chi ha formulato la legge di gravitazione universale?",
+    "answers": [
+      "Isaac Newton",
+      "Albert Einstein",
+      "Galileo Galilei",
+      "Niels Bohr"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0243",
+    "category": "Fisica",
+    "difficulty": "facile",
+    "text": "Qual è, approssimativamente, la velocità della luce nel vuoto?",
+    "answers": [
+      "300.000 km/s",
+      "150.000 km/s",
+      "1.000.000 km/s",
+      "30.000 km/s"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0244",
+    "category": "Fisica",
+    "difficulty": "facile",
+    "text": "Quale strumento si usa per misurare la temperatura?",
+    "answers": [
+      "Termometro",
+      "Barometro",
+      "Amperometro",
+      "Manometro"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0245",
+    "category": "Fisica",
+    "difficulty": "facile",
+    "text": "Come si chiama il passaggio di stato da liquido a gassoso?",
+    "answers": [
+      "Evaporazione",
+      "Condensazione",
+      "Sublimazione",
+      "Solidificazione"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0246",
+    "category": "Fisica",
+    "difficulty": "facile",
+    "text": "Qual è l'unità di misura dell'energia nel Sistema Internazionale?",
+    "answers": [
+      "Joule",
+      "Newton",
+      "Watt",
+      "Volt"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0247",
+    "category": "Fisica",
+    "difficulty": "facile",
+    "text": "Cosa misura un amperometro?",
+    "answers": [
+      "La corrente elettrica",
+      "La tensione",
+      "La resistenza",
+      "La potenza"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0248",
+    "category": "Fisica",
+    "difficulty": "facile",
+    "text": "Quale forza ci tiene ancorati al suolo?",
+    "answers": [
+      "La forza di gravità",
+      "La forza elettrica",
+      "La forza magnetica",
+      "La forza nucleare"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0249",
+    "category": "Fisica",
+    "difficulty": "medio",
+    "text": "Qual è la formula della seconda legge della dinamica di Newton?",
+    "answers": [
+      "F = m × a",
+      "F = m / a",
+      "F = m + a",
+      "F = m² × a"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0250",
+    "category": "Fisica",
+    "difficulty": "medio",
+    "text": "Come si chiama l'unità di misura della potenza?",
+    "answers": [
+      "Watt",
+      "Joule",
+      "Newton",
+      "Ampere"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0251",
+    "category": "Fisica",
+    "difficulty": "medio",
+    "text": "Chi ha proposto la teoria della relatività ristretta?",
+    "answers": [
+      "Albert Einstein",
+      "Isaac Newton",
+      "Max Planck",
+      "Werner Heisenberg"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0252",
+    "category": "Fisica",
+    "difficulty": "medio",
+    "text": "Cosa afferma, in sintesi, il principio di Archimede?",
+    "answers": [
+      "Un corpo immerso in un fluido riceve una spinta verso l'alto pari al peso del fluido spostato",
+      "Ogni azione genera una reazione uguale e contraria",
+      "Il calore passa sempre dal corpo più freddo al corpo più caldo",
+      "L'energia si trasforma ma non si crea né si distrugge"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0253",
+    "category": "Fisica",
+    "difficulty": "medio",
+    "text": "Qual è l'unità di misura della carica elettrica?",
+    "answers": [
+      "Coulomb",
+      "Ampere",
+      "Volt",
+      "Ohm"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0254",
+    "category": "Fisica",
+    "difficulty": "medio",
+    "text": "Come si chiama il fenomeno per cui la luce cambia direzione passando da un mezzo a un altro?",
+    "answers": [
+      "Rifrazione",
+      "Riflessione",
+      "Diffrazione",
+      "Polarizzazione"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0255",
+    "category": "Fisica",
+    "difficulty": "medio",
+    "text": "Quale scienziato ha formulato le tre leggi del moto planetario?",
+    "answers": [
+      "Keplero",
+      "Copernico",
+      "Galileo",
+      "Tycho Brahe"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0256",
+    "category": "Fisica",
+    "difficulty": "medio",
+    "text": "Qual è l'unità di misura della resistenza elettrica?",
+    "answers": [
+      "Ohm",
+      "Ampere",
+      "Volt",
+      "Watt"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0257",
+    "category": "Fisica",
+    "difficulty": "difficile",
+    "text": "Qual è il valore approssimativo della costante di Planck?",
+    "answers": [
+      "6,626 × 10⁻³⁴ J·s",
+      "3 × 10⁸ J·s",
+      "1,6 × 10⁻¹⁹ J·s",
+      "9,8 × 10⁰ J·s"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0258",
+    "category": "Fisica",
+    "difficulty": "difficile",
+    "text": "Come si chiama il principio secondo cui non è possibile conoscere con precisione arbitraria sia la posizione sia la quantità di moto di una particella?",
+    "answers": [
+      "Principio di indeterminazione di Heisenberg",
+      "Principio di esclusione di Pauli",
+      "Principio di sovrapposizione",
+      "Principio di equivalenza"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0259",
+    "category": "Fisica",
+    "difficulty": "difficile",
+    "text": "Qual è l'unità di misura della capacità elettrica?",
+    "answers": [
+      "Farad",
+      "Henry",
+      "Ohm",
+      "Tesla"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0260",
+    "category": "Fisica",
+    "difficulty": "difficile",
+    "text": "Chi ha scoperto il neutrone, nel 1932?",
+    "answers": [
+      "James Chadwick",
+      "Ernest Rutherford",
+      "Niels Bohr",
+      "Enrico Fermi"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0261",
+    "category": "Fisica",
+    "difficulty": "difficile",
+    "text": "Cosa descrive l'equazione di Schrödinger?",
+    "answers": [
+      "L'evoluzione nel tempo dello stato quantistico di un sistema",
+      "La traiettoria di un proiettile",
+      "La dilatazione dei tempi in relatività",
+      "La distribuzione di carica in un conduttore"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0262",
+    "category": "Fisica",
+    "difficulty": "difficile",
+    "text": "Qual è la particella mediatrice della forza elettromagnetica?",
+    "answers": [
+      "Il fotone",
+      "Il gluone",
+      "Il bosone di Higgs",
+      "Il gravitone"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0263",
+    "category": "Fisica",
+    "difficulty": "difficile",
+    "text": "Come si chiama l'unità di misura del flusso magnetico?",
+    "answers": [
+      "Weber",
+      "Tesla",
+      "Henry",
+      "Farad"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0264",
+    "category": "Fisica",
+    "difficulty": "difficile",
+    "text": "Chi ha formulato le equazioni che unificano elettricità e magnetismo?",
+    "answers": [
+      "James Clerk Maxwell",
+      "Michael Faraday",
+      "Nikola Tesla",
+      "Heinrich Hertz"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0265",
+    "category": "Matematica",
+    "difficulty": "facile",
+    "text": "Quanto fa 7 × 8?",
+    "answers": [
+      "56",
+      "54",
+      "64",
+      "48"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0266",
+    "category": "Matematica",
+    "difficulty": "facile",
+    "text": "Come si chiama un triangolo con tutti i lati uguali?",
+    "answers": [
+      "Equilatero",
+      "Isoscele",
+      "Scaleno",
+      "Rettangolo"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0267",
+    "category": "Matematica",
+    "difficulty": "facile",
+    "text": "Quanto misura la somma degli angoli interni di un triangolo?",
+    "answers": [
+      "180°",
+      "90°",
+      "360°",
+      "270°"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0268",
+    "category": "Matematica",
+    "difficulty": "facile",
+    "text": "Quanto fa 15 - 9?",
+    "answers": [
+      "6",
+      "5",
+      "7",
+      "4"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0269",
+    "category": "Matematica",
+    "difficulty": "facile",
+    "text": "Come si chiama il numero che si ottiene moltiplicando un numero per se stesso?",
+    "answers": [
+      "Quadrato",
+      "Cubo",
+      "Radice",
+      "Fattoriale"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0270",
+    "category": "Matematica",
+    "difficulty": "facile",
+    "text": "Quanti lati ha un esagono?",
+    "answers": [
+      "6",
+      "5",
+      "7",
+      "8"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0271",
+    "category": "Matematica",
+    "difficulty": "facile",
+    "text": "Quanto fa 100 diviso 4?",
+    "answers": [
+      "25",
+      "20",
+      "30",
+      "15"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0272",
+    "category": "Matematica",
+    "difficulty": "facile",
+    "text": "Come si chiama un numero divisibile solo per 1 e per se stesso?",
+    "answers": [
+      "Numero primo",
+      "Numero pari",
+      "Numero dispari",
+      "Numero composto"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0273",
+    "category": "Matematica",
+    "difficulty": "medio",
+    "text": "Quanto vale il numero Pi greco arrotondato alla seconda cifra decimale?",
+    "answers": [
+      "3,14",
+      "3,41",
+      "3,12",
+      "3,16"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0274",
+    "category": "Matematica",
+    "difficulty": "medio",
+    "text": "Qual è la formula per calcolare l'area di un cerchio di raggio r?",
+    "answers": [
+      "π × r²",
+      "2 × π × r",
+      "π × d",
+      "r² × 2"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0275",
+    "category": "Matematica",
+    "difficulty": "medio",
+    "text": "Quanto fa la radice quadrata di 144?",
+    "answers": [
+      "12",
+      "14",
+      "11",
+      "13"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0276",
+    "category": "Matematica",
+    "difficulty": "medio",
+    "text": "Come si definisce un'equazione di secondo grado?",
+    "answers": [
+      "Quadratica",
+      "Lineare",
+      "Cubica",
+      "Esponenziale"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0277",
+    "category": "Matematica",
+    "difficulty": "medio",
+    "text": "Quanto fa 9 al quadrato?",
+    "answers": [
+      "81",
+      "72",
+      "90",
+      "99"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0278",
+    "category": "Matematica",
+    "difficulty": "medio",
+    "text": "Come si chiama il teorema che lega i lati di un triangolo rettangolo?",
+    "answers": [
+      "Teorema di Pitagora",
+      "Teorema di Talete",
+      "Teorema di Euclide",
+      "Teorema di Fermat"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0279",
+    "category": "Matematica",
+    "difficulty": "medio",
+    "text": "Quanto fa 5 fattoriale (5!)?",
+    "answers": [
+      "120",
+      "100",
+      "60",
+      "24"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0280",
+    "category": "Matematica",
+    "difficulty": "medio",
+    "text": "Quanto misura la somma degli angoli interni di un quadrilatero?",
+    "answers": [
+      "360°",
+      "180°",
+      "270°",
+      "400°"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0281",
+    "category": "Matematica",
+    "difficulty": "difficile",
+    "text": "A quanto è approssimativamente uguale il numero di Nepero (e)?",
+    "answers": [
+      "2,718",
+      "3,14",
+      "1,618",
+      "1,414"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0282",
+    "category": "Matematica",
+    "difficulty": "difficile",
+    "text": "Qual è la derivata di x²?",
+    "answers": [
+      "2x",
+      "x",
+      "x²",
+      "2"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0283",
+    "category": "Matematica",
+    "difficulty": "difficile",
+    "text": "Come si chiama il numero irrazionale legato alla sezione aurea?",
+    "answers": [
+      "Numero aureo (phi)",
+      "Pi greco",
+      "Numero di Nepero",
+      "Unità immaginaria"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0284",
+    "category": "Matematica",
+    "difficulty": "difficile",
+    "text": "Cosa rappresenta l'unità immaginaria \"i\"?",
+    "answers": [
+      "La radice quadrata di -1",
+      "Il numero 1",
+      "Lo zero",
+      "L'infinito"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0285",
+    "category": "Matematica",
+    "difficulty": "difficile",
+    "text": "Come si chiama la branca della matematica che studia il cambiamento e le funzioni tramite derivate e integrali?",
+    "answers": [
+      "Analisi matematica",
+      "Algebra",
+      "Geometria",
+      "Statistica"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0286",
+    "category": "Matematica",
+    "difficulty": "difficile",
+    "text": "Qual è l'integrale indefinito di 1/x?",
+    "answers": [
+      "ln|x| + c",
+      "x²/2 + c",
+      "1/x² + c",
+      "e^x + c"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0287",
+    "category": "Matematica",
+    "difficulty": "difficile",
+    "text": "Come si chiama una matrice il cui determinante è uguale a zero?",
+    "answers": [
+      "Singolare",
+      "Identità",
+      "Diagonale",
+      "Simmetrica"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0288",
+    "category": "Matematica",
+    "difficulty": "difficile",
+    "text": "Quanto vale la somma 1 + 2 + 3 + ... + 100?",
+    "answers": [
+      "5050",
+      "5000",
+      "5150",
+      "4950"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0289",
+    "category": "Cultura generale",
+    "difficulty": "facile",
+    "text": "Quanti minuti ci sono in un'ora?",
+    "answers": [
+      "60",
+      "100",
+      "30",
+      "90"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0290",
+    "category": "Cultura generale",
+    "difficulty": "facile",
+    "text": "Come si chiama la moneta unica di gran parte dell'Unione Europea?",
+    "answers": [
+      "Euro",
+      "Dollaro",
+      "Sterlina",
+      "Franco"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0291",
+    "category": "Cultura generale",
+    "difficulty": "facile",
+    "text": "Quanti giorni ha il mese di febbraio in un anno bisestile?",
+    "answers": [
+      "29",
+      "28",
+      "30",
+      "31"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0292",
+    "category": "Cultura generale",
+    "difficulty": "facile",
+    "text": "Quale colore si ottiene mescolando il blu e il giallo?",
+    "answers": [
+      "Verde",
+      "Viola",
+      "Arancione",
+      "Marrone"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0293",
+    "category": "Cultura generale",
+    "difficulty": "facile",
+    "text": "Come si chiama l'organizzazione internazionale con sede a New York che riunisce quasi tutti gli stati del mondo?",
+    "answers": [
+      "ONU",
+      "NATO",
+      "UE",
+      "OMS"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0294",
+    "category": "Cultura generale",
+    "difficulty": "facile",
+    "text": "In quale giorno dell'anno si festeggia il Natale?",
+    "answers": [
+      "25 dicembre",
+      "6 gennaio",
+      "1 novembre",
+      "31 dicembre"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0295",
+    "category": "Cultura generale",
+    "difficulty": "facile",
+    "text": "Come si chiama il documento necessario per guidare un'automobile?",
+    "answers": [
+      "Patente",
+      "Passaporto",
+      "Tessera sanitaria",
+      "Carta d'identità"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0296",
+    "category": "Cultura generale",
+    "difficulty": "facile",
+    "text": "Quanti sensi principali si attribuiscono tradizionalmente all'essere umano?",
+    "answers": [
+      "5",
+      "4",
+      "6",
+      "3"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0297",
+    "category": "Cultura generale",
+    "difficulty": "medio",
+    "text": "Come si chiama l'alfabeto usato nelle comunicazioni radio (Alfa, Bravo, Charlie...)?",
+    "answers": [
+      "Alfabeto fonetico NATO",
+      "Alfabeto Morse",
+      "Alfabeto cirillico",
+      "Alfabeto braille"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0298",
+    "category": "Cultura generale",
+    "difficulty": "medio",
+    "text": "In quale città si trova la sede ufficiale del Parlamento Europeo?",
+    "answers": [
+      "Strasburgo",
+      "Bruxelles",
+      "Lussemburgo",
+      "Ginevra"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0299",
+    "category": "Cultura generale",
+    "difficulty": "medio",
+    "text": "Cosa significa l'acronimo \"PIL\"?",
+    "answers": [
+      "Prodotto Interno Lordo",
+      "Programma Investimenti Locali",
+      "Prodotto Industriale Lordo",
+      "Piano Integrato Lavoro"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0300",
+    "category": "Cultura generale",
+    "difficulty": "medio",
+    "text": "Quale organizzazione assegna il Premio Nobel per la Pace?",
+    "answers": [
+      "Il Comitato Nobel norvegese",
+      "L'ONU",
+      "L'Unione Europea",
+      "La Croce Rossa"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0301",
+    "category": "Cultura generale",
+    "difficulty": "medio",
+    "text": "Come si chiama il fenomeno meteorologico caratterizzato da un violento vento rotante a forma di imbuto?",
+    "answers": [
+      "Tornado",
+      "Terremoto",
+      "Tsunami",
+      "Eruzione"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0302",
+    "category": "Cultura generale",
+    "difficulty": "medio",
+    "text": "Quanti fusi orari si contano convenzionalmente nel mondo?",
+    "answers": [
+      "24",
+      "12",
+      "36",
+      "48"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0303",
+    "category": "Cultura generale",
+    "difficulty": "medio",
+    "text": "Cosa indica la sigla \"IVA\"?",
+    "answers": [
+      "Imposta sul Valore Aggiunto",
+      "Imposta Variabile Annuale",
+      "Indice di Valutazione Aziendale",
+      "Imposta Volontaria Annuale"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0304",
+    "category": "Cultura generale",
+    "difficulty": "medio",
+    "text": "In quale anno è entrato in vigore il Trattato di Maastricht, che ha istituito l'Unione Europea?",
+    "answers": [
+      "1993",
+      "1957",
+      "1999",
+      "2002"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0305",
+    "category": "Cultura generale",
+    "difficulty": "difficile",
+    "text": "Dove ha sede la Corte Penale Internazionale?",
+    "answers": [
+      "All'Aia",
+      "A Ginevra",
+      "A New York",
+      "A Strasburgo"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0306",
+    "category": "Cultura generale",
+    "difficulty": "difficile",
+    "text": "Cosa si intende con l'acronimo \"OGM\"?",
+    "answers": [
+      "Organismo Geneticamente Modificato",
+      "Organizzazione Governativa Mondiale",
+      "Ordine Generale Militare",
+      "Organismo Governativo Multilaterale"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0307",
+    "category": "Cultura generale",
+    "difficulty": "difficile",
+    "text": "Come si chiama la linea immaginaria, vicina al meridiano 180°, che segna il cambio di data sulla Terra?",
+    "answers": [
+      "Linea internazionale del cambiamento di data",
+      "Meridiano di Greenwich",
+      "Tropico del Cancro",
+      "Equatore"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0308",
+    "category": "Cultura generale",
+    "difficulty": "difficile",
+    "text": "Quale filosofo greco fu maestro di Alessandro Magno?",
+    "answers": [
+      "Aristotele",
+      "Platone",
+      "Socrate",
+      "Pitagora"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0309",
+    "category": "Cultura generale",
+    "difficulty": "difficile",
+    "text": "Cosa indica la sigla \"OMS\"?",
+    "answers": [
+      "Organizzazione Mondiale della Sanità",
+      "Organizzazione Mondiale dello Sport",
+      "Osservatorio Meteorologico Sociale",
+      "Organizzazione Multilaterale per la Salute"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0310",
+    "category": "Cultura generale",
+    "difficulty": "difficile",
+    "text": "Come si chiama il sistema di scrittura a punti in rilievo usato dai non vedenti?",
+    "answers": [
+      "Braille",
+      "Morse",
+      "Stenografia",
+      "Geroglifico"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0311",
+    "category": "Cultura generale",
+    "difficulty": "difficile",
+    "text": "Quale trattato ha istituito le basi della moneta unica europea?",
+    "answers": [
+      "Il Trattato di Maastricht",
+      "Il Trattato di Lisbona",
+      "Il Trattato di Roma",
+      "Il Trattato di Nizza"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0312",
+    "category": "Cultura generale",
+    "difficulty": "difficile",
+    "text": "Come si chiama il fenomeno economico caratterizzato da un aumento generale e prolungato dei prezzi?",
+    "answers": [
+      "Inflazione",
+      "Deflazione",
+      "Recessione",
+      "Stagflazione"
+    ],
+    "correctIndex": 0
+  }
+]
