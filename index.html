@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Quiz Party</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Decorazioni di sfondo in stile "studio TV" -->
+<div class="stage-lights" aria-hidden="true">
+  <span class="beam beam-1"></span>
+  <span class="beam beam-2"></span>
+  <span class="beam beam-3"></span>
+</div>
+<div class="confetti-layer" id="confetti-layer" aria-hidden="true"></div>
+
+<!-- PRESENTATORE: pupazzetto parlante + fumetto -->
+<div id="host-bubble" class="host-bubble hidden">
+  <div class="mascot" id="mascot">
+    <svg viewBox="0 0 120 120" class="mascot-svg">
+      <ellipse class="mascot-shadow" cx="60" cy="112" rx="30" ry="6"></ellipse>
+      <rect class="mascot-rod" x="56" y="92" width="8" height="26" rx="4"></rect>
+      <circle class="mascot-head" cx="60" cy="58" r="46"></circle>
+      <path class="mascot-ear mascot-ear-l" d="M18 50 a10 10 0 1 0 0.1 0"></path>
+      <path class="mascot-ear mascot-ear-r" d="M102 50 a10 10 0 1 1 -0.1 0"></path>
+      <g class="mascot-bowtie">
+        <polygon points="42,92 58,84 58,100" class="bow-yellow"></polygon>
+        <polygon points="78,92 62,84 62,100" class="bow-blue"></polygon>
+        <circle cx="60" cy="92" r="5" class="bow-center"></circle>
+      </g>
+      <path class="eyebrow eyebrow-l" d="M32 40 q10 -10 22 -2"></path>
+      <path class="eyebrow eyebrow-r" d="M66 38 q12 -8 22 2"></path>
+      <g class="eye eye-l"><circle cx="42" cy="52" r="9" class="eye-white"></circle><circle cx="42" cy="52" r="4" class="eye-pupil"></circle></g>
+      <g class="eye eye-r"><circle cx="78" cy="52" r="9" class="eye-white"></circle><circle cx="78" cy="52" r="4" class="eye-pupil"></circle></g>
+      <circle class="cheek cheek-l" cx="30" cy="66" r="6"></circle>
+      <circle class="cheek cheek-r" cx="90" cy="66" r="6"></circle>
+      <path class="mouth" id="mascot-mouth" d="M40 76 q20 10 40 0 q-20 18 -40 0 Z"></path>
+    </svg>
+  </div>
+  <div class="host-text-wrap">
+    <div class="host-text" id="host-text"></div>
+  </div>
+</div>
+
+<!-- HOME -->
+<section id="screen-home" class="screen active">
+  <div class="logo-wrap">
+    <span class="logo-star star-a">★</span>
+    <h1 class="logo">QUIZ<span>PARTY</span></h1>
+    <span class="logo-star star-b">★</span>
+  </div>
+  <p class="tagline">Il quiz a colori per famiglie e amici</p>
+
+  <div class="card">
+    <label>Il tuo nome</label>
+    <input id="input-nickname" type="text" maxlength="16" placeholder="Es. Fabio" />
+
+    <div class="btn-stack">
+      <button class="btn btn-primary" id="btn-goto-create">Crea partita</button>
+      <button class="btn btn-secondary" id="btn-goto-public">Partite pubbliche</button>
+      <button class="btn btn-secondary" id="btn-goto-join">Ho un codice</button>
+      <button class="btn btn-ghost" id="btn-goto-newquestion">Aggiungi una domanda</button>
+    </div>
+  </div>
+  <p class="error" id="home-error"></p>
+</section>
+
+<!-- CREA PARTITA -->
+<section id="screen-create" class="screen">
+  <h2>Crea partita</h2>
+  <div class="card">
+    <label>Visibilità</label>
+    <div class="segmented" id="opt-visibility">
+      <button class="seg-btn active" data-value="private">Chiusa (con codice)</button>
+      <button class="seg-btn" data-value="public">Aperta (chiunque)</button>
+    </div>
+
+    <label>Modalità</label>
+    <div class="segmented" id="opt-mode">
+      <button class="seg-btn active" data-value="rush">Rush — punti in base alla velocità</button>
+      <button class="seg-btn" data-value="classic">Classica — punti fissi, 10s per rispondere</button>
+    </div>
+
+    <label>Livello</label>
+    <div class="segmented" id="opt-difficulty">
+      <button class="seg-btn" data-value="facile">Facile</button>
+      <button class="seg-btn active" data-value="misto">Misto</button>
+      <button class="seg-btn" data-value="medio">Medio</button>
+      <button class="seg-btn" data-value="difficile">Difficile</button>
+    </div>
+
+    <label>Categoria</label>
+    <select id="select-category"><option value="tutte">Tutte</option></select>
+    <p class="muted small" id="niche-hint">Le categorie speciali (es. Formula 1, Calcio...) non sono incluse in "Tutte": vanno scelte qui esplicitamente.</p>
+
+    <label>Presentatore</label>
+    <div class="segmented" id="opt-hostmode">
+      <button class="seg-btn active" data-value="family">Family friendly (default)</button>
+      <button class="seg-btn" data-value="unfiltered">Sboccato — niente filtri 🔞</button>
+    </div>
+    <p class="error" id="hostmode-warning" style="display:none">⚠️ Il presentatore "sboccato" usa un linguaggio diretto, sarcastico e a tratti volgare (nessun contenuto discriminatorio, solo prese in giro sul gioco). Adatto a un pubblico adulto.</p>
+
+    <button class="btn btn-primary" id="btn-create-confirm">Crea la partita</button>
+    <button class="btn btn-ghost" id="btn-create-back">Indietro</button>
+  </div>
+  <p class="error" id="create-error"></p>
+</section>
+
+<!-- PARTITE PUBBLICHE -->
+<section id="screen-public" class="screen">
+  <h2>Partite pubbliche</h2>
+  <div class="card">
+    <div id="public-list" class="public-list"><p class="muted">Ricerca in corso...</p></div>
+    <button class="btn btn-ghost" id="btn-public-back">Indietro</button>
+  </div>
+</section>
+
+<!-- UNISCITI CON CODICE -->
+<section id="screen-join" class="screen">
+  <h2>Unisciti a una partita</h2>
+  <div class="card">
+    <label>Codice partita</label>
+    <input id="input-code" type="text" maxlength="5" placeholder="ES. AB12C" style="text-transform:uppercase" />
+    <button class="btn btn-primary" id="btn-join-confirm">Entra</button>
+    <button class="btn btn-ghost" id="btn-join-back">Indietro</button>
+  </div>
+  <p class="error" id="join-error"></p>
+</section>
+
+<!-- NUOVA DOMANDA -->
+<section id="screen-newquestion" class="screen">
+  <h2>Aggiungi una domanda</h2>
+  <div class="card">
+    <label>Categoria</label>
+    <input id="nq-category" type="text" placeholder="Es. Storia" list="nq-category-list" />
+    <datalist id="nq-category-list"></datalist>
+
+    <label>Difficoltà</label>
+    <div class="segmented" id="nq-difficulty">
+      <button class="seg-btn active" data-value="facile">Facile</button>
+      <button class="seg-btn" data-value="medio">Medio</button>
+      <button class="seg-btn" data-value="difficile">Difficile</button>
+    </div>
+
+    <label>Domanda</label>
+    <input id="nq-text" type="text" placeholder="Testo della domanda" />
+
+    <label class="answer-label answer-yellow">Risposta gialla</label>
+    <input id="nq-a0" type="text" />
+    <label class="answer-label answer-blue">Risposta blu</label>
+    <input id="nq-a1" type="text" />
+    <label class="answer-label answer-orange">Risposta arancione</label>
+    <input id="nq-a2" type="text" />
+    <label class="answer-label answer-green">Risposta verde</label>
+    <input id="nq-a3" type="text" />
+
+    <label>Qual è quella corretta?</label>
+    <div class="segmented" id="nq-correct">
+      <button class="seg-btn active" data-value="0">Gialla</button>
+      <button class="seg-btn" data-value="1">Blu</button>
+      <button class="seg-btn" data-value="2">Arancione</button>
+      <button class="seg-btn" data-value="3">Verde</button>
+    </div>
+
+    <button class="btn btn-primary" id="btn-nq-submit">Salva domanda</button>
+    <button class="btn btn-ghost" id="btn-nq-back">Indietro</button>
+  </div>
+  <p class="error" id="nq-error"></p>
+  <p class="success" id="nq-success"></p>
+</section>
+
+<!-- LOBBY -->
+<section id="screen-lobby" class="screen">
+  <h2>Sala d'attesa</h2>
+  <div class="card">
+    <div id="lobby-code-wrap" class="lobby-code-wrap hidden">
+      <p class="muted">Codice partita</p>
+      <div class="lobby-code" id="lobby-code"></div>
+    </div>
+    <p class="muted" id="lobby-settings"></p>
+    <h3>Giocatori</h3>
+    <ul id="lobby-players" class="player-list"></ul>
+    <button class="btn btn-primary" id="btn-start-game">Avvia partita</button>
+    <p class="muted" id="lobby-wait-msg">In attesa che il presentatore avvii la partita...</p>
+  </div>
+  <p class="error" id="lobby-error"></p>
+</section>
+
+<!-- GIOCO -->
+<section id="screen-game" class="screen">
+  <div class="game-top">
+    <span id="game-match-label" class="pill pill-match"></span>
+    <span id="game-phase-label" class="pill"></span>
+    <span id="game-progress" class="pill"></span>
+    <span id="game-category" class="pill"></span>
+  </div>
+
+  <div class="timer-track"><div class="timer-fill" id="timer-fill"></div></div>
+
+  <div id="spectator-banner" class="spectator-banner hidden">Sei fuori dai giochi in questo turno: goditi lo spettacolo! 🍿</div>
+
+  <h2 id="question-text" class="question-text"></h2>
+
+  <div class="answers-grid">
+    <button class="answer-btn answer-yellow" data-idx="0"><span class="answer-gloss"></span><span class="answer-label-text"></span></button>
+    <button class="answer-btn answer-blue" data-idx="1"><span class="answer-gloss"></span><span class="answer-label-text"></span></button>
+    <button class="answer-btn answer-orange" data-idx="2"><span class="answer-gloss"></span><span class="answer-label-text"></span></button>
+    <button class="answer-btn answer-green" data-idx="3"><span class="answer-gloss"></span><span class="answer-label-text"></span></button>
+  </div>
+
+  <div id="mini-scoreboard" class="mini-scoreboard"></div>
+  <div id="elimination-chips" class="elimination-chips hidden"></div>
+</section>
+
+<!-- FASE 1 - RISULTATI -->
+<section id="screen-phase1end" class="screen">
+  <h2>Fine della prima fase!</h2>
+  <div class="card">
+    <p class="muted">Passano alla fase a eliminazione i migliori classificati:</p>
+    <ol id="phase1-standings" class="standings-list"></ol>
+  </div>
+</section>
+
+<!-- INIZIO FASE A ELIMINAZIONE -->
+<section id="screen-elimination-intro" class="screen">
+  <h2>⚔️ Fase a eliminazione ⚔️</h2>
+  <div class="card">
+    <p class="muted">Stessa domanda per tutti: chi sbaglia è fuori. Se sbagliano tutti, si va avanti lo stesso. Si continua all'infinito, finché non resta un solo imbattuto.</p>
+    <ul id="elimination-qualifiers" class="player-list"></ul>
+  </div>
+</section>
+
+<!-- FINALE -->
+<section id="screen-final" class="screen">
+  <h2 class="winner-title">🏆 Fine partita 🏆</h2>
+  <div class="card">
+    <div class="podium" id="podium"></div>
+    <div id="final-winner" class="final-winner"></div>
+    <h3>Classifica di questa partita</h3>
+    <ol id="final-standings" class="standings-list"></ol>
+
+    <h3>Classifica di sessione (cumulativa)</h3>
+    <p class="muted small">1000 pt al 1°, 500 pt al 2°, 250 pt al 3° posto di ogni partita giocata in questa sessione.</p>
+    <ol id="session-standings" class="standings-list session-standings"></ol>
+
+    <button class="btn btn-primary" id="btn-play-again">Nuova partita (stessa sessione)</button>
+    <p class="muted" id="final-wait-msg">In attesa che il presentatore avvii una nuova partita...</p>
+    <button class="btn btn-ghost" id="btn-exit-session">Esci e torna alla home</button>
+  </div>
+</section>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

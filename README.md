@@ -32,6 +32,7 @@ Ho dovuto decidere alcuni dettagli che non avevi specificato — sono facilmente
 - **Classifica di sessione per nickname**: il punteggio cumulativo di sessione è associato al nickname scelto dal giocatore (non al socket/dispositivo), così regge anche se qualcuno si riconnette con una scheda diversa. Di conseguenza, due giocatori con lo stesso identico nickname nella stessa sessione condividerebbero il punteggio cumulativo: è un'ipotesi ragionevole per un gioco tra amici, ma tienilo a mente se il tuo gruppo ama i nomi doppi.
 - **Battute "a sorpresa" sulla classifica**: circa una volta ogni tre domande della Fase 1, con più di 2 giocatori in gioco, il presentatore ha una probabilità di prendere in giro chi è ultimo in classifica invece del commento standard. È volutamente casuale, per non essere ripetitivo.
 - **Codice partita**: 5 caratteri alfanumerici (senza caratteri ambigui tipo 0/O o 1/I).
+- **Categorie di nicchia sempre escluse da "Tutte"**: l'esclusione vale anche nei casi limite in cui il mazzo di domande stesse per esaurirsi durante una partita lunghissima (es. una fase a eliminazione infinita) — il gioco allarga la ricerca ignorando la difficoltà, mai la categoria. Chi vuole giocare solo a Formula 1 o solo a Calcio deve selezionarli esplicitamente dal menu categoria.
 
 ## Avviare il progetto in locale
 
@@ -78,7 +79,7 @@ Alternative equivalenti: **Railway.app**, **Fly.io**, oppure un piccolo VPS. Evi
 
 ## Come arrivare a 2000+ domande
 
-Il gioco parte con **312 domande** scritte a mano, divise in 13 categorie (Storia, Geografia, Scienza e Natura, Sport, Cinema e TV, Musica, Cucina, Letteratura, Arte, Tecnologia, Fisica, Matematica, Cultura generale) e 3 livelli di difficoltà. Scriverne 2000 di qualità a mano non era realistico in un'unica sessione, quindi il progetto è pensato per crescere in due modi:
+Il gioco parte con **408 domande** scritte a mano, divise in 17 categorie e 3 livelli di difficoltà. 13 categorie sono incluse nella modalità "Tutte" (Storia, Geografia, Scienza e Natura, Sport, Cinema e TV, Musica, Cucina, Letteratura, Arte, Tecnologia, Fisica, Matematica, Cultura generale). Altre 4 sono **categorie di nicchia** — Automobili e Motori, Formula 1, Ingegneria del Veicolo, Calcio — pensate per gruppi di appassionati: **non compaiono mai nella modalità "Tutte"**, vanno selezionate esplicitamente dal menu a tendina della categoria quando si crea la partita. Scriverne 2000 di qualità a mano non era realistico in un'unica sessione, quindi il progetto è pensato per crescere in due modi:
 
 1. **Dall'interno del gioco**: c'è una schermata "Aggiungi una domanda" per inserirne di nuove una alla volta (utile per far contribuire tutto il gruppo di amici).
 2. **In blocco via CSV**: usa lo script di importazione.
@@ -105,6 +106,12 @@ Il gioco parte con **312 domande** scritte a mano, divise in 13 categorie (Stori
 
 Il presentatore è un personaggio originale disegnato in SVG (non un'immagine, quindi resta leggero e si anima via CSS/JS: nessun asset grafico esterno da scaricare). Ogni battuta arriva dal server insieme a un "umore" (`neutral`, `happy`, `evil`, `laugh`, `shock`, `hype`, `celebrate`) che il client usa per cambiare bocca/sopracciglia del pupazzo e farlo "parlare" (bocca animata) mentre il fumetto è a schermo. Le frasi sono tutte in `server/lib/Host.js`, organizzate per momento di gioco: aggiungerne di nuove è questione di aggiungere righe agli array esistenti.
 
+**Due modalità del presentatore**, scelte da chi crea la partita:
+- **Family friendly** (default): battute pungenti ma senza turpiloquio, adatte a tutti.
+- **Sboccato 🔞**: linguaggio diretto, sarcastico, occasionalmente scurrile. Le prese in giro restano sempre rivolte alla prestazione nel gioco (risposte sbagliate, classifica), mai a caratteristiche personali di chi gioca. La lobby mostra chiaramente ai giocatori quale modalità è attiva prima di iniziare, così nessuno viene colto di sorpresa.
+
+**Battute a tema per categoria**: quando la domanda in corso appartiene a una categoria che si presta a un gioco di parole (per ora: Formula 1, Automobili e Motori, Ingegneria del Veicolo, Calcio), il presentatore ha una probabilità di scegliere una battuta scritta apposta sul tema invece di quella generica (es. "esce di pista con quella risposta" per una risposta sbagliata in Formula 1, "cartellino rosso" per il Calcio). Non è garantito che succeda ad ogni domanda — è voluto, per non essere ripetitivo — ma capita spesso ("quando possibile", come richiesto). Il meccanismo è generico (`CATEGORY_LINES` in `Host.js`): si può estendere ad altre categorie aggiungendo nuove voci nello stesso formato.
+
 ## Struttura del progetto
 
 ```
@@ -116,7 +123,7 @@ buzz-clone/
 │   │   ├── GameRoom.js      # Stato di gioco: fase 1, eliminazione a oltranza, punteggio di sessione
 │   │   ├── QuestionBank.js  # Caricamento/filtro/aggiunta domande
 │   │   └── Host.js          # Battute (e "umori") del presentatore virtuale
-│   ├── data/questions.json  # Le 312 domande di base (+ quelle aggiunte)
+│   ├── data/questions.json  # Le 408 domande di base (+ quelle aggiunte)
 │   └── scripts/importCsv.js # Import in blocco da CSV
 └── public/
     ├── index.html            # Schermate + markup del pupazzo SVG
