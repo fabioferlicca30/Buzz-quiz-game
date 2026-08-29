@@ -2,8 +2,8 @@
 //
 // Ogni voce di LINES è { family: [...], unfiltered: [...] }. "family" è sempre la base
 // (usata di default e come ripiego se manca una variante). "unfiltered" viene usata solo
-// quando la stanza ha scelto il presentatore "non family friendly": frasi più dirette,
-// meno educate, senza filtri — ma sempre rivolte alla prestazione nel gioco, mai a
+// quando la stanza ha scelto il presentatore "non family friendly": molto più cattivo,
+// diretto, con qualche parolaccia — ma sempre rivolto alla prestazione nel gioco, mai a
 // caratteristiche personali reali di chi gioca.
 //
 // CATEGORY_LINES aggiunge battute a tema per alcune categorie (quando la domanda in corso
@@ -19,7 +19,12 @@ const LINES = {
       'Bentornati! Ho passato la notte a scegliere le domande più insidiose apposta per voi.',
       'Si comincia! Ricordatevi: qui non vince chi è simpatico, vince chi risponde giusto.',
     ],
-    unfiltered: [],
+    unfiltered: [
+      'Bentornati, disgraziati: oggi vi asfalto di domande e ve lo dico già ora.',
+      'Rieccoci qua. Preparatevi a fare scena muta come al solito.',
+      'Ok gente, ho una marea di domande cattive e zero pietà, tenetevi forte.',
+      'Bentornati, branco di ottimisti: pensate ancora di saperne qualcosa?',
+    ],
   },
   questionIntro: {
     family: [
@@ -34,6 +39,9 @@ const LINES = {
     unfiltered: [
       'Questa ve la faccio pagare cara, pronti a fare scena muta di nuovo?',
       'Vediamo chi si dimostra all\'altezza stavolta. Ne dubito fortemente.',
+      'Ecco una domanda che vi spazzerà via, statistiche alla mano.',
+      'Occhi aperti, cervelli spenti come al solito: si parte.',
+      'Questa è cattiva apposta, tanto per cambiare.',
     ],
   },
   correctFast: {
@@ -44,7 +52,11 @@ const LINES = {
       '{name} ha premuto il pulsante così in fretta che ho sentito il fumo.',
       'Occhio a {name}, oggi sembra avere Google nel cervello.',
     ],
-    unfiltered: [],
+    unfiltered: [
+      '{name} risponde giusto e velocissimo: un miracolo che merita di essere segnalato alle autorità competenti.',
+      'Ok {name}, per una volta hai azzeccato qualcosa: godimela finché dura.',
+      '{name} spacca, e sinceramente sono sorpreso quanto voi.',
+    ],
   },
   correctSlow: {
     family: [
@@ -54,7 +66,10 @@ const LINES = {
       '{name} ha risposto giusto all\'ultimo secondo utile: complimenti ai riflessi cardiaci.',
       'Lento come una lumaca ma preciso come un cecchino, bravo {name}.',
     ],
-    unfiltered: [],
+    unfiltered: [
+      '{name} ce l\'ha fatta all\'ultimo secondo, tra tremori e sudore freddo. Va bene comunque.',
+      'Anche un orologio rotto segna l\'ora giusta due volte al giorno: bravo {name}, oggi è il tuo turno.',
+    ],
   },
   wrong: {
     family: [
@@ -77,6 +92,34 @@ const LINES = {
       '{name} spara a caso e sbaglia pure quello, complimenti vivissimi.',
       'Che pena {name}, davvero, che pena.',
       '{name}, lo sapevi che potevi anche non rispondere invece di fare quella figura?',
+      '{name}, quella risposta è una vergogna che si tramanderà nei secoli.',
+      'Ma dai {name}, ci hai proprio messo tutto l\'impegno per sbagliare, eh?',
+      '{name}, il tuo neurone superstite ha chiesto asilo politico altrove.',
+      'Sbagliato, {name}. Una noce di cocco avrebbe fatto meglio, e non ha nemmeno un cervello.',
+      '{name}, quella è una cazzata colossale, complimenti per l\'impegno nello sbagliare.',
+      'Che schifo di risposta, {name}, roba da denuncia.',
+      '{name}, sei riuscito a sbagliare pure l\'unica cosa quasi impossibile da sbagliare. Un fenomeno, al contrario.',
+      'Merda, {name}, ci speravo davvero che tu ce la facessi. Mai sottovalutarti verso il basso, eh.',
+    ],
+  },
+  // Battuta MIRATA su una risposta sbagliata specifica: cita sempre la risposta reale data dal
+  // giocatore. È il ripiego usato quando la domanda non ha una battuta scritta a mano
+  // (question.wrongRoasts) per quella precisa risposta sbagliata.
+  wrongSpecific: {
+    family: [
+      'Secondo {name} la risposta era "{answer}". Imbarazzante.',
+      '{name} ha risposto "{answer}". Non commento oltre.',
+      'Per {name} evidentemente la risposta giusta era "{answer}". Non lo era.',
+      '"{answer}", dice {name}. E lo dice pure convinto.',
+      '{name} ha puntato tutto su "{answer}". Ha perso.',
+      'Rileggiamo insieme: {name} ha risposto "{answer}". Ecco, l\'ho detto anche a voce per far male di più.',
+    ],
+    unfiltered: [
+      'Secondo {name} la risposta era "{answer}". Complimenti per la cazzata.',
+      '{name} ha risposto "{answer}", con una sicurezza totalmente ingiustificata.',
+      '"{answer}"? Sul serio {name}? Ma dove diavolo l\'hai pescata?',
+      '{name} ha risposto "{answer}" e sinceramente mi ha fatto male leggerlo ad alta voce.',
+      'Rileggiamo: {name} ha risposto "{answer}". Ridicolo, ma almeno originale nella sua stupidità.',
     ],
   },
   timeout: {
@@ -89,6 +132,8 @@ const LINES = {
     unfiltered: [
       '{name} non ha detto niente. Onestamente, meglio così viste le premesse.',
       '{name}, il tempo è scaduto e pure la pazienza del pubblico.',
+      '{name} è rimasto lì impalato come un citofono rotto.',
+      'Silenzio totale da {name}. Almeno non hai peggiorato la situazione, per una volta.',
     ],
   },
   everyoneWrong: {
@@ -102,6 +147,8 @@ const LINES = {
       'Ma cosa avete studiato fino ad oggi, di grazia? Un disastro totale.',
       'Siete un manipolo di incompetenti raccolti per caso in questa stanza, con affetto.',
       'Zero su tutti. Vergognatevi, ma con affetto.',
+      'Complimenti a tutti quanti, avete appena battuto il record di ignoranza collettiva.',
+      'Un disastro corale che definire imbarazzante è quasi un complimento.',
     ],
   },
   everyoneRight: {
@@ -110,7 +157,10 @@ const LINES = {
       'Domanda troppo facile a quanto pare, la prossima sarà più cattiva.',
       'Tutti giusti? Ok, basta buonismo, alzo il livello.',
     ],
-    unfiltered: [],
+    unfiltered: [
+      'Tutti giusti? O la domanda era ridicola, o siete stati fortunati. Scommetto sulla prima.',
+      'Bravi tutti, ma non montatevi la testa: la prossima vi distrugge senza pietà.',
+    ],
   },
   leaderChange: {
     family: [
@@ -118,7 +168,10 @@ const LINES = {
       'Colpo di scena: {name} è il nuovo leader!',
       '{name} sale in vetta. Godetevi il panorama finché dura.',
     ],
-    unfiltered: [],
+    unfiltered: [
+      '{name} scavalca tutti, ma tranquilli, di solito dura il tempo di una domanda.',
+      'Occhio a {name}, nuovo capoclassifica: godetevela finché dura, di solito poco.',
+    ],
   },
   lastPlaceRoast: {
     family: [
@@ -134,6 +187,25 @@ const LINES = {
       '{name}, ti sei mai chiesto se il quiz sia proprio lo sport giusto per te?',
       'Diciamocelo chiaro: {name} sta facendo pena da inizio partita.',
       '{name} è talmente ultimo che gli altri lo salutano con un certo imbarazzo.',
+      '{name}, l\'ultimo posto ormai è un tuo affitto a lungo termine.',
+      '{name}, a questo punto ti conviene fare il tifo per gli altri: per te è già finita.',
+    ],
+  },
+  // Sorpresa: l'ultimo in classifica risponde giusto. L'opposto della presa in giro qui sopra —
+  // le due non scattano mai insieme nella stessa domanda.
+  lastPlaceSurprise: {
+    family: [
+      'Aspettate... {name} ha risposto giusto?! Miracoli dell\'ultima ora.',
+      'Colpo di scena: perfino {name} ce l\'ha fatta stavolta!',
+      'Ma guarda un po\', {name} si sveglia proprio ora. Meglio tardi che mai.',
+      'Non ci credo: {name}, ultimo in classifica, risponde giusto. Segnatevi la data.',
+      '{name} rompe la maledizione e risponde correttamente. Applausi, sinceri stavolta.',
+    ],
+    unfiltered: [
+      'Oh, vedo che {name} si sta riprendendo dalla sbronza. Bentornato tra i vivi.',
+      'Fermi tutti: {name} ha risposto giusto. Chiamate un\'ambulanza, potrebbe essere in stato di shock.',
+      'Guarda guarda, {name} ricorda ancora come si fa. Non durerà, ma godiamocelo.',
+      '{name} risponde giusto per la prima volta stasera, a quanto pare. Miracolo laico.',
     ],
   },
   phase1End: {
@@ -142,7 +214,10 @@ const LINES = {
       'Le domande di riscaldamento sono finite, ora si fa sul serio.',
       'Fase 1 archiviata. Qualcuno può festeggiare, qualcun altro può solo riflettere sulle proprie scelte di vita.',
     ],
-    unfiltered: [],
+    unfiltered: [
+      'Fase 1 finita. Alcuni di voi possono festeggiare, altri dovrebbero solo vergognarsi in silenzio.',
+      'Prima fase archiviata: qualcuno ha giocato, qualcun altro ha solo partecipato per errore.',
+    ],
   },
   tournamentStart: {
     family: [
@@ -150,7 +225,10 @@ const LINES = {
       'Si comincia con l\'eliminazione diretta: un errore e siete fuori. Semplice, spietato, bellissimo.',
       'Da adesso si gioca tutti insieme, stessa domanda per tutti: chi sbaglia è fuori, chi resta va avanti. All\'infinito, finché non resta un solo sopravvissuto.',
     ],
-    unfiltered: [],
+    unfiltered: [
+      'Ora si fa sul serio: chi sbaglia è fuori, senza appello, senza pietà, senza scuse.',
+      'Fase a eliminazione: un errore e sparite. Semplice, brutale, meraviglioso.',
+    ],
   },
   eliminationRoundIntro: {
     family: [
@@ -158,7 +236,10 @@ const LINES = {
       'Nessuna scappatoia questa volta: stessa domanda, stesso destino.',
       'Chi risponde male stavolta è fuori dai giochi. Fatevi coraggio.',
     ],
-    unfiltered: [],
+    unfiltered: [
+      'Stessa domanda per tutti: chi sbaglia saluta la compagnia, senza tante storie.',
+      'Niente scuse stavolta: chi sbaglia è fuori, punto.',
+    ],
   },
   eliminationSomeOut: {
     family: [
@@ -170,6 +251,8 @@ const LINES = {
       '{names} fuori, e sinceramente non mi dispiace affatto.',
       'Ciao ciao {names}, non fatevi vedere troppo in giro dopo quella prestazione.',
       '{names} eliminati. Non erano pronti, diciamocelo con franchezza.',
+      '{names} se ne vanno a casa, e onestamente era ora.',
+      'Saluti a {names}: la porta è di là, non serve accompagnarvi.',
     ],
   },
   eliminationAllWrongContinue: {
@@ -181,6 +264,7 @@ const LINES = {
     unfiltered: [
       'Siete tutti terribili in egual misura, quindi pari merito nell\'incompetenza. Si va avanti.',
       'Un disastro corale che definire imbarazzante è un eufemismo. Prossima domanda.',
+      'Nemmeno uno giusto: complimenti, avete fatto peggio delle mie aspettative, e le avevo già basse.',
     ],
   },
   eliminationAllRightContinue: {
@@ -188,21 +272,29 @@ const LINES = {
       'Tutti giusti, nessuna eliminazione. Alzo ancora la difficoltà, non ve la caverete così facilmente.',
       'Bravi tutti, ma io non demordo: prossima domanda, più cattiva.',
     ],
-    unfiltered: [],
+    unfiltered: [
+      'Tutti giusti? Ok, alzo il tiro: non ve la caverete sempre così facilmente.',
+      'Bravi bravi, ma io non mi arrendo: la prossima è più cattiva.',
+    ],
   },
   eliminationChampion: {
     family: [
       '{name} è l\'unico sopravvissuto rimasto in piedi: che nervi d\'acciaio!',
       'Non ha mai sbagliato una volta: {name} porta a casa la fase a eliminazione!',
     ],
-    unfiltered: [],
+    unfiltered: [
+      '{name} è sopravvissuto a tutti: nervi d\'acciaio e fortuna sfacciata insieme.',
+      'Non ha mai sbagliato: {name} porta a casa la fase a eliminazione, con merito o con culo, chi lo sa.',
+    ],
   },
   matchWin: {
     family: [
       '{name} vince lo scontro e passa al turno successivo!',
       '{name} avanza, complimenti!',
     ],
-    unfiltered: [],
+    unfiltered: [
+      '{name} passa il turno: gli altri possono riflettere sui propri errori.',
+    ],
   },
   finalWinner: {
     family: [
@@ -210,7 +302,10 @@ const LINES = {
       'Signore e signori, abbiamo un vincitore: {name}!',
       '{name} vince e si guadagna il diritto di prendere in giro tutti gli altri per il resto della serata.',
     ],
-    unfiltered: [],
+    unfiltered: [
+      '{name} vince questa partita, e adesso ha pieno diritto di prendere per il culo tutti gli altri.',
+      'Il campione è {name}. Per gli altri mi dispiace, ma non troppo.',
+    ],
   },
   sessionLeaderRoast: {
     family: [
@@ -220,6 +315,7 @@ const LINES = {
     ],
     unfiltered: [
       '{name} comanda la classifica e gli è già salita la puzza sotto il naso, si vede lontano un chilometro.',
+      '{name} in testa alla generale: godetevela, di solito dura poco.',
     ],
   },
   sessionLastRoast: {
@@ -231,6 +327,7 @@ const LINES = {
     unfiltered: [
       '{name} è ultimo nella classifica generale. Onestamente, meritato.',
       '{name}, la classifica di stasera parla chiaro: sei il fanalino di coda, con merito.',
+      '{name}, a questo punto la classifica è quasi un atto d\'accusa nei tuoi confronti.',
     ],
   },
 };
@@ -249,6 +346,7 @@ const CATEGORY_LINES = {
       unfiltered: [
         '{name} si è schiantato contro il muro con quella risposta, altro che Formula 1.',
         '{name}, quella risposta è da ultimo classificato doppiato due volte.',
+        '{name}, hai preso più bandiere nere tu con questa risposta che un intero campionato di incidenti.',
       ],
     },
     timeout: { family: ['{name} è rimasto fermo ai box mentre il tempo scorreva.'], unfiltered: [] },
@@ -263,7 +361,10 @@ const CATEGORY_LINES = {
         '{name}, quella risposta è andata in fumo come una marmitta bucata.',
         '{name} ha sbagliato marcia clamorosamente.',
       ],
-      unfiltered: ['{name} ha le idee ingranate come un cambio arrugginito, complimenti.'],
+      unfiltered: [
+        '{name} ha le idee ingranate come un cambio arrugginito, complimenti.',
+        '{name}, il tuo motore mentale ha bisogno di una revisione urgente, altro che tagliando.',
+      ],
     },
     timeout: { family: ['{name} è rimasto in panne prima ancora di rispondere.'], unfiltered: [] },
     correctFast: { family: ['{name} accelera e risponde a tutto gas!'], unfiltered: [] },
@@ -277,7 +378,10 @@ const CATEGORY_LINES = {
         '{name} ha uno shimmy clamoroso nel ragionamento.',
         'Quella risposta di {name} non regge la dinamica del veicolo, altro che baricentro basso.',
       ],
-      unfiltered: [],
+      unfiltered: [
+        '{name}, quella risposta ha meno struttura di un telaio corroso dalla ruggine.',
+        '{name}, il tuo baricentro logico è completamente fuori asse, altro che stabilità.',
+      ],
     },
     timeout: { family: ['{name} è rimasto bloccato come un differenziale grippato.'], unfiltered: [] },
     correctFast: { family: ['{name} risponde con la precisione di una sospensione ben calibrata!'], unfiltered: [] },
@@ -291,7 +395,10 @@ const CATEGORY_LINES = {
         'Cartellino rosso per {name}: espulso da questa domanda.',
         '{name} sbaglia un rigore a porta vuota con quella risposta.',
       ],
-      unfiltered: ['{name}, quella risposta è da retrocessione diretta.'],
+      unfiltered: [
+        '{name}, quella risposta è da retrocessione diretta.',
+        '{name}, sei da esonero immediato dopo quella risposta.',
+      ],
     },
     timeout: { family: ['{name} resta fermo in fuorigioco mentre il tempo scorre.'], unfiltered: [] },
     correctFast: { family: ['{name} la mette all\'incrocio dei pali, gol clamoroso!'], unfiltered: [] },
@@ -307,11 +414,13 @@ const MOODS = {
   correctFast: 'happy',
   correctSlow: 'happy',
   wrong: 'evil',
+  wrongSpecific: 'evil',
   timeout: 'evil',
   everyoneWrong: 'laugh',
   everyoneRight: 'happy',
   leaderChange: 'hype',
   lastPlaceRoast: 'evil',
+  lastPlaceSurprise: 'shock',
   phase1End: 'neutral',
   tournamentStart: 'evil',
   eliminationRoundIntro: 'evil',

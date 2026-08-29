@@ -53,7 +53,7 @@ function publicLobbies() {
       players: r.connectedCount,
       mode: r.mode,
       difficulty: r.difficulty,
-      category: r.category,
+      categories: r.categories,
     }));
 }
 
@@ -65,10 +65,10 @@ function broadcastLobbyState(room) {
 }
 
 io.on('connection', (socket) => {
-  socket.on('lobby:create', ({ nickname, visibility, mode, difficulty, category, hostMode }, cb) => {
+  socket.on('lobby:create', ({ nickname, visibility, mode, difficulty, categories, hostMode }, cb) => {
     if (!nickname || !nickname.trim()) return cb && cb({ error: 'Nickname mancante' });
     const code = generateCode();
-    const room = new GameRoom(code, socket.id, { visibility, mode, difficulty, category, hostMode });
+    const room = new GameRoom(code, socket.id, { visibility, mode, difficulty, categories, hostMode });
     room.addPlayer(socket.id, nickname.trim());
     rooms.set(code, room);
     socketRoomCode.set(socket.id, code);
@@ -126,6 +126,28 @@ io.on('connection', (socket) => {
     room.submitAnswer(socket.id, answerIndex);
   });
 
+  // Il giocatore conferma di essere pronto a passare alla domanda successiva.
+  socket.on('game:ready', () => {
+    const code = socketRoomCode.get(socket.id);
+    const room = rooms.get(code);
+    if (!room) return;
+    room.markReady(socket.id);
+  });
+
+  // Il giocatore abbandona SOLO la partita in corso: resta nella stanza/sessione e potrà
+  // rientrare nella prossima partita, ma non deve più cliccare "Pronto" né rispondere ora.
+  socket.on('match:leave', (cb) => {
+    const code = socketRoomCode.get(socket.id);
+    const room = rooms.get(code);
+    if (!room) return cb && cb({ error: 'Stanza non trovata' });
+    if (room.state === 'lobby' || room.state === 'finished') {
+      return cb && cb({ error: 'Nessuna partita in corso da abbandonare al momento.' });
+    }
+    room.leaveMatch(socket.id);
+    cb && cb({ ok: true });
+    broadcastLobbyState(room);
+  });
+
   // Avvia una nuova partita nella stessa stanza/sessione, mantenendo la classifica cumulativa.
   socket.on('match:next', (cb) => {
     const code = socketRoomCode.get(socket.id);
@@ -138,30 +160,43 @@ io.on('connection', (socket) => {
     cb && cb({ ok: true });
   });
 
-  socket.on('disconnect', () => {
-    const code = socketRoomCode.get(socket.id);
-    const room = rooms.get(code);
-    if (!room) return;
-    const player = room.players.get(socket.id);
-    if (player) player.connected = false;
-    socketRoomCode.delete(socket.id);
+  // Il giocatore lascia del tutto la stanza/sessione (equivalente a disconnettersi, ma esplicito).
+  socket.on('session:leave', () => {
+    handleLeave(socket);
+    socket.disconnect(true);
+  });
 
-    if (room.state === 'lobby') {
-      room.removePlayer(socket.id);
-      if (room.hostSocketId === socket.id) {
-        const next = room.playerList[0];
-        if (next) {
-          room.hostSocketId = next.id;
-          next.isHost = true;
-        }
-      }
-      if (room.playerList.length === 0) {
-        rooms.delete(room.code);
-      }
-    }
-    broadcastLobbyState(room);
+  socket.on('disconnect', () => {
+    handleLeave(socket);
   });
 });
+
+// Logica condivisa tra "disconnessione di rete" e "uscita esplicita dalla sessione".
+function handleLeave(socket) {
+  const code = socketRoomCode.get(socket.id);
+  const room = rooms.get(code);
+  if (!room) return;
+  const player = room.players.get(socket.id);
+  if (player) player.connected = false;
+  socketRoomCode.delete(socket.id);
+
+  if (room.state === 'lobby') {
+    room.removePlayer(socket.id);
+    if (room.hostSocketId === socket.id) {
+      const next = room.playerList[0];
+      if (next) {
+        room.hostSocketId = next.id;
+        next.isHost = true;
+      }
+    }
+    if (room.playerList.length === 0) {
+      rooms.delete(room.code);
+    }
+  } else {
+    room.notifyReadyWatcher();
+  }
+  broadcastLobbyState(room);
+}
 
 server.listen(PORT, () => {
   console.log(`Buzz-clone in ascolto sulla porta ${PORT}`);

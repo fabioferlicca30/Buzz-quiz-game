@@ -3,9 +3,11 @@ const host = require('./Host');
 
 const PHASE1_QUESTIONS = 10;
 const QUESTION_TIME_MS = 10000;
-const RESULT_PAUSE_MS = 4500;
+const HOST_BEAT_GAP_MS = 2600; // pausa tra la prima e la seconda battuta del presentatore
+const READY_PRE_DELAY_MS = 1500; // piccola pausa fissa prima che appaia il pulsante "Pronto"
+const READY_TIMEOUT_MS = 20000; // rete di sicurezza: si va avanti comunque dopo questo tempo
 const BIG_PAUSE_MS = 6000;
-const DIFFICULTY_ORDER = ['facile', 'medio', 'difficile'];
+const DIFFICULTY_ORDER = ['facile', 'medio', 'difficile', 'superdifficile', 'impossibile'];
 const SESSION_POINTS = [1000, 500, 250]; // 1°, 2°, 3° posto di ogni partita; dal 4° in poi: 0 punti sessione
 
 function wait(ms) {
@@ -23,8 +25,8 @@ class GameRoom {
     this.code = code;
     this.visibility = settings.visibility === 'public' ? 'public' : 'private';
     this.mode = settings.mode === 'classic' ? 'classic' : 'rush'; // 'rush' | 'classic'
-    this.difficulty = settings.difficulty || 'misto'; // facile|medio|difficile|misto
-    this.category = settings.category || 'tutte';
+    this.difficulty = settings.difficulty || 'misto'; // facile|medio|difficile|superdifficile|impossibile|misto
+    this.categories = Array.isArray(settings.categories) ? settings.categories.filter(Boolean) : []; // [] = "tutte"
     this.hostMode = settings.hostMode === 'unfiltered' ? 'unfiltered' : 'family'; // presentatore: 'family' o 'unfiltered' (non family friendly)
     this.hostSocketId = hostSocketId;
     this.players = new Map(); // socketId -> player
@@ -43,6 +45,11 @@ class GameRoom {
     // il punteggio di sessione si accumula partita dopo partita (chiave: nickname del giocatore).
     this.matchNumber = 1;
     this.sessionScores = new Map(); // nickname -> punteggio cumulativo di sessione
+
+    // Tracciamento risposte-tutti-date (per chiudere la domanda in anticipo) e pulsante "Pronto".
+    this._answerWatcher = null;
+    this.readyPlayers = new Set();
+    this._readyWatcher = null;
   }
 
   addPlayer(socketId, nickname) {
@@ -55,6 +62,7 @@ class GameRoom {
       qualified: false,
       eliminated: false,
       eliminationRound: null,
+      leftMatch: false, // il giocatore ha scelto di abbandonare la partita in corso (resta in sessione)
     });
   }
 
@@ -76,7 +84,7 @@ class GameRoom {
       visibility: this.visibility,
       mode: this.mode,
       difficulty: this.difficulty,
-      category: this.category,
+      categories: this.categories,
       hostMode: this.hostMode,
       state: this.state,
       matchNumber: this.matchNumber,
@@ -94,6 +102,7 @@ class GameRoom {
         score: p.score,
         connected: p.connected,
         eliminated: p.eliminated,
+        leftMatch: p.leftMatch,
         sessionScore: this.sessionScores.get(p.nickname) || 0,
       }));
   }
@@ -117,6 +126,126 @@ class GameRoom {
     if (this.state === 'elimination' && this.activeCompetitorIds && !this.activeCompetitorIds.has(socketId)) return;
     const elapsedMs = Date.now() - this.questionStartTs;
     this.currentAnswers.set(socketId, { answerIndex, elapsedMs: Math.max(0, elapsedMs) });
+    if (this._answerWatcher) this._answerWatcher();
+  }
+
+  // Aspetta che tutti gli id in `eligibleIds` abbiano risposto, oppure che scada `timeoutMs`:
+  // la domanda si chiude appena tutti hanno risposto, senza aspettare il tempo residuo.
+  // Chi abbandona la partita mentre la domanda è in corso non viene più aspettato.
+  waitForAnswers(eligibleIds, timeoutMs) {
+    return new Promise((resolve) => {
+      let settled = false;
+      const finish = () => {
+        if (settled) return;
+        settled = true;
+        this._answerWatcher = null;
+        clearTimeout(timer);
+        resolve();
+      };
+      this._answerWatcher = () => {
+        const stillPending = eligibleIds.filter((id) => {
+          const p = this.players.get(id);
+          if (!p || !p.connected || p.leftMatch) return false;
+          return !this.currentAnswers.has(id);
+        });
+        if (stillPending.length === 0) finish();
+      };
+      const timer = setTimeout(finish, timeoutMs);
+      this._answerWatcher();
+    });
+  }
+
+  // ---- Gestione del pulsante "Pronto" tra una domanda e l'altra ----------
+  resetReadyTracking() {
+    this.readyPlayers = new Set();
+  }
+
+  // Chi deve cliccare "Pronto": tutti i giocatori collegati che NON hanno abbandonato
+  // questa partita (chi esce dalla partita non blocca più gli altri).
+  get requiredReadyIds() {
+    return this.playerList.filter((p) => p.connected && !p.leftMatch).map((p) => p.id);
+  }
+
+  readyStatusPayload() {
+    return { ready: this.readyPlayers.size, total: this.requiredReadyIds.length };
+  }
+
+  markReady(socketId) {
+    const player = this.players.get(socketId);
+    if (!player || !player.connected) return;
+    this.readyPlayers.add(socketId);
+    if (this._readyWatcher) this._readyWatcher();
+  }
+
+  // Il giocatore abbandona la partita in corso ma resta nella sessione (potrà rientrare
+  // nella prossima partita, se il presentatore ne avvia una). Non deve più cliccare "Pronto"
+  // né rispondere alle domande per il resto di questa partita.
+  leaveMatch(socketId) {
+    const player = this.players.get(socketId);
+    if (!player) return false;
+    player.leftMatch = true;
+    this.notifyReadyWatcher();
+    if (this._answerWatcher) this._answerWatcher();
+    return true;
+  }
+
+  // Chiamato anche alla disconnessione di un giocatore, così non si resta bloccati ad
+  // aspettare il "pronto" di qualcuno che se n'è appena andato.
+  notifyReadyWatcher() {
+    if (this._readyWatcher) this._readyWatcher();
+  }
+
+  waitForReady(io, timeoutMs) {
+    return new Promise((resolve) => {
+      let settled = false;
+      const finish = () => {
+        if (settled) return;
+        settled = true;
+        this._readyWatcher = null;
+        clearTimeout(timer);
+        resolve();
+      };
+      this._readyWatcher = () => {
+        io.to(this.code).emit('game:readyStatus', this.readyStatusPayload());
+        const requiredIds = this.requiredReadyIds;
+        if (requiredIds.length > 0 && requiredIds.every((id) => this.readyPlayers.has(id))) finish();
+        if (requiredIds.length === 0) finish(); // nessuno resta da aspettare
+      };
+      const timer = setTimeout(finish, timeoutMs);
+      this._readyWatcher();
+    });
+  }
+
+  // Emette le battute del presentatore una dopo l'altra, con una piccola pausa tra la prima
+  // e la seconda (se presente), così restano leggibili entrambe.
+  async emitHostMessages(io, messages) {
+    for (let i = 0; i < messages.length; i++) {
+      io.to(this.code).emit('host:say', messages[i]);
+      if (i < messages.length - 1) await wait(HOST_BEAT_GAP_MS);
+    }
+  }
+
+  // Sceglie UN giocatore tra chi ha risposto male (o non ha risposto) e costruisce una battuta
+  // specifica su quella risposta: usa una battuta scritta a mano per quella domanda se esiste
+  // (question.wrongRoasts), altrimenti ricade su un modello generico che cita comunque la
+  // risposta sbagliata data. Se nessuno ha sbagliato attivamente, prova con chi non ha risposto.
+  buildWrongRoast(question, wrongActiveIds, timedOutIds, ctx) {
+    const pool = wrongActiveIds.length ? wrongActiveIds : timedOutIds;
+    if (!pool.length) return null;
+    const victimId = pool[Math.floor(Math.random() * pool.length)];
+    const victim = this.players.get(victimId);
+    if (!victim) return null;
+
+    if (wrongActiveIds.includes(victimId)) {
+      const entry = this.currentAnswers.get(victimId);
+      const wrongText = question.answers[entry.answerIndex];
+      const curated = question.wrongRoasts && question.wrongRoasts[wrongText];
+      if (curated) {
+        return { text: curated.split('{name}').join(victim.nickname), mood: 'evil' };
+      }
+      return host.say('wrongSpecific', { name: victim.nickname, answer: wrongText }, ctx);
+    }
+    return host.say('timeout', { name: victim.nickname }, ctx);
   }
 
   // ---- Ciclo principale di UNA partita -----------------------------------
@@ -145,11 +274,12 @@ class GameRoom {
         index: i,
         total: PHASE1_QUESTIONS,
         difficulty: this.difficulty,
-        category: this.category,
+        category: this.categories,
         scoringMode: this.mode,
         phase: 'phase1',
       });
-      await wait(RESULT_PAUSE_MS);
+      await wait(READY_PRE_DELAY_MS);
+      await this.waitForReady(io, READY_TIMEOUT_MS);
     }
 
     await this.finishPhase1AndStartElimination(io);
@@ -162,13 +292,15 @@ class GameRoom {
       category,
       excludeIds: this.usedQuestionIds,
     })[0];
-    if (!question) return null; // non dovrebbe succedere con >300 domande disponibili
+    if (!question) return null; // non dovrebbe succedere con >500 domande disponibili
     this.usedQuestionIds.add(question.id);
     this.currentQuestion = question;
     this.currentAnswers = new Map();
     this.acceptingAnswers = true;
     this.questionStartTs = Date.now();
     this.activeCompetitorIds = activeIds; // null = tutti i giocatori collegati possono rispondere
+
+    const eligibleIds = activeIds ? [...activeIds] : this.playerList.filter((p) => p.connected && !p.leftMatch).map((p) => p.id);
 
     io.to(this.code).emit('host:say', host.say('questionIntro', {}, { category: question.category, mode: this.hostMode }));
     io.to(this.code).emit('game:question', {
@@ -183,10 +315,10 @@ class GameRoom {
       answers: question.answers,
       timeLimitMs: QUESTION_TIME_MS,
       startTs: Date.now(),
-      eligibleIds: activeIds ? [...activeIds] : null,
+      eligibleIds: [...eligibleIds], // lista esplicita, mai null: riflette anche chi ha abbandonato la partita
     });
 
-    await wait(QUESTION_TIME_MS);
+    await this.waitForAnswers(eligibleIds, QUESTION_TIME_MS);
     this.acceptingAnswers = false;
 
     const result = this.resolveQuestion(scoringMode, question, activeIds);
@@ -197,14 +329,24 @@ class GameRoom {
       results: result.perPlayer,
       scoreboard: this.scoreboard(),
     });
-    io.to(this.code).emit('host:say', result.hostMessage);
+
+    this.resetReadyTracking();
+    io.to(this.code).emit('game:readyStatus', this.readyStatusPayload());
+    await this.emitHostMessages(io, result.hostMessages);
     return result;
   }
 
   resolveQuestion(scoringMode, question, activeIds) {
-    const eligibleIds = activeIds ? [...activeIds] : this.playerList.filter((p) => p.connected).map((p) => p.id);
-    const answered = eligibleIds.map((id) => ({ id, entry: this.currentAnswers.get(id) }));
+    const eligibleIds = activeIds ? [...activeIds] : this.playerList.filter((p) => p.connected && !p.leftMatch).map((p) => p.id);
 
+    // Classifica PRIMA di applicare il punteggio di questa domanda: serve per rilevare un
+    // cambio di leader e la "sorpresa" quando l'ultimo in classifica risponde giusto.
+    const boardBefore = eligibleIds
+      .map((id) => this.players.get(id))
+      .filter(Boolean)
+      .sort((a, b) => b.score - a.score);
+
+    const answered = eligibleIds.map((id) => ({ id, entry: this.currentAnswers.get(id) }));
     const correctAnswers = answered
       .filter((a) => a.entry && a.entry.answerIndex === question.correctIndex)
       .sort((a, b) => a.entry.elapsedMs - b.entry.elapsedMs);
@@ -213,7 +355,8 @@ class GameRoom {
     const perPlayer = [];
     let fastestCorrectName = null;
     let anyCorrect = correctAnswers.length > 0;
-    let anyWrong = false;
+    const wrongActiveIds = [];
+    const timedOutIds = [];
 
     for (const id of eligibleIds) {
       const player = this.players.get(id);
@@ -234,9 +377,10 @@ class GameRoom {
         }
       } else if (entry) {
         points = -1;
-        anyWrong = true;
+        wrongActiveIds.push(id);
       } else {
         points = 0; // nessuna risposta data in tempo
+        timedOutIds.push(id);
       }
 
       player.score += points;
@@ -250,43 +394,65 @@ class GameRoom {
       });
     }
 
-    let hostMessage;
     const ctx = { category: question.category, mode: this.hostMode };
+    const messages = [];
+
     if (!anyCorrect) {
-      hostMessage = host.say('everyoneWrong', {}, ctx);
-    } else if (!anyWrong && correctAnswers.length === eligibleIds.length) {
-      hostMessage = host.say('everyoneRight', {}, ctx);
-    } else if (scoringMode === 'rush' && fastestCorrectName) {
-      hostMessage = host.say('correctFast', { name: fastestCorrectName }, ctx);
-    } else if (correctAnswers.length > 0) {
-      const last = correctAnswers[correctAnswers.length - 1];
-      const p = this.players.get(last.id);
-      hostMessage = host.say('correctSlow', { name: p ? p.nickname : 'qualcuno' }, ctx);
+      messages.push(host.say('everyoneWrong', {}, ctx));
+    } else if (correctAnswers.length === eligibleIds.length) {
+      messages.push(host.say('everyoneRight', {}, ctx));
     } else {
-      hostMessage = host.say('wrong', { name: 'tutti' }, ctx);
+      // Risultati misti: prima la lode a chi ha risposto meglio, poi la stoccata mirata a chi
+      // ha sbagliato (una battuta specifica sulla sua risposta, non un commento generico).
+      if (scoringMode === 'rush' && fastestCorrectName) {
+        messages.push(host.say('correctFast', { name: fastestCorrectName }, ctx));
+      } else {
+        const last = correctAnswers[correctAnswers.length - 1];
+        const p = this.players.get(last.id);
+        messages.push(host.say('correctSlow', { name: p ? p.nickname : 'qualcuno' }, ctx));
+      }
+      const roast = this.buildWrongRoast(question, wrongActiveIds, timedOutIds, ctx);
+      if (roast) messages.push(roast);
     }
 
-    // Annuncio cambio leader (se qualcuno ha appena scavalcato il primo in classifica).
-    const board = eligibleIds
+    // Annuncio cambio leader (se qualcuno ha appena scavalcato il primo in classifica):
+    // sostituisce la prima battuta (la "lode"), lasciando intatta l'eventuale stoccata.
+    const boardAfter = eligibleIds
       .map((id) => this.players.get(id))
       .filter(Boolean)
       .sort((a, b) => b.score - a.score);
-    const newLeader = board[0];
+    const newLeader = boardAfter[0];
     if (newLeader && this.previousLeaderId && newLeader.id !== this.previousLeaderId) {
-      hostMessage = host.say('leaderChange', { name: newLeader.nickname }, ctx);
+      messages[0] = host.say('leaderChange', { name: newLeader.nickname }, ctx);
     }
     if (newLeader) this.previousLeaderId = newLeader.id;
 
-    // Ogni tanto il presentatore si diverte a prendere in giro chi è ultimo in classifica.
-    if (eligibleIds.length >= 3 && Math.random() < 0.3) {
-      const last = board[board.length - 1];
-      const first = board[0];
-      if (last && first && last.id !== first.id) {
-        hostMessage = host.say('lastPlaceRoast', { name: last.nickname }, ctx);
+    // Sorpresa: chi era ultimo PRIMA di questa domanda risponde giusto — capita solo a volte,
+    // per non essere ripetitiva. Sostituisce la prima battuta.
+    let surpriseUsed = false;
+    if (eligibleIds.length >= 3 && boardBefore.length >= 2) {
+      const lastBefore = boardBefore[boardBefore.length - 1];
+      const firstBefore = boardBefore[0];
+      if (lastBefore && firstBefore && lastBefore.id !== firstBefore.id) {
+        const lastAnsweredCorrectly = correctAnswers.some((c) => c.id === lastBefore.id);
+        if (lastAnsweredCorrectly && Math.random() < 0.4) {
+          messages[0] = host.say('lastPlaceSurprise', { name: lastBefore.nickname }, ctx);
+          surpriseUsed = true;
+        }
       }
     }
 
-    return { perPlayer, hostMessage };
+    // Presa in giro "di classifica" dell'ultimo posto (indipendente da questa domanda),
+    // solo se non è già scattata la sorpresa qui sopra (sarebbero contraddittorie insieme).
+    if (!surpriseUsed && eligibleIds.length >= 3 && Math.random() < 0.3) {
+      const last = boardAfter[boardAfter.length - 1];
+      const first = boardAfter[0];
+      if (last && first && last.id !== first.id) {
+        messages[0] = host.say('lastPlaceRoast', { name: last.nickname }, ctx);
+      }
+    }
+
+    return { perPlayer, hostMessages: messages };
   }
 
   async finishPhase1AndStartElimination(io) {
@@ -335,7 +501,7 @@ class GameRoom {
     let question = questionBank.pickQuestions({
       count: 1,
       difficulty,
-      category: this.category,
+      category: this.categories,
       excludeIds: this.eliminationUsedIds,
     })[0];
     if (!question) {
@@ -343,7 +509,7 @@ class GameRoom {
       question = questionBank.pickQuestions({
         count: 1,
         difficulty,
-        category: this.category,
+        category: this.categories,
         excludeIds: this.eliminationUsedIds,
       })[0];
     }
@@ -362,6 +528,18 @@ class GameRoom {
     const SAFETY_MAX_ROUNDS = 500; // rete di sicurezza anti-loop reale, non un limite di gioco
 
     while (active.length > 1 && roundIndex < SAFETY_MAX_ROUNDS) {
+      // Chi ha abbandonato la partita o si è disconnesso prima di questo round viene trattato
+      // come eliminato ora: non deve bloccare il gioco né restare "attivo" senza poter rispondere.
+      const droppedOut = active.filter((id) => {
+        const p = this.players.get(id);
+        return !p || !p.connected || p.leftMatch;
+      });
+      if (droppedOut.length) {
+        active = active.filter((id) => !droppedOut.includes(id));
+        eliminatedRounds.push(droppedOut);
+      }
+      if (active.length <= 1) break; // resta un solo giocatore (o zero) dopo aver tolto chi è uscito
+
       const difficulty = roundDifficulty(this.difficulty, roundIndex);
       const question = this.pickEliminationQuestion(difficulty);
       if (!question) break;
@@ -388,7 +566,7 @@ class GameRoom {
         remainingCount: active.length,
       });
 
-      await wait(QUESTION_TIME_MS);
+      await this.waitForAnswers(active, QUESTION_TIME_MS);
       this.acceptingAnswers = false;
 
       const correctIds = [];
@@ -416,15 +594,15 @@ class GameRoom {
         }),
       });
 
-      let hostMessage;
+      const elimMessages = [];
       let eliminatedNow = [];
       const elimCtx = { category: question.category, mode: this.hostMode };
       if (wrongIds.length === 0) {
         // Tutti giusti: nessuna eliminazione, si continua con lo stesso gruppo e domande più difficili.
-        hostMessage = host.say('eliminationAllRightContinue', {}, elimCtx);
+        elimMessages.push(host.say('eliminationAllRightContinue', {}, elimCtx));
       } else if (wrongIds.length === active.length) {
         // Tutti sbagliano: per regola nessuno viene eliminato, si va avanti comunque.
-        hostMessage = host.say('eliminationAllWrongContinue', {}, elimCtx);
+        elimMessages.push(host.say('eliminationAllWrongContinue', {}, elimCtx));
       } else {
         for (const id of wrongIds) {
           const p = this.players.get(id);
@@ -436,11 +614,17 @@ class GameRoom {
         eliminatedRounds.push(wrongIds);
         eliminatedNow = wrongIds;
         const names = wrongIds.map((id) => this.players.get(id)?.nickname || '???').join(', ');
-        hostMessage = host.say('eliminationSomeOut', { names }, elimCtx);
+        elimMessages.push(host.say('eliminationSomeOut', { names }, elimCtx));
+
+        // Battuta specifica su UNO degli eliminati e la sua risposta sbagliata.
+        const timedOutNow = wrongIds.filter((id) => !this.currentAnswers.get(id));
+        const wrongActiveNow = wrongIds.filter((id) => this.currentAnswers.get(id));
+        const roast = this.buildWrongRoast(question, wrongActiveNow, timedOutNow, elimCtx);
+        if (roast) elimMessages.push(roast);
+
         active = correctIds;
       }
 
-      io.to(this.code).emit('host:say', hostMessage);
       io.to(this.code).emit('elimination:status', {
         round: roundIndex + 1,
         difficulty,
@@ -448,8 +632,13 @@ class GameRoom {
         eliminatedNow: eliminatedNow.map((id) => ({ id, nickname: this.players.get(id)?.nickname || '???' })),
       });
 
+      this.resetReadyTracking();
+      io.to(this.code).emit('game:readyStatus', this.readyStatusPayload());
+      await this.emitHostMessages(io, elimMessages);
+
       roundIndex++;
-      await wait(RESULT_PAUSE_MS);
+      await wait(READY_PRE_DELAY_MS);
+      await this.waitForReady(io, READY_TIMEOUT_MS);
     }
 
     const winnerId = active[0] || null;
@@ -532,6 +721,7 @@ class GameRoom {
       p.eliminated = false;
       p.qualified = false;
       p.eliminationRound = null;
+      p.leftMatch = false;
     }
     this.state = 'lobby';
     this.run(io).catch((err) => {

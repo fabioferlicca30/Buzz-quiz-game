@@ -47,6 +47,16 @@
   </div>
 </div>
 
+<!-- MENU DI USCITA: sempre disponibile una volta entrati in una stanza -->
+<div id="exit-menu-wrap" class="exit-menu-wrap hidden">
+  <button class="exit-toggle" id="btn-exit-toggle" title="Esci">🚪</button>
+  <div class="exit-menu hidden" id="exit-menu">
+    <button id="btn-leave-match">Esci da questa partita</button>
+    <button id="btn-leave-session" class="danger">Esci dalla sessione</button>
+    <button id="btn-exit-cancel" class="ghost">Annulla</button>
+  </div>
+</div>
+
 <!-- HOME -->
 <section id="screen-home" class="screen active">
   <div class="logo-wrap">
@@ -54,7 +64,6 @@
     <h1 class="logo">QUIZ<span>PARTY</span></h1>
     <span class="logo-star star-b">★</span>
   </div>
-  <p class="tagline">Il quiz a colori per famiglie e amici</p>
 
   <div class="card">
     <label>Il tuo nome</label>
@@ -87,16 +96,21 @@
     </div>
 
     <label>Livello</label>
-    <div class="segmented" id="opt-difficulty">
+    <div class="segmented segmented-grid" id="opt-difficulty">
       <button class="seg-btn" data-value="facile">Facile</button>
       <button class="seg-btn active" data-value="misto">Misto</button>
       <button class="seg-btn" data-value="medio">Medio</button>
       <button class="seg-btn" data-value="difficile">Difficile</button>
+      <button class="seg-btn" data-value="superdifficile">Super difficile</button>
+      <button class="seg-btn" data-value="impossibile">Impossibile 💀</button>
     </div>
+    <p class="muted small">"Misto" parte facile e sale di livello turno dopo turno nella fase a eliminazione, fino a "Impossibile". Gli altri livelli partono già a quel grado di difficoltà.</p>
 
-    <label>Categoria</label>
-    <select id="select-category"><option value="tutte">Tutte</option></select>
-    <p class="muted small" id="niche-hint">Le categorie speciali (es. Formula 1, Calcio...) non sono incluse in "Tutte": vanno scelte qui esplicitamente.</p>
+    <label>Categorie (puoi selezionarne più di una)</label>
+    <div class="category-picker" id="category-picker">
+      <button type="button" class="cat-chip active" id="cat-chip-tutte" data-value="tutte">Tutte</button>
+    </div>
+    <p class="muted small" id="niche-hint">Le categorie speciali (es. Formula 1, Calcio...) non sono incluse in "Tutte": selezionale qui esplicitamente, anche insieme ad altre.</p>
 
     <label>Presentatore</label>
     <div class="segmented" id="opt-hostmode">
@@ -141,10 +155,12 @@
     <datalist id="nq-category-list"></datalist>
 
     <label>Difficoltà</label>
-    <div class="segmented" id="nq-difficulty">
+    <div class="segmented segmented-grid" id="nq-difficulty">
       <button class="seg-btn active" data-value="facile">Facile</button>
       <button class="seg-btn" data-value="medio">Medio</button>
       <button class="seg-btn" data-value="difficile">Difficile</button>
+      <button class="seg-btn" data-value="superdifficile">Super difficile</button>
+      <button class="seg-btn" data-value="impossibile">Impossibile</button>
     </div>
 
     <label>Domanda</label>
@@ -216,6 +232,12 @@
   <div id="mini-scoreboard" class="mini-scoreboard"></div>
   <div id="elimination-chips" class="elimination-chips hidden"></div>
 </section>
+
+<!-- PANNELLO "PRONTO" (compare durante la pausa tra una domanda e l'altra) -->
+<div id="ready-panel" class="ready-panel hidden">
+  <div class="ready-status" id="ready-status">In attesa dei giocatori... <span id="ready-count">0</span>/<span id="ready-total">0</span></div>
+  <button class="btn btn-primary" id="btn-ready">Pronto! ✅</button>
+</div>
 
 <!-- FASE 1 - RISULTATI -->
 <section id="screen-phase1end" class="screen">

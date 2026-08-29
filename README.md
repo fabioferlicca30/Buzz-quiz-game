@@ -8,18 +8,20 @@ Stack: **Node.js + Express + Socket.io** sul backend, **HTML/CSS/JS puro** sul f
 
 1. Un giocatore crea una partita scegliendo: visibilità (**chiusa** con codice a 5 caratteri, o **aperta** a chiunque), modalità, livello di difficoltà e categoria.
 2. Gli altri entrano con il codice oppure scelgono la partita dalla lista di quelle **aperte**.
-3. **Fase 1**: 10 domande a risposta multipla, 10 secondi a testa per rispondere.
+3. **Fase 1**: 10 domande a risposta multipla, 10 secondi a testa per rispondere (la domanda si chiude comunque in anticipo, appena tutti hanno risposto).
    - **Modalità Rush**: chi risponde correttamente più veloce prende più punti (1°=3, 2°=2, 3°=1, dal 4° in poi 0), risposta sbagliata = -1.
    - **Modalità Classica**: punti fissi (2) a chiunque risponda giusto entro i 10 secondi, indipendentemente dalla velocità; sbagliare non toglie punti.
+   - Dopo ogni domanda il presentatore commenta il risultato — prima una lode a chi ha risposto meglio, poi (se qualcuno ha sbagliato) una battuta mirata su UN giocatore scelto a caso tra chi ha risposto male, che cita la sua risposta reale — e si passa alla domanda successiva solo quando **tutti i giocatori ancora nella partita cliccano "Pronto"** (o dopo 20 secondi di attesa, come rete di sicurezza). Chi ha abbandonato la partita in corso (vedi sotto) non viene più aspettato.
 4. Finita la Fase 1, il migliore **50% (arrotondato per eccesso, minimo 2)** dei giocatori collegati accede alla **fase a eliminazione**. Gli altri diventano spettatori e vedono comunque lo show.
 5. **Fase a eliminazione (a oltranza)**: stessa domanda per tutti i qualificati, contemporaneamente.
    - Chi risponde male è eliminato.
    - Se **sbagliano tutti**, per regola non viene eliminato nessuno: si va avanti comunque con una nuova domanda.
    - Se **rispondono tutti bene**, nessuna eliminazione: si continua con una domanda più difficile.
-   - La difficoltà sale di un livello a ogni round (fino a fermarsi su "difficile") e le domande vengono pescate senza ripetizioni finché il mazzo non si esaurisce, nel qual caso il mazzo si ricicla: la fase può durare, in teoria, all'infinito.
+   - La difficoltà sale di un livello a ogni round — facile → medio → difficile → super difficile → impossibile 💀 — fino a fermarsi su "impossibile", e le domande vengono pescate senza ripetizioni finché il mazzo non si esaurisce, nel qual caso il mazzo si ricicla: la fase può durare, in teoria, all'infinito.
    - Si va avanti così finché non resta **un solo giocatore che non ha mai risposto male** in questa fase: è lui il vincitore della partita.
+   - Anche qui: risultato commentato dal presentatore, poi si aspetta il click "Pronto" di tutti prima del round successivo.
 6. **Punteggio di sessione**: alla fine di ogni partita si assegnano punti cumulativi in base al piazzamento finale — **1000 punti al 1° posto, 500 al 2°, 250 al 3°, 0 dal 4° in poi**. Il presentatore può avviare subito una nuova partita nella stessa stanza (stesso gruppo di giocatori): il punteggio di sessione si somma partita dopo partita, per un vero e proprio torneo della serata.
-7. Il presentatore virtuale — un pupazzetto animato che parla e cambia espressione — commenta ogni domanda, ogni risposta e l'esito finale con frasi scelte a caso da un elenco (alcune scherzose, altre più pungenti, incluse battute mirate su chi è ultimo in classifica o su chi domina/arranca nella classifica cumulativa di sessione).
+7. Il presentatore virtuale — un pupazzetto animato che parla e cambia espressione — commenta ogni domanda, ogni risposta e l'esito finale. Durante la pausa tra una domanda e l'altra passa in primo piano al centro dello schermo, e la classifica mostra con una piccola animazione (frecce e scorrimento) chi ha appena scavalcato chi.
 
 ### Alcune scelte di design (dove le regole non erano specificate nel dettaglio)
 
@@ -32,7 +34,11 @@ Ho dovuto decidere alcuni dettagli che non avevi specificato — sono facilmente
 - **Classifica di sessione per nickname**: il punteggio cumulativo di sessione è associato al nickname scelto dal giocatore (non al socket/dispositivo), così regge anche se qualcuno si riconnette con una scheda diversa. Di conseguenza, due giocatori con lo stesso identico nickname nella stessa sessione condividerebbero il punteggio cumulativo: è un'ipotesi ragionevole per un gioco tra amici, ma tienilo a mente se il tuo gruppo ama i nomi doppi.
 - **Battute "a sorpresa" sulla classifica**: circa una volta ogni tre domande della Fase 1, con più di 2 giocatori in gioco, il presentatore ha una probabilità di prendere in giro chi è ultimo in classifica invece del commento standard. È volutamente casuale, per non essere ripetitivo.
 - **Codice partita**: 5 caratteri alfanumerici (senza caratteri ambigui tipo 0/O o 1/I).
-- **Categorie di nicchia sempre escluse da "Tutte"**: l'esclusione vale anche nei casi limite in cui il mazzo di domande stesse per esaurirsi durante una partita lunghissima (es. una fase a eliminazione infinita) — il gioco allarga la ricerca ignorando la difficoltà, mai la categoria. Chi vuole giocare solo a Formula 1 o solo a Calcio deve selezionarli esplicitamente dal menu categoria.
+- **Categorie di nicchia sempre escluse da "Tutte"**: l'esclusione vale anche nei casi limite in cui il mazzo di domande stesse per esaurirsi durante una partita lunghissima (es. una fase a eliminazione infinita) — il gioco allarga la ricerca ignorando la difficoltà, mai la categoria. Chi vuole giocare solo a Formula 1 o solo a Calcio deve selezionarli esplicitamente dai tasti categoria, e può combinarne quante ne vuole insieme (es. "Formula 1" + "Automobili e Motori").
+- **Posizione della risposta corretta**: per ogni categoria e ogni livello di difficoltà, la risposta giusta è distribuita in modo equilibrato tra le 4 posizioni (circa un quarto delle domande per posizione), così non è possibile "indovinare" un pattern (es. rispondere sempre la prima opzione).
+- **Pulsante "Pronto" — chi deve cliccarlo**: tutti i giocatori collegati alla stanza, non solo chi sta ancora gareggiando (anche gli "spettatori" della fase a eliminazione lo cliccano), così tutti restano sincronizzati sullo show. Se qualcuno si disconnette mentre si aspetta il suo "pronto", non blocca gli altri: viene escluso automaticamente dal conteggio.
+- **Chi viene preso in giro sulla risposta specifica**: tra chi ha attivamente sbagliato (non tra chi non ha risposto affatto), a meno che nessuno abbia dato una risposta sbagliata attiva — in quel caso si prende in giro chi non ha risposto in tempo.
+- **Bug corretto in questa sessione**: la modalità Rush non assegnava mai punti in base alla velocità (mancava un parametro nella chiamata interna), dando sempre il punteggio fisso della modalità Classica. Ora Rush funziona davvero come descritto: più veloce = più punti.
 
 ## Avviare il progetto in locale
 
@@ -79,7 +85,7 @@ Alternative equivalenti: **Railway.app**, **Fly.io**, oppure un piccolo VPS. Evi
 
 ## Come arrivare a 2000+ domande
 
-Il gioco parte con **408 domande** scritte a mano, divise in 17 categorie e 3 livelli di difficoltà. 13 categorie sono incluse nella modalità "Tutte" (Storia, Geografia, Scienza e Natura, Sport, Cinema e TV, Musica, Cucina, Letteratura, Arte, Tecnologia, Fisica, Matematica, Cultura generale). Altre 4 sono **categorie di nicchia** — Automobili e Motori, Formula 1, Ingegneria del Veicolo, Calcio — pensate per gruppi di appassionati: **non compaiono mai nella modalità "Tutte"**, vanno selezionate esplicitamente dal menu a tendina della categoria quando si crea la partita. Scriverne 2000 di qualità a mano non era realistico in un'unica sessione, quindi il progetto è pensato per crescere in due modi:
+Il gioco parte con **544 domande** scritte a mano, divise in 17 categorie e **5 livelli di difficoltà** (facile, medio, difficile, super difficile, impossibile). 13 categorie sono incluse nella modalità "Tutte" (Storia, Geografia, Scienza e Natura, Sport, Cinema e TV, Musica, Cucina, Letteratura, Arte, Tecnologia, Fisica, Matematica, Cultura generale). Altre 4 sono **categorie di nicchia** — Automobili e Motori, Formula 1, Ingegneria del Veicolo, Calcio — pensate per gruppi di appassionati: **non compaiono mai nella modalità "Tutte"**, vanno selezionate esplicitamente (anche più di una insieme) dai tasti categoria quando si crea la partita. Scriverne 2000 di qualità a mano non era realistico in un'unica sessione, quindi il progetto è pensato per crescere in due modi:
 
 1. **Dall'interno del gioco**: c'è una schermata "Aggiungi una domanda" per inserirne di nuove una alla volta (utile per far contribuire tutto il gruppo di amici).
 2. **In blocco via CSV**: usa lo script di importazione.
@@ -91,7 +97,7 @@ Il gioco parte con **408 domande** scritte a mano, divise in 17 categorie e 3 li
    Storia,facile,"In che anno è nata la Repubblica Italiana?",1946,1861,1918,1948,giallo
    ```
 
-   - `difficolta`: `facile`, `medio` o `difficile`
+   - `difficolta`: `facile`, `medio`, `difficile`, `superdifficile` o `impossibile`
    - `corretta`: il colore giusto (`giallo`/`blu`/`arancione`/`verde`) oppure l'indice 0-3
 
    Poi importa con:
@@ -108,9 +114,26 @@ Il presentatore è un personaggio originale disegnato in SVG (non un'immagine, q
 
 **Due modalità del presentatore**, scelte da chi crea la partita:
 - **Family friendly** (default): battute pungenti ma senza turpiloquio, adatte a tutti.
-- **Sboccato 🔞**: linguaggio diretto, sarcastico, occasionalmente scurrile. Le prese in giro restano sempre rivolte alla prestazione nel gioco (risposte sbagliate, classifica), mai a caratteristiche personali di chi gioca. La lobby mostra chiaramente ai giocatori quale modalità è attiva prima di iniziare, così nessuno viene colto di sorpresa.
+- **Sboccato 🔞**: linguaggio diretto, sarcastico, con qualche parolaccia usata con criterio. È pensato per essere genuinamente cattivo — insulti mirati su risposte sbagliate, timeout, ultimo posto, eliminazioni — non solo leggermente più informale della versione family. Le prese in giro restano sempre rivolte alla prestazione nel gioco, mai a caratteristiche personali di chi gioca. La lobby mostra chiaramente ai giocatori quale modalità è attiva prima di iniziare, così nessuno viene colto di sorpresa.
 
 **Battute a tema per categoria**: quando la domanda in corso appartiene a una categoria che si presta a un gioco di parole (per ora: Formula 1, Automobili e Motori, Ingegneria del Veicolo, Calcio), il presentatore ha una probabilità di scegliere una battuta scritta apposta sul tema invece di quella generica (es. "esce di pista con quella risposta" per una risposta sbagliata in Formula 1, "cartellino rosso" per il Calcio). Non è garantito che succeda ad ogni domanda — è voluto, per non essere ripetitivo — ma capita spesso ("quando possibile", come richiesto). Il meccanismo è generico (`CATEGORY_LINES` in `Host.js`): si può estendere ad altre categorie aggiungendo nuove voci nello stesso formato.
+
+**Battuta specifica sulla risposta sbagliata**: quando i risultati di una domanda sono misti (qualcuno giusto, qualcuno sbagliato), il presentatore mostra due battute in sequenza — prima una lode a chi ha risposto meglio, poi una stoccata mirata su UN giocatore scelto a caso tra chi ha sbagliato (se più giocatori sbagliano la stessa domanda, ne viene preso in giro solo uno, non tutti in fila). Questa seconda battuta cita sempre la risposta reale data dal giocatore:
+- Se la domanda ha una battuta scritta apposta per quella specifica risposta sbagliata (campo opzionale `wrongRoasts` nel file domande, es. "quello ha 6 zampe, {name}: quella è una formica, non un ragno"), usa quella.
+- Altrimenti ricade su un modello generico (`wrongSpecific` in `Host.js`) che cita comunque la risposta esatta data ("Secondo {name} la risposta era 'X'. Imbarazzante.").
+
+Circa 50 domande hanno già una battuta scritta a mano su misura (cercale con `grep -l wrongRoasts server/data/questions.json` o semplicemente aprendo il file); il meccanismo è pensato per crescere nel tempo aggiungendo altre voci `wrongRoasts` alle domande dove il collegamento è naturale, senza dover coprire tutte le domande per forza.
+
+**Sorpresa quando l'ultimo in classifica risponde giusto**: se il giocatore che era ultimo in classifica PRIMA della domanda risponde correttamente, circa il 40% delle volte scatta una battuta di sorpresa dedicata al posto del solito commento (es. "Oh, vedo che {name} si sta riprendendo dalla sbronza"), invece della normale presa in giro dell'ultimo posto. Le due battute non compaiono mai insieme nella stessa domanda.
+
+## Uscire dalla partita o dalla sessione
+
+Una volta entrati in una stanza compare un pulsante 🚪 in alto a sinistra, sempre disponibile, con due opzioni distinte:
+
+- **Esci da questa partita**: abbandoni solo la partita in corso. Non devi più rispondere alle domande né cliccare "Pronto" (quindi non blocchi più gli altri), ma resti nella stanza/sessione: se il presentatore avvia una nuova partita ("Nuova partita, stessa sessione"), rientri normalmente dall'inizio. Se abbandoni durante la fase a eliminazione, vieni trattato come eliminato in quel momento (non resti "in gara" senza poter rispondere).
+- **Esci dalla sessione**: esci del tutto dalla stanza, come se chiudessi la scheda. Non puoi rientrare nella stessa stanza con lo stesso codice da questo dispositivo se non ricreando/ri-unendoti da capo.
+
+Entrambe chiedono conferma prima di eseguire l'azione, per evitare click accidentali.
 
 ## Struttura del progetto
 
@@ -123,7 +146,7 @@ buzz-clone/
 │   │   ├── GameRoom.js      # Stato di gioco: fase 1, eliminazione a oltranza, punteggio di sessione
 │   │   ├── QuestionBank.js  # Caricamento/filtro/aggiunta domande
 │   │   └── Host.js          # Battute (e "umori") del presentatore virtuale
-│   ├── data/questions.json  # Le 408 domande di base (+ quelle aggiunte)
+│   ├── data/questions.json  # Le 544 domande di base (+ quelle aggiunte)
 │   └── scripts/importCsv.js # Import in blocco da CSV
 └── public/
     ├── index.html            # Schermate + markup del pupazzo SVG

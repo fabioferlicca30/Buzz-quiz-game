@@ -6,7 +6,7 @@
   let myNickname = '';
   let currentRoomCode = null;
   let isHost = false;
-  let createSettings = { visibility: 'private', mode: 'rush', difficulty: 'misto', hostMode: 'family' };
+  let createSettings = { visibility: 'private', mode: 'rush', difficulty: 'misto', hostMode: 'family', categories: [] };
   let newQuestionState = { difficulty: 'facile', correct: 0 };
   let playersById = new Map(); // id -> nickname (aggiornata da lobby/scoreboard)
   let currentEligibleIds = null;
@@ -16,6 +16,9 @@
   let hostBubbleTimeout = null;
   let talkingTimeout = null;
   let eliminationRoster = new Map(); // id -> { nickname, out }
+  let lastScoreboardOrder = []; // id in ordine di classifica dell'ultimo render, per l'animazione dei sorpassi
+  let iAmReady = false;
+  let iHaveLeftMatch = false;
 
   // ---- Helpers UI ------------------------------------------------------
   function showScreen(id) {
@@ -78,7 +81,11 @@
     clearTimeout(talkingTimeout);
     const talkMs = Math.max(1200, Math.min(4500, text.length * 55));
     talkingTimeout = setTimeout(() => mascot.classList.remove('talking'), talkMs);
-    hostBubbleTimeout = setTimeout(() => bubble.classList.add('hidden'), 5200);
+    // In modalità "spotlight" (pausa tra una domanda e l'altra) il fumetto resta visibile
+    // finché non si passa alla domanda successiva (gestito altrove), non sparisce da solo.
+    if (!bubble.classList.contains('spotlight')) {
+      hostBubbleTimeout = setTimeout(() => bubble.classList.add('hidden'), 5200);
+    }
 
     if (mood === 'celebrate') spawnConfetti(60);
   }
@@ -137,27 +144,56 @@
     return val;
   }
 
-  // ---- Caricamento categorie -------------------------------------------
+  // ---- Caricamento categorie (selezione multipla a chip) ----------------
   function loadCategories() {
     fetch('/api/categories')
       .then((r) => r.json())
       .then((data) => {
         const niche = new Set(data.nicheCategories || []);
-        const select = document.getElementById('select-category');
+        const picker = document.getElementById('category-picker');
+        const tuttaChip = document.getElementById('cat-chip-tutte');
         const datalist = document.getElementById('nq-category-list');
-        select.innerHTML = '<option value="tutte">Tutte</option>';
+
+        // Rimuove eventuali chip di categoria da un caricamento precedente, tenendo "Tutte".
+        picker.querySelectorAll('.cat-chip:not(#cat-chip-tutte)').forEach((el) => el.remove());
         datalist.innerHTML = '';
+
         data.categories.forEach((c) => {
-          const opt = document.createElement('option');
-          opt.value = c;
-          opt.textContent = niche.has(c) ? `${c} (manuale)` : c;
-          select.appendChild(opt);
+          const chip = document.createElement('button');
+          chip.type = 'button';
+          chip.className = 'cat-chip' + (niche.has(c) ? ' niche' : '');
+          chip.dataset.value = c;
+          chip.textContent = niche.has(c) ? `${c} 🔧` : c;
+          chip.addEventListener('click', () => toggleCategoryChip(chip));
+          picker.appendChild(chip);
+
           const dopt = document.createElement('option');
           dopt.value = c;
           datalist.appendChild(dopt);
         });
+
+        tuttaChip.addEventListener('click', () => {
+          createSettings.categories = [];
+          picker.querySelectorAll('.cat-chip').forEach((el) => el.classList.remove('active'));
+          tuttaChip.classList.add('active');
+        });
       })
       .catch(() => {});
+  }
+
+  function toggleCategoryChip(chip) {
+    const tuttaChip = document.getElementById('cat-chip-tutte');
+    const value = chip.dataset.value;
+    const idx = createSettings.categories.indexOf(value);
+    if (idx >= 0) {
+      createSettings.categories.splice(idx, 1);
+      chip.classList.remove('active');
+    } else {
+      createSettings.categories.push(value);
+      chip.classList.add('active');
+    }
+    // "Tutte" è attiva solo quando nessuna categoria specifica è selezionata.
+    tuttaChip.classList.toggle('active', createSettings.categories.length === 0);
   }
 
   // ---- Segmented controls generiche ------------------------------------
@@ -212,15 +248,19 @@
   document.getElementById('btn-nq-back').addEventListener('click', () => showScreen('screen-home'));
 
   // ---- Creazione partita ---------------------------------------------
+  function enterRoom() {
+    document.getElementById('exit-menu-wrap').classList.remove('hidden');
+  }
+
   document.getElementById('btn-create-confirm').addEventListener('click', () => {
-    const category = document.getElementById('select-category').value;
     socket.emit(
       'lobby:create',
-      { nickname: myNickname, visibility: createSettings.visibility, mode: createSettings.mode, difficulty: createSettings.difficulty, category, hostMode: createSettings.hostMode },
+      { nickname: myNickname, visibility: createSettings.visibility, mode: createSettings.mode, difficulty: createSettings.difficulty, categories: createSettings.categories, hostMode: createSettings.hostMode },
       (res) => {
         if (res.error) return setError('create-error', res.error);
         currentRoomCode = res.code;
         isHost = true;
+        enterRoom();
         renderLobby(res.summary);
         showScreen('screen-lobby');
       }
@@ -235,12 +275,18 @@
       if (res.error) return setError('join-error', res.error);
       currentRoomCode = res.code;
       isHost = false;
+      enterRoom();
       renderLobby(res.summary);
       showScreen('screen-lobby');
     });
   });
 
   // ---- Partite pubbliche --------------------------------------------
+  function formatCategories(categories) {
+    if (!categories || categories.length === 0) return 'Tutte';
+    return categories.join(' + ');
+  }
+
   function refreshPublicList() {
     socket.emit('lobby:list', (res) => renderPublicList(res.lobbies || []));
   }
@@ -255,7 +301,7 @@
     lobbies.forEach((l) => {
       const div = document.createElement('div');
       div.className = 'lobby-item';
-      div.innerHTML = `<div><strong>${l.players} giocatori</strong><br/><span class="muted">${l.mode === 'rush' ? 'Rush' : 'Classica'} · ${l.difficulty} · ${l.category}</span></div>`;
+      div.innerHTML = `<div><strong>${l.players} giocatori</strong><br/><span class="muted">${l.mode === 'rush' ? 'Rush' : 'Classica'} · ${l.difficulty} · ${formatCategories(l.categories)}</span></div>`;
       const btn = document.createElement('button');
       btn.textContent = 'Unisciti';
       btn.addEventListener('click', () => {
@@ -263,6 +309,7 @@
           if (res.error) return toast(res.error);
           currentRoomCode = res.code;
           isHost = false;
+          enterRoom();
           renderLobby(res.summary);
           showScreen('screen-lobby');
         });
@@ -315,7 +362,7 @@
     const modeLabel = summary.mode === 'rush' ? 'Rush (velocità)' : 'Classica (10s, punti fissi)';
     const hostModeLabel = summary.hostMode === 'unfiltered' ? 'Sboccato 🔞' : 'Family friendly';
     document.getElementById('lobby-settings').textContent =
-      `${summary.visibility === 'public' ? 'Partita aperta' : 'Partita chiusa'} · ${modeLabel} · Livello: ${summary.difficulty} · Categoria: ${summary.category} · Presentatore: ${hostModeLabel}`;
+      `${summary.visibility === 'public' ? 'Partita aperta' : 'Partita chiusa'} · ${modeLabel} · Livello: ${summary.difficulty} · Categorie: ${formatCategories(summary.categories)} · Presentatore: ${hostModeLabel}`;
 
     const list = document.getElementById('lobby-players');
     list.innerHTML = '';
@@ -373,11 +420,25 @@
     }, 100);
   }
 
+  function hideResultPause() {
+    document.getElementById('host-bubble').classList.remove('spotlight');
+    document.getElementById('ready-panel').classList.add('hidden');
+    iAmReady = false;
+  }
+
   socket.on('game:question', (q) => {
     showScreen('screen-game');
     answered = false;
     currentEligibleIds = q.eligibleIds;
     currentPhase = q.phase;
+
+    // Fine della pausa: si torna al presentatore in formato compatto e si nasconde "Pronto".
+    hideResultPause();
+
+    if (q.phase === 'phase1' && q.index === 0) {
+      lastScoreboardOrder = []; // nuova partita: nessuna animazione di sorpasso sulla prima domanda
+      iHaveLeftMatch = false; // nuova partita: si riparte tutti dentro, anche chi era uscito prima
+    }
 
     document.getElementById('game-match-label').textContent = `Partita ${q.matchNumber || 1}`;
     if (q.phase === 'elimination') {
@@ -437,13 +498,53 @@
   function renderMiniScoreboard(scoreboard) {
     scoreboard.forEach((p) => playersById.set(p.id, p.nickname));
     const el = document.getElementById('mini-scoreboard');
+
+    // FLIP: cattura la posizione attuale di ogni riga prima di ridisegnare, per poter animare
+    // lo spostamento verso la nuova posizione (sorpassi in classifica).
+    const firstRects = new Map();
+    el.querySelectorAll('.row').forEach((row) => {
+      firstRects.set(row.dataset.playerId, row.getBoundingClientRect());
+    });
+    const oldOrder = lastScoreboardOrder;
+
     el.innerHTML = '';
     scoreboard.forEach((p, i) => {
+      const oldRank = oldOrder.indexOf(p.id);
       const row = document.createElement('div');
-      row.className = 'row' + (p.id === myId ? ' me' : '');
-      row.innerHTML = `<span>${i + 1}. ${p.nickname}${p.eliminated ? ' ❌' : ''}</span><span>${p.score} pt</span>`;
+      row.dataset.playerId = p.id;
+      let arrow = '';
+      let moveClass = '';
+      if (oldRank !== -1 && oldRank !== i) {
+        if (oldRank > i) {
+          arrow = '<span class="rank-arrow rank-up">▲</span>';
+          moveClass = ' rank-improved';
+        } else {
+          arrow = '<span class="rank-arrow rank-down">▼</span>';
+          moveClass = ' rank-worsened';
+        }
+      }
+      row.className = 'row' + (p.id === myId ? ' me' : '') + moveClass;
+      row.innerHTML = `<span>${i + 1}. ${arrow}${p.nickname}${p.eliminated ? ' ❌' : ''}${p.leftMatch ? ' 🚪' : ''}</span><span>${p.score} pt</span>`;
       el.appendChild(row);
     });
+
+    // FLIP: applica la vecchia posizione e la anima verso quella nuova (appena calcolata).
+    el.querySelectorAll('.row').forEach((row) => {
+      const first = firstRects.get(row.dataset.playerId);
+      if (!first) return;
+      const last = row.getBoundingClientRect();
+      const deltaY = first.top - last.top;
+      if (deltaY) {
+        row.style.transition = 'none';
+        row.style.transform = `translateY(${deltaY}px)`;
+        requestAnimationFrame(() => {
+          row.style.transition = 'transform 0.5s ease';
+          row.style.transform = '';
+        });
+      }
+    });
+
+    lastScoreboardOrder = scoreboard.map((p) => p.id);
   }
 
   socket.on('game:questionResult', (data) => {
@@ -458,10 +559,58 @@
       buttons[mine.answerIndex].classList.add('wrong-pick');
     }
     if (data.scoreboard) renderMiniScoreboard(data.scoreboard);
+
+    // Il presentatore passa in primo piano al centro schermo per la pausa, con il pulsante "Pronto".
+    document.getElementById('host-bubble').classList.add('spotlight');
+    const readyPanel = document.getElementById('ready-panel');
+    readyPanel.classList.remove('hidden');
+    iAmReady = false;
+    const btnReady = document.getElementById('btn-ready');
+    btnReady.disabled = false;
+    btnReady.textContent = 'Pronto! ✅';
+  });
+
+  document.getElementById('btn-ready').addEventListener('click', () => {
+    if (iAmReady) return;
+    iAmReady = true;
+    socket.emit('game:ready');
+    const btn = document.getElementById('btn-ready');
+    btn.disabled = true;
+    btn.textContent = 'In attesa degli altri...';
+  });
+
+  socket.on('game:readyStatus', (data) => {
+    document.getElementById('ready-count').textContent = data.ready;
+    document.getElementById('ready-total').textContent = data.total;
+  });
+
+  // ---- Menu di uscita: dalla partita (resti in sessione) o dalla sessione intera --------
+  document.getElementById('btn-exit-toggle').addEventListener('click', () => {
+    document.getElementById('exit-menu').classList.toggle('hidden');
+  });
+  document.getElementById('btn-exit-cancel').addEventListener('click', () => {
+    document.getElementById('exit-menu').classList.add('hidden');
+  });
+  document.getElementById('btn-leave-match').addEventListener('click', () => {
+    document.getElementById('exit-menu').classList.add('hidden');
+    if (iHaveLeftMatch) return toast('Hai già abbandonato questa partita.');
+    if (!confirm('Abbandonare questa partita? Resterai nella sessione per la prossima.')) return;
+    socket.emit('match:leave', (res) => {
+      if (res && res.error) return toast(res.error);
+      iHaveLeftMatch = true;
+      toast('Hai abbandonato questa partita. Resti nella sessione.');
+    });
+  });
+  document.getElementById('btn-leave-session').addEventListener('click', () => {
+    document.getElementById('exit-menu').classList.add('hidden');
+    if (!confirm('Uscire dalla sessione? Non potrai rientrare in questa stanza.')) return;
+    socket.emit('session:leave');
+    location.reload();
   });
 
   // ---- Fine fase 1 -----------------------------------------------------
   socket.on('phase1:end', (data) => {
+    hideResultPause();
     showScreen('screen-phase1end');
     const list = document.getElementById('phase1-standings');
     list.innerHTML = '';
@@ -476,6 +625,7 @@
 
   // ---- Fase a eliminazione (ad oltranza) --------------------------------
   socket.on('elimination:start', (data) => {
+    hideResultPause();
     eliminationRoster = new Map();
     (data.qualifiers || []).forEach((q) => eliminationRoster.set(q.id, { nickname: q.nickname, out: false }));
     const list = document.getElementById('elimination-qualifiers');
@@ -523,6 +673,7 @@
   }
 
   socket.on('game:final', (data) => {
+    hideResultPause();
     showScreen('screen-final');
     document.getElementById('final-winner').textContent = data.championName ? `${data.championName} 🎉` : 'Nessun vincitore';
 

@@ -47,7 +47,7 @@ class QuestionBank {
     if (!Array.isArray(answers) || answers.length !== 4 || answers.some((a) => !a || !a.trim())) {
       throw new Error('Servono esattamente 4 risposte non vuote');
     }
-    if (!['facile', 'medio', 'difficile'].includes(difficulty)) {
+    if (!['facile', 'medio', 'difficile', 'superdifficile', 'impossibile'].includes(difficulty)) {
       throw new Error('Difficoltà non valida');
     }
     if (typeof correctIndex !== 'number' || correctIndex < 0 || correctIndex > 3) {
@@ -61,18 +61,25 @@ class QuestionBank {
   }
 
   // Estrae `count` domande casuali che rispettano i filtri, senza ripetere gli id già usati.
-  // Se la categoria richiesta è "tutte" (o non specificata), le categorie di nicchia vengono
-  // escluse dal pool: entrano in gioco solo se l'utente le seleziona esplicitamente.
+  // `category` può essere: 'tutte'/assente (default: tutte le categorie non di nicchia),
+  // una stringa singola (quella categoria esatta), oppure un array di categorie (unione:
+  // qualunque domanda che appartenga a una di quelle categorie, incluse quelle di nicchia).
   pickQuestions({ count, difficulty, category, excludeIds = new Set() }) {
-    const categoryExplicit = category && category !== 'tutte';
+    let categoryList = null; // null = "tutte" (default, esclude le categorie di nicchia)
+    if (Array.isArray(category)) {
+      categoryList = category.filter(Boolean);
+      if (categoryList.length === 0) categoryList = null;
+    } else if (category && category !== 'tutte') {
+      categoryList = [category];
+    }
 
-    // basePool rispetta SEMPRE la categoria esplicita (se presente) e l'esclusione delle
-    // categorie di nicchia quando non richieste esplicitamente. Ogni ulteriore allargamento
-    // del pool (sotto) riguarda solo la difficoltà: non fa mai "uscire" né dalla categoria
-    // scelta né dal divieto di nicchia in "tutte".
+    // basePool rispetta SEMPRE le categorie esplicite (se presenti) e l'esclusione delle
+    // categorie di nicchia quando nessuna categoria esplicita è stata scelta. Ogni ulteriore
+    // allargamento del pool (sotto) riguarda solo la difficoltà: non fa mai "uscire" né dalle
+    // categorie scelte né dal divieto di nicchia in "tutte".
     const basePool = this.questions.filter((q) => {
       if (excludeIds.has(q.id)) return false;
-      if (categoryExplicit) return q.category === category;
+      if (categoryList) return categoryList.includes(q.category);
       return !NICHE_CATEGORIES.has(q.category);
     });
 
@@ -80,7 +87,7 @@ class QuestionBank {
     if (difficulty && difficulty !== 'misto') pool = pool.filter((q) => q.difficulty === difficulty);
 
     // Se il pool filtrato per difficoltà non basta, allarghiamo ignorando la difficoltà,
-    // ma restando dentro a basePool (categoria/niche corrette).
+    // ma restando dentro a basePool (categorie/niche corrette).
     if (pool.length < count) {
       pool = basePool;
     }
