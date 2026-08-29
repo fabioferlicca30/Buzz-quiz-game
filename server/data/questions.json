@@ -4054,5 +4054,1253 @@
       "Stagflazione"
     ],
     "correctIndex": 0
+  },
+  {
+    "id": "q0313",
+    "category": "Automobili e Motori",
+    "difficulty": "facile",
+    "text": "Quanti pneumatici ha normalmente un'automobile?",
+    "answers": [
+      "4",
+      "3",
+      "5",
+      "6"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0314",
+    "category": "Automobili e Motori",
+    "difficulty": "facile",
+    "text": "Come si chiama il pedale che serve a fermare l'auto?",
+    "answers": [
+      "Freno",
+      "Acceleratore",
+      "Frizione",
+      "Clacson"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0315",
+    "category": "Automobili e Motori",
+    "difficulty": "facile",
+    "text": "Come si chiama il pedale che serve ad accelerare?",
+    "answers": [
+      "Acceleratore",
+      "Freno",
+      "Frizione",
+      "Clacson"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0316",
+    "category": "Automobili e Motori",
+    "difficulty": "facile",
+    "text": "Come si chiama lo strumento che indica la velocità dell'auto?",
+    "answers": [
+      "Tachimetro",
+      "Contachilometri",
+      "Contagiri",
+      "Manometro"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0317",
+    "category": "Automobili e Motori",
+    "difficulty": "facile",
+    "text": "Di che colore sono, per convenzione, le luci di retromarcia?",
+    "answers": [
+      "Bianco",
+      "Rosso",
+      "Verde",
+      "Blu"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0318",
+    "category": "Automobili e Motori",
+    "difficulty": "facile",
+    "text": "Come si chiama il liquido che lubrifica le parti in movimento del motore?",
+    "answers": [
+      "Olio motore",
+      "Acqua distillata",
+      "Benzina verde",
+      "Liquido antigelo"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0319",
+    "category": "Automobili e Motori",
+    "difficulty": "facile",
+    "text": "Quale combustibile usa tipicamente un motore diesel?",
+    "answers": [
+      "Gasolio",
+      "Benzina",
+      "Metano",
+      "GPL"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0320",
+    "category": "Automobili e Motori",
+    "difficulty": "facile",
+    "text": "Come si chiama il dispositivo che avvisa gli altri con un segnale acustico?",
+    "answers": [
+      "Clacson",
+      "Tergicristallo",
+      "Airbag",
+      "Cambio"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0321",
+    "category": "Automobili e Motori",
+    "difficulty": "medio",
+    "text": "Quanti tempi (fasi) compongono il ciclo di un motore a scoppio a quattro tempi?",
+    "answers": [
+      "4",
+      "2",
+      "6",
+      "8"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0322",
+    "category": "Automobili e Motori",
+    "difficulty": "medio",
+    "text": "Come si chiama il dispositivo che trasmette la potenza del motore alle ruote, cambiando i rapporti?",
+    "answers": [
+      "Cambio",
+      "Differenziale",
+      "Frizione",
+      "Volano"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0323",
+    "category": "Automobili e Motori",
+    "difficulty": "medio",
+    "text": "Cosa indica la sigla ABS?",
+    "answers": [
+      "Sistema antibloccaggio dei freni",
+      "Sistema di areazione abitacolo",
+      "Airbag posteriore supplementare",
+      "Assetto bilanciato sportivo"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0324",
+    "category": "Automobili e Motori",
+    "difficulty": "medio",
+    "text": "Come si chiama il dispositivo che comprime l'aria in ingresso per aumentare la potenza del motore?",
+    "answers": [
+      "Turbocompressore",
+      "Radiatore",
+      "Alternatore",
+      "Differenziale"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0325",
+    "category": "Automobili e Motori",
+    "difficulty": "medio",
+    "text": "In quale unità di misura si esprime tipicamente la cilindrata di un motore?",
+    "answers": [
+      "Centimetri cubici",
+      "Chilowatt",
+      "Newton metro",
+      "Litri al secondo"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0326",
+    "category": "Automobili e Motori",
+    "difficulty": "medio",
+    "text": "Come si chiama la parte del motore che scorre dentro il cilindro?",
+    "answers": [
+      "Pistone",
+      "Albero motore",
+      "Valvola",
+      "Candela"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0327",
+    "category": "Automobili e Motori",
+    "difficulty": "medio",
+    "text": "Cosa indica la sigla GPL?",
+    "answers": [
+      "Gas di Petrolio Liquefatto",
+      "Gas Puro Leggero",
+      "Generatore a Pressione Lenta",
+      "Gasolio a Purezza Lunga"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0328",
+    "category": "Automobili e Motori",
+    "difficulty": "medio",
+    "text": "Come si chiama il componente che accende la miscela aria-benzina in un motore a benzina?",
+    "answers": [
+      "Candela",
+      "Iniettore",
+      "Alternatore",
+      "Radiatore"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0329",
+    "category": "Automobili e Motori",
+    "difficulty": "difficile",
+    "text": "Come si chiama il rapporto tra il volume massimo e minimo di un cilindro durante il ciclo del motore?",
+    "answers": [
+      "Rapporto di compressione",
+      "Rapporto di trasmissione",
+      "Coefficiente di attrito",
+      "Rapporto peso/potenza"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0330",
+    "category": "Automobili e Motori",
+    "difficulty": "difficile",
+    "text": "Come si chiama la trazione in cui le ruote anteriori spingono e sterzano contemporaneamente?",
+    "answers": [
+      "Trazione anteriore",
+      "Trazione posteriore",
+      "Trazione integrale",
+      "Trazione centrale"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0331",
+    "category": "Automobili e Motori",
+    "difficulty": "difficile",
+    "text": "Come si chiama il dispositivo che permette alle due ruote motrici di girare a velocità diverse in curva?",
+    "answers": [
+      "Differenziale",
+      "Cambio",
+      "Volano",
+      "Ammortizzatore"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0332",
+    "category": "Automobili e Motori",
+    "difficulty": "difficile",
+    "text": "Cosa indica la sigla CVT riferita a un tipo di cambio automatico?",
+    "answers": [
+      "Cambio a variazione continua",
+      "Cambio a controllo vocale",
+      "Cambio a valvole triple",
+      "Cambio a velocità totale"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0333",
+    "category": "Automobili e Motori",
+    "difficulty": "difficile",
+    "text": "Cosa indica la sigla ESP nei sistemi di sicurezza automobilistici?",
+    "answers": [
+      "Controllo elettronico di stabilità",
+      "Sistema di parcheggio elettronico",
+      "Espansione della potenza motore",
+      "Sistema di propulsione elettrica"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0334",
+    "category": "Automobili e Motori",
+    "difficulty": "difficile",
+    "text": "Come si chiama il combustibile alternativo ottenuto dalla fermentazione di biomasse?",
+    "answers": [
+      "Bioetanolo",
+      "Idrogeno liquido",
+      "Cherosene",
+      "Metanolo puro"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0335",
+    "category": "Automobili e Motori",
+    "difficulty": "difficile",
+    "text": "Come si chiama l'organo meccanico che immagazzina energia rotazionale per rendere più regolare il funzionamento del motore?",
+    "answers": [
+      "Volano",
+      "Differenziale",
+      "Turbocompressore",
+      "Alternatore"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0336",
+    "category": "Automobili e Motori",
+    "difficulty": "difficile",
+    "text": "Quale casa automobilistica ha introdotto per prima la produzione in catena di montaggio su larga scala, con il celebre Modello T?",
+    "answers": [
+      "Ford",
+      "General Motors",
+      "Fiat",
+      "Chrysler"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0337",
+    "category": "Formula 1",
+    "difficulty": "facile",
+    "text": "Di che colore è la bandiera che segnala la fine di una gara di Formula 1?",
+    "answers": [
+      "A scacchi",
+      "Rossa",
+      "Verde",
+      "Gialla"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0338",
+    "category": "Formula 1",
+    "difficulty": "facile",
+    "text": "Quanti piloti compongono normalmente una scuderia di Formula 1 in gara?",
+    "answers": [
+      "2",
+      "1",
+      "3",
+      "4"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0339",
+    "category": "Formula 1",
+    "difficulty": "facile",
+    "text": "Come si chiama il momento in cui l'auto si ferma ai box per cambiare le gomme?",
+    "answers": [
+      "Pit stop",
+      "Time out",
+      "Check point",
+      "Safety car"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0340",
+    "category": "Formula 1",
+    "difficulty": "facile",
+    "text": "Quale colore ha la bandiera che segnala pericolo e impone di rallentare?",
+    "answers": [
+      "Gialla",
+      "Verde",
+      "Blu",
+      "Rossa"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0341",
+    "category": "Formula 1",
+    "difficulty": "facile",
+    "text": "Come si chiama la sessione che stabilisce l'ordine di partenza in griglia?",
+    "answers": [
+      "Qualifica",
+      "Warm up",
+      "Debrief",
+      "Formation lap"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0342",
+    "category": "Formula 1",
+    "difficulty": "facile",
+    "text": "In quale nazione si trova l'autodromo di Monza, storica tappa del Mondiale di Formula 1?",
+    "answers": [
+      "Italia",
+      "Francia",
+      "Spagna",
+      "Germania"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0343",
+    "category": "Formula 1",
+    "difficulty": "facile",
+    "text": "Come si chiama la posizione di chi parte per primo in griglia?",
+    "answers": [
+      "Pole position",
+      "Podio",
+      "Leader",
+      "Capofila"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0344",
+    "category": "Formula 1",
+    "difficulty": "facile",
+    "text": "Cosa indica la bandiera rossa esposta durante una sessione di Formula 1?",
+    "answers": [
+      "L'interruzione della sessione",
+      "La fine della gara",
+      "Un doppiaggio in corso",
+      "Un pit stop obbligatorio"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0345",
+    "category": "Formula 1",
+    "difficulty": "medio",
+    "text": "Quale organizzazione internazionale regola il campionato di Formula 1?",
+    "answers": [
+      "FIA",
+      "FIFA",
+      "UEFA",
+      "CONI"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0346",
+    "category": "Formula 1",
+    "difficulty": "medio",
+    "text": "Quanti punti guadagna, di norma, il vincitore di un Gran Premio (senza punto per il giro veloce)?",
+    "answers": [
+      "25",
+      "20",
+      "30",
+      "10"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0347",
+    "category": "Formula 1",
+    "difficulty": "medio",
+    "text": "Come si chiama il sistema che riduce la resistenza aerodinamica per favorire i sorpassi in rettilineo?",
+    "answers": [
+      "DRS",
+      "KERS",
+      "ERS",
+      "ABS"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0348",
+    "category": "Formula 1",
+    "difficulty": "medio",
+    "text": "Quale scuderia ha vinto più titoli costruttori nella storia della Formula 1?",
+    "answers": [
+      "Ferrari",
+      "McLaren",
+      "Williams",
+      "Mercedes"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0349",
+    "category": "Formula 1",
+    "difficulty": "medio",
+    "text": "Come si chiama la vettura che entra in pista per rallentare il gruppo in caso di incidente?",
+    "answers": [
+      "Safety car",
+      "Medical car",
+      "Pace car privata",
+      "Course car"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0350",
+    "category": "Formula 1",
+    "difficulty": "medio",
+    "text": "Quanti giri di ricognizione (formation lap) precedono normalmente lo start di una gara?",
+    "answers": [
+      "1",
+      "2",
+      "3",
+      "0"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0351",
+    "category": "Formula 1",
+    "difficulty": "medio",
+    "text": "Come si chiama la zona in pista dove è consentito attivare il DRS?",
+    "answers": [
+      "Zona DRS",
+      "Zona sicura",
+      "Zona neutra",
+      "Zona pit lane"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0352",
+    "category": "Formula 1",
+    "difficulty": "medio",
+    "text": "Quante scuderie hanno preso parte al campionato di Formula 1 nella stagione 2024?",
+    "answers": [
+      "10",
+      "8",
+      "12",
+      "14"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0353",
+    "category": "Formula 1",
+    "difficulty": "difficile",
+    "text": "In che anno debuttò il Campionato del Mondo di Formula 1?",
+    "answers": [
+      "1950",
+      "1946",
+      "1961",
+      "1938"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0354",
+    "category": "Formula 1",
+    "difficulty": "difficile",
+    "text": "Quali due piloti condividono il record di 7 titoli mondiali in Formula 1?",
+    "answers": [
+      "Lewis Hamilton e Michael Schumacher",
+      "Ayrton Senna e Alain Prost",
+      "Sebastian Vettel e Max Verstappen",
+      "Niki Lauda e James Hunt"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0355",
+    "category": "Formula 1",
+    "difficulty": "difficile",
+    "text": "Come si chiama la forza aerodinamica che spinge la vettura verso l'asfalto, aumentando l'aderenza?",
+    "answers": [
+      "Deportanza",
+      "Resistenza",
+      "Portanza",
+      "Aderenza statica"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0356",
+    "category": "Formula 1",
+    "difficulty": "difficile",
+    "text": "Quale materiale compone principalmente la monoscocca delle moderne Formula 1?",
+    "answers": [
+      "Fibra di carbonio",
+      "Alluminio",
+      "Titanio",
+      "Acciaio temprato"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0357",
+    "category": "Formula 1",
+    "difficulty": "difficile",
+    "text": "Come si chiama il sistema ibrido che recupera energia dai freni e dal turbo nelle attuali power unit?",
+    "answers": [
+      "ERS",
+      "DRS",
+      "ABS",
+      "KERS"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0358",
+    "category": "Formula 1",
+    "difficulty": "difficile",
+    "text": "In quale circuito cittadino si corre tradizionalmente il Gran Premio di Monaco?",
+    "answers": [
+      "Circuito di Monte Carlo",
+      "Circuito di Silverstone",
+      "Circuito di Spa-Francorchamps",
+      "Circuito di Suzuka"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0359",
+    "category": "Formula 1",
+    "difficulty": "difficile",
+    "text": "Quale scuderia interruppe, nel 2021, il lungo dominio Mercedes vincendo il titolo piloti con Max Verstappen?",
+    "answers": [
+      "Red Bull Racing",
+      "Ferrari",
+      "McLaren",
+      "Alpine"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0360",
+    "category": "Formula 1",
+    "difficulty": "difficile",
+    "text": "Nella Formula 1 attuale, quale colore identifica la mescola di gomme da asciutto più morbida (Soft)?",
+    "answers": [
+      "Rossa",
+      "Gialla",
+      "Bianca",
+      "Blu"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0361",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "facile",
+    "text": "Come si chiama la struttura portante che sostiene carrozzeria e componenti di un veicolo?",
+    "answers": [
+      "Telaio",
+      "Cambio",
+      "Cofano",
+      "Paraurti"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0362",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "facile",
+    "text": "Quale componente assorbe urti e vibrazioni tra ruota e scocca?",
+    "answers": [
+      "Ammortizzatore",
+      "Radiatore",
+      "Alternatore",
+      "Servosterzo"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0363",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "facile",
+    "text": "Come si chiama il sistema che raffredda il motore?",
+    "answers": [
+      "Radiatore",
+      "Alternatore",
+      "Cambio",
+      "Volano"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0364",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "facile",
+    "text": "Quale componente genera l'energia elettrica per ricaricare la batteria a motore acceso?",
+    "answers": [
+      "Alternatore",
+      "Radiatore",
+      "Differenziale",
+      "Turbocompressore"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0365",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "facile",
+    "text": "Come si chiama l'involucro esterno che dà forma al veicolo?",
+    "answers": [
+      "Carrozzeria",
+      "Telaio",
+      "Sospensione",
+      "Motore"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0366",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "facile",
+    "text": "Quale sistema collega il volante alle ruote per farle sterzare?",
+    "answers": [
+      "Sterzo",
+      "Cambio",
+      "Frizione",
+      "Differenziale"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0367",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "facile",
+    "text": "Come si chiamano i dispositivi di sicurezza che si gonfiano in caso di urto?",
+    "answers": [
+      "Airbag",
+      "ABS",
+      "ESP",
+      "Servosterzo"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0368",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "facile",
+    "text": "Quale componente collega il motore al cambio, permettendo di innestare e disinnestare la trasmissione?",
+    "answers": [
+      "Frizione",
+      "Radiatore",
+      "Alternatore",
+      "Differenziale"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0369",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "medio",
+    "text": "Come si chiama il ramo dell'ingegneria che studia il comportamento aerodinamico dei veicoli?",
+    "answers": [
+      "Aerodinamica",
+      "Termodinamica",
+      "Cinematica",
+      "Idraulica"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0370",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "medio",
+    "text": "Cosa indica il termine \"passo\" riferito a un veicolo?",
+    "answers": [
+      "La distanza tra gli assi anteriore e posteriore",
+      "La larghezza della carreggiata",
+      "L'altezza da terra",
+      "Il peso complessivo"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0371",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "medio",
+    "text": "Come si chiama la struttura progettata per deformarsi in modo controllato in caso di urto, assorbendo energia?",
+    "answers": [
+      "Zona di deformazione",
+      "Zona rigida",
+      "Telaio tubolare",
+      "Scocca portante"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0372",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "medio",
+    "text": "Quale tipo di scocca, oggi la più diffusa nelle auto di serie, integra telaio e carrozzeria in un unico elemento?",
+    "answers": [
+      "Scocca portante (monoscocca)",
+      "Telaio a longheroni separato",
+      "Telaio tubolare",
+      "Telaio a traliccio"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0373",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "medio",
+    "text": "Come si chiama il rapporto tra il peso del veicolo e la potenza del motore, usato per valutarne le prestazioni?",
+    "answers": [
+      "Rapporto peso/potenza",
+      "Rapporto di compressione",
+      "Coefficiente aerodinamico",
+      "Rapporto di trasmissione"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0374",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "medio",
+    "text": "Come si chiama il sistema elettronico che evita il pattinamento delle ruote in accelerazione?",
+    "answers": [
+      "Controllo di trazione",
+      "ABS",
+      "ESP",
+      "Servosterzo"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0375",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "medio",
+    "text": "Come si chiama il coefficiente che misura la resistenza aerodinamica di un veicolo?",
+    "answers": [
+      "Coefficiente di resistenza (Cx)",
+      "Coefficiente di attrito statico",
+      "Modulo di elasticità",
+      "Coefficiente di smorzamento"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0376",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "medio",
+    "text": "Quale materiale leggero è sempre più usato nell'industria automobilistica per ridurre i pesi delle vetture?",
+    "answers": [
+      "Fibra di carbonio",
+      "Ghisa",
+      "Piombo",
+      "Ottone"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0377",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "difficile",
+    "text": "Come si chiama lo studio del comportamento di un veicolo in relazione alle forze che agiscono su di esso durante la marcia?",
+    "answers": [
+      "Dinamica del veicolo",
+      "Statica dei materiali",
+      "Fluidodinamica",
+      "Termodinamica applicata"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0378",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "difficile",
+    "text": "Cosa indica il termine \"baricentro\" in ingegneria del veicolo?",
+    "answers": [
+      "Il punto in cui si considera concentrato il peso del veicolo",
+      "Il punto più alto della carrozzeria",
+      "Il centro del motore",
+      "Il punto di sterzata massima"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0379",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "difficile",
+    "text": "Come si chiama la vibrazione oscillante delle ruote anteriori a certe velocità, dovuta a squilibri meccanici?",
+    "answers": [
+      "Shimmy",
+      "Sovrasterzo",
+      "Beccheggio",
+      "Rollio"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0380",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "difficile",
+    "text": "Come si chiama il movimento di oscillazione del veicolo attorno all'asse trasversale, tipico in frenata o accelerazione?",
+    "answers": [
+      "Beccheggio",
+      "Rollio",
+      "Imbardata",
+      "Shimmy"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0381",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "difficile",
+    "text": "Come si chiama il movimento di rotazione del veicolo attorno all'asse verticale, ad esempio in un testacoda?",
+    "answers": [
+      "Imbardata",
+      "Beccheggio",
+      "Rollio",
+      "Shimmy"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0382",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "difficile",
+    "text": "Quale principio ingegneristico riguarda la ripartizione ottimale del peso tra i due assi per la migliore tenuta di strada?",
+    "answers": [
+      "Distribuzione dei pesi",
+      "Rapporto di compressione",
+      "Coefficiente di attrito dinamico",
+      "Modulo elastico"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0383",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "difficile",
+    "text": "Quale schema sospensivo utilizza un braccio triangolare superiore e uno inferiore per un controllo preciso della ruota?",
+    "answers": [
+      "Sospensione a quadrilatero (doppi bracci)",
+      "Sospensione McPherson",
+      "Sospensione ad assale rigido",
+      "Sospensione pneumatica"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0384",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "difficile",
+    "text": "Quale tipo di sospensione, diffusissima per semplicità ed economicità, integra ammortizzatore e molla in un unico montante?",
+    "answers": [
+      "Sospensione McPherson",
+      "Sospensione a quadrilatero",
+      "Sospensione ad assale rigido",
+      "Sospensione idropneumatica"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0385",
+    "category": "Calcio",
+    "difficulty": "facile",
+    "text": "Quanti giocatori compongono una squadra di calcio in campo, esclusi i cambi?",
+    "answers": [
+      "11",
+      "10",
+      "9",
+      "12"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0386",
+    "category": "Calcio",
+    "difficulty": "facile",
+    "text": "Quanto dura, escluso il recupero, un tempo regolamentare di una partita di calcio?",
+    "answers": [
+      "45 minuti",
+      "30 minuti",
+      "40 minuti",
+      "50 minuti"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0387",
+    "category": "Calcio",
+    "difficulty": "facile",
+    "text": "Come si chiama il calcio dal dischetto assegnato per un fallo in area di rigore?",
+    "answers": [
+      "Calcio di rigore",
+      "Calcio d'angolo",
+      "Calcio di punizione",
+      "Rimessa laterale"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0388",
+    "category": "Calcio",
+    "difficulty": "facile",
+    "text": "Di che colore è il cartellino che comporta l'espulsione di un giocatore?",
+    "answers": [
+      "Rosso",
+      "Giallo",
+      "Blu",
+      "Verde"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0389",
+    "category": "Calcio",
+    "difficulty": "facile",
+    "text": "Come si chiama il ruolo del giocatore che difende la porta?",
+    "answers": [
+      "Portiere",
+      "Libero",
+      "Terzino",
+      "Mediano"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0390",
+    "category": "Calcio",
+    "difficulty": "facile",
+    "text": "Quale nazionale ha vinto il maggior numero di Coppe del Mondo FIFA, fino all'edizione 2022?",
+    "answers": [
+      "Brasile",
+      "Germania",
+      "Italia",
+      "Argentina"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0391",
+    "category": "Calcio",
+    "difficulty": "facile",
+    "text": "Come si chiama il calcio battuto quando il pallone esce dalla linea di fondo toccato per ultimo da un difendente?",
+    "answers": [
+      "Calcio d'angolo",
+      "Calcio di punizione",
+      "Rimessa dal fondo",
+      "Calcio di rigore"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0392",
+    "category": "Calcio",
+    "difficulty": "facile",
+    "text": "Ogni quanti anni si disputa, di norma, il Campionato Mondiale di calcio?",
+    "answers": [
+      "4 anni",
+      "2 anni",
+      "3 anni",
+      "5 anni"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0393",
+    "category": "Calcio",
+    "difficulty": "medio",
+    "text": "Come si chiama la regola che sanziona un attaccante che riceve palla in una posizione irregolare rispetto alla difesa avversaria?",
+    "answers": [
+      "Fuorigioco",
+      "Rigore",
+      "Vantaggio",
+      "Fallo laterale"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0394",
+    "category": "Calcio",
+    "difficulty": "medio",
+    "text": "In quale nazione si sono svolti i Mondiali di calcio del 2018?",
+    "answers": [
+      "Russia",
+      "Brasile",
+      "Qatar",
+      "Germania"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0395",
+    "category": "Calcio",
+    "difficulty": "medio",
+    "text": "Come si chiama la competizione europea per club più prestigiosa, riservata alle migliori squadre di ogni campionato?",
+    "answers": [
+      "UEFA Champions League",
+      "UEFA Europa League",
+      "Coppa delle Coppe",
+      "Supercoppa Europea"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0396",
+    "category": "Calcio",
+    "difficulty": "medio",
+    "text": "Quale ruolo occupa tipicamente il giocatore più arretrato tra i difensori, davanti al portiere?",
+    "answers": [
+      "Difensore centrale",
+      "Ala",
+      "Trequartista",
+      "Centrocampista offensivo"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0397",
+    "category": "Calcio",
+    "difficulty": "medio",
+    "text": "Come si chiama l'assistente arbitrale che segnala fuorigioco e rimesse laterali lungo la linea?",
+    "answers": [
+      "Guardalinee",
+      "Quarto uomo",
+      "Direttore di gara",
+      "Ispettore"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0398",
+    "category": "Calcio",
+    "difficulty": "medio",
+    "text": "Quale nazionale ha vinto il Campionato Mondiale di calcio 2022 in Qatar?",
+    "answers": [
+      "Argentina",
+      "Francia",
+      "Brasile",
+      "Croazia"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0399",
+    "category": "Calcio",
+    "difficulty": "medio",
+    "text": "Come si chiama la tecnologia che aiuta l'arbitro a rivedere episodi dubbi tramite immagini video?",
+    "answers": [
+      "VAR",
+      "GPS",
+      "RFID",
+      "LED"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0400",
+    "category": "Calcio",
+    "difficulty": "medio",
+    "text": "Quale squadra ha vinto più scudetti nella storia della Serie A italiana?",
+    "answers": [
+      "Juventus",
+      "Inter",
+      "Milan",
+      "Napoli"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0401",
+    "category": "Calcio",
+    "difficulty": "difficile",
+    "text": "In che anno si è disputato il primo Campionato del Mondo di calcio?",
+    "answers": [
+      "1930",
+      "1926",
+      "1934",
+      "1922"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0402",
+    "category": "Calcio",
+    "difficulty": "difficile",
+    "text": "Quale calciatore ha vinto il maggior numero di Palloni d'Oro nella storia, fino alle edizioni più recenti?",
+    "answers": [
+      "Lionel Messi",
+      "Cristiano Ronaldo",
+      "Michel Platini",
+      "Johan Cruijff"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0403",
+    "category": "Calcio",
+    "difficulty": "difficile",
+    "text": "Come si chiama il modulo tattico caratterizzato da 4 difensori, 4 centrocampisti e 2 attaccanti?",
+    "answers": [
+      "4-4-2",
+      "4-3-3",
+      "3-5-2",
+      "5-3-2"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0404",
+    "category": "Calcio",
+    "difficulty": "difficile",
+    "text": "Quale nazionale ha vinto il maggior numero di edizioni del Campionato Europeo di calcio, dopo il successo a Euro 2024?",
+    "answers": [
+      "Spagna",
+      "Germania",
+      "Francia",
+      "Italia"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0405",
+    "category": "Calcio",
+    "difficulty": "difficile",
+    "text": "Come si chiamava il trofeo originale della Coppa del Mondo, sostituito dall'attuale nel 1974?",
+    "answers": [
+      "Coppa Rimet",
+      "Coppa FIFA",
+      "Coppa d'Oro",
+      "Coppa Jules"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0406",
+    "category": "Calcio",
+    "difficulty": "difficile",
+    "text": "Quale calciatore detiene il record di gol in una singola edizione dei Mondiali, con 13 reti nel 1958?",
+    "answers": [
+      "Just Fontaine",
+      "Pelé",
+      "Eusébio",
+      "Gerd Müller"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0407",
+    "category": "Calcio",
+    "difficulty": "difficile",
+    "text": "Come si chiama la manovra difensiva in cui più giocatori si dispongono in linea per neutralizzare il fuorigioco avversario?",
+    "answers": [
+      "Trappola del fuorigioco",
+      "Pressing alto",
+      "Catenaccio",
+      "Zona mista"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "q0408",
+    "category": "Calcio",
+    "difficulty": "difficile",
+    "text": "Quale sistema tattico difensivo, sviluppato in Italia, prevede un libero dietro la linea dei difensori?",
+    "answers": [
+      "Catenaccio",
+      "Tiki-taka",
+      "Gegenpressing",
+      "Zona totale"
+    ],
+    "correctIndex": 0
   }
 ]

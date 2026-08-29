@@ -96,6 +96,14 @@
 
     <label>Categoria</label>
     <select id="select-category"><option value="tutte">Tutte</option></select>
+    <p class="muted small" id="niche-hint">Le categorie speciali (es. Formula 1, Calcio...) non sono incluse in "Tutte": vanno scelte qui esplicitamente.</p>
+
+    <label>Presentatore</label>
+    <div class="segmented" id="opt-hostmode">
+      <button class="seg-btn active" data-value="family">Family friendly (default)</button>
+      <button class="seg-btn" data-value="unfiltered">Sboccato — niente filtri 🔞</button>
+    </div>
+    <p class="error" id="hostmode-warning" style="display:none">⚠️ Il presentatore "sboccato" usa un linguaggio diretto, sarcastico e a tratti volgare (nessun contenuto discriminatorio, solo prese in giro sul gioco). Adatto a un pubblico adulto.</p>
 
     <button class="btn btn-primary" id="btn-create-confirm">Crea la partita</button>
     <button class="btn btn-ghost" id="btn-create-back">Indietro</button>

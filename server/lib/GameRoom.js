@@ -25,6 +25,7 @@ class GameRoom {
     this.mode = settings.mode === 'classic' ? 'classic' : 'rush'; // 'rush' | 'classic'
     this.difficulty = settings.difficulty || 'misto'; // facile|medio|difficile|misto
     this.category = settings.category || 'tutte';
+    this.hostMode = settings.hostMode === 'unfiltered' ? 'unfiltered' : 'family'; // presentatore: 'family' o 'unfiltered' (non family friendly)
     this.hostSocketId = hostSocketId;
     this.players = new Map(); // socketId -> player
     this.state = 'lobby'; // lobby | phase1 | elimination | finished
@@ -76,6 +77,7 @@ class GameRoom {
       mode: this.mode,
       difficulty: this.difficulty,
       category: this.category,
+      hostMode: this.hostMode,
       state: this.state,
       matchNumber: this.matchNumber,
       players: this.playerList.map((p) => ({ nickname: p.nickname, isHost: p.isHost, connected: p.connected })),
@@ -120,7 +122,7 @@ class GameRoom {
   // ---- Ciclo principale di UNA partita -----------------------------------
   async run(io) {
     this.state = 'phase1';
-    io.to(this.code).emit('host:say', host.say('welcome'));
+    io.to(this.code).emit('host:say', host.say('welcome', {}, { mode: this.hostMode }));
     await wait(1200);
 
     // Da seconda partita in poi, il presentatore prende in giro chi comanda/è ultimo in classifica di sessione.
@@ -130,8 +132,8 @@ class GameRoom {
         const leader = board[0];
         const last = board[board.length - 1];
         const line = Math.random() < 0.5
-          ? host.say('sessionLeaderRoast', { name: leader.nickname })
-          : host.say('sessionLastRoast', { name: last.nickname });
+          ? host.say('sessionLeaderRoast', { name: leader.nickname }, { mode: this.hostMode })
+          : host.say('sessionLastRoast', { name: last.nickname }, { mode: this.hostMode });
         io.to(this.code).emit('host:say', line);
         await wait(2500);
       }
@@ -168,7 +170,7 @@ class GameRoom {
     this.questionStartTs = Date.now();
     this.activeCompetitorIds = activeIds; // null = tutti i giocatori collegati possono rispondere
 
-    io.to(this.code).emit('host:say', host.say('questionIntro'));
+    io.to(this.code).emit('host:say', host.say('questionIntro', {}, { category: question.category, mode: this.hostMode }));
     io.to(this.code).emit('game:question', {
       phase,
       matchNumber: this.matchNumber,
@@ -249,18 +251,19 @@ class GameRoom {
     }
 
     let hostMessage;
+    const ctx = { category: question.category, mode: this.hostMode };
     if (!anyCorrect) {
-      hostMessage = host.say('everyoneWrong');
+      hostMessage = host.say('everyoneWrong', {}, ctx);
     } else if (!anyWrong && correctAnswers.length === eligibleIds.length) {
-      hostMessage = host.say('everyoneRight');
+      hostMessage = host.say('everyoneRight', {}, ctx);
     } else if (scoringMode === 'rush' && fastestCorrectName) {
-      hostMessage = host.say('correctFast', { name: fastestCorrectName });
+      hostMessage = host.say('correctFast', { name: fastestCorrectName }, ctx);
     } else if (correctAnswers.length > 0) {
       const last = correctAnswers[correctAnswers.length - 1];
       const p = this.players.get(last.id);
-      hostMessage = host.say('correctSlow', { name: p ? p.nickname : 'qualcuno' });
+      hostMessage = host.say('correctSlow', { name: p ? p.nickname : 'qualcuno' }, ctx);
     } else {
-      hostMessage = host.say('wrong', { name: 'tutti' });
+      hostMessage = host.say('wrong', { name: 'tutti' }, ctx);
     }
 
     // Annuncio cambio leader (se qualcuno ha appena scavalcato il primo in classifica).
@@ -270,7 +273,7 @@ class GameRoom {
       .sort((a, b) => b.score - a.score);
     const newLeader = board[0];
     if (newLeader && this.previousLeaderId && newLeader.id !== this.previousLeaderId) {
-      hostMessage = host.say('leaderChange', { name: newLeader.nickname });
+      hostMessage = host.say('leaderChange', { name: newLeader.nickname }, ctx);
     }
     if (newLeader) this.previousLeaderId = newLeader.id;
 
@@ -279,7 +282,7 @@ class GameRoom {
       const last = board[board.length - 1];
       const first = board[0];
       if (last && first && last.id !== first.id) {
-        hostMessage = host.say('lastPlaceRoast', { name: last.nickname });
+        hostMessage = host.say('lastPlaceRoast', { name: last.nickname }, ctx);
       }
     }
 
@@ -302,7 +305,7 @@ class GameRoom {
       standings,
       qualifiers: qualifiers.map((q) => q.id),
     });
-    io.to(this.code).emit('host:say', host.say('phase1End'));
+    io.to(this.code).emit('host:say', host.say('phase1End', {}, { mode: this.hostMode }));
     await wait(BIG_PAUSE_MS);
 
     const nonQualifiedIds = nonQualified.map((p) => p.id);
@@ -315,7 +318,7 @@ class GameRoom {
     }
 
     this.state = 'elimination';
-    io.to(this.code).emit('host:say', host.say('tournamentStart'));
+    io.to(this.code).emit('host:say', host.say('tournamentStart', {}, { mode: this.hostMode }));
     io.to(this.code).emit('elimination:start', {
       qualifiers: qualifiers.map((q) => ({ id: q.id, nickname: q.nickname })),
     });
@@ -369,7 +372,7 @@ class GameRoom {
       this.questionStartTs = Date.now();
       this.activeCompetitorIds = new Set(active);
 
-      io.to(this.code).emit('host:say', host.say('eliminationRoundIntro'));
+      io.to(this.code).emit('host:say', host.say('eliminationRoundIntro', {}, { category: question.category, mode: this.hostMode }));
       io.to(this.code).emit('game:question', {
         phase: 'elimination',
         index: roundIndex,
@@ -415,12 +418,13 @@ class GameRoom {
 
       let hostMessage;
       let eliminatedNow = [];
+      const elimCtx = { category: question.category, mode: this.hostMode };
       if (wrongIds.length === 0) {
         // Tutti giusti: nessuna eliminazione, si continua con lo stesso gruppo e domande più difficili.
-        hostMessage = host.say('eliminationAllRightContinue');
+        hostMessage = host.say('eliminationAllRightContinue', {}, elimCtx);
       } else if (wrongIds.length === active.length) {
         // Tutti sbagliano: per regola nessuno viene eliminato, si va avanti comunque.
-        hostMessage = host.say('eliminationAllWrongContinue');
+        hostMessage = host.say('eliminationAllWrongContinue', {}, elimCtx);
       } else {
         for (const id of wrongIds) {
           const p = this.players.get(id);
@@ -432,7 +436,7 @@ class GameRoom {
         eliminatedRounds.push(wrongIds);
         eliminatedNow = wrongIds;
         const names = wrongIds.map((id) => this.players.get(id)?.nickname || '???').join(', ');
-        hostMessage = host.say('eliminationSomeOut', { names });
+        hostMessage = host.say('eliminationSomeOut', { names }, elimCtx);
         active = correctIds;
       }
 
@@ -472,7 +476,7 @@ class GameRoom {
 
     if (winnerId) {
       const champion = this.players.get(winnerId);
-      io.to(this.code).emit('host:say', host.say('eliminationChampion', { name: champion ? champion.nickname : 'il vincitore' }));
+      io.to(this.code).emit('host:say', host.say('eliminationChampion', { name: champion ? champion.nickname : 'il vincitore' }, { mode: this.hostMode }));
       await wait(2500);
     }
 
@@ -495,7 +499,7 @@ class GameRoom {
 
     const sessionBoard = this.sessionScoreboard();
 
-    io.to(this.code).emit('host:say', champion ? host.say('finalWinner', { name: champion.nickname }) : { text: 'Partita conclusa!', mood: 'neutral' });
+    io.to(this.code).emit('host:say', champion ? host.say('finalWinner', { name: champion.nickname }, { mode: this.hostMode }) : { text: 'Partita conclusa!', mood: 'neutral' });
 
     io.to(this.code).emit('game:final', {
       matchNumber: this.matchNumber,

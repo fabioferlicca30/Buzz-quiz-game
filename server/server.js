@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, '..', 'public')));
 
 app.get('/api/categories', (req, res) => {
-  res.json({ categories: questionBank.getCategories() });
+  res.json({ categories: questionBank.getCategories(), nicheCategories: questionBank.getNicheCategories() });
 });
 
 app.post('/api/questions', (req, res) => {
@@ -65,10 +65,10 @@ function broadcastLobbyState(room) {
 }
 
 io.on('connection', (socket) => {
-  socket.on('lobby:create', ({ nickname, visibility, mode, difficulty, category }, cb) => {
+  socket.on('lobby:create', ({ nickname, visibility, mode, difficulty, category, hostMode }, cb) => {
     if (!nickname || !nickname.trim()) return cb && cb({ error: 'Nickname mancante' });
     const code = generateCode();
-    const room = new GameRoom(code, socket.id, { visibility, mode, difficulty, category });
+    const room = new GameRoom(code, socket.id, { visibility, mode, difficulty, category, hostMode });
     room.addPlayer(socket.id, nickname.trim());
     rooms.set(code, room);
     socketRoomCode.set(socket.id, code);

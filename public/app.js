@@ -6,7 +6,7 @@
   let myNickname = '';
   let currentRoomCode = null;
   let isHost = false;
-  let createSettings = { visibility: 'private', mode: 'rush', difficulty: 'misto' };
+  let createSettings = { visibility: 'private', mode: 'rush', difficulty: 'misto', hostMode: 'family' };
   let newQuestionState = { difficulty: 'facile', correct: 0 };
   let playersById = new Map(); // id -> nickname (aggiornata da lobby/scoreboard)
   let currentEligibleIds = null;
@@ -142,6 +142,7 @@
     fetch('/api/categories')
       .then((r) => r.json())
       .then((data) => {
+        const niche = new Set(data.nicheCategories || []);
         const select = document.getElementById('select-category');
         const datalist = document.getElementById('nq-category-list');
         select.innerHTML = '<option value="tutte">Tutte</option>';
@@ -149,7 +150,7 @@
         data.categories.forEach((c) => {
           const opt = document.createElement('option');
           opt.value = c;
-          opt.textContent = c;
+          opt.textContent = niche.has(c) ? `${c} (manuale)` : c;
           select.appendChild(opt);
           const dopt = document.createElement('option');
           dopt.value = c;
@@ -174,6 +175,10 @@
   wireSegmented('opt-visibility', (v) => (createSettings.visibility = v));
   wireSegmented('opt-mode', (v) => (createSettings.mode = v));
   wireSegmented('opt-difficulty', (v) => (createSettings.difficulty = v));
+  wireSegmented('opt-hostmode', (v) => {
+    createSettings.hostMode = v;
+    document.getElementById('hostmode-warning').style.display = v === 'unfiltered' ? 'block' : 'none';
+  });
   wireSegmented('nq-difficulty', (v) => (newQuestionState.difficulty = v));
   wireSegmented('nq-correct', (v) => (newQuestionState.correct = parseInt(v, 10)));
 
@@ -211,7 +216,7 @@
     const category = document.getElementById('select-category').value;
     socket.emit(
       'lobby:create',
-      { nickname: myNickname, visibility: createSettings.visibility, mode: createSettings.mode, difficulty: createSettings.difficulty, category },
+      { nickname: myNickname, visibility: createSettings.visibility, mode: createSettings.mode, difficulty: createSettings.difficulty, category, hostMode: createSettings.hostMode },
       (res) => {
         if (res.error) return setError('create-error', res.error);
         currentRoomCode = res.code;
@@ -308,8 +313,9 @@
       codeWrap.classList.add('hidden');
     }
     const modeLabel = summary.mode === 'rush' ? 'Rush (velocità)' : 'Classica (10s, punti fissi)';
+    const hostModeLabel = summary.hostMode === 'unfiltered' ? 'Sboccato 🔞' : 'Family friendly';
     document.getElementById('lobby-settings').textContent =
-      `${summary.visibility === 'public' ? 'Partita aperta' : 'Partita chiusa'} · ${modeLabel} · Livello: ${summary.difficulty} · Categoria: ${summary.category}`;
+      `${summary.visibility === 'public' ? 'Partita aperta' : 'Partita chiusa'} · ${modeLabel} · Livello: ${summary.difficulty} · Categoria: ${summary.category} · Presentatore: ${hostModeLabel}`;
 
     const list = document.getElementById('lobby-players');
     list.innerHTML = '';

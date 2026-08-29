@@ -3,6 +3,10 @@ const path = require('path');
 
 const DATA_PATH = path.join(__dirname, '..', 'data', 'questions.json');
 
+// Categorie "di nicchia": non entrano mai nella modalità "Tutte" per default,
+// vanno selezionate esplicitamente dal menu categoria.
+const NICHE_CATEGORIES = new Set(['Automobili e Motori', 'Formula 1', 'Ingegneria del Veicolo', 'Calcio']);
+
 class QuestionBank {
   constructor() {
     this.questions = [];
@@ -33,6 +37,11 @@ class QuestionBank {
     return [...new Set(this.questions.map((q) => q.category))].sort();
   }
 
+  // Categorie selezionabili solo manualmente (mai incluse di default in "Tutte").
+  getNicheCategories() {
+    return [...NICHE_CATEGORIES].sort();
+  }
+
   addQuestion({ category, difficulty, text, answers, correctIndex }) {
     if (!category || !difficulty || !text) throw new Error('Campi mancanti');
     if (!Array.isArray(answers) || answers.length !== 4 || answers.some((a) => !a || !a.trim())) {
@@ -52,18 +61,28 @@ class QuestionBank {
   }
 
   // Estrae `count` domande casuali che rispettano i filtri, senza ripetere gli id già usati.
+  // Se la categoria richiesta è "tutte" (o non specificata), le categorie di nicchia vengono
+  // escluse dal pool: entrano in gioco solo se l'utente le seleziona esplicitamente.
   pickQuestions({ count, difficulty, category, excludeIds = new Set() }) {
-    let pool = this.questions.filter((q) => !excludeIds.has(q.id));
-    if (category && category !== 'tutte') pool = pool.filter((q) => q.category === category);
+    const categoryExplicit = category && category !== 'tutte';
+
+    // basePool rispetta SEMPRE la categoria esplicita (se presente) e l'esclusione delle
+    // categorie di nicchia quando non richieste esplicitamente. Ogni ulteriore allargamento
+    // del pool (sotto) riguarda solo la difficoltà: non fa mai "uscire" né dalla categoria
+    // scelta né dal divieto di nicchia in "tutte".
+    const basePool = this.questions.filter((q) => {
+      if (excludeIds.has(q.id)) return false;
+      if (categoryExplicit) return q.category === category;
+      return !NICHE_CATEGORIES.has(q.category);
+    });
+
+    let pool = basePool;
     if (difficulty && difficulty !== 'misto') pool = pool.filter((q) => q.difficulty === difficulty);
 
-    // Se il pool filtrato non basta, allarga gradualmente i criteri per non bloccare la partita.
-    if (pool.length < count && difficulty && difficulty !== 'misto') {
-      const fallback = this.questions.filter((q) => !excludeIds.has(q.id) && (!category || category === 'tutte' || q.category === category));
-      pool = fallback;
-    }
+    // Se il pool filtrato per difficoltà non basta, allarghiamo ignorando la difficoltà,
+    // ma restando dentro a basePool (categoria/niche corrette).
     if (pool.length < count) {
-      pool = this.questions.filter((q) => !excludeIds.has(q.id));
+      pool = basePool;
     }
 
     const shuffled = [...pool].sort(() => Math.random() - 0.5);
