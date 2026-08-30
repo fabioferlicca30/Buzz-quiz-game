@@ -85,7 +85,7 @@ Alternative equivalenti: **Railway.app**, **Fly.io**, oppure un piccolo VPS. Evi
 
 ## Come arrivare a 2000+ domande
 
-Il gioco parte con **544 domande** scritte a mano, divise in 17 categorie e **5 livelli di difficoltà** (facile, medio, difficile, super difficile, impossibile). 13 categorie sono incluse nella modalità "Tutte" (Storia, Geografia, Scienza e Natura, Sport, Cinema e TV, Musica, Cucina, Letteratura, Arte, Tecnologia, Fisica, Matematica, Cultura generale). Altre 4 sono **categorie di nicchia** — Automobili e Motori, Formula 1, Ingegneria del Veicolo, Calcio — pensate per gruppi di appassionati: **non compaiono mai nella modalità "Tutte"**, vanno selezionate esplicitamente (anche più di una insieme) dai tasti categoria quando si crea la partita. Scriverne 2000 di qualità a mano non era realistico in un'unica sessione, quindi il progetto è pensato per crescere in due modi:
+Il gioco parte con **1728 domande** scritte a mano nel mazzo principale, divise in 18 categorie e **5 livelli di difficoltà** (facile, medio, difficile, super difficile, impossibile). 14 categorie sono incluse nella modalità "Tutte" (Storia, Geografia, Scienza e Natura, Sport, Cinema e TV, Serie TV, Musica, Cucina, Letteratura, Arte, Tecnologia, Fisica, Matematica, Cultura generale). Altre 4 sono **categorie di nicchia** — Automobili e Motori, Formula 1, Ingegneria del Veicolo, Calcio — pensate per gruppi di appassionati: **non compaiono mai nella modalità "Tutte"**, vanno selezionate esplicitamente (anche più di una insieme) dai tasti categoria quando si crea la partita. Il progetto può comunque continuare a crescere ulteriormente in due modi:
 
 1. **Dall'interno del gioco**: c'è una schermata "Aggiungi una domanda" per inserirne di nuove una alla volta (utile per far contribuire tutto il gruppo di amici).
 2. **In blocco via CSV**: usa lo script di importazione.
@@ -143,16 +143,32 @@ buzz-clone/
 ├── server/
 │   ├── server.js            # Express + Socket.io, gestione lobby/matchmaking/sessione
 │   ├── lib/
-│   │   ├── GameRoom.js      # Stato di gioco: fase 1, eliminazione a oltranza, punteggio di sessione
-│   │   ├── QuestionBank.js  # Caricamento/filtro/aggiunta domande
+│   │   ├── GameRoom.js      # Stato di gioco: fase 1, eliminazione a oltranza, brainfighting, punteggio di sessione
+│   │   ├── QuestionBank.js  # Caricamento/filtro/aggiunta domande del mazzo principale
+│   │   ├── BrainfightingBank.js  # Caricamento/filtro dei problemi della fase brainfighting
 │   │   └── Host.js          # Battute (e "umori") del presentatore virtuale
-│   ├── data/questions.json  # Le 544 domande di base (+ quelle aggiunte)
+│   ├── data/questions.json  # Le 1728 domande del mazzo principale (+ quelle aggiunte)
+│   ├── data/brainfighting.json  # I 375 problemi della fase brainfighting
 │   └── scripts/importCsv.js # Import in blocco da CSV
 └── public/
     ├── index.html            # Schermate + markup del pupazzo SVG
     ├── style.css             # Grafica in stile "show TV colorato" + animazioni
     └── app.js                # Tutta la logica del client (schermate, socket, pupazzo)
 ```
+
+## Fase "brainfighting"
+
+Se dopo 10 round della fase a eliminazione normale restano ancora **2 o più sopravvissuti**, la partita passa a una fase finale speciale: il brainfighting. Da qui in poi:
+
+- **Nessuno viene mai eliminato**: si gioca sempre tra tutti quelli entrati in questa fase.
+- Ogni problema è un **calcolo mentale** (2 minuti per prenotarsi) nella categoria scelta per la stanza, se ha contenuto adatto — altrimenti si ricade automaticamente sulle 5 categorie numeriche disponibili: Automobili e Motori, Formula 1, Ingegneria del Veicolo, Matematica, Fisica.
+- Compare solo un **pulsante rosso "BUZZ"**: chi lo preme per primo si prenota. Solo lui vede le 4 opzioni diventare cliccabili; agli altri appaiono ma "sfumate" (non cliccabili).
+- **Risposta giusta**: +1 punto, si passa a un problema completamente nuovo (opzioni fresche, difficoltà che sale di un livello).
+- **Risposta sbagliata**: 0 punti, quel giocatore non può più riprenotarsi su **questo stesso problema** (potrà farlo dal prossimo), e la sua opzione sparisce dalle scelte per chi si prenota dopo di lui.
+- Se **3 tentativi falliscono** sullo stesso problema, si passa comunque a uno nuovo, senza assegnare punti a nessuno: evita che qualcuno vinca un punto "per esclusione" sull'unica opzione rimasta, senza vero merito.
+- **Vince l'intera partita** chi arriva per primo a **3 punti**.
+
+Il mazzo dedicato (`server/data/brainfighting.json`, 375 problemi) non si ripete mai nella stessa sessione, con lo stesso criterio del mazzo principale.
 
 ## Idee per migliorie future
 
@@ -161,3 +177,5 @@ buzz-clone/
 - Voce sintetizzata per il presentatore invece del solo testo.
 - Avatar/colori personalizzabili per i giocatori.
 - Uno storico delle partite passate della sessione (non solo il totale cumulativo).
+- Categoria "Meme italiani" (rimandata: servono riferimenti precisi per evitare imprecisioni).
+- Estendere il brainfighting alle altre categorie, con contenuti diversi dal calcolo mentale (es. sagome di nazioni per Geografia).

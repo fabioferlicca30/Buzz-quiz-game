@@ -1,0 +1,4877 @@
+[
+  {
+    "id": "bf0001",
+    "category": "Matematica",
+    "difficulty": "facile",
+    "text": "Quanto fa 23 + 48?",
+    "answers": [
+      "70",
+      "81",
+      "61",
+      "71"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0002",
+    "category": "Matematica",
+    "difficulty": "facile",
+    "text": "Quanto fa 15 × 6?",
+    "answers": [
+      "90",
+      "80",
+      "85",
+      "96"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0003",
+    "category": "Matematica",
+    "difficulty": "facile",
+    "text": "Quanto fa 144 ÷ 12?",
+    "answers": [
+      "14",
+      "12",
+      "11",
+      "13"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0004",
+    "category": "Matematica",
+    "difficulty": "facile",
+    "text": "Quanto fa 9 al quadrato?",
+    "answers": [
+      "72",
+      "76",
+      "81",
+      "90"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0005",
+    "category": "Matematica",
+    "difficulty": "facile",
+    "text": "Quanto fa 7 × 13?",
+    "answers": [
+      "91",
+      "84",
+      "89",
+      "98"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0006",
+    "category": "Matematica",
+    "difficulty": "medio",
+    "text": "Quanto fa il 25% di 240?",
+    "answers": [
+      "60",
+      "70",
+      "50",
+      "48"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0007",
+    "category": "Matematica",
+    "difficulty": "medio",
+    "text": "Quanto fa 17 al quadrato?",
+    "answers": [
+      "299",
+      "268",
+      "289",
+      "279"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0008",
+    "category": "Matematica",
+    "difficulty": "medio",
+    "text": "Quanto fa 15² − 10²?",
+    "answers": [
+      "100",
+      "115",
+      "135",
+      "125"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0009",
+    "category": "Matematica",
+    "difficulty": "medio",
+    "text": "Quanto fa 13 × 12?",
+    "answers": [
+      "166",
+      "144",
+      "156",
+      "146"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0010",
+    "category": "Matematica",
+    "difficulty": "medio",
+    "text": "Quanto fa 360 ÷ 8?",
+    "answers": [
+      "48",
+      "45",
+      "40",
+      "42"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0011",
+    "category": "Matematica",
+    "difficulty": "difficile",
+    "text": "Quanto fa 23 × 24?",
+    "answers": [
+      "552",
+      "562",
+      "528",
+      "542"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0012",
+    "category": "Matematica",
+    "difficulty": "difficile",
+    "text": "Quanto fa 19 al quadrato?",
+    "answers": [
+      "342",
+      "371",
+      "361",
+      "351"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0013",
+    "category": "Matematica",
+    "difficulty": "difficile",
+    "text": "Quanto fa il 15% di 340?",
+    "answers": [
+      "54",
+      "45",
+      "51",
+      "48"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0014",
+    "category": "Matematica",
+    "difficulty": "difficile",
+    "text": "Quanto fa 37 × 11?",
+    "answers": [
+      "374",
+      "407",
+      "397",
+      "417"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0015",
+    "category": "Matematica",
+    "difficulty": "difficile",
+    "text": "Quanto fa (100 − 64) ÷ 4?",
+    "answers": [
+      "10",
+      "9",
+      "12",
+      "8"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0016",
+    "category": "Matematica",
+    "difficulty": "superdifficile",
+    "text": "Quanto fa 47 × 23?",
+    "answers": [
+      "1081",
+      "1127",
+      "1071",
+      "1091"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0017",
+    "category": "Matematica",
+    "difficulty": "superdifficile",
+    "text": "Quanto vale 2 elevato alla 10?",
+    "answers": [
+      "1024",
+      "1012",
+      "2048",
+      "512"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0018",
+    "category": "Matematica",
+    "difficulty": "superdifficile",
+    "text": "Quanto fa 33 al quadrato?",
+    "answers": [
+      "1069",
+      "1079",
+      "1089",
+      "1099"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0019",
+    "category": "Matematica",
+    "difficulty": "superdifficile",
+    "text": "Quanto fa 875 ÷ 25?",
+    "answers": [
+      "34",
+      "33",
+      "35",
+      "36"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0020",
+    "category": "Matematica",
+    "difficulty": "superdifficile",
+    "text": "Quanto fa 19 × 21?",
+    "answers": [
+      "379",
+      "389",
+      "399",
+      "409"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0021",
+    "category": "Matematica",
+    "difficulty": "impossibile",
+    "text": "Quanto fa 123 × 17?",
+    "answers": [
+      "2081",
+      "2071",
+      "2101",
+      "2091"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0022",
+    "category": "Matematica",
+    "difficulty": "impossibile",
+    "text": "Quanto fa 99 × 99?",
+    "answers": [
+      "9801",
+      "9601",
+      "9811",
+      "9791"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0023",
+    "category": "Matematica",
+    "difficulty": "impossibile",
+    "text": "Quanto vale 2 elevato alla 12?",
+    "answers": [
+      "4096",
+      "4086",
+      "4196",
+      "2048"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0024",
+    "category": "Matematica",
+    "difficulty": "impossibile",
+    "text": "Quanto fa 17 × 23 × 2?",
+    "answers": [
+      "746",
+      "782",
+      "792",
+      "772"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0025",
+    "category": "Matematica",
+    "difficulty": "impossibile",
+    "text": "Quanto vale 3 elevato alla 6?",
+    "answers": [
+      "243",
+      "719",
+      "739",
+      "729"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0026",
+    "category": "Fisica",
+    "difficulty": "facile",
+    "text": "Un'auto viaggia a 20 m/s per 5 secondi: quanti metri percorre (d = v × t)?",
+    "answers": [
+      "80 m",
+      "100 m",
+      "90 m",
+      "120 m"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0027",
+    "category": "Fisica",
+    "difficulty": "facile",
+    "text": "Una forza di 10 N su una massa di 2 kg: quale accelerazione produce (F = m × a)?",
+    "answers": [
+      "20 m/s²",
+      "5 m/s²",
+      "8 m/s²",
+      "4 m/s²"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0028",
+    "category": "Fisica",
+    "difficulty": "facile",
+    "text": "Un corpo cade per 2 secondi (g = 10 m/s²): quale velocità raggiunge (v = g × t)?",
+    "answers": [
+      "15 m/s",
+      "10 m/s",
+      "20 m/s",
+      "40 m/s"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0029",
+    "category": "Fisica",
+    "difficulty": "facile",
+    "text": "Un lavoro di 100 joule svolto in 5 secondi: qual è la potenza (P = L / t)?",
+    "answers": [
+      "20 W",
+      "15 W",
+      "500 W",
+      "25 W"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0030",
+    "category": "Fisica",
+    "difficulty": "facile",
+    "text": "Quanti newton pesa un corpo di 5 kg sulla Terra (g = 10 m/s²)?",
+    "answers": [
+      "50 N",
+      "5 N",
+      "40 N",
+      "500 N"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0031",
+    "category": "Fisica",
+    "difficulty": "medio",
+    "text": "Un'auto accelera da 0 a 20 m/s in 4 secondi: qual è la sua accelerazione media?",
+    "answers": [
+      "4 m/s²",
+      "8 m/s²",
+      "80 m/s²",
+      "5 m/s²"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0032",
+    "category": "Fisica",
+    "difficulty": "medio",
+    "text": "Energia cinetica di un corpo di 4 kg a 5 m/s (E = ½mv²)?",
+    "answers": [
+      "50 J",
+      "20 J",
+      "40 J",
+      "100 J"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0033",
+    "category": "Fisica",
+    "difficulty": "medio",
+    "text": "Quale forza serve per accelerare a 4 m/s² una massa di 25 kg?",
+    "answers": [
+      "100 N",
+      "29 N",
+      "120 N",
+      "90 N"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0034",
+    "category": "Fisica",
+    "difficulty": "medio",
+    "text": "Un corpo percorre 150 km in 2 ore: qual è la sua velocità media?",
+    "answers": [
+      "70 km/h",
+      "60 km/h",
+      "75 km/h",
+      "80 km/h"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0035",
+    "category": "Fisica",
+    "difficulty": "medio",
+    "text": "Quale pressione esercita una forza di 200 N su una superficie di 4 m² (P = F/A)?",
+    "answers": [
+      "50 Pa",
+      "20 Pa",
+      "40 Pa",
+      "800 Pa"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0036",
+    "category": "Fisica",
+    "difficulty": "difficile",
+    "text": "Un'auto di 1000 kg viaggia a 20 m/s: qual è la sua energia cinetica (E = ½mv²)?",
+    "answers": [
+      "100 kJ",
+      "400 kJ",
+      "200 kJ",
+      "180 kJ"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0037",
+    "category": "Fisica",
+    "difficulty": "difficile",
+    "text": "Un motore eroga 955 Nm a 1000 giri/min: quanti kW eroga (P[kW] = coppia × giri/min ÷ 9550)?",
+    "answers": [
+      "95 kW",
+      "100 kW",
+      "110 kW",
+      "90 kW"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0038",
+    "category": "Fisica",
+    "difficulty": "difficile",
+    "text": "Un oggetto cade da 20 m (g = 10 m/s²): con quale velocità arriva al suolo (v = √(2gh))?",
+    "answers": [
+      "18 m/s",
+      "20 m/s",
+      "40 m/s",
+      "25 m/s"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0039",
+    "category": "Fisica",
+    "difficulty": "difficile",
+    "text": "Un corpo percorre una curva di raggio 25 m a 10 m/s: quale accelerazione centripeta subisce (a = v²/r)?",
+    "answers": [
+      "2,5 m/s²",
+      "4 m/s²",
+      "10 m/s²",
+      "40 m/s²"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0040",
+    "category": "Fisica",
+    "difficulty": "difficile",
+    "text": "Due resistenze da 10 Ω in parallelo: quale resistenza totale (1/Rtot = 1/R1 + 1/R2)?",
+    "answers": [
+      "5 Ω",
+      "2,5 Ω",
+      "20 Ω",
+      "10 Ω"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0041",
+    "category": "Fisica",
+    "difficulty": "superdifficile",
+    "text": "Un'auto di 1200 kg frena da 30 m/s a 0 in 5 secondi: quale forza frenante media agisce (F = m × Δv/Δt)?",
+    "answers": [
+      "9000 N",
+      "6000 N",
+      "3600 N",
+      "7200 N"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0042",
+    "category": "Fisica",
+    "difficulty": "superdifficile",
+    "text": "Un motore eroga 200 Nm a 4775 giri/min: quanti kW eroga (P[kW] = T × rpm ÷ 9550)?",
+    "answers": [
+      "95 kW",
+      "90 kW",
+      "105 kW",
+      "100 kW"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0043",
+    "category": "Fisica",
+    "difficulty": "superdifficile",
+    "text": "Energia cinetica di un corpo di 2000 kg a 30 m/s, in kJ?",
+    "answers": [
+      "600 kJ",
+      "900 kJ",
+      "1000 kJ",
+      "800 kJ"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0044",
+    "category": "Fisica",
+    "difficulty": "superdifficile",
+    "text": "Un corpo lasciato cadere da 45 m raggiunge il suolo a quale velocità (g = 10, v = √(2gh))?",
+    "answers": [
+      "30 m/s",
+      "20 m/s",
+      "25 m/s",
+      "45 m/s"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0045",
+    "category": "Fisica",
+    "difficulty": "superdifficile",
+    "text": "Un corpo percorre una curva di raggio 50 m a 20 m/s: quale accelerazione centripeta subisce?",
+    "answers": [
+      "4 m/s²",
+      "2,5 m/s²",
+      "8 m/s²",
+      "10 m/s²"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0046",
+    "category": "Fisica",
+    "difficulty": "impossibile",
+    "text": "Un'auto di 1500 kg viaggia a 40 m/s: energia cinetica in MJ?",
+    "answers": [
+      "1,2 MJ",
+      "0,8 MJ",
+      "1,5 MJ",
+      "1 MJ"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0047",
+    "category": "Fisica",
+    "difficulty": "impossibile",
+    "text": "Un motore eroga 400 Nm a 2387,5 giri/min: quanti kW eroga (P[kW] = T × rpm ÷ 9550)?",
+    "answers": [
+      "100 kW",
+      "110 kW",
+      "90 kW",
+      "80 kW"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0048",
+    "category": "Fisica",
+    "difficulty": "impossibile",
+    "text": "Un proiettile lanciato orizzontalmente da 80 m: quanti secondi impiega a toccare terra (t = √(2h/g), g = 10)?",
+    "answers": [
+      "8 s",
+      "3 s",
+      "4 s",
+      "5 s"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0049",
+    "category": "Fisica",
+    "difficulty": "impossibile",
+    "text": "Forza centripeta su un corpo di 3 kg in curva di raggio 12 m a 6 m/s (F = mv²/r)?",
+    "answers": [
+      "18 N",
+      "12 N",
+      "9 N",
+      "6 N"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0050",
+    "category": "Fisica",
+    "difficulty": "impossibile",
+    "text": "Tre resistenze da 6 Ω in parallelo: resistenza totale?",
+    "answers": [
+      "6 Ω",
+      "18 Ω",
+      "2 Ω",
+      "3 Ω"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0051",
+    "category": "Automobili e Motori",
+    "difficulty": "facile",
+    "text": "Un'auto percorre 180 km in 3 ore: qual è la velocità media?",
+    "answers": [
+      "90 km/h",
+      "60 km/h",
+      "70 km/h",
+      "50 km/h"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0052",
+    "category": "Automobili e Motori",
+    "difficulty": "facile",
+    "text": "Un'auto consuma 6 litri ogni 100 km: quanti litri servono per 300 km?",
+    "answers": [
+      "20 litri",
+      "15 litri",
+      "18 litri",
+      "24 litri"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0053",
+    "category": "Automobili e Motori",
+    "difficulty": "facile",
+    "text": "Un motore a 4 cilindri ha cilindrata totale di 2000 cc: quanti cc per cilindro?",
+    "answers": [
+      "600 cc",
+      "250 cc",
+      "400 cc",
+      "500 cc"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0054",
+    "category": "Automobili e Motori",
+    "difficulty": "facile",
+    "text": "Un'auto va a 90 km/h: quanti km percorre in mezz'ora?",
+    "answers": [
+      "30 km",
+      "40 km",
+      "45 km",
+      "50 km"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0055",
+    "category": "Automobili e Motori",
+    "difficulty": "facile",
+    "text": "Un pieno costa 75€ a 1,50€/litro: quanti litri sono?",
+    "answers": [
+      "55 litri",
+      "60 litri",
+      "50 litri",
+      "45 litri"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0056",
+    "category": "Automobili e Motori",
+    "difficulty": "medio",
+    "text": "Un motore gira a 3000 giri/min: quanti giri fa in 2 secondi?",
+    "answers": [
+      "120 giri",
+      "50 giri",
+      "100 giri",
+      "90 giri"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0057",
+    "category": "Automobili e Motori",
+    "difficulty": "medio",
+    "text": "Un serbatoio da 60 litri dà 900 km di autonomia: quanti km/litro fa l'auto?",
+    "answers": [
+      "10 km/litro",
+      "15 km/litro",
+      "12 km/litro",
+      "18 km/litro"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0058",
+    "category": "Automobili e Motori",
+    "difficulty": "medio",
+    "text": "Un motore V8 ha cilindrata totale di 4800 cc: quanti cc per cilindro?",
+    "answers": [
+      "600 cc",
+      "800 cc",
+      "500 cc",
+      "700 cc"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0059",
+    "category": "Automobili e Motori",
+    "difficulty": "medio",
+    "text": "Un cambio ha rapporto finale 4:1: se il motore gira a 4000 giri/min, a quanti giri gira l'albero di trasmissione?",
+    "answers": [
+      "1000 giri/min",
+      "1200 giri/min",
+      "800 giri/min",
+      "2000 giri/min"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0060",
+    "category": "Automobili e Motori",
+    "difficulty": "medio",
+    "text": "Un pneumatico ha circonferenza di 2 metri: quanti giri fa in 2 km?",
+    "answers": [
+      "1000 giri",
+      "900 giri",
+      "1100 giri",
+      "500 giri"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0061",
+    "category": "Automobili e Motori",
+    "difficulty": "difficile",
+    "text": "Un'auto percorre 420 km consumando 35 litri: quanti km/litro fa?",
+    "answers": [
+      "14 km/litro",
+      "12 km/litro",
+      "10 km/litro",
+      "15 km/litro"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0062",
+    "category": "Automobili e Motori",
+    "difficulty": "difficile",
+    "text": "Un motore eroga 150 CV (1 CV ≈ 0,735 kW): quanti kW eroga circa?",
+    "answers": [
+      "circa 110 kW",
+      "circa 135 kW",
+      "circa 120 kW",
+      "circa 100 kW"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0063",
+    "category": "Automobili e Motori",
+    "difficulty": "difficile",
+    "text": "Un'auto va da 0 a 108 km/h (30 m/s) in 6 secondi: qual è l'accelerazione media?",
+    "answers": [
+      "6 m/s²",
+      "18 m/s²",
+      "4,5 m/s²",
+      "5 m/s²"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0064",
+    "category": "Automobili e Motori",
+    "difficulty": "difficile",
+    "text": "Un rapporto finale è 3,5:1 con un rapporto di prima marcia 2:1: qual è il rapporto totale?",
+    "answers": [
+      "6:1",
+      "7:1",
+      "1,75:1",
+      "5,5:1"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0065",
+    "category": "Automobili e Motori",
+    "difficulty": "difficile",
+    "text": "Un motore turbo aumenta la pressione da 1 a 1,8 bar: di quale percentuale aumenta?",
+    "answers": [
+      "70%",
+      "80%",
+      "18%",
+      "180%"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0066",
+    "category": "Automobili e Motori",
+    "difficulty": "superdifficile",
+    "text": "Un motore eroga 955 Nm a 2000 giri/min: quanti kW eroga (P[kW] = T × rpm ÷ 9550)?",
+    "answers": [
+      "200 kW",
+      "220 kW",
+      "190 kW",
+      "180 kW"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0067",
+    "category": "Automobili e Motori",
+    "difficulty": "superdifficile",
+    "text": "Un'auto pesa 1200 kg ed eroga 300 kW: qual è il rapporto peso/potenza?",
+    "answers": [
+      "4 kg/kW",
+      "5 kg/kW",
+      "3,5 kg/kW",
+      "4,5 kg/kW"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0068",
+    "category": "Automobili e Motori",
+    "difficulty": "superdifficile",
+    "text": "Una ruota con circonferenza di 2 metri gira a 900 giri/min: a quanti km/h si muove il veicolo?",
+    "answers": [
+      "100 km/h",
+      "108 km/h",
+      "90 km/h",
+      "120 km/h"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0069",
+    "category": "Automobili e Motori",
+    "difficulty": "superdifficile",
+    "text": "Un'auto consuma 8 l/100km in città e 5 l/100km in autostrada: quanti litri per 50 km città + 200 km autostrada?",
+    "answers": [
+      "12 litri",
+      "16 litri",
+      "18 litri",
+      "14 litri"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0070",
+    "category": "Automobili e Motori",
+    "difficulty": "superdifficile",
+    "text": "Un motore ha rapporto di compressione 10:1 e cilindrata unitaria di 450 cc: qual è il volume della camera di combustione?",
+    "answers": [
+      "55 cc",
+      "45 cc",
+      "50 cc",
+      "40 cc"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0071",
+    "category": "Automobili e Motori",
+    "difficulty": "impossibile",
+    "text": "Un motore eroga 400 Nm a 4775 giri/min: quanti kW eroga (P[kW] = T × rpm ÷ 9550)?",
+    "answers": [
+      "180 kW",
+      "220 kW",
+      "200 kW",
+      "190 kW"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0072",
+    "category": "Automobili e Motori",
+    "difficulty": "impossibile",
+    "text": "Un'auto ha rapporto peso/potenza di 3,5 kg/kW e pesa 1050 kg: quanti kW eroga il motore?",
+    "answers": [
+      "320 kW",
+      "280 kW",
+      "300 kW",
+      "350 kW"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0073",
+    "category": "Automobili e Motori",
+    "difficulty": "impossibile",
+    "text": "Un cambio ha rapporto finale 4:1 e prima marcia 3,5:1, motore a 5600 giri/min: a quanti giri/min gira la ruota?",
+    "answers": [
+      "350 giri/min",
+      "400 giri/min",
+      "500 giri/min",
+      "450 giri/min"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0074",
+    "category": "Automobili e Motori",
+    "difficulty": "impossibile",
+    "text": "Una ruota gira a 500 giri/min con circonferenza di 2,4 metri: a quanti km/h viaggia l'auto?",
+    "answers": [
+      "80 km/h",
+      "65 km/h",
+      "60 km/h",
+      "72 km/h"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0075",
+    "category": "Automobili e Motori",
+    "difficulty": "impossibile",
+    "text": "Un motore ha rapporto di compressione 12:1 e cilindrata unitaria di 550 cc: qual è il volume della camera di combustione?",
+    "answers": [
+      "55 cc",
+      "60 cc",
+      "50 cc",
+      "45 cc"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0076",
+    "category": "Formula 1",
+    "difficulty": "facile",
+    "text": "Una gara dura 305 km, giri da 5 km: quanti giri sono previsti?",
+    "answers": [
+      "60 giri",
+      "61 giri",
+      "62 giri",
+      "55 giri"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0077",
+    "category": "Formula 1",
+    "difficulty": "facile",
+    "text": "Un pilota guadagna 25 punti per la vittoria e 18 per il secondo posto: quanti punti in più vale vincere?",
+    "answers": [
+      "8 punti",
+      "5 punti",
+      "7 punti",
+      "6 punti"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0078",
+    "category": "Formula 1",
+    "difficulty": "facile",
+    "text": "20 piloti al via, 3 si ritirano: quanti arrivano al traguardo?",
+    "answers": [
+      "16",
+      "18",
+      "17",
+      "15"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0079",
+    "category": "Formula 1",
+    "difficulty": "facile",
+    "text": "Un giro dura 90 secondi: quanti minuti impiega un pilota a completare 4 giri?",
+    "answers": [
+      "4 minuti",
+      "6 minuti",
+      "7 minuti",
+      "5 minuti"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0080",
+    "category": "Formula 1",
+    "difficulty": "facile",
+    "text": "Un pilota fa il giro veloce in 80 secondi, un rivale in 84: di quanti secondi è più veloce?",
+    "answers": [
+      "6 secondi",
+      "5 secondi",
+      "4 secondi",
+      "3 secondi"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0081",
+    "category": "Formula 1",
+    "difficulty": "medio",
+    "text": "Una monoposto percorre 300 km di gara in 90 minuti: qual è la velocità media?",
+    "answers": [
+      "200 km/h",
+      "220 km/h",
+      "150 km/h",
+      "180 km/h"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0082",
+    "category": "Formula 1",
+    "difficulty": "medio",
+    "text": "Un pilota parte 5° e guadagna 3 posizioni al via: in che posizione si trova?",
+    "answers": [
+      "2°",
+      "3°",
+      "4°",
+      "1°"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0083",
+    "category": "Formula 1",
+    "difficulty": "medio",
+    "text": "Punti 25 e 15 in due gare diverse: quanti punti totali?",
+    "answers": [
+      "35",
+      "40",
+      "45",
+      "38"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0084",
+    "category": "Formula 1",
+    "difficulty": "medio",
+    "text": "Un serbatoio da 110 kg si consuma di 2 kg a giro per 55 giri: quanto carburante avanza a fine gara?",
+    "answers": [
+      "10 kg",
+      "2 kg",
+      "5 kg",
+      "0 kg"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0085",
+    "category": "Formula 1",
+    "difficulty": "medio",
+    "text": "Una scuderia totalizza 43 punti in una gara: se un pilota ne ha presi 25, quanti ne ha presi l'altro?",
+    "answers": [
+      "18",
+      "12",
+      "15",
+      "20"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0086",
+    "category": "Formula 1",
+    "difficulty": "difficile",
+    "text": "Un serbatoio di 110 kg consuma 1,8 kg/giro per 60 giri: quanto carburante avanza a fine gara?",
+    "answers": [
+      "6 kg",
+      "0 kg",
+      "2 kg",
+      "4 kg"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0087",
+    "category": "Formula 1",
+    "difficulty": "difficile",
+    "text": "Un pit stop di 2,4 secondi ripetuto 2 volte: quanto tempo totale si perde nelle soste?",
+    "answers": [
+      "4,8 secondi",
+      "6 secondi",
+      "5,4 secondi",
+      "4,2 secondi"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0088",
+    "category": "Formula 1",
+    "difficulty": "difficile",
+    "text": "Un giro di qualifica dura 92,5 secondi: un rivale è più lento di 1,2 secondi. Qual è il suo tempo?",
+    "answers": [
+      "93,5 secondi",
+      "93,7 secondi",
+      "94,1 secondi",
+      "91,3 secondi"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0089",
+    "category": "Formula 1",
+    "difficulty": "difficile",
+    "text": "Un pilota guadagna 18 punti a gara per 4 gare di fila: quanti punti totalizza?",
+    "answers": [
+      "76 punti",
+      "80 punti",
+      "68 punti",
+      "72 punti"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0090",
+    "category": "Formula 1",
+    "difficulty": "difficile",
+    "text": "Una power unit eroga 800 kW totali, di cui 700 kW dal motore termico: che percentuale è elettrica?",
+    "answers": [
+      "20%",
+      "15%",
+      "12,5%",
+      "10%"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0091",
+    "category": "Formula 1",
+    "difficulty": "superdifficile",
+    "text": "Una monoposto accelera da 0 a 300 km/h (83,3 m/s) in 10 secondi: qual è l'accelerazione media?",
+    "answers": [
+      "9 m/s²",
+      "7,5 m/s²",
+      "10 m/s²",
+      "8,3 m/s²"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0092",
+    "category": "Formula 1",
+    "difficulty": "superdifficile",
+    "text": "Una gara di 58 giri su un circuito di 5,3 km: quanti km totali percorre chi finisce la gara?",
+    "answers": [
+      "307,4 km",
+      "300 km",
+      "295 km",
+      "310 km"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0093",
+    "category": "Formula 1",
+    "difficulty": "superdifficile",
+    "text": "Un serbatoio di 105 kg deve bastare per 62 giri: qual è il consumo massimo per giro, circa?",
+    "answers": [
+      "1,5 kg/giro",
+      "2 kg/giro",
+      "1,8 kg/giro",
+      "1,69 kg/giro"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0094",
+    "category": "Formula 1",
+    "difficulty": "superdifficile",
+    "text": "Punti 25, 18 e 15 in tre gare: quanti punti in media a gara, circa?",
+    "answers": [
+      "19,3 punti",
+      "18 punti",
+      "20,5 punti",
+      "22 punti"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0095",
+    "category": "Formula 1",
+    "difficulty": "superdifficile",
+    "text": "Motore termico da 550 kW e contributo elettrico di 120 kW: qual è la potenza totale in CV (1 kW ≈ 1,36 CV)?",
+    "answers": [
+      "880 CV",
+      "911 CV",
+      "950 CV",
+      "820 CV"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0096",
+    "category": "Formula 1",
+    "difficulty": "impossibile",
+    "text": "Un pilota migliora il tempo di 0,15 secondi ad ogni tentativo per 6 tentativi, partendo da 1:20.900: qual è il tempo finale?",
+    "answers": [
+      "1:19.850",
+      "1:20.000",
+      "1:20.500",
+      "1:20.150"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0097",
+    "category": "Formula 1",
+    "difficulty": "impossibile",
+    "text": "Una gara di 66 giri su un circuito di 4,655 km: quanti km totali percorre chi finisce la gara?",
+    "answers": [
+      "310 km",
+      "300 km",
+      "307,23 km",
+      "295,5 km"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0098",
+    "category": "Formula 1",
+    "difficulty": "impossibile",
+    "text": "Un consumo di 1,85 kg/giro per 58 giri: quanto carburante minimo serve, arrotondato all'intero superiore?",
+    "answers": [
+      "108 kg",
+      "107 kg",
+      "105 kg",
+      "110 kg"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0099",
+    "category": "Formula 1",
+    "difficulty": "impossibile",
+    "text": "Una power unit eroga 560 kW termici e 125 kW elettrici, con perdita del 4%: qual è la potenza netta approssimativa?",
+    "answers": [
+      "670 kW",
+      "685 kW",
+      "620 kW",
+      "658 kW"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0100",
+    "category": "Formula 1",
+    "difficulty": "impossibile",
+    "text": "Un pilota fa la pole in 1:18.223, il secondo è staccato di 0,087 secondi: qual è il suo tempo?",
+    "answers": [
+      "1:18.400",
+      "1:18.223",
+      "1:18.310",
+      "1:18.136"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0101",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "facile",
+    "text": "Un telaio pesa 120 kg su un veicolo totale di 1200 kg: che percentuale rappresenta?",
+    "answers": [
+      "8%",
+      "12%",
+      "15%",
+      "10%"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0102",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "facile",
+    "text": "Una sospensione si comprime di 5 cm sotto un carico di 250 kg: qual è la sua rigidezza?",
+    "answers": [
+      "60 kg/cm",
+      "55 kg/cm",
+      "50 kg/cm",
+      "45 kg/cm"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0103",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "facile",
+    "text": "Un veicolo distribuisce 1600 kg equamente su 4 ruote: quanto peso su ogni ruota?",
+    "answers": [
+      "450 kg",
+      "400 kg",
+      "350 kg",
+      "800 kg"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0104",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "facile",
+    "text": "Un serbatoio da 60 litri è riempito al 75%: quanti litri contiene?",
+    "answers": [
+      "45 litri",
+      "30 litri",
+      "50 litri",
+      "40 litri"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0105",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "facile",
+    "text": "Un veicolo con passo 2,5 m ha il baricentro a 1,25 m dall'asse anteriore: a quanti metri è dal posteriore?",
+    "answers": [
+      "1 m",
+      "0,75 m",
+      "1,5 m",
+      "1,25 m"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0106",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "medio",
+    "text": "Un'auto ha distribuzione pesi 60/40 su un totale di 1500 kg: quanti kg sull'asse anteriore?",
+    "answers": [
+      "850 kg",
+      "900 kg",
+      "750 kg",
+      "950 kg"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0107",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "medio",
+    "text": "Una sospensione con rigidezza 40 kg/cm si comprime di 6 cm: quale carico supporta?",
+    "answers": [
+      "200 kg",
+      "240 kg",
+      "260 kg",
+      "220 kg"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0108",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "medio",
+    "text": "Un componente di 8 kg subisce un'accelerazione di 5g (g = 10 m/s²): quale forza subisce?",
+    "answers": [
+      "350 N",
+      "80 N",
+      "400 N",
+      "450 N"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0109",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "medio",
+    "text": "Una scocca ha Cx di 0,30 su una superficie frontale di 2 m²: quanto vale Cx × A?",
+    "answers": [
+      "0,5 m²",
+      "0,3 m²",
+      "0,6 m²",
+      "0,7 m²"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0110",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "medio",
+    "text": "Un serbatoio cilindrico con raggio 0,2 m e altezza 1 m (V = πr²h, π ≈ 3): quale volume ha?",
+    "answers": [
+      "0,12 m³",
+      "0,20 m³",
+      "0,10 m³",
+      "0,15 m³"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0111",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "difficile",
+    "text": "Un veicolo con distribuzione pesi 52/48 pesa 1800 kg: quanti kg sull'asse posteriore?",
+    "answers": [
+      "820 kg",
+      "850 kg",
+      "864 kg",
+      "900 kg"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0112",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "difficile",
+    "text": "Sospensioni con rigidezza 35 e 28 kg/cm, entrambe compresse di 4 cm: qual è il carico totale supportato?",
+    "answers": [
+      "240 kg",
+      "260 kg",
+      "220 kg",
+      "252 kg"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0113",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "difficile",
+    "text": "Un veicolo di 1400 kg accelera lateralmente a 0,8g (g = 10 m/s²): quale forza laterale subisce?",
+    "answers": [
+      "11200 N",
+      "10000 N",
+      "9800 N",
+      "11800 N"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0114",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "difficile",
+    "text": "Un braccio sospensivo di 40 cm ruota di 10° (≈0,175 rad): di quanti cm si sposta l'estremità (arco ≈ raggio × angolo)?",
+    "answers": [
+      "7 cm",
+      "8 cm",
+      "6 cm",
+      "4 cm"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0115",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "difficile",
+    "text": "Un veicolo con passo 2,6 m ha il baricentro al 45% dal davanti: a quanti metri dall'asse anteriore si trova?",
+    "answers": [
+      "1,3 m",
+      "1,04 m",
+      "1,17 m",
+      "1,43 m"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0116",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "superdifficile",
+    "text": "Veicolo di 1600 kg, baricentro a 1,2 m dall'asse anteriore su un passo di 2,8 m: quanti kg sull'asse posteriore?",
+    "answers": [
+      "circa 686 kg",
+      "circa 700 kg",
+      "circa 914 kg",
+      "circa 650 kg"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0117",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "superdifficile",
+    "text": "Una sospensione con rigidezza 60 kg/cm sostiene un quarto del peso di un'auto da 1440 kg: di quanti cm si comprime?",
+    "answers": [
+      "7 cm",
+      "6 cm",
+      "5 cm",
+      "4 cm"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0118",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "superdifficile",
+    "text": "Un componente ruota a 3000 giri/min: quale velocità angolare ha in rad/s (ω = 2πn/60, π ≈ 3,14)?",
+    "answers": [
+      "330 rad/s",
+      "300 rad/s",
+      "314 rad/s",
+      "157 rad/s"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0119",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "superdifficile",
+    "text": "4 ammortizzatori identici assorbono un carico totale di 2000 kg con rigidezza totale 80 kg/cm: di quanti cm si comprimono?",
+    "answers": [
+      "20 cm",
+      "30 cm",
+      "25 cm",
+      "16 cm"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0120",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "superdifficile",
+    "text": "Un serbatoio cilindrico con raggio 0,35 m e altezza 1,4 m (π ≈ 3,14): quanti litri contiene (1 m³ = 1000 litri)?",
+    "answers": [
+      "circa 500 litri",
+      "circa 570 litri",
+      "circa 480 litri",
+      "circa 538 litri"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0121",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "impossibile",
+    "text": "Veicolo di 1750 kg, passo 2,65 m, baricentro a 1,3 m dall'asse anteriore: quanti kg sull'asse anteriore?",
+    "answers": [
+      "circa 891 kg",
+      "circa 860 kg",
+      "circa 920 kg",
+      "circa 850 kg"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0122",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "impossibile",
+    "text": "Una sospensione con rigidezza 55 kg/cm si comprime di 7 cm: quale forza rappresenta in Newton (1 kg-forza ≈ 10 N)?",
+    "answers": [
+      "3850 N",
+      "3500 N",
+      "3650 N",
+      "4000 N"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0123",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "impossibile",
+    "text": "Un albero ruota a 4500 giri/min: qual è la sua velocità angolare in rad/s (ω = 2πn/60, π ≈ 3,14)?",
+    "answers": [
+      "500 rad/s",
+      "450 rad/s",
+      "471 rad/s",
+      "420 rad/s"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0124",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "impossibile",
+    "text": "Una scocca con Cx×A = 0,68 m² viaggia a 40 m/s (F = 0,5 × ρ × Cx×A × v², ρ = 1,2 kg/m³): quanto vale F?",
+    "answers": [
+      "circa 600 N",
+      "circa 653 N",
+      "circa 580 N",
+      "circa 700 N"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0125",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "impossibile",
+    "text": "Veicolo con distribuzione pesi 58/42 pesa 1950 kg: quanti kg in più sull'asse anteriore rispetto al posteriore?",
+    "answers": [
+      "290 kg",
+      "270 kg",
+      "330 kg",
+      "312 kg"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0126",
+    "category": "Matematica",
+    "difficulty": "facile",
+    "text": "Quanto fa 34 + 29?",
+    "answers": [
+      "61",
+      "62",
+      "63",
+      "64"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0127",
+    "category": "Matematica",
+    "difficulty": "facile",
+    "text": "Quanto fa 12 × 7?",
+    "answers": [
+      "86",
+      "81",
+      "84",
+      "82"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0128",
+    "category": "Matematica",
+    "difficulty": "facile",
+    "text": "Quanto fa 100 ÷ 4?",
+    "answers": [
+      "24",
+      "20",
+      "30",
+      "25"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0129",
+    "category": "Matematica",
+    "difficulty": "facile",
+    "text": "Quanto fa 6 al quadrato?",
+    "answers": [
+      "32",
+      "30",
+      "36",
+      "40"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0130",
+    "category": "Matematica",
+    "difficulty": "facile",
+    "text": "Quanto fa 45 − 18?",
+    "answers": [
+      "26",
+      "27",
+      "25",
+      "28"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0131",
+    "category": "Matematica",
+    "difficulty": "facile",
+    "text": "Quanto fa 9 × 9?",
+    "answers": [
+      "90",
+      "79",
+      "72",
+      "81"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0132",
+    "category": "Matematica",
+    "difficulty": "facile",
+    "text": "Quanto fa 63 ÷ 9?",
+    "answers": [
+      "8",
+      "7",
+      "9",
+      "6"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0133",
+    "category": "Matematica",
+    "difficulty": "facile",
+    "text": "Quanto fa 8 × 12?",
+    "answers": [
+      "94",
+      "96",
+      "86",
+      "106"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0134",
+    "category": "Matematica",
+    "difficulty": "facile",
+    "text": "Quanto fa 200 − 75?",
+    "answers": [
+      "125",
+      "135",
+      "115",
+      "120"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0135",
+    "category": "Matematica",
+    "difficulty": "facile",
+    "text": "Quanto fa 15 + 37?",
+    "answers": [
+      "52",
+      "51",
+      "53",
+      "50"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0136",
+    "category": "Matematica",
+    "difficulty": "medio",
+    "text": "Quanto fa il 30% di 150?",
+    "answers": [
+      "40",
+      "35",
+      "45",
+      "50"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0137",
+    "category": "Matematica",
+    "difficulty": "medio",
+    "text": "Quanto fa 14 × 14?",
+    "answers": [
+      "184",
+      "206",
+      "196",
+      "186"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0138",
+    "category": "Matematica",
+    "difficulty": "medio",
+    "text": "Quanto fa 20² − 15²?",
+    "answers": [
+      "175",
+      "165",
+      "185",
+      "150"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0139",
+    "category": "Matematica",
+    "difficulty": "medio",
+    "text": "Quanto fa (6 + 9) × 4?",
+    "answers": [
+      "50",
+      "60",
+      "64",
+      "56"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0140",
+    "category": "Matematica",
+    "difficulty": "medio",
+    "text": "Quanto fa 11 × 14?",
+    "answers": [
+      "164",
+      "154",
+      "144",
+      "150"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0141",
+    "category": "Matematica",
+    "difficulty": "medio",
+    "text": "Quanto fa 480 ÷ 6?",
+    "answers": [
+      "80",
+      "75",
+      "90",
+      "70"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0142",
+    "category": "Matematica",
+    "difficulty": "medio",
+    "text": "Quanto fa 12 × 15?",
+    "answers": [
+      "170",
+      "180",
+      "190",
+      "175"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0143",
+    "category": "Matematica",
+    "difficulty": "medio",
+    "text": "Quanto fa 25 × 4?",
+    "answers": [
+      "90",
+      "95",
+      "110",
+      "100"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0144",
+    "category": "Matematica",
+    "difficulty": "medio",
+    "text": "Quanto fa 7² + 8²?",
+    "answers": [
+      "100",
+      "103",
+      "123",
+      "113"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0145",
+    "category": "Matematica",
+    "difficulty": "medio",
+    "text": "Quanto fa 90 ÷ 15 × 3?",
+    "answers": [
+      "18",
+      "12",
+      "15",
+      "21"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0146",
+    "category": "Matematica",
+    "difficulty": "difficile",
+    "text": "Quanto fa 34 × 26?",
+    "answers": [
+      "864",
+      "874",
+      "894",
+      "884"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0147",
+    "category": "Matematica",
+    "difficulty": "difficile",
+    "text": "Quanto fa 21 al quadrato?",
+    "answers": [
+      "451",
+      "431",
+      "421",
+      "441"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0148",
+    "category": "Matematica",
+    "difficulty": "difficile",
+    "text": "Quanto fa il 12% di 250?",
+    "answers": [
+      "28",
+      "25",
+      "30",
+      "35"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0149",
+    "category": "Matematica",
+    "difficulty": "difficile",
+    "text": "Quanto fa 96 ÷ 4 × 5?",
+    "answers": [
+      "130",
+      "120",
+      "96",
+      "110"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0150",
+    "category": "Matematica",
+    "difficulty": "difficile",
+    "text": "Quanto fa 43 × 11?",
+    "answers": [
+      "453",
+      "483",
+      "463",
+      "473"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0151",
+    "category": "Matematica",
+    "difficulty": "difficile",
+    "text": "Quanto fa (144 − 81) ÷ 9?",
+    "answers": [
+      "7",
+      "8",
+      "9",
+      "6"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0152",
+    "category": "Matematica",
+    "difficulty": "difficile",
+    "text": "Quanto fa 27 × 13?",
+    "answers": [
+      "361",
+      "341",
+      "351",
+      "331"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0153",
+    "category": "Matematica",
+    "difficulty": "difficile",
+    "text": "Quanto fa 18 al quadrato?",
+    "answers": [
+      "324",
+      "314",
+      "310",
+      "334"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0154",
+    "category": "Matematica",
+    "difficulty": "difficile",
+    "text": "Quanto fa l'8% di 500?",
+    "answers": [
+      "40",
+      "35",
+      "45",
+      "38"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0155",
+    "category": "Matematica",
+    "difficulty": "difficile",
+    "text": "Quanto fa 56 × 4?",
+    "answers": [
+      "214",
+      "224",
+      "234",
+      "220"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0156",
+    "category": "Matematica",
+    "difficulty": "superdifficile",
+    "text": "Quanto fa 63 × 27?",
+    "answers": [
+      "1681",
+      "1701",
+      "1691",
+      "1711"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0157",
+    "category": "Matematica",
+    "difficulty": "superdifficile",
+    "text": "Quanto vale 2 elevato alla 9?",
+    "answers": [
+      "502",
+      "256",
+      "522",
+      "512"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0158",
+    "category": "Matematica",
+    "difficulty": "superdifficile",
+    "text": "Quanto fa 44 al quadrato?",
+    "answers": [
+      "1936",
+      "1946",
+      "1916",
+      "1926"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0159",
+    "category": "Matematica",
+    "difficulty": "superdifficile",
+    "text": "Quanto fa 156 × 1,5?",
+    "answers": [
+      "244",
+      "214",
+      "234",
+      "224"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0160",
+    "category": "Matematica",
+    "difficulty": "superdifficile",
+    "text": "Quanto fa 675 ÷ 15?",
+    "answers": [
+      "42",
+      "45",
+      "40",
+      "50"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0161",
+    "category": "Matematica",
+    "difficulty": "superdifficile",
+    "text": "Quanto fa 29 × 31?",
+    "answers": [
+      "889",
+      "879",
+      "909",
+      "899"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0162",
+    "category": "Matematica",
+    "difficulty": "superdifficile",
+    "text": "Quanto fa 84 × 12?",
+    "answers": [
+      "1018",
+      "1008",
+      "988",
+      "998"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0163",
+    "category": "Matematica",
+    "difficulty": "superdifficile",
+    "text": "Quanto vale 3 elevato alla 5?",
+    "answers": [
+      "203",
+      "253",
+      "233",
+      "243"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0164",
+    "category": "Matematica",
+    "difficulty": "superdifficile",
+    "text": "Quanto fa 91 × 11?",
+    "answers": [
+      "991",
+      "1001",
+      "1011",
+      "981"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0165",
+    "category": "Matematica",
+    "difficulty": "superdifficile",
+    "text": "Quanto fa 125 × 8?",
+    "answers": [
+      "1000",
+      "980",
+      "1010",
+      "990"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0166",
+    "category": "Matematica",
+    "difficulty": "impossibile",
+    "text": "Quanto fa 234 × 17?",
+    "answers": [
+      "3968",
+      "3958",
+      "3978",
+      "3988"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0167",
+    "category": "Matematica",
+    "difficulty": "impossibile",
+    "text": "Quanto fa 88 × 88?",
+    "answers": [
+      "7744",
+      "7734",
+      "7700",
+      "7754"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0168",
+    "category": "Matematica",
+    "difficulty": "impossibile",
+    "text": "Quanto vale 2 elevato alla 13?",
+    "answers": [
+      "8202",
+      "8182",
+      "8192",
+      "4096"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0169",
+    "category": "Matematica",
+    "difficulty": "impossibile",
+    "text": "Quanto fa 19 × 27 × 2?",
+    "answers": [
+      "1016",
+      "1026",
+      "1036",
+      "1006"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0170",
+    "category": "Matematica",
+    "difficulty": "impossibile",
+    "text": "Quanto vale 3 elevato alla 7?",
+    "answers": [
+      "2157",
+      "2197",
+      "2187",
+      "2177"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0171",
+    "category": "Matematica",
+    "difficulty": "impossibile",
+    "text": "Quanto fa il 18% di 750?",
+    "answers": [
+      "135",
+      "140",
+      "125",
+      "130"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0172",
+    "category": "Matematica",
+    "difficulty": "impossibile",
+    "text": "Quanto fa 144 × 17?",
+    "answers": [
+      "2438",
+      "2418",
+      "2458",
+      "2448"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0173",
+    "category": "Matematica",
+    "difficulty": "impossibile",
+    "text": "Quanto fa 999 × 2?",
+    "answers": [
+      "1988",
+      "1998",
+      "2008",
+      "1978"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0174",
+    "category": "Matematica",
+    "difficulty": "impossibile",
+    "text": "Quanto fa 47 × 47?",
+    "answers": [
+      "2219",
+      "2209",
+      "2199",
+      "2179"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0175",
+    "category": "Matematica",
+    "difficulty": "impossibile",
+    "text": "Quanto vale 7 elevato alla 3?",
+    "answers": [
+      "323",
+      "353",
+      "343",
+      "333"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0176",
+    "category": "Fisica",
+    "difficulty": "facile",
+    "text": "Un'auto viaggia a 15 m/s per 4 secondi: quanti metri percorre?",
+    "answers": [
+      "55 m",
+      "50 m",
+      "60 m",
+      "70 m"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0177",
+    "category": "Fisica",
+    "difficulty": "facile",
+    "text": "Una forza di 20 N su una massa di 4 kg: quale accelerazione produce?",
+    "answers": [
+      "5 m/s²",
+      "20 m/s²",
+      "4 m/s²",
+      "8 m/s²"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0178",
+    "category": "Fisica",
+    "difficulty": "facile",
+    "text": "Un corpo cade per 3 secondi (g = 10 m/s²): quale velocità raggiunge?",
+    "answers": [
+      "40 m/s",
+      "25 m/s",
+      "20 m/s",
+      "30 m/s"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0179",
+    "category": "Fisica",
+    "difficulty": "facile",
+    "text": "Un lavoro di 200 joule svolto in 4 secondi: qual è la potenza?",
+    "answers": [
+      "40 W",
+      "60 W",
+      "50 W",
+      "45 W"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0180",
+    "category": "Fisica",
+    "difficulty": "facile",
+    "text": "Quanti newton pesa un corpo di 8 kg sulla Terra (g = 10 m/s²)?",
+    "answers": [
+      "90 N",
+      "8 N",
+      "80 N",
+      "70 N"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0181",
+    "category": "Fisica",
+    "difficulty": "facile",
+    "text": "Un'auto percorre 100 m in 10 secondi: qual è la sua velocità media?",
+    "answers": [
+      "12 m/s",
+      "15 m/s",
+      "8 m/s",
+      "10 m/s"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0182",
+    "category": "Fisica",
+    "difficulty": "facile",
+    "text": "Una forza di 15 N su una massa di 3 kg: quale accelerazione produce?",
+    "answers": [
+      "3 m/s²",
+      "5 m/s²",
+      "6 m/s²",
+      "4 m/s²"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0183",
+    "category": "Fisica",
+    "difficulty": "facile",
+    "text": "Un corpo cade per 4 secondi (g = 10 m/s²): quale velocità raggiunge?",
+    "answers": [
+      "35 m/s",
+      "40 m/s",
+      "30 m/s",
+      "50 m/s"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0184",
+    "category": "Fisica",
+    "difficulty": "facile",
+    "text": "Quanti newton pesa un corpo di 12 kg sulla Terra (g = 10 m/s²)?",
+    "answers": [
+      "12 N",
+      "110 N",
+      "130 N",
+      "120 N"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0185",
+    "category": "Fisica",
+    "difficulty": "facile",
+    "text": "Un lavoro di 300 joule svolto in 6 secondi: qual è la potenza?",
+    "answers": [
+      "50 W",
+      "40 W",
+      "55 W",
+      "60 W"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0186",
+    "category": "Fisica",
+    "difficulty": "medio",
+    "text": "Un'auto accelera da 0 a 30 m/s in 6 secondi: qual è la sua accelerazione?",
+    "answers": [
+      "5 m/s²",
+      "30 m/s²",
+      "6 m/s²",
+      "4 m/s²"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0187",
+    "category": "Fisica",
+    "difficulty": "medio",
+    "text": "Energia cinetica di un corpo di 6 kg a 4 m/s (E = ½mv²)?",
+    "answers": [
+      "40 J",
+      "48 J",
+      "32 J",
+      "56 J"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0188",
+    "category": "Fisica",
+    "difficulty": "medio",
+    "text": "Quale forza serve per accelerare a 3 m/s² una massa di 40 kg?",
+    "answers": [
+      "43 N",
+      "130 N",
+      "120 N",
+      "110 N"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0189",
+    "category": "Fisica",
+    "difficulty": "medio",
+    "text": "Un corpo percorre 180 km in 3 ore: qual è la sua velocità media?",
+    "answers": [
+      "70 km/h",
+      "60 km/h",
+      "50 km/h",
+      "65 km/h"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0190",
+    "category": "Fisica",
+    "difficulty": "medio",
+    "text": "Quale pressione esercita una forza di 300 N su una superficie di 6 m²?",
+    "answers": [
+      "60 Pa",
+      "50 Pa",
+      "45 Pa",
+      "40 Pa"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0191",
+    "category": "Fisica",
+    "difficulty": "medio",
+    "text": "Un'auto accelera da 0 a 40 m/s in 8 secondi: qual è la sua accelerazione?",
+    "answers": [
+      "4 m/s²",
+      "40 m/s²",
+      "6 m/s²",
+      "5 m/s²"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0192",
+    "category": "Fisica",
+    "difficulty": "medio",
+    "text": "Energia cinetica di un corpo di 8 kg a 5 m/s?",
+    "answers": [
+      "90 J",
+      "100 J",
+      "80 J",
+      "110 J"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0193",
+    "category": "Fisica",
+    "difficulty": "medio",
+    "text": "Quale forza serve per accelerare a 6 m/s² una massa di 15 kg?",
+    "answers": [
+      "21 N",
+      "80 N",
+      "90 N",
+      "100 N"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0194",
+    "category": "Fisica",
+    "difficulty": "medio",
+    "text": "Un corpo percorre 240 km in 4 ore: qual è la sua velocità media?",
+    "answers": [
+      "70 km/h",
+      "50 km/h",
+      "65 km/h",
+      "60 km/h"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0195",
+    "category": "Fisica",
+    "difficulty": "medio",
+    "text": "Quale pressione esercita una forza di 400 N su una superficie di 8 m²?",
+    "answers": [
+      "60 Pa",
+      "45 Pa",
+      "50 Pa",
+      "40 Pa"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0196",
+    "category": "Fisica",
+    "difficulty": "difficile",
+    "text": "Un'auto di 1200 kg a 15 m/s: qual è la sua energia cinetica in kJ?",
+    "answers": [
+      "120 kJ",
+      "150 kJ",
+      "110 kJ",
+      "135 kJ"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0197",
+    "category": "Fisica",
+    "difficulty": "difficile",
+    "text": "Un motore eroga 477,5 Nm a 1000 giri/min: quanti kW eroga (P[kW]=T×rpm÷9550)?",
+    "answers": [
+      "55 kW",
+      "48 kW",
+      "45 kW",
+      "50 kW"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0198",
+    "category": "Fisica",
+    "difficulty": "difficile",
+    "text": "Un oggetto cade da 45 m (g = 10 m/s²): con quale velocità arriva al suolo?",
+    "answers": [
+      "25 m/s",
+      "35 m/s",
+      "30 m/s",
+      "40 m/s"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0199",
+    "category": "Fisica",
+    "difficulty": "difficile",
+    "text": "Un corpo percorre una curva di raggio 20 m a 10 m/s: quale accelerazione centripeta subisce?",
+    "answers": [
+      "4 m/s²",
+      "6 m/s²",
+      "10 m/s²",
+      "5 m/s²"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0200",
+    "category": "Fisica",
+    "difficulty": "difficile",
+    "text": "Due resistenze da 20 Ω in parallelo: quale resistenza totale?",
+    "answers": [
+      "40 Ω",
+      "20 Ω",
+      "10 Ω",
+      "5 Ω"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0201",
+    "category": "Fisica",
+    "difficulty": "difficile",
+    "text": "Un'auto di 1500 kg a 10 m/s: qual è la sua energia cinetica in kJ?",
+    "answers": [
+      "75 kJ",
+      "65 kJ",
+      "80 kJ",
+      "70 kJ"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0202",
+    "category": "Fisica",
+    "difficulty": "difficile",
+    "text": "Un motore eroga 191 Nm a 5000 giri/min: quanti kW eroga?",
+    "answers": [
+      "110 kW",
+      "90 kW",
+      "100 kW",
+      "95 kW"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0203",
+    "category": "Fisica",
+    "difficulty": "difficile",
+    "text": "Un oggetto cade da 80 m: con quale velocità arriva al suolo?",
+    "answers": [
+      "40 m/s",
+      "45 m/s",
+      "35 m/s",
+      "50 m/s"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0204",
+    "category": "Fisica",
+    "difficulty": "difficile",
+    "text": "Un corpo percorre una curva di raggio 40 m a 20 m/s: quale accelerazione centripeta subisce?",
+    "answers": [
+      "20 m/s²",
+      "10 m/s²",
+      "12 m/s²",
+      "8 m/s²"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0205",
+    "category": "Fisica",
+    "difficulty": "difficile",
+    "text": "Due resistenze da 15 Ω in parallelo: quale resistenza totale?",
+    "answers": [
+      "7,5 Ω",
+      "15 Ω",
+      "30 Ω",
+      "5 Ω"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0206",
+    "category": "Fisica",
+    "difficulty": "superdifficile",
+    "text": "Un'auto di 1000 kg frena da 20 m/s a 0 in 4 secondi: quale forza frenante media agisce?",
+    "answers": [
+      "5000 N",
+      "6000 N",
+      "4500 N",
+      "4000 N"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0207",
+    "category": "Fisica",
+    "difficulty": "superdifficile",
+    "text": "Un motore eroga 300 Nm a 4775 giri/min: quanti kW eroga?",
+    "answers": [
+      "150 kW",
+      "160 kW",
+      "145 kW",
+      "140 kW"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0208",
+    "category": "Fisica",
+    "difficulty": "superdifficile",
+    "text": "Energia cinetica di un corpo di 1800 kg a 20 m/s, in kJ?",
+    "answers": [
+      "340 kJ",
+      "360 kJ",
+      "380 kJ",
+      "320 kJ"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0209",
+    "category": "Fisica",
+    "difficulty": "superdifficile",
+    "text": "Un corpo lasciato cadere da 125 m raggiunge il suolo a quale velocità (g = 10)?",
+    "answers": [
+      "60 m/s",
+      "50 m/s",
+      "55 m/s",
+      "45 m/s"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0210",
+    "category": "Fisica",
+    "difficulty": "superdifficile",
+    "text": "Due condensatori da 6 F e 6 F in serie: quale capacità totale?",
+    "answers": [
+      "2 F",
+      "12 F",
+      "3 F",
+      "6 F"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0211",
+    "category": "Fisica",
+    "difficulty": "superdifficile",
+    "text": "Un corpo percorre una curva di raggio 90 m a 30 m/s: quale accelerazione centripeta subisce?",
+    "answers": [
+      "30 m/s²",
+      "12 m/s²",
+      "8 m/s²",
+      "10 m/s²"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0212",
+    "category": "Fisica",
+    "difficulty": "superdifficile",
+    "text": "Un'auto di 800 kg frena da 25 m/s a 0 in 5 secondi: quale forza frenante media agisce?",
+    "answers": [
+      "3500 N",
+      "3800 N",
+      "4000 N",
+      "4500 N"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0213",
+    "category": "Fisica",
+    "difficulty": "superdifficile",
+    "text": "Un motore eroga 250 Nm a 3820 giri/min: quanti kW eroga?",
+    "answers": [
+      "90 kW",
+      "100 kW",
+      "110 kW",
+      "95 kW"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0214",
+    "category": "Fisica",
+    "difficulty": "superdifficile",
+    "text": "Energia cinetica di un corpo di 2500 kg a 24 m/s, in kJ?",
+    "answers": [
+      "720 kJ",
+      "740 kJ",
+      "680 kJ",
+      "700 kJ"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0215",
+    "category": "Fisica",
+    "difficulty": "superdifficile",
+    "text": "Un corpo lasciato cadere da 180 m raggiunge il suolo a quale velocità?",
+    "answers": [
+      "55 m/s",
+      "70 m/s",
+      "60 m/s",
+      "65 m/s"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0216",
+    "category": "Fisica",
+    "difficulty": "impossibile",
+    "text": "Un'auto di 2000 kg a 25 m/s: energia cinetica in MJ?",
+    "answers": [
+      "0,5 MJ",
+      "0,625 MJ",
+      "0,75 MJ",
+      "0,8 MJ"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0217",
+    "category": "Fisica",
+    "difficulty": "impossibile",
+    "text": "Un motore eroga 500 Nm a 1910 giri/min: quanti kW eroga?",
+    "answers": [
+      "110 kW",
+      "90 kW",
+      "95 kW",
+      "100 kW"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0218",
+    "category": "Fisica",
+    "difficulty": "impossibile",
+    "text": "Un proiettile lanciato orizzontalmente da 125 m: quanti secondi impiega a toccare terra (g = 10)?",
+    "answers": [
+      "4,5 s",
+      "4 s",
+      "5 s",
+      "6 s"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0219",
+    "category": "Fisica",
+    "difficulty": "impossibile",
+    "text": "Forza centripeta su un corpo di 5 kg in curva di raggio 20 m a 10 m/s?",
+    "answers": [
+      "30 N",
+      "25 N",
+      "50 N",
+      "20 N"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0220",
+    "category": "Fisica",
+    "difficulty": "impossibile",
+    "text": "Quattro resistenze da 8 Ω in parallelo: quale resistenza totale?",
+    "answers": [
+      "8 Ω",
+      "2 Ω",
+      "1 Ω",
+      "4 Ω"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0221",
+    "category": "Fisica",
+    "difficulty": "impossibile",
+    "text": "Un condensatore da 8 F caricato a 25 V: quanta energia immagazzina (E=½CV²)?",
+    "answers": [
+      "3000 J",
+      "2000 J",
+      "2250 J",
+      "2500 J"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0222",
+    "category": "Fisica",
+    "difficulty": "impossibile",
+    "text": "Un'auto di 1800 kg a 30 m/s: energia cinetica in kJ?",
+    "answers": [
+      "820 kJ",
+      "810 kJ",
+      "780 kJ",
+      "800 kJ"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0223",
+    "category": "Fisica",
+    "difficulty": "impossibile",
+    "text": "Un motore eroga 382 Nm a 2500 giri/min: quanti kW eroga?",
+    "answers": [
+      "95 kW",
+      "110 kW",
+      "90 kW",
+      "100 kW"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0224",
+    "category": "Fisica",
+    "difficulty": "impossibile",
+    "text": "Energia cinetica di un corpo di 3000 kg a 20 m/s, in kJ?",
+    "answers": [
+      "600 kJ",
+      "620 kJ",
+      "560 kJ",
+      "580 kJ"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0225",
+    "category": "Fisica",
+    "difficulty": "impossibile",
+    "text": "Tre condensatori da 9 F in serie: quale capacità totale?",
+    "answers": [
+      "3 F",
+      "4,5 F",
+      "9 F",
+      "27 F"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0226",
+    "category": "Automobili e Motori",
+    "difficulty": "facile",
+    "text": "Un'auto percorre 240 km in 4 ore: qual è la velocità media?",
+    "answers": [
+      "60 km/h",
+      "50 km/h",
+      "65 km/h",
+      "70 km/h"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0227",
+    "category": "Automobili e Motori",
+    "difficulty": "facile",
+    "text": "Un'auto consuma 5 litri ogni 100 km: quanti litri servono per 200 km?",
+    "answers": [
+      "10 litri",
+      "8 litri",
+      "12 litri",
+      "15 litri"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0228",
+    "category": "Automobili e Motori",
+    "difficulty": "facile",
+    "text": "Un motore a 6 cilindri ha cilindrata totale di 3000 cc: quanti cc per cilindro?",
+    "answers": [
+      "600 cc",
+      "450 cc",
+      "400 cc",
+      "500 cc"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0229",
+    "category": "Automobili e Motori",
+    "difficulty": "facile",
+    "text": "Un'auto va a 100 km/h: quanti km percorre in 15 minuti?",
+    "answers": [
+      "25 km",
+      "20 km",
+      "15 km",
+      "30 km"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0230",
+    "category": "Automobili e Motori",
+    "difficulty": "facile",
+    "text": "Un pieno costa 60€ a 1,50€/litro: quanti litri sono?",
+    "answers": [
+      "50 litri",
+      "35 litri",
+      "45 litri",
+      "40 litri"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0231",
+    "category": "Automobili e Motori",
+    "difficulty": "facile",
+    "text": "Un'auto percorre 150 km in 3 ore: qual è la velocità media?",
+    "answers": [
+      "60 km/h",
+      "50 km/h",
+      "55 km/h",
+      "45 km/h"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0232",
+    "category": "Automobili e Motori",
+    "difficulty": "facile",
+    "text": "Un'auto consuma 7 litri ogni 100 km: quanti litri servono per 400 km?",
+    "answers": [
+      "32 litri",
+      "30 litri",
+      "28 litri",
+      "24 litri"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0233",
+    "category": "Automobili e Motori",
+    "difficulty": "facile",
+    "text": "Un motore a 5 cilindri ha cilindrata totale di 2500 cc: quanti cc per cilindro?",
+    "answers": [
+      "450 cc",
+      "500 cc",
+      "400 cc",
+      "550 cc"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0234",
+    "category": "Automobili e Motori",
+    "difficulty": "facile",
+    "text": "Un'auto va a 80 km/h: quanti km percorre in 45 minuti?",
+    "answers": [
+      "60 km",
+      "55 km",
+      "70 km",
+      "50 km"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0235",
+    "category": "Automobili e Motori",
+    "difficulty": "facile",
+    "text": "Un pieno costa 90€ a 1,80€/litro: quanti litri sono?",
+    "answers": [
+      "55 litri",
+      "50 litri",
+      "60 litri",
+      "45 litri"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0236",
+    "category": "Automobili e Motori",
+    "difficulty": "medio",
+    "text": "Un motore gira a 4000 giri/min: quanti giri fa in 3 secondi?",
+    "answers": [
+      "150 giri",
+      "180 giri",
+      "220 giri",
+      "200 giri"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0237",
+    "category": "Automobili e Motori",
+    "difficulty": "medio",
+    "text": "Un serbatoio da 50 litri dà 750 km di autonomia: quanti km/litro fa l'auto?",
+    "answers": [
+      "10 km/litro",
+      "12 km/litro",
+      "18 km/litro",
+      "15 km/litro"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0238",
+    "category": "Automobili e Motori",
+    "difficulty": "medio",
+    "text": "Un motore V6 ha cilindrata totale di 3600 cc: quanti cc per cilindro?",
+    "answers": [
+      "500 cc",
+      "550 cc",
+      "600 cc",
+      "650 cc"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0239",
+    "category": "Automobili e Motori",
+    "difficulty": "medio",
+    "text": "Un cambio ha rapporto 5:1: se il motore gira a 5000 giri/min, a quanti giri gira la trasmissione?",
+    "answers": [
+      "1250 giri/min",
+      "1000 giri/min",
+      "900 giri/min",
+      "1100 giri/min"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0240",
+    "category": "Automobili e Motori",
+    "difficulty": "medio",
+    "text": "Un pneumatico ha circonferenza di 2,5 metri: quanti giri fa in 5 km?",
+    "answers": [
+      "2200 giri",
+      "2500 giri",
+      "1800 giri",
+      "2000 giri"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0241",
+    "category": "Automobili e Motori",
+    "difficulty": "medio",
+    "text": "Un motore gira a 3600 giri/min: quanti giri fa in 5 secondi?",
+    "answers": [
+      "250 giri",
+      "300 giri",
+      "280 giri",
+      "320 giri"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0242",
+    "category": "Automobili e Motori",
+    "difficulty": "medio",
+    "text": "Un serbatoio da 45 litri dà 810 km di autonomia: quanti km/litro fa l'auto?",
+    "answers": [
+      "20 km/litro",
+      "15 km/litro",
+      "18 km/litro",
+      "16 km/litro"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0243",
+    "category": "Automobili e Motori",
+    "difficulty": "medio",
+    "text": "Un motore V6 ha cilindrata totale di 3000 cc: quanti cc per cilindro?",
+    "answers": [
+      "600 cc",
+      "450 cc",
+      "500 cc",
+      "550 cc"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0244",
+    "category": "Automobili e Motori",
+    "difficulty": "medio",
+    "text": "Un cambio ha rapporto 4:1: se il motore gira a 3600 giri/min, a quanti giri gira la trasmissione?",
+    "answers": [
+      "900 giri/min",
+      "1000 giri/min",
+      "950 giri/min",
+      "800 giri/min"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0245",
+    "category": "Automobili e Motori",
+    "difficulty": "medio",
+    "text": "Un pneumatico ha circonferenza di 1,8 metri: quanti giri fa in 1,8 km?",
+    "answers": [
+      "1100 giri",
+      "1000 giri",
+      "900 giri",
+      "950 giri"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0246",
+    "category": "Automobili e Motori",
+    "difficulty": "difficile",
+    "text": "Un'auto percorre 350 km consumando 25 litri: quanti km/litro fa?",
+    "answers": [
+      "12 km/litro",
+      "16 km/litro",
+      "14 km/litro",
+      "15 km/litro"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0247",
+    "category": "Automobili e Motori",
+    "difficulty": "difficile",
+    "text": "Un motore eroga 200 CV (1 CV ≈ 0,735 kW): quanti kW eroga circa?",
+    "answers": [
+      "circa 160 kW",
+      "circa 147 kW",
+      "circa 150 kW",
+      "circa 135 kW"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0248",
+    "category": "Automobili e Motori",
+    "difficulty": "difficile",
+    "text": "Un'auto va da 0 a 90 km/h (25 m/s) in 5 secondi: qual è l'accelerazione media?",
+    "answers": [
+      "5,5 m/s²",
+      "4,5 m/s²",
+      "5 m/s²",
+      "6 m/s²"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0249",
+    "category": "Automobili e Motori",
+    "difficulty": "difficile",
+    "text": "Un rapporto finale è 4:1 con un rapporto di prima marcia 3:1: qual è il rapporto totale?",
+    "answers": [
+      "12:1",
+      "14:1",
+      "10:1",
+      "7:1"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0250",
+    "category": "Automobili e Motori",
+    "difficulty": "difficile",
+    "text": "Un motore turbo aumenta la pressione da 1 a 2,2 bar: di quale percentuale aumenta?",
+    "answers": [
+      "120%",
+      "220%",
+      "130%",
+      "110%"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0251",
+    "category": "Automobili e Motori",
+    "difficulty": "difficile",
+    "text": "Un'auto percorre 480 km consumando 32 litri: quanti km/litro fa?",
+    "answers": [
+      "16 km/litro",
+      "17 km/litro",
+      "13 km/litro",
+      "15 km/litro"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0252",
+    "category": "Automobili e Motori",
+    "difficulty": "difficile",
+    "text": "Un motore eroga 100 CV (1 CV ≈ 0,735 kW): quanti kW eroga circa?",
+    "answers": [
+      "circa 73,5 kW",
+      "circa 65 kW",
+      "circa 80 kW",
+      "circa 70 kW"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0253",
+    "category": "Automobili e Motori",
+    "difficulty": "difficile",
+    "text": "Un'auto va da 0 a 72 km/h (20 m/s) in 4 secondi: qual è l'accelerazione media?",
+    "answers": [
+      "4,5 m/s²",
+      "5,5 m/s²",
+      "4 m/s²",
+      "5 m/s²"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0254",
+    "category": "Automobili e Motori",
+    "difficulty": "difficile",
+    "text": "Un rapporto finale è 3,5:1 con un rapporto di prima marcia 3:1: qual è il rapporto totale?",
+    "answers": [
+      "9,5:1",
+      "6,5:1",
+      "10,5:1",
+      "11,5:1"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0255",
+    "category": "Automobili e Motori",
+    "difficulty": "difficile",
+    "text": "Un motore turbo aumenta la pressione da 1 a 1,6 bar: di quale percentuale aumenta?",
+    "answers": [
+      "70%",
+      "160%",
+      "60%",
+      "50%"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0256",
+    "category": "Automobili e Motori",
+    "difficulty": "superdifficile",
+    "text": "Un motore eroga 1910 Nm a 500 giri/min: quanti kW eroga (P[kW]=T×rpm÷9550)?",
+    "answers": [
+      "95 kW",
+      "90 kW",
+      "100 kW",
+      "110 kW"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0257",
+    "category": "Automobili e Motori",
+    "difficulty": "superdifficile",
+    "text": "Un'auto pesa 1500 kg ed eroga 250 kW: qual è il rapporto peso/potenza?",
+    "answers": [
+      "5 kg/kW",
+      "6 kg/kW",
+      "5,5 kg/kW",
+      "7 kg/kW"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0258",
+    "category": "Automobili e Motori",
+    "difficulty": "superdifficile",
+    "text": "Una ruota con circonferenza di 2,5 metri gira a 800 giri/min: a quanti km/h si muove il veicolo?",
+    "answers": [
+      "110 km/h",
+      "130 km/h",
+      "120 km/h",
+      "100 km/h"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0259",
+    "category": "Automobili e Motori",
+    "difficulty": "superdifficile",
+    "text": "Un'auto consuma 10 l/100km in città e 6 l/100km in autostrada: quanti litri per 30 km città + 100 km autostrada?",
+    "answers": [
+      "12 litri",
+      "8 litri",
+      "10 litri",
+      "9 litri"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0260",
+    "category": "Automobili e Motori",
+    "difficulty": "superdifficile",
+    "text": "Un motore ha rapporto di compressione 11:1 e cilindrata unitaria di 400 cc: qual è il volume della camera di combustione?",
+    "answers": [
+      "44 cc",
+      "40 cc",
+      "36 cc",
+      "50 cc"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0261",
+    "category": "Automobili e Motori",
+    "difficulty": "superdifficile",
+    "text": "Un motore eroga 1146 Nm a 1000 giri/min: quanti kW eroga?",
+    "answers": [
+      "115 kW",
+      "120 kW",
+      "110 kW",
+      "130 kW"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0262",
+    "category": "Automobili e Motori",
+    "difficulty": "superdifficile",
+    "text": "Un'auto pesa 1000 kg ed eroga 200 kW: qual è il rapporto peso/potenza?",
+    "answers": [
+      "5,5 kg/kW",
+      "4,5 kg/kW",
+      "5 kg/kW",
+      "4 kg/kW"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0263",
+    "category": "Automobili e Motori",
+    "difficulty": "superdifficile",
+    "text": "Una ruota con circonferenza di 2 metri gira a 1500 giri/min: a quanti km/h si muove il veicolo?",
+    "answers": [
+      "180 km/h",
+      "190 km/h",
+      "160 km/h",
+      "170 km/h"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0264",
+    "category": "Automobili e Motori",
+    "difficulty": "superdifficile",
+    "text": "Un'auto consuma 12 l/100km in città e 7 l/100km in autostrada: quanti litri per 25 km città + 100 km autostrada?",
+    "answers": [
+      "10 litri",
+      "13 litri",
+      "9 litri",
+      "11 litri"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0265",
+    "category": "Automobili e Motori",
+    "difficulty": "superdifficile",
+    "text": "Un motore ha rapporto di compressione 9:1 e cilindrata unitaria di 400 cc: qual è il volume della camera di combustione?",
+    "answers": [
+      "55 cc",
+      "45 cc",
+      "44 cc",
+      "50 cc"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0266",
+    "category": "Automobili e Motori",
+    "difficulty": "impossibile",
+    "text": "Un motore eroga 70 Nm a 4775 giri/min: quanti kW eroga (P[kW]=T×rpm÷9550)?",
+    "answers": [
+      "30 kW",
+      "32 kW",
+      "40 kW",
+      "35 kW"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0267",
+    "category": "Automobili e Motori",
+    "difficulty": "impossibile",
+    "text": "Un'auto ha rapporto peso/potenza di 3 kg/kW e pesa 900 kg: quanti kW eroga il motore?",
+    "answers": [
+      "280 kW",
+      "300 kW",
+      "350 kW",
+      "320 kW"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0268",
+    "category": "Automobili e Motori",
+    "difficulty": "impossibile",
+    "text": "Un cambio ha rapporto finale 4,2:1 e prima marcia 3:1, motore a 6300 giri/min: a quanti giri/min gira la ruota?",
+    "answers": [
+      "500 giri/min",
+      "550 giri/min",
+      "450 giri/min",
+      "480 giri/min"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0269",
+    "category": "Automobili e Motori",
+    "difficulty": "impossibile",
+    "text": "Una ruota gira a 600 giri/min con circonferenza di 2 metri: a quanti km/h viaggia l'auto?",
+    "answers": [
+      "65 km/h",
+      "72 km/h",
+      "80 km/h",
+      "60 km/h"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0270",
+    "category": "Automobili e Motori",
+    "difficulty": "impossibile",
+    "text": "Un motore ha rapporto di compressione 13:1 e cilindrata unitaria di 600 cc: qual è il volume della camera di combustione?",
+    "answers": [
+      "55 cc",
+      "50 cc",
+      "60 cc",
+      "45 cc"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0271",
+    "category": "Automobili e Motori",
+    "difficulty": "impossibile",
+    "text": "Un motore turbo aumenta la pressione da 1,2 a 2,4 bar: di quale percentuale aumenta?",
+    "answers": [
+      "100%",
+      "200%",
+      "90%",
+      "110%"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0272",
+    "category": "Automobili e Motori",
+    "difficulty": "impossibile",
+    "text": "Un'auto ha rapporto peso/potenza di 2,8 kg/kW e pesa 980 kg: quanti kW eroga il motore?",
+    "answers": [
+      "330 kW",
+      "370 kW",
+      "320 kW",
+      "350 kW"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0273",
+    "category": "Automobili e Motori",
+    "difficulty": "impossibile",
+    "text": "Un cambio ha rapporto finale 3,8:1 e prima marcia 3,5:1, motore a 6650 giri/min: a quanti giri/min gira la ruota?",
+    "answers": [
+      "500 giri/min",
+      "480 giri/min",
+      "450 giri/min",
+      "550 giri/min"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0274",
+    "category": "Automobili e Motori",
+    "difficulty": "impossibile",
+    "text": "Una ruota gira a 700 giri/min con circonferenza di 3 metri: a quanti km/h viaggia l'auto?",
+    "answers": [
+      "126 km/h",
+      "115 km/h",
+      "120 km/h",
+      "135 km/h"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0275",
+    "category": "Automobili e Motori",
+    "difficulty": "impossibile",
+    "text": "Un motore ha rapporto di compressione 8:1 e cilindrata unitaria di 700 cc: qual è il volume della camera di combustione?",
+    "answers": [
+      "90 cc",
+      "95 cc",
+      "100 cc",
+      "110 cc"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0276",
+    "category": "Formula 1",
+    "difficulty": "facile",
+    "text": "Una gara dura 308 km, con giri da 4,4 km: quanti giri sono previsti?",
+    "answers": [
+      "68 giri",
+      "65 giri",
+      "75 giri",
+      "70 giri"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0277",
+    "category": "Formula 1",
+    "difficulty": "facile",
+    "text": "Un pilota guadagna 25 punti per la vittoria e 15 per il terzo posto: quanti punti in più vale vincere?",
+    "answers": [
+      "12 punti",
+      "10 punti",
+      "8 punti",
+      "9 punti"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0278",
+    "category": "Formula 1",
+    "difficulty": "facile",
+    "text": "22 piloti al via, 4 si ritirano: quanti arrivano al traguardo?",
+    "answers": [
+      "18",
+      "16",
+      "19",
+      "17"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0279",
+    "category": "Formula 1",
+    "difficulty": "facile",
+    "text": "Un giro dura 75 secondi: quanti minuti impiega un pilota a completare 4 giri?",
+    "answers": [
+      "5 minuti",
+      "4,5 minuti",
+      "6 minuti",
+      "4 minuti"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0280",
+    "category": "Formula 1",
+    "difficulty": "facile",
+    "text": "Un pilota fa il giro veloce in 78 secondi, un rivale in 82: di quanti secondi è più veloce?",
+    "answers": [
+      "3 secondi",
+      "6 secondi",
+      "5 secondi",
+      "4 secondi"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0281",
+    "category": "Formula 1",
+    "difficulty": "facile",
+    "text": "Una gara dura 306 km, con giri da 6 km: quanti giri sono previsti?",
+    "answers": [
+      "51 giri",
+      "48 giri",
+      "54 giri",
+      "50 giri"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0282",
+    "category": "Formula 1",
+    "difficulty": "facile",
+    "text": "Un pilota guadagna 18 punti per il secondo posto e 15 per il terzo: quanti punti in più vale il secondo posto?",
+    "answers": [
+      "5 punti",
+      "4 punti",
+      "2 punti",
+      "3 punti"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0283",
+    "category": "Formula 1",
+    "difficulty": "facile",
+    "text": "20 piloti al via, 5 si ritirano: quanti arrivano al traguardo?",
+    "answers": [
+      "16",
+      "15",
+      "14",
+      "13"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0284",
+    "category": "Formula 1",
+    "difficulty": "facile",
+    "text": "Un giro dura 60 secondi: quanti minuti impiega un pilota a completare 5 giri?",
+    "answers": [
+      "5 minuti",
+      "4,5 minuti",
+      "6 minuti",
+      "4 minuti"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0285",
+    "category": "Formula 1",
+    "difficulty": "facile",
+    "text": "Un pilota fa il giro veloce in 90 secondi, un rivale in 95: di quanti secondi è più veloce?",
+    "answers": [
+      "4 secondi",
+      "7 secondi",
+      "5 secondi",
+      "6 secondi"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0286",
+    "category": "Formula 1",
+    "difficulty": "medio",
+    "text": "Una monoposto percorre 280 km di gara in 80 minuti: qual è la velocità media?",
+    "answers": [
+      "220 km/h",
+      "210 km/h",
+      "190 km/h",
+      "200 km/h"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0287",
+    "category": "Formula 1",
+    "difficulty": "medio",
+    "text": "Un pilota parte 8° e guadagna 5 posizioni al via: in che posizione si trova?",
+    "answers": [
+      "4°",
+      "3°",
+      "5°",
+      "2°"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0288",
+    "category": "Formula 1",
+    "difficulty": "medio",
+    "text": "Punti 25 e 10 in due gare diverse: quanti punti totali?",
+    "answers": [
+      "30",
+      "33",
+      "35",
+      "40"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0289",
+    "category": "Formula 1",
+    "difficulty": "medio",
+    "text": "Un serbatoio di 100 kg si consuma di 2 kg a giro per 50 giri: quanto carburante avanza a fine gara?",
+    "answers": [
+      "2 kg",
+      "5 kg",
+      "0 kg",
+      "10 kg"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0290",
+    "category": "Formula 1",
+    "difficulty": "medio",
+    "text": "Una scuderia totalizza 40 punti in una gara: se un pilota ne ha presi 22, quanti ne ha presi l'altro?",
+    "answers": [
+      "20",
+      "18",
+      "15",
+      "16"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0291",
+    "category": "Formula 1",
+    "difficulty": "medio",
+    "text": "Una monoposto percorre 350 km di gara in 100 minuti: qual è la velocità media?",
+    "answers": [
+      "210 km/h",
+      "195 km/h",
+      "200 km/h",
+      "220 km/h"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0292",
+    "category": "Formula 1",
+    "difficulty": "medio",
+    "text": "Un pilota parte 10° e guadagna 6 posizioni al via: in che posizione si trova?",
+    "answers": [
+      "5°",
+      "3°",
+      "4°",
+      "6°"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0293",
+    "category": "Formula 1",
+    "difficulty": "medio",
+    "text": "Punti 18 e 12 in due gare diverse: quanti punti totali?",
+    "answers": [
+      "32",
+      "25",
+      "28",
+      "30"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0294",
+    "category": "Formula 1",
+    "difficulty": "medio",
+    "text": "Un serbatoio di 90 kg si consuma di 1,5 kg a giro per 60 giri: quanto carburante avanza a fine gara?",
+    "answers": [
+      "3 kg",
+      "5 kg",
+      "10 kg",
+      "0 kg"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0295",
+    "category": "Formula 1",
+    "difficulty": "medio",
+    "text": "Una scuderia totalizza 33 punti in una gara: se un pilota ne ha presi 18, quanti ne ha presi l'altro?",
+    "answers": [
+      "12",
+      "10",
+      "15",
+      "18"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0296",
+    "category": "Formula 1",
+    "difficulty": "difficile",
+    "text": "Un serbatoio di 100 kg consuma 1,6 kg/giro per 60 giri: quanto carburante avanza a fine gara?",
+    "answers": [
+      "6 kg",
+      "4 kg",
+      "0 kg",
+      "2 kg"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0297",
+    "category": "Formula 1",
+    "difficulty": "difficile",
+    "text": "Un pit stop di 2,3 secondi ripetuto 3 volte: quanto tempo totale si perde nelle soste?",
+    "answers": [
+      "6,3 secondi",
+      "6,9 secondi",
+      "7 secondi",
+      "7,5 secondi"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0298",
+    "category": "Formula 1",
+    "difficulty": "difficile",
+    "text": "Un giro dura 90 secondi, un rivale è più lento di 1,5 secondi: qual è il suo tempo?",
+    "answers": [
+      "91,5 secondi",
+      "90,5 secondi",
+      "91 secondi",
+      "92 secondi"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0299",
+    "category": "Formula 1",
+    "difficulty": "difficile",
+    "text": "Un pilota guadagna 15 punti a gara per 5 gare di fila: quanti punti totalizza?",
+    "answers": [
+      "80 punti",
+      "65 punti",
+      "75 punti",
+      "70 punti"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0300",
+    "category": "Formula 1",
+    "difficulty": "difficile",
+    "text": "Una power unit eroga 750 kW totali, di cui 650 kW dal motore termico: che percentuale è elettrica?",
+    "answers": [
+      "circa 20%",
+      "circa 15%",
+      "circa 13,3%",
+      "circa 10%"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0301",
+    "category": "Formula 1",
+    "difficulty": "difficile",
+    "text": "Un serbatoio di 95 kg consuma 1,9 kg/giro per 50 giri: quanto carburante avanza a fine gara?",
+    "answers": [
+      "3 kg",
+      "0 kg",
+      "2 kg",
+      "5 kg"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0302",
+    "category": "Formula 1",
+    "difficulty": "difficile",
+    "text": "Un pit stop di 2,6 secondi ripetuto 4 volte: quanto tempo totale si perde nelle soste?",
+    "answers": [
+      "10,4 secondi",
+      "10 secondi",
+      "11 secondi",
+      "9,8 secondi"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0303",
+    "category": "Formula 1",
+    "difficulty": "difficile",
+    "text": "Un giro dura 85 secondi, un rivale è più lento di 2 secondi: qual è il suo tempo?",
+    "answers": [
+      "86 secondi",
+      "88 secondi",
+      "89 secondi",
+      "87 secondi"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0304",
+    "category": "Formula 1",
+    "difficulty": "difficile",
+    "text": "Un pilota guadagna 12 punti a gara per 6 gare di fila: quanti punti totalizza?",
+    "answers": [
+      "72 punti",
+      "78 punti",
+      "70 punti",
+      "66 punti"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0305",
+    "category": "Formula 1",
+    "difficulty": "difficile",
+    "text": "Una power unit eroga 700 kW totali, di cui 600 kW dal motore termico: che percentuale è elettrica?",
+    "answers": [
+      "circa 12%",
+      "circa 20%",
+      "circa 16%",
+      "circa 14,3%"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0306",
+    "category": "Formula 1",
+    "difficulty": "superdifficile",
+    "text": "Una monoposto accelera da 0 a 320 km/h (88,9 m/s) in 11 secondi: qual è l'accelerazione media?",
+    "answers": [
+      "circa 6,5 m/s²",
+      "circa 8,1 m/s²",
+      "circa 7,5 m/s²",
+      "circa 9 m/s²"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0307",
+    "category": "Formula 1",
+    "difficulty": "superdifficile",
+    "text": "Una gara di 60 giri su un circuito di 5,4 km: quanti km totali percorre chi finisce la gara?",
+    "answers": [
+      "330 km",
+      "300 km",
+      "324 km",
+      "320 km"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0308",
+    "category": "Formula 1",
+    "difficulty": "superdifficile",
+    "text": "Un serbatoio di 108 kg deve bastare per 64 giri: qual è il consumo massimo per giro, circa?",
+    "answers": [
+      "circa 1,69 kg/giro",
+      "circa 1,5 kg/giro",
+      "circa 1,8 kg/giro",
+      "circa 2 kg/giro"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0309",
+    "category": "Formula 1",
+    "difficulty": "superdifficile",
+    "text": "Punti 25, 18 e 12 in tre gare: quanti punti in media a gara, circa?",
+    "answers": [
+      "circa 18,3",
+      "circa 15",
+      "circa 20",
+      "circa 17"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0310",
+    "category": "Formula 1",
+    "difficulty": "superdifficile",
+    "text": "Motore termico da 600 kW e contributo elettrico di 130 kW: qual è la potenza totale in CV (1 kW ≈ 1,36 CV)?",
+    "answers": [
+      "circa 1020 CV",
+      "circa 993 CV",
+      "circa 900 CV",
+      "circa 950 CV"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0311",
+    "category": "Formula 1",
+    "difficulty": "superdifficile",
+    "text": "Una monoposto accelera da 0 a 280 km/h (77,8 m/s) in 9 secondi: qual è l'accelerazione media?",
+    "answers": [
+      "circa 7,5 m/s²",
+      "circa 9,2 m/s²",
+      "circa 8 m/s²",
+      "circa 8,6 m/s²"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0312",
+    "category": "Formula 1",
+    "difficulty": "superdifficile",
+    "text": "Una gara di 56 giri su un circuito di 5,8 km: quanti km totali percorre chi finisce la gara?",
+    "answers": [
+      "320 km",
+      "315 km",
+      "324,8 km",
+      "330 km"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0313",
+    "category": "Formula 1",
+    "difficulty": "superdifficile",
+    "text": "Un serbatoio di 100 kg deve bastare per 58 giri: qual è il consumo massimo per giro, circa?",
+    "answers": [
+      "circa 1,9 kg/giro",
+      "circa 1,5 kg/giro",
+      "circa 1,72 kg/giro",
+      "circa 2 kg/giro"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0314",
+    "category": "Formula 1",
+    "difficulty": "superdifficile",
+    "text": "Punti 18, 15 e 12 in tre gare: quanti punti in media a gara?",
+    "answers": [
+      "13",
+      "16",
+      "15",
+      "14"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0315",
+    "category": "Formula 1",
+    "difficulty": "superdifficile",
+    "text": "Motore termico da 500 kW e contributo elettrico di 100 kW: qual è la potenza totale in CV (1 kW ≈ 1,36 CV)?",
+    "answers": [
+      "circa 850 CV",
+      "circa 816 CV",
+      "circa 750 CV",
+      "circa 780 CV"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0316",
+    "category": "Formula 1",
+    "difficulty": "impossibile",
+    "text": "Un pilota migliora il tempo di 0,2 secondi ad ogni tentativo per 5 tentativi, partendo da 1:21.500: qual è il tempo finale?",
+    "answers": [
+      "1:20.700",
+      "1:20.300",
+      "1:21.000",
+      "1:20.500"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0317",
+    "category": "Formula 1",
+    "difficulty": "impossibile",
+    "text": "Una gara di 70 giri su un circuito di 4,4 km: quanti km totali percorre chi finisce la gara?",
+    "answers": [
+      "308 km",
+      "300 km",
+      "310 km",
+      "315 km"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0318",
+    "category": "Formula 1",
+    "difficulty": "impossibile",
+    "text": "Un consumo di 1,9 kg/giro per 60 giri: quanto carburante minimo serve, arrotondato all'intero superiore?",
+    "answers": [
+      "118 kg",
+      "114 kg",
+      "110 kg",
+      "112 kg"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0319",
+    "category": "Formula 1",
+    "difficulty": "impossibile",
+    "text": "Una power unit eroga 580 kW termici e 110 kW elettrici, con una perdita del 5%: qual è la potenza netta approssimativa?",
+    "answers": [
+      "circa 690 kW",
+      "circa 655,5 kW",
+      "circa 680 kW",
+      "circa 630 kW"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0320",
+    "category": "Formula 1",
+    "difficulty": "impossibile",
+    "text": "Un pilota fa la pole in 1:19.100, il secondo è staccato di 0,065 secondi: qual è il suo tempo?",
+    "answers": [
+      "1:19.045",
+      "1:19.165",
+      "1:19.200",
+      "1:19.135"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0321",
+    "category": "Formula 1",
+    "difficulty": "impossibile",
+    "text": "Un pilota migliora il tempo di 0,25 secondi ad ogni tentativo per 4 tentativi, partendo da 1:22.000: qual è il tempo finale?",
+    "answers": [
+      "1:21.000",
+      "1:21.250",
+      "1:20.750",
+      "1:21.500"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0322",
+    "category": "Formula 1",
+    "difficulty": "impossibile",
+    "text": "Una gara di 72 giri su un circuito di 4,3 km: quanti km totali percorre chi finisce la gara?",
+    "answers": [
+      "315 km",
+      "300 km",
+      "309,6 km",
+      "305 km"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0323",
+    "category": "Formula 1",
+    "difficulty": "impossibile",
+    "text": "Un consumo di 1,95 kg/giro per 58 giri: quanto carburante minimo serve, arrotondato all'intero superiore?",
+    "answers": [
+      "110 kg",
+      "118 kg",
+      "112 kg",
+      "114 kg"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0324",
+    "category": "Formula 1",
+    "difficulty": "impossibile",
+    "text": "Una power unit eroga 600 kW termici e 120 kW elettrici, con una perdita del 3%: qual è la potenza netta approssimativa?",
+    "answers": [
+      "circa 720 kW",
+      "circa 710 kW",
+      "circa 698,4 kW",
+      "circa 670 kW"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0325",
+    "category": "Formula 1",
+    "difficulty": "impossibile",
+    "text": "Un pilota fa la pole in 1:17.800, il secondo è staccato di 0,112 secondi: qual è il suo tempo?",
+    "answers": [
+      "1:17.912",
+      "1:17.712",
+      "1:17.888",
+      "1:18.000"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0326",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "facile",
+    "text": "Un telaio pesa 100 kg su un veicolo totale di 1000 kg: che percentuale rappresenta?",
+    "answers": [
+      "10%",
+      "12%",
+      "8%",
+      "15%"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0327",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "facile",
+    "text": "Una sospensione si comprime di 4 cm sotto un carico di 200 kg: qual è la sua rigidezza?",
+    "answers": [
+      "50 kg/cm",
+      "45 kg/cm",
+      "60 kg/cm",
+      "55 kg/cm"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0328",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "facile",
+    "text": "Un veicolo distribuisce 1200 kg equamente su 4 ruote: quanto peso su ogni ruota?",
+    "answers": [
+      "350 kg",
+      "300 kg",
+      "400 kg",
+      "250 kg"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0329",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "facile",
+    "text": "Un serbatoio da 50 litri è riempito al 60%: quanti litri contiene?",
+    "answers": [
+      "35 litri",
+      "25 litri",
+      "30 litri",
+      "20 litri"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0330",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "facile",
+    "text": "Un veicolo con passo 2,4 m ha il baricentro a 1,2 m dall'asse anteriore: a quanti metri è dal posteriore?",
+    "answers": [
+      "1,4 m",
+      "0,8 m",
+      "1 m",
+      "1,2 m"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0331",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "facile",
+    "text": "Un telaio pesa 150 kg su un veicolo totale di 1500 kg: che percentuale rappresenta?",
+    "answers": [
+      "12%",
+      "10%",
+      "9%",
+      "8%"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0332",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "facile",
+    "text": "Una sospensione si comprime di 6 cm sotto un carico di 300 kg: qual è la sua rigidezza?",
+    "answers": [
+      "45 kg/cm",
+      "55 kg/cm",
+      "50 kg/cm",
+      "40 kg/cm"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0333",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "facile",
+    "text": "Un veicolo distribuisce 2000 kg equamente su 4 ruote: quanto peso su ogni ruota?",
+    "answers": [
+      "450 kg",
+      "600 kg",
+      "500 kg",
+      "550 kg"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0334",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "facile",
+    "text": "Un serbatoio da 40 litri è riempito al 75%: quanti litri contiene?",
+    "answers": [
+      "30 litri",
+      "28 litri",
+      "25 litri",
+      "35 litri"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0335",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "facile",
+    "text": "Un veicolo con passo 2,8 m ha il baricentro a 1,4 m dall'asse anteriore: a quanti metri è dal posteriore?",
+    "answers": [
+      "1 m",
+      "1,4 m",
+      "1,2 m",
+      "1,6 m"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0336",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "medio",
+    "text": "Un'auto ha distribuzione pesi 55/45 su un totale di 2000 kg: quanti kg sull'asse anteriore?",
+    "answers": [
+      "1000 kg",
+      "1200 kg",
+      "1050 kg",
+      "1100 kg"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0337",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "medio",
+    "text": "Una sospensione con rigidezza 50 kg/cm si comprime di 5 cm: quale carico supporta?",
+    "answers": [
+      "200 kg",
+      "250 kg",
+      "230 kg",
+      "270 kg"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0338",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "medio",
+    "text": "Un componente di 10 kg subisce un'accelerazione di 4g (g = 10 m/s²): quale forza subisce?",
+    "answers": [
+      "420 N",
+      "350 N",
+      "400 N",
+      "380 N"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0339",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "medio",
+    "text": "Una scocca ha Cx di 0,32 su una superficie frontale di 2,5 m²: quanto vale Cx × A?",
+    "answers": [
+      "0,9 m²",
+      "0,8 m²",
+      "0,75 m²",
+      "0,7 m²"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0340",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "medio",
+    "text": "Un serbatoio cilindrico con raggio 0,25 m e altezza 1 m (V = πr²h, π ≈ 3): quale volume ha?",
+    "answers": [
+      "0,2 m³",
+      "0,15 m³",
+      "0,1 m³",
+      "0,1875 m³"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0341",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "medio",
+    "text": "Un'auto ha distribuzione pesi 58/42 su un totale di 1800 kg: quanti kg sull'asse anteriore?",
+    "answers": [
+      "1044 kg",
+      "1000 kg",
+      "1020 kg",
+      "1080 kg"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0342",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "medio",
+    "text": "Una sospensione con rigidezza 45 kg/cm si comprime di 4 cm: quale carico supporta?",
+    "answers": [
+      "180 kg",
+      "160 kg",
+      "170 kg",
+      "190 kg"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0343",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "medio",
+    "text": "Un componente di 12 kg subisce un'accelerazione di 3g (g = 10 m/s²): quale forza subisce?",
+    "answers": [
+      "300 N",
+      "380 N",
+      "360 N",
+      "340 N"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0344",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "medio",
+    "text": "Una scocca ha Cx di 0,28 su una superficie frontale di 2,2 m²: quanto vale Cx × A?",
+    "answers": [
+      "0,56 m²",
+      "0,6 m²",
+      "0,65 m²",
+      "0,616 m²"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0345",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "medio",
+    "text": "Un serbatoio cilindrico con raggio 0,3 m e altezza 1,2 m (π ≈ 3): quale volume ha?",
+    "answers": [
+      "0,324 m³",
+      "0,28 m³",
+      "0,3 m³",
+      "0,35 m³"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0346",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "difficile",
+    "text": "Un veicolo con distribuzione pesi 50/50 pesa 1900 kg: quanti kg sull'asse posteriore?",
+    "answers": [
+      "900 kg",
+      "950 kg",
+      "920 kg",
+      "1000 kg"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0347",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "difficile",
+    "text": "Sospensioni con rigidezza 40 e 30 kg/cm, entrambe compresse di 5 cm: qual è il carico totale supportato?",
+    "answers": [
+      "300 kg",
+      "350 kg",
+      "330 kg",
+      "370 kg"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0348",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "difficile",
+    "text": "Un veicolo di 1500 kg accelera lateralmente a 0,6g (g = 10 m/s²): quale forza laterale subisce?",
+    "answers": [
+      "8500 N",
+      "8000 N",
+      "9000 N",
+      "9500 N"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0349",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "difficile",
+    "text": "Un braccio sospensivo di 50 cm ruota di 15° (≈ 0,262 rad): di quanti cm si sposta l'estremità?",
+    "answers": [
+      "13,1 cm",
+      "11,5 cm",
+      "12 cm",
+      "14 cm"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0350",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "difficile",
+    "text": "Un veicolo con passo 2,7 m ha il baricentro al 40% dal davanti: a quanti metri dall'asse anteriore si trova?",
+    "answers": [
+      "1 m",
+      "1,15 m",
+      "0,95 m",
+      "1,08 m"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0351",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "difficile",
+    "text": "Un veicolo con distribuzione pesi 53/47 pesa 1700 kg: quanti kg sull'asse posteriore?",
+    "answers": [
+      "750 kg",
+      "850 kg",
+      "780 kg",
+      "799 kg"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0352",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "difficile",
+    "text": "Sospensioni con rigidezza 35 e 25 kg/cm, entrambe compresse di 6 cm: qual è il carico totale supportato?",
+    "answers": [
+      "340 kg",
+      "380 kg",
+      "360 kg",
+      "320 kg"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0353",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "difficile",
+    "text": "Un veicolo di 1300 kg accelera lateralmente a 0,7g (g = 10 m/s²): quale forza laterale subisce?",
+    "answers": [
+      "8800 N",
+      "9100 N",
+      "9400 N",
+      "8500 N"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0354",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "difficile",
+    "text": "Un braccio sospensivo di 45 cm ruota di 20° (≈ 0,349 rad): di quanti cm si sposta l'estremità?",
+    "answers": [
+      "13 cm",
+      "15,7 cm",
+      "14 cm",
+      "17 cm"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0355",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "difficile",
+    "text": "Un veicolo con passo 2,5 m ha il baricentro al 48% dal davanti: a quanti metri dall'asse anteriore si trova?",
+    "answers": [
+      "1,2 m",
+      "1,3 m",
+      "1 m",
+      "1,1 m"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0356",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "superdifficile",
+    "text": "Veicolo di 1500 kg, baricentro a 1,1 m dall'asse anteriore su un passo di 2,6 m: quanti kg sull'asse posteriore?",
+    "answers": [
+      "circa 635 kg",
+      "circa 580 kg",
+      "circa 670 kg",
+      "circa 600 kg"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0357",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "superdifficile",
+    "text": "Una sospensione con rigidezza 70 kg/cm sostiene un quarto del peso di un'auto da 1680 kg: di quanti cm si comprime?",
+    "answers": [
+      "5,5 cm",
+      "6 cm",
+      "5 cm",
+      "7 cm"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0358",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "superdifficile",
+    "text": "Un componente ruota a 2500 giri/min: quale velocità angolare ha in rad/s (ω = 2πn/60, π ≈ 3,14)?",
+    "answers": [
+      "circa 240 rad/s",
+      "circa 261,7 rad/s",
+      "circa 275 rad/s",
+      "circa 250 rad/s"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0359",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "superdifficile",
+    "text": "Una scocca con Cx×A = 0,6 m² viaggia a 25 m/s: quanto vale v²?",
+    "answers": [
+      "600",
+      "625",
+      "650",
+      "500"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0360",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "superdifficile",
+    "text": "Un serbatoio cilindrico con raggio 0,3 m e altezza 1,3 m (π ≈ 3,14): quanti litri contiene?",
+    "answers": [
+      "circa 340 litri",
+      "circa 390 litri",
+      "circa 368 litri",
+      "circa 350 litri"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0361",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "superdifficile",
+    "text": "Veicolo di 1400 kg, baricentro a 1,3 m dall'asse anteriore su un passo di 2,7 m: quanti kg sull'asse posteriore?",
+    "answers": [
+      "circa 620 kg",
+      "circa 700 kg",
+      "circa 674 kg",
+      "circa 650 kg"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0362",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "superdifficile",
+    "text": "Una sospensione con rigidezza 55 kg/cm sostiene un quarto del peso di un'auto da 1320 kg: di quanti cm si comprime?",
+    "answers": [
+      "5 cm",
+      "7 cm",
+      "5,5 cm",
+      "6 cm"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0363",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "superdifficile",
+    "text": "Un componente ruota a 3500 giri/min: quale velocità angolare ha in rad/s?",
+    "answers": [
+      "circa 366,3 rad/s",
+      "circa 350 rad/s",
+      "circa 380 rad/s",
+      "circa 340 rad/s"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0364",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "superdifficile",
+    "text": "Una scocca con Cx×A = 0,55 m² viaggia a 30 m/s: quanto vale v²?",
+    "answers": [
+      "850",
+      "950",
+      "800",
+      "900"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0365",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "superdifficile",
+    "text": "Un serbatoio cilindrico con raggio 0,32 m e altezza 1,5 m (π ≈ 3,14): quanti litri contiene?",
+    "answers": [
+      "circa 483 litri",
+      "circa 500 litri",
+      "circa 450 litri",
+      "circa 460 litri"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0366",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "impossibile",
+    "text": "Veicolo di 1800 kg, passo 2,7 m, baricentro a 1,4 m dall'asse anteriore: quanti kg sull'asse anteriore?",
+    "answers": [
+      "circa 830 kg",
+      "circa 867 kg",
+      "circa 840 kg",
+      "circa 900 kg"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0367",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "impossibile",
+    "text": "Una sospensione con rigidezza 50 kg/cm si comprime di 8 cm: quale forza rappresenta in Newton (1 kg-forza ≈ 10 N)?",
+    "answers": [
+      "3600 N",
+      "4000 N",
+      "3800 N",
+      "4200 N"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0368",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "impossibile",
+    "text": "Un albero ruota a 5000 giri/min: qual è la sua velocità angolare in rad/s?",
+    "answers": [
+      "circa 550 rad/s",
+      "circa 480 rad/s",
+      "circa 500 rad/s",
+      "circa 523,3 rad/s"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0369",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "impossibile",
+    "text": "Una scocca con Cx×A = 0,72 m² viaggia a 35 m/s (F = 0,5 × ρ × Cx×A × v², ρ = 1,2 kg/m³): quanto vale F?",
+    "answers": [
+      "circa 500 N",
+      "circa 560 N",
+      "circa 529 N",
+      "circa 480 N"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0370",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "impossibile",
+    "text": "Un serbatoio cilindrico con raggio 0,38 m e altezza 1,5 m (π ≈ 3,14): quanti litri contiene?",
+    "answers": [
+      "circa 680 litri",
+      "circa 710 litri",
+      "circa 650 litri",
+      "circa 630 litri"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0371",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "impossibile",
+    "text": "Veicolo con distribuzione pesi 60/40 pesa 2000 kg: quanti kg in più sull'asse anteriore rispetto al posteriore?",
+    "answers": [
+      "380 kg",
+      "350 kg",
+      "400 kg",
+      "450 kg"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0372",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "impossibile",
+    "text": "Veicolo di 1650 kg, passo 2,6 m, baricentro a 1,25 m dall'asse anteriore: quanti kg sull'asse anteriore?",
+    "answers": [
+      "circa 830 kg",
+      "circa 810 kg",
+      "circa 880 kg",
+      "circa 857 kg"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0373",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "impossibile",
+    "text": "Una sospensione con rigidezza 48 kg/cm si comprime di 9 cm: quale forza rappresenta in Newton?",
+    "answers": [
+      "4320 N",
+      "4000 N",
+      "4500 N",
+      "4100 N"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0374",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "impossibile",
+    "text": "Un albero ruota a 4200 giri/min: qual è la sua velocità angolare in rad/s?",
+    "answers": [
+      "circa 400 rad/s",
+      "circa 439,6 rad/s",
+      "circa 420 rad/s",
+      "circa 460 rad/s"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0375",
+    "category": "Ingegneria del Veicolo",
+    "difficulty": "impossibile",
+    "text": "Una scocca con Cx×A = 0,65 m² viaggia a 38 m/s (ρ = 1,2 kg/m³): quanto vale F?",
+    "answers": [
+      "circa 500 N",
+      "circa 600 N",
+      "circa 563 N",
+      "circa 530 N"
+    ],
+    "correctIndex": 2
+  }
+]
