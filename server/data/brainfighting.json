@@ -4873,5 +4873,1591 @@
       "circa 500 N"
     ],
     "correctIndex": 0
+  },
+  {
+    "id": "bf0376",
+    "category": "Cucina",
+    "difficulty": "facile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: spaghetti, guanciale, uova, pecorino romano, pepe nero. Procedimento: si rosola il guanciale, si mescolano uova e pecorino a crudo, si manteca fuori dal fuoco senza far rapprendere l'uovo",
+    "answers": [
+      "Cacio e pepe",
+      "Carbonara",
+      "Amatriciana",
+      "Gricia"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0377",
+    "category": "Cucina",
+    "difficulty": "facile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: bucatini, guanciale, pomodoro, pecorino, peperoncino. Procedimento: si rosola il guanciale, si aggiunge il pomodoro e si lascia insaporire, si manteca con pecorino",
+    "answers": [
+      "Carbonara",
+      "Arrabbiata",
+      "Amatriciana",
+      "Puttanesca"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0378",
+    "category": "Cucina",
+    "difficulty": "facile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: tonnarelli, pecorino romano, pepe nero, acqua di cottura. Procedimento: si crea una crema emulsionando pecorino e acqua di cottura, si aggiunge pepe tostato",
+    "answers": [
+      "Cacio e pepe",
+      "Gricia",
+      "Carbonara",
+      "Alfredo"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0379",
+    "category": "Cucina",
+    "difficulty": "facile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: farina, acqua, lievito, pomodoro, mozzarella, basilico. Procedimento: si stende l'impasto lievitato, si condisce e si cuoce in forno molto caldo per pochi minuti",
+    "answers": [
+      "Pizza Margherita",
+      "Piadina",
+      "Calzone",
+      "Focaccia"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0380",
+    "category": "Cucina",
+    "difficulty": "facile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: riso, zafferano, brodo, burro, cipolla, parmigiano. Procedimento: si tosta il riso, si aggiunge il brodo poco per volta, si manteca con burro e formaggio",
+    "answers": [
+      "Risi e bisi",
+      "Pilaf",
+      "Risotto alla milanese",
+      "Paella"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0381",
+    "category": "Cucina",
+    "difficulty": "facile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: pane raffermo, pomodoro, cipolla, basilico, olio. Procedimento: si ammolla il pane, si mescola con le verdure crude e si lascia riposare al fresco",
+    "answers": [
+      "Caponata",
+      "Panzanella",
+      "Ribollita",
+      "Pappa al pomodoro"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0382",
+    "category": "Cucina",
+    "difficulty": "facile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: patate, farina, uovo, sale. Procedimento: si lessano le patate, si impastano con farina, si formano cilindri da tagliare e rigare",
+    "answers": [
+      "Gnocchi",
+      "Ravioli",
+      "Spatzle",
+      "Passatelli"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0383",
+    "category": "Cucina",
+    "difficulty": "facile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: mozzarella di bufala, pomodoro, basilico, olio. Procedimento: si affetta tutto e si dispone a strati, senza cottura",
+    "answers": [
+      "Caprese",
+      "Parmigiana",
+      "Insalata russa",
+      "Panzanella"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0384",
+    "category": "Cucina",
+    "difficulty": "facile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: melanzane, pomodoro, mozzarella, parmigiano, basilico. Procedimento: si friggono le fette, si alternano a strati con salsa e formaggio, si gratina in forno",
+    "answers": [
+      "Moussaka",
+      "Lasagna",
+      "Caponata",
+      "Parmigiana di melanzane"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0385",
+    "category": "Cucina",
+    "difficulty": "facile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: uova, zucchero, mascarpone, savoiardi, caffè, cacao. Procedimento: si inzuppano i biscotti, si alternano a strati con la crema, si spolvera di cacao e si raffredda",
+    "answers": [
+      "Zuppa inglese",
+      "Charlotte",
+      "Tiramisù",
+      "Panna cotta"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0386",
+    "category": "Cucina",
+    "difficulty": "facile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: latte, panna, zucchero, gelatina, vaniglia. Procedimento: si scalda il composto, si scioglie la gelatina, si versa negli stampi e si lascia rassodare in frigo",
+    "answers": [
+      "Budino di riso",
+      "Bavarese",
+      "Crème caramel",
+      "Panna cotta"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0387",
+    "category": "Cucina",
+    "difficulty": "facile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: farina, uova, latte, zucchero, burro. Procedimento: si prepara una pastella liquida, si cuoce in padella sottilissima da entrambi i lati",
+    "answers": [
+      "Omelette",
+      "Crêpe",
+      "Pancake",
+      "Frittella"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0388",
+    "category": "Cucina",
+    "difficulty": "facile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: pasta corta, pomodoro, aglio, peperoncino, prezzemolo. Procedimento: si soffrigge aglio e peperoncino, si aggiunge il pomodoro, sugo piccante",
+    "answers": [
+      "Norma",
+      "Penne all'arrabbiata",
+      "Puttanesca",
+      "Aglio e olio"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0389",
+    "category": "Cucina",
+    "difficulty": "facile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: riso, pesce, alghe, aceto di riso. Procedimento: si condisce il riso con aceto, si compone con pesce crudo e si arrotola nell'alga",
+    "answers": [
+      "Onigiri",
+      "Ceviche",
+      "Poke",
+      "Sushi"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0390",
+    "category": "Cucina",
+    "difficulty": "facile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: pane in cassetta, prosciutto cotto, formaggio. Procedimento: si farcisce, si chiude e si scalda in piastra fino a doratura",
+    "answers": [
+      "Panino",
+      "Tramezzino",
+      "Toast",
+      "Club sandwich"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0391",
+    "category": "Cucina",
+    "difficulty": "medio",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: spaghetti, guanciale, pecorino, pepe. Procedimento: si rosola il guanciale e si manteca con pecorino, SENZA uova e SENZA pomodoro",
+    "answers": [
+      "Amatriciana",
+      "Carbonara",
+      "Cacio e pepe",
+      "Gricia"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0392",
+    "category": "Cucina",
+    "difficulty": "medio",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: pasta, acciughe, olive, capperi, pomodoro, aglio. Procedimento: si prepara un sugo saporito e sapido con pesce azzurro conservato e olive",
+    "answers": [
+      "Puttanesca",
+      "Arrabbiata",
+      "Marinara",
+      "Amatriciana"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0393",
+    "category": "Cucina",
+    "difficulty": "medio",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: riso, zafferano, frutti di mare, pollo, piselli, peperoni. Procedimento: si cuoce tutto insieme in una padella larga e bassa, senza mescolare troppo",
+    "answers": [
+      "Pilaf",
+      "Jambalaya",
+      "Risotto",
+      "Paella"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0394",
+    "category": "Cucina",
+    "difficulty": "medio",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: ceci, tahina, limone, aglio, olio. Procedimento: si frullano i legumi lessati con la crema di sesamo fino a ottenere una crema liscia",
+    "answers": [
+      "Guacamole",
+      "Baba ganoush",
+      "Hummus",
+      "Falafel"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0395",
+    "category": "Cucina",
+    "difficulty": "medio",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: avocado, lime, cipolla, coriandolo, pomodoro. Procedimento: si schiaccia il frutto maturo e si condisce a crudo",
+    "answers": [
+      "Pico de gallo",
+      "Hummus",
+      "Guacamole",
+      "Salsa verde"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0396",
+    "category": "Cucina",
+    "difficulty": "medio",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: farina di ceci, acqua, olio, pepe. Procedimento: si lascia riposare la pastella per ore, si cuoce in teglia in forno molto caldo fino a doratura",
+    "answers": [
+      "Piadina",
+      "Farinata",
+      "Crêpe",
+      "Socca gigante"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0397",
+    "category": "Cucina",
+    "difficulty": "medio",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: pasta sfoglia, mele, zucchero, cannella, uvetta. Procedimento: si arrotola il ripieno nella sfoglia sottile e si cuoce in forno",
+    "answers": [
+      "Strudel di mele",
+      "Torta di mele",
+      "Crostata",
+      "Apple pie"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0398",
+    "category": "Cucina",
+    "difficulty": "medio",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: uova, patate, cipolla, olio. Procedimento: si frigge tutto e si rapprende in padella formando un disco spesso, girandolo a metà cottura",
+    "answers": [
+      "Frittata di pasta",
+      "Omelette",
+      "Tortilla de patatas",
+      "Rösti"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0399",
+    "category": "Cucina",
+    "difficulty": "medio",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: carne macinata, pomodoro, sedano, carota, cipolla, vino. Procedimento: si soffrigge il trito, si rosola la carne, si sfuma e si cuoce a fuoco lento per ore",
+    "answers": [
+      "Goulash",
+      "Spezzatino",
+      "Chili",
+      "Ragù alla bolognese"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0400",
+    "category": "Cucina",
+    "difficulty": "medio",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: pesce crudo, succo di lime, cipolla rossa, coriandolo, peperoncino. Procedimento: il pesce si 'cuoce' nell'acidità dell'agrume, senza calore",
+    "answers": [
+      "Tartare",
+      "Ceviche",
+      "Sashimi",
+      "Carpaccio"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0401",
+    "category": "Cucina",
+    "difficulty": "medio",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: farina, acqua, sale, lievito madre, lunga lievitazione. Procedimento: impasto ad alta idratazione, cotto su pietra rovente, alveolatura irregolare",
+    "answers": [
+      "Focaccia",
+      "Pane a lievitazione naturale",
+      "Pita",
+      "Piadina"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0402",
+    "category": "Cucina",
+    "difficulty": "medio",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: zucchine, uova, parmigiano, pangrattato. Procedimento: si grattugia la verdura, si strizza bene, si impasta e si frigge a cucchiaiate",
+    "answers": [
+      "Crocchette",
+      "Polpette",
+      "Frittelle di zucchine",
+      "Tempura"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0403",
+    "category": "Cucina",
+    "difficulty": "medio",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: riso, latte di cocco, mango, zucchero. Procedimento: si cuoce il riso nel latte vegetale dolce e si serve con frutta tropicale",
+    "answers": [
+      "Mango sticky rice",
+      "Kheer",
+      "Budino di riso",
+      "Riso al latte"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0404",
+    "category": "Cucina",
+    "difficulty": "medio",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: polpo, patate, olio, prezzemolo, limone. Procedimento: si lessa a lungo il mollusco, si taglia e si condisce a freddo con la patata lessa",
+    "answers": [
+      "Polpo alla luciana",
+      "Insalata di polpo e patate",
+      "Zuppa di pesce",
+      "Polpo alla gallega"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0405",
+    "category": "Cucina",
+    "difficulty": "medio",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: fegato, cipolla, burro, vino bianco. Procedimento: si stufa a lungo la cipolla, si aggiunge il fegato tagliato sottile e si cuoce brevemente",
+    "answers": [
+      "Fegato alla veneziana",
+      "Fegato all'inglese",
+      "Fegato alla milanese",
+      "Paté"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0406",
+    "category": "Cucina",
+    "difficulty": "difficile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: pasta, melanzane fritte, pomodoro, ricotta salata, basilico. Procedimento: piatto siciliano dedicato a un'opera lirica",
+    "answers": [
+      "Pasta alla Norcina",
+      "Caponata",
+      "Parmigiana",
+      "Pasta alla Norma"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0407",
+    "category": "Cucina",
+    "difficulty": "difficile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: pasta, salsiccia, panna, tartufo, pecorino. Procedimento: piatto umbro cremoso a base di salsiccia sbriciolata",
+    "answers": [
+      "Carbonara",
+      "Pasta alla Norcina",
+      "Boscaiola",
+      "Pasta alla Norma"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0408",
+    "category": "Cucina",
+    "difficulty": "difficile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: riso, zafferano, ossobuco, gremolada. Procedimento: secondo piatto lombardo servito tradizionalmente col risotto giallo",
+    "answers": [
+      "Bollito misto",
+      "Ossobuco alla milanese",
+      "Brasato",
+      "Stracotto"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0409",
+    "category": "Cucina",
+    "difficulty": "difficile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: carne di manzo, vino rosso Barolo, cipolla, chiodi di garofano, alloro. Procedimento: si marina a lungo la carne nel vino, poi si cuoce lentamente per ore",
+    "answers": [
+      "Stracotto toscano",
+      "Bourguignon",
+      "Brasato al Barolo",
+      "Goulash"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0410",
+    "category": "Cucina",
+    "difficulty": "difficile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: baccalà, latte, olio, aglio. Procedimento: si ammolla il pesce salato e si monta a lungo con l'olio fino a crema bianca, piatto veneto",
+    "answers": [
+      "Stoccafisso all'anconetana",
+      "Brandade",
+      "Baccalà mantecato",
+      "Baccalà alla vicentina"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0411",
+    "category": "Cucina",
+    "difficulty": "difficile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: farina di mais, acqua, sale, lunga cottura mescolata. Procedimento: si versa a pioggia e si mescola per quasi un'ora in paiolo di rame",
+    "answers": [
+      "Grits",
+      "Semolino",
+      "Couscous",
+      "Polenta"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0412",
+    "category": "Cucina",
+    "difficulty": "difficile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: trippa, pomodoro, mentuccia romana, pecorino. Procedimento: quinto quarto romano cotto in umido con erba aromatica caratteristica",
+    "answers": [
+      "Busecca",
+      "Trippa alla fiorentina",
+      "Trippa alla romana",
+      "Lampredotto"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0413",
+    "category": "Cucina",
+    "difficulty": "difficile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: pane, cavolo nero, fagioli, verdure, olio. Procedimento: zuppa toscana povera, ricotta il giorno dopo, da cui prende il nome",
+    "answers": [
+      "Ribollita",
+      "Pappa al pomodoro",
+      "Panzanella",
+      "Acquacotta"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0414",
+    "category": "Cucina",
+    "difficulty": "difficile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: uova, zucchero, farina, cotto in stampo alto senza lievito, montato a lungo. Procedimento: base soffice per torte farcite, la struttura viene solo dall'aria incorporata",
+    "answers": [
+      "Pasta frolla",
+      "Pan brioche",
+      "Pasta sfoglia",
+      "Pan di Spagna"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0415",
+    "category": "Cucina",
+    "difficulty": "difficile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: mandorle, zucchero, albume, cottura breve, guscio croccante e interno morbido. Procedimento: dolce francese a due dischi con ripieno cremoso, dal 'piedino' caratteristico",
+    "answers": [
+      "Meringa",
+      "Macaron",
+      "Financier",
+      "Amaretto"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0416",
+    "category": "Cucina",
+    "difficulty": "difficile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: farina, burro, ripetute pieghe e riposi in frigo. Procedimento: la lavorazione crea centinaia di strati alternati grasso-impasto",
+    "answers": [
+      "Pasta frolla",
+      "Pasta sfoglia",
+      "Pasta brisée",
+      "Pan brioche"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0417",
+    "category": "Cucina",
+    "difficulty": "difficile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: zucchero, acqua, cottura fino a 170°C circa. Procedimento: lo zucchero fonde e imbrunisce sviluppando aroma tostato e colore ambrato",
+    "answers": [
+      "Caramello",
+      "Sciroppo",
+      "Fondant",
+      "Glassa reale"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0418",
+    "category": "Cucina",
+    "difficulty": "difficile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: pesce, brodo, zafferano, rouille, crostini. Procedimento: zuppa di pesce provenzale servita con salsa piccante all'aglio",
+    "answers": [
+      "Bouillabaisse",
+      "Zuppa di pesce",
+      "Brodetto",
+      "Cacciucco"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0419",
+    "category": "Cucina",
+    "difficulty": "difficile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: frutti di mare misti, pomodoro, peperoncino, pane abbrustolito, almeno 5 tipi di pesce. Procedimento: zuppa livornese, la tradizione vuole tante 'c' quante le varietà di pesce",
+    "answers": [
+      "Cacciucco",
+      "Zuppa di cozze",
+      "Bouillabaisse",
+      "Brodetto"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0420",
+    "category": "Cucina",
+    "difficulty": "difficile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: uova, burro chiarificato, succo di limone, emulsione a bagnomaria. Procedimento: salsa madre francese servita tiepida, instabile se scaldata troppo",
+    "answers": [
+      "Bernese",
+      "Besciamella",
+      "Salsa olandese",
+      "Maionese"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0421",
+    "category": "Cucina",
+    "difficulty": "superdifficile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: riso, brodo, mantecatura finale con burro freddo fuori dal fuoco. Procedimento: la tecnica finale che rende cremoso il piatto senza panna si chiama...",
+    "answers": [
+      "Mantecatura",
+      "Legatura",
+      "Sfumatura",
+      "Tostatura"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0422",
+    "category": "Cucina",
+    "difficulty": "superdifficile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: uova, olio, senape, aggiunta dell'olio a filo lentissimo. Procedimento: se l'olio viene aggiunto troppo in fretta la preparazione 'impazzisce' perché si rompe...",
+    "answers": [
+      "La denaturazione",
+      "La coagulazione",
+      "L'emulsione",
+      "La gelificazione"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0423",
+    "category": "Cucina",
+    "difficulty": "superdifficile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: carne rossa, cottura a bassa temperatura sottovuoto, poi rosolatura finale. Procedimento: questa tecnica in due fasi con sigillatura DOPO la cottura si chiama...",
+    "answers": [
+      "Reverse searing",
+      "Confit",
+      "Brasatura",
+      "Sous vide classico"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0424",
+    "category": "Cucina",
+    "difficulty": "superdifficile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: anatra, sale, cottura lenta immersa nel proprio grasso. Procedimento: tecnica di conservazione francese in cui la carne cuoce e si conserva nel grasso",
+    "answers": [
+      "Ballottine",
+      "Terrina",
+      "Confit",
+      "Rillette"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0425",
+    "category": "Cucina",
+    "difficulty": "superdifficile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: farina, acqua, sale, riposo lungo in frigo, alta idratazione. Procedimento: la tecnica di far riposare l'impasto perché la farina assorba l'acqua prima dell'impasto finale",
+    "answers": [
+      "Biga",
+      "Autolisi",
+      "Poolish",
+      "Rinfresco"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0426",
+    "category": "Cucina",
+    "difficulty": "superdifficile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: panna, cioccolato caldo, emulsione lucida. Procedimento: preparazione base della pasticceria per glasse e farciture cremose",
+    "answers": [
+      "Mousse",
+      "Ganache",
+      "Crema pasticcera",
+      "Namelaka"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0427",
+    "category": "Cucina",
+    "difficulty": "superdifficile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: zucchero, acqua, glucosio, cottura a 121°C. Procedimento: il grado di cottura dello zucchero detto 'piccola bolla' serve per meringhe stabili come la...",
+    "answers": [
+      "Meringa francese",
+      "Meringa svizzera",
+      "Pâte à bombe",
+      "Meringa italiana"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0428",
+    "category": "Cucina",
+    "difficulty": "superdifficile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: brodo, chiare d'uovo, verdure tritate, cottura lenta senza mescolare. Procedimento: tecnica per rendere un brodo perfettamente limpido tramite una 'zattera' che cattura le impurità",
+    "answers": [
+      "Decantazione",
+      "Filtrazione",
+      "Riduzione",
+      "Chiarificazione"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0429",
+    "category": "Cucina",
+    "difficulty": "impossibile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: albumi, zucchero, cottura in bagnomaria fino a 60°C poi montata. Procedimento: la meringa più stabile e lucida, usata per decorazioni che restano bianche",
+    "answers": [
+      "Meringa italiana",
+      "Meringa svizzera",
+      "Meringa francese",
+      "Pâte à bombe"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0430",
+    "category": "Cucina",
+    "difficulty": "impossibile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: latte, caglio, temperatura controllata, rottura della cagliata a chicco di riso. Procedimento: la dimensione della rottura della cagliata determina soprattutto...",
+    "answers": [
+      "Il colore",
+      "Il grado alcolico",
+      "L'umidità finale del formaggio",
+      "La salinità"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0431",
+    "category": "Cucina",
+    "difficulty": "impossibile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: farina debole, burro, zucchero a velo, tuorli, lavorazione rapida a freddo. Procedimento: questa lavorazione rapida serve a evitare lo sviluppo di...",
+    "answers": [
+      "Lievito",
+      "Lattosio",
+      "Amido",
+      "Glutine"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0432",
+    "category": "Cucina",
+    "difficulty": "impossibile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: carne, sale, nitriti, stagionatura controllata. Procedimento: i nitriti servono soprattutto a prevenire lo sviluppo del batterio responsabile del...",
+    "answers": [
+      "Listeria",
+      "Escherichia coli",
+      "Salmonella",
+      "Botulino"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0433",
+    "category": "Cucina",
+    "difficulty": "impossibile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: panna, azoto liquido, mantecazione istantanea. Procedimento: congelando istantaneamente si ottengono cristalli di ghiaccio...",
+    "answers": [
+      "Piccolissimi, quindi consistenza più cremosa",
+      "Irregolari e sgradevoli",
+      "Assenti del tutto",
+      "Grandi, quindi più croccante"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0434",
+    "category": "Cucina",
+    "difficulty": "impossibile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: zucchero, albume, cottura lenta a 90°C per ore. Procedimento: a questa temperatura la meringa non cuoce ma si...",
+    "answers": [
+      "Monta",
+      "Gelifica",
+      "Essicca",
+      "Caramella"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0435",
+    "category": "Cucina",
+    "difficulty": "impossibile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: riso Carnaroli, alta percentuale di amilosio. Procedimento: questa varietà tiene meglio la cottura rispetto ad altre grazie al contenuto di...",
+    "answers": [
+      "Amilosio",
+      "Glutine",
+      "Fibre",
+      "Amilopectina"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0436",
+    "category": "Cucina",
+    "difficulty": "impossibile",
+    "text": "INDOVINA LA PIETANZA — Ingredienti: uovo intero cotto a 64°C per un'ora. Procedimento: a questa temperatura precisa si ottiene il cosiddetto uovo...",
+    "answers": [
+      "Strapazzato",
+      "Perfetto (o a bassa temperatura)",
+      "Sodo",
+      "In camicia"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0437",
+    "category": "Scienza e Natura",
+    "difficulty": "facile",
+    "text": "Una cellula si divide per mitosi ogni 30 minuti. Partendo da 1 cellula, quante ce ne sono dopo 2 ore?",
+    "answers": [
+      "8",
+      "32",
+      "12",
+      "16"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0438",
+    "category": "Scienza e Natura",
+    "difficulty": "facile",
+    "text": "Un albero assorbe 20 kg di CO2 all'anno. Quanta ne assorbono 15 alberi in un anno?",
+    "answers": [
+      "350 kg",
+      "300 kg",
+      "200 kg",
+      "250 kg"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0439",
+    "category": "Scienza e Natura",
+    "difficulty": "facile",
+    "text": "Il cuore batte 70 volte al minuto. Quanti battiti in 10 minuti?",
+    "answers": [
+      "600",
+      "750",
+      "800",
+      "700"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0440",
+    "category": "Scienza e Natura",
+    "difficulty": "facile",
+    "text": "Un batterio raddoppia ogni ora. Da 100 batteri, quanti dopo 3 ore?",
+    "answers": [
+      "600",
+      "800",
+      "400",
+      "1000"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0441",
+    "category": "Scienza e Natura",
+    "difficulty": "facile",
+    "text": "Una pianta cresce 3 cm a settimana. Quanto cresce in 8 settimane?",
+    "answers": [
+      "32 cm",
+      "27 cm",
+      "24 cm",
+      "21 cm"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0442",
+    "category": "Scienza e Natura",
+    "difficulty": "facile",
+    "text": "L'acqua bolle a 100°C e ghiaccia a 0°C. Quanti gradi di differenza?",
+    "answers": [
+      "100",
+      "150",
+      "50",
+      "200"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0443",
+    "category": "Scienza e Natura",
+    "difficulty": "facile",
+    "text": "Un adulto ha 206 ossa, un neonato circa 300. Quante ne 'perde' fondendosi?",
+    "answers": [
+      "circa 120",
+      "circa 150",
+      "circa 94",
+      "circa 50"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0444",
+    "category": "Scienza e Natura",
+    "difficulty": "facile",
+    "text": "Se una specie ha 8 zampe è un aracnide. Quante zampe hanno 5 ragni in totale?",
+    "answers": [
+      "45",
+      "50",
+      "40",
+      "30"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0445",
+    "category": "Scienza e Natura",
+    "difficulty": "facile",
+    "text": "Un litro d'acqua pesa 1 kg. Quanto pesano 12 litri?",
+    "answers": [
+      "10 kg",
+      "12 kg",
+      "15 kg",
+      "24 kg"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0446",
+    "category": "Scienza e Natura",
+    "difficulty": "facile",
+    "text": "La Terra impiega 365 giorni per orbitare. Quanti giorni in 4 orbite (senza bisestili)?",
+    "answers": [
+      "1460",
+      "1440",
+      "1480",
+      "1400"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0447",
+    "category": "Scienza e Natura",
+    "difficulty": "facile",
+    "text": "Un polmone adulto contiene circa 3 litri d'aria. Quanti litri in due polmoni?",
+    "answers": [
+      "8 litri",
+      "5 litri",
+      "6 litri",
+      "4 litri"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0448",
+    "category": "Scienza e Natura",
+    "difficulty": "facile",
+    "text": "Un fiore ha 5 petali. Quanti petali su 14 fiori?",
+    "answers": [
+      "65",
+      "60",
+      "75",
+      "70"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0449",
+    "category": "Scienza e Natura",
+    "difficulty": "facile",
+    "text": "Il corpo umano è composto per circa il 60% d'acqua. In una persona di 70 kg, quanti kg d'acqua?",
+    "answers": [
+      "42 kg",
+      "35 kg",
+      "40 kg",
+      "50 kg"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0450",
+    "category": "Scienza e Natura",
+    "difficulty": "facile",
+    "text": "Una lumaca percorre 5 cm al minuto. Quanti cm in un'ora?",
+    "answers": [
+      "300 cm",
+      "200 cm",
+      "250 cm",
+      "350 cm"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0451",
+    "category": "Scienza e Natura",
+    "difficulty": "facile",
+    "text": "Un uovo di gallina pesa circa 60 g. Quanto pesa una dozzina?",
+    "answers": [
+      "800 g",
+      "720 g",
+      "660 g",
+      "600 g"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0452",
+    "category": "Scienza e Natura",
+    "difficulty": "medio",
+    "text": "Una popolazione di 200 conigli raddoppia ogni 6 mesi. Quanti dopo 18 mesi?",
+    "answers": [
+      "800",
+      "3200",
+      "1600",
+      "1200"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0453",
+    "category": "Scienza e Natura",
+    "difficulty": "medio",
+    "text": "Un farmaco ha emivita di 4 ore. Da 800 mg, quanti mg restano dopo 12 ore?",
+    "answers": [
+      "100 mg",
+      "400 mg",
+      "200 mg",
+      "50 mg"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0454",
+    "category": "Scienza e Natura",
+    "difficulty": "medio",
+    "text": "Il DNA umano ha circa 3 miliardi di paia di basi. Quante in 2 cellule?",
+    "answers": [
+      "1,5 miliardi",
+      "9 miliardi",
+      "6 miliardi",
+      "3 miliardi"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0455",
+    "category": "Scienza e Natura",
+    "difficulty": "medio",
+    "text": "Una foresta di 500 ettari perde il 12% per incendio. Quanti ettari restano?",
+    "answers": [
+      "400 ettari",
+      "460 ettari",
+      "420 ettari",
+      "440 ettari"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0456",
+    "category": "Scienza e Natura",
+    "difficulty": "medio",
+    "text": "Un neurone trasmette 200 impulsi al secondo. Quanti in mezzo minuto?",
+    "answers": [
+      "3000",
+      "9000",
+      "6000",
+      "5000"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0457",
+    "category": "Scienza e Natura",
+    "difficulty": "medio",
+    "text": "Una soluzione al 20% contiene 40 g di soluto. Qual è la massa totale?",
+    "answers": [
+      "240 g",
+      "200 g",
+      "160 g",
+      "180 g"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0458",
+    "category": "Scienza e Natura",
+    "difficulty": "medio",
+    "text": "Un ghiacciaio si ritira di 15 m all'anno. Di quanto in 25 anni?",
+    "answers": [
+      "375 m",
+      "400 m",
+      "350 m",
+      "325 m"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0459",
+    "category": "Scienza e Natura",
+    "difficulty": "medio",
+    "text": "Un isotopo ha emivita di 10 anni. Da 1600 g, quanti dopo 30 anni?",
+    "answers": [
+      "400 g",
+      "200 g",
+      "800 g",
+      "100 g"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0460",
+    "category": "Scienza e Natura",
+    "difficulty": "medio",
+    "text": "Il sangue di un adulto è circa 5 litri, di cui il 45% globuli rossi. Quanti litri?",
+    "answers": [
+      "2 litri",
+      "2,5 litri",
+      "3 litri",
+      "2,25 litri"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0461",
+    "category": "Scienza e Natura",
+    "difficulty": "medio",
+    "text": "Una colonia di api ha 50.000 individui, il 2% sono fuchi. Quanti fuchi?",
+    "answers": [
+      "1000",
+      "1500",
+      "500",
+      "2000"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0462",
+    "category": "Scienza e Natura",
+    "difficulty": "medio",
+    "text": "La luce solare impiega 8 minuti a raggiungere la Terra. Quanti secondi?",
+    "answers": [
+      "480",
+      "540",
+      "420",
+      "360"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0463",
+    "category": "Scienza e Natura",
+    "difficulty": "medio",
+    "text": "Un ecosistema perde il 90% di energia a ogni livello trofico. Da 10.000 kcal, quante al terzo livello?",
+    "answers": [
+      "1000 kcal",
+      "10 kcal",
+      "500 kcal",
+      "100 kcal"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0464",
+    "category": "Scienza e Natura",
+    "difficulty": "medio",
+    "text": "Un albero produce 100 kg di ossigeno all'anno. Quanti alberi per 2,5 tonnellate?",
+    "answers": [
+      "35 alberi",
+      "25 alberi",
+      "20 alberi",
+      "30 alberi"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0465",
+    "category": "Scienza e Natura",
+    "difficulty": "medio",
+    "text": "Una cellula batterica misura 2 micrometri. Quante affiancate in 1 millimetro?",
+    "answers": [
+      "1000",
+      "2000",
+      "500",
+      "250"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0466",
+    "category": "Scienza e Natura",
+    "difficulty": "medio",
+    "text": "Un ghiacciaio contiene 3 km³ di ghiaccio, ne perde il 5% l'anno. Quanto perde in un anno?",
+    "answers": [
+      "0,1 km³",
+      "0,15 km³",
+      "0,2 km³",
+      "0,3 km³"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0467",
+    "category": "Scienza e Natura",
+    "difficulty": "difficile",
+    "text": "Una coltura batterica cresce esponenzialmente raddoppiando ogni 20 minuti. Da 1000 cellule, quante dopo 2 ore?",
+    "answers": [
+      "16.000",
+      "128.000",
+      "64.000",
+      "32.000"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0468",
+    "category": "Scienza e Natura",
+    "difficulty": "difficile",
+    "text": "Un isotopo radioattivo ha emivita di 5730 anni. Dopo quanti anni resta 1/8 del campione?",
+    "answers": [
+      "22.920 anni",
+      "17.190 anni",
+      "5730 anni",
+      "11.460 anni"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0469",
+    "category": "Scienza e Natura",
+    "difficulty": "difficile",
+    "text": "Una soluzione ha pH 4. Un'altra ha pH 7. Quante volte è più acida la prima?",
+    "answers": [
+      "3 volte",
+      "10 volte",
+      "1000 volte",
+      "100 volte"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0470",
+    "category": "Scienza e Natura",
+    "difficulty": "difficile",
+    "text": "Un campione di 240 g di sostanza contiene il 15% di impurità. Quanti grammi sono puri?",
+    "answers": [
+      "200 g",
+      "210 g",
+      "204 g",
+      "195 g"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0471",
+    "category": "Scienza e Natura",
+    "difficulty": "difficile",
+    "text": "Una cellula ha 46 cromosomi. Dopo meiosi, quanti ne ha ciascun gamete?",
+    "answers": [
+      "23",
+      "46",
+      "92",
+      "12"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0472",
+    "category": "Scienza e Natura",
+    "difficulty": "difficile",
+    "text": "Un lago di 2 milioni di m³ evapora al ritmo di 0,5% al mese. Quanti m³ in 4 mesi (approssimando linearmente)?",
+    "answers": [
+      "50.000 m³",
+      "20.000 m³",
+      "30.000 m³",
+      "40.000 m³"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0473",
+    "category": "Scienza e Natura",
+    "difficulty": "difficile",
+    "text": "Una popolazione cresce del 3% l'anno. Da 10.000 individui, quanti dopo 2 anni (arrotondato)?",
+    "answers": [
+      "10.609",
+      "10.900",
+      "10.300",
+      "10.600"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0474",
+    "category": "Scienza e Natura",
+    "difficulty": "difficile",
+    "text": "Un enzima dimezza il tempo di reazione. Se senza enzima servono 64 minuti, dopo 4 dimezzamenti?",
+    "answers": [
+      "4 minuti",
+      "16 minuti",
+      "8 minuti",
+      "2 minuti"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0475",
+    "category": "Scienza e Natura",
+    "difficulty": "difficile",
+    "text": "Il codice genetico usa triplette di basi. Quante combinazioni possibili con 4 basi?",
+    "answers": [
+      "64",
+      "16",
+      "128",
+      "32"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0476",
+    "category": "Scienza e Natura",
+    "difficulty": "difficile",
+    "text": "Una foresta assorbe 8 tonnellate di CO2 per ettaro l'anno. Quante tonnellate da 350 ettari?",
+    "answers": [
+      "3200 t",
+      "2500 t",
+      "3000 t",
+      "2800 t"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0477",
+    "category": "Scienza e Natura",
+    "difficulty": "difficile",
+    "text": "Un campione perde metà massa ogni 3 giorni. Da 320 g, quanti g dopo 15 giorni?",
+    "answers": [
+      "5 g",
+      "10 g",
+      "40 g",
+      "20 g"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0478",
+    "category": "Scienza e Natura",
+    "difficulty": "difficile",
+    "text": "Una specie ha 12 coppie di cromosomi. Quanti cromosomi totali nelle cellule somatiche?",
+    "answers": [
+      "36",
+      "48",
+      "24",
+      "12"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0479",
+    "category": "Scienza e Natura",
+    "difficulty": "difficile",
+    "text": "Il metabolismo basale è 1500 kcal/giorno. Quante kcal in 3 settimane?",
+    "answers": [
+      "33.000",
+      "31.500",
+      "30.000",
+      "28.000"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0480",
+    "category": "Scienza e Natura",
+    "difficulty": "difficile",
+    "text": "Una soluzione 0,5 M in 2 litri: quante moli di soluto contiene?",
+    "answers": [
+      "2 moli",
+      "4 moli",
+      "0,5 moli",
+      "1 mole"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0481",
+    "category": "Scienza e Natura",
+    "difficulty": "difficile",
+    "text": "Un batterio si divide ogni 15 minuti. Quante generazioni in 3 ore?",
+    "answers": [
+      "10",
+      "12",
+      "14",
+      "8"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0482",
+    "category": "Scienza e Natura",
+    "difficulty": "superdifficile",
+    "text": "Una popolazione batterica passa da 500 a 32.000 raddoppiando. Quanti raddoppi sono avvenuti?",
+    "answers": [
+      "5",
+      "7",
+      "6",
+      "8"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0483",
+    "category": "Scienza e Natura",
+    "difficulty": "superdifficile",
+    "text": "Un isotopo con emivita 8 giorni: che frazione resta dopo 40 giorni?",
+    "answers": [
+      "1/64",
+      "1/16",
+      "1/8",
+      "1/32"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0484",
+    "category": "Scienza e Natura",
+    "difficulty": "superdifficile",
+    "text": "Una soluzione passa da pH 3 a pH 6. La concentrazione di ioni H+ è diventata:",
+    "answers": [
+      "1000 volte maggiore",
+      "1000 volte minore",
+      "100 volte minore",
+      "2 volte minore"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0485",
+    "category": "Scienza e Natura",
+    "difficulty": "superdifficile",
+    "text": "Con 4 basi azotate, quante sequenze diverse di 5 nucleotidi sono possibili?",
+    "answers": [
+      "1024",
+      "2048",
+      "256",
+      "512"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0486",
+    "category": "Scienza e Natura",
+    "difficulty": "superdifficile",
+    "text": "Un ecosistema trasferisce il 10% di energia per livello. Da 100.000 kcal, quante al quarto livello?",
+    "answers": [
+      "100 kcal",
+      "10.000 kcal",
+      "1000 kcal",
+      "10 kcal"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0487",
+    "category": "Scienza e Natura",
+    "difficulty": "superdifficile",
+    "text": "Una cellula diploide con 2n=8 subisce meiosi. Quante cellule figlie e con quanti cromosomi?",
+    "answers": [
+      "4 cellule con 8",
+      "2 cellule con 4",
+      "4 cellule con 4 cromosomi",
+      "2 cellule con 8"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0488",
+    "category": "Scienza e Natura",
+    "difficulty": "superdifficile",
+    "text": "Un campione di 1 kg perde il 20% ogni ora. Quanti grammi restano dopo 3 ore (arrotondato)?",
+    "answers": [
+      "400 g",
+      "600 g",
+      "480 g",
+      "512 g"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0489",
+    "category": "Scienza e Natura",
+    "difficulty": "superdifficile",
+    "text": "Il rapporto superficie/volume di un cubo di lato 2 cm rispetto a uno di lato 4 cm è:",
+    "answers": [
+      "Uguale",
+      "Il doppio",
+      "La metà",
+      "Il quadruplo"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0490",
+    "category": "Scienza e Natura",
+    "difficulty": "impossibile",
+    "text": "Una popolazione segue crescita logistica con K=10.000. A N=5000 la crescita è:",
+    "answers": [
+      "Minima",
+      "Nulla",
+      "Negativa",
+      "Massima"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0491",
+    "category": "Scienza e Natura",
+    "difficulty": "impossibile",
+    "text": "Un isotopo ha costante di decadimento λ=0,0693/anno. Qual è circa la sua emivita (t½=ln2/λ)?",
+    "answers": [
+      "14 anni",
+      "7 anni",
+      "10 anni",
+      "20 anni"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0492",
+    "category": "Scienza e Natura",
+    "difficulty": "impossibile",
+    "text": "In una popolazione all'equilibrio di Hardy-Weinberg con p=0,7, quanto vale la frequenza degli eterozigoti (2pq)?",
+    "answers": [
+      "0,30",
+      "0,21",
+      "0,42",
+      "0,49"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "bf0493",
+    "category": "Scienza e Natura",
+    "difficulty": "impossibile",
+    "text": "Una reazione raddoppia la velocità ogni 10°C. Passando da 20°C a 60°C, di quante volte accelera?",
+    "answers": [
+      "8 volte",
+      "16 volte",
+      "32 volte",
+      "4 volte"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0494",
+    "category": "Scienza e Natura",
+    "difficulty": "impossibile",
+    "text": "Un campione contiene 6,022×10²³ molecole. A quante moli corrisponde?",
+    "answers": [
+      "0,5 moli",
+      "10 moli",
+      "2 moli",
+      "1 mole"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "bf0495",
+    "category": "Scienza e Natura",
+    "difficulty": "impossibile",
+    "text": "Con crescita esponenziale N=N₀·2^t, da 250 a 16.000 quanti tempi di raddoppio servono?",
+    "answers": [
+      "8",
+      "6",
+      "7",
+      "5"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "bf0496",
+    "category": "Scienza e Natura",
+    "difficulty": "impossibile",
+    "text": "Una soluzione tampone ha pKa=4,8 e rapporto base/acido 1:1. Qual è il pH (Henderson-Hasselbalch)?",
+    "answers": [
+      "4,8",
+      "5,8",
+      "7,0",
+      "3,8"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "bf0497",
+    "category": "Scienza e Natura",
+    "difficulty": "impossibile",
+    "text": "In un ecosistema con efficienza del 15% per livello, da 40.000 kcal quante ne restano al terzo livello?",
+    "answers": [
+      "900 kcal",
+      "600 kcal",
+      "450 kcal",
+      "1350 kcal"
+    ],
+    "correctIndex": 0
   }
 ]

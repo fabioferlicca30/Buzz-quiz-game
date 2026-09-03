@@ -1,7 +1,7 @@
 {
-  "name": "buzz-clone",
+  "name": "quiz-party",
   "version": "1.0.0",
-  "description": "Quiz party game multiplayer ispirato a Buzz! - Express + Socket.io",
+  "description": "Quiz party game multiplayer con buzzer - Express + Socket.io",
   "main": "server/server.js",
   "type": "commonjs",
   "scripts": {

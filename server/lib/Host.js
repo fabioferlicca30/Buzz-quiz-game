@@ -393,6 +393,26 @@ const LINES = {
       '{name} arriva a 3 punti e si aggiudica il brainfighting: per una volta il cervello ha battuto tutto il resto.',
     ],
   },
+  gridNobodyFinished: {
+    family: [
+      'Tempo scaduto e la griglia è ancora lì, mezza vuota. Nessun punto per nessuno.',
+      'Nessuno è riuscito a completare la griglia in tempo: un brainfarting collettivo con schema a quadretti.',
+    ],
+    unfiltered: [
+      'Griglia incompleta, tempo scaduto: siete stati tutti ugualmente inutili. Zero punti.',
+    ],
+  },
+  gridWinner: {
+    family: [
+      '{name} completa la griglia per primo e si prende il punto!',
+      'Griglia riempita: {name} ha avuto memoria e velocità. Punto meritato.',
+      '{name} chiude tutte e quattro le caselle: punto suo.',
+    ],
+    unfiltered: [
+      '{name} completa la griglia mentre gli altri erano ancora a fissare le caselle. Punto.',
+      'Griglia chiusa da {name}: gli altri evidentemente hanno la memoria di un pesce rosso.',
+    ],
+  },
 };
 
 // Battute a tema legate al contenuto della categoria della domanda in corso. Usate solo
@@ -501,6 +521,8 @@ const MOODS = {
   brainfightWrong: 'evil',
   brainfightAllWrongThisProblem: 'laugh',
   brainfightWinner: 'celebrate',
+  gridNobodyFinished: 'laugh',
+  gridWinner: 'celebrate',
 };
 
 function pick(list) {

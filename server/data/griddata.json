@@ -1,0 +1,7877 @@
+{
+  "calcio": {
+    "criteria": {
+      "club": "Ha giocato nel/nella",
+      "trofeo": "Ha vinto",
+      "nazione": "Nazionalità"
+    },
+    "subjects": {
+      "Cristiano Ronaldo": [
+        "club:Manchester United",
+        "club:Real Madrid",
+        "club:Juventus",
+        "nazione:Portogallo",
+        "trofeo:Champions League",
+        "trofeo:Pallone d'Oro",
+        "trofeo:Europeo"
+      ],
+      "Zinedine Zidane": [
+        "club:Juventus",
+        "club:Real Madrid",
+        "nazione:Francia",
+        "trofeo:Champions League",
+        "trofeo:Pallone d'Oro",
+        "trofeo:Mondiale",
+        "trofeo:Europeo"
+      ],
+      "Gonzalo Higuain": [
+        "club:Real Madrid",
+        "club:Napoli",
+        "club:Juventus",
+        "club:Milan",
+        "club:Chelsea",
+        "nazione:Argentina"
+      ],
+      "Angel Di Maria": [
+        "club:Real Madrid",
+        "club:Manchester United",
+        "club:Paris Saint-Germain",
+        "club:Juventus",
+        "nazione:Argentina",
+        "trofeo:Champions League",
+        "trofeo:Mondiale"
+      ],
+      "Fabio Cannavaro": [
+        "club:Napoli",
+        "club:Inter",
+        "club:Juventus",
+        "club:Real Madrid",
+        "nazione:Italia",
+        "trofeo:Pallone d'Oro",
+        "trofeo:Mondiale"
+      ],
+      "Lionel Messi": [
+        "club:Barcellona",
+        "club:Paris Saint-Germain",
+        "nazione:Argentina",
+        "trofeo:Champions League",
+        "trofeo:Pallone d'Oro",
+        "trofeo:Mondiale"
+      ],
+      "Neymar": [
+        "club:Barcellona",
+        "club:Paris Saint-Germain",
+        "nazione:Brasile",
+        "trofeo:Champions League"
+      ],
+      "Kylian Mbappe": [
+        "club:Monaco",
+        "club:Paris Saint-Germain",
+        "club:Real Madrid",
+        "nazione:Francia",
+        "trofeo:Mondiale"
+      ],
+      "Andrea Pirlo": [
+        "club:Inter",
+        "club:Milan",
+        "club:Juventus",
+        "nazione:Italia",
+        "trofeo:Champions League",
+        "trofeo:Mondiale"
+      ],
+      "Zlatan Ibrahimovic": [
+        "club:Juventus",
+        "club:Inter",
+        "club:Barcellona",
+        "club:Milan",
+        "club:Paris Saint-Germain",
+        "club:Manchester United",
+        "nazione:Svezia"
+      ],
+      "Paul Pogba": [
+        "club:Manchester United",
+        "club:Juventus",
+        "nazione:Francia",
+        "trofeo:Mondiale"
+      ],
+      "Antonio Conte": [
+        "club:Juventus",
+        "club:Chelsea",
+        "club:Inter",
+        "nazione:Italia"
+      ],
+      "Gianluigi Buffon": [
+        "club:Juventus",
+        "club:Paris Saint-Germain",
+        "nazione:Italia",
+        "trofeo:Mondiale"
+      ],
+      "Alessandro Del Piero": [
+        "club:Juventus",
+        "nazione:Italia",
+        "trofeo:Mondiale"
+      ],
+      "Kaka": [
+        "club:Milan",
+        "club:Real Madrid",
+        "nazione:Brasile",
+        "trofeo:Champions League",
+        "trofeo:Pallone d'Oro"
+      ],
+      "Ronaldinho": [
+        "club:Paris Saint-Germain",
+        "club:Barcellona",
+        "club:Milan",
+        "nazione:Brasile",
+        "trofeo:Champions League",
+        "trofeo:Pallone d'Oro",
+        "trofeo:Mondiale"
+      ],
+      "Ronaldo Nazario": [
+        "club:Barcellona",
+        "club:Inter",
+        "club:Milan",
+        "club:PSV",
+        "club:Real Madrid",
+        "nazione:Brasile",
+        "trofeo:Mondiale",
+        "trofeo:Pallone d'Oro"
+      ],
+      "Thierry Henry": [
+        "club:Monaco",
+        "club:Juventus",
+        "club:Arsenal",
+        "club:Barcellona",
+        "nazione:Francia",
+        "trofeo:Champions League",
+        "trofeo:Mondiale",
+        "trofeo:Europeo"
+      ],
+      "Patrick Vieira": [
+        "club:Arsenal",
+        "club:Inter",
+        "club:Juventus",
+        "club:Manchester City",
+        "club:Milan",
+        "nazione:Francia",
+        "trofeo:Europeo",
+        "trofeo:Mondiale"
+      ],
+      "Clarence Seedorf": [
+        "club:Real Madrid",
+        "club:Inter",
+        "club:Milan",
+        "nazione:Paesi Bassi",
+        "trofeo:Champions League"
+      ],
+      "Andriy Shevchenko": [
+        "club:Milan",
+        "club:Chelsea",
+        "nazione:Ucraina",
+        "trofeo:Champions League",
+        "trofeo:Pallone d'Oro"
+      ],
+      "Luis Figo": [
+        "club:Barcellona",
+        "club:Real Madrid",
+        "club:Inter",
+        "nazione:Portogallo",
+        "trofeo:Pallone d'Oro"
+      ],
+      "David Beckham": [
+        "club:Manchester United",
+        "club:Real Madrid",
+        "club:Milan",
+        "club:Paris Saint-Germain",
+        "nazione:Inghilterra",
+        "trofeo:Champions League"
+      ],
+      "Xabi Alonso": [
+        "club:Liverpool",
+        "club:Real Madrid",
+        "club:Bayern Monaco",
+        "nazione:Spagna",
+        "trofeo:Champions League",
+        "trofeo:Mondiale",
+        "trofeo:Europeo"
+      ],
+      "Karim Benzema": [
+        "club:Lione",
+        "club:Real Madrid",
+        "nazione:Francia",
+        "trofeo:Champions League",
+        "trofeo:Pallone d'Oro"
+      ],
+      "Luka Modric": [
+        "club:Milan",
+        "club:Real Madrid",
+        "club:Tottenham",
+        "nazione:Croazia",
+        "trofeo:Champions League",
+        "trofeo:Pallone d'Oro"
+      ],
+      "Robert Lewandowski": [
+        "club:Borussia Dortmund",
+        "club:Bayern Monaco",
+        "club:Barcellona",
+        "nazione:Polonia",
+        "trofeo:Champions League"
+      ],
+      "Arjen Robben": [
+        "club:Chelsea",
+        "club:Real Madrid",
+        "club:Bayern Monaco",
+        "nazione:Paesi Bassi",
+        "trofeo:Champions League"
+      ],
+      "Wesley Sneijder": [
+        "club:Real Madrid",
+        "club:Inter",
+        "nazione:Paesi Bassi",
+        "trofeo:Champions League"
+      ],
+      "Samuel Eto'o": [
+        "club:Real Madrid",
+        "club:Barcellona",
+        "club:Inter",
+        "club:Chelsea",
+        "nazione:Camerun",
+        "trofeo:Champions League"
+      ],
+      "Diego Milito": [
+        "club:Inter",
+        "nazione:Argentina",
+        "trofeo:Champions League"
+      ],
+      "Javier Zanetti": [
+        "club:Inter",
+        "nazione:Argentina",
+        "trofeo:Champions League"
+      ],
+      "Francesco Totti": [
+        "club:Roma",
+        "nazione:Italia",
+        "trofeo:Mondiale"
+      ],
+      "Paolo Maldini": [
+        "club:Milan",
+        "trofeo:Champions League",
+        "nazione:Italia"
+      ],
+      "Sergio Ramos": [
+        "club:Sevilla",
+        "club:Real Madrid",
+        "club:Paris Saint-Germain",
+        "nazione:Spagna",
+        "trofeo:Champions League",
+        "trofeo:Mondiale",
+        "trofeo:Europeo"
+      ],
+      "Xavi": [
+        "club:Barcellona",
+        "nazione:Spagna",
+        "trofeo:Champions League",
+        "trofeo:Mondiale",
+        "trofeo:Europeo"
+      ],
+      "Andres Iniesta": [
+        "club:Barcellona",
+        "nazione:Spagna",
+        "trofeo:Champions League",
+        "trofeo:Mondiale",
+        "trofeo:Europeo"
+      ],
+      "Carles Puyol": [
+        "club:Barcellona",
+        "nazione:Spagna",
+        "trofeo:Champions League",
+        "trofeo:Mondiale",
+        "trofeo:Europeo"
+      ],
+      "Dani Alves": [
+        "club:Sevilla",
+        "club:Barcellona",
+        "club:Juventus",
+        "club:Paris Saint-Germain",
+        "nazione:Brasile",
+        "trofeo:Champions League"
+      ],
+      "Thiago Silva": [
+        "club:Milan",
+        "club:Paris Saint-Germain",
+        "club:Chelsea",
+        "nazione:Brasile",
+        "trofeo:Champions League"
+      ],
+      "Edinson Cavani": [
+        "club:Napoli",
+        "club:Paris Saint-Germain",
+        "club:Manchester United",
+        "club:Valencia",
+        "nazione:Uruguay"
+      ],
+      "Luis Suarez": [
+        "club:Atletico Madrid",
+        "club:Barcellona",
+        "club:Inter",
+        "club:Liverpool",
+        "nazione:Uruguay",
+        "trofeo:Champions League"
+      ],
+      "Mohamed Salah": [
+        "club:Chelsea",
+        "club:Roma",
+        "club:Liverpool",
+        "nazione:Egitto",
+        "trofeo:Champions League"
+      ],
+      "Kevin De Bruyne": [
+        "club:Chelsea",
+        "club:Manchester City",
+        "club:Napoli",
+        "nazione:Belgio",
+        "trofeo:Champions League"
+      ],
+      "Romelu Lukaku": [
+        "club:Chelsea",
+        "club:Manchester United",
+        "club:Inter",
+        "club:Roma",
+        "club:Napoli",
+        "nazione:Belgio"
+      ],
+      "Erling Haaland": [
+        "club:Borussia Dortmund",
+        "club:Manchester City",
+        "nazione:Norvegia",
+        "trofeo:Champions League"
+      ],
+      "Antonio Cassano": [
+        "club:Roma",
+        "club:Real Madrid",
+        "club:Milan",
+        "club:Inter",
+        "nazione:Italia"
+      ],
+      "Hernan Crespo": [
+        "club:Parma",
+        "club:Inter",
+        "club:Chelsea",
+        "club:Milan",
+        "nazione:Argentina"
+      ],
+      "Christian Vieri": [
+        "club:Juventus",
+        "club:Atletico Madrid",
+        "club:Inter",
+        "club:Milan",
+        "club:Monaco",
+        "nazione:Italia"
+      ],
+      "Filippo Inzaghi": [
+        "club:Juventus",
+        "club:Milan",
+        "trofeo:Champions League",
+        "trofeo:Mondiale",
+        "nazione:Italia"
+      ],
+      "Gianluca Vialli": [
+        "club:Sampdoria",
+        "club:Juventus",
+        "club:Chelsea",
+        "trofeo:Champions League",
+        "nazione:Italia"
+      ],
+      "Roberto Baggio": [
+        "club:Fiorentina",
+        "club:Juventus",
+        "club:Milan",
+        "club:Inter",
+        "club:Brescia",
+        "trofeo:Pallone d'Oro",
+        "nazione:Italia"
+      ],
+      "Patrice Evra": [
+        "club:Monaco",
+        "club:Manchester United",
+        "club:Juventus",
+        "club:Marsiglia",
+        "nazione:Francia",
+        "trofeo:Champions League"
+      ],
+      "Carlos Tevez": [
+        "club:Manchester United",
+        "club:Manchester City",
+        "club:Juventus",
+        "club:West Ham",
+        "nazione:Argentina",
+        "trofeo:Champions League"
+      ],
+      "Arturo Vidal": [
+        "club:Bayer Leverkusen",
+        "club:Juventus",
+        "club:Bayern Monaco",
+        "club:Barcellona",
+        "club:Inter",
+        "nazione:Cile",
+        "trofeo:Champions League"
+      ],
+      "Sami Khedira": [
+        "club:Real Madrid",
+        "club:Juventus",
+        "nazione:Germania",
+        "trofeo:Champions League",
+        "trofeo:Mondiale"
+      ],
+      "Miralem Pjanic": [
+        "club:Lione",
+        "club:Roma",
+        "club:Juventus",
+        "club:Barcellona",
+        "nazione:Bosnia"
+      ],
+      "Adrien Rabiot": [
+        "club:Juventus",
+        "club:Marsiglia",
+        "club:Milan",
+        "club:Paris Saint-Germain",
+        "nazione:Francia"
+      ],
+      "Aaron Ramsey": [
+        "club:Arsenal",
+        "club:Juventus",
+        "nazione:Galles"
+      ],
+      "Emerson Palmieri": [
+        "club:Roma",
+        "club:Chelsea",
+        "nazione:Italia",
+        "trofeo:Champions League",
+        "trofeo:Europeo"
+      ],
+      "Leonardo Bonucci": [
+        "club:Inter",
+        "club:Juventus",
+        "club:Milan",
+        "nazione:Italia",
+        "trofeo:Europeo"
+      ],
+      "Andrea Barzagli": [
+        "club:Juventus",
+        "nazione:Italia",
+        "trofeo:Mondiale"
+      ],
+      "Claudio Marchisio": [
+        "club:Juventus",
+        "nazione:Italia"
+      ],
+      "Giorgio Chiellini": [
+        "club:Juventus",
+        "nazione:Italia",
+        "trofeo:Europeo"
+      ],
+      "Alvaro Morata": [
+        "club:Real Madrid",
+        "club:Juventus",
+        "club:Chelsea",
+        "club:Atletico Madrid",
+        "club:Milan",
+        "nazione:Spagna",
+        "trofeo:Champions League",
+        "trofeo:Europeo"
+      ],
+      "Fernando Llorente": [
+        "club:Juventus",
+        "club:Sevilla",
+        "club:Tottenham",
+        "club:Napoli",
+        "nazione:Spagna",
+        "trofeo:Mondiale",
+        "trofeo:Europeo"
+      ],
+      "Kingsley Coman": [
+        "club:Paris Saint-Germain",
+        "club:Juventus",
+        "club:Bayern Monaco",
+        "nazione:Francia",
+        "trofeo:Champions League"
+      ],
+      "Douglas Costa": [
+        "club:Bayern Monaco",
+        "club:Juventus",
+        "nazione:Brasile",
+        "trofeo:Champions League"
+      ],
+      "Federico Chiesa": [
+        "club:Juventus",
+        "club:Liverpool",
+        "nazione:Italia",
+        "trofeo:Europeo"
+      ],
+      "Weston McKennie": [
+        "club:Juventus",
+        "nazione:Stati Uniti"
+      ],
+      "Juan Cuadrado": [
+        "club:Chelsea",
+        "club:Juventus",
+        "club:Inter",
+        "nazione:Colombia",
+        "trofeo:Champions League"
+      ],
+      "Mario Mandzukic": [
+        "club:Bayern Monaco",
+        "club:Atletico Madrid",
+        "club:Juventus",
+        "club:Milan",
+        "nazione:Croazia",
+        "trofeo:Champions League"
+      ],
+      "Medhi Benatia": [
+        "club:Roma",
+        "club:Bayern Monaco",
+        "club:Juventus",
+        "nazione:Marocco"
+      ],
+      "Blaise Matuidi": [
+        "club:Paris Saint-Germain",
+        "club:Juventus",
+        "nazione:Francia",
+        "trofeo:Mondiale"
+      ],
+      "Sami Hyypia": [
+        "club:Liverpool",
+        "club:Bayer Leverkusen",
+        "nazione:Finlandia",
+        "trofeo:Champions League"
+      ],
+      "Ashley Cole": [
+        "club:Arsenal",
+        "club:Chelsea",
+        "club:Roma",
+        "nazione:Inghilterra",
+        "trofeo:Champions League"
+      ],
+      "Esteban Cambiasso": [
+        "club:Real Madrid",
+        "club:Inter",
+        "club:Leicester",
+        "nazione:Argentina",
+        "trofeo:Champions League"
+      ],
+      "Maicon": [
+        "club:Inter",
+        "club:Manchester City",
+        "club:Roma",
+        "nazione:Brasile",
+        "trofeo:Champions League"
+      ],
+      "Lucio": [
+        "club:Bayer Leverkusen",
+        "club:Bayern Monaco",
+        "club:Inter",
+        "club:Juventus",
+        "nazione:Brasile",
+        "trofeo:Champions League",
+        "trofeo:Mondiale"
+      ],
+      "Achraf Hakimi": [
+        "club:Real Madrid",
+        "club:Borussia Dortmund",
+        "club:Inter",
+        "club:Paris Saint-Germain",
+        "nazione:Marocco"
+      ],
+      "Ivan Perisic": [
+        "club:Borussia Dortmund",
+        "club:Inter",
+        "club:Bayern Monaco",
+        "club:Tottenham",
+        "nazione:Croazia",
+        "trofeo:Champions League"
+      ],
+      "Radja Nainggolan": [
+        "club:Roma",
+        "club:Inter",
+        "nazione:Belgio"
+      ],
+      "Marcelo Brozovic": [
+        "club:Inter",
+        "nazione:Croazia"
+      ],
+      "Milan Skriniar": [
+        "club:Inter",
+        "club:Paris Saint-Germain",
+        "nazione:Slovacchia"
+      ],
+      "Andre Onana": [
+        "club:Inter",
+        "club:Manchester United",
+        "nazione:Camerun"
+      ],
+      "Alexis Sanchez": [
+        "club:Barcellona",
+        "club:Arsenal",
+        "club:Manchester United",
+        "club:Inter",
+        "club:Marsiglia",
+        "nazione:Cile"
+      ],
+      "Olivier Giroud": [
+        "club:Montpellier",
+        "club:Arsenal",
+        "club:Chelsea",
+        "club:Milan",
+        "nazione:Francia",
+        "trofeo:Champions League",
+        "trofeo:Mondiale"
+      ],
+      "Fikayo Tomori": [
+        "club:Chelsea",
+        "club:Milan",
+        "nazione:Inghilterra",
+        "trofeo:Champions League"
+      ],
+      "Tiemoue Bakayoko": [
+        "club:Chelsea",
+        "club:Milan",
+        "club:Monaco",
+        "club:Napoli",
+        "nazione:Francia"
+      ],
+      "Rafael Leao": [
+        "club:Milan",
+        "nazione:Portogallo"
+      ],
+      "Theo Hernandez": [
+        "club:Atletico Madrid",
+        "club:Real Madrid",
+        "club:Milan",
+        "nazione:Francia"
+      ],
+      "Sandro Tonali": [
+        "club:Milan",
+        "club:Newcastle",
+        "nazione:Italia"
+      ],
+      "Christian Pulisic": [
+        "club:Borussia Dortmund",
+        "club:Chelsea",
+        "club:Milan",
+        "nazione:Stati Uniti",
+        "trofeo:Champions League"
+      ],
+      "Ruben Loftus-Cheek": [
+        "club:Chelsea",
+        "club:Milan",
+        "nazione:Inghilterra",
+        "trofeo:Champions League"
+      ],
+      "Mateo Kovacic": [
+        "club:Inter",
+        "club:Real Madrid",
+        "club:Chelsea",
+        "club:Manchester City",
+        "nazione:Croazia",
+        "trofeo:Champions League"
+      ],
+      "Marcus Thuram": [
+        "club:Borussia Monchengladbach",
+        "club:Inter",
+        "nazione:Francia"
+      ],
+      "Henrikh Mkhitaryan": [
+        "club:Borussia Dortmund",
+        "club:Manchester United",
+        "club:Arsenal",
+        "club:Roma",
+        "club:Inter",
+        "nazione:Armenia"
+      ],
+      "Edin Dzeko": [
+        "club:Manchester City",
+        "club:Roma",
+        "club:Inter",
+        "nazione:Bosnia"
+      ],
+      "Ashley Young": [
+        "club:Manchester United",
+        "club:Inter",
+        "nazione:Inghilterra",
+        "trofeo:Champions League"
+      ],
+      "Robin Gosens": [
+        "club:Atalanta",
+        "club:Inter",
+        "nazione:Germania"
+      ],
+      "Joaquin Correa": [
+        "club:Sevilla",
+        "club:Inter",
+        "nazione:Argentina"
+      ],
+      "Kalidou Koulibaly": [
+        "club:Napoli",
+        "club:Chelsea",
+        "nazione:Senegal"
+      ],
+      "Dries Mertens": [
+        "club:Napoli",
+        "nazione:Belgio"
+      ],
+      "Jorginho": [
+        "club:Napoli",
+        "club:Chelsea",
+        "club:Arsenal",
+        "nazione:Italia",
+        "trofeo:Champions League",
+        "trofeo:Europeo"
+      ],
+      "Victor Osimhen": [
+        "club:Napoli",
+        "nazione:Nigeria"
+      ],
+      "Piotr Zielinski": [
+        "club:Napoli",
+        "club:Inter",
+        "nazione:Polonia"
+      ],
+      "Elseid Hysaj": [
+        "club:Napoli",
+        "nazione:Albania"
+      ],
+      "Jose Callejon": [
+        "club:Real Madrid",
+        "club:Napoli",
+        "nazione:Spagna"
+      ],
+      "Raul Albiol": [
+        "club:Valencia",
+        "club:Real Madrid",
+        "club:Napoli",
+        "nazione:Spagna",
+        "trofeo:Mondiale",
+        "trofeo:Europeo"
+      ],
+      "Marek Hamsik": [
+        "club:Napoli",
+        "nazione:Slovacchia"
+      ],
+      "Ezequiel Lavezzi": [
+        "club:Napoli",
+        "club:Paris Saint-Germain",
+        "nazione:Argentina"
+      ],
+      "Daniele De Rossi": [
+        "club:Roma",
+        "nazione:Italia",
+        "trofeo:Mondiale"
+      ],
+      "Alisson": [
+        "club:Roma",
+        "club:Liverpool",
+        "nazione:Brasile",
+        "trofeo:Champions League"
+      ],
+      "Rui Patricio": [
+        "club:Sporting",
+        "club:Wolverhampton",
+        "club:Roma",
+        "nazione:Portogallo",
+        "trofeo:Europeo"
+      ],
+      "Paulo Dybala": [
+        "club:Juventus",
+        "club:Roma",
+        "nazione:Argentina",
+        "trofeo:Mondiale"
+      ],
+      "Chris Smalling": [
+        "club:Manchester United",
+        "club:Roma",
+        "nazione:Inghilterra"
+      ],
+      "Tammy Abraham": [
+        "club:Chelsea",
+        "club:Roma",
+        "club:Milan",
+        "nazione:Inghilterra",
+        "trofeo:Champions League"
+      ],
+      "Nemanja Matic": [
+        "club:Chelsea",
+        "club:Manchester United",
+        "club:Roma",
+        "club:Lione",
+        "nazione:Serbia"
+      ],
+      "Gervinho": [
+        "club:Arsenal",
+        "club:Roma",
+        "nazione:Costa d'Avorio"
+      ],
+      "Rudi Voller": [
+        "club:Roma",
+        "club:Marsiglia",
+        "club:Bayer Leverkusen",
+        "nazione:Germania",
+        "trofeo:Mondiale"
+      ],
+      "Toni Kroos": [
+        "club:Bayern Monaco",
+        "club:Bayer Leverkusen",
+        "club:Real Madrid",
+        "nazione:Germania",
+        "trofeo:Champions League",
+        "trofeo:Mondiale"
+      ],
+      "Casemiro": [
+        "club:Real Madrid",
+        "club:Manchester United",
+        "nazione:Brasile",
+        "trofeo:Champions League"
+      ],
+      "Gareth Bale": [
+        "club:Tottenham",
+        "club:Real Madrid",
+        "nazione:Galles",
+        "trofeo:Champions League"
+      ],
+      "Marcelo": [
+        "club:Real Madrid",
+        "nazione:Brasile",
+        "trofeo:Champions League"
+      ],
+      "Iker Casillas": [
+        "club:Real Madrid",
+        "nazione:Spagna",
+        "trofeo:Champions League",
+        "trofeo:Mondiale",
+        "trofeo:Europeo"
+      ],
+      "Raul": [
+        "club:Real Madrid",
+        "nazione:Spagna",
+        "trofeo:Champions League"
+      ],
+      "Michael Owen": [
+        "club:Liverpool",
+        "club:Real Madrid",
+        "club:Manchester United",
+        "nazione:Inghilterra",
+        "trofeo:Pallone d'Oro"
+      ],
+      "Fabio Coentrao": [
+        "club:Benfica",
+        "club:Real Madrid",
+        "club:Monaco",
+        "nazione:Portogallo",
+        "trofeo:Champions League"
+      ],
+      "Mesut Ozil": [
+        "club:Real Madrid",
+        "club:Arsenal",
+        "nazione:Germania",
+        "trofeo:Mondiale"
+      ],
+      "Vinicius Junior": [
+        "club:Real Madrid",
+        "nazione:Brasile",
+        "trofeo:Champions League"
+      ],
+      "Rodrygo": [
+        "club:Real Madrid",
+        "nazione:Brasile",
+        "trofeo:Champions League"
+      ],
+      "Eden Hazard": [
+        "club:Chelsea",
+        "club:Real Madrid",
+        "nazione:Belgio",
+        "trofeo:Champions League"
+      ],
+      "Thibaut Courtois": [
+        "club:Chelsea",
+        "club:Atletico Madrid",
+        "club:Real Madrid",
+        "nazione:Belgio",
+        "trofeo:Champions League"
+      ],
+      "Jude Bellingham": [
+        "club:Borussia Dortmund",
+        "club:Real Madrid",
+        "nazione:Inghilterra",
+        "trofeo:Champions League"
+      ],
+      "Aurelien Tchouameni": [
+        "club:Monaco",
+        "club:Real Madrid",
+        "nazione:Francia",
+        "trofeo:Champions League"
+      ],
+      "Eduardo Camavinga": [
+        "club:Rennes",
+        "club:Real Madrid",
+        "nazione:Francia",
+        "trofeo:Champions League"
+      ],
+      "Ferland Mendy": [
+        "club:Lione",
+        "club:Real Madrid",
+        "nazione:Francia",
+        "trofeo:Champions League"
+      ],
+      "James Rodriguez": [
+        "club:Monaco",
+        "club:Real Madrid",
+        "club:Bayern Monaco",
+        "nazione:Colombia",
+        "trofeo:Champions League"
+      ],
+      "Danilo": [
+        "club:Porto",
+        "club:Real Madrid",
+        "club:Manchester City",
+        "club:Juventus",
+        "nazione:Brasile",
+        "trofeo:Champions League"
+      ],
+      "Nacho": [
+        "club:Real Madrid",
+        "nazione:Spagna",
+        "trofeo:Champions League"
+      ],
+      "Isco": [
+        "club:Valencia",
+        "club:Real Madrid",
+        "club:Sevilla",
+        "nazione:Spagna",
+        "trofeo:Champions League"
+      ],
+      "Marco Asensio": [
+        "club:Real Madrid",
+        "club:Paris Saint-Germain",
+        "nazione:Spagna",
+        "trofeo:Champions League"
+      ],
+      "Alvaro Arbeloa": [
+        "club:Liverpool",
+        "club:Real Madrid",
+        "nazione:Spagna",
+        "trofeo:Champions League",
+        "trofeo:Mondiale",
+        "trofeo:Europeo"
+      ],
+      "Fabinho": [
+        "club:Liverpool",
+        "club:Monaco",
+        "club:Real Madrid",
+        "nazione:Brasile",
+        "trofeo:Champions League"
+      ],
+      "Robinho": [
+        "club:Real Madrid",
+        "club:Manchester City",
+        "club:Milan",
+        "nazione:Brasile"
+      ],
+      "Emmanuel Adebayor": [
+        "club:Monaco",
+        "club:Arsenal",
+        "club:Manchester City",
+        "club:Real Madrid",
+        "club:Tottenham",
+        "nazione:Togo"
+      ],
+      "Ruud van Nistelrooy": [
+        "club:Manchester United",
+        "club:Real Madrid",
+        "club:Hamburgo",
+        "nazione:Paesi Bassi"
+      ],
+      "Fernando Morientes": [
+        "club:Real Madrid",
+        "club:Monaco",
+        "club:Liverpool",
+        "club:Valencia",
+        "nazione:Spagna",
+        "trofeo:Champions League"
+      ],
+      "Claude Makelele": [
+        "club:Real Madrid",
+        "club:Chelsea",
+        "club:Paris Saint-Germain",
+        "club:Marsiglia",
+        "nazione:Francia",
+        "trofeo:Champions League"
+      ],
+      "Nicolas Anelka": [
+        "club:Paris Saint-Germain",
+        "club:Arsenal",
+        "club:Real Madrid",
+        "club:Liverpool",
+        "club:Manchester City",
+        "club:Chelsea",
+        "club:Juventus",
+        "nazione:Francia",
+        "trofeo:Champions League"
+      ],
+      "Steve McManaman": [
+        "club:Liverpool",
+        "club:Real Madrid",
+        "club:Manchester City",
+        "nazione:Inghilterra",
+        "trofeo:Champions League"
+      ],
+      "Jonathan Woodgate": [
+        "club:Leeds",
+        "club:Newcastle",
+        "club:Real Madrid",
+        "club:Tottenham",
+        "nazione:Inghilterra"
+      ],
+      "Sergio Busquets": [
+        "club:Barcellona",
+        "nazione:Spagna",
+        "trofeo:Champions League",
+        "trofeo:Mondiale",
+        "trofeo:Europeo"
+      ],
+      "Gerard Pique": [
+        "club:Manchester United",
+        "club:Barcellona",
+        "nazione:Spagna",
+        "trofeo:Champions League",
+        "trofeo:Mondiale",
+        "trofeo:Europeo"
+      ],
+      "Philippe Coutinho": [
+        "club:Inter",
+        "club:Liverpool",
+        "club:Barcellona",
+        "club:Bayern Monaco",
+        "club:Aston Villa",
+        "nazione:Brasile",
+        "trofeo:Champions League"
+      ],
+      "Ousmane Dembele": [
+        "club:Borussia Dortmund",
+        "club:Barcellona",
+        "club:Paris Saint-Germain",
+        "nazione:Francia",
+        "trofeo:Mondiale"
+      ],
+      "Antoine Griezmann": [
+        "club:Real Sociedad",
+        "club:Atletico Madrid",
+        "club:Barcellona",
+        "nazione:Francia",
+        "trofeo:Mondiale"
+      ],
+      "Frenkie de Jong": [
+        "club:Ajax",
+        "club:Barcellona",
+        "nazione:Paesi Bassi"
+      ],
+      "Marc-Andre ter Stegen": [
+        "club:Borussia Monchengladbach",
+        "club:Barcellona",
+        "nazione:Germania",
+        "trofeo:Champions League",
+        "trofeo:Mondiale"
+      ],
+      "Jordi Alba": [
+        "club:Valencia",
+        "club:Barcellona",
+        "nazione:Spagna",
+        "trofeo:Champions League",
+        "trofeo:Europeo"
+      ],
+      "Pedri": [
+        "club:Barcellona",
+        "nazione:Spagna"
+      ],
+      "Gavi": [
+        "club:Barcellona",
+        "nazione:Spagna"
+      ],
+      "Ronald Koeman": [
+        "club:Barcellona",
+        "nazione:Paesi Bassi",
+        "trofeo:Champions League",
+        "trofeo:Europeo"
+      ],
+      "Rivaldo": [
+        "club:Barcellona",
+        "club:Milan",
+        "nazione:Brasile",
+        "trofeo:Pallone d'Oro",
+        "trofeo:Mondiale"
+      ],
+      "Patrick Kluivert": [
+        "club:Ajax",
+        "club:Milan",
+        "club:Barcellona",
+        "club:Valencia",
+        "club:Paris Saint-Germain",
+        "nazione:Paesi Bassi",
+        "trofeo:Champions League"
+      ],
+      "Yaya Toure": [
+        "club:Barcellona",
+        "club:Manchester City",
+        "nazione:Costa d'Avorio",
+        "trofeo:Champions League"
+      ],
+      "Alex Song": [
+        "club:Arsenal",
+        "club:Barcellona",
+        "club:West Ham",
+        "nazione:Camerun"
+      ],
+      "Cesc Fabregas": [
+        "club:Arsenal",
+        "club:Barcellona",
+        "club:Chelsea",
+        "club:Monaco",
+        "nazione:Spagna",
+        "trofeo:Mondiale",
+        "trofeo:Europeo"
+      ],
+      "David Villa": [
+        "club:Valencia",
+        "club:Barcellona",
+        "club:Atletico Madrid",
+        "nazione:Spagna",
+        "trofeo:Champions League",
+        "trofeo:Mondiale",
+        "trofeo:Europeo"
+      ],
+      "Javier Mascherano": [
+        "club:Liverpool",
+        "club:Barcellona",
+        "club:West Ham",
+        "nazione:Argentina",
+        "trofeo:Champions League"
+      ],
+      "Dmytro Chygrynskiy": [
+        "club:Shakhtar",
+        "club:Barcellona",
+        "nazione:Ucraina"
+      ],
+      "Seydou Keita": [
+        "club:Lens",
+        "club:Sevilla",
+        "club:Barcellona",
+        "club:Valencia",
+        "club:Roma",
+        "nazione:Mali",
+        "trofeo:Champions League"
+      ],
+      "Adriano Correia": [
+        "club:Sevilla",
+        "club:Barcellona",
+        "nazione:Brasile",
+        "trofeo:Champions League"
+      ],
+      "Ivan Rakitic": [
+        "club:Sevilla",
+        "club:Barcellona",
+        "nazione:Croazia",
+        "trofeo:Champions League"
+      ],
+      "Jeremy Mathieu": [
+        "club:Valencia",
+        "club:Barcellona",
+        "nazione:Francia",
+        "trofeo:Champions League"
+      ],
+      "Andre Gomes": [
+        "club:Valencia",
+        "club:Barcellona",
+        "nazione:Portogallo",
+        "trofeo:Europeo"
+      ],
+      "Arda Turan": [
+        "club:Atletico Madrid",
+        "club:Barcellona",
+        "nazione:Turchia"
+      ],
+      "Malcom": [
+        "club:Bordeaux",
+        "club:Barcellona",
+        "nazione:Brasile"
+      ],
+      "Ferran Torres": [
+        "club:Valencia",
+        "club:Manchester City",
+        "club:Barcellona",
+        "nazione:Spagna"
+      ],
+      "Ilkay Gundogan": [
+        "club:Borussia Dortmund",
+        "club:Manchester City",
+        "club:Barcellona",
+        "nazione:Germania",
+        "trofeo:Champions League"
+      ],
+      "Raphinha": [
+        "club:Rennes",
+        "club:Leeds",
+        "club:Barcellona",
+        "nazione:Brasile"
+      ],
+      "Jules Kounde": [
+        "club:Bordeaux",
+        "club:Sevilla",
+        "club:Barcellona",
+        "nazione:Francia"
+      ],
+      "Diego Godin": [
+        "club:Villarreal",
+        "club:Atletico Madrid",
+        "club:Inter",
+        "nazione:Uruguay"
+      ],
+      "Koke": [
+        "club:Atletico Madrid",
+        "nazione:Spagna"
+      ],
+      "Jan Oblak": [
+        "club:Atletico Madrid",
+        "nazione:Slovenia"
+      ],
+      "Joao Felix": [
+        "club:Benfica",
+        "club:Atletico Madrid",
+        "club:Chelsea",
+        "club:Barcellona",
+        "club:Milan",
+        "nazione:Portogallo"
+      ],
+      "Diego Costa": [
+        "club:Atletico Madrid",
+        "club:Chelsea",
+        "nazione:Spagna"
+      ],
+      "Radamel Falcao": [
+        "club:Porto",
+        "club:Atletico Madrid",
+        "club:Monaco",
+        "club:Manchester United",
+        "club:Chelsea",
+        "nazione:Colombia"
+      ],
+      "Filipe Luis": [
+        "club:Atletico Madrid",
+        "club:Chelsea",
+        "nazione:Brasile"
+      ],
+      "Saul Niguez": [
+        "club:Atletico Madrid",
+        "club:Chelsea",
+        "club:Sevilla",
+        "nazione:Spagna"
+      ],
+      "Thomas Partey": [
+        "club:Atletico Madrid",
+        "club:Arsenal",
+        "nazione:Ghana"
+      ],
+      "Kieran Trippier": [
+        "club:Manchester City",
+        "club:Tottenham",
+        "club:Atletico Madrid",
+        "club:Newcastle",
+        "nazione:Inghilterra"
+      ],
+      "Rodri": [
+        "club:Atletico Madrid",
+        "club:Barcellona",
+        "club:Manchester City",
+        "club:Villarreal",
+        "nazione:Spagna",
+        "trofeo:Champions League",
+        "trofeo:Europeo",
+        "trofeo:Pallone d'Oro"
+      ],
+      "David Silva": [
+        "club:Valencia",
+        "club:Manchester City",
+        "club:Real Sociedad",
+        "nazione:Spagna",
+        "trofeo:Mondiale",
+        "trofeo:Europeo"
+      ],
+      "Juan Mata": [
+        "club:Valencia",
+        "club:Chelsea",
+        "club:Manchester United",
+        "nazione:Spagna",
+        "trofeo:Champions League",
+        "trofeo:Mondiale",
+        "trofeo:Europeo"
+      ],
+      "Roberto Soldado": [
+        "club:Real Madrid",
+        "club:Valencia",
+        "club:Tottenham",
+        "nazione:Spagna"
+      ],
+      "Nicolas Otamendi": [
+        "club:Valencia",
+        "club:Manchester City",
+        "club:Benfica",
+        "nazione:Argentina",
+        "trofeo:Mondiale"
+      ],
+      "Pablo Aimar": [
+        "club:Valencia",
+        "club:Real Zaragoza",
+        "club:Benfica",
+        "nazione:Argentina"
+      ],
+      "Santi Cazorla": [
+        "club:Villarreal",
+        "club:Arsenal",
+        "nazione:Spagna",
+        "trofeo:Europeo"
+      ],
+      "Sergio Reguilon": [
+        "club:Atletico Madrid",
+        "club:Manchester United",
+        "club:Real Madrid",
+        "club:Sevilla",
+        "club:Tottenham",
+        "nazione:Spagna"
+      ],
+      "Jesus Navas": [
+        "club:Sevilla",
+        "club:Manchester City",
+        "nazione:Spagna",
+        "trofeo:Mondiale",
+        "trofeo:Europeo"
+      ],
+      "Julio Baptista": [
+        "club:Sevilla",
+        "club:Real Madrid",
+        "club:Arsenal",
+        "club:Roma",
+        "nazione:Brasile"
+      ],
+      "Frederic Kanoute": [
+        "club:West Ham",
+        "club:Tottenham",
+        "club:Sevilla",
+        "nazione:Mali"
+      ],
+      "Steven Nzonzi": [
+        "club:Blackburn",
+        "club:Stoke",
+        "club:Sevilla",
+        "club:Roma",
+        "nazione:Francia",
+        "trofeo:Mondiale"
+      ],
+      "Grzegorz Krychowiak": [
+        "club:Sevilla",
+        "club:Paris Saint-Germain",
+        "club:West Bromwich",
+        "nazione:Polonia"
+      ],
+      "Wissam Ben Yedder": [
+        "club:Tolosa",
+        "club:Sevilla",
+        "club:Monaco",
+        "nazione:Francia"
+      ],
+      "Youssef En-Nesyri": [
+        "club:Malaga",
+        "club:Leganes",
+        "club:Sevilla",
+        "nazione:Marocco"
+      ],
+      "Ever Banega": [
+        "club:Valencia",
+        "club:Atletico Madrid",
+        "club:Inter",
+        "club:Sevilla",
+        "nazione:Argentina"
+      ],
+      "Wayne Rooney": [
+        "club:Manchester United",
+        "nazione:Inghilterra",
+        "trofeo:Champions League"
+      ],
+      "Ryan Giggs": [
+        "club:Manchester United",
+        "nazione:Galles",
+        "trofeo:Champions League"
+      ],
+      "Paul Scholes": [
+        "club:Manchester United",
+        "nazione:Inghilterra",
+        "trofeo:Champions League"
+      ],
+      "Rio Ferdinand": [
+        "club:West Ham",
+        "club:Leeds",
+        "club:Manchester United",
+        "nazione:Inghilterra",
+        "trofeo:Champions League"
+      ],
+      "Nemanja Vidic": [
+        "club:Manchester United",
+        "club:Inter",
+        "nazione:Serbia",
+        "trofeo:Champions League"
+      ],
+      "Edwin van der Sar": [
+        "club:Ajax",
+        "club:Juventus",
+        "club:Fulham",
+        "club:Manchester United",
+        "nazione:Paesi Bassi",
+        "trofeo:Champions League"
+      ],
+      "Robin van Persie": [
+        "club:Arsenal",
+        "club:Manchester United",
+        "nazione:Paesi Bassi"
+      ],
+      "Bruno Fernandes": [
+        "club:Sampdoria",
+        "club:Sporting",
+        "club:Manchester United",
+        "nazione:Portogallo"
+      ],
+      "Marcus Rashford": [
+        "club:Barcellona",
+        "club:Manchester United",
+        "nazione:Inghilterra"
+      ],
+      "David de Gea": [
+        "club:Atletico Madrid",
+        "club:Manchester United",
+        "nazione:Spagna"
+      ],
+      "Angel Gomes": [
+        "club:Manchester United",
+        "nazione:Inghilterra"
+      ],
+      "Memphis Depay": [
+        "club:PSV",
+        "club:Manchester United",
+        "club:Lione",
+        "club:Barcellona",
+        "club:Atletico Madrid",
+        "nazione:Paesi Bassi"
+      ],
+      "Anthony Martial": [
+        "club:Monaco",
+        "club:Manchester United",
+        "club:Sevilla",
+        "nazione:Francia"
+      ],
+      "Steven Gerrard": [
+        "club:Liverpool",
+        "nazione:Inghilterra",
+        "trofeo:Champions League"
+      ],
+      "Jamie Carragher": [
+        "club:Liverpool",
+        "nazione:Inghilterra",
+        "trofeo:Champions League"
+      ],
+      "Fernando Torres": [
+        "club:Atletico Madrid",
+        "club:Liverpool",
+        "club:Chelsea",
+        "club:Milan",
+        "nazione:Spagna",
+        "trofeo:Champions League",
+        "trofeo:Mondiale",
+        "trofeo:Europeo"
+      ],
+      "Virgil van Dijk": [
+        "club:Southampton",
+        "club:Liverpool",
+        "nazione:Paesi Bassi",
+        "trofeo:Champions League"
+      ],
+      "Sadio Mane": [
+        "club:Southampton",
+        "club:Liverpool",
+        "club:Bayern Monaco",
+        "nazione:Senegal",
+        "trofeo:Champions League"
+      ],
+      "Roberto Firmino": [
+        "club:Hoffenheim",
+        "club:Liverpool",
+        "nazione:Brasile",
+        "trofeo:Champions League"
+      ],
+      "Jordan Henderson": [
+        "club:Sunderland",
+        "club:Liverpool",
+        "nazione:Inghilterra",
+        "trofeo:Champions League"
+      ],
+      "Trent Alexander-Arnold": [
+        "club:Liverpool",
+        "club:Real Madrid",
+        "nazione:Inghilterra",
+        "trofeo:Champions League"
+      ],
+      "Andrew Robertson": [
+        "club:Hull",
+        "club:Liverpool",
+        "nazione:Scozia",
+        "trofeo:Champions League"
+      ],
+      "Darwin Nunez": [
+        "club:Benfica",
+        "club:Liverpool",
+        "nazione:Uruguay"
+      ],
+      "Diogo Jota": [
+        "club:Wolverhampton",
+        "club:Liverpool",
+        "nazione:Portogallo"
+      ],
+      "Thiago Alcantara": [
+        "club:Barcellona",
+        "club:Bayern Monaco",
+        "club:Liverpool",
+        "nazione:Spagna",
+        "trofeo:Champions League"
+      ],
+      "Dominik Szoboszlai": [
+        "club:Salisburgo",
+        "club:Lipsia",
+        "club:Liverpool",
+        "nazione:Ungheria"
+      ],
+      "Dennis Bergkamp": [
+        "club:Ajax",
+        "club:Inter",
+        "club:Arsenal",
+        "nazione:Paesi Bassi"
+      ],
+      "Tony Adams": [
+        "club:Arsenal",
+        "nazione:Inghilterra"
+      ],
+      "Robert Pires": [
+        "club:Marsiglia",
+        "club:Arsenal",
+        "club:Villarreal",
+        "nazione:Francia",
+        "trofeo:Mondiale",
+        "trofeo:Europeo"
+      ],
+      "Sol Campbell": [
+        "club:Tottenham",
+        "club:Arsenal",
+        "nazione:Inghilterra"
+      ],
+      "Bukayo Saka": [
+        "club:Arsenal",
+        "nazione:Inghilterra"
+      ],
+      "Martin Odegaard": [
+        "club:Real Madrid",
+        "club:Arsenal",
+        "nazione:Norvegia"
+      ],
+      "Gabriel Jesus": [
+        "club:Manchester City",
+        "club:Arsenal",
+        "nazione:Brasile"
+      ],
+      "Kai Havertz": [
+        "club:Bayer Leverkusen",
+        "club:Chelsea",
+        "club:Arsenal",
+        "nazione:Germania",
+        "trofeo:Champions League"
+      ],
+      "Declan Rice": [
+        "club:West Ham",
+        "club:Arsenal",
+        "nazione:Inghilterra"
+      ],
+      "David Raya": [
+        "club:Brentford",
+        "club:Arsenal",
+        "nazione:Spagna"
+      ],
+      "Frank Lampard": [
+        "club:West Ham",
+        "club:Chelsea",
+        "club:Manchester City",
+        "nazione:Inghilterra",
+        "trofeo:Champions League"
+      ],
+      "John Terry": [
+        "club:Chelsea",
+        "nazione:Inghilterra",
+        "trofeo:Champions League"
+      ],
+      "Didier Drogba": [
+        "club:Marsiglia",
+        "club:Chelsea",
+        "nazione:Costa d'Avorio",
+        "trofeo:Champions League"
+      ],
+      "Petr Cech": [
+        "club:Rennes",
+        "club:Chelsea",
+        "club:Arsenal",
+        "nazione:Repubblica Ceca",
+        "trofeo:Champions League"
+      ],
+      "N'Golo Kante": [
+        "club:Leicester",
+        "club:Chelsea",
+        "nazione:Francia",
+        "trofeo:Champions League",
+        "trofeo:Mondiale"
+      ],
+      "Cesar Azpilicueta": [
+        "club:Marsiglia",
+        "club:Chelsea",
+        "club:Atletico Madrid",
+        "nazione:Spagna",
+        "trofeo:Champions League"
+      ],
+      "Willian": [
+        "club:Chelsea",
+        "club:Arsenal",
+        "nazione:Brasile",
+        "trofeo:Champions League"
+      ],
+      "Marcos Alonso": [
+        "club:Chelsea",
+        "club:Barcellona",
+        "nazione:Spagna",
+        "trofeo:Champions League"
+      ],
+      "Antonio Rudiger": [
+        "club:Roma",
+        "club:Chelsea",
+        "club:Real Madrid",
+        "nazione:Germania",
+        "trofeo:Champions League"
+      ],
+      "Enzo Fernandez": [
+        "club:Benfica",
+        "club:Chelsea",
+        "nazione:Argentina",
+        "trofeo:Mondiale"
+      ],
+      "Sergio Aguero": [
+        "club:Atletico Madrid",
+        "club:Manchester City",
+        "club:Barcellona",
+        "nazione:Argentina",
+        "trofeo:Mondiale"
+      ],
+      "Vincent Kompany": [
+        "club:Amburgo",
+        "club:Manchester City",
+        "nazione:Belgio"
+      ],
+      "Raheem Sterling": [
+        "club:Liverpool",
+        "club:Manchester City",
+        "club:Chelsea",
+        "club:Arsenal",
+        "nazione:Inghilterra"
+      ],
+      "Bernardo Silva": [
+        "club:Benfica",
+        "club:Manchester City",
+        "club:Monaco",
+        "club:Real Madrid",
+        "nazione:Portogallo",
+        "trofeo:Champions League"
+      ],
+      "Ederson": [
+        "club:Benfica",
+        "club:Manchester City",
+        "nazione:Brasile",
+        "trofeo:Champions League"
+      ],
+      "Ruben Dias": [
+        "club:Benfica",
+        "club:Manchester City",
+        "nazione:Portogallo",
+        "trofeo:Champions League"
+      ],
+      "Jack Grealish": [
+        "club:Aston Villa",
+        "club:Manchester City",
+        "nazione:Inghilterra",
+        "trofeo:Champions League"
+      ],
+      "Riyad Mahrez": [
+        "club:Leicester",
+        "club:Manchester City",
+        "nazione:Algeria",
+        "trofeo:Champions League"
+      ],
+      "Kyle Walker": [
+        "club:Tottenham",
+        "club:Manchester City",
+        "club:Milan",
+        "nazione:Inghilterra",
+        "trofeo:Champions League"
+      ],
+      "Harry Kane": [
+        "club:Tottenham",
+        "club:Bayern Monaco",
+        "nazione:Inghilterra"
+      ],
+      "Son Heung-min": [
+        "club:Bayer Leverkusen",
+        "club:Tottenham",
+        "nazione:Corea del Sud"
+      ],
+      "Hugo Lloris": [
+        "club:Lione",
+        "club:Tottenham",
+        "nazione:Francia",
+        "trofeo:Mondiale"
+      ],
+      "Dele Alli": [
+        "club:Tottenham",
+        "nazione:Inghilterra"
+      ],
+      "Christian Eriksen": [
+        "club:Ajax",
+        "club:Tottenham",
+        "club:Inter",
+        "club:Brentford",
+        "club:Manchester United",
+        "nazione:Danimarca"
+      ],
+      "Jan Vertonghen": [
+        "club:Ajax",
+        "club:Tottenham",
+        "nazione:Belgio"
+      ],
+      "Toby Alderweireld": [
+        "club:Ajax",
+        "club:Atletico Madrid",
+        "club:Southampton",
+        "club:Tottenham",
+        "nazione:Belgio"
+      ],
+      "Moussa Sissoko": [
+        "club:Tolosa",
+        "club:Newcastle",
+        "club:Tottenham",
+        "club:Watford",
+        "nazione:Francia"
+      ],
+      "Richarlison": [
+        "club:Watford",
+        "club:Tottenham",
+        "nazione:Brasile"
+      ],
+      "Tim Howard": [
+        "club:Manchester United",
+        "nazione:Stati Uniti"
+      ],
+      "Phil Jagielka": [
+        "club:Sheffield United",
+        "nazione:Inghilterra"
+      ],
+      "Leighton Baines": [
+        "club:Wigan",
+        "nazione:Inghilterra"
+      ],
+      "Jordan Pickford": [
+        "club:Sunderland",
+        "nazione:Inghilterra"
+      ],
+      "Dominic Calvert-Lewin": [
+        "club:Sheffield United",
+        "nazione:Inghilterra"
+      ],
+      "Yerry Mina": [
+        "club:Barcellona",
+        "club:Fiorentina",
+        "nazione:Colombia"
+      ],
+      "Joleon Lescott": [
+        "club:Manchester City",
+        "nazione:Inghilterra"
+      ],
+      "Jack Rodwell": [
+        "club:Manchester City",
+        "club:Sunderland",
+        "nazione:Inghilterra"
+      ],
+      "Gylfi Sigurdsson": [
+        "club:Tottenham",
+        "club:Swansea",
+        "nazione:Islanda"
+      ],
+      "Theo Walcott": [
+        "club:Arsenal",
+        "club:Southampton",
+        "nazione:Inghilterra"
+      ],
+      "Marouane Fellaini": [
+        "club:Manchester United",
+        "nazione:Belgio"
+      ],
+      "Philipp Lahm": [
+        "club:Bayern Monaco",
+        "club:Stoccarda",
+        "nazione:Germania",
+        "trofeo:Champions League",
+        "trofeo:Mondiale"
+      ],
+      "Bastian Schweinsteiger": [
+        "club:Bayern Monaco",
+        "club:Manchester United",
+        "nazione:Germania",
+        "trofeo:Champions League",
+        "trofeo:Mondiale"
+      ],
+      "Manuel Neuer": [
+        "club:Bayern Monaco",
+        "nazione:Germania",
+        "trofeo:Champions League",
+        "trofeo:Mondiale"
+      ],
+      "Thomas Muller": [
+        "club:Bayern Monaco",
+        "nazione:Germania",
+        "trofeo:Champions League",
+        "trofeo:Mondiale"
+      ],
+      "Franck Ribery": [
+        "club:Marsiglia",
+        "club:Bayern Monaco",
+        "nazione:Francia",
+        "trofeo:Champions League"
+      ],
+      "Mario Gotze": [
+        "club:Borussia Dortmund",
+        "club:Bayern Monaco",
+        "nazione:Germania",
+        "trofeo:Champions League",
+        "trofeo:Mondiale"
+      ],
+      "Mats Hummels": [
+        "club:Bayern Monaco",
+        "club:Borussia Dortmund",
+        "club:Roma",
+        "nazione:Germania",
+        "trofeo:Mondiale"
+      ],
+      "Marco Reus": [
+        "club:Borussia Monchengladbach",
+        "club:Borussia Dortmund",
+        "nazione:Germania"
+      ],
+      "Jadon Sancho": [
+        "club:Manchester City",
+        "club:Borussia Dortmund",
+        "club:Manchester United",
+        "club:Chelsea",
+        "nazione:Inghilterra"
+      ],
+      "Pierre-Emerick Aubameyang": [
+        "club:Milan",
+        "club:Saint-Etienne",
+        "club:Borussia Dortmund",
+        "club:Arsenal",
+        "club:Barcellona",
+        "club:Chelsea",
+        "club:Marsiglia",
+        "nazione:Gabon"
+      ],
+      "Michael Ballack": [
+        "club:Bayer Leverkusen",
+        "club:Bayern Monaco",
+        "club:Chelsea",
+        "nazione:Germania"
+      ],
+      "Kevin Volland": [
+        "club:Hoffenheim",
+        "club:Bayer Leverkusen",
+        "club:Monaco",
+        "nazione:Germania"
+      ],
+      "Florian Wirtz": [
+        "club:Bayer Leverkusen",
+        "club:Bayern Monaco",
+        "nazione:Germania"
+      ],
+      "Jeremie Frimpong": [
+        "club:Manchester City",
+        "club:Celtic",
+        "club:Bayer Leverkusen",
+        "club:Liverpool",
+        "nazione:Paesi Bassi"
+      ],
+      "Granit Xhaka": [
+        "club:Borussia Monchengladbach",
+        "club:Arsenal",
+        "club:Bayer Leverkusen",
+        "nazione:Svizzera"
+      ],
+      "Julian Brandt": [
+        "club:Bayer Leverkusen",
+        "club:Borussia Dortmund",
+        "nazione:Germania"
+      ],
+      "Leon Goretzka": [
+        "club:Bayern Monaco",
+        "nazione:Germania"
+      ],
+      "Leroy Sane": [
+        "club:Manchester City",
+        "club:Bayern Monaco",
+        "nazione:Germania",
+        "trofeo:Champions League"
+      ],
+      "Julian Draxler": [
+        "club:Wolfsburg",
+        "club:Paris Saint-Germain",
+        "nazione:Germania",
+        "trofeo:Mondiale"
+      ],
+      "Diego Ribas": [
+        "club:Juventus",
+        "club:Wolfsburg",
+        "club:Atletico Madrid",
+        "nazione:Brasile"
+      ],
+      "Claudio Pizarro": [
+        "club:Bayern Monaco",
+        "club:Chelsea",
+        "nazione:Perù"
+      ],
+      "Miroslav Klose": [
+        "club:Bayern Monaco",
+        "club:Lazio",
+        "nazione:Germania",
+        "trofeo:Mondiale"
+      ],
+      "Naldo": [
+        "club:Wolfsburg",
+        "nazione:Brasile"
+      ],
+      "Xherdan Shaqiri": [
+        "club:Bayern Monaco",
+        "club:Inter",
+        "club:Stoke",
+        "club:Liverpool",
+        "nazione:Svizzera",
+        "trofeo:Champions League"
+      ],
+      "Dayot Upamecano": [
+        "club:Lipsia",
+        "club:Bayern Monaco",
+        "nazione:Francia"
+      ],
+      "Alphonso Davies": [
+        "club:Bayern Monaco",
+        "club:Real Madrid",
+        "nazione:Canada",
+        "trofeo:Champions League"
+      ],
+      "Joshua Kimmich": [
+        "club:Stoccarda",
+        "club:Bayern Monaco",
+        "nazione:Germania",
+        "trofeo:Champions League"
+      ],
+      "Serge Gnabry": [
+        "club:Arsenal",
+        "club:Bayern Monaco",
+        "nazione:Germania",
+        "trofeo:Champions League"
+      ],
+      "Matthijs de Ligt": [
+        "club:Ajax",
+        "club:Juventus",
+        "club:Bayern Monaco",
+        "club:Manchester United",
+        "nazione:Paesi Bassi"
+      ],
+      "Marco Verratti": [
+        "club:Paris Saint-Germain",
+        "nazione:Italia",
+        "trofeo:Europeo"
+      ],
+      "Marquinhos": [
+        "club:Roma",
+        "club:Paris Saint-Germain",
+        "nazione:Brasile"
+      ],
+      "Presnel Kimpembe": [
+        "club:Paris Saint-Germain",
+        "nazione:Francia",
+        "trofeo:Mondiale"
+      ],
+      "Gianluigi Donnarumma": [
+        "club:Milan",
+        "club:Paris Saint-Germain",
+        "club:Manchester City",
+        "nazione:Italia",
+        "trofeo:Europeo"
+      ],
+      "Vitinha": [
+        "club:Porto",
+        "club:Wolverhampton",
+        "club:Paris Saint-Germain",
+        "nazione:Portogallo"
+      ],
+      "Javier Pastore": [
+        "club:Palermo",
+        "club:Paris Saint-Germain",
+        "club:Roma",
+        "nazione:Argentina"
+      ],
+      "Thiago Motta": [
+        "club:Atletico Madrid",
+        "club:Barcellona",
+        "club:Inter",
+        "club:Paris Saint-Germain",
+        "nazione:Italia",
+        "trofeo:Champions League"
+      ],
+      "Dimitri Payet": [
+        "club:Saint-Etienne",
+        "club:Marsiglia",
+        "club:West Ham",
+        "nazione:Francia"
+      ],
+      "Steve Mandanda": [
+        "club:Marsiglia",
+        "club:Crystal Palace",
+        "club:Rennes",
+        "nazione:Francia",
+        "trofeo:Mondiale"
+      ],
+      "Andre-Pierre Gignac": [
+        "club:Tolosa",
+        "club:Marsiglia",
+        "nazione:Francia"
+      ],
+      "Mathieu Valbuena": [
+        "club:Marsiglia",
+        "club:Lione",
+        "club:Dinamo Mosca",
+        "nazione:Francia"
+      ],
+      "Samir Nasri": [
+        "club:Marsiglia",
+        "club:Arsenal",
+        "club:Manchester City",
+        "club:Sevilla",
+        "nazione:Francia"
+      ],
+      "Alexandre Lacazette": [
+        "club:Lione",
+        "club:Arsenal",
+        "nazione:Francia"
+      ],
+      "Nabil Fekir": [
+        "club:Lione",
+        "club:Betis",
+        "nazione:Francia",
+        "trofeo:Mondiale"
+      ],
+      "Corentin Tolisso": [
+        "club:Lione",
+        "club:Bayern Monaco",
+        "nazione:Francia",
+        "trofeo:Champions League",
+        "trofeo:Mondiale"
+      ],
+      "Moussa Dembele": [
+        "club:Fulham",
+        "club:Celtic",
+        "club:Lione",
+        "club:Atletico Madrid",
+        "nazione:Francia"
+      ],
+      "Houssem Aouar": [
+        "club:Lione",
+        "club:Roma",
+        "nazione:Algeria"
+      ],
+      "Thomas Lemar": [
+        "club:Monaco",
+        "club:Atletico Madrid",
+        "nazione:Francia",
+        "trofeo:Mondiale"
+      ],
+      "Benjamin Mendy": [
+        "club:Marsiglia",
+        "club:Monaco",
+        "club:Manchester City",
+        "nazione:Francia",
+        "trofeo:Mondiale"
+      ],
+      "Djibril Sidibe": [
+        "club:Monaco",
+        "nazione:Francia"
+      ],
+      "Nicolas Pepe": [
+        "club:Angers",
+        "club:Arsenal",
+        "nazione:Costa d'Avorio"
+      ],
+      "Renato Sanches": [
+        "club:Benfica",
+        "club:Bayern Monaco",
+        "club:Paris Saint-Germain",
+        "club:Roma",
+        "nazione:Portogallo",
+        "trofeo:Europeo"
+      ],
+      "Jonathan David": [
+        "club:Atletico Madrid",
+        "club:Gent",
+        "club:Juventus",
+        "nazione:Canada"
+      ],
+      "Yves Bissouma": [
+        "club:Brighton",
+        "club:Tottenham",
+        "nazione:Mali"
+      ],
+      "Gabriel Magalhaes": [
+        "club:Arsenal",
+        "nazione:Brasile"
+      ],
+      "Mike Maignan": [
+        "club:Paris Saint-Germain",
+        "club:Milan",
+        "nazione:Francia"
+      ],
+      "Sven Botman": [
+        "club:Ajax",
+        "club:Newcastle",
+        "nazione:Paesi Bassi"
+      ],
+      "Divock Origi": [
+        "club:Liverpool",
+        "club:Milan",
+        "nazione:Belgio",
+        "trofeo:Champions League"
+      ],
+      "Luigi Cevenini": [
+        "club:Inter",
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Giuseppe Meazza": [
+        "club:Inter",
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Luigi Allemandi": [
+        "club:Inter",
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Giovanni Ferrari": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Ugo Locatelli": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Renato Olmi": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Tarcisio Burgnich": [
+        "club:Inter",
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Roberto Boninsegna": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Alessandro Altobelli": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Luigi Sartor": [
+        "club:Inter",
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Dino Baggio": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Aldo Serena": [
+        "club:Inter",
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Liam Brady": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Marco Tardelli": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Hakan Calhanoglu": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Christian Abbiati": [
+        "club:Atletico Madrid",
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "José Altafini": [
+        "club:Juventus",
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Romeo Benetti": [
+        "club:Juventus",
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Enrico Boniforti": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Riccardo Carapellese": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Angelo Colombo": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Mattia De Sciglio": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Pierre Kalulu": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Bruno Mora": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Giuseppe Torriani": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Vinicio Verza": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Pietro Paolo Virdis": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Gianluca Zambrotta": [
+        "club:Barcellona",
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Sergio Gori": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Fabio Grosso": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Vladimir Jugovic": [
+        "club:Atletico Madrid",
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Joao Mario": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Felipe Melo": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Giovanni Pasquale": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Carlo Payer": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Salvatore Schillaci": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Dario Simic": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Paulo Sousa": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Kwadwo Asamoah": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Pietro Anastasi": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Emil Audero": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Angelo Balbiani": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Sergio Battistini": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Savino Bellini": [
+        "club:Inter",
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Aldo Bet": [
+        "club:Inter",
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Mario Bo": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Luciano Bodini": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Ernesto Boglietti": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Cristian Brocchi": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Pietro Bronzini": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Lorenzo Buffon": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Fabrizio Caligara": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Enrico Candiani": [
+        "club:Inter",
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Antonio Candreva": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Fabián Carini": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Franco Causio": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "João Cancelo": [
+        "club:Barcellona",
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Filippo Cavalli": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Carlo Ceresoli": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Angel Chibozo": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Giordano Colausig": [
+        "club:Inter",
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Fulvio Collovati": [
+        "club:Inter",
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Francesco Coppola": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Aristide Coscia": [
+        "club:Inter",
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Antonio Dalmonte": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Oscar Damiani": [
+        "club:Inter",
+        "club:Juventus",
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Edgar Davids": [
+        "club:Barcellona",
+        "club:Inter",
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Luigi De Agostini": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Armando Diena": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Pierino Fanna": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Erminio Favalli": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Rino Ferrario": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Luigi Ferrero": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Salvatore Fresi": [
+        "club:Inter",
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Giorgio Ghezzi": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Guido Gianfardoni": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Thomas Helveg": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Hernanes": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Luciano Marangon": [
+        "club:Inter",
+        "club:Juventus",
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Marcello Mihalich": [
+        "club:Inter",
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Giorgio Morini": [
+        "club:Inter",
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Adrian Mutu": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Giacomo Neri": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Daniel Osvaldo": [
+        "club:Inter",
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Christian Panucci": [
+        "club:Inter",
+        "club:Milan",
+        "club:Real Madrid",
+        "club:Roma"
+      ],
+      "Antonio Payer": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Giuseppe Peruchetti": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Angelo Peruzzi": [
+        "club:Inter",
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Andrea Poli": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Giuliano Sarti": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Pietro Serantoni": [
+        "club:Inter",
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Michele Serena": [
+        "club:Atletico Madrid",
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Francesco Soldera": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Mame Thiam": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Roberto Tricella": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Giuseppe Viani": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "József Viola": [
+        "club:Inter",
+        "club:Juventus"
+      ],
+      "Cristiano Zanetti": [
+        "club:Inter",
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Francesco Acerbi": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Antonio Angelillo": [
+        "club:Inter",
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Mario Balotelli": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Mario Barluzzi": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Celso Battaia": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Julio Bavastro": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Víctor Benítez": [
+        "club:Inter",
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Luigi Binda": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Orlando Bocchi": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Giovanni Bolzoni": [
+        "club:Inter",
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Aquilino Bonfanti": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Franco Bontadini": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Dražen Brnčić": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Angelo Cameroni": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Nazzareno Canuti": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Gustavo Carrer": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Luca Ceccarelli": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Celestino Celio": [
+        "club:Inter",
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Aldo Cevenini": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Carlo Cevenini": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Cesare Cevenini": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Mario Cevenini": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Francesco Coco": [
+        "club:Barcellona",
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Elpidio Coppa": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Antonio Da Sacco": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Cristian Daminuță": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Matteo Darmian": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Renato De Manzano": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Cyril Domoraud": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Alessandro Faiolhe Amantino": [
+        "club:Inter",
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Giuseppe Favalli": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Salvatore Ferraro": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Fabrizio Ferron": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Attila Filkor": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Marco Fossati": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Giorgio Frezzolini": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Guglielmo Gajani": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Maurizio Ganz": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Emilio Gattoronchieri": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Lino Grava": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Umberto Guarnieri": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Andrés Guglielminpietro": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Diego Laxalt": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Stefano Lombardi": [
+        "club:Inter",
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Saul Malatrasi": [
+        "club:Inter",
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Tiziano Manfrin": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Sergio Marchi": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Oliviero Mascheroni": [
+        "club:Inter",
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Kevin Martins": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Bruno Mazza": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Domenico Morfeo": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Sulley Muntari": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Eugenio Negri": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Pierluigi Orlandini": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Giancarlo Pasinato": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Giampaolo Pazzini": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Romano Penzo": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Gino Pivatelli": [
+        "club:Inter",
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Bernardo Poli": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Pietro Rebuzzi": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Hugo Rietmann": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Enrico Rivolta": [
+        "club:Inter",
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Giuseppe Rizzi": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Eugenio Rizzolini": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Ronaldo": [
+        "club:Barcellona",
+        "club:Inter",
+        "club:Milan",
+        "club:Real Madrid"
+      ],
+      "Marco Sala": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Gaetano Salvemini": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Alessandro Savelli": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Nevio Scala": [
+        "club:Inter",
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Massimo Silva": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Matías Silvestre": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Narciso Soldan": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Guglielmo Tornabuoni": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Carlo Villa": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Taribo West": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Arnaldo Woelkel": [
+        "club:Inter",
+        "club:Milan"
+      ],
+      "Alberto Aquilani": [
+        "club:Juventus",
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Mario Bandirali": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Dario Bonetti": [
+        "club:Juventus",
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Guglielmo Borgo": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Marco Borriello": [
+        "club:Juventus",
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Enrico Canfari": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Fabio Capello": [
+        "club:Juventus",
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Nestor Combin": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Virginio De Paoli": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Koni De Winter": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Paolo Di Canio": [
+        "club:Juventus",
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Jack Diment": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Emerson Ferreira da Rosa": [
+        "club:Juventus",
+        "club:Milan",
+        "club:Real Madrid",
+        "club:Roma"
+      ],
+      "Luigi Forlano": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Giuseppe Galderisi": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Aredio Gimona": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Luigi Giunta": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Kurt Hamrin": [
+        "club:Juventus",
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Hans Mayer Heuberger": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Nicola Legrottaglie": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Manuel Locatelli": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Umberto Malvano": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Enzo Maresca": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Amos Mariani": [
+        "club:Juventus",
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Alessandro Matri": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Umberto Menti": [
+        "club:Juventus",
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Egidio Micheloni": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Antonio Mirante": [
+        "club:Juventus",
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Renzo Monti": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Antonio Nocerino": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Gilberto Noletti": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Vincenzo Occhetta": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Alessandro Orlando": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Massimo Orlando": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Piero Pastore": [
+        "club:Juventus",
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Gianluca Pessotto": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Alberto Piccinini": [
+        "club:Juventus",
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Eduardo Ricagni": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Giorgio Rossano": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Paolo Rossi": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Sandro Salvadore": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Cinzio Scagliotti": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Pierino Sodano": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Luciano Spinosi": [
+        "club:Juventus",
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Marco Storari": [
+        "club:Juventus",
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Pietro Vierchowod": [
+        "club:Juventus",
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Paul Arnold Walty": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Alessandro Zagano": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Cristian Zenoni": [
+        "club:Juventus",
+        "club:Milan"
+      ],
+      "Beniamino Abate": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Gennaro Acampora": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Renzo Aldi": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Amedeo Amadei": [
+        "club:Inter",
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Antonio Bacchetti": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Salvatore Bagni": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Claudio Bandoni": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Mauro Bellugi": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Giovanni Bia": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Laurent Blanc": [
+        "club:Barcellona",
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Antonio Blasevich": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Luigi Boccolini": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Ottavio Bugatti": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Giovanni Busoni": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Hugo Campagnaro": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Renato Cappellini": [
+        "club:Inter",
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Benito Carbone": [
+        "club:Inter",
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Domenico Caso": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Sauro Catellani": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Dionisio Collavini": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Francesco Colonnese": [
+        "club:Inter",
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Mirko Conte": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Pacifico Cuman": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Ernani D'Alconzo": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Mario Da Pozzo": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Beniamino Di Giacomo": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Arturo Di Napoli": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Ramón Díaz": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Salvatore Esposito": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Marco Ferrante": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Antonio Ferrara": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Nicola Ferrara": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Pietro Ferraris": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Alberto Fontana": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Alessandro Fontanarosa": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Achille Fraschini": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Giuseppe Gaggiotti": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Walter Gargano": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Mauro Gatti": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Gian Piero Ghio": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Guido Gratton": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Aristide Guarneri": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Juan Jesus": [
+        "club:Inter",
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Spartaco Landini": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Giorgio Mariani": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Natale Masera": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Giuseppe Massa": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Mauro Milanese": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Luca Mondini": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Francesco Moriero": [
+        "club:Inter",
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Sergio Morin": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Harald Nielsen": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Goran Pandev": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Dino Panzanato": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Fausto Pari": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Fausto Pizzi": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Matteo Politano": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Walter Pontel": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Carlo Alberto Quario": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Alberto Reif": [
+        "club:Inter",
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Caio Ribeiro": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Anselmo Robbiati": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Rolando": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Renzo Rovatti": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Erminio Rullo": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Igor' Šalimov": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Gianni Marco Sansonetti": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Cristiano Scapolo": [
+        "club:Inter",
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Mirko Taccola": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Massimo Tarantino": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Ugo Tomeazzi": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Egidio Turchi": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Giovanni Vincenzi": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Luís Vinício": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Umberto Visentin": [
+        "club:Inter",
+        "club:Napoli"
+      ],
+      "Amauri": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Raffaele Ametrano": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Nicola Amoruso": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Salvatore Aronica": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Mario Astorri": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Dario Baccin": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Francesco Baldini": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Emanuele Belardi": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Manuele Blasi": [
+        "club:Juventus",
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Mario Bonivento": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Felice Borel": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Carlo Buscaglia": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Renato Buso": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Pietro Carmignani": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Massimo Carrera": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Luigi Consonni": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Eugenio Corini": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Mario Costa": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Morgan De Sanctis": [
+        "club:Juventus",
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Flavio Emoli": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Camillo Fenili": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Ciro Ferrara": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Daniel Fonseca": [
+        "club:Juventus",
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Gianluca Francesconi": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Luca Fusi": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Agostino Gamba": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Domenico Gariglio": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Bruno Garzena": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Emanuele Giaccherini": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Gianluca Luppi": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Riza Lushta": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Gino Manni": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Massimo Mauro": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Arkadiusz Milik": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Michele Padovano": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Rubens Pasino": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Michele Pazienza": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Fabio Pecchia": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Domenico Penzo": [
+        "club:Juventus",
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Livio Pin": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Fabio Quagliarella": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Leandro Rinaudo": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Humberto Rosa": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Luigi Simoni": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Omar Sívori": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Leonardo Spinazzola": [
+        "club:Juventus",
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Guglielmo Stendardo": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Corrado Tamietti": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Ivano Trotta": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Massimiliano Vieri": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Antonio Vojak": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Oliviero Vojak": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Marcelo Zalayeta": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Marco Zamboni": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Nicola Zanini": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Dino Zoff": [
+        "club:Juventus",
+        "club:Napoli"
+      ],
+      "Ignazio Abate": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Massimo Agostini": [
+        "club:Milan",
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Pietro Arcari": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Pablo Armero": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Roberto Ayala": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Paolo Barison": [
+        "club:Milan",
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Gastone Bean": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Bruno Berra": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Ottavio Bianchi": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Alberto Bigon": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Simone Boldini": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Simone Bonomi": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Giorgio Braglia": [
+        "club:Milan",
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Ruben Buriani": [
+        "club:Milan",
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Angelo Carbone": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Luciano Chiarugi": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Filippo Citterio": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Roberto Colombo": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Matteo Contini": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Ferdinando Coppola": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Nicola Corrent": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "André Cruz": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Daniele Daino": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Samuele Dalla Bona": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Fernando De Napoli": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Walter De Vecchi": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Roberto De Zerbi": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Emanuele Del Vecchio": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Nello Di Costanzo": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Davide Dionigi": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Maurizio Domizzi": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Marco Donadel": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Giovanni Fanello": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Domenico Fontana": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Brenno Fontanesi": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Giovanni Galli": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Enzo Gambaro": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Luigi Ganelli": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Mattia Graffiedi": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Giorgio Granata": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Giuseppe Incocciati": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Marek Jankulovski": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Ulderico Meanti": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Luciano Monticolo": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Steinar Nilsen": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Massimo Oddo": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Noah Okafor": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Angelo Pagotto": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Andrea Petagna": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Nicola Pozzi": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Rocco Ranelli": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Pepe Reina": [
+        "club:Barcellona",
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Leandro Remondini": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Francesco Romano": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Pierluigi Ronzon": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Luigi Rosellini": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Coli Saco": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Alberto Savino": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Roberto Scarnecchia": [
+        "club:Milan",
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Angelo Sormani": [
+        "club:Milan",
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "José Ernesto Sosa": [
+        "club:Atletico Madrid",
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Ivan Strinić": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Mariano Tansini": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Paolo Todeschini": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Gabriel Vasconcelos Ferreira": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Simone Verdi": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Matteo Villa": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Alessandro Vitali": [
+        "club:Milan",
+        "club:Napoli"
+      ],
+      "Adriano Leite Ribeiro": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Luciano Alghisi": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Ermanno Alloni": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Marco Andreolli": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Giulio Balestrini": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Giorgio Barbolini": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Gabriel Batistuta": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Giorgio Bernardin": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Fulvio Bernardini": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Lorenzo Bettini": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Marco Branca": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Nicolás Burdisso": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Mario Bussich": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Amos Cardarelli": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Odoacre Chierico": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Cristian Chivu": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Lampros Choutos": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Franco Cordova": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Vito D'Amato": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Olivier Dacourt": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Marco Delvecchio": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Stefano Desideri": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Luigi Di Biagio": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Dodô": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Angelo Domenghini": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Aldo Donati": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Matteo Ferrari": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Gianluca Festa": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Maurizio Iorio": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Jair da Costa": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Oliver Jürgens": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Houssine Kharja": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Aleksandar Kolarov": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Adem Ljajić": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Fabrizio Lorieri": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Maicon Douglas Sisenando": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Astutillo Malgioglio": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Pedro Manfredini": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Massimo Marazzina": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Enzo Matteucci": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Alfredo Mazzoni": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Siniša Mihajlović": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Egidio Morbello": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Henrix Mxit'aryan": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Archimede Nardi": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "István Nyers": [
+        "club:Barcellona",
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Egisto Pandolfini": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Joaquín Peiró": [
+        "club:Atletico Madrid",
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Sergio Pellizzaro": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "David Pizarro": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Herbert Prohaska": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Sandro Puppo": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Walter Samuel": [
+        "club:Inter",
+        "club:Real Madrid",
+        "club:Roma"
+      ],
+      "Sergio Santarini": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Davide Santon": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Franco Selvaggi": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Paolo Sirena": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Junior Tallo": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Antonio Tempestilli": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Arcadio Venturi": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Pierre Womé": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Franco Zaglio": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Nicola Zalewski": [
+        "club:Inter",
+        "club:Roma"
+      ],
+      "Federico Balzaretti": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Alberto Bertuccelli": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Zbigniew Boniek": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Matteo Brighi": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Helge Bronée": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Luigi Brunella": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Zeki Çelik": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "John Charles": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Antonio Chimenti": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Giacomo Chinellato": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Lelio Colaneri": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Dino da Costa": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Marco De Marchi": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Luis del Sol": [
+        "club:Juventus",
+        "club:Real Madrid",
+        "club:Roma"
+      ],
+      "Angelo Di Livio": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Thomas Häßler": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Dean Huijsen": [
+        "club:Juventus",
+        "club:Real Madrid",
+        "club:Roma"
+      ],
+      "Fausto Landini": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Lamberto Leonardi": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Severino Lojodice": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Simone Loria": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Domenico Maggiora": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Lionello Manfredonia": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Giampaolo Menichelli": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Marco Motta": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Giuliano Musiello": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Bruno Nicolè": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Leandro Paredes": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Luca Pellegrini": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Simone Pepe": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Simone Perrotta": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Gastone Prendato": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Enzo Robotti": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Matías Soulé": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Wojciech Szczęsny": [
+        "club:Barcellona",
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Ernesto Tomasi": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Luca Toni": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Cesare Valinasso": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Roberto Vieri": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Paolo Viganò": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Alessandro Vogliacco": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Mirko Vučinić": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Jonathan Zebina": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Gianfranco Zigoni": [
+        "club:Juventus",
+        "club:Roma"
+      ],
+      "Marco Amelia": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Carlo Ancelotti": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Roberto Antonelli": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Francesco Antonioli": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Aleksandar Aranđelović": [
+        "club:Atletico Madrid",
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Davide Astori": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Giancarlo Bacci": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Gianangelo Barzan": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Andrea Bertolacci": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Renato Bodini": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Fabio Borini": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Cafu": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Alessio Cerci": [
+        "club:Atletico Madrid",
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Andrea Conti": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Bryan Cristante": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Fabio Cudicini": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Amarildo Tavares da Silveira": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Mario David": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Michele De Nadai": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Mattia Destro": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Agostino Di Bartolomei": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Stephan El Shaarawy": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Dīmītrios Eleutheropoulos": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Urby Emanuelson": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Stefano Ferrari": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Alessandro Florenzi": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Alfio Fontana": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Salvatore Foti": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Diego Fuser": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Carlo Galli": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Alcides Ghiggia": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Pietro Grosso": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Nikola Kalinić": [
+        "club:Atletico Madrid",
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Simon Kjær": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Bojan Krkić": [
+        "club:Barcellona",
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Giampiero Maini": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Aldo Maldera": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Amedeo Mangone": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Daniele Massaro": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Enzo Menegotti": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Jérémy Ménez": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Philippe Mexès": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Gunnar Nordahl": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Andrea Pazzagli": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Ambrogio Pelagalli": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Carlo Petrini": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Pier Luigi Pizzaballa": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Pierino Prati": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Mario Renosto": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Alessio Romagnoli": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Alexis Saelemaekers": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Juan Alberto Schiaffino": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Karl-Heinz Schnellinger": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Giuseppe Secchi": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Franco Tancredi": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Sergio Tenente": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Max Tonetto": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Maurizio Turone": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Devis Vásquez": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Francesco Vincenzi": [
+        "club:Milan",
+        "club:Roma"
+      ],
+      "Mariano Arini": [
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Edoardo Artistico": [
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Marco Baroni": [
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Oreste Benatti": [
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Giampiero Betello": [
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Giacomo Blason": [
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Andrea Carnevale": [
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Andrea Cupi": [
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Vittorio Dagianti": [
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Dante Di Benedetti": [
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Amadou Diawara": [
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Fabio Enzo": [
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Moreno Ferrario": [
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Carmine Gautieri": [
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Giuseppe Giannini": [
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Pierluigi Gollini": [
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Gabriele Grossi": [
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Paolo Jacobini": [
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Jean Romaric Kevin Koffi": [
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Naim Krieziu": [
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Raffaele Longo": [
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Giorgio Lucenti": [
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Kōstas Manōlas": [
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Mário Rui": [
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Luigi Milano": [
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Sebastiano Nela": [
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Alberto Orlando": [
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Bruno Pesaola": [
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Adelmo Prenna": [
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Marco Quadrini": [
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Angelo Spanio": [
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Jone Spartano": [
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Giannantonio Sperotto": [
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Jonas Thern": [
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Armando Tre Re": [
+        "club:Napoli",
+        "club:Roma"
+      ],
+      "Demetrio Albertini": [
+        "club:Atletico Madrid",
+        "club:Barcellona",
+        "club:Milan"
+      ],
+      "Rafael Alcântara": [
+        "club:Barcellona",
+        "club:Inter"
+      ],
+      "Kevin-Prince Boateng": [
+        "club:Barcellona",
+        "club:Milan"
+      ],
+      "Winston Bogarde": [
+        "club:Barcellona",
+        "club:Milan"
+      ],
+      "Martín Cáceres": [
+        "club:Barcellona",
+        "club:Juventus"
+      ],
+      "Adrià Carmona": [
+        "club:Barcellona",
+        "club:Milan"
+      ],
+      "Santiago Castro": [
+        "club:Barcellona",
+        "club:Roma"
+      ],
+      "Zoltán Czibor": [
+        "club:Barcellona",
+        "club:Roma"
+      ],
+      "Sergiño Dest": [
+        "club:Barcellona",
+        "club:Milan"
+      ],
+      "Gerard Deulofeu": [
+        "club:Barcellona",
+        "club:Milan"
+      ],
+      "Lucas Digne": [
+        "club:Barcellona",
+        "club:Roma"
+      ],
+      "Christophe Dugarry": [
+        "club:Barcellona",
+        "club:Milan"
+      ],
+      "Emerson Royal": [
+        "club:Barcellona",
+        "club:Milan"
+      ],
+      "Pol García": [
+        "club:Barcellona",
+        "club:Juventus"
+      ],
+      "Ludovic Giuly": [
+        "club:Barcellona",
+        "club:Roma"
+      ],
+      "Nicolás González": [
+        "club:Atletico Madrid",
+        "club:Barcellona",
+        "club:Juventus"
+      ],
+      "Pep Guardiola": [
+        "club:Barcellona",
+        "club:Roma"
+      ],
+      "Alen Halilović": [
+        "club:Barcellona",
+        "club:Milan"
+      ],
+      "Henrique Adriano Buss": [
+        "club:Barcellona",
+        "club:Napoli"
+      ],
+      "Franck Kessié": [
+        "club:Barcellona",
+        "club:Milan"
+      ],
+      "Michael Laudrup": [
+        "club:Barcellona",
+        "club:Juventus",
+        "club:Real Madrid"
+      ],
+      "Maxi López": [
+        "club:Barcellona",
+        "club:Milan"
+      ],
+      "Diego López": [
+        "club:Barcellona",
+        "club:Milan",
+        "club:Real Madrid"
+      ],
+      "José Machín": [
+        "club:Barcellona",
+        "club:Roma"
+      ],
+      "Diego Armando Maradona": [
+        "club:Barcellona",
+        "club:Napoli"
+      ],
+      "Josep Martínez": [
+        "club:Barcellona",
+        "club:Inter"
+      ],
+      "Maxwell Scherrer Cabelino Andrade": [
+        "club:Barcellona",
+        "club:Inter"
+      ],
+      "Arthur Melo": [
+        "club:Barcellona",
+        "club:Juventus"
+      ],
+      "Martín Montoya": [
+        "club:Barcellona",
+        "club:Inter"
+      ],
+      "Javi Moreno": [
+        "club:Atletico Madrid",
+        "club:Barcellona",
+        "club:Milan"
+      ],
+      "Pablo Moreno": [
+        "club:Barcellona",
+        "club:Juventus"
+      ],
+      "Jeison Murillo": [
+        "club:Barcellona",
+        "club:Inter"
+      ],
+      "Neto Murara": [
+        "club:Barcellona",
+        "club:Juventus"
+      ],
+      "Pedro Rodríguez Ledesma": [
+        "club:Barcellona",
+        "club:Roma"
+      ],
+      "Carles Pérez": [
+        "club:Barcellona",
+        "club:Roma"
+      ],
+      "Ricardo Quaresma": [
+        "club:Barcellona",
+        "club:Inter"
+      ],
+      "Michael Reiziger": [
+        "club:Barcellona",
+        "club:Milan"
+      ],
+      "Antonio Sanabria": [
+        "club:Barcellona",
+        "club:Roma"
+      ],
+      "Héctor Scarone": [
+        "club:Barcellona",
+        "club:Inter"
+      ],
+      "Moustapha Seck": [
+        "club:Barcellona",
+        "club:Roma"
+      ],
+      "Nicolae Simatoc": [
+        "club:Barcellona",
+        "club:Inter"
+      ],
+      "Juan Pablo Sorín": [
+        "club:Barcellona",
+        "club:Juventus"
+      ],
+      "Lilian Thuram": [
+        "club:Barcellona",
+        "club:Juventus"
+      ],
+      "Mark van Bommel": [
+        "club:Barcellona",
+        "club:Milan"
+      ],
+      "Thomas Vermaelen": [
+        "club:Barcellona",
+        "club:Roma"
+      ],
+      "Marcos Alonso Mendoza": [
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "Marcos Alonso Peña": [
+        "club:Atletico Madrid",
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "Tha'er Bawab": [
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "Albert Celades": [
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "Marc Cucurella": [
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "Daniel García Lara": [
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "Tzeims Eumorfidīs": [
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "Evaristo de Macedo": [
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "Fernand Goyvaerts": [
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "Andri Guðjohnsen": [
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "Daníel Guðjohnsen": [
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "Gheorghe Hagi": [
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "Julen Lopetegui": [
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "Amador Lorenzo": [
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "Luis Enrique": [
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "Juan Marrero Pérez": [
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "Luis Milla": [
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "Toni Moral": [
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "Lucien Muller": [
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "Fernando Muñoz": [
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "Víctor Muñoz": [
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "Joaquín Navarro Perona": [
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "Jesús María Pereda": [
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "Alfonso Pérez": [
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "Robert Prosinečki": [
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "José Quirante": [
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "Rodri Sánchez": [
+        "club:Atletico Madrid",
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "Pol Roigé": [
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "Josep Samitier": [
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "Manuel Sanchís Martínez": [
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "Javier Saviola": [
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "Bernd Schuster": [
+        "club:Atletico Madrid",
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "Miquel Soler": [
+        "club:Atletico Madrid",
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "Justo Tejada": [
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "Aleix Vidal": [
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "Ricardo Zamora": [
+        "club:Barcellona",
+        "club:Real Madrid"
+      ],
+      "Denzel Dumfries": [
+        "club:Inter",
+        "club:Real Madrid"
+      ],
+      "Roberto Carlos da Silva": [
+        "club:Inter",
+        "club:Real Madrid"
+      ],
+      "Santiago Solari": [
+        "club:Atletico Madrid",
+        "club:Inter",
+        "club:Real Madrid"
+      ],
+      "Borja Valero": [
+        "club:Inter",
+        "club:Real Madrid"
+      ],
+      "Iván Zamorano": [
+        "club:Inter",
+        "club:Real Madrid"
+      ],
+      "Marcelo Djaló": [
+        "club:Juventus",
+        "club:Real Madrid"
+      ],
+      "Juan Esnáider": [
+        "club:Atletico Madrid",
+        "club:Juventus",
+        "club:Real Madrid"
+      ],
+      "Robert Jarni": [
+        "club:Juventus",
+        "club:Real Madrid"
+      ],
+      "Brahim Díaz": [
+        "club:Milan",
+        "club:Real Madrid"
+      ],
+      "Michael Essien": [
+        "club:Milan",
+        "club:Real Madrid"
+      ],
+      "Pablo García": [
+        "club:Milan",
+        "club:Real Madrid"
+      ],
+      "Mario Gila": [
+        "club:Milan",
+        "club:Real Madrid"
+      ],
+      "Klaas-Jan Huntelaar": [
+        "club:Milan",
+        "club:Real Madrid"
+      ],
+      "Luka Jović": [
+        "club:Milan",
+        "club:Real Madrid"
+      ],
+      "Júlio César Santos Correa": [
+        "club:Milan",
+        "club:Real Madrid"
+      ],
+      "Lucas Ontivero": [
+        "club:Milan",
+        "club:Real Madrid"
+      ],
+      "Fernando Redondo": [
+        "club:Milan",
+        "club:Real Madrid"
+      ],
+      "José María Callejón": [
+        "club:Napoli",
+        "club:Real Madrid"
+      ],
+      "Miguel Gutiérrez": [
+        "club:Napoli",
+        "club:Real Madrid"
+      ],
+      "Freddy Rincón": [
+        "club:Napoli",
+        "club:Real Madrid"
+      ],
+      "Cicinho": [
+        "club:Real Madrid",
+        "club:Roma"
+      ],
+      "Fernando Gago": [
+        "club:Real Madrid",
+        "club:Roma"
+      ],
+      "César Gómez": [
+        "club:Real Madrid",
+        "club:Roma"
+      ],
+      "Gabriel Heinze": [
+        "club:Real Madrid",
+        "club:Roma"
+      ],
+      "Iván Helguera": [
+        "club:Real Madrid",
+        "club:Roma"
+      ],
+      "Diego Llorente": [
+        "club:Real Madrid",
+        "club:Roma"
+      ],
+      "Borja Mayoral": [
+        "club:Real Madrid",
+        "club:Roma"
+      ],
+      "Antonio Adán": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Alemão": [
+        "club:Atletico Madrid",
+        "club:Napoli"
+      ],
+      "Pablo Alfaro": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "Manuel Anatol": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Cristian Ansaldi": [
+        "club:Atletico Madrid",
+        "club:Inter"
+      ],
+      "Luis Aragonés": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Juan Carlos Arana": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Fernando Argila": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "Ángel Arocha": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "Sergi Barjuan": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "Pablo Barrios": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Javier Barroso": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Santiago Bernabéu": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Iván Calero": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "José Luis Caminero": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Juan de Cárcer": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Lluís Carreras": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "José Carlos Castillo García-Tudela": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "José Chamot": [
+        "club:Atletico Madrid",
+        "club:Milan"
+      ],
+      "Fabricio Coloccini": [
+        "club:Atletico Madrid",
+        "club:Milan"
+      ],
+      "Cosmin Contra": [
+        "club:Atletico Madrid",
+        "club:Milan"
+      ],
+      "Yanko Daučík": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Paulino de la Fuente": [
+        "club:Atletico Madrid",
+        "club:Inter"
+      ],
+      "Victoriano de Santos": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "Gonzalo Díaz Beitia": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "Dirceu": [
+        "club:Atletico Madrid",
+        "club:Napoli"
+      ],
+      "Álvaro Domínguez Soto": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Emre Belözoğlu": [
+        "club:Atletico Madrid",
+        "club:Inter"
+      ],
+      "Juan José Enríquez Gómez": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "Quique Estebaranz": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "Manel Expósito": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "Santiago Ezquerro": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "Rodrigo Fabri": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Diego Forlán": [
+        "club:Atletico Madrid",
+        "club:Inter"
+      ],
+      "Paulo Futre": [
+        "club:Atletico Madrid",
+        "club:Milan"
+      ],
+      "Luciano Galletti": [
+        "club:Atletico Madrid",
+        "club:Napoli"
+      ],
+      "Carlos Gamarra": [
+        "club:Atletico Madrid",
+        "club:Inter"
+      ],
+      "José Antonio García Calvo": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Delfí Geli": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "Juan Gómez González": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Sergio González Poirrier": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Ramón Grosso": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Miguel Ángel Guerrero Martín": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Mario Hermoso": [
+        "club:Atletico Madrid",
+        "club:Roma"
+      ],
+      "Félix Huete": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Juan Antonio Ipiña": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Iván Rodríguez Rabell": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "Pedro Jaro": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "José Mari": [
+        "club:Atletico Madrid",
+        "club:Milan"
+      ],
+      "Juan Francisco Torres": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "José Manuel Jurado": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Geoffrey Kondogbia": [
+        "club:Atletico Madrid",
+        "club:Inter"
+      ],
+      "Jesús Landáburu": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "Jaime Lazcano": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Clément Lenglet": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "Rafael Lesmes": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Paco Llorente": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Marcos Llorente": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Sebastián Losada": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Luis Javier García Sanz": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "Maniche": [
+        "club:Atletico Madrid",
+        "club:Inter"
+      ],
+      "Manolo": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "Luis Marín Sabater": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "José María Martín": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "Eulogio Martínez": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "Tiago Mendes": [
+        "club:Atletico Madrid",
+        "club:Juventus"
+      ],
+      "Jorge Alberto Mendonça": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "Fran Mérida": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "João Miranda": [
+        "club:Atletico Madrid",
+        "club:Inter"
+      ],
+      "Miguel Ángel Ferrer": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Nahuel Molina": [
+        "club:Atletico Madrid",
+        "club:Roma"
+      ],
+      "Enrique Morán": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "Julio Alberto Moreno": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "José María Movilla": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Fernando Macedo da Silva": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "Luis Olaso": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Rubén Olivera": [
+        "club:Atletico Madrid",
+        "club:Juventus"
+      ],
+      "Pablo Olmedo": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Eduardo Ordóñez": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Daniel Pacheco": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "Joaquín Parra": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Manuel Pazos": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Félix Pérez Marcos": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "José Luis Pérez-Payá": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Marcial Pina": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "Thiago Pitarch": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Julio Pleguezuelo": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "Giacomo Raspadori": [
+        "club:Atletico Madrid",
+        "club:Napoli"
+      ],
+      "Raúl González Blanco": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Miguel Reina": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "Tomás Reñones": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "José Antonio Reyes": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Roberto Jiménez Gago": [
+        "club:Atletico Madrid",
+        "club:Juventus"
+      ],
+      "Juan Carlos Rodríguez": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "Víctor Rofino": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Gaspar Rubio": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Julián Ruete": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Simão Sabrosa": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "Eusebio Sacristán": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "Julio Salinas": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "Hugo Sánchez": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Pruden Sánchez": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Ricard Sánchez": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "Diego Simeone": [
+        "club:Atletico Madrid",
+        "club:Inter"
+      ],
+      "Guilherme Siqueira": [
+        "club:Atletico Madrid",
+        "club:Inter"
+      ],
+      "David Soria": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Alexander Sørloth": [
+        "club:Atletico Madrid",
+        "club:Juventus"
+      ],
+      "Tote": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Monchín Triana": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Manuel Fernández Valderrama": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Cosme Vázquez": [
+        "club:Atletico Madrid",
+        "club:Real Madrid"
+      ],
+      "Giorgio Venturin": [
+        "club:Atletico Madrid",
+        "club:Napoli"
+      ],
+      "Manuel Vidal Hermosa": [
+        "club:Atletico Madrid",
+        "club:Barcellona"
+      ],
+      "Šime Vrsaljko": [
+        "club:Atletico Madrid",
+        "club:Inter"
+      ]
+    }
+  },
+  "formula1": {
+    "criteria": {
+      "team": "Ha corso per",
+      "titolo": "È stato",
+      "nazione": "Nazionalità",
+      "compagno": "È stato compagno di squadra di"
+    },
+    "subjects": {
+      "Fernando Alonso": [
+        "compagno:Esteban Ocon",
+        "compagno:Felipe Massa",
+        "compagno:Giancarlo Fisichella",
+        "compagno:Jacques Villeneuve",
+        "compagno:Jarno Trulli",
+        "compagno:Jenson Button",
+        "compagno:Kimi Raikkonen",
+        "compagno:Lance Stroll",
+        "compagno:Lewis Hamilton",
+        "compagno:Romain Grosjean",
+        "nazione:Spagna",
+        "team:Alpine",
+        "team:Aston Martin",
+        "team:Ferrari",
+        "team:McLaren",
+        "team:Minardi",
+        "team:Renault",
+        "titolo:Campione del mondo"
+      ],
+      "Lewis Hamilton": [
+        "compagno:Charles Leclerc",
+        "compagno:Fernando Alonso",
+        "compagno:Heikki Kovalainen",
+        "compagno:Jenson Button",
+        "compagno:Nico Rosberg",
+        "nazione:Regno Unito",
+        "team:Ferrari",
+        "team:McLaren",
+        "team:Mercedes",
+        "titolo:Campione del mondo"
+      ],
+      "Sebastian Vettel": [
+        "compagno:Charles Leclerc",
+        "compagno:Daniel Ricciardo",
+        "compagno:Kimi Raikkonen",
+        "compagno:Lance Stroll",
+        "compagno:Mark Webber",
+        "compagno:Nick Heidfeld",
+        "compagno:Nico Hulkenberg",
+        "compagno:Robert Kubica",
+        "compagno:Vitantonio Liuzzi",
+        "nazione:Germania",
+        "team:Aston Martin",
+        "team:BMW Sauber",
+        "team:Ferrari",
+        "team:Red Bull",
+        "team:Toro Rosso",
+        "titolo:Campione del mondo"
+      ],
+      "Michael Schumacher": [
+        "compagno:Andrea de Cesaris",
+        "compagno:Eddie Irvine",
+        "compagno:Felipe Massa",
+        "compagno:Johnny Herbert",
+        "compagno:Jos Verstappen",
+        "compagno:Martin Brundle",
+        "compagno:Mika Salo",
+        "compagno:Nelson Piquet",
+        "compagno:Nico Rosberg",
+        "compagno:Riccardo Patrese",
+        "compagno:Roberto Moreno",
+        "compagno:Rubens Barrichello",
+        "nazione:Germania",
+        "team:Benetton",
+        "team:Ferrari",
+        "team:Jordan",
+        "team:Mercedes",
+        "titolo:Campione del mondo"
+      ],
+      "Kimi Raikkonen": [
+        "compagno:Alexander Wurz",
+        "compagno:Antonio Giovinazzi",
+        "compagno:David Coulthard",
+        "compagno:Felipe Massa",
+        "compagno:Fernando Alonso",
+        "compagno:Giancarlo Fisichella",
+        "compagno:Juan Pablo Montoya",
+        "compagno:Luca Badoer",
+        "compagno:Nick Heidfeld",
+        "compagno:Pedro de la Rosa",
+        "compagno:Robert Kubica",
+        "compagno:Romain Grosjean",
+        "compagno:Sebastian Vettel",
+        "nazione:Finlandia",
+        "team:Alfa Romeo",
+        "team:Ferrari",
+        "team:Lotus",
+        "team:McLaren",
+        "team:Sauber",
+        "titolo:Campione del mondo"
+      ],
+      "Max Verstappen": [
+        "compagno:Alexander Albon",
+        "compagno:Carlos Sainz",
+        "compagno:Daniel Ricciardo",
+        "compagno:Daniil Kvyat",
+        "compagno:Liam Lawson",
+        "compagno:Pierre Gasly",
+        "compagno:Sergio Perez",
+        "compagno:Yuki Tsunoda",
+        "nazione:Paesi Bassi",
+        "team:Red Bull",
+        "team:Toro Rosso",
+        "titolo:Campione del mondo"
+      ],
+      "Jenson Button": [
+        "compagno:Fernando Alonso",
+        "compagno:Giancarlo Fisichella",
+        "compagno:Jacques Villeneuve",
+        "compagno:Jarno Trulli",
+        "compagno:Kevin Magnussen",
+        "compagno:Lewis Hamilton",
+        "compagno:Ralf Schumacher",
+        "compagno:Rubens Barrichello",
+        "compagno:Sergio Perez",
+        "compagno:Takuma Sato",
+        "nazione:Regno Unito",
+        "team:BAR",
+        "team:Benetton",
+        "team:Brawn",
+        "team:Honda",
+        "team:McLaren",
+        "team:Renault",
+        "team:Williams",
+        "titolo:Campione del mondo"
+      ],
+      "Nico Rosberg": [
+        "compagno:Alexander Wurz",
+        "compagno:Lewis Hamilton",
+        "compagno:Mark Webber",
+        "compagno:Michael Schumacher",
+        "nazione:Germania",
+        "team:Mercedes",
+        "team:Williams",
+        "titolo:Campione del mondo"
+      ],
+      "Daniel Ricciardo": [
+        "compagno:Daniil Kvyat",
+        "compagno:Esteban Ocon",
+        "compagno:Liam Lawson",
+        "compagno:Max Verstappen",
+        "compagno:Narain Karthikeyan",
+        "compagno:Nico Hulkenberg",
+        "compagno:Nyck de Vries",
+        "compagno:Sebastian Vettel",
+        "compagno:Vitantonio Liuzzi",
+        "compagno:Yuki Tsunoda",
+        "nazione:Australia",
+        "team:AlphaTauri",
+        "team:HRT",
+        "team:McLaren",
+        "team:Red Bull",
+        "team:Renault",
+        "team:Toro Rosso"
+      ],
+      "Sergio Perez": [
+        "compagno:Esteban Ocon",
+        "compagno:Jenson Button",
+        "compagno:Kamui Kobayashi",
+        "compagno:Lance Stroll",
+        "compagno:Max Verstappen",
+        "compagno:Nico Hulkenberg",
+        "nazione:Messico",
+        "team:Force India",
+        "team:McLaren",
+        "team:Racing Point",
+        "team:Red Bull",
+        "team:Sauber"
+      ],
+      "Lance Stroll": [
+        "compagno:Felipe Massa",
+        "compagno:Fernando Alonso",
+        "compagno:Nico Hulkenberg",
+        "compagno:Sebastian Vettel",
+        "compagno:Sergio Perez",
+        "nazione:Canada",
+        "team:Aston Martin",
+        "team:Racing Point",
+        "team:Williams"
+      ],
+      "Charles Leclerc": [
+        "compagno:Carlos Sainz",
+        "compagno:Lewis Hamilton",
+        "compagno:Marcus Ericsson",
+        "compagno:Sebastian Vettel",
+        "nazione:Monaco",
+        "team:Ferrari",
+        "team:Sauber"
+      ],
+      "Carlos Sainz": [
+        "compagno:Alexander Albon",
+        "compagno:Charles Leclerc",
+        "compagno:Daniil Kvyat",
+        "compagno:Max Verstappen",
+        "compagno:Nico Hulkenberg",
+        "compagno:Pierre Gasly",
+        "nazione:Spagna",
+        "team:Ferrari",
+        "team:McLaren",
+        "team:Renault",
+        "team:Toro Rosso",
+        "team:Williams"
+      ],
+      "Valtteri Bottas": [
+        "compagno:Felipe Massa",
+        "compagno:Lewis Hamilton",
+        "nazione:Finlandia",
+        "team:Alfa Romeo",
+        "team:Mercedes",
+        "team:Sauber",
+        "team:Williams"
+      ],
+      "Felipe Massa": [
+        "compagno:Fernando Alonso",
+        "compagno:Giancarlo Fisichella",
+        "compagno:Jacques Villeneuve",
+        "compagno:Kimi Raikkonen",
+        "compagno:Lance Stroll",
+        "compagno:Luca Badoer",
+        "compagno:Michael Schumacher",
+        "compagno:Nick Heidfeld",
+        "nazione:Brasile",
+        "team:Ferrari",
+        "team:Sauber",
+        "team:Williams"
+      ],
+      "Rubens Barrichello": [
+        "compagno:Andrea de Cesaris",
+        "compagno:Eddie Irvine",
+        "compagno:Ivan Capelli",
+        "compagno:Jenson Button",
+        "compagno:Johnny Herbert",
+        "compagno:Jos Verstappen",
+        "compagno:Martin Brundle",
+        "compagno:Michael Schumacher",
+        "compagno:Nico Hulkenberg",
+        "compagno:Thierry Boutsen",
+        "nazione:Brasile",
+        "team:Brawn",
+        "team:Ferrari",
+        "team:Honda",
+        "team:Jordan",
+        "team:Stewart",
+        "team:Williams"
+      ],
+      "Mark Webber": [
+        "compagno:Antonio Pizzonia",
+        "compagno:Christian Klien",
+        "compagno:David Coulthard",
+        "compagno:Nick Heidfeld",
+        "compagno:Nico Rosberg",
+        "compagno:Sebastian Vettel",
+        "nazione:Australia",
+        "team:Jaguar",
+        "team:Minardi",
+        "team:Red Bull",
+        "team:Williams"
+      ],
+      "Nico Hulkenberg": [
+        "compagno:Carlos Sainz",
+        "compagno:Daniel Ricciardo",
+        "compagno:Kevin Magnussen",
+        "compagno:Lance Stroll",
+        "compagno:Rubens Barrichello",
+        "compagno:Sebastian Vettel",
+        "compagno:Sergio Perez",
+        "nazione:Germania",
+        "team:Aston Martin",
+        "team:Force India",
+        "team:Haas",
+        "team:Racing Point",
+        "team:Renault",
+        "team:Sauber",
+        "team:Williams"
+      ],
+      "Esteban Ocon": [
+        "compagno:Daniel Ricciardo",
+        "compagno:Fernando Alonso",
+        "compagno:Pierre Gasly",
+        "compagno:Sergio Perez",
+        "nazione:Francia",
+        "team:Alpine",
+        "team:Force India",
+        "team:Haas",
+        "team:Manor",
+        "team:Racing Point",
+        "team:Renault"
+      ],
+      "Pierre Gasly": [
+        "compagno:Alexander Albon",
+        "compagno:Carlos Sainz",
+        "compagno:Daniil Kvyat",
+        "compagno:Esteban Ocon",
+        "compagno:Max Verstappen",
+        "compagno:Yuki Tsunoda",
+        "nazione:Francia",
+        "team:AlphaTauri",
+        "team:Alpine",
+        "team:Red Bull",
+        "team:Toro Rosso"
+      ],
+      "Lando Norris": [
+        "compagno:Carlos Sainz",
+        "compagno:Daniel Ricciardo",
+        "nazione:Regno Unito",
+        "team:McLaren"
+      ],
+      "George Russell": [
+        "compagno:Lewis Hamilton",
+        "compagno:Robert Kubica",
+        "nazione:Regno Unito",
+        "team:Mercedes",
+        "team:Williams"
+      ],
+      "Damon Hill": [
+        "compagno:Alain Prost",
+        "compagno:Ayrton Senna",
+        "compagno:David Coulthard",
+        "compagno:Heinz-Harald Frentzen",
+        "compagno:Jacques Villeneuve",
+        "compagno:Mika Salo",
+        "compagno:Pedro Diniz",
+        "compagno:Ralf Schumacher",
+        "nazione:Regno Unito",
+        "team:Arrows",
+        "team:Brabham",
+        "team:Jordan",
+        "team:Williams",
+        "titolo:Campione del mondo"
+      ],
+      "Jacques Villeneuve": [
+        "compagno:Damon Hill",
+        "compagno:Felipe Massa",
+        "compagno:Fernando Alonso",
+        "compagno:Heinz-Harald Frentzen",
+        "compagno:Jarno Trulli",
+        "compagno:Jenson Button",
+        "compagno:Mika Salo",
+        "compagno:Nick Heidfeld",
+        "compagno:Olivier Panis",
+        "compagno:Robert Kubica",
+        "compagno:Takuma Sato",
+        "nazione:Canada",
+        "team:BAR",
+        "team:BMW Sauber",
+        "team:Renault",
+        "team:Sauber",
+        "team:Williams",
+        "titolo:Campione del mondo"
+      ],
+      "Mika Hakkinen": [
+        "compagno:Ayrton Senna",
+        "compagno:David Coulthard",
+        "compagno:Johnny Herbert",
+        "compagno:Mark Blundell",
+        "compagno:Martin Brundle",
+        "compagno:Nigel Mansell",
+        "compagno:Philippe Alliot",
+        "nazione:Finlandia",
+        "team:Lotus",
+        "team:McLaren",
+        "titolo:Campione del mondo"
+      ],
+      "Ayrton Senna": [
+        "compagno:Alain Prost",
+        "compagno:Damon Hill",
+        "compagno:David Coulthard",
+        "compagno:Elio de Angelis",
+        "compagno:Gerhard Berger",
+        "compagno:Mika Hakkinen",
+        "compagno:Pierluigi Martini",
+        "compagno:Roberto Moreno",
+        "compagno:Satoru Nakajima",
+        "nazione:Brasile",
+        "team:Lotus",
+        "team:McLaren",
+        "team:Toleman",
+        "team:Williams",
+        "titolo:Campione del mondo"
+      ],
+      "Alain Prost": [
+        "compagno:Ayrton Senna",
+        "compagno:Damon Hill",
+        "compagno:Eddie Cheever",
+        "compagno:Gianni Morbidelli",
+        "compagno:Jean Alesi",
+        "compagno:Keke Rosberg",
+        "compagno:Nigel Mansell",
+        "compagno:Niki Lauda",
+        "compagno:Rene Arnoux",
+        "compagno:Stefan Johansson",
+        "nazione:Francia",
+        "team:Ferrari",
+        "team:McLaren",
+        "team:Renault",
+        "team:Williams",
+        "titolo:Campione del mondo"
+      ],
+      "Nelson Piquet": [
+        "compagno:Alessandro Nannini",
+        "compagno:Michael Schumacher",
+        "compagno:Nigel Mansell",
+        "compagno:Niki Lauda",
+        "compagno:Riccardo Patrese",
+        "compagno:Roberto Moreno",
+        "compagno:Satoru Nakajima",
+        "nazione:Brasile",
+        "team:Benetton",
+        "team:Brabham",
+        "team:Lotus",
+        "team:Williams",
+        "titolo:Campione del mondo"
+      ],
+      "Niki Lauda": [
+        "compagno:Alain Prost",
+        "compagno:Carlos Reutemann",
+        "compagno:Gilles Villeneuve",
+        "compagno:Nelson Piquet",
+        "compagno:Ronnie Peterson",
+        "nazione:Austria",
+        "team:BRM",
+        "team:Brabham",
+        "team:Ferrari",
+        "team:March",
+        "team:McLaren",
+        "titolo:Campione del mondo"
+      ],
+      "Jody Scheckter": [
+        "compagno:Gilles Villeneuve",
+        "compagno:Patrick Depailler",
+        "nazione:Sudafrica",
+        "team:Ferrari",
+        "team:McLaren",
+        "team:Tyrrell",
+        "team:Wolf",
+        "titolo:Campione del mondo"
+      ],
+      "Gerhard Berger": [
+        "compagno:Alexander Wurz",
+        "compagno:Ayrton Senna",
+        "compagno:Jean Alesi",
+        "compagno:Michele Alboreto",
+        "compagno:Nicola Larini",
+        "compagno:Nigel Mansell",
+        "compagno:Thierry Boutsen",
+        "nazione:Austria",
+        "team:ATS",
+        "team:Arrows",
+        "team:Benetton",
+        "team:Ferrari",
+        "team:McLaren"
+      ],
+      "Jean Alesi": [
+        "compagno:Alain Prost",
+        "compagno:Alexander Wurz",
+        "compagno:Gerhard Berger",
+        "compagno:Gianni Morbidelli",
+        "compagno:Heinz-Harald Frentzen",
+        "compagno:Ivan Capelli",
+        "compagno:Jarno Trulli",
+        "compagno:Johnny Herbert",
+        "compagno:Michele Alboreto",
+        "compagno:Nick Heidfeld",
+        "compagno:Nicola Larini",
+        "compagno:Pedro Diniz",
+        "compagno:Satoru Nakajima",
+        "nazione:Francia",
+        "team:Benetton",
+        "team:Ferrari",
+        "team:Jordan",
+        "team:Prost",
+        "team:Sauber",
+        "team:Tyrrell"
+      ],
+      "Giancarlo Fisichella": [
+        "compagno:Adrian Sutil",
+        "compagno:Alexander Wurz",
+        "compagno:Felipe Massa",
+        "compagno:Fernando Alonso",
+        "compagno:Heikki Kovalainen",
+        "compagno:Jenson Button",
+        "compagno:Kimi Raikkonen",
+        "compagno:Luca Badoer",
+        "compagno:Ralf Schumacher",
+        "compagno:Takuma Sato",
+        "compagno:Vitantonio Liuzzi",
+        "nazione:Italia",
+        "team:Benetton",
+        "team:Ferrari",
+        "team:Force India",
+        "team:Jordan",
+        "team:Minardi",
+        "team:Renault",
+        "team:Sauber"
+      ],
+      "Jarno Trulli": [
+        "compagno:Fernando Alonso",
+        "compagno:Heikki Kovalainen",
+        "compagno:Heinz-Harald Frentzen",
+        "compagno:Jacques Villeneuve",
+        "compagno:Jean Alesi",
+        "compagno:Jenson Button",
+        "compagno:Kamui Kobayashi",
+        "compagno:Karun Chandhok",
+        "compagno:Olivier Panis",
+        "compagno:Ralf Schumacher",
+        "compagno:Timo Glock",
+        "compagno:Ukyo Katayama",
+        "nazione:Italia",
+        "team:Jordan",
+        "team:Lotus",
+        "team:Minardi",
+        "team:Prost",
+        "team:Renault",
+        "team:Toyota"
+      ],
+      "Heikki Kovalainen": [
+        "compagno:Giancarlo Fisichella",
+        "compagno:Jarno Trulli",
+        "compagno:Karun Chandhok",
+        "compagno:Lewis Hamilton",
+        "compagno:Vitaly Petrov",
+        "nazione:Finlandia",
+        "team:Caterham",
+        "team:Lotus",
+        "team:McLaren",
+        "team:Renault"
+      ],
+      "Romain Grosjean": [
+        "compagno:Fernando Alonso",
+        "compagno:Kevin Magnussen",
+        "compagno:Kimi Raikkonen",
+        "nazione:Francia",
+        "team:Haas",
+        "team:Lotus",
+        "team:Renault"
+      ],
+      "Kevin Magnussen": [
+        "compagno:Jenson Button",
+        "compagno:Nico Hulkenberg",
+        "compagno:Romain Grosjean",
+        "nazione:Danimarca",
+        "team:Haas",
+        "team:McLaren",
+        "team:Renault"
+      ],
+      "Daniil Kvyat": [
+        "compagno:Alexander Albon",
+        "compagno:Carlos Sainz",
+        "compagno:Daniel Ricciardo",
+        "compagno:Max Verstappen",
+        "compagno:Pierre Gasly",
+        "nazione:Russia",
+        "team:AlphaTauri",
+        "team:Red Bull",
+        "team:Toro Rosso"
+      ],
+      "Yuki Tsunoda": [
+        "compagno:Daniel Ricciardo",
+        "compagno:Liam Lawson",
+        "compagno:Max Verstappen",
+        "compagno:Nyck de Vries",
+        "compagno:Pierre Gasly",
+        "nazione:Giappone",
+        "team:AlphaTauri",
+        "team:Red Bull"
+      ],
+      "Oscar Piastri": [
+        "nazione:Australia",
+        "team:McLaren"
+      ],
+      "Nigel Mansell": [
+        "compagno:Alain Prost",
+        "compagno:Elio de Angelis",
+        "compagno:Gerhard Berger",
+        "compagno:Keke Rosberg",
+        "compagno:Mario Andretti",
+        "compagno:Mark Blundell",
+        "compagno:Mika Hakkinen",
+        "compagno:Nelson Piquet",
+        "compagno:Riccardo Patrese",
+        "nazione:Regno Unito",
+        "team:Ferrari",
+        "team:Lotus",
+        "team:McLaren",
+        "team:Williams",
+        "titolo:Campione del mondo"
+      ],
+      "Emerson Fittipaldi": [
+        "compagno:Jochen Rindt",
+        "compagno:Keke Rosberg",
+        "compagno:Ronnie Peterson",
+        "nazione:Brasile",
+        "team:Fittipaldi",
+        "team:Lotus",
+        "team:McLaren",
+        "titolo:Campione del mondo"
+      ],
+      "Jackie Stewart": [
+        "compagno:Graham Hill",
+        "compagno:Ronnie Peterson",
+        "nazione:Regno Unito",
+        "team:BRM",
+        "team:March",
+        "team:Matra",
+        "team:Tyrrell",
+        "titolo:Campione del mondo"
+      ],
+      "Jim Clark": [
+        "compagno:Graham Hill",
+        "compagno:Mario Andretti",
+        "nazione:Regno Unito",
+        "team:Lotus",
+        "titolo:Campione del mondo"
+      ],
+      "Graham Hill": [
+        "compagno:Carlos Reutemann",
+        "compagno:Jochen Rindt",
+        "compagno:Mario Andretti",
+        "nazione:Regno Unito",
+        "team:BRM",
+        "team:Brabham",
+        "team:Lotus",
+        "titolo:Campione del mondo"
+      ],
+      "Juan Manuel Fangio": [
+        "nazione:Argentina",
+        "team:Alfa Romeo",
+        "team:Ferrari",
+        "team:Maserati",
+        "team:Mercedes",
+        "titolo:Campione del mondo"
+      ],
+      "Alberto Ascari": [
+        "nazione:Italia",
+        "team:Ferrari",
+        "team:Lancia",
+        "team:Maserati",
+        "titolo:Campione del mondo"
+      ],
+      "Giuseppe Farina": [
+        "nazione:Italia",
+        "team:Alfa Romeo",
+        "team:Ferrari",
+        "titolo:Campione del mondo"
+      ],
+      "Keke Rosberg": [
+        "compagno:Alain Prost",
+        "compagno:Carlos Reutemann",
+        "compagno:Emerson Fittipaldi",
+        "compagno:Nigel Mansell",
+        "nazione:Finlandia",
+        "team:Fittipaldi",
+        "team:McLaren",
+        "team:Williams",
+        "titolo:Campione del mondo"
+      ],
+      "Mario Andretti": [
+        "compagno:Bruno Giacomelli",
+        "compagno:Carlos Reutemann",
+        "compagno:Elio de Angelis",
+        "compagno:Graham Hill",
+        "compagno:Jochen Rindt",
+        "compagno:Nigel Mansell",
+        "compagno:Ronnie Peterson",
+        "nazione:Stati Uniti",
+        "team:Alfa Romeo",
+        "team:Ferrari",
+        "team:Lotus",
+        "team:Parnelli",
+        "titolo:Campione del mondo"
+      ],
+      "Jochen Rindt": [
+        "compagno:Emerson Fittipaldi",
+        "compagno:Graham Hill",
+        "compagno:Mario Andretti",
+        "nazione:Austria",
+        "team:Brabham",
+        "team:Cooper",
+        "team:Lotus",
+        "titolo:Campione del mondo"
+      ],
+      "Denny Hulme": [
+        "compagno:Emerson Fittipaldi",
+        "nazione:Nuova Zelanda",
+        "team:Brabham",
+        "team:McLaren",
+        "titolo:Campione del mondo"
+      ],
+      "John Surtees": [
+        "nazione:Regno Unito",
+        "team:BRM",
+        "team:Ferrari",
+        "team:Honda",
+        "team:Lotus",
+        "titolo:Campione del mondo"
+      ],
+      "Phil Hill": [
+        "team:Ferrari",
+        "team:ATS",
+        "nazione:Stati Uniti",
+        "titolo:Campione del mondo"
+      ],
+      "Jack Brabham": [
+        "compagno:Jochen Rindt",
+        "nazione:Australia",
+        "team:Brabham",
+        "team:Cooper",
+        "titolo:Campione del mondo"
+      ],
+      "Alexander Albon": [
+        "compagno:Carlos Sainz",
+        "compagno:Daniil Kvyat",
+        "compagno:Max Verstappen",
+        "compagno:Nyck de Vries",
+        "compagno:Pierre Gasly",
+        "nazione:Thailandia",
+        "team:Red Bull",
+        "team:Toro Rosso",
+        "team:Williams"
+      ],
+      "David Coulthard": [
+        "compagno:Ayrton Senna",
+        "compagno:Christian Klien",
+        "compagno:Damon Hill",
+        "compagno:Kimi Raikkonen",
+        "compagno:Mark Webber",
+        "compagno:Mika Hakkinen",
+        "nazione:Regno Unito",
+        "team:McLaren",
+        "team:Red Bull",
+        "team:Williams"
+      ],
+      "Ralf Schumacher": [
+        "compagno:Antonio Pizzonia",
+        "compagno:Damon Hill",
+        "compagno:Giancarlo Fisichella",
+        "compagno:Jarno Trulli",
+        "compagno:Jenson Button",
+        "compagno:Juan Pablo Montoya",
+        "compagno:Marc Gene",
+        "nazione:Germania",
+        "team:Jordan",
+        "team:Toyota",
+        "team:Williams"
+      ],
+      "Juan Pablo Montoya": [
+        "compagno:Alexander Wurz",
+        "compagno:Antonio Pizzonia",
+        "compagno:Kimi Raikkonen",
+        "compagno:Marc Gene",
+        "compagno:Pedro de la Rosa",
+        "compagno:Ralf Schumacher",
+        "nazione:Colombia",
+        "team:McLaren",
+        "team:Williams"
+      ],
+      "Robert Kubica": [
+        "compagno:Antonio Giovinazzi",
+        "compagno:Jacques Villeneuve",
+        "compagno:Kimi Raikkonen",
+        "compagno:Nick Heidfeld",
+        "compagno:Sebastian Vettel",
+        "compagno:Vitaly Petrov",
+        "nazione:Polonia",
+        "team:Alfa Romeo",
+        "team:BMW Sauber",
+        "team:Renault",
+        "team:Williams"
+      ],
+      "Nick Heidfeld": [
+        "compagno:Antonio Pizzonia",
+        "compagno:Bruno Senna",
+        "compagno:Felipe Massa",
+        "compagno:Heinz-Harald Frentzen",
+        "compagno:Jacques Villeneuve",
+        "compagno:Jean Alesi",
+        "compagno:Kimi Raikkonen",
+        "compagno:Mark Webber",
+        "compagno:Robert Kubica",
+        "compagno:Sebastian Vettel",
+        "compagno:Timo Glock",
+        "compagno:Vitaly Petrov",
+        "nazione:Germania",
+        "team:BMW Sauber",
+        "team:Jordan",
+        "team:Lotus",
+        "team:Prost",
+        "team:Renault",
+        "team:Sauber",
+        "team:Williams"
+      ],
+      "Riccardo Patrese": [
+        "compagno:Andrea de Cesaris",
+        "compagno:Derek Warwick",
+        "compagno:Eddie Cheever",
+        "compagno:Elio de Angelis",
+        "compagno:Michael Schumacher",
+        "compagno:Nelson Piquet",
+        "compagno:Nigel Mansell",
+        "compagno:Thierry Boutsen",
+        "nazione:Italia",
+        "team:Alfa Romeo",
+        "team:Arrows",
+        "team:Benetton",
+        "team:Brabham",
+        "team:Williams"
+      ],
+      "Eddie Irvine": [
+        "compagno:Andrea de Cesaris",
+        "compagno:Ivan Capelli",
+        "compagno:Johnny Herbert",
+        "compagno:Michael Schumacher",
+        "compagno:Mika Salo",
+        "compagno:Pedro de la Rosa",
+        "compagno:Rubens Barrichello",
+        "compagno:Thierry Boutsen",
+        "nazione:Regno Unito",
+        "team:Ferrari",
+        "team:Jaguar",
+        "team:Jordan"
+      ],
+      "Mika Salo": [
+        "compagno:Damon Hill",
+        "compagno:Eddie Irvine",
+        "compagno:Jacques Villeneuve",
+        "compagno:Johnny Herbert",
+        "compagno:Michael Schumacher",
+        "compagno:Pedro Diniz",
+        "compagno:Ukyo Katayama",
+        "nazione:Finlandia",
+        "team:Arrows",
+        "team:BAR",
+        "team:Ferrari",
+        "team:Lotus",
+        "team:Sauber",
+        "team:Toyota",
+        "team:Tyrrell"
+      ],
+      "Johnny Herbert": [
+        "compagno:Alessandro Nannini",
+        "compagno:Derek Warwick",
+        "compagno:Eddie Irvine",
+        "compagno:Gianni Morbidelli",
+        "compagno:Heinz-Harald Frentzen",
+        "compagno:Jean Alesi",
+        "compagno:Michael Schumacher",
+        "compagno:Mika Hakkinen",
+        "compagno:Mika Salo",
+        "compagno:Nicola Larini",
+        "compagno:Rubens Barrichello",
+        "nazione:Regno Unito",
+        "team:Benetton",
+        "team:Jaguar",
+        "team:Lotus",
+        "team:Sauber",
+        "team:Stewart"
+      ],
+      "Ivan Capelli": [
+        "compagno:Eddie Irvine",
+        "compagno:Jean Alesi",
+        "compagno:Martin Brundle",
+        "compagno:Nicola Larini",
+        "compagno:Rubens Barrichello",
+        "compagno:Thierry Boutsen",
+        "nazione:Italia",
+        "team:Ferrari",
+        "team:Jordan",
+        "team:Leyton House",
+        "team:March",
+        "team:Tyrrell"
+      ],
+      "Pedro de la Rosa": [
+        "compagno:Alexander Wurz",
+        "compagno:Eddie Irvine",
+        "compagno:Jos Verstappen",
+        "compagno:Juan Pablo Montoya",
+        "compagno:Kamui Kobayashi",
+        "compagno:Kimi Raikkonen",
+        "compagno:Narain Karthikeyan",
+        "nazione:Spagna",
+        "team:Arrows",
+        "team:HRT",
+        "team:Jaguar",
+        "team:McLaren",
+        "team:Sauber"
+      ],
+      "Sebastien Buemi": [
+        "nazione:Svizzera",
+        "team:Toro Rosso"
+      ],
+      "Jaime Alguersuari": [
+        "nazione:Spagna",
+        "team:Toro Rosso"
+      ],
+      "Vitaly Petrov": [
+        "compagno:Bruno Senna",
+        "compagno:Heikki Kovalainen",
+        "compagno:Nick Heidfeld",
+        "compagno:Robert Kubica",
+        "nazione:Russia",
+        "team:Caterham",
+        "team:Renault"
+      ],
+      "Bruno Senna": [
+        "compagno:Christian Klien",
+        "compagno:Karun Chandhok",
+        "compagno:Nick Heidfeld",
+        "compagno:Vitaly Petrov",
+        "nazione:Brasile",
+        "team:HRT",
+        "team:Renault",
+        "team:Williams"
+      ],
+      "Paul di Resta": [
+        "compagno:Adrian Sutil",
+        "compagno:Nico Hulkenberg",
+        "nazione:Regno Unito",
+        "team:Force India"
+      ],
+      "Adrian Sutil": [
+        "compagno:Giancarlo Fisichella",
+        "compagno:Vitantonio Liuzzi",
+        "nazione:Germania",
+        "team:Force India",
+        "team:Sauber",
+        "team:Spyker"
+      ],
+      "Vitantonio Liuzzi": [
+        "compagno:Adrian Sutil",
+        "compagno:Daniel Ricciardo",
+        "compagno:Giancarlo Fisichella",
+        "compagno:Narain Karthikeyan",
+        "compagno:Sebastian Vettel",
+        "nazione:Italia",
+        "team:Force India",
+        "team:HRT",
+        "team:Toro Rosso"
+      ],
+      "Timo Glock": [
+        "compagno:Jarno Trulli",
+        "compagno:Kamui Kobayashi",
+        "compagno:Nick Heidfeld",
+        "nazione:Germania",
+        "team:Jordan",
+        "team:Marussia",
+        "team:Toyota",
+        "team:Virgin"
+      ],
+      "Kamui Kobayashi": [
+        "compagno:Jarno Trulli",
+        "compagno:Marcus Ericsson",
+        "compagno:Pedro de la Rosa",
+        "compagno:Sergio Perez",
+        "compagno:Timo Glock",
+        "nazione:Giappone",
+        "team:Caterham",
+        "team:Sauber",
+        "team:Toyota"
+      ],
+      "Marcus Ericsson": [
+        "compagno:Antonio Giovinazzi",
+        "compagno:Charles Leclerc",
+        "compagno:Kamui Kobayashi",
+        "nazione:Svezia",
+        "team:Caterham",
+        "team:Sauber"
+      ],
+      "Antonio Giovinazzi": [
+        "compagno:Kimi Raikkonen",
+        "compagno:Marcus Ericsson",
+        "compagno:Robert Kubica",
+        "nazione:Italia",
+        "team:Alfa Romeo",
+        "team:Sauber"
+      ],
+      "Sergey Sirotkin": [
+        "team:Williams",
+        "nazione:Russia"
+      ],
+      "Nikita Mazepin": [
+        "nazione:Russia",
+        "team:Haas"
+      ],
+      "Mick Schumacher": [
+        "compagno:Kevin Magnussen",
+        "nazione:Germania",
+        "team:Haas"
+      ],
+      "Guanyu Zhou": [
+        "nazione:Cina",
+        "team:Alfa Romeo",
+        "team:Sauber"
+      ],
+      "Logan Sargeant": [
+        "compagno:Alexander Albon",
+        "nazione:Stati Uniti",
+        "team:Williams"
+      ],
+      "Nyck de Vries": [
+        "compagno:Alexander Albon",
+        "compagno:Daniel Ricciardo",
+        "compagno:Liam Lawson",
+        "compagno:Yuki Tsunoda",
+        "nazione:Paesi Bassi",
+        "team:AlphaTauri",
+        "team:Williams"
+      ],
+      "Franco Colapinto": [
+        "compagno:Alexander Albon",
+        "compagno:Pierre Gasly",
+        "nazione:Argentina",
+        "team:Alpine",
+        "team:Williams"
+      ],
+      "Liam Lawson": [
+        "compagno:Daniel Ricciardo",
+        "compagno:Max Verstappen",
+        "compagno:Nyck de Vries",
+        "compagno:Yuki Tsunoda",
+        "nazione:Nuova Zelanda",
+        "team:AlphaTauri",
+        "team:Red Bull"
+      ],
+      "Oliver Bearman": [
+        "compagno:Carlos Sainz",
+        "compagno:Charles Leclerc",
+        "compagno:Esteban Ocon",
+        "nazione:Regno Unito",
+        "team:Ferrari",
+        "team:Haas"
+      ],
+      "Stoffel Vandoorne": [
+        "compagno:Fernando Alonso",
+        "compagno:Jenson Button",
+        "nazione:Belgio",
+        "team:McLaren"
+      ],
+      "Jolyon Palmer": [
+        "compagno:Kevin Magnussen",
+        "compagno:Nico Hulkenberg",
+        "nazione:Regno Unito",
+        "team:Renault"
+      ],
+      "Pascal Wehrlein": [
+        "compagno:Antonio Giovinazzi",
+        "compagno:Esteban Ocon",
+        "compagno:Marcus Ericsson",
+        "nazione:Germania",
+        "team:Manor",
+        "team:Sauber"
+      ],
+      "Brendon Hartley": [
+        "compagno:Carlos Sainz",
+        "compagno:Daniil Kvyat",
+        "compagno:Pierre Gasly",
+        "nazione:Nuova Zelanda",
+        "team:Toro Rosso"
+      ],
+      "Felipe Nasr": [
+        "compagno:Marcus Ericsson",
+        "nazione:Brasile",
+        "team:Sauber"
+      ],
+      "Will Stevens": [
+        "team:Caterham",
+        "team:Manor",
+        "nazione:Regno Unito"
+      ],
+      "Jules Bianchi": [
+        "nazione:Francia",
+        "team:Marussia"
+      ],
+      "Max Chilton": [
+        "nazione:Regno Unito",
+        "team:Marussia"
+      ],
+      "Charles Pic": [
+        "team:Marussia",
+        "team:Caterham",
+        "nazione:Francia"
+      ],
+      "Narain Karthikeyan": [
+        "compagno:Daniel Ricciardo",
+        "compagno:Pedro de la Rosa",
+        "compagno:Vitantonio Liuzzi",
+        "nazione:India",
+        "team:HRT",
+        "team:Jordan"
+      ],
+      "Karun Chandhok": [
+        "compagno:Bruno Senna",
+        "compagno:Christian Klien",
+        "compagno:Heikki Kovalainen",
+        "compagno:Jarno Trulli",
+        "nazione:India",
+        "team:HRT",
+        "team:Lotus"
+      ],
+      "Christian Klien": [
+        "compagno:Bruno Senna",
+        "compagno:David Coulthard",
+        "compagno:Karun Chandhok",
+        "compagno:Mark Webber",
+        "nazione:Austria",
+        "team:HRT",
+        "team:Jaguar",
+        "team:Red Bull"
+      ],
+      "Scott Speed": [
+        "compagno:Sebastian Vettel",
+        "compagno:Vitantonio Liuzzi",
+        "nazione:Stati Uniti",
+        "team:Toro Rosso"
+      ],
+      "Anthony Davidson": [
+        "compagno:Jenson Button",
+        "compagno:Mark Webber",
+        "compagno:Takuma Sato",
+        "nazione:Regno Unito",
+        "team:BAR",
+        "team:Minardi",
+        "team:Super Aguri"
+      ],
+      "Takuma Sato": [
+        "compagno:Giancarlo Fisichella",
+        "compagno:Jacques Villeneuve",
+        "compagno:Jenson Button",
+        "nazione:Giappone",
+        "team:BAR",
+        "team:Jordan",
+        "team:Super Aguri"
+      ],
+      "Olivier Panis": [
+        "compagno:Aguri Suzuki",
+        "compagno:Jacques Villeneuve",
+        "compagno:Jarno Trulli",
+        "compagno:Pedro Diniz",
+        "nazione:Francia",
+        "team:BAR",
+        "team:Ligier",
+        "team:Prost",
+        "team:Toyota"
+      ],
+      "Jacques Laffite": [
+        "team:Ligier",
+        "team:Williams",
+        "nazione:Francia"
+      ],
+      "Rene Arnoux": [
+        "compagno:Alain Prost",
+        "compagno:Michele Alboreto",
+        "compagno:Philippe Alliot",
+        "compagno:Stefan Johansson",
+        "nazione:Francia",
+        "team:Ferrari",
+        "team:Ligier",
+        "team:Renault"
+      ],
+      "Patrick Depailler": [
+        "compagno:Andrea de Cesaris",
+        "compagno:Bruno Giacomelli",
+        "compagno:Eddie Cheever",
+        "compagno:Ronnie Peterson",
+        "nazione:Francia",
+        "team:Alfa Romeo",
+        "team:Ligier",
+        "team:Tyrrell"
+      ],
+      "Didier Pironi": [
+        "compagno:Eddie Cheever",
+        "compagno:Gilles Villeneuve",
+        "compagno:Patrick Depailler",
+        "nazione:Francia",
+        "team:Ferrari",
+        "team:Ligier",
+        "team:Tyrrell"
+      ],
+      "Carlos Reutemann": [
+        "compagno:Gilles Villeneuve",
+        "compagno:Graham Hill",
+        "compagno:Keke Rosberg",
+        "compagno:Mario Andretti",
+        "compagno:Niki Lauda",
+        "nazione:Argentina",
+        "team:Brabham",
+        "team:Ferrari",
+        "team:Lotus",
+        "team:Williams"
+      ],
+      "Clay Regazzoni": [
+        "compagno:Carlos Reutemann",
+        "compagno:Mario Andretti",
+        "compagno:Niki Lauda",
+        "nazione:Svizzera",
+        "team:BRM",
+        "team:Ensign",
+        "team:Ferrari",
+        "team:Williams"
+      ],
+      "Ronnie Peterson": [
+        "compagno:Emerson Fittipaldi",
+        "compagno:Mario Andretti",
+        "compagno:Niki Lauda",
+        "compagno:Patrick Depailler",
+        "nazione:Svezia",
+        "team:Lotus",
+        "team:March",
+        "team:Tyrrell"
+      ],
+      "Gilles Villeneuve": [
+        "compagno:Bruno Giacomelli",
+        "compagno:Carlos Reutemann",
+        "compagno:Niki Lauda",
+        "nazione:Canada",
+        "team:Ferrari",
+        "team:McLaren"
+      ],
+      "Michele Alboreto": [
+        "compagno:Gerhard Berger",
+        "compagno:Jean Alesi",
+        "compagno:Pierluigi Martini",
+        "compagno:Rene Arnoux",
+        "compagno:Stefan Johansson",
+        "nazione:Italia",
+        "team:Arrows",
+        "team:Ferrari",
+        "team:Minardi",
+        "team:Tyrrell"
+      ],
+      "Elio de Angelis": [
+        "compagno:Ayrton Senna",
+        "compagno:Derek Warwick",
+        "compagno:Mario Andretti",
+        "compagno:Nigel Mansell",
+        "compagno:Riccardo Patrese",
+        "nazione:Italia",
+        "team:Brabham",
+        "team:Lotus",
+        "team:Shadow"
+      ],
+      "Andrea de Cesaris": [
+        "compagno:Alessandro Nannini",
+        "compagno:Bruno Giacomelli",
+        "compagno:Eddie Irvine",
+        "compagno:Heinz-Harald Frentzen",
+        "compagno:Michael Schumacher",
+        "compagno:Patrick Depailler",
+        "compagno:Pierluigi Martini",
+        "compagno:Riccardo Patrese",
+        "compagno:Roberto Moreno",
+        "compagno:Rubens Barrichello",
+        "compagno:Ukyo Katayama",
+        "nazione:Italia",
+        "team:Alfa Romeo",
+        "team:Brabham",
+        "team:Dallara",
+        "team:Jordan",
+        "team:Ligier",
+        "team:McLaren",
+        "team:Minardi",
+        "team:Rial",
+        "team:Sauber",
+        "team:Tyrrell"
+      ],
+      "Martin Brundle": [
+        "compagno:Ivan Capelli",
+        "compagno:Mark Blundell",
+        "compagno:Michael Schumacher",
+        "compagno:Mika Hakkinen",
+        "compagno:Philippe Alliot",
+        "compagno:Rubens Barrichello",
+        "compagno:Stefan Johansson",
+        "nazione:Regno Unito",
+        "team:Benetton",
+        "team:Brabham",
+        "team:Jordan",
+        "team:Ligier",
+        "team:McLaren",
+        "team:Tyrrell"
+      ],
+      "Heinz-Harald Frentzen": [
+        "compagno:Andrea de Cesaris",
+        "compagno:Damon Hill",
+        "compagno:Jacques Villeneuve",
+        "compagno:Jarno Trulli",
+        "compagno:Jean Alesi",
+        "compagno:Johnny Herbert",
+        "compagno:Nick Heidfeld",
+        "nazione:Germania",
+        "team:Arrows",
+        "team:Jordan",
+        "team:Prost",
+        "team:Sauber",
+        "team:Williams"
+      ],
+      "Jean-Pierre Jabouille": [
+        "team:Renault",
+        "team:Ligier",
+        "nazione:Francia"
+      ],
+      "Alessandro Nannini": [
+        "compagno:Andrea de Cesaris",
+        "compagno:Johnny Herbert",
+        "compagno:Nelson Piquet",
+        "compagno:Pierluigi Martini",
+        "compagno:Roberto Moreno",
+        "compagno:Thierry Boutsen",
+        "nazione:Italia",
+        "team:Benetton",
+        "team:Minardi"
+      ],
+      "Stefan Johansson": [
+        "compagno:Alain Prost",
+        "compagno:Martin Brundle",
+        "compagno:Michele Alboreto",
+        "compagno:Philippe Alliot",
+        "compagno:Rene Arnoux",
+        "nazione:Svezia",
+        "team:Ferrari",
+        "team:Ligier",
+        "team:McLaren",
+        "team:Tyrrell"
+      ],
+      "Thierry Boutsen": [
+        "compagno:Alessandro Nannini",
+        "compagno:Eddie Irvine",
+        "compagno:Gerhard Berger",
+        "compagno:Ivan Capelli",
+        "compagno:Riccardo Patrese",
+        "compagno:Rubens Barrichello",
+        "nazione:Belgio",
+        "team:Arrows",
+        "team:Benetton",
+        "team:Jordan",
+        "team:Ligier",
+        "team:Williams"
+      ],
+      "Ukyo Katayama": [
+        "compagno:Andrea de Cesaris",
+        "compagno:Jarno Trulli",
+        "compagno:Mark Blundell",
+        "compagno:Mika Salo",
+        "nazione:Giappone",
+        "team:Larrousse",
+        "team:Minardi",
+        "team:Tyrrell"
+      ],
+      "Pedro Diniz": [
+        "compagno:Damon Hill",
+        "compagno:Jean Alesi",
+        "compagno:Mika Salo",
+        "compagno:Olivier Panis",
+        "compagno:Roberto Moreno",
+        "nazione:Brasile",
+        "team:Arrows",
+        "team:Forti",
+        "team:Ligier",
+        "team:Sauber"
+      ],
+      "Jos Verstappen": [
+        "compagno:Michael Schumacher",
+        "compagno:Pedro de la Rosa",
+        "compagno:Rubens Barrichello",
+        "nazione:Paesi Bassi",
+        "team:Arrows",
+        "team:Benetton",
+        "team:Minardi",
+        "team:Simtek",
+        "team:Stewart"
+      ],
+      "Jean-Eric Vergne": [
+        "compagno:Daniel Ricciardo",
+        "compagno:Daniil Kvyat",
+        "nazione:Francia",
+        "team:Toro Rosso"
+      ],
+      "Esteban Gutierrez": [
+        "compagno:Adrian Sutil",
+        "compagno:Nico Hulkenberg",
+        "compagno:Romain Grosjean",
+        "nazione:Messico",
+        "team:Haas",
+        "team:Sauber"
+      ],
+      "Roberto Merhi": [
+        "team:Manor",
+        "nazione:Spagna"
+      ],
+      "Alexander Wurz": [
+        "compagno:Gerhard Berger",
+        "compagno:Giancarlo Fisichella",
+        "compagno:Jean Alesi",
+        "compagno:Juan Pablo Montoya",
+        "compagno:Kimi Raikkonen",
+        "compagno:Nico Rosberg",
+        "compagno:Pedro de la Rosa",
+        "nazione:Austria",
+        "team:Benetton",
+        "team:McLaren",
+        "team:Williams"
+      ],
+      "Ralph Firman": [
+        "compagno:Giancarlo Fisichella",
+        "nazione:Irlanda",
+        "team:Jordan"
+      ],
+      "Cristiano da Matta": [
+        "compagno:Olivier Panis",
+        "nazione:Brasile",
+        "team:Toyota"
+      ],
+      "Zsolt Baumgartner": [
+        "team:Jordan",
+        "team:Minardi",
+        "nazione:Ungheria"
+      ],
+      "Gianmaria Bruni": [
+        "team:Minardi",
+        "nazione:Italia"
+      ],
+      "Nicolas Kiesa": [
+        "team:Minardi",
+        "nazione:Danimarca"
+      ],
+      "Justin Wilson": [
+        "compagno:Antonio Pizzonia",
+        "compagno:Jos Verstappen",
+        "compagno:Mark Webber",
+        "nazione:Regno Unito",
+        "team:Jaguar",
+        "team:Minardi"
+      ],
+      "Antonio Pizzonia": [
+        "compagno:Juan Pablo Montoya",
+        "compagno:Marc Gene",
+        "compagno:Mark Webber",
+        "compagno:Nick Heidfeld",
+        "compagno:Ralf Schumacher",
+        "nazione:Brasile",
+        "team:Jaguar",
+        "team:Williams"
+      ],
+      "Marc Gene": [
+        "compagno:Antonio Pizzonia",
+        "compagno:Juan Pablo Montoya",
+        "compagno:Luca Badoer",
+        "compagno:Ralf Schumacher",
+        "nazione:Spagna",
+        "team:Minardi",
+        "team:Williams"
+      ],
+      "Luca Badoer": [
+        "compagno:Felipe Massa",
+        "compagno:Giancarlo Fisichella",
+        "compagno:Kimi Raikkonen",
+        "compagno:Marc Gene",
+        "compagno:Pierluigi Martini",
+        "nazione:Italia",
+        "team:Ferrari",
+        "team:Forti",
+        "team:Minardi",
+        "team:Scuderia Italia"
+      ],
+      "Giorgio Pantano": [
+        "team:Jordan",
+        "nazione:Italia"
+      ],
+      "Tiago Monteiro": [
+        "compagno:Narain Karthikeyan",
+        "nazione:Portogallo",
+        "team:Jordan",
+        "team:Midland"
+      ],
+      "Christijan Albers": [
+        "compagno:Adrian Sutil",
+        "nazione:Paesi Bassi",
+        "team:Midland",
+        "team:Minardi",
+        "team:Spyker"
+      ],
+      "Robert Doornbos": [
+        "compagno:Christian Klien",
+        "compagno:David Coulthard",
+        "nazione:Paesi Bassi",
+        "team:Minardi",
+        "team:Red Bull"
+      ],
+      "Yuji Ide": [
+        "team:Super Aguri",
+        "nazione:Giappone"
+      ],
+      "Sakon Yamamoto": [
+        "team:Super Aguri",
+        "team:Spyker",
+        "team:HRT",
+        "nazione:Giappone"
+      ],
+      "Markus Winkelhock": [
+        "team:Spyker",
+        "nazione:Germania"
+      ],
+      "Kazuki Nakajima": [
+        "compagno:Alexander Wurz",
+        "compagno:Nico Rosberg",
+        "nazione:Giappone",
+        "team:Williams"
+      ],
+      "Nelson Piquet Jr": [
+        "compagno:Fernando Alonso",
+        "compagno:Romain Grosjean",
+        "nazione:Brasile",
+        "team:Renault"
+      ],
+      "Sebastien Bourdais": [
+        "compagno:Sebastian Vettel",
+        "nazione:Francia",
+        "team:Toro Rosso"
+      ],
+      "Lucas di Grassi": [
+        "compagno:Timo Glock",
+        "nazione:Brasile",
+        "team:Virgin"
+      ],
+      "Bruno Giacomelli": [
+        "compagno:Andrea de Cesaris",
+        "compagno:Derek Warwick",
+        "compagno:Gilles Villeneuve",
+        "compagno:Mario Andretti",
+        "compagno:Patrick Depailler",
+        "nazione:Italia",
+        "team:Alfa Romeo",
+        "team:McLaren",
+        "team:Toleman"
+      ],
+      "Eddie Cheever": [
+        "compagno:Alain Prost",
+        "compagno:Derek Warwick",
+        "compagno:Patrick Depailler",
+        "compagno:Riccardo Patrese",
+        "nazione:Stati Uniti",
+        "team:Alfa Romeo",
+        "team:Arrows",
+        "team:Ligier",
+        "team:Renault",
+        "team:Tyrrell"
+      ],
+      "Derek Warwick": [
+        "compagno:Aguri Suzuki",
+        "compagno:Bruno Giacomelli",
+        "compagno:Eddie Cheever",
+        "compagno:Elio de Angelis",
+        "compagno:Gianni Morbidelli",
+        "compagno:Johnny Herbert",
+        "compagno:Riccardo Patrese",
+        "nazione:Regno Unito",
+        "team:Arrows",
+        "team:Brabham",
+        "team:Footwork",
+        "team:Lotus",
+        "team:Renault",
+        "team:Toleman"
+      ],
+      "Philippe Alliot": [
+        "compagno:Aguri Suzuki",
+        "compagno:Mark Blundell",
+        "compagno:Martin Brundle",
+        "compagno:Mika Hakkinen",
+        "compagno:Rene Arnoux",
+        "compagno:Stefan Johansson",
+        "nazione:Francia",
+        "team:Larrousse",
+        "team:Ligier",
+        "team:McLaren",
+        "team:RAM"
+      ],
+      "Satoru Nakajima": [
+        "compagno:Ayrton Senna",
+        "compagno:Jean Alesi",
+        "compagno:Nelson Piquet",
+        "compagno:Roberto Moreno",
+        "nazione:Giappone",
+        "team:Lotus",
+        "team:Tyrrell"
+      ],
+      "Aguri Suzuki": [
+        "compagno:Derek Warwick",
+        "compagno:Gianni Morbidelli",
+        "compagno:Olivier Panis",
+        "compagno:Philippe Alliot",
+        "nazione:Giappone",
+        "team:Arrows",
+        "team:Footwork",
+        "team:Larrousse",
+        "team:Ligier",
+        "team:Lotus"
+      ],
+      "Emanuele Pirro": [
+        "compagno:Alessandro Nannini",
+        "compagno:Andrea de Cesaris",
+        "compagno:Johnny Herbert",
+        "nazione:Italia",
+        "team:Benetton",
+        "team:Dallara",
+        "team:Scuderia Italia"
+      ],
+      "Nicola Larini": [
+        "compagno:Gerhard Berger",
+        "compagno:Gianni Morbidelli",
+        "compagno:Ivan Capelli",
+        "compagno:Jean Alesi",
+        "compagno:Johnny Herbert",
+        "nazione:Italia",
+        "team:Coloni",
+        "team:Ferrari",
+        "team:Ligier",
+        "team:Osella",
+        "team:Sauber"
+      ],
+      "Gabriele Tarquini": [
+        "team:Osella",
+        "team:Coloni",
+        "team:AGS",
+        "team:Fondmetal",
+        "team:Tyrrell",
+        "nazione:Italia"
+      ],
+      "Pierluigi Martini": [
+        "compagno:Alessandro Nannini",
+        "compagno:Andrea de Cesaris",
+        "compagno:Ayrton Senna",
+        "compagno:Gianni Morbidelli",
+        "compagno:Luca Badoer",
+        "compagno:Michele Alboreto",
+        "nazione:Italia",
+        "team:Dallara",
+        "team:Minardi",
+        "team:Scuderia Italia",
+        "team:Toleman"
+      ],
+      "Roberto Moreno": [
+        "compagno:Alessandro Nannini",
+        "compagno:Andrea de Cesaris",
+        "compagno:Ayrton Senna",
+        "compagno:Michael Schumacher",
+        "compagno:Nelson Piquet",
+        "compagno:Pedro Diniz",
+        "compagno:Satoru Nakajima",
+        "nazione:Brasile",
+        "team:Benetton",
+        "team:Forti",
+        "team:Jordan",
+        "team:Lotus",
+        "team:Minardi"
+      ],
+      "Olivier Grouillard": [
+        "team:Ligier",
+        "team:Osella",
+        "team:Fondmetal",
+        "team:Tyrrell",
+        "nazione:Francia"
+      ],
+      "Erik Comas": [
+        "team:Ligier",
+        "team:Larrousse",
+        "nazione:Francia"
+      ],
+      "Mark Blundell": [
+        "compagno:Martin Brundle",
+        "compagno:Mika Hakkinen",
+        "compagno:Nigel Mansell",
+        "compagno:Philippe Alliot",
+        "compagno:Ukyo Katayama",
+        "nazione:Regno Unito",
+        "team:Brabham",
+        "team:Ligier",
+        "team:McLaren",
+        "team:Tyrrell"
+      ],
+      "James Hunt": [
+        "compagno:Bruno Giacomelli",
+        "compagno:Gilles Villeneuve",
+        "team:Hesketh",
+        "team:McLaren",
+        "team:Wolf"
+      ],
+      "Gianni Morbidelli": [
+        "compagno:Aguri Suzuki",
+        "compagno:Alain Prost",
+        "compagno:Derek Warwick",
+        "compagno:Jean Alesi",
+        "compagno:Johnny Herbert",
+        "compagno:Nicola Larini",
+        "compagno:Pierluigi Martini",
+        "team:Ferrari",
+        "team:Footwork",
+        "team:Minardi",
+        "team:Sauber"
+      ],
+      "Jean-Christophe Boullion": [
+        "compagno:Heinz-Harald Frentzen",
+        "team:Sauber"
+      ]
+    }
+  },
+  "cinema": {
+    "criteria": {
+      "film": "Ha recitato in",
+      "serie": "Ha recitato nella serie",
+      "regista": "Diretto/a da",
+      "premio": "Ha vinto un"
+    },
+    "subjects": {
+      "Leonardo DiCaprio": [
+        "film:Titanic",
+        "film:Inception",
+        "film:The Wolf of Wall Street",
+        "film:Django Unchained",
+        "film:The Revenant",
+        "regista:Martin Scorsese",
+        "regista:Christopher Nolan",
+        "regista:Quentin Tarantino",
+        "premio:Oscar"
+      ],
+      "Brad Pitt": [
+        "film:Fight Club",
+        "film:Se7en",
+        "film:Bastardi senza gloria",
+        "film:Ocean's Eleven",
+        "film:Troy",
+        "regista:David Fincher",
+        "regista:Quentin Tarantino",
+        "premio:Oscar"
+      ],
+      "Tom Hanks": [
+        "film:Forrest Gump",
+        "film:Salvate il soldato Ryan",
+        "film:Cast Away",
+        "film:Il miglio verde",
+        "film:Toy Story",
+        "regista:Steven Spielberg",
+        "premio:Oscar"
+      ],
+      "Robert De Niro": [
+        "film:Taxi Driver",
+        "film:Toro scatenato",
+        "film:Il Padrino - Parte II",
+        "film:Casino",
+        "film:Heat",
+        "regista:Martin Scorsese",
+        "regista:Francis Ford Coppola",
+        "premio:Oscar"
+      ],
+      "Al Pacino": [
+        "film:Il Padrino",
+        "film:Scarface",
+        "film:Heat",
+        "film:Profumo di donna",
+        "regista:Francis Ford Coppola",
+        "premio:Oscar"
+      ],
+      "Morgan Freeman": [
+        "film:Le ali della libertà",
+        "film:Se7en",
+        "film:Million Dollar Baby",
+        "film:Il cavaliere oscuro",
+        "regista:David Fincher",
+        "regista:Christopher Nolan",
+        "premio:Oscar"
+      ],
+      "Christian Bale": [
+        "film:Il cavaliere oscuro",
+        "film:American Psycho",
+        "film:The Fighter",
+        "regista:Christopher Nolan",
+        "premio:Oscar"
+      ],
+      "Matthew McConaughey": [
+        "film:Interstellar",
+        "film:Dallas Buyers Club",
+        "film:The Wolf of Wall Street",
+        "regista:Christopher Nolan",
+        "regista:Martin Scorsese",
+        "premio:Oscar",
+        "serie:True Detective"
+      ],
+      "Anne Hathaway": [
+        "film:Il diavolo veste Prada",
+        "film:Interstellar",
+        "film:Les Miserables",
+        "film:Il cavaliere oscuro - Il ritorno",
+        "regista:Christopher Nolan",
+        "premio:Oscar"
+      ],
+      "Samuel L. Jackson": [
+        "film:Pulp Fiction",
+        "film:Django Unchained",
+        "film:Jurassic Park",
+        "film:The Avengers",
+        "regista:Quentin Tarantino",
+        "regista:Steven Spielberg"
+      ],
+      "Uma Thurman": [
+        "film:Pulp Fiction",
+        "film:Kill Bill",
+        "regista:Quentin Tarantino"
+      ],
+      "Meryl Streep": [
+        "film:Il diavolo veste Prada",
+        "film:La scelta di Sophie",
+        "film:The Iron Lady",
+        "premio:Oscar"
+      ],
+      "Joaquin Phoenix": [
+        "film:Il gladiatore",
+        "film:Joker",
+        "film:Her",
+        "regista:Ridley Scott",
+        "premio:Oscar"
+      ],
+      "Russell Crowe": [
+        "film:Il gladiatore",
+        "film:A Beautiful Mind",
+        "regista:Ridley Scott",
+        "premio:Oscar"
+      ],
+      "Cate Blanchett": [
+        "film:Il Signore degli Anelli",
+        "film:Blue Jasmine",
+        "film:Carol",
+        "premio:Oscar"
+      ],
+      "Bryan Cranston": [
+        "serie:Breaking Bad",
+        "serie:Malcolm",
+        "film:Argo"
+      ],
+      "Aaron Paul": [
+        "serie:Breaking Bad",
+        "serie:Westworld"
+      ],
+      "Bob Odenkirk": [
+        "serie:Breaking Bad",
+        "serie:Better Call Saul",
+        "serie:Fargo"
+      ],
+      "Peter Dinklage": [
+        "serie:Il Trono di Spade",
+        "film:X-Men"
+      ],
+      "Emilia Clarke": [
+        "serie:Il Trono di Spade",
+        "film:Terminator Genisys"
+      ],
+      "Kit Harington": [
+        "serie:Il Trono di Spade",
+        "film:Eternals"
+      ],
+      "Millie Bobby Brown": [
+        "serie:Stranger Things",
+        "film:Godzilla",
+        "film:Enola Holmes"
+      ],
+      "Winona Ryder": [
+        "serie:Stranger Things",
+        "film:Beetlejuice",
+        "film:Edward mani di forbice"
+      ],
+      "Elisabeth Moss": [
+        "serie:The Handmaid's Tale",
+        "serie:Mad Men"
+      ],
+      "Jon Hamm": [
+        "serie:Mad Men",
+        "film:Baby Driver"
+      ],
+      "Kevin Spacey": [
+        "serie:House of Cards",
+        "film:Se7en",
+        "film:I soliti sospetti",
+        "film:American Beauty",
+        "regista:David Fincher",
+        "premio:Oscar"
+      ],
+      "Jennifer Lawrence": [
+        "film:Hunger Games",
+        "film:Il lato positivo",
+        "film:X-Men",
+        "premio:Oscar"
+      ],
+      "Scarlett Johansson": [
+        "film:The Avengers",
+        "film:Lost in Translation",
+        "film:Marriage Story"
+      ],
+      "Robert Downey Jr.": [
+        "film:Iron Man",
+        "film:The Avengers",
+        "film:Sherlock Holmes",
+        "film:Oppenheimer",
+        "regista:Christopher Nolan",
+        "premio:Oscar"
+      ],
+      "Cillian Murphy": [
+        "serie:Peaky Blinders",
+        "film:Inception",
+        "film:Oppenheimer",
+        "film:Il cavaliere oscuro",
+        "regista:Christopher Nolan",
+        "premio:Oscar"
+      ],
+      "Tom Hardy": [
+        "film:Inception",
+        "film:Mad Max: Fury Road",
+        "film:Il cavaliere oscuro - Il ritorno",
+        "serie:Peaky Blinders",
+        "regista:Christopher Nolan"
+      ],
+      "Michael Caine": [
+        "film:Inception",
+        "film:Il cavaliere oscuro",
+        "film:Interstellar",
+        "regista:Christopher Nolan",
+        "premio:Oscar"
+      ],
+      "Harrison Ford": [
+        "film:Indiana Jones",
+        "film:Star Wars",
+        "film:Blade Runner",
+        "regista:Steven Spielberg",
+        "regista:Ridley Scott"
+      ],
+      "Sigourney Weaver": [
+        "film:Alien",
+        "film:Avatar",
+        "regista:Ridley Scott",
+        "regista:James Cameron"
+      ],
+      "Kate Winslet": [
+        "film:Titanic",
+        "film:Se mi lasci ti cancello",
+        "regista:James Cameron",
+        "premio:Oscar"
+      ],
+      "Matt Damon": [
+        "film:Salvate il soldato Ryan",
+        "film:Interstellar",
+        "film:The Martian",
+        "film:Il talento di Mr. Ripley",
+        "regista:Steven Spielberg",
+        "regista:Christopher Nolan",
+        "regista:Ridley Scott",
+        "premio:Oscar"
+      ]
+    }
+  },
+  "geografia": {
+    "criteria": {
+      "confina": "Confina con",
+      "continente": "Si trova in",
+      "mare": "Ha sbocco su",
+      "ue": "È nell'",
+      "euro": "Usa l'",
+      "grande": "",
+      "popoloso": ""
+    },
+    "subjects": {
+      "Italia": [
+        "confina:Francia",
+        "confina:Svizzera",
+        "confina:Austria",
+        "confina:Slovenia",
+        "continente:Europa",
+        "mare:Mediterraneo",
+        "ue:Unione Europea",
+        "euro:Euro"
+      ],
+      "Francia": [
+        "confina:Italia",
+        "confina:Spagna",
+        "confina:Germania",
+        "confina:Belgio",
+        "confina:Svizzera",
+        "continente:Europa",
+        "mare:Mediterraneo",
+        "mare:Atlantico",
+        "ue:Unione Europea",
+        "euro:Euro",
+        "grande:Più grande dell'Italia"
+      ],
+      "Spagna": [
+        "confina:Francia",
+        "confina:Portogallo",
+        "continente:Europa",
+        "mare:Mediterraneo",
+        "mare:Atlantico",
+        "ue:Unione Europea",
+        "euro:Euro",
+        "grande:Più grande dell'Italia"
+      ],
+      "Portogallo": [
+        "confina:Spagna",
+        "continente:Europa",
+        "mare:Atlantico",
+        "ue:Unione Europea",
+        "euro:Euro"
+      ],
+      "Germania": [
+        "confina:Francia",
+        "confina:Austria",
+        "confina:Polonia",
+        "confina:Belgio",
+        "confina:Svizzera",
+        "continente:Europa",
+        "ue:Unione Europea",
+        "euro:Euro",
+        "grande:Più grande dell'Italia"
+      ],
+      "Svizzera": [
+        "confina:Italia",
+        "confina:Francia",
+        "confina:Germania",
+        "confina:Austria",
+        "continente:Europa"
+      ],
+      "Austria": [
+        "confina:Italia",
+        "confina:Germania",
+        "confina:Svizzera",
+        "confina:Slovenia",
+        "continente:Europa",
+        "ue:Unione Europea",
+        "euro:Euro"
+      ],
+      "Slovenia": [
+        "confina:Italia",
+        "confina:Austria",
+        "confina:Croazia",
+        "continente:Europa",
+        "mare:Mediterraneo",
+        "ue:Unione Europea",
+        "euro:Euro"
+      ],
+      "Croazia": [
+        "confina:Slovenia",
+        "continente:Europa",
+        "mare:Mediterraneo",
+        "ue:Unione Europea",
+        "euro:Euro"
+      ],
+      "Grecia": [
+        "continente:Europa",
+        "mare:Mediterraneo",
+        "ue:Unione Europea",
+        "euro:Euro"
+      ],
+      "Polonia": [
+        "confina:Germania",
+        "continente:Europa",
+        "ue:Unione Europea",
+        "grande:Più grande dell'Italia"
+      ],
+      "Belgio": [
+        "confina:Francia",
+        "confina:Germania",
+        "continente:Europa",
+        "mare:Atlantico",
+        "ue:Unione Europea",
+        "euro:Euro"
+      ],
+      "Paesi Bassi": [
+        "confina:Germania",
+        "confina:Belgio",
+        "continente:Europa",
+        "mare:Atlantico",
+        "ue:Unione Europea",
+        "euro:Euro"
+      ],
+      "Regno Unito": [
+        "continente:Europa",
+        "mare:Atlantico",
+        "grande:Più grande dell'Italia"
+      ],
+      "Norvegia": [
+        "continente:Europa",
+        "mare:Atlantico",
+        "grande:Più grande dell'Italia"
+      ],
+      "Svezia": [
+        "confina:Norvegia",
+        "continente:Europa",
+        "ue:Unione Europea",
+        "grande:Più grande dell'Italia"
+      ],
+      "Russia": [
+        "confina:Norvegia",
+        "confina:Polonia",
+        "confina:Cina",
+        "continente:Europa",
+        "continente:Asia",
+        "grande:Più grande dell'Italia",
+        "popoloso:Più di 100 milioni di abitanti"
+      ],
+      "Cina": [
+        "confina:Russia",
+        "confina:India",
+        "continente:Asia",
+        "grande:Più grande dell'Italia",
+        "popoloso:Più di 100 milioni di abitanti"
+      ],
+      "India": [
+        "confina:Cina",
+        "continente:Asia",
+        "grande:Più grande dell'Italia",
+        "popoloso:Più di 100 milioni di abitanti"
+      ],
+      "Giappone": [
+        "continente:Asia",
+        "mare:Pacifico",
+        "grande:Più grande dell'Italia",
+        "popoloso:Più di 100 milioni di abitanti"
+      ],
+      "Brasile": [
+        "confina:Argentina",
+        "continente:Sud America",
+        "mare:Atlantico",
+        "grande:Più grande dell'Italia",
+        "popoloso:Più di 100 milioni di abitanti"
+      ],
+      "Argentina": [
+        "confina:Brasile",
+        "confina:Cile",
+        "continente:Sud America",
+        "mare:Atlantico",
+        "grande:Più grande dell'Italia"
+      ],
+      "Cile": [
+        "confina:Argentina",
+        "continente:Sud America",
+        "mare:Pacifico",
+        "grande:Più grande dell'Italia"
+      ],
+      "Stati Uniti": [
+        "confina:Canada",
+        "confina:Messico",
+        "continente:Nord America",
+        "mare:Atlantico",
+        "mare:Pacifico",
+        "grande:Più grande dell'Italia",
+        "popoloso:Più di 100 milioni di abitanti"
+      ],
+      "Canada": [
+        "confina:Stati Uniti",
+        "continente:Nord America",
+        "mare:Atlantico",
+        "mare:Pacifico",
+        "grande:Più grande dell'Italia"
+      ],
+      "Messico": [
+        "confina:Stati Uniti",
+        "continente:Nord America",
+        "mare:Pacifico",
+        "grande:Più grande dell'Italia",
+        "popoloso:Più di 100 milioni di abitanti"
+      ],
+      "Egitto": [
+        "continente:Africa",
+        "mare:Mediterraneo",
+        "grande:Più grande dell'Italia",
+        "popoloso:Più di 100 milioni di abitanti"
+      ],
+      "Marocco": [
+        "continente:Africa",
+        "mare:Mediterraneo",
+        "mare:Atlantico",
+        "grande:Più grande dell'Italia"
+      ],
+      "Sudafrica": [
+        "continente:Africa",
+        "mare:Atlantico",
+        "grande:Più grande dell'Italia"
+      ],
+      "Nigeria": [
+        "continente:Africa",
+        "mare:Atlantico",
+        "grande:Più grande dell'Italia",
+        "popoloso:Più di 100 milioni di abitanti"
+      ],
+      "Australia": [
+        "continente:Oceania",
+        "mare:Pacifico",
+        "grande:Più grande dell'Italia"
+      ],
+      "Turchia": [
+        "continente:Europa",
+        "continente:Asia",
+        "mare:Mediterraneo",
+        "grande:Più grande dell'Italia"
+      ]
+    }
+  }
+}

@@ -1,6 +1,6 @@
-# Quiz Party — clone di Buzz!
+# Quiz Party
 
-Quiz party multiplayer ispirato a *Buzz!* per PS2: risposte a scelta multipla abbinate a 4 tasti colorati (giallo, blu, arancione, verde), un presentatore-pupazzo animato con battute (anche cattive) e una fase a eliminazione che dura finché non resta un solo imbattuto. Il punteggio si accumula anche tra più partite giocate di fila nella stessa sessione.
+Quiz party multiplayer da salotto: risposte a scelta multipla abbinate a 4 tasti colorati (giallo, blu, arancione, verde), un presentatore-pupazzo animato con battute (anche cattive) e una fase a eliminazione che dura finché non resta un solo imbattuto. Il punteggio si accumula anche tra più partite giocate di fila nella stessa sessione.
 
 Stack: **Node.js + Express + Socket.io** sul backend, **HTML/CSS/JS puro** sul frontend (nessun build step, nessun framework). Le domande vivono in un file JSON, niente database esterno da configurare.
 
@@ -138,7 +138,7 @@ Entrambe chiedono conferma prima di eseguire l'azione, per evitare click acciden
 ## Struttura del progetto
 
 ```
-buzz-clone/
+quiz-party/
 ├── package.json
 ├── server/
 │   ├── server.js            # Express + Socket.io, gestione lobby/matchmaking/sessione
@@ -146,9 +146,11 @@ buzz-clone/
 │   │   ├── GameRoom.js      # Stato di gioco: fase 1, eliminazione a oltranza, brainfighting, punteggio di sessione
 │   │   ├── QuestionBank.js  # Caricamento/filtro/aggiunta domande del mazzo principale
 │   │   ├── BrainfightingBank.js  # Caricamento/filtro dei problemi della fase brainfighting
+│   │   ├── GridGame.js      # Generazione e validazione delle sfide a griglia 2x2
 │   │   └── Host.js          # Battute (e "umori") del presentatore virtuale
 │   ├── data/questions.json  # Le 1728 domande del mazzo principale (+ quelle aggiunte)
 │   ├── data/brainfighting.json  # I 375 problemi della fase brainfighting
+│   ├── data/griddata.json   # Archivio soggetti/attributi per le sfide a griglia
 │   └── scripts/importCsv.js # Import in blocco da CSV
 └── public/
     ├── index.html            # Schermate + markup del pupazzo SVG
@@ -162,7 +164,9 @@ Se dopo 10 round della fase a eliminazione normale restano ancora **2 o più sop
 
 - **Nessuno viene mai eliminato**: si gioca sempre tra tutti quelli entrati in questa fase.
 - Ogni problema è un **calcolo mentale** (2 minuti per prenotarsi) nella categoria scelta per la stanza, se ha contenuto adatto — altrimenti si ricade automaticamente sulle 5 categorie numeriche disponibili: Automobili e Motori, Formula 1, Ingegneria del Veicolo, Matematica, Fisica.
-- Compare solo un **pulsante rosso "BUZZ"**: chi lo preme per primo si prenota. Solo lui vede le 4 opzioni diventare cliccabili; agli altri appaiono ma "sfumate" (non cliccabili).
+- Compare solo un **pulsante rosso "BUZZER"**: chi lo preme per primo si prenota. Solo lui vede le 4 opzioni diventare cliccabili; agli altri appaiono ma "sfumate" (non cliccabili).
+- Una volta premuto il buzzer si hanno **solo 5 secondi** per scegliere: bisogna prenotarsi già sapendo la risposta, non si fa in tempo a risolvere il problema dopo.
+- Nei problemi di calcolo compare una **piccola calcolatrice** sotto al buzzer (alcuni conti sono volutamente troppo lunghi da fare del tutto a mente).
 - **Risposta giusta**: +1 punto, si passa a un problema completamente nuovo (opzioni fresche, difficoltà che sale di un livello).
 - **Risposta sbagliata**: 0 punti, quel giocatore non può più riprenotarsi su **questo stesso problema** (potrà farlo dal prossimo), e la sua opzione sparisce dalle scelte per chi si prenota dopo di lui.
 - Se **3 tentativi falliscono** sullo stesso problema, si passa comunque a uno nuovo, senza assegnare punti a nessuno: evita che qualcuno vinca un punto "per esclusione" sull'unica opzione rimasta, senza vero merito.
@@ -170,12 +174,37 @@ Se dopo 10 round della fase a eliminazione normale restano ancora **2 o più sop
 
 Il mazzo dedicato (`server/data/brainfighting.json`, 375 problemi) non si ripete mai nella stessa sessione, con lo stesso criterio del mazzo principale.
 
+### Modalità "Solo Brainfighting"
+
+Alla creazione della partita si può scegliere **"Solo Brainfighting"** come modalità (accanto a Rush e Classica): si saltano del tutto fase 1 ed eliminazione, e si va dritti ai problemi col pulsante rosso tra tutti i giocatori collegati. Vince sempre chi arriva per primo a 3 punti.
+
+### Sfida a griglia 2×2
+
+Per alcune categorie, al posto del problema col buzzer può comparire una **griglia 2×2**: due criteri sulle righe, due sulle colonne, e ogni casella va riempita con un soggetto che soddisfa **entrambi** i criteri incrociati. Qui **non c'è il buzzer**: tutti giocano contemporaneamente e prende il punto **chi completa per primo tutte e quattro le caselle** (3 minuti di tempo).
+
+- **Calcio**: squadre in cui si è giocato, trofei vinti, nazionalità (es. "Ha giocato nella Juventus" × "Ha giocato nel Real Madrid" → Zidane, Higuaín, Di María, Cannavaro...)
+- **Formula 1**: scuderie per cui si è corso, titoli mondiali, nazionalità
+- **Cinema e TV / Serie TV**: film e serie in cui si è recitato, registi, premi
+- **Geografia**: confini, continente, sbocchi sul mare, dimensione, appartenenza a UE/euro
+
+Regole della griglia: **qualunque** risposta che rispetti entrambi i criteri è valida (non c'è una sola soluzione "giusta"); si può sbagliare e riprovare all'infinito sulla stessa casella; **non si può usare lo stesso nome in due caselle diverse**. Per inserire un nome bisogna **cliccare il suggerimento** che compare digitando (evita ambiguità: scrivendo "Alonso" si conferma "Fernando Alonso"). Il generatore verifica sempre che la griglia sia completabile con 4 nomi distinti e scarta quelle banali risolvibili da un solo nome.
+
+L'archivio dei soggetti è in `server/data/griddata.json`. **È scritto a mano e quindi parziale**: una risposta corretta ma non presente in archivio verrà rifiutata. L'autocomplete mitiga il problema mostrando solo i nomi effettivamente riconosciuti. Ampliare l'archivio è semplice: basta aggiungere voci con i loro attributi.
+
+## Riconnessione e statistiche
+
+Se un giocatore perde la connessione a metà partita, al ritorno della linea il client prova da solo a rientrare (evento `lobby:reconnect`): il server lo riconosce dal nickname e gli restituisce **punteggio, qualificazione e stato di eliminazione** esattamente come li aveva lasciati, spostando la sua scheda sul nuovo socket. Chi rientra torna anche a contare per il pulsante "Pronto", così la partita non resta bloccata ad aspettarlo né va avanti senza di lui.
+
+Dopo ogni domanda, accanto al punteggio totale compaiono i **punti guadagnati o persi in quella domanda** (`+3`, `-1`, `0`), per capire a colpo d'occhio il perché di un sorpasso in classifica.
+
+A fine partita, sotto la classifica di sessione, compaiono le **statistiche della serata**: Dito più veloce, Cecchino (miglior percentuale), Mano pesante (più errori), Mister punti, Il pensatore (più lento a rispondere) e Colto in flagrante (più risposte non date in tempo). Compaiono solo i premi che hanno davvero un vincitore.
+
 ## Idee per migliorie future
 
 - Persistenza delle domande su un vero database invece del file JSON.
-- Riconnessione automatica di un giocatore che perde la connessione a metà partita.
 - Voce sintetizzata per il presentatore invece del solo testo.
 - Avatar/colori personalizzabili per i giocatori.
 - Uno storico delle partite passate della sessione (non solo il totale cumulativo).
+- Un pulsante "segnala domanda sbagliata" in partita, per raccogliere gli errori trovati giocando.
 - Categoria "Meme italiani" (rimandata: servono riferimenti precisi per evitare imprecisioni).
 - Estendere il brainfighting alle altre categorie, con contenuti diversi dal calcolo mentale (es. sagome di nazioni per Geografia).

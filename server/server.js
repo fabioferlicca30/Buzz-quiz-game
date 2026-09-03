@@ -104,6 +104,27 @@ io.on('connection', (socket) => {
     cb && cb({ lobbies: publicLobbies() });
   });
 
+  // Rientro dopo una caduta di connessione: il giocatore riprende la sua scheda
+  // (punteggio, eliminazione, qualificazione) invece di ripartire da capo.
+  socket.on('lobby:reconnect', ({ code, nickname }, cb) => {
+    const room = rooms.get((code || '').toUpperCase());
+    if (!room) return cb && cb({ error: 'Partita non più attiva' });
+    const player = room.reconnectPlayer(socket.id, nickname);
+    if (!player) return cb && cb({ error: 'Nessun posto da recuperare con questo nome' });
+
+    socketRoomCode.set(socket.id, room.code);
+    socket.join(room.code);
+    cb && cb({
+      ok: true,
+      code: room.code,
+      state: room.state,
+      you: { id: player.id, nickname: player.nickname, score: player.score, eliminated: player.eliminated },
+      summary: room.publicSummary(),
+    });
+    room.notifyReadyWatcher();
+    broadcastLobbyState(room);
+  });
+
   socket.on('lobby:start', (cb) => {
     const code = socketRoomCode.get(socket.id);
     const room = rooms.get(code);
@@ -140,6 +161,14 @@ io.on('connection', (socket) => {
     const room = rooms.get(code);
     if (!room) return;
     room.submitBrainfightAnswer(socket.id, answerIndex);
+  });
+
+  // Sfida a griglia: il giocatore prova a riempire una casella.
+  socket.on('grid:answer', ({ cellIndex, answer }, cb) => {
+    const code = socketRoomCode.get(socket.id);
+    const room = rooms.get(code);
+    if (!room) return cb && cb({ error: 'Stanza non trovata' });
+    room.submitGridAnswer(socket.id, cellIndex, answer, cb);
   });
 
   // Il giocatore conferma di essere pronto a passare alla domanda successiva.
@@ -215,5 +244,5 @@ function handleLeave(socket) {
 }
 
 server.listen(PORT, () => {
-  console.log(`Buzz-clone in ascolto sulla porta ${PORT}`);
+  console.log(`Quiz Party in ascolto sulla porta ${PORT}`);
 });

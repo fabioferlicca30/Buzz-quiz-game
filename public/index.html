@@ -93,7 +93,9 @@
     <div class="segmented" id="opt-mode">
       <button class="seg-btn active" data-value="rush">Rush — punti in base alla velocità</button>
       <button class="seg-btn" data-value="classic">Classica — punti fissi, 10s per rispondere</button>
+      <button class="seg-btn" data-value="brainfight">Solo Brainfighting 🧠 — subito calcoli e buzz</button>
     </div>
+    <p class="muted small">"Solo Brainfighting" salta fase 1 ed eliminazione: si va dritti ai problemi col pulsante rosso, vince chi arriva a 3 punti.</p>
 
     <label>Livello</label>
     <div class="segmented segmented-grid" id="opt-difficulty">
@@ -223,8 +225,34 @@
   <h2 id="question-text" class="question-text"></h2>
 
   <div id="buzz-wrap" class="buzz-wrap hidden">
-    <button id="btn-buzz" class="buzz-button">🔴<br />BUZZ!</button>
+    <button id="btn-buzz" class="buzz-button">🔴<br />BUZZER</button>
     <p class="muted small" id="buzz-status">Premi per prenotarti a rispondere</p>
+
+    <div id="calc-wrap" class="calc-wrap hidden">
+      <div class="calc-display" id="calc-display">0</div>
+      <div class="calc-keys">
+        <button class="calc-key calc-fn" data-calc="C">C</button>
+        <button class="calc-key calc-fn" data-calc="←">←</button>
+        <button class="calc-key calc-op" data-calc="(">(</button>
+        <button class="calc-key calc-op" data-calc=")">)</button>
+        <button class="calc-key" data-calc="7">7</button>
+        <button class="calc-key" data-calc="8">8</button>
+        <button class="calc-key" data-calc="9">9</button>
+        <button class="calc-key calc-op" data-calc="/">÷</button>
+        <button class="calc-key" data-calc="4">4</button>
+        <button class="calc-key" data-calc="5">5</button>
+        <button class="calc-key" data-calc="6">6</button>
+        <button class="calc-key calc-op" data-calc="*">×</button>
+        <button class="calc-key" data-calc="1">1</button>
+        <button class="calc-key" data-calc="2">2</button>
+        <button class="calc-key" data-calc="3">3</button>
+        <button class="calc-key calc-op" data-calc="-">−</button>
+        <button class="calc-key" data-calc="0">0</button>
+        <button class="calc-key" data-calc=".">.</button>
+        <button class="calc-key calc-eq" data-calc="=">=</button>
+        <button class="calc-key calc-op" data-calc="+">+</button>
+      </div>
+    </div>
   </div>
 
   <div class="answers-grid">
@@ -235,6 +263,36 @@
   </div>
 
   <div id="brainfight-scores" class="brainfight-scores hidden"></div>
+
+  <!-- SFIDA A GRIGLIA 2x2 (calcio, F1, cinema/serie TV, geografia) -->
+  <div id="grid-wrap" class="grid-wrap hidden">
+    <table class="grid-table">
+      <tr>
+        <td class="grid-corner"></td>
+        <td class="grid-head" id="grid-col-0"></td>
+        <td class="grid-head" id="grid-col-1"></td>
+      </tr>
+      <tr>
+        <td class="grid-head" id="grid-row-0"></td>
+        <td class="grid-cell" id="grid-cell-0" data-cell="0">+</td>
+        <td class="grid-cell" id="grid-cell-1" data-cell="1">+</td>
+      </tr>
+      <tr>
+        <td class="grid-head" id="grid-row-1"></td>
+        <td class="grid-cell" id="grid-cell-2" data-cell="2">+</td>
+        <td class="grid-cell" id="grid-cell-3" data-cell="3">+</td>
+      </tr>
+    </table>
+    <p class="muted small" id="grid-status">Tocca una casella per inserire la tua risposta</p>
+
+    <div id="grid-input-wrap" class="grid-input-wrap hidden">
+      <div class="grid-input-label" id="grid-input-label"></div>
+      <input id="grid-input" type="text" autocomplete="off" placeholder="Scrivi un nome..." />
+      <div id="grid-suggestions" class="grid-suggestions"></div>
+      <button class="btn btn-ghost" id="grid-cancel">Annulla</button>
+    </div>
+  </div>
+
   <div id="mini-scoreboard" class="mini-scoreboard"></div>
   <div id="elimination-chips" class="elimination-chips hidden"></div>
 </section>
@@ -275,6 +333,11 @@
     <h3>Classifica di sessione (cumulativa)</h3>
     <p class="muted small">1000 pt al 1°, 500 pt al 2°, 250 pt al 3° posto di ogni partita giocata in questa sessione.</p>
     <ol id="session-standings" class="standings-list session-standings"></ol>
+
+    <div id="session-awards-wrap" class="hidden">
+      <h3>Statistiche della serata</h3>
+      <div id="session-awards" class="session-stats"></div>
+    </div>
 
     <button class="btn btn-primary" id="btn-play-again">Nuova partita (stessa sessione)</button>
     <p class="muted" id="final-wait-msg">In attesa che il presentatore avvii una nuova partita...</p>

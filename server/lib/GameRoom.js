@@ -1,5 +1,6 @@
 const questionBank = require('./QuestionBank');
 const brainfightingBank = require('./BrainfightingBank');
+const gridGame = require('./GridGame');
 const host = require('./Host');
 
 const PHASE1_QUESTIONS = 10;
@@ -16,7 +17,11 @@ const BRAINFIGHT_TRIGGER_ROUNDS = 10; // dopo 10 round di eliminazione normale c
 const BRAINFIGHT_WINNING_SCORE = 3; // punti necessari per vincere l'intera partita
 const BRAINFIGHT_MAX_WRONG_PER_PROBLEM = 3; // oltre questo numero di tentativi falliti, si cambia problema
 const BUZZ_TIME_MS = 120000; // 2 minuti per prenotarsi
-const BRAINFIGHT_ANSWER_LOCK_MS = 15000; // finestra breve per scegliere una volta prenotati
+const BRAINFIGHT_ANSWER_LOCK_MS = 5000; // solo 5 secondi per rispondere dopo il buzz: bisogna prenotarsi già sapendo la risposta
+// Categorie i cui problemi richiedono calcoli: qui il client mostra una calcolatrice sotto al buzz.
+const CALC_CATEGORIES = new Set(['Matematica', 'Fisica', 'Ingegneria del Veicolo', 'Automobili e Motori', 'Formula 1', 'Scienza e Natura']);
+const GRID_TIME_MS = 180000; // 3 minuti per completare una griglia 2x2
+const GRID_CHANCE = 0.5; // probabilità di proporre una griglia invece di un problema a buzz, se la categoria la supporta
 
 function wait(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
@@ -32,7 +37,7 @@ class GameRoom {
   constructor(code, hostSocketId, settings) {
     this.code = code;
     this.visibility = settings.visibility === 'public' ? 'public' : 'private';
-    this.mode = settings.mode === 'classic' ? 'classic' : 'rush'; // 'rush' | 'classic'
+    this.mode = ['classic', 'brainfight'].includes(settings.mode) ? settings.mode : 'rush'; // 'rush' | 'classic' | 'brainfight'
     this.difficulty = settings.difficulty || 'misto'; // facile|medio|difficile|superdifficile|impossibile|misto
     this.categories = Array.isArray(settings.categories) ? settings.categories.filter(Boolean) : []; // [] = "tutte"
     this.hostMode = settings.hostMode === 'unfiltered' ? 'unfiltered' : 'family'; // presentatore: 'family' o 'unfiltered' (non family friendly)
@@ -54,6 +59,10 @@ class GameRoom {
     this.matchNumber = 1;
     this.sessionScores = new Map(); // nickname -> punteggio cumulativo di sessione
 
+    // Statistiche cumulative della sessione, per il riepilogo finale (nickname -> dati).
+    // Servono a produrre i "premi" di fine serata: più veloce, più preciso, e così via.
+    this.sessionStats = new Map();
+
     // Tracciamento risposte-tutti-date (per chiudere la domanda in anticipo) e pulsante "Pronto".
     this._answerWatcher = null;
     this.readyPlayers = new Set();
@@ -65,6 +74,12 @@ class GameRoom {
     this.buzzedPlayerId = null;
     this._buzzWatcher = null;
     this._bfAnswerWatcher = null;
+
+    // Sfida a griglia (Calcio, F1, Cinema/Serie TV, Geografia): niente buzz, vince chi
+    // completa per primo tutte e 4 le caselle.
+    this.currentGrid = null;
+    this.gridProgress = new Map(); // socketId -> { filled: Map(cellIndex -> nome), done: bool }
+    this._gridWatcher = null;
   }
 
   addPlayer(socketId, nickname) {
@@ -79,6 +94,41 @@ class GameRoom {
       eliminationRound: null,
       leftMatch: false, // il giocatore ha scelto di abbandonare la partita in corso (resta in sessione)
     });
+  }
+
+  // Riaggancia un giocatore che aveva perso la connessione: la scheda (punteggio, stato di
+  // eliminazione, qualificazione) viene spostata sul nuovo socket, così rientra esattamente
+  // dove era rimasto invece di ripartire da zero. Il match si riconosce dal nickname.
+  reconnectPlayer(newSocketId, nickname) {
+    const wanted = String(nickname || '').slice(0, 16).trim().toLowerCase();
+    if (!wanted) return null;
+
+    for (const [oldId, p] of this.players.entries()) {
+      if (p.connected) continue; // solo chi risulta caduto
+      if (p.nickname.trim().toLowerCase() !== wanted) continue;
+
+      this.players.delete(oldId);
+      p.id = newSocketId;
+      p.connected = true;
+      this.players.set(newSocketId, p);
+
+      // Sposta anche i riferimenti al vecchio socket sparsi nello stato della partita,
+      // altrimenti il giocatore rientra ma il gioco continua ad aspettare il socket morto.
+      if (this.readyPlayers.delete(oldId)) this.readyPlayers.add(newSocketId);
+      if (this.currentAnswers.has(oldId)) {
+        this.currentAnswers.set(newSocketId, this.currentAnswers.get(oldId));
+        this.currentAnswers.delete(oldId);
+      }
+      if (this.gridProgress.has(oldId)) {
+        this.gridProgress.set(newSocketId, this.gridProgress.get(oldId));
+        this.gridProgress.delete(oldId);
+      }
+      if (this.buzzedPlayerId === oldId) this.buzzedPlayerId = newSocketId;
+      if (this.hostSocketId === oldId) this.hostSocketId = newSocketId;
+
+      return p;
+    }
+    return null;
   }
 
   removePlayer(socketId) {
@@ -130,6 +180,65 @@ class GameRoom {
     return [...this.sessionScores.entries()]
       .map(([nickname, sessionScore]) => ({ nickname, sessionScore }))
       .sort((a, b) => b.sessionScore - a.sessionScore);
+  }
+
+  // Riepilogo statistico della serata: i "premi" da leggere a fine sessione.
+  // Restituisce solo le voci che hanno davvero un vincitore (niente premi a vuoto).
+  sessionAwards() {
+    const all = [...this.sessionStats.values()].filter((s) => s.answered > 0 || s.timedOut > 0);
+    if (all.length === 0) return [];
+
+    const awards = [];
+    const pushBest = (title, list, pick, format) => {
+      const eligible = list.filter(pick.filter);
+      if (eligible.length === 0) return;
+      const best = eligible.sort(pick.sort)[0];
+      awards.push({ title, nickname: best.nickname, detail: format(best) });
+    };
+
+    pushBest(
+      'Dito più veloce',
+      all,
+      { filter: (s) => s.correct > 0 && s.fastestMs !== null, sort: (a, b) => a.fastestMs - b.fastestMs },
+      (s) => `Risposta esatta più rapida: ${(s.fastestMs / 1000).toFixed(2)}s`
+    );
+
+    pushBest(
+      'Cecchino',
+      all,
+      { filter: (s) => s.answered >= 3, sort: (a, b) => (b.correct / b.answered) - (a.correct / a.answered) },
+      (s) => `${s.correct} giuste su ${s.answered} (${Math.round((s.correct / s.answered) * 100)}%)`
+    );
+
+    pushBest(
+      'Mano pesante',
+      all,
+      { filter: (s) => s.wrong > 0, sort: (a, b) => b.wrong - a.wrong },
+      (s) => `${s.wrong} risposte sbagliate`
+    );
+
+    pushBest(
+      'Mister punti',
+      all,
+      { filter: (s) => s.pointsGained > 0, sort: (a, b) => b.pointsGained - a.pointsGained },
+      (s) => `${s.pointsGained} punti raccolti in totale`
+    );
+
+    pushBest(
+      'Il pensatore',
+      all,
+      { filter: (s) => s.answered >= 3, sort: (a, b) => (b.totalMs / b.answered) - (a.totalMs / a.answered) },
+      (s) => `Tempo medio di risposta: ${(s.totalMs / s.answered / 1000).toFixed(2)}s`
+    );
+
+    pushBest(
+      'Colto in flagrante',
+      all,
+      { filter: (s) => s.timedOut > 0, sort: (a, b) => b.timedOut - a.timedOut },
+      (s) => `${s.timedOut} volte senza rispondere in tempo`
+    );
+
+    return awards;
   }
 
   submitAnswer(socketId, answerIndex) {
@@ -283,6 +392,23 @@ class GameRoom {
       }
     }
 
+    // Modalità "solo brainfighting": si salta fase 1 e fase a eliminazione, si va dritti ai
+    // problemi col pulsante buzz tra tutti i giocatori collegati.
+    if (this.mode === 'brainfight') {
+      const participants = this.playerList.filter((p) => p.connected && !p.leftMatch).map((p) => p.id);
+      if (participants.length < 2) {
+        // Con un solo giocatore non ha senso una gara al buzz: vince direttamente.
+        await this.finish(io, participants);
+        return;
+      }
+      this.state = 'elimination';
+      const result = await this.runBrainfighting(io, participants);
+      const others = participants.filter((id) => id !== result.winnerId);
+      others.sort((a, b) => (result.scores.get(b) || 0) - (result.scores.get(a) || 0));
+      await this.finish(io, [result.winnerId, ...others].filter(Boolean));
+      return;
+    }
+
     for (let i = 0; i < PHASE1_QUESTIONS; i++) {
       this.phase1Index = i;
       await this.askQuestion(io, {
@@ -418,6 +544,30 @@ class GameRoom {
         points,
         elapsedMs: entry ? entry.elapsedMs : null,
       });
+
+      // Accumula le statistiche di sessione per il riepilogo di fine serata.
+      const st = this.sessionStats.get(player.nickname) || {
+        nickname: player.nickname,
+        answered: 0,
+        correct: 0,
+        wrong: 0,
+        timedOut: 0,
+        totalMs: 0,
+        fastestMs: null,
+        pointsGained: 0,
+        pointsLost: 0,
+      };
+      if (entry) {
+        st.answered++;
+        st.totalMs += entry.elapsedMs;
+        if (st.fastestMs === null || entry.elapsedMs < st.fastestMs) st.fastestMs = entry.elapsedMs;
+        if (correct) st.correct++; else st.wrong++;
+      } else {
+        st.timedOut++;
+      }
+      if (points > 0) st.pointsGained += points;
+      if (points < 0) st.pointsLost += -points;
+      this.sessionStats.set(player.nickname, st);
     }
 
     const ctx = { category: question.category, mode: this.hostMode };
@@ -831,6 +981,7 @@ class GameRoom {
         eligibleIds: eligibleToBuzz,
         timeLimitMs: BUZZ_TIME_MS,
         scores: scoreList(),
+        needsCalculator: CALC_CATEGORIES.has(question.category),
       });
 
       const buzzerId = await this.waitForBuzz(eligibleToBuzz, BUZZ_TIME_MS);
@@ -849,6 +1000,7 @@ class GameRoom {
         nickname: buzzerNickname,
         answers: remainingAnswers,
         text: question.text,
+        answerTimeMs: BRAINFIGHT_ANSWER_LOCK_MS,
       });
 
       const answerIndex = await this.waitForBrainfightAnswer(buzzerId, BRAINFIGHT_ANSWER_LOCK_MS);
@@ -896,8 +1048,87 @@ class GameRoom {
     }
   }
 
-  // Fase finale "brainfighting": nessuno viene mai eliminato, si accumulano punti (1 a risposta
-  // giusta) finché qualcuno non arriva a BRAINFIGHT_WINNING_SCORE, vincendo l'intera partita.
+  // Gestisce UNA sfida a griglia 2x2: nessun buzz, tutti giocano insieme e vince il punto
+  // chi completa per primo tutte e 4 le caselle con risposte valide.
+  async runGridChallenge(io, grid, participantIds, scores) {
+    this.currentGrid = grid;
+    this.gridProgress = new Map(participantIds.map((id) => [id, { filled: new Map(), done: false }]));
+
+    const scoreList = () =>
+      participantIds.map((id) => ({ id, nickname: this.players.get(id)?.nickname || '???', score: scores.get(id) || 0 }));
+
+    io.to(this.code).emit('grid:start', {
+      category: grid.category,
+      rows: grid.rows.map((r) => r.label),
+      cols: grid.cols.map((c) => c.label),
+      // Elenco completo dei nomi noti per l'autocomplete: NON rivela quali siano le soluzioni.
+      suggestions: gridGame.allSubjectNames(grid.datasetKey),
+      timeLimitMs: GRID_TIME_MS,
+      scores: scoreList(),
+    });
+
+    const winnerId = await new Promise((resolve) => {
+      let settled = false;
+      const finish = (id) => {
+        if (settled) return;
+        settled = true;
+        this._gridWatcher = null;
+        clearTimeout(timer);
+        resolve(id || null);
+      };
+      this._gridWatcher = (socketId) => {
+        const prog = this.gridProgress.get(socketId);
+        if (prog && prog.filled.size === 4) finish(socketId);
+      };
+      const timer = setTimeout(() => finish(null), GRID_TIME_MS);
+    });
+
+    this.currentGrid = null;
+    const ctx = { category: grid.category, mode: this.hostMode };
+
+    if (!winnerId) {
+      io.to(this.code).emit('grid:end', { winnerId: null, nickname: null, scores: scoreList() });
+      await this.emitHostMessages(io, [host.say('gridNobodyFinished', {}, ctx)]);
+      await wait(1500);
+      return { winnerId: null };
+    }
+
+    const newScore = (scores.get(winnerId) || 0) + 1;
+    scores.set(winnerId, newScore);
+    const nickname = this.players.get(winnerId)?.nickname || '???';
+    io.to(this.code).emit('grid:end', { winnerId, nickname, scores: scoreList() });
+    await this.emitHostMessages(io, [host.say('gridWinner', { name: nickname }, ctx)]);
+    if (newScore >= BRAINFIGHT_WINNING_SCORE) return { winnerId };
+    return { winnerId: null };
+  }
+
+  // Chiamato quando un giocatore prova a riempire una casella della griglia.
+  // Restituisce l'esito al singolo giocatore tramite callback.
+  submitGridAnswer(socketId, cellIndex, answer, cb) {
+    if (!this.currentGrid) return cb && cb({ error: 'Nessuna griglia in corso' });
+    const prog = this.gridProgress.get(socketId);
+    if (!prog || prog.done) return cb && cb({ error: 'Non stai partecipando a questa griglia' });
+    if (typeof cellIndex !== 'number' || cellIndex < 0 || cellIndex > 3) return cb && cb({ error: 'Casella non valida' });
+    if (prog.filled.has(cellIndex)) return cb && cb({ error: 'Casella già completata' });
+
+    const cell = this.currentGrid.cells[cellIndex];
+    const canonical = gridGame.checkAnswer(this.currentGrid.datasetKey, cell.row, cell.col, answer);
+
+    if (!canonical) {
+      // Si può riprovare all'infinito sulla stessa casella: nessuna penalità.
+      return cb && cb({ ok: false, cellIndex });
+    }
+
+    // Non si può usare lo stesso nome due volte nella stessa griglia.
+    if ([...prog.filled.values()].includes(canonical)) {
+      return cb && cb({ ok: false, cellIndex, reason: 'duplicato' });
+    }
+
+    prog.filled.set(cellIndex, canonical);
+    cb && cb({ ok: true, cellIndex, canonical, filled: prog.filled.size });
+    if (this._gridWatcher) this._gridWatcher(socketId);
+  }
+
   async runBrainfighting(io, participantIds) {
     const scores = new Map(participantIds.map((id) => [id, 0]));
 
@@ -924,10 +1155,36 @@ class GameRoom {
       }
 
       const difficulty = roundDifficulty(this.difficulty, problemIndex);
-      const question = this.pickBrainfightingQuestion(difficulty);
-      if (!question) break;
 
-      const result = await this.runBrainfightProblem(io, question, connectedParticipants, scores);
+      // Se la stanza ha scelto categorie che supportano la sfida a griglia (Calcio, F1,
+      // Cinema/Serie TV, Geografia), a volte si propone quella invece del problema a buzzer.
+      const gridCats = (this.categories.length ? this.categories : gridGame.supportedCategories())
+        .filter((c) => gridGame.supportsCategory(c));
+
+      // Le categorie scelte hanno problemi a buzzer nel mazzo brainfighting?
+      // Se NON ne hanno (es. una partita di solo Calcio, che ha solo la griglia), la griglia
+      // diventa obbligatoria: senza questo, il gioco ripiegherebbe su problemi di tutt'altra
+      // categoria (Fisica, Matematica...), tradendo la scelta fatta dai giocatori.
+      const bfCats = brainfightingBank.getCategories();
+      const hasBuzzProblems = this.categories.length === 0
+        ? true
+        : this.categories.some((c) => bfCats.includes(c));
+
+      let result = null;
+      if (gridCats.length > 0 && (!hasBuzzProblems || Math.random() < GRID_CHANCE)) {
+        const cat = gridCats[Math.floor(Math.random() * gridCats.length)];
+        const grid = gridGame.generateGrid(cat);
+        if (grid) {
+          result = await this.runGridChallenge(io, grid, connectedParticipants, scores);
+        }
+      }
+
+      if (!result) {
+        const question = this.pickBrainfightingQuestion(difficulty);
+        if (!question) break;
+        result = await this.runBrainfightProblem(io, question, connectedParticipants, scores);
+      }
+
       if (result.winnerId) {
         winnerId = result.winnerId;
       } else {
@@ -988,6 +1245,7 @@ class GameRoom {
         };
       }),
       sessionBoard,
+      sessionAwards: this.sessionAwards(),
     });
   }
 

@@ -303,7 +303,7 @@
     lobbies.forEach((l) => {
       const div = document.createElement('div');
       div.className = 'lobby-item';
-      div.innerHTML = `<div><strong>${l.players} giocatori</strong><br/><span class="muted">${l.mode === 'rush' ? 'Rush' : 'Classica'} · ${l.difficulty} · ${formatCategories(l.categories)}</span></div>`;
+      div.innerHTML = `<div><strong>${l.players} giocatori</strong><br/><span class="muted">${l.mode === 'rush' ? 'Rush' : l.mode === 'brainfight' ? 'Brainfighting 🧠' : 'Classica'} · ${l.difficulty} · ${formatCategories(l.categories)}</span></div>`;
       const btn = document.createElement('button');
       btn.textContent = 'Unisciti';
       btn.addEventListener('click', () => {
@@ -361,7 +361,7 @@
     } else {
       codeWrap.classList.add('hidden');
     }
-    const modeLabel = summary.mode === 'rush' ? 'Rush (velocità)' : 'Classica (10s, punti fissi)';
+    const modeLabel = summary.mode === 'rush' ? 'Rush (velocità)' : summary.mode === 'brainfight' ? 'Solo Brainfighting 🧠' : 'Classica (10s, punti fissi)';
     const hostModeLabel = summary.hostMode === 'unfiltered' ? 'Sboccato 🔞' : 'Family friendly';
     document.getElementById('lobby-settings').textContent =
       `${summary.visibility === 'public' ? 'Partita aperta' : 'Partita chiusa'} · ${modeLabel} · Livello: ${summary.difficulty} · Categorie: ${formatCategories(summary.categories)} · Presentatore: ${hostModeLabel}`;
@@ -425,6 +425,7 @@
   function hideResultPause() {
     document.getElementById('host-bubble').classList.remove('spotlight');
     document.getElementById('ready-panel').classList.add('hidden');
+    document.getElementById('screen-game').classList.remove('with-ready-panel');
     iAmReady = false;
   }
 
@@ -440,6 +441,8 @@
     document.getElementById('buzz-wrap').classList.add('hidden');
     document.querySelector('.answers-grid').style.display = '';
     document.getElementById('brainfight-scores').classList.add('hidden');
+    document.getElementById('grid-wrap').classList.add('hidden');
+    document.getElementById('mini-scoreboard').classList.remove('hidden');
     document.querySelectorAll('.answer-btn').forEach((b) => { b.classList.remove('fume'); b.style.display = ''; });
 
     // Fine della pausa: si torna al presentatore in formato compatto e si nasconde "Pronto".
@@ -515,7 +518,191 @@
     });
   });
 
-  // ---- Fase "brainfighting": pulsante buzz -------------------------------
+  // ---- Sfida a griglia 2x2 ---------------------------------------------
+  let gridSuggestions = [];
+  let gridActiveCell = null;
+  let gridFilled = new Set();
+
+  function normalizeStr(s) {
+    return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9 ]/g, '').trim();
+  }
+
+  function closeGridInput() {
+    gridActiveCell = null;
+    document.getElementById('grid-input-wrap').classList.add('hidden');
+    document.getElementById('grid-input').value = '';
+    document.getElementById('grid-suggestions').innerHTML = '';
+  }
+
+  function renderGridSuggestions() {
+    const q = normalizeStr(document.getElementById('grid-input').value);
+    const box = document.getElementById('grid-suggestions');
+    box.innerHTML = '';
+    if (!q) return;
+    const matches = gridSuggestions.filter((n) => normalizeStr(n).includes(q)).slice(0, 8);
+    matches.forEach((name) => {
+      const div = document.createElement('div');
+      div.className = 'grid-suggestion';
+      div.textContent = name;
+      // Serve cliccare il suggerimento per confermare: nessun inserimento "alla cieca".
+      div.addEventListener('click', () => submitGridCell(name));
+      box.appendChild(div);
+    });
+  }
+
+  function submitGridCell(name) {
+    if (gridActiveCell === null) return;
+    const cellIndex = gridActiveCell;
+    socket.emit('grid:answer', { cellIndex, answer: name }, (res) => {
+      if (!res || res.error) return toast(res && res.error ? res.error : 'Errore');
+      const cellEl = document.getElementById('grid-cell-' + cellIndex);
+      if (res.ok) {
+        cellEl.textContent = res.canonical;
+        cellEl.classList.add('filled');
+        gridFilled.add(cellIndex);
+        closeGridInput();
+        document.getElementById('grid-status').textContent = `${gridFilled.size}/4 caselle completate`;
+      } else {
+        cellEl.classList.add('shake');
+        setTimeout(() => cellEl.classList.remove('shake'), 400);
+        toast(res.reason === 'duplicato' ? 'Nome già usato in questa griglia' : 'Non valido per questa casella');
+      }
+    });
+  }
+
+  document.querySelectorAll('.grid-cell').forEach((cell) => {
+    cell.addEventListener('click', () => {
+      const idx = parseInt(cell.dataset.cell, 10);
+      if (gridFilled.has(idx)) return;
+      gridActiveCell = idx;
+      const rowLabel = document.getElementById('grid-row-' + Math.floor(idx / 2)).textContent;
+      const colLabel = document.getElementById('grid-col-' + (idx % 2)).textContent;
+      document.getElementById('grid-input-label').textContent = `${rowLabel}  ×  ${colLabel}`;
+      document.getElementById('grid-input-wrap').classList.remove('hidden');
+      document.getElementById('grid-input').value = '';
+      document.getElementById('grid-suggestions').innerHTML = '';
+      document.getElementById('grid-input').focus();
+    });
+  });
+
+  document.getElementById('grid-input').addEventListener('input', renderGridSuggestions);
+  document.getElementById('grid-cancel').addEventListener('click', closeGridInput);
+
+  socket.on('grid:start', (data) => {
+    showScreen('screen-game');
+    hideResultPause();
+    inBrainfight = true;
+    gridSuggestions = data.suggestions || [];
+    gridFilled = new Set();
+    closeGridInput();
+
+    document.getElementById('game-phase-label').textContent = 'Griglia';
+    document.getElementById('game-category').textContent = data.category;
+    document.getElementById('game-progress').textContent = 'Completa tutte e 4 le caselle!';
+    document.getElementById('question-text').textContent = 'Chi completa per primo la griglia guadagna il punto';
+    document.getElementById('spectator-banner').classList.add('hidden');
+    document.getElementById('buzz-wrap').classList.add('hidden');
+    document.querySelector('.answers-grid').style.display = 'none';
+    document.getElementById('mini-scoreboard').classList.add('hidden');
+    document.getElementById('elimination-chips').classList.add('hidden');
+    document.getElementById('grid-wrap').classList.remove('hidden');
+
+    data.rows.forEach((label, i) => (document.getElementById('grid-row-' + i).textContent = label));
+    data.cols.forEach((label, i) => (document.getElementById('grid-col-' + i).textContent = label));
+    [0, 1, 2, 3].forEach((i) => {
+      const c = document.getElementById('grid-cell-' + i);
+      c.textContent = '+';
+      c.classList.remove('filled');
+    });
+    document.getElementById('grid-status').textContent = '0/4 caselle completate';
+
+    renderBrainfightScores(data.scores);
+    startTimer(data.timeLimitMs);
+  });
+
+  socket.on('grid:end', (data) => {
+    stopTimer();
+    closeGridInput();
+    document.getElementById('grid-wrap').classList.add('hidden');
+    renderBrainfightScores(data.scores);
+    document.getElementById('question-text').textContent = data.nickname
+      ? `${data.nickname} ha completato la griglia!`
+      : 'Tempo scaduto: nessuno ha completato la griglia';
+
+    document.getElementById('host-bubble').classList.add('spotlight');
+    document.getElementById('ready-panel').classList.remove('hidden');
+    iAmReady = false;
+    const btnReady = document.getElementById('btn-ready');
+    btnReady.disabled = false;
+    btnReady.textContent = 'Pronto! ✅';
+  });
+
+  // ---- Calcolatrice della fase brainfighting ----------------------------
+  // Valutatore sicuro (niente eval): tokenizza e applica shunting-yard.
+  function safeEvaluate(expr) {
+    const tokens = expr.match(/\d+\.?\d*|[+\-*/()]/g);
+    if (!tokens) return null;
+    const prec = { '+': 1, '-': 1, '*': 2, '/': 2 };
+    const output = [];
+    const ops = [];
+    for (const t of tokens) {
+      if (/^\d/.test(t)) {
+        output.push(parseFloat(t));
+      } else if (t === '(') {
+        ops.push(t);
+      } else if (t === ')') {
+        while (ops.length && ops[ops.length - 1] !== '(') output.push(ops.pop());
+        if (!ops.length) return null;
+        ops.pop();
+      } else {
+        while (ops.length && ops[ops.length - 1] !== '(' && prec[ops[ops.length - 1]] >= prec[t]) {
+          output.push(ops.pop());
+        }
+        ops.push(t);
+      }
+    }
+    while (ops.length) {
+      const op = ops.pop();
+      if (op === '(') return null;
+      output.push(op);
+    }
+    const stack = [];
+    for (const tok of output) {
+      if (typeof tok === 'number') {
+        stack.push(tok);
+      } else {
+        const b = stack.pop();
+        const a = stack.pop();
+        if (a === undefined || b === undefined) return null;
+        if (tok === '+') stack.push(a + b);
+        else if (tok === '-') stack.push(a - b);
+        else if (tok === '*') stack.push(a * b);
+        else if (tok === '/') { if (b === 0) return null; stack.push(a / b); }
+      }
+    }
+    if (stack.length !== 1 || !isFinite(stack[0])) return null;
+    return Math.round(stack[0] * 1e6) / 1e6;
+  }
+
+  let calcExpr = '';
+  function updateCalcDisplay() {
+    document.getElementById('calc-display').textContent = calcExpr || '0';
+  }
+  document.querySelectorAll('.calc-key').forEach((key) => {
+    key.addEventListener('click', () => {
+      const v = key.dataset.calc;
+      if (v === 'C') calcExpr = '';
+      else if (v === '←') calcExpr = calcExpr.slice(0, -1);
+      else if (v === '=') {
+        const result = safeEvaluate(calcExpr);
+        calcExpr = result === null ? '' : String(result);
+      } else {
+        calcExpr += v;
+      }
+      updateCalcDisplay();
+    });
+  });
+
   document.getElementById('btn-buzz').addEventListener('click', () => {
     const btn = document.getElementById('btn-buzz');
     if (btn.disabled) return;
@@ -547,6 +734,7 @@
   socket.on('brainfight:waitBuzz', (data) => {
     showScreen('screen-game');
     hideResultPause();
+    document.getElementById('grid-wrap').classList.add('hidden');
     answered = false;
     bfCanAnswer = false;
     document.getElementById('game-phase-label').textContent = 'Brainfighting';
@@ -566,6 +754,11 @@
     document.getElementById('buzz-status').textContent = iCanBuzz
       ? 'Premi per prenotarti a rispondere'
       : 'Non puoi prenotarti su questo problema: hai già sbagliato qui.';
+
+    // La calcolatrice compare solo nei problemi che richiedono calcoli.
+    const calcWrap = document.getElementById('calc-wrap');
+    calcWrap.classList.toggle('hidden', !data.needsCalculator);
+    if (data.needsCalculator) { calcExpr = ''; updateCalcDisplay(); }
 
     renderBrainfightScores(data.scores);
     startTimer(data.timeLimitMs);
@@ -595,8 +788,11 @@
     });
 
     document.getElementById('game-progress').textContent = bfCanAnswer
-      ? 'Tocca a te: scegli!'
+      ? 'Tocca a te: scegli, hai pochi secondi!'
       : `${data.nickname} si è prenotato/a...`;
+
+    // Countdown breve: dopo il buzz si hanno solo pochi secondi per rispondere.
+    if (data.answerTimeMs) startTimer(data.answerTimeMs);
   });
 
   socket.on('brainfight:result', (data) => {
@@ -620,7 +816,7 @@
     btnReady.textContent = 'Pronto! ✅';
   });
 
-  function renderMiniScoreboard(scoreboard) {
+  function renderMiniScoreboard(scoreboard, deltas) {
     scoreboard.forEach((p) => playersById.set(p.id, p.nickname));
     const el = document.getElementById('mini-scoreboard');
 
@@ -649,7 +845,15 @@
         }
       }
       row.className = 'row' + (p.id === myId ? ' me' : '') + moveClass;
-      row.innerHTML = `<span>${i + 1}. ${arrow}${p.nickname}${p.eliminated ? ' ❌' : ''}${p.leftMatch ? ' 🚪' : ''}</span><span>${p.score} pt</span>`;
+      // Punti guadagnati (o persi) proprio in questa domanda, così si vede subito il perché
+      // del movimento in classifica invece del solo totale.
+      let deltaHtml = '';
+      if (deltas && Object.prototype.hasOwnProperty.call(deltas, p.id)) {
+        const d = deltas[p.id];
+        const txt = d > 0 ? `+${d}` : String(d);
+        deltaHtml = `<span class="pts-delta${d === 0 ? ' zero' : ''}">${txt}</span>`;
+      }
+      row.innerHTML = `<span>${i + 1}. ${arrow}${p.nickname}${p.eliminated ? ' ❌' : ''}${p.leftMatch ? ' 🚪' : ''}</span><span>${p.score} pt${deltaHtml}</span>`;
       el.appendChild(row);
     });
 
@@ -683,10 +887,14 @@
     if (mine && mine.answerIndex !== null && mine.answerIndex !== data.correctIndex) {
       buttons[mine.answerIndex].classList.add('wrong-pick');
     }
-    if (data.scoreboard) renderMiniScoreboard(data.scoreboard);
+    // Punti guadagnati da ciascuno in QUESTA domanda, per mostrarli accanto al totale.
+    const deltas = {};
+    (data.results || []).forEach((r) => { deltas[r.id] = r.points; });
+    if (data.scoreboard) renderMiniScoreboard(data.scoreboard, deltas);
 
-    // Il presentatore passa in primo piano al centro schermo per la pausa, con il pulsante "Pronto".
+    // Il presentatore passa in primo piano per la pausa, con il pulsante "Pronto".
     document.getElementById('host-bubble').classList.add('spotlight');
+    document.getElementById('screen-game').classList.add('with-ready-panel');
     const readyPanel = document.getElementById('ready-panel');
     readyPanel.classList.remove('hidden');
     iAmReady = false;
@@ -803,6 +1011,7 @@
     bfCanAnswer = false;
     document.getElementById('buzz-wrap').classList.add('hidden');
     document.getElementById('brainfight-scores').classList.add('hidden');
+    document.getElementById('grid-wrap').classList.add('hidden');
     document.querySelector('.answers-grid').style.display = '';
     showScreen('screen-final');
     document.getElementById('final-winner').textContent = data.championName ? `${data.championName} 🎉` : 'Nessun vincitore';
@@ -827,6 +1036,23 @@
       sessionList.appendChild(li);
     });
 
+    // Statistiche della serata: i "premi" calcolati sull'intera sessione.
+    const awardsWrap = document.getElementById('session-awards-wrap');
+    const awardsEl = document.getElementById('session-awards');
+    const awards = data.sessionAwards || [];
+    awardsEl.innerHTML = '';
+    if (awards.length === 0) {
+      awardsWrap.classList.add('hidden');
+    } else {
+      awardsWrap.classList.remove('hidden');
+      awards.forEach((a) => {
+        const card = document.createElement('div');
+        card.className = 'stat-card';
+        card.innerHTML = `<div class="stat-title">${a.title}</div><div class="stat-value">${a.nickname}</div><div class="stat-detail">${a.detail}</div>`;
+        awardsEl.appendChild(card);
+      });
+    }
+
     const playAgainBtn = document.getElementById('btn-play-again');
     const waitMsg = document.getElementById('final-wait-msg');
     if (isHost) {
@@ -850,7 +1076,26 @@
   socket.on('error', (data) => toast(data.message || 'Errore'));
 
   socket.on('connect', () => {
+    const previousId = myId;
     myId = socket.id;
+
+    // Riconnessione: se eravamo già in una partita e la connessione è caduta, proviamo a
+    // riprendere il posto invece di restare tagliati fuori. Il server riconosce il giocatore
+    // dal nickname e gli restituisce punteggio e stato esattamente come li aveva lasciati.
+    if (previousId && previousId !== socket.id && currentRoomCode && myNickname) {
+      socket.emit('lobby:reconnect', { code: currentRoomCode, nickname: myNickname }, (res) => {
+        if (res && res.ok) {
+          toast('Riconnesso alla partita ✅');
+          if (res.state !== 'lobby') showScreen('screen-game');
+        } else {
+          toast((res && res.error) || 'Non è stato possibile rientrare nella partita');
+        }
+      });
+    }
+  });
+
+  socket.on('disconnect', () => {
+    toast('Connessione persa, sto provando a rientrare...');
   });
 
   loadCategories();
