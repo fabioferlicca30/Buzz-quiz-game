@@ -89,8 +89,9 @@
         "nazione:Svezia"
       ],
       "Paul Pogba": [
-        "club:Manchester United",
         "club:Juventus",
+        "club:Manchester United",
+        "club:Monaco",
         "nazione:Francia",
         "trofeo:Mondiale"
       ],
@@ -315,6 +316,7 @@
         "club:Barcellona",
         "club:Inter",
         "club:Liverpool",
+        "club:Marsiglia",
         "nazione:Uruguay",
         "trofeo:Champions League"
       ],
@@ -392,10 +394,11 @@
         "nazione:Italia"
       ],
       "Patrice Evra": [
-        "club:Monaco",
-        "club:Manchester United",
         "club:Juventus",
+        "club:Manchester United",
         "club:Marsiglia",
+        "club:Monaco",
+        "club:Paris Saint-Germain",
         "nazione:Francia",
         "trofeo:Champions League"
       ],
@@ -443,8 +446,10 @@
         "nazione:Galles"
       ],
       "Emerson Palmieri": [
-        "club:Roma",
         "club:Chelsea",
+        "club:Lione",
+        "club:Marsiglia",
+        "club:Roma",
         "nazione:Italia",
         "trofeo:Champions League",
         "trofeo:Europeo"
@@ -481,13 +486,14 @@
         "trofeo:Europeo"
       ],
       "Fernando Llorente": [
+        "club:Athletic Bilbao",
         "club:Juventus",
+        "club:Napoli",
         "club:Sevilla",
         "club:Tottenham",
-        "club:Napoli",
         "nazione:Spagna",
-        "trofeo:Mondiale",
-        "trofeo:Europeo"
+        "trofeo:Europeo",
+        "trofeo:Mondiale"
       ],
       "Kingsley Coman": [
         "club:Paris Saint-Germain",
@@ -610,11 +616,12 @@
         "nazione:Camerun"
       ],
       "Alexis Sanchez": [
-        "club:Barcellona",
         "club:Arsenal",
-        "club:Manchester United",
+        "club:Barcellona",
         "club:Inter",
+        "club:Manchester United",
         "club:Marsiglia",
+        "club:Sevilla",
         "nazione:Cile"
       ],
       "Olivier Giroud": [
@@ -652,6 +659,7 @@
       "Sandro Tonali": [
         "club:Milan",
         "club:Newcastle",
+        "club:Tottenham",
         "nazione:Italia"
       ],
       "Christian Pulisic": [
@@ -706,8 +714,9 @@
         "nazione:Germania"
       ],
       "Joaquin Correa": [
-        "club:Sevilla",
         "club:Inter",
+        "club:Marsiglia",
+        "club:Sevilla",
         "nazione:Argentina"
       ],
       "Kalidou Koulibaly": [
@@ -720,9 +729,12 @@
         "nazione:Belgio"
       ],
       "Jorginho": [
-        "club:Napoli",
-        "club:Chelsea",
         "club:Arsenal",
+        "club:Bayer Leverkusen",
+        "club:Bayern Monaco",
+        "club:Chelsea",
+        "club:Manchester City",
+        "club:Napoli",
         "nazione:Italia",
         "trofeo:Champions League",
         "trofeo:Europeo"
@@ -990,9 +1002,10 @@
         "nazione:Paesi Bassi"
       ],
       "Fernando Morientes": [
-        "club:Real Madrid",
-        "club:Monaco",
         "club:Liverpool",
+        "club:Marsiglia",
+        "club:Monaco",
+        "club:Real Madrid",
         "club:Valencia",
         "nazione:Spagna",
         "trofeo:Champions League"
@@ -1120,6 +1133,7 @@
       "Yaya Toure": [
         "club:Barcellona",
         "club:Manchester City",
+        "club:Monaco",
         "nazione:Costa d'Avorio",
         "trofeo:Champions League"
       ],
@@ -1160,11 +1174,12 @@
         "nazione:Ucraina"
       ],
       "Seydou Keita": [
-        "club:Lens",
-        "club:Sevilla",
         "club:Barcellona",
-        "club:Valencia",
+        "club:Lens",
+        "club:Marsiglia",
         "club:Roma",
+        "club:Sevilla",
+        "club:Valencia",
         "nazione:Mali",
         "trofeo:Champions League"
       ],
@@ -1203,9 +1218,10 @@
         "nazione:Brasile"
       ],
       "Ferran Torres": [
-        "club:Valencia",
-        "club:Manchester City",
         "club:Barcellona",
+        "club:Manchester City",
+        "club:Paris Saint-Germain",
+        "club:Valencia",
         "nazione:Spagna"
       ],
       "Ilkay Gundogan": [
@@ -1360,9 +1376,10 @@
         "nazione:Brasile"
       ],
       "Frederic Kanoute": [
-        "club:West Ham",
-        "club:Tottenham",
+        "club:Lione",
         "club:Sevilla",
+        "club:Tottenham",
+        "club:West Ham",
         "nazione:Mali"
       ],
       "Steven Nzonzi": [
@@ -1457,6 +1474,7 @@
       ],
       "Angel Gomes": [
         "club:Manchester United",
+        "club:Marsiglia",
         "nazione:Inghilterra"
       ],
       "Memphis Depay": [
@@ -1468,8 +1486,9 @@
         "nazione:Paesi Bassi"
       ],
       "Anthony Martial": [
-        "club:Monaco",
+        "club:Lione",
         "club:Manchester United",
+        "club:Monaco",
         "club:Sevilla",
         "nazione:Francia"
       ],
@@ -1513,8 +1532,9 @@
         "trofeo:Champions League"
       ],
       "Jordan Henderson": [
-        "club:Sunderland",
+        "club:Chelsea",
         "club:Liverpool",
+        "club:Sunderland",
         "nazione:Inghilterra",
         "trofeo:Champions League"
       ],
@@ -1527,6 +1547,7 @@
       "Andrew Robertson": [
         "club:Hull",
         "club:Liverpool",
+        "club:Tottenham",
         "nazione:Scozia",
         "trofeo:Champions League"
       ],
@@ -1640,9 +1661,10 @@
         "trofeo:Mondiale"
       ],
       "Cesar Azpilicueta": [
-        "club:Marsiglia",
-        "club:Chelsea",
         "club:Atletico Madrid",
+        "club:Chelsea",
+        "club:Marsiglia",
+        "club:Sevilla",
         "nazione:Spagna",
         "trofeo:Champions League"
       ],
@@ -1659,15 +1681,17 @@
         "trofeo:Champions League"
       ],
       "Antonio Rudiger": [
-        "club:Roma",
+        "club:Borussia Dortmund",
         "club:Chelsea",
         "club:Real Madrid",
+        "club:Roma",
         "nazione:Germania",
         "trofeo:Champions League"
       ],
       "Enzo Fernandez": [
         "club:Benfica",
         "club:Chelsea",
+        "club:Manchester City",
         "nazione:Argentina",
         "trofeo:Mondiale"
       ],
@@ -1888,13 +1912,14 @@
         "nazione:Inghilterra"
       ],
       "Pierre-Emerick Aubameyang": [
-        "club:Milan",
-        "club:Saint-Etienne",
-        "club:Borussia Dortmund",
         "club:Arsenal",
         "club:Barcellona",
+        "club:Borussia Dortmund",
         "club:Chelsea",
         "club:Marsiglia",
+        "club:Milan",
+        "club:Monaco",
+        "club:Saint-Etienne",
         "nazione:Gabon"
       ],
       "Michael Ballack": [
@@ -1912,6 +1937,7 @@
       "Florian Wirtz": [
         "club:Bayer Leverkusen",
         "club:Bayern Monaco",
+        "club:Liverpool",
         "nazione:Germania"
       ],
       "Jeremie Frimpong": [
@@ -1972,8 +1998,9 @@
       "Xherdan Shaqiri": [
         "club:Bayern Monaco",
         "club:Inter",
-        "club:Stoke",
+        "club:Lione",
         "club:Liverpool",
+        "club:Stoke",
         "nazione:Svizzera",
         "trofeo:Champions League"
       ],
@@ -2013,8 +2040,9 @@
         "trofeo:Europeo"
       ],
       "Marquinhos": [
-        "club:Roma",
+        "club:Arsenal",
         "club:Paris Saint-Germain",
+        "club:Roma",
         "nazione:Brasile"
       ],
       "Presnel Kimpembe": [
@@ -2030,9 +2058,10 @@
         "trofeo:Europeo"
       ],
       "Vitinha": [
+        "club:Marsiglia",
+        "club:Paris Saint-Germain",
         "club:Porto",
         "club:Wolverhampton",
-        "club:Paris Saint-Germain",
         "nazione:Portogallo"
       ],
       "Javier Pastore": [
@@ -2099,10 +2128,12 @@
         "trofeo:Mondiale"
       ],
       "Moussa Dembele": [
-        "club:Fulham",
-        "club:Celtic",
-        "club:Lione",
         "club:Atletico Madrid",
+        "club:Celtic",
+        "club:Fulham",
+        "club:Lione",
+        "club:Paris Saint-Germain",
+        "club:Tottenham",
         "nazione:Francia"
       ],
       "Houssem Aouar": [
@@ -2226,6 +2257,7 @@
         "club:Milan"
       ],
       "Liam Brady": [
+        "club:Arsenal",
         "club:Inter",
         "club:Juventus"
       ],
@@ -2234,6 +2266,7 @@
         "club:Juventus"
       ],
       "Hakan Calhanoglu": [
+        "club:Bayer Leverkusen",
         "club:Inter",
         "club:Milan"
       ],
@@ -2266,6 +2299,7 @@
       ],
       "Mattia De Sciglio": [
         "club:Juventus",
+        "club:Lione",
         "club:Milan"
       ],
       "Pierre Kalulu": [
@@ -2299,12 +2333,14 @@
       ],
       "Fabio Grosso": [
         "club:Inter",
-        "club:Juventus"
+        "club:Juventus",
+        "club:Lione"
       ],
       "Vladimir Jugovic": [
         "club:Atletico Madrid",
         "club:Inter",
-        "club:Juventus"
+        "club:Juventus",
+        "club:Monaco"
       ],
       "Joao Mario": [
         "club:Inter",
@@ -2328,9 +2364,11 @@
       ],
       "Dario Simic": [
         "club:Inter",
-        "club:Milan"
+        "club:Milan",
+        "club:Monaco"
       ],
       "Paulo Sousa": [
+        "club:Borussia Dortmund",
         "club:Inter",
         "club:Juventus"
       ],
@@ -2411,8 +2449,11 @@
       ],
       "João Cancelo": [
         "club:Barcellona",
+        "club:Bayern Monaco",
         "club:Inter",
-        "club:Juventus"
+        "club:Juventus",
+        "club:Manchester City",
+        "club:Valencia"
       ],
       "Filippo Cavalli": [
         "club:Inter",
@@ -2459,7 +2500,8 @@
         "club:Barcellona",
         "club:Inter",
         "club:Juventus",
-        "club:Milan"
+        "club:Milan",
+        "club:Tottenham"
       ],
       "Luigi De Agostini": [
         "club:Inter",
@@ -2523,6 +2565,7 @@
         "club:Roma"
       ],
       "Adrian Mutu": [
+        "club:Chelsea",
         "club:Inter",
         "club:Juventus"
       ],
@@ -2536,8 +2579,10 @@
         "club:Roma"
       ],
       "Christian Panucci": [
+        "club:Chelsea",
         "club:Inter",
         "club:Milan",
+        "club:Monaco",
         "club:Real Madrid",
         "club:Roma"
       ],
@@ -2608,6 +2653,9 @@
       ],
       "Mario Balotelli": [
         "club:Inter",
+        "club:Liverpool",
+        "club:Manchester City",
+        "club:Marsiglia",
         "club:Milan"
       ],
       "Mario Barluzzi": [
@@ -2708,6 +2756,7 @@
       ],
       "Matteo Darmian": [
         "club:Inter",
+        "club:Manchester United",
         "club:Milan"
       ],
       "Renato De Manzano": [
@@ -2716,7 +2765,9 @@
       ],
       "Cyril Domoraud": [
         "club:Inter",
-        "club:Milan"
+        "club:Marsiglia",
+        "club:Milan",
+        "club:Monaco"
       ],
       "Alessandro Faiolhe Amantino": [
         "club:Inter",
@@ -2917,6 +2968,7 @@
       ],
       "Alberto Aquilani": [
         "club:Juventus",
+        "club:Liverpool",
         "club:Milan",
         "club:Roma"
       ],
@@ -2949,6 +3001,7 @@
       ],
       "Nestor Combin": [
         "club:Juventus",
+        "club:Lione",
         "club:Milan"
       ],
       "Virginio De Paoli": [
@@ -2969,6 +3022,7 @@
         "club:Milan"
       ],
       "Emerson Ferreira da Rosa": [
+        "club:Bayer Leverkusen",
         "club:Juventus",
         "club:Milan",
         "club:Real Madrid",
@@ -3013,7 +3067,8 @@
       ],
       "Enzo Maresca": [
         "club:Juventus",
-        "club:Milan"
+        "club:Milan",
+        "club:Sevilla"
       ],
       "Amos Mariani": [
         "club:Juventus",
@@ -3167,6 +3222,8 @@
       "Laurent Blanc": [
         "club:Barcellona",
         "club:Inter",
+        "club:Manchester United",
+        "club:Marsiglia",
         "club:Napoli"
       ],
       "Antonio Blasevich": [
@@ -3242,6 +3299,7 @@
       ],
       "Ramón Díaz": [
         "club:Inter",
+        "club:Monaco",
         "club:Napoli"
       ],
       "Salvatore Esposito": [
@@ -3385,6 +3443,7 @@
       ],
       "Rolando": [
         "club:Inter",
+        "club:Marsiglia",
         "club:Napoli"
       ],
       "Renzo Rovatti": [
@@ -3511,8 +3570,10 @@
       ],
       "Morgan De Sanctis": [
         "club:Juventus",
+        "club:Monaco",
         "club:Napoli",
-        "club:Roma"
+        "club:Roma",
+        "club:Sevilla"
       ],
       "Flavio Emoli": [
         "club:Juventus",
@@ -3572,7 +3633,9 @@
         "club:Napoli"
       ],
       "Arkadiusz Milik": [
+        "club:Bayer Leverkusen",
         "club:Juventus",
+        "club:Marsiglia",
         "club:Napoli"
       ],
       "Michele Padovano": [
@@ -3651,7 +3714,8 @@
       ],
       "Marcelo Zalayeta": [
         "club:Juventus",
-        "club:Napoli"
+        "club:Napoli",
+        "club:Sevilla"
       ],
       "Marco Zamboni": [
         "club:Juventus",
@@ -3684,7 +3748,8 @@
       ],
       "Roberto Ayala": [
         "club:Milan",
-        "club:Napoli"
+        "club:Napoli",
+        "club:Valencia"
       ],
       "Paolo Barison": [
         "club:Milan",
@@ -3762,6 +3827,7 @@
         "club:Napoli"
       ],
       "Samuele Dalla Bona": [
+        "club:Chelsea",
         "club:Milan",
         "club:Napoli"
       ],
@@ -3850,6 +3916,7 @@
         "club:Napoli"
       ],
       "Massimo Oddo": [
+        "club:Bayern Monaco",
         "club:Milan",
         "club:Napoli"
       ],
@@ -3875,6 +3942,8 @@
       ],
       "Pepe Reina": [
         "club:Barcellona",
+        "club:Bayern Monaco",
+        "club:Liverpool",
         "club:Milan",
         "club:Napoli"
       ],
@@ -3914,6 +3983,7 @@
       ],
       "José Ernesto Sosa": [
         "club:Atletico Madrid",
+        "club:Bayern Monaco",
         "club:Milan",
         "club:Napoli"
       ],
@@ -3959,7 +4029,8 @@
       ],
       "Marco Andreolli": [
         "club:Inter",
-        "club:Roma"
+        "club:Roma",
+        "club:Sevilla"
       ],
       "Giulio Balestrini": [
         "club:Inter",
@@ -4071,10 +4142,12 @@
       ],
       "Houssine Kharja": [
         "club:Inter",
+        "club:Paris Saint-Germain",
         "club:Roma"
       ],
       "Aleksandar Kolarov": [
         "club:Inter",
+        "club:Manchester City",
         "club:Roma"
       ],
       "Adem Ljajić": [
@@ -4087,6 +4160,8 @@
       ],
       "Maicon Douglas Sisenando": [
         "club:Inter",
+        "club:Manchester City",
+        "club:Monaco",
         "club:Roma"
       ],
       "Astutillo Malgioglio": [
@@ -4118,6 +4193,7 @@
         "club:Roma"
       ],
       "Henrix Mxit'aryan": [
+        "club:Borussia Dortmund",
         "club:Inter",
         "club:Roma"
       ],
@@ -4145,6 +4221,7 @@
       ],
       "David Pizarro": [
         "club:Inter",
+        "club:Manchester City",
         "club:Roma"
       ],
       "Herbert Prohaska": [
@@ -4262,6 +4339,7 @@
         "club:Roma"
       ],
       "Thomas Häßler": [
+        "club:Borussia Dortmund",
         "club:Juventus",
         "club:Roma"
       ],
@@ -4312,6 +4390,7 @@
       ],
       "Leandro Paredes": [
         "club:Juventus",
+        "club:Paris Saint-Germain",
         "club:Roma"
       ],
       "Luca Pellegrini": [
@@ -4339,6 +4418,7 @@
         "club:Roma"
       ],
       "Wojciech Szczęsny": [
+        "club:Arsenal",
         "club:Barcellona",
         "club:Juventus",
         "club:Roma"
@@ -4348,6 +4428,7 @@
         "club:Roma"
       ],
       "Luca Toni": [
+        "club:Bayern Monaco",
         "club:Juventus",
         "club:Roma"
       ],
@@ -4380,6 +4461,7 @@
         "club:Roma"
       ],
       "Marco Amelia": [
+        "club:Chelsea",
         "club:Milan",
         "club:Roma"
       ],
@@ -4421,6 +4503,8 @@
         "club:Roma"
       ],
       "Fabio Borini": [
+        "club:Chelsea",
+        "club:Liverpool",
         "club:Milan",
         "club:Roma"
       ],
@@ -4467,6 +4551,7 @@
       ],
       "Stephan El Shaarawy": [
         "club:Milan",
+        "club:Monaco",
         "club:Roma"
       ],
       "Dīmītrios Eleutheropoulos": [
@@ -4483,7 +4568,9 @@
       ],
       "Alessandro Florenzi": [
         "club:Milan",
-        "club:Roma"
+        "club:Paris Saint-Germain",
+        "club:Roma",
+        "club:Valencia"
       ],
       "Alfio Fontana": [
         "club:Milan",
@@ -4516,7 +4603,8 @@
       ],
       "Simon Kjær": [
         "club:Milan",
-        "club:Roma"
+        "club:Roma",
+        "club:Sevilla"
       ],
       "Bojan Krkić": [
         "club:Barcellona",
@@ -4545,6 +4633,8 @@
       ],
       "Jérémy Ménez": [
         "club:Milan",
+        "club:Monaco",
+        "club:Paris Saint-Germain",
         "club:Roma"
       ],
       "Philippe Mexès": [
@@ -4684,8 +4774,10 @@
         "club:Roma"
       ],
       "Pierluigi Gollini": [
+        "club:Manchester United",
         "club:Napoli",
-        "club:Roma"
+        "club:Roma",
+        "club:Tottenham"
       ],
       "Gabriele Grossi": [
         "club:Napoli",
@@ -4770,19 +4862,24 @@
       ],
       "Rafael Alcântara": [
         "club:Barcellona",
-        "club:Inter"
+        "club:Inter",
+        "club:Paris Saint-Germain"
       ],
       "Kevin-Prince Boateng": [
         "club:Barcellona",
-        "club:Milan"
+        "club:Borussia Dortmund",
+        "club:Milan",
+        "club:Tottenham"
       ],
       "Winston Bogarde": [
         "club:Barcellona",
+        "club:Chelsea",
         "club:Milan"
       ],
       "Martín Cáceres": [
         "club:Barcellona",
-        "club:Juventus"
+        "club:Juventus",
+        "club:Sevilla"
       ],
       "Adrià Carmona": [
         "club:Barcellona",
@@ -4802,19 +4899,23 @@
       ],
       "Gerard Deulofeu": [
         "club:Barcellona",
-        "club:Milan"
+        "club:Milan",
+        "club:Sevilla"
       ],
       "Lucas Digne": [
         "club:Barcellona",
+        "club:Paris Saint-Germain",
         "club:Roma"
       ],
       "Christophe Dugarry": [
         "club:Barcellona",
+        "club:Marsiglia",
         "club:Milan"
       ],
       "Emerson Royal": [
         "club:Barcellona",
-        "club:Milan"
+        "club:Milan",
+        "club:Tottenham"
       ],
       "Pol García": [
         "club:Barcellona",
@@ -4822,12 +4923,17 @@
       ],
       "Ludovic Giuly": [
         "club:Barcellona",
+        "club:Lione",
+        "club:Monaco",
+        "club:Paris Saint-Germain",
         "club:Roma"
       ],
       "Nicolás González": [
         "club:Atletico Madrid",
         "club:Barcellona",
-        "club:Juventus"
+        "club:Juventus",
+        "club:Manchester City",
+        "club:Valencia"
       ],
       "Pep Guardiola": [
         "club:Barcellona",
@@ -4839,6 +4945,7 @@
       ],
       "Henrique Adriano Buss": [
         "club:Barcellona",
+        "club:Bayer Leverkusen",
         "club:Napoli"
       ],
       "Franck Kessié": [
@@ -4857,7 +4964,9 @@
       "Diego López": [
         "club:Barcellona",
         "club:Milan",
-        "club:Real Madrid"
+        "club:Real Madrid",
+        "club:Sevilla",
+        "club:Valencia"
       ],
       "José Machín": [
         "club:Barcellona",
@@ -4865,7 +4974,8 @@
       ],
       "Diego Armando Maradona": [
         "club:Barcellona",
-        "club:Napoli"
+        "club:Napoli",
+        "club:Sevilla"
       ],
       "Josep Martínez": [
         "club:Barcellona",
@@ -4873,15 +4983,18 @@
       ],
       "Maxwell Scherrer Cabelino Andrade": [
         "club:Barcellona",
-        "club:Inter"
+        "club:Inter",
+        "club:Paris Saint-Germain"
       ],
       "Arthur Melo": [
         "club:Barcellona",
-        "club:Juventus"
+        "club:Juventus",
+        "club:Liverpool"
       ],
       "Martín Montoya": [
         "club:Barcellona",
-        "club:Inter"
+        "club:Inter",
+        "club:Valencia"
       ],
       "Javi Moreno": [
         "club:Atletico Madrid",
@@ -4890,18 +5003,23 @@
       ],
       "Pablo Moreno": [
         "club:Barcellona",
-        "club:Juventus"
+        "club:Juventus",
+        "club:Manchester City"
       ],
       "Jeison Murillo": [
         "club:Barcellona",
-        "club:Inter"
+        "club:Inter",
+        "club:Valencia"
       ],
       "Neto Murara": [
+        "club:Arsenal",
         "club:Barcellona",
-        "club:Juventus"
+        "club:Juventus",
+        "club:Valencia"
       ],
       "Pedro Rodríguez Ledesma": [
         "club:Barcellona",
+        "club:Chelsea",
         "club:Roma"
       ],
       "Carles Pérez": [
@@ -4910,6 +5028,7 @@
       ],
       "Ricardo Quaresma": [
         "club:Barcellona",
+        "club:Chelsea",
         "club:Inter"
       ],
       "Michael Reiziger": [
@@ -4934,22 +5053,27 @@
       ],
       "Juan Pablo Sorín": [
         "club:Barcellona",
-        "club:Juventus"
+        "club:Juventus",
+        "club:Paris Saint-Germain"
       ],
       "Lilian Thuram": [
         "club:Barcellona",
-        "club:Juventus"
+        "club:Juventus",
+        "club:Monaco"
       ],
       "Mark van Bommel": [
         "club:Barcellona",
+        "club:Bayern Monaco",
         "club:Milan"
       ],
       "Thomas Vermaelen": [
+        "club:Arsenal",
         "club:Barcellona",
         "club:Roma"
       ],
       "Marcos Alonso Mendoza": [
         "club:Barcellona",
+        "club:Chelsea",
         "club:Real Madrid"
       ],
       "Marcos Alonso Peña": [
@@ -4967,6 +5091,7 @@
       ],
       "Marc Cucurella": [
         "club:Barcellona",
+        "club:Chelsea",
         "club:Real Madrid"
       ],
       "Daniel García Lara": [
@@ -5011,11 +5136,13 @@
       ],
       "Juan Marrero Pérez": [
         "club:Barcellona",
-        "club:Real Madrid"
+        "club:Real Madrid",
+        "club:Valencia"
       ],
       "Luis Milla": [
         "club:Barcellona",
-        "club:Real Madrid"
+        "club:Real Madrid",
+        "club:Valencia"
       ],
       "Toni Moral": [
         "club:Barcellona",
@@ -5027,10 +5154,12 @@
       ],
       "Fernando Muñoz": [
         "club:Barcellona",
-        "club:Real Madrid"
+        "club:Real Madrid",
+        "club:Sevilla"
       ],
       "Víctor Muñoz": [
         "club:Barcellona",
+        "club:Liverpool",
         "club:Real Madrid"
       ],
       "Joaquín Navarro Perona": [
@@ -5039,15 +5168,18 @@
       ],
       "Jesús María Pereda": [
         "club:Barcellona",
-        "club:Real Madrid"
+        "club:Real Madrid",
+        "club:Sevilla"
       ],
       "Alfonso Pérez": [
         "club:Barcellona",
+        "club:Marsiglia",
         "club:Real Madrid"
       ],
       "Robert Prosinečki": [
         "club:Barcellona",
-        "club:Real Madrid"
+        "club:Real Madrid",
+        "club:Sevilla"
       ],
       "José Quirante": [
         "club:Barcellona",
@@ -5072,17 +5204,21 @@
       ],
       "Javier Saviola": [
         "club:Barcellona",
-        "club:Real Madrid"
+        "club:Monaco",
+        "club:Real Madrid",
+        "club:Sevilla"
       ],
       "Bernd Schuster": [
         "club:Atletico Madrid",
         "club:Barcellona",
+        "club:Bayer Leverkusen",
         "club:Real Madrid"
       ],
       "Miquel Soler": [
         "club:Atletico Madrid",
         "club:Barcellona",
-        "club:Real Madrid"
+        "club:Real Madrid",
+        "club:Sevilla"
       ],
       "Justo Tejada": [
         "club:Barcellona",
@@ -5090,7 +5226,8 @@
       ],
       "Aleix Vidal": [
         "club:Barcellona",
-        "club:Real Madrid"
+        "club:Real Madrid",
+        "club:Sevilla"
       ],
       "Ricardo Zamora": [
         "club:Barcellona",
@@ -5115,7 +5252,8 @@
       ],
       "Iván Zamorano": [
         "club:Inter",
-        "club:Real Madrid"
+        "club:Real Madrid",
+        "club:Sevilla"
       ],
       "Marcelo Djaló": [
         "club:Juventus",
@@ -5131,10 +5269,13 @@
         "club:Real Madrid"
       ],
       "Brahim Díaz": [
+        "club:Manchester City",
         "club:Milan",
         "club:Real Madrid"
       ],
       "Michael Essien": [
+        "club:Chelsea",
+        "club:Lione",
         "club:Milan",
         "club:Real Madrid"
       ],
@@ -5160,7 +5301,8 @@
       ],
       "Lucas Ontivero": [
         "club:Milan",
-        "club:Real Madrid"
+        "club:Real Madrid",
+        "club:Tottenham"
       ],
       "Fernando Redondo": [
         "club:Milan",
@@ -5171,6 +5313,7 @@
         "club:Real Madrid"
       ],
       "Miguel Gutiérrez": [
+        "club:Bayer Leverkusen",
         "club:Napoli",
         "club:Real Madrid"
       ],
@@ -5184,19 +5327,24 @@
       ],
       "Fernando Gago": [
         "club:Real Madrid",
-        "club:Roma"
+        "club:Roma",
+        "club:Valencia"
       ],
       "César Gómez": [
         "club:Real Madrid",
         "club:Roma"
       ],
       "Gabriel Heinze": [
+        "club:Manchester United",
+        "club:Marsiglia",
+        "club:Paris Saint-Germain",
         "club:Real Madrid",
         "club:Roma"
       ],
       "Iván Helguera": [
         "club:Real Madrid",
-        "club:Roma"
+        "club:Roma",
+        "club:Valencia"
       ],
       "Diego Llorente": [
         "club:Real Madrid",
@@ -5216,7 +5364,8 @@
       ],
       "Pablo Alfaro": [
         "club:Atletico Madrid",
-        "club:Barcellona"
+        "club:Barcellona",
+        "club:Sevilla"
       ],
       "Manuel Anatol": [
         "club:Atletico Madrid",
@@ -5324,7 +5473,8 @@
       ],
       "Quique Estebaranz": [
         "club:Atletico Madrid",
-        "club:Barcellona"
+        "club:Barcellona",
+        "club:Sevilla"
       ],
       "Manel Expósito": [
         "club:Atletico Madrid",
@@ -5340,10 +5490,12 @@
       ],
       "Diego Forlán": [
         "club:Atletico Madrid",
-        "club:Inter"
+        "club:Inter",
+        "club:Manchester United"
       ],
       "Paulo Futre": [
         "club:Atletico Madrid",
+        "club:Marsiglia",
         "club:Milan"
       ],
       "Luciano Galletti": [
@@ -5380,6 +5532,7 @@
       ],
       "Mario Hermoso": [
         "club:Atletico Madrid",
+        "club:Bayer Leverkusen",
         "club:Roma"
       ],
       "Félix Huete": [
@@ -5400,7 +5553,8 @@
       ],
       "José Mari": [
         "club:Atletico Madrid",
-        "club:Milan"
+        "club:Milan",
+        "club:Sevilla"
       ],
       "Juan Francisco Torres": [
         "club:Atletico Madrid",
@@ -5412,7 +5566,11 @@
       ],
       "Geoffrey Kondogbia": [
         "club:Atletico Madrid",
-        "club:Inter"
+        "club:Inter",
+        "club:Marsiglia",
+        "club:Monaco",
+        "club:Sevilla",
+        "club:Valencia"
       ],
       "Jesús Landáburu": [
         "club:Atletico Madrid",
@@ -5424,7 +5582,9 @@
       ],
       "Clément Lenglet": [
         "club:Atletico Madrid",
-        "club:Barcellona"
+        "club:Barcellona",
+        "club:Sevilla",
+        "club:Tottenham"
       ],
       "Rafael Lesmes": [
         "club:Atletico Madrid",
@@ -5440,14 +5600,17 @@
       ],
       "Sebastián Losada": [
         "club:Atletico Madrid",
-        "club:Real Madrid"
+        "club:Real Madrid",
+        "club:Sevilla"
       ],
       "Luis Javier García Sanz": [
         "club:Atletico Madrid",
-        "club:Barcellona"
+        "club:Barcellona",
+        "club:Liverpool"
       ],
       "Maniche": [
         "club:Atletico Madrid",
+        "club:Chelsea",
         "club:Inter"
       ],
       "Manolo": [
@@ -5460,7 +5623,8 @@
       ],
       "José María Martín": [
         "club:Atletico Madrid",
-        "club:Barcellona"
+        "club:Barcellona",
+        "club:Valencia"
       ],
       "Eulogio Martínez": [
         "club:Atletico Madrid",
@@ -5468,13 +5632,16 @@
       ],
       "Tiago Mendes": [
         "club:Atletico Madrid",
-        "club:Juventus"
+        "club:Chelsea",
+        "club:Juventus",
+        "club:Lione"
       ],
       "Jorge Alberto Mendonça": [
         "club:Atletico Madrid",
         "club:Barcellona"
       ],
       "Fran Mérida": [
+        "club:Arsenal",
         "club:Atletico Madrid",
         "club:Barcellona"
       ],
@@ -5484,7 +5651,8 @@
       ],
       "Miguel Ángel Ferrer": [
         "club:Atletico Madrid",
-        "club:Real Madrid"
+        "club:Real Madrid",
+        "club:Valencia"
       ],
       "Nahuel Molina": [
         "club:Atletico Madrid",
@@ -5524,7 +5692,8 @@
       ],
       "Daniel Pacheco": [
         "club:Atletico Madrid",
-        "club:Barcellona"
+        "club:Barcellona",
+        "club:Liverpool"
       ],
       "Joaquín Parra": [
         "club:Atletico Madrid",
@@ -5551,6 +5720,7 @@
         "club:Real Madrid"
       ],
       "Julio Pleguezuelo": [
+        "club:Arsenal",
         "club:Atletico Madrid",
         "club:Barcellona"
       ],
@@ -5571,8 +5741,10 @@
         "club:Barcellona"
       ],
       "José Antonio Reyes": [
+        "club:Arsenal",
         "club:Atletico Madrid",
-        "club:Real Madrid"
+        "club:Real Madrid",
+        "club:Sevilla"
       ],
       "Roberto Jiménez Gago": [
         "club:Atletico Madrid",
@@ -5580,7 +5752,8 @@
       ],
       "Juan Carlos Rodríguez": [
         "club:Atletico Madrid",
-        "club:Barcellona"
+        "club:Barcellona",
+        "club:Valencia"
       ],
       "Víctor Rofino": [
         "club:Atletico Madrid",
@@ -5588,7 +5761,8 @@
       ],
       "Gaspar Rubio": [
         "club:Atletico Madrid",
-        "club:Real Madrid"
+        "club:Real Madrid",
+        "club:Valencia"
       ],
       "Julián Ruete": [
         "club:Atletico Madrid",
@@ -5603,6 +5777,7 @@
         "club:Barcellona"
       ],
       "Julio Salinas": [
+        "club:Athletic Bilbao",
         "club:Atletico Madrid",
         "club:Barcellona"
       ],
@@ -5620,15 +5795,18 @@
       ],
       "Diego Simeone": [
         "club:Atletico Madrid",
-        "club:Inter"
+        "club:Inter",
+        "club:Sevilla"
       ],
       "Guilherme Siqueira": [
         "club:Atletico Madrid",
-        "club:Inter"
+        "club:Inter",
+        "club:Valencia"
       ],
       "David Soria": [
         "club:Atletico Madrid",
-        "club:Real Madrid"
+        "club:Real Madrid",
+        "club:Sevilla"
       ],
       "Alexander Sørloth": [
         "club:Atletico Madrid",
@@ -5661,6 +5839,5864 @@
       "Šime Vrsaljko": [
         "club:Atletico Madrid",
         "club:Inter"
+      ],
+      "Clive Allen": [
+        "club:Arsenal",
+        "club:Chelsea",
+        "club:Manchester City",
+        "club:Tottenham"
+      ],
+      "Viv Anderson": [
+        "club:Arsenal",
+        "club:Manchester United"
+      ],
+      "Kepa Arrizabalaga": [
+        "club:Arsenal",
+        "club:Athletic Bilbao",
+        "club:Chelsea",
+        "club:Real Madrid"
+      ],
+      "David Bacuzzi": [
+        "club:Arsenal",
+        "club:Manchester City"
+      ],
+      "Joe Bacuzzi": [
+        "club:Arsenal",
+        "club:Chelsea",
+        "club:Manchester City"
+      ],
+      "Tommy Baldwin": [
+        "club:Arsenal",
+        "club:Chelsea",
+        "club:Manchester United"
+      ],
+      "Robert Beale": [
+        "club:Arsenal",
+        "club:Manchester United"
+      ],
+      "Héctor Bellerín": [
+        "club:Arsenal",
+        "club:Barcellona"
+      ],
+      "Yossi Benayoun": [
+        "club:Arsenal",
+        "club:Chelsea",
+        "club:Liverpool"
+      ],
+      "Nicklas Bendtner": [
+        "club:Arsenal",
+        "club:Juventus"
+      ],
+      "Ismaël Bennacer": [
+        "club:Arsenal",
+        "club:Marsiglia",
+        "club:Milan"
+      ],
+      "David Bentley": [
+        "club:Arsenal",
+        "club:Tottenham"
+      ],
+      "Billy Blyth": [
+        "club:Arsenal",
+        "club:Manchester City"
+      ],
+      "Jimmy Brain": [
+        "club:Arsenal",
+        "club:Tottenham"
+      ],
+      "Giovanni van Bronckhorst": [
+        "club:Arsenal",
+        "club:Barcellona"
+      ],
+      "Laurie Brown": [
+        "club:Arsenal",
+        "club:Tottenham"
+      ],
+      "Riccardo Calafiori": [
+        "club:Arsenal",
+        "club:Roma"
+      ],
+      "Dani Ceballos": [
+        "club:Arsenal",
+        "club:Real Madrid"
+      ],
+      "Gaël Clichy": [
+        "club:Arsenal",
+        "club:Manchester City"
+      ],
+      "Andy Cole": [
+        "club:Arsenal",
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Francis Coquelin": [
+        "club:Arsenal",
+        "club:Valencia"
+      ],
+      "David Luiz": [
+        "club:Arsenal",
+        "club:Chelsea",
+        "club:Paris Saint-Germain"
+      ],
+      "Jason Demetriou": [
+        "club:Arsenal",
+        "club:Tottenham"
+      ],
+      "Lassana Diarra": [
+        "club:Arsenal",
+        "club:Chelsea",
+        "club:Marsiglia",
+        "club:Paris Saint-Germain",
+        "club:Real Madrid"
+      ],
+      "Paul Dickov": [
+        "club:Arsenal",
+        "club:Manchester City"
+      ],
+      "Joe Dines": [
+        "club:Arsenal",
+        "club:Liverpool"
+      ],
+      "Tommy Docherty": [
+        "club:Arsenal",
+        "club:Chelsea"
+      ],
+      "Jimmy Dunne": [
+        "club:Arsenal",
+        "club:Manchester United"
+      ],
+      "Ovie Ejaria": [
+        "club:Arsenal",
+        "club:Liverpool"
+      ],
+      "Mathieu Flamini": [
+        "club:Arsenal",
+        "club:Marsiglia",
+        "club:Milan"
+      ],
+      "Jim Furnell": [
+        "club:Arsenal",
+        "club:Liverpool"
+      ],
+      "William Gallas": [
+        "club:Arsenal",
+        "club:Chelsea",
+        "club:Marsiglia",
+        "club:Tottenham"
+      ],
+      "Eduardo César Gaspar": [
+        "club:Arsenal",
+        "club:Valencia"
+      ],
+      "George Graham": [
+        "club:Arsenal",
+        "club:Chelsea",
+        "club:Manchester United"
+      ],
+      "Vic Groves": [
+        "club:Arsenal",
+        "club:Tottenham"
+      ],
+      "Albert Guðmundsson": [
+        "club:Arsenal",
+        "club:Milan"
+      ],
+      "Dave Halliday": [
+        "club:Arsenal",
+        "club:Manchester City"
+      ],
+      "Abe Hartley": [
+        "club:Arsenal",
+        "club:Liverpool"
+      ],
+      "Ayden Heaven": [
+        "club:Arsenal",
+        "club:Manchester United"
+      ],
+      "David Herd": [
+        "club:Arsenal",
+        "club:Manchester United"
+      ],
+      "Aljaksandr Hleb": [
+        "club:Arsenal",
+        "club:Barcellona"
+      ],
+      "John Hollins": [
+        "club:Arsenal",
+        "club:Chelsea"
+      ],
+      "Mark Howard": [
+        "club:Arsenal",
+        "club:Manchester United"
+      ],
+      "Alan Hudson": [
+        "club:Arsenal",
+        "club:Chelsea"
+      ],
+      "George Hunt": [
+        "club:Arsenal",
+        "club:Liverpool",
+        "club:Tottenham"
+      ],
+      "John Hunter": [
+        "club:Arsenal",
+        "club:Liverpool"
+      ],
+      "Omari Hutchinson": [
+        "club:Arsenal",
+        "club:Chelsea"
+      ],
+      "David Jenkins": [
+        "club:Arsenal",
+        "club:Tottenham"
+      ],
+      "Pat Jennings": [
+        "club:Arsenal",
+        "club:Tottenham"
+      ],
+      "Nwankwo Kanu": [
+        "club:Arsenal",
+        "club:Inter"
+      ],
+      "Ray Kennedy": [
+        "club:Arsenal",
+        "club:Liverpool"
+      ],
+      "Brian Kidd": [
+        "club:Arsenal",
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Lauren": [
+        "club:Arsenal",
+        "club:Sevilla"
+      ],
+      "Tommy Lawton": [
+        "club:Arsenal",
+        "club:Chelsea"
+      ],
+      "Jens Lehmann": [
+        "club:Arsenal",
+        "club:Borussia Dortmund",
+        "club:Milan"
+      ],
+      "Jim Leighton": [
+        "club:Arsenal",
+        "club:Manchester United"
+      ],
+      "Stephan Lichtsteiner": [
+        "club:Arsenal",
+        "club:Juventus"
+      ],
+      "Barry Lloyd": [
+        "club:Arsenal",
+        "club:Chelsea"
+      ],
+      "Noni Madueke": [
+        "club:Arsenal",
+        "club:Chelsea",
+        "club:Tottenham"
+      ],
+      "Ainsley Maitland-Niles": [
+        "club:Arsenal",
+        "club:Lione",
+        "club:Roma"
+      ],
+      "Alexander Manninger": [
+        "club:Arsenal",
+        "club:Juventus",
+        "club:Liverpool"
+      ],
+      "Pablo Marí": [
+        "club:Arsenal",
+        "club:Manchester City"
+      ],
+      "Emiliano Martínez": [
+        "club:Arsenal",
+        "club:Chelsea"
+      ],
+      "Eddie McGoldrick": [
+        "club:Arsenal",
+        "club:Manchester City"
+      ],
+      "Zech Medley": [
+        "club:Arsenal",
+        "club:Chelsea"
+      ],
+      "Danny Welbeck": [
+        "club:Arsenal",
+        "club:Chelsea",
+        "club:Manchester United"
+      ],
+      "Ignasi Miquel": [
+        "club:Arsenal",
+        "club:Barcellona"
+      ],
+      "Cristhian Mosquera": [
+        "club:Arsenal",
+        "club:Valencia"
+      ],
+      "Shkodran Mustafi": [
+        "club:Arsenal",
+        "club:Valencia"
+      ],
+      "David Nelson": [
+        "club:Arsenal",
+        "club:Tottenham"
+      ],
+      "Peter Nicholas": [
+        "club:Arsenal",
+        "club:Chelsea"
+      ],
+      "Eddie Nketiah": [
+        "club:Arsenal",
+        "club:Chelsea"
+      ],
+      "John O'Rourke": [
+        "club:Arsenal",
+        "club:Chelsea"
+      ],
+      "Chido Obi-Martin": [
+        "club:Arsenal",
+        "club:Manchester United"
+      ],
+      "Martin Ødegaard": [
+        "club:Arsenal",
+        "club:Real Madrid"
+      ],
+      "Michael Olise": [
+        "club:Arsenal",
+        "club:Bayern Monaco",
+        "club:Chelsea",
+        "club:Manchester City"
+      ],
+      "David Ospina": [
+        "club:Arsenal",
+        "club:Napoli"
+      ],
+      "Marc Overmars": [
+        "club:Arsenal",
+        "club:Barcellona"
+      ],
+      "Alex Oxlade-Chamberlain": [
+        "club:Arsenal",
+        "club:Liverpool"
+      ],
+      "Sōkratīs Papastathopoulos": [
+        "club:Arsenal",
+        "club:Borussia Dortmund",
+        "club:Milan"
+      ],
+      "Gabriel Paulista": [
+        "club:Arsenal",
+        "club:Atletico Madrid",
+        "club:Valencia"
+      ],
+      "Jermaine Pennant": [
+        "club:Arsenal",
+        "club:Liverpool"
+      ],
+      "Emmanuel Petit": [
+        "club:Arsenal",
+        "club:Barcellona",
+        "club:Chelsea",
+        "club:Monaco"
+      ],
+      "Mike Pinner": [
+        "club:Arsenal",
+        "club:Chelsea",
+        "club:Manchester United"
+      ],
+      "David Platt": [
+        "club:Arsenal",
+        "club:Juventus"
+      ],
+      "Lukas Podolski": [
+        "club:Arsenal",
+        "club:Bayern Monaco",
+        "club:Inter"
+      ],
+      "Ian Poveda": [
+        "club:Arsenal",
+        "club:Barcellona",
+        "club:Chelsea",
+        "club:Manchester City"
+      ],
+      "Niall Quinn": [
+        "club:Arsenal",
+        "club:Manchester City"
+      ],
+      "Sam Raybould": [
+        "club:Arsenal",
+        "club:Liverpool"
+      ],
+      "Omar Rekik": [
+        "club:Arsenal",
+        "club:Manchester City",
+        "club:Marsiglia"
+      ],
+      "Rohan Ricketts": [
+        "club:Arsenal",
+        "club:Tottenham"
+      ],
+      "Jimmy Rimmer": [
+        "club:Arsenal",
+        "club:Manchester United"
+      ],
+      "Graham Rix": [
+        "club:Arsenal",
+        "club:Chelsea"
+      ],
+      "Jimmy Robertson": [
+        "club:Arsenal",
+        "club:Tottenham"
+      ],
+      "David Rocastle": [
+        "club:Arsenal",
+        "club:Chelsea",
+        "club:Manchester City"
+      ],
+      "John Ryan": [
+        "club:Arsenal",
+        "club:Manchester City"
+      ],
+      "Mathew Ryan": [
+        "club:Arsenal",
+        "club:Roma",
+        "club:Valencia"
+      ],
+      "Bacary Sagna": [
+        "club:Arsenal",
+        "club:Manchester City"
+      ],
+      "Albert Sambi Lokonga": [
+        "club:Arsenal",
+        "club:Sevilla"
+      ],
+      "Stefan Schwarz": [
+        "club:Arsenal",
+        "club:Valencia"
+      ],
+      "David Seaman": [
+        "club:Arsenal",
+        "club:Manchester City"
+      ],
+      "Philippe Senderos": [
+        "club:Arsenal",
+        "club:Milan",
+        "club:Valencia"
+      ],
+      "Jonjo Shelvey": [
+        "club:Arsenal",
+        "club:Liverpool"
+      ],
+      "Steven Sidwell": [
+        "club:Arsenal",
+        "club:Chelsea"
+      ],
+      "Valentinos Sielīs": [
+        "club:Arsenal",
+        "club:Tottenham"
+      ],
+      "Mikaël Silvestre": [
+        "club:Arsenal",
+        "club:Inter",
+        "club:Manchester United"
+      ],
+      "Paddy Sloan": [
+        "club:Arsenal",
+        "club:Manchester United",
+        "club:Milan"
+      ],
+      "Alan Smith": [
+        "club:Arsenal",
+        "club:Manchester United"
+      ],
+      "Renny Smith": [
+        "club:Arsenal",
+        "club:Chelsea"
+      ],
+      "Cédric Soares": [
+        "club:Arsenal",
+        "club:Inter"
+      ],
+      "Alexandre Song": [
+        "club:Arsenal",
+        "club:Barcellona"
+      ],
+      "Bayli Spencer-Adams": [
+        "club:Arsenal",
+        "club:Tottenham"
+      ],
+      "Sébastien Squillaci": [
+        "club:Arsenal",
+        "club:Lione",
+        "club:Monaco",
+        "club:Sevilla"
+      ],
+      "Frank Stapleton": [
+        "club:Arsenal",
+        "club:Manchester United"
+      ],
+      "Harry Storer Sr.": [
+        "club:Arsenal",
+        "club:Liverpool"
+      ],
+      "Geoff Strong": [
+        "club:Arsenal",
+        "club:Liverpool"
+      ],
+      "Denis Suárez": [
+        "club:Arsenal",
+        "club:Barcellona",
+        "club:Manchester City",
+        "club:Sevilla"
+      ],
+      "Davor Šuker": [
+        "club:Arsenal",
+        "club:Real Madrid",
+        "club:Sevilla"
+      ],
+      "Andrew Swann": [
+        "club:Arsenal",
+        "club:Tottenham"
+      ],
+      "Sylvinho": [
+        "club:Arsenal",
+        "club:Barcellona",
+        "club:Manchester City"
+      ],
+      "Stuart Taylor": [
+        "club:Arsenal",
+        "club:Manchester City"
+      ],
+      "Michael Thomas": [
+        "club:Arsenal",
+        "club:Liverpool"
+      ],
+      "Jon Toral": [
+        "club:Arsenal",
+        "club:Barcellona"
+      ],
+      "Lucas Torreira": [
+        "club:Arsenal",
+        "club:Atletico Madrid"
+      ],
+      "Kolo Touré": [
+        "club:Arsenal",
+        "club:Liverpool",
+        "club:Manchester City"
+      ],
+      "Armand Traoré": [
+        "club:Arsenal",
+        "club:Juventus",
+        "club:Monaco"
+      ],
+      "Ian Ure": [
+        "club:Arsenal",
+        "club:Manchester United"
+      ],
+      "Nelson Vivas": [
+        "club:Arsenal",
+        "club:Inter"
+      ],
+      "Emiliano Viviano": [
+        "club:Arsenal",
+        "club:Inter"
+      ],
+      "Steve Walford": [
+        "club:Arsenal",
+        "club:Tottenham"
+      ],
+      "Charles Albert Williams": [
+        "club:Arsenal",
+        "club:Manchester City",
+        "club:Tottenham"
+      ],
+      "Matty Willock": [
+        "club:Arsenal",
+        "club:Manchester United"
+      ],
+      "Richard Wright": [
+        "club:Arsenal",
+        "club:Manchester City"
+      ],
+      "Willie Young": [
+        "club:Arsenal",
+        "club:Tottenham"
+      ],
+      "Oleksandr Zinčenko": [
+        "club:Arsenal",
+        "club:Manchester City"
+      ],
+      "Aritz Aduriz": [
+        "club:Athletic Bilbao",
+        "club:Valencia"
+      ],
+      "Julen Agirrezabala": [
+        "club:Athletic Bilbao",
+        "club:Valencia"
+      ],
+      "José Ramón Alexanko": [
+        "club:Athletic Bilbao",
+        "club:Barcellona"
+      ],
+      "Rafael Alkorta": [
+        "club:Athletic Bilbao",
+        "club:Real Madrid"
+      ],
+      "Daniel Aranzubía": [
+        "club:Athletic Bilbao",
+        "club:Atletico Madrid"
+      ],
+      "Juan Artola": [
+        "club:Athletic Bilbao",
+        "club:Real Madrid",
+        "club:Sevilla"
+      ],
+      "César Caneda": [
+        "club:Athletic Bilbao",
+        "club:Sevilla"
+      ],
+      "Xabier Eskurza": [
+        "club:Athletic Bilbao",
+        "club:Barcellona",
+        "club:Valencia"
+      ],
+      "Patxi Ferreira": [
+        "club:Athletic Bilbao",
+        "club:Atletico Madrid",
+        "club:Sevilla",
+        "club:Valencia"
+      ],
+      "Pizo Gómez": [
+        "club:Athletic Bilbao",
+        "club:Atletico Madrid"
+      ],
+      "Iago Herrerín": [
+        "club:Athletic Bilbao",
+        "club:Valencia"
+      ],
+      "Aitor Karanka": [
+        "club:Athletic Bilbao",
+        "club:Real Madrid"
+      ],
+      "Aymeric Laporte": [
+        "club:Athletic Bilbao",
+        "club:Manchester City"
+      ],
+      "Víctor Marro": [
+        "club:Athletic Bilbao",
+        "club:Valencia"
+      ],
+      "Unai Núñez": [
+        "club:Athletic Bilbao",
+        "club:Valencia"
+      ],
+      "Alberto Pérez Zabala": [
+        "club:Athletic Bilbao",
+        "club:Atletico Madrid"
+      ],
+      "Juan José Valencia": [
+        "club:Athletic Bilbao",
+        "club:Sevilla"
+      ],
+      "Andoni Zubizarreta": [
+        "club:Athletic Bilbao",
+        "club:Barcellona",
+        "club:Valencia"
+      ],
+      "Diego Alonso": [
+        "club:Atletico Madrid",
+        "club:Valencia"
+      ],
+      "Julián Alvarez": [
+        "club:Atletico Madrid",
+        "club:Manchester City"
+      ],
+      "Javier Arizmendi": [
+        "club:Atletico Madrid",
+        "club:Valencia"
+      ],
+      "Salva Ballesta": [
+        "club:Atletico Madrid",
+        "club:Sevilla",
+        "club:Valencia"
+      ],
+      "Rubén Baraja": [
+        "club:Atletico Madrid",
+        "club:Valencia"
+      ],
+      "José Cardona": [
+        "club:Atletico Madrid",
+        "club:Valencia"
+      ],
+      "Enrique Collar": [
+        "club:Atletico Madrid",
+        "club:Valencia"
+      ],
+      "Matheus Cunha": [
+        "club:Atletico Madrid",
+        "club:Manchester United"
+      ],
+      "Ricardo Zamora de Grassa": [
+        "club:Atletico Madrid",
+        "club:Valencia"
+      ],
+      "Miguel de las Cuevas": [
+        "club:Atletico Madrid",
+        "club:Valencia"
+      ],
+      "Gonzalo de los Santos": [
+        "club:Atletico Madrid",
+        "club:Valencia"
+      ],
+      "Rodrigo de Paul": [
+        "club:Atletico Madrid",
+        "club:Valencia"
+      ],
+      "Martín Demichelis": [
+        "club:Atletico Madrid",
+        "club:Bayern Monaco",
+        "club:Manchester City"
+      ],
+      "Matt Doherty": [
+        "club:Atletico Madrid",
+        "club:Tottenham"
+      ],
+      "Moacir Rodrigues dos Santos": [
+        "club:Atletico Madrid",
+        "club:Sevilla"
+      ],
+      "Daniel Fagiani": [
+        "club:Atletico Madrid",
+        "club:Valencia"
+      ],
+      "Filipe Luís Kasmirski": [
+        "club:Atletico Madrid",
+        "club:Chelsea"
+      ],
+      "Quinton Fortune": [
+        "club:Atletico Madrid",
+        "club:Manchester United",
+        "club:Tottenham"
+      ],
+      "Conor Gallagher": [
+        "club:Atletico Madrid",
+        "club:Chelsea",
+        "club:Tottenham"
+      ],
+      "Kévin Gameiro": [
+        "club:Atletico Madrid",
+        "club:Paris Saint-Germain",
+        "club:Sevilla",
+        "club:Valencia"
+      ],
+      "Juan Carlos Gómez Díaz": [
+        "club:Atletico Madrid",
+        "club:Sevilla"
+      ],
+      "Pedro González Martínez": [
+        "club:Atletico Madrid",
+        "club:Sevilla"
+      ],
+      "Jesper Grønkjær": [
+        "club:Atletico Madrid",
+        "club:Chelsea"
+      ],
+      "Jimmy Floyd Hasselbaink": [
+        "club:Atletico Madrid",
+        "club:Chelsea"
+      ],
+      "Mirsad Hibić": [
+        "club:Atletico Madrid",
+        "club:Sevilla"
+      ],
+      "Emiliano Insúa": [
+        "club:Atletico Madrid",
+        "club:Liverpool"
+      ],
+      "Juan Francisco Rodríguez Herrera": [
+        "club:Atletico Madrid",
+        "club:Sevilla"
+      ],
+      "Mateja Kežman": [
+        "club:Atletico Madrid",
+        "club:Chelsea",
+        "club:Paris Saint-Germain"
+      ],
+      "Matías Kranevitter": [
+        "club:Atletico Madrid",
+        "club:Sevilla"
+      ],
+      "Lee Kang-in": [
+        "club:Atletico Madrid",
+        "club:Paris Saint-Germain",
+        "club:Valencia"
+      ],
+      "Samuel Lino": [
+        "club:Atletico Madrid",
+        "club:Valencia"
+      ],
+      "Antonio López Habas": [
+        "club:Atletico Madrid",
+        "club:Sevilla"
+      ],
+      "José Juan Luque": [
+        "club:Atletico Madrid",
+        "club:Sevilla"
+      ],
+      "Vitolo": [
+        "club:Atletico Madrid",
+        "club:Sevilla"
+      ],
+      "Javier Manquillo": [
+        "club:Atletico Madrid",
+        "club:Liverpool",
+        "club:Marsiglia"
+      ],
+      "Manu del Moral": [
+        "club:Atletico Madrid",
+        "club:Sevilla"
+      ],
+      "Jesús Martínez Jayo": [
+        "club:Atletico Madrid",
+        "club:Sevilla"
+      ],
+      "Gabriel Moya": [
+        "club:Atletico Madrid",
+        "club:Sevilla",
+        "club:Valencia"
+      ],
+      "Miguel Ángel Moyà": [
+        "club:Atletico Madrid",
+        "club:Valencia"
+      ],
+      "Kiki Musampa": [
+        "club:Atletico Madrid",
+        "club:Manchester City"
+      ],
+      "Zoran Njeguš": [
+        "club:Atletico Madrid",
+        "club:Sevilla"
+      ],
+      "Óliver Torres": [
+        "club:Atletico Madrid",
+        "club:Sevilla"
+      ],
+      "Jorge Otero": [
+        "club:Atletico Madrid",
+        "club:Valencia"
+      ],
+      "Ljuboslav Penev": [
+        "club:Atletico Madrid",
+        "club:Valencia"
+      ],
+      "Martin Petrov": [
+        "club:Atletico Madrid",
+        "club:Manchester City"
+      ],
+      "José María Quevedo": [
+        "club:Atletico Madrid",
+        "club:Sevilla"
+      ],
+      "Ricardo López Felipe": [
+        "club:Atletico Madrid",
+        "club:Manchester United"
+      ],
+      "Maxi Rodríguez": [
+        "club:Atletico Madrid",
+        "club:Liverpool"
+      ],
+      "Cristian Romero": [
+        "club:Atletico Madrid",
+        "club:Tottenham"
+      ],
+      "Luis Rubiales": [
+        "club:Atletico Madrid",
+        "club:Valencia"
+      ],
+      "Manuel Ruiz Sosa": [
+        "club:Atletico Madrid",
+        "club:Sevilla"
+      ],
+      "Alfredo Santaelena": [
+        "club:Atletico Madrid",
+        "club:Sevilla"
+      ],
+      "Stefan Savić": [
+        "club:Atletico Madrid",
+        "club:Manchester City"
+      ],
+      "Florent Sinama-Pongolle": [
+        "club:Atletico Madrid",
+        "club:Liverpool"
+      ],
+      "Esteban Suárez": [
+        "club:Atletico Madrid",
+        "club:Sevilla"
+      ],
+      "Mario Suárez Mata": [
+        "club:Atletico Madrid",
+        "club:Valencia"
+      ],
+      "Gabriel Taltavull": [
+        "club:Atletico Madrid",
+        "club:Valencia"
+      ],
+      "Luis Tevenet": [
+        "club:Atletico Madrid",
+        "club:Sevilla"
+      ],
+      "José Antonio Urtiaga": [
+        "club:Atletico Madrid",
+        "club:Valencia"
+      ],
+      "Germán Valera": [
+        "club:Atletico Madrid",
+        "club:Valencia"
+      ],
+      "Juan Velasco Damas": [
+        "club:Atletico Madrid",
+        "club:Sevilla"
+      ],
+      "Luciano Vietto": [
+        "club:Atletico Madrid",
+        "club:Sevilla",
+        "club:Valencia"
+      ],
+      "Daniel Wass": [
+        "club:Atletico Madrid",
+        "club:Valencia"
+      ],
+      "Yordi": [
+        "club:Atletico Madrid",
+        "club:Sevilla"
+      ],
+      "Bobby Adekanye": [
+        "club:Barcellona",
+        "club:Liverpool"
+      ],
+      "Paco Alcácer": [
+        "club:Barcellona",
+        "club:Borussia Dortmund",
+        "club:Valencia"
+      ],
+      "Ronald Araújo": [
+        "club:Barcellona",
+        "club:Liverpool"
+      ],
+      "Steve Archibald": [
+        "club:Barcellona",
+        "club:Tottenham"
+      ],
+      "Esteban Areta": [
+        "club:Barcellona",
+        "club:Valencia"
+      ],
+      "Gai Assulin": [
+        "club:Barcellona",
+        "club:Manchester City"
+      ],
+      "Manuel Badenes": [
+        "club:Barcellona",
+        "club:Valencia"
+      ],
+      "Juliano Belletti": [
+        "club:Barcellona",
+        "club:Chelsea"
+      ],
+      "Fabio Blanco": [
+        "club:Barcellona",
+        "club:Valencia"
+      ],
+      "Álex Blanco": [
+        "club:Barcellona",
+        "club:Valencia"
+      ],
+      "Alberto Botía": [
+        "club:Barcellona",
+        "club:Sevilla"
+      ],
+      "Claudio Bravo": [
+        "club:Barcellona",
+        "club:Manchester City"
+      ],
+      "Sergi Canós": [
+        "club:Barcellona",
+        "club:Liverpool",
+        "club:Valencia"
+      ],
+      "Álex Carbonell": [
+        "club:Barcellona",
+        "club:Valencia"
+      ],
+      "José Manuel Casado": [
+        "club:Barcellona",
+        "club:Sevilla"
+      ],
+      "José Casado": [
+        "club:Barcellona",
+        "club:Sevilla"
+      ],
+      "Cristian Ceballos": [
+        "club:Barcellona",
+        "club:Tottenham"
+      ],
+      "Andreas Christensen": [
+        "club:Barcellona",
+        "club:Chelsea"
+      ],
+      "Jasper Cillessen": [
+        "club:Barcellona",
+        "club:Valencia"
+      ],
+      "Jordi Cruijff": [
+        "club:Barcellona",
+        "club:Manchester United"
+      ],
+      "Anderson Luís de Souza": [
+        "club:Barcellona",
+        "club:Chelsea"
+      ],
+      "Giovani dos Santos": [
+        "club:Barcellona",
+        "club:Tottenham"
+      ],
+      "Ronnie Ekelund": [
+        "club:Barcellona",
+        "club:Manchester City"
+      ],
+      "Munir El Haddadi": [
+        "club:Barcellona",
+        "club:Sevilla",
+        "club:Valencia"
+      ],
+      "Eduardo Endériz": [
+        "club:Barcellona",
+        "club:Sevilla"
+      ],
+      "Juanan Entrena": [
+        "club:Barcellona",
+        "club:Sevilla"
+      ],
+      "Juan José Estella": [
+        "club:Barcellona",
+        "club:Sevilla"
+      ],
+      "Roberto Fernández Bonillo": [
+        "club:Barcellona",
+        "club:Valencia"
+      ],
+      "Gerard Fernández": [
+        "club:Barcellona",
+        "club:Sevilla"
+      ],
+      "Francisco Fernández Rodríguez": [
+        "club:Barcellona",
+        "club:Sevilla"
+      ],
+      "Albert Ferrer": [
+        "club:Barcellona",
+        "club:Chelsea"
+      ],
+      "Óscar García Junyent": [
+        "club:Barcellona",
+        "club:Valencia"
+      ],
+      "Eric García": [
+        "club:Barcellona",
+        "club:Manchester City"
+      ],
+      "Geovanni Deiberson Maurício": [
+        "club:Barcellona",
+        "club:Manchester City"
+      ],
+      "Gerard López": [
+        "club:Barcellona",
+        "club:Monaco",
+        "club:Valencia"
+      ],
+      "Severiano Goiburu": [
+        "club:Barcellona",
+        "club:Valencia"
+      ],
+      "Sergio Gómez Martín": [
+        "club:Barcellona",
+        "club:Borussia Dortmund",
+        "club:Manchester City"
+      ],
+      "Sergi Gómez": [
+        "club:Barcellona",
+        "club:Sevilla"
+      ],
+      "Eiður Guðjohnsen": [
+        "club:Barcellona",
+        "club:Chelsea",
+        "club:Monaco",
+        "club:Tottenham"
+      ],
+      "Adrià Guerrero": [
+        "club:Barcellona",
+        "club:Valencia"
+      ],
+      "Marc Guiu": [
+        "club:Barcellona",
+        "club:Chelsea"
+      ],
+      "Mark Hughes": [
+        "club:Barcellona",
+        "club:Bayern Monaco",
+        "club:Chelsea",
+        "club:Manchester United"
+      ],
+      "Luuk de Jong": [
+        "club:Barcellona",
+        "club:Sevilla"
+      ],
+      "Ferran Jutglà": [
+        "club:Barcellona",
+        "club:Valencia"
+      ],
+      "Ilaix Moriba": [
+        "club:Barcellona",
+        "club:Valencia"
+      ],
+      "Juan Larios": [
+        "club:Barcellona",
+        "club:Manchester City",
+        "club:Sevilla"
+      ],
+      "Henrik Larsson": [
+        "club:Barcellona",
+        "club:Manchester United"
+      ],
+      "Gary Lineker": [
+        "club:Barcellona",
+        "club:Tottenham"
+      ],
+      "Jari Litmanen": [
+        "club:Barcellona",
+        "club:Liverpool"
+      ],
+      "Quique Martín": [
+        "club:Barcellona",
+        "club:Valencia"
+      ],
+      "Arnau Martínez": [
+        "club:Barcellona",
+        "club:Valencia"
+      ],
+      "Xavier Mbuyamba": [
+        "club:Barcellona",
+        "club:Chelsea"
+      ],
+      "Gaizka Mendieta": [
+        "club:Barcellona",
+        "club:Valencia"
+      ],
+      "Rafa Mir": [
+        "club:Barcellona",
+        "club:Sevilla",
+        "club:Valencia"
+      ],
+      "Vicente Morera Amigó": [
+        "club:Barcellona",
+        "club:Valencia"
+      ],
+      "Fernando Navarro": [
+        "club:Barcellona",
+        "club:Sevilla"
+      ],
+      "Nayim": [
+        "club:Barcellona",
+        "club:Tottenham"
+      ],
+      "Basilio Nieto": [
+        "club:Barcellona",
+        "club:Valencia"
+      ],
+      "Nolito": [
+        "club:Barcellona",
+        "club:Manchester City",
+        "club:Sevilla",
+        "club:Valencia"
+      ],
+      "José Padrón": [
+        "club:Barcellona",
+        "club:Sevilla"
+      ],
+      "Paulinho": [
+        "club:Barcellona",
+        "club:Bayer Leverkusen",
+        "club:Tottenham"
+      ],
+      "Mauricio Pellegrino": [
+        "club:Barcellona",
+        "club:Liverpool",
+        "club:Valencia"
+      ],
+      "Carlos Pellicer Vázquez": [
+        "club:Barcellona",
+        "club:Valencia"
+      ],
+      "José Manuel Pesudo": [
+        "club:Barcellona",
+        "club:Valencia"
+      ],
+      "Juan Antonio Pizzi": [
+        "club:Barcellona",
+        "club:Valencia"
+      ],
+      "Gheorghe Popescu": [
+        "club:Barcellona",
+        "club:Tottenham"
+      ],
+      "Sandro Ramírez": [
+        "club:Barcellona",
+        "club:Sevilla"
+      ],
+      "Rodrigo Ríos Lozano": [
+        "club:Barcellona",
+        "club:Sevilla"
+      ],
+      "Rubén Rochina": [
+        "club:Barcellona",
+        "club:Valencia"
+      ],
+      "Romário": [
+        "club:Barcellona",
+        "club:Valencia"
+      ],
+      "Oriol Romeu": [
+        "club:Barcellona",
+        "club:Chelsea",
+        "club:Valencia"
+      ],
+      "Julián Rubio": [
+        "club:Barcellona",
+        "club:Sevilla"
+      ],
+      "Francisco Rufete": [
+        "club:Barcellona",
+        "club:Valencia"
+      ],
+      "Abel Ruiz": [
+        "club:Barcellona",
+        "club:Valencia"
+      ],
+      "Onésimo Sánchez": [
+        "club:Barcellona",
+        "club:Sevilla"
+      ],
+      "Ricardo Serna": [
+        "club:Barcellona",
+        "club:Sevilla"
+      ],
+      "Xavi Simons": [
+        "club:Barcellona",
+        "club:Paris Saint-Germain",
+        "club:Tottenham"
+      ],
+      "Tibor Szalay": [
+        "club:Barcellona",
+        "club:Sevilla"
+      ],
+      "Rodrigo Tarín": [
+        "club:Barcellona",
+        "club:Valencia"
+      ],
+      "Juan Carlos Unzué": [
+        "club:Barcellona",
+        "club:Sevilla"
+      ],
+      "Víctor Valdés": [
+        "club:Barcellona",
+        "club:Manchester United"
+      ],
+      "Marc Valiente": [
+        "club:Barcellona",
+        "club:Sevilla"
+      ],
+      "Luis Soto Valverde": [
+        "club:Barcellona",
+        "club:Sevilla"
+      ],
+      "Martí Ventolrà": [
+        "club:Barcellona",
+        "club:Sevilla"
+      ],
+      "Boudewijn Zenden": [
+        "club:Barcellona",
+        "club:Chelsea",
+        "club:Liverpool",
+        "club:Marsiglia"
+      ],
+      "Tosin Adarabioyo": [
+        "club:Chelsea",
+        "club:Manchester City",
+        "club:Tottenham"
+      ],
+      "Nathan Aké": [
+        "club:Chelsea",
+        "club:Manchester City"
+      ],
+      "Les Allen": [
+        "club:Chelsea",
+        "club:Tottenham"
+      ],
+      "Benoît Badiashile": [
+        "club:Chelsea",
+        "club:Monaco",
+        "club:Napoli"
+      ],
+      "Valentín Barco": [
+        "club:Chelsea",
+        "club:Sevilla"
+      ],
+      "Michy Batshuayi": [
+        "club:Borussia Dortmund",
+        "club:Chelsea",
+        "club:Marsiglia",
+        "club:Valencia"
+      ],
+      "Dave Beasant": [
+        "club:Chelsea",
+        "club:Tottenham"
+      ],
+      "Asmir Begović": [
+        "club:Chelsea",
+        "club:Milan"
+      ],
+      "Tal Ben Haim": [
+        "club:Chelsea",
+        "club:Manchester City"
+      ],
+      "Di'Shon Bernard": [
+        "club:Chelsea",
+        "club:Manchester United"
+      ],
+      "Marcus Bettinelli": [
+        "club:Chelsea",
+        "club:Manchester City"
+      ],
+      "Ted Birnie": [
+        "club:Chelsea",
+        "club:Tottenham"
+      ],
+      "Jérémie Boga": [
+        "club:Chelsea",
+        "club:Juventus"
+      ],
+      "Mark Bosnich": [
+        "club:Chelsea",
+        "club:Manchester United"
+      ],
+      "Khalid Boulahrouz": [
+        "club:Chelsea",
+        "club:Sevilla"
+      ],
+      "Rhian Brewster": [
+        "club:Chelsea",
+        "club:Liverpool"
+      ],
+      "Wayne Bridge": [
+        "club:Chelsea",
+        "club:Manchester City"
+      ],
+      "Johnny Brooks": [
+        "club:Chelsea",
+        "club:Tottenham"
+      ],
+      "Jamie Bynoe-Gittens": [
+        "club:Borussia Dortmund",
+        "club:Chelsea",
+        "club:Manchester City"
+      ],
+      "Wilfredo Caballero": [
+        "club:Chelsea",
+        "club:Manchester City"
+      ],
+      "Ricardo Carvalho": [
+        "club:Chelsea",
+        "club:Monaco",
+        "club:Real Madrid"
+      ],
+      "Pierluigi Casiraghi": [
+        "club:Chelsea",
+        "club:Juventus"
+      ],
+      "Sid Castle": [
+        "club:Chelsea",
+        "club:Tottenham"
+      ],
+      "Nathaniel Chalobah": [
+        "club:Chelsea",
+        "club:Napoli"
+      ],
+      "Laurent Charvet": [
+        "club:Chelsea",
+        "club:Manchester City"
+      ],
+      "Isaac Christie-Davies": [
+        "club:Chelsea",
+        "club:Liverpool"
+      ],
+      "Joe Cole": [
+        "club:Chelsea",
+        "club:Liverpool"
+      ],
+      "Carlo Cudicini": [
+        "club:Chelsea",
+        "club:Milan",
+        "club:Tottenham"
+      ],
+      "Diego Moreira": [
+        "club:Chelsea",
+        "club:Lione",
+        "club:Milan"
+      ],
+      "Gordon Davies": [
+        "club:Chelsea",
+        "club:Manchester City"
+      ],
+      "Asier del Horno": [
+        "club:Chelsea",
+        "club:Valencia"
+      ],
+      "Liam Delap": [
+        "club:Chelsea",
+        "club:Manchester City"
+      ],
+      "Marcel Desailly": [
+        "club:Chelsea",
+        "club:Marsiglia",
+        "club:Milan"
+      ],
+      "Didier Deschamps": [
+        "club:Chelsea",
+        "club:Juventus",
+        "club:Marsiglia",
+        "club:Valencia"
+      ],
+      "Alex": [
+        "club:Chelsea",
+        "club:Milan",
+        "club:Paris Saint-Germain"
+      ],
+      "Mal Donaghy": [
+        "club:Chelsea",
+        "club:Manchester United"
+      ],
+      "Danny Drinkwater": [
+        "club:Chelsea",
+        "club:Manchester United"
+      ],
+      "Gordon Durie": [
+        "club:Chelsea",
+        "club:Tottenham"
+      ],
+      "Mark Falco": [
+        "club:Chelsea",
+        "club:Tottenham"
+      ],
+      "Dick Foss": [
+        "club:Chelsea",
+        "club:Tottenham"
+      ],
+      "Alejandro Garnacho": [
+        "club:Chelsea",
+        "club:Manchester United"
+      ],
+      "Geremi": [
+        "club:Chelsea",
+        "club:Real Madrid"
+      ],
+      "Billy Gilmour": [
+        "club:Chelsea",
+        "club:Napoli"
+      ],
+      "Marco van Ginkel": [
+        "club:Chelsea",
+        "club:Milan"
+      ],
+      "Danny Granville": [
+        "club:Chelsea",
+        "club:Manchester City"
+      ],
+      "Jimmy Greaves": [
+        "club:Chelsea",
+        "club:Milan",
+        "club:Tottenham"
+      ],
+      "Frode Grodås": [
+        "club:Chelsea",
+        "club:Tottenham"
+      ],
+      "Marc Guéhi": [
+        "club:Chelsea",
+        "club:Manchester City"
+      ],
+      "Ruud Gullit": [
+        "club:Chelsea",
+        "club:Milan"
+      ],
+      "Tyrese Hall": [
+        "club:Chelsea",
+        "club:Tottenham"
+      ],
+      "Harold Halse": [
+        "club:Chelsea",
+        "club:Manchester United"
+      ],
+      "Tony Hateley": [
+        "club:Chelsea",
+        "club:Liverpool"
+      ],
+      "Micky Hazard": [
+        "club:Chelsea",
+        "club:Tottenham"
+      ],
+      "Glenn Hoddle": [
+        "club:Chelsea",
+        "club:Monaco",
+        "club:Tottenham"
+      ],
+      "Stewart Houston": [
+        "club:Chelsea",
+        "club:Manchester United"
+      ],
+      "Percy Humphreys": [
+        "club:Chelsea",
+        "club:Tottenham"
+      ],
+      "Glen Johnson": [
+        "club:Chelsea",
+        "club:Liverpool"
+      ],
+      "Joey Jones": [
+        "club:Chelsea",
+        "club:Liverpool"
+      ],
+      "Gaël Kakuta": [
+        "club:Chelsea",
+        "club:Sevilla"
+      ],
+      "Derek Kevan": [
+        "club:Chelsea",
+        "club:Manchester City"
+      ],
+      "Jack Kirwan": [
+        "club:Chelsea",
+        "club:Tottenham"
+      ],
+      "Brian Laudrup": [
+        "club:Bayern Monaco",
+        "club:Chelsea",
+        "club:Milan"
+      ],
+      "Roméo Lavia": [
+        "club:Chelsea",
+        "club:Manchester City"
+      ],
+      "Colin Lee": [
+        "club:Chelsea",
+        "club:Tottenham"
+      ],
+      "Marko Marin": [
+        "club:Chelsea",
+        "club:Sevilla"
+      ],
+      "Jim McCalliog": [
+        "club:Chelsea",
+        "club:Manchester United"
+      ],
+      "Ken Chisholm": [
+        "club:Chelsea",
+        "club:Manchester City"
+      ],
+      "Raul Meireles": [
+        "club:Chelsea",
+        "club:Liverpool"
+      ],
+      "Leslie Walter Minter": [
+        "club:Chelsea",
+        "club:Napoli"
+      ],
+      "Graham Moore": [
+        "club:Chelsea",
+        "club:Manchester United"
+      ],
+      "Victor Moses": [
+        "club:Chelsea",
+        "club:Inter",
+        "club:Liverpool"
+      ],
+      "Mason Mount": [
+        "club:Chelsea",
+        "club:Manchester United"
+      ],
+      "Mychajlo Mudryk": [
+        "club:Chelsea",
+        "club:Tottenham"
+      ],
+      "Andrey Santos": [
+        "club:Chelsea",
+        "club:Manchester United"
+      ],
+      "Rio Ngumoha": [
+        "club:Chelsea",
+        "club:Liverpool"
+      ],
+      "Christopher Nkunku": [
+        "club:Chelsea",
+        "club:Milan",
+        "club:Paris Saint-Germain"
+      ],
+      "Wallace Oliveira dos Santos": [
+        "club:Chelsea",
+        "club:Inter"
+      ],
+      "Cole Palmer": [
+        "club:Chelsea",
+        "club:Manchester City"
+      ],
+      "Paul Parker": [
+        "club:Chelsea",
+        "club:Manchester United"
+      ],
+      "Scott Parker": [
+        "club:Chelsea",
+        "club:Tottenham"
+      ],
+      "Alexandre Pato": [
+        "club:Chelsea",
+        "club:Milan"
+      ],
+      "Terry Phelan": [
+        "club:Chelsea",
+        "club:Manchester City"
+      ],
+      "Gustavo Poyet": [
+        "club:Chelsea",
+        "club:Tottenham"
+      ],
+      "Philipp Prosenik": [
+        "club:Chelsea",
+        "club:Milan"
+      ],
+      "Graham Roberts": [
+        "club:Chelsea",
+        "club:Tottenham"
+      ],
+      "Morgan Rogers": [
+        "club:Chelsea",
+        "club:Manchester City"
+      ],
+      "Andrij Ševčenko": [
+        "club:Chelsea",
+        "club:Milan"
+      ],
+      "Toni Silva": [
+        "club:Chelsea",
+        "club:Liverpool"
+      ],
+      "Scott Sinclair": [
+        "club:Chelsea",
+        "club:Manchester City"
+      ],
+      "Bobby Smith": [
+        "club:Chelsea",
+        "club:Tottenham"
+      ],
+      "Dominic Solanke": [
+        "club:Chelsea",
+        "club:Liverpool",
+        "club:Tottenham"
+      ],
+      "Nigel Spackman": [
+        "club:Chelsea",
+        "club:Liverpool"
+      ],
+      "David Speedie": [
+        "club:Chelsea",
+        "club:Liverpool"
+      ],
+      "Alex Stepney": [
+        "club:Chelsea",
+        "club:Manchester United"
+      ],
+      "Dujon Sterling": [
+        "club:Chelsea",
+        "club:Liverpool"
+      ],
+      "Daniel Sturridge": [
+        "club:Chelsea",
+        "club:Liverpool",
+        "club:Manchester City"
+      ],
+      "Neil Sullivan": [
+        "club:Chelsea",
+        "club:Tottenham"
+      ],
+      "Mickey Thomas": [
+        "club:Chelsea",
+        "club:Manchester United"
+      ],
+      "Renato Veiga": [
+        "club:Chelsea",
+        "club:Juventus"
+      ],
+      "Terry Venables": [
+        "club:Chelsea",
+        "club:Tottenham"
+      ],
+      "Juan Sebastián Verón": [
+        "club:Chelsea",
+        "club:Inter",
+        "club:Manchester United"
+      ],
+      "Colin Viljoen": [
+        "club:Chelsea",
+        "club:Manchester City"
+      ],
+      "George Weah": [
+        "club:Chelsea",
+        "club:Manchester City",
+        "club:Marsiglia",
+        "club:Milan",
+        "club:Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "Timo Werner": [
+        "club:Chelsea",
+        "club:Tottenham"
+      ],
+      "Ray Wilkins": [
+        "club:Chelsea",
+        "club:Manchester United",
+        "club:Milan",
+        "club:Paris Saint-Germain"
+      ],
+      "Vivian Woodward": [
+        "club:Chelsea",
+        "club:Tottenham"
+      ],
+      "Shaun Wright-Phillips": [
+        "club:Chelsea",
+        "club:Manchester City"
+      ],
+      "Denis Zakaria": [
+        "club:Chelsea",
+        "club:Juventus",
+        "club:Monaco"
+      ],
+      "Davide Zappacosta": [
+        "club:Chelsea",
+        "club:Roma"
+      ],
+      "Gianfranco Zola": [
+        "club:Chelsea",
+        "club:Napoli"
+      ],
+      "Lucien Agoumé": [
+        "club:Inter",
+        "club:Sevilla"
+      ],
+      "Manuel Akanji": [
+        "club:Borussia Dortmund",
+        "club:Inter",
+        "club:Manchester City"
+      ],
+      "Matías Almeyda": [
+        "club:Inter",
+        "club:Sevilla"
+      ],
+      "Jocelyn Angloma": [
+        "club:Inter",
+        "club:Marsiglia",
+        "club:Paris Saint-Germain",
+        "club:Valencia"
+      ],
+      "Nicola Berti": [
+        "club:Inter",
+        "club:Tottenham"
+      ],
+      "Felipe Caicedo": [
+        "club:Inter",
+        "club:Manchester City"
+      ],
+      "Marco Caneira": [
+        "club:Inter",
+        "club:Valencia"
+      ],
+      "Bernardo Corradi": [
+        "club:Inter",
+        "club:Manchester City",
+        "club:Valencia"
+      ],
+      "Ousmane Dabo": [
+        "club:Inter",
+        "club:Manchester City",
+        "club:Monaco"
+      ],
+      "Lauri Dalla Valle": [
+        "club:Inter",
+        "club:Liverpool"
+      ],
+      "Stéphane Dalmat": [
+        "club:Inter",
+        "club:Marsiglia",
+        "club:Paris Saint-Germain",
+        "club:Tottenham"
+      ],
+      "Francisco Farinós": [
+        "club:Inter",
+        "club:Valencia"
+      ],
+      "Gilberto da Silva Melo": [
+        "club:Inter",
+        "club:Tottenham"
+      ],
+      "Kily González": [
+        "club:Inter",
+        "club:Valencia"
+      ],
+      "Paul Ince": [
+        "club:Inter",
+        "club:Liverpool",
+        "club:Manchester United"
+      ],
+      "Curtis Jones": [
+        "club:Inter",
+        "club:Liverpool"
+      ],
+      "Stevan Jovetić": [
+        "club:Inter",
+        "club:Manchester City",
+        "club:Monaco",
+        "club:Sevilla"
+      ],
+      "Robbie Keane": [
+        "club:Inter",
+        "club:Liverpool",
+        "club:Tottenham"
+      ],
+      "Jürgen Klinsmann": [
+        "club:Bayern Monaco",
+        "club:Inter",
+        "club:Monaco",
+        "club:Tottenham"
+      ],
+      "Gary Medel": [
+        "club:Inter",
+        "club:Sevilla"
+      ],
+      "Daniele Padelli": [
+        "club:Inter",
+        "club:Liverpool"
+      ],
+      "Rincón": [
+        "club:Inter",
+        "club:Manchester United"
+      ],
+      "Djed Spence": [
+        "club:Inter",
+        "club:Tottenham"
+      ],
+      "John Stones": [
+        "club:Inter",
+        "club:Manchester City"
+      ],
+      "Alex Telles": [
+        "club:Inter",
+        "club:Manchester United",
+        "club:Sevilla"
+      ],
+      "Paolo Tramezzani": [
+        "club:Inter",
+        "club:Tottenham"
+      ],
+      "Faas Wilkes": [
+        "club:Inter",
+        "club:Valencia"
+      ],
+      "Enzo Barrenechea": [
+        "club:Juventus",
+        "club:Valencia"
+      ],
+      "Rodrigo Bentancur": [
+        "club:Juventus",
+        "club:Tottenham"
+      ],
+      "Valeri Božinov": [
+        "club:Juventus",
+        "club:Manchester City"
+      ],
+      "Emre Can": [
+        "club:Bayer Leverkusen",
+        "club:Bayern Monaco",
+        "club:Borussia Dortmund",
+        "club:Juventus",
+        "club:Liverpool"
+      ],
+      "Félix Correia": [
+        "club:Juventus",
+        "club:Manchester City",
+        "club:Sevilla"
+      ],
+      "Marco Di Vaio": [
+        "club:Juventus",
+        "club:Monaco",
+        "club:Valencia"
+      ],
+      "Radu Drăgușin": [
+        "club:Juventus",
+        "club:Tottenham"
+      ],
+      "Facundo González": [
+        "club:Juventus",
+        "club:Valencia"
+      ],
+      "Kamil Grabara": [
+        "club:Juventus",
+        "club:Liverpool"
+      ],
+      "Ciro Immobile": [
+        "club:Borussia Dortmund",
+        "club:Juventus",
+        "club:Sevilla"
+      ],
+      "Andreas Isaksson": [
+        "club:Juventus",
+        "club:Manchester City"
+      ],
+      "William Jordan": [
+        "club:Juventus",
+        "club:Tottenham"
+      ],
+      "Randal Kolo Muani": [
+        "club:Juventus",
+        "club:Paris Saint-Germain",
+        "club:Tottenham"
+      ],
+      "Abdoulay Konko": [
+        "club:Juventus",
+        "club:Sevilla"
+      ],
+      "Dejan Kulusevski": [
+        "club:Juventus",
+        "club:Tottenham"
+      ],
+      "Emiliano Moretti": [
+        "club:Juventus",
+        "club:Valencia"
+      ],
+      "Christian Poulsen": [
+        "club:Juventus",
+        "club:Liverpool",
+        "club:Sevilla"
+      ],
+      "Ian Rush": [
+        "club:Juventus",
+        "club:Liverpool"
+      ],
+      "Savinho": [
+        "club:Juventus",
+        "club:Manchester City",
+        "club:Tottenham"
+      ],
+      "Mohamed Sissoko": [
+        "club:Juventus",
+        "club:Liverpool",
+        "club:Paris Saint-Germain",
+        "club:Valencia"
+      ],
+      "Guglielmo Vicario": [
+        "club:Juventus",
+        "club:Tottenham"
+      ],
+      "Simone Zaza": [
+        "club:Juventus",
+        "club:Valencia"
+      ],
+      "Reto Ziegler": [
+        "club:Juventus",
+        "club:Tottenham"
+      ],
+      "Iago Aspas": [
+        "club:Liverpool",
+        "club:Sevilla"
+      ],
+      "Daniel Ayala": [
+        "club:Liverpool",
+        "club:Sevilla"
+      ],
+      "Nick Barmby": [
+        "club:Liverpool",
+        "club:Tottenham"
+      ],
+      "Antonio Barragán": [
+        "club:Liverpool",
+        "club:Sevilla",
+        "club:Valencia"
+      ],
+      "Peter Beardsley": [
+        "club:Liverpool",
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Alisson Becker": [
+        "club:Liverpool",
+        "club:Roma"
+      ],
+      "Craig Bellamy": [
+        "club:Liverpool",
+        "club:Manchester City"
+      ],
+      "Andy Black": [
+        "club:Liverpool",
+        "club:Manchester City"
+      ],
+      "Matt Busby": [
+        "club:Liverpool",
+        "club:Manchester City"
+      ],
+      "Rafael Camacho": [
+        "club:Liverpool",
+        "club:Manchester City"
+      ],
+      "Scott Carson": [
+        "club:Liverpool",
+        "club:Manchester City"
+      ],
+      "Steven Caulker": [
+        "club:Liverpool",
+        "club:Tottenham"
+      ],
+      "Allenby Chilton": [
+        "club:Liverpool",
+        "club:Manchester United"
+      ],
+      "Pedro Chirivella": [
+        "club:Liverpool",
+        "club:Valencia"
+      ],
+      "Lenni Cirino": [
+        "club:Liverpool",
+        "club:Manchester City"
+      ],
+      "Aly Cissokho": [
+        "club:Lione",
+        "club:Liverpool",
+        "club:Valencia"
+      ],
+      "Tommy Johnson": [
+        "club:Liverpool",
+        "club:Manchester City"
+      ],
+      "Ray Clemence": [
+        "club:Liverpool",
+        "club:Tottenham"
+      ],
+      "Nigel Clough": [
+        "club:Liverpool",
+        "club:Manchester City"
+      ],
+      "Peter Crouch": [
+        "club:Liverpool",
+        "club:Tottenham"
+      ],
+      "Ben Davies": [
+        "club:Liverpool",
+        "club:Tottenham"
+      ],
+      "Roger Davies": [
+        "club:Liverpool",
+        "club:Real Madrid"
+      ],
+      "Alfie Devine": [
+        "club:Liverpool",
+        "club:Tottenham"
+      ],
+      "Ronnie Dix": [
+        "club:Liverpool",
+        "club:Tottenham"
+      ],
+      "Peter Doherty": [
+        "club:Liverpool",
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Doniéber Alexander Marangon": [
+        "club:Liverpool",
+        "club:Roma"
+      ],
+      "Andrea Dossena": [
+        "club:Liverpool",
+        "club:Napoli"
+      ],
+      "Jerzy Dudek": [
+        "club:Liverpool",
+        "club:Real Madrid"
+      ],
+      "Harvey Elliott": [
+        "club:Liverpool",
+        "club:Valencia"
+      ],
+      "Fábio Aurélio": [
+        "club:Liverpool",
+        "club:Valencia"
+      ],
+      "Joe Fagan": [
+        "club:Liverpool",
+        "club:Manchester City"
+      ],
+      "Robbie Fowler": [
+        "club:Liverpool",
+        "club:Manchester City"
+      ],
+      "Brad Friedel": [
+        "club:Liverpool",
+        "club:Tottenham"
+      ],
+      "John Gidman": [
+        "club:Liverpool",
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Bill Gorman": [
+        "club:Liverpool",
+        "club:Manchester United"
+      ],
+      "Danny Guthrie": [
+        "club:Liverpool",
+        "club:Manchester United"
+      ],
+      "Dietmar Hamann": [
+        "club:Bayern Monaco",
+        "club:Liverpool",
+        "club:Manchester City"
+      ],
+      "Alan Harper": [
+        "club:Liverpool",
+        "club:Manchester City"
+      ],
+      "Jack Harrison": [
+        "club:Liverpool",
+        "club:Manchester United"
+      ],
+      "Charlie Hughes": [
+        "club:Liverpool",
+        "club:Manchester City"
+      ],
+      "David James": [
+        "club:Liverpool",
+        "club:Manchester City"
+      ],
+      "David Johnson": [
+        "club:Liverpool",
+        "club:Manchester City"
+      ],
+      "José Enrique": [
+        "club:Liverpool",
+        "club:Valencia"
+      ],
+      "Jimmy Kelly": [
+        "club:Liverpool",
+        "club:Manchester United"
+      ],
+      "Mark Kennedy": [
+        "club:Liverpool",
+        "club:Manchester City"
+      ],
+      "Milos Kerkez": [
+        "club:Liverpool",
+        "club:Milan"
+      ],
+      "Ibrahima Konaté": [
+        "club:Liverpool",
+        "club:Real Madrid"
+      ],
+      "Paul Konchesky": [
+        "club:Liverpool",
+        "club:Tottenham"
+      ],
+      "Øyvind Leonhardsen": [
+        "club:Liverpool",
+        "club:Tottenham"
+      ],
+      "Juan Eduardo Lescano": [
+        "club:Liverpool",
+        "club:Real Madrid"
+      ],
+      "Kevin Lewis": [
+        "club:Liverpool",
+        "club:Manchester United"
+      ],
+      "George Livingstone": [
+        "club:Liverpool",
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Ted MacDougall": [
+        "club:Liverpool",
+        "club:Manchester United"
+      ],
+      "Giorgi Mamardashvili": [
+        "club:Liverpool",
+        "club:Valencia"
+      ],
+      "David Edward Martin": [
+        "club:Liverpool",
+        "club:Tottenham"
+      ],
+      "Kai McKenzie-Lyle": [
+        "club:Liverpool",
+        "club:Tottenham"
+      ],
+      "Steve McMahon": [
+        "club:Liverpool",
+        "club:Manchester City"
+      ],
+      "Tom Miller": [
+        "club:Liverpool",
+        "club:Manchester United"
+      ],
+      "James Milner": [
+        "club:Liverpool",
+        "club:Manchester City"
+      ],
+      "Alberto Moreno": [
+        "club:Liverpool",
+        "club:Sevilla"
+      ],
+      "Danny Murphy": [
+        "club:Liverpool",
+        "club:Tottenham"
+      ],
+      "Antonio Núñez": [
+        "club:Liverpool",
+        "club:Real Madrid"
+      ],
+      "Rafael Páez": [
+        "club:Liverpool",
+        "club:Real Madrid"
+      ],
+      "Gabriel Paletta": [
+        "club:Liverpool",
+        "club:Milan"
+      ],
+      "Jamie Redknapp": [
+        "club:Liverpool",
+        "club:Tottenham"
+      ],
+      "Albert Riera": [
+        "club:Liverpool",
+        "club:Manchester City"
+      ],
+      "John Arne Riise": [
+        "club:Liverpool",
+        "club:Monaco",
+        "club:Roma"
+      ],
+      "Michael Robinson": [
+        "club:Liverpool",
+        "club:Manchester City"
+      ],
+      "Luis Alberto Romero Alconchel": [
+        "club:Liverpool",
+        "club:Sevilla"
+      ],
+      "Ronny Rosenthal": [
+        "club:Liverpool",
+        "club:Tottenham"
+      ],
+      "Jimmy Ross": [
+        "club:Liverpool",
+        "club:Manchester City"
+      ],
+      "Neil Ruddock": [
+        "club:Liverpool",
+        "club:Tottenham"
+      ],
+      "Nuri Şahin": [
+        "club:Borussia Dortmund",
+        "club:Liverpool",
+        "club:Real Madrid"
+      ],
+      "John Scales": [
+        "club:Liverpool",
+        "club:Tottenham"
+      ],
+      "Mark Seagraves": [
+        "club:Liverpool",
+        "club:Manchester City"
+      ],
+      "Tommy Smith": [
+        "club:Liverpool",
+        "club:Manchester City"
+      ],
+      "Graeme Souness": [
+        "club:Liverpool",
+        "club:Tottenham"
+      ],
+      "Joe Spence": [
+        "club:Liverpool",
+        "club:Manchester United"
+      ],
+      "Kevin Stewart": [
+        "club:Liverpool",
+        "club:Tottenham"
+      ],
+      "Paul Stewart": [
+        "club:Liverpool",
+        "club:Manchester City",
+        "club:Tottenham"
+      ],
+      "Suso": [
+        "club:Liverpool",
+        "club:Milan",
+        "club:Sevilla"
+      ],
+      "Frank Swift": [
+        "club:Liverpool",
+        "club:Manchester City"
+      ],
+      "Paul Taylor": [
+        "club:Liverpool",
+        "club:Manchester City"
+      ],
+      "Kōstas Tsimikas": [
+        "club:Liverpool",
+        "club:Roma"
+      ],
+      "Lawrence Vigouroux": [
+        "club:Liverpool",
+        "club:Tottenham"
+      ],
+      "Paul Walsh": [
+        "club:Liverpool",
+        "club:Manchester City",
+        "club:Tottenham"
+      ],
+      "Georginio Wijnaldum": [
+        "club:Liverpool",
+        "club:Paris Saint-Germain",
+        "club:Roma"
+      ],
+      "Scott Wootton": [
+        "club:Liverpool",
+        "club:Manchester United"
+      ],
+      "Abel Xavier": [
+        "club:Liverpool",
+        "club:Roma"
+      ],
+      "Christian Ziege": [
+        "club:Bayern Monaco",
+        "club:Liverpool",
+        "club:Milan",
+        "club:Tottenham"
+      ],
+      "Noah Ohio": [
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Jimmy Bannister": [
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Peter Barnes": [
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "James Broad": [
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Ivor Broadis": [
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Michael Brown": [
+        "club:Manchester City",
+        "club:Tottenham"
+      ],
+      "Frank Buckley": [
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Herbert Burgess": [
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Terry Cooke": [
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Vedran Ćorluka": [
+        "club:Bayer Leverkusen",
+        "club:Manchester City",
+        "club:Tottenham"
+      ],
+      "Jack Crompton": [
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Barney Daniels": [
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Danilo Luiz da Silva": [
+        "club:Manchester City",
+        "club:Real Madrid"
+      ],
+      "Wyn Davies": [
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Sadiq El Fitouri": [
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Angeliño": [
+        "club:Manchester City",
+        "club:Roma"
+      ],
+      "Tyler Fletcher": [
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Márton Fülöp": [
+        "club:Manchester City",
+        "club:Tottenham"
+      ],
+      "Francisco Javier García": [
+        "club:Manchester City",
+        "club:Real Madrid"
+      ],
+      "Eddy Gnahoré": [
+        "club:Manchester City",
+        "club:Napoli"
+      ],
+      "Shaun Goater": [
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Mickey Hamill": [
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Owen Hargreaves": [
+        "club:Bayern Monaco",
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Joe Hart": [
+        "club:Manchester City",
+        "club:Tottenham"
+      ],
+      "Kelechi Iheanacho": [
+        "club:Manchester City",
+        "club:Sevilla"
+      ],
+      "Nigel de Jong": [
+        "club:Manchester City",
+        "club:Milan"
+      ],
+      "Andrej Kančel'skis": [
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Omar Marmoush": [
+        "club:Manchester City",
+        "club:Tottenham"
+      ],
+      "Denis Law": [
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Marcos Lopes": [
+        "club:Manchester City",
+        "club:Monaco",
+        "club:Sevilla"
+      ],
+      "Jon Macken": [
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Pablo Maffeo": [
+        "club:Manchester City",
+        "club:Valencia"
+      ],
+      "Eliaquim Mangala": [
+        "club:Manchester City",
+        "club:Valencia"
+      ],
+      "Sammy McIlroy": [
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Billy Meredith": [
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Bobby Mimms": [
+        "club:Manchester City",
+        "club:Tottenham"
+      ],
+      "Álvaro Negredo": [
+        "club:Manchester City",
+        "club:Sevilla",
+        "club:Valencia"
+      ],
+      "Mipo Odubeko": [
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Pedro Porro": [
+        "club:Manchester City",
+        "club:Tottenham"
+      ],
+      "Iker Pozo": [
+        "club:Manchester City",
+        "club:Real Madrid"
+      ],
+      "José Ángel Pozo": [
+        "club:Manchester City",
+        "club:Real Madrid"
+      ],
+      "Fernando Reges": [
+        "club:Manchester City",
+        "club:Sevilla"
+      ],
+      "Tijjani Reijnders": [
+        "club:Manchester City",
+        "club:Milan"
+      ],
+      "Karim Rekik": [
+        "club:Manchester City",
+        "club:Marsiglia",
+        "club:Sevilla"
+      ],
+      "Bill Ridding": [
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Mark Robins": [
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Peter Schmeichel": [
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Shola Shoretire": [
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Rubén Sobrino": [
+        "club:Manchester City",
+        "club:Real Madrid",
+        "club:Valencia"
+      ],
+      "Bert Sproston": [
+        "club:Manchester City",
+        "club:Tottenham"
+      ],
+      "Ben Thatcher": [
+        "club:Manchester City",
+        "club:Tottenham"
+      ],
+      "Nabil Touaizi": [
+        "club:Manchester City",
+        "club:Valencia"
+      ],
+      "Marcello Trotta": [
+        "club:Manchester City",
+        "club:Napoli"
+      ],
+      "Sean Tse": [
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Sandy Turnbull": [
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Frédéric Veseli": [
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Ashley Ward": [
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Hussein Yasser": [
+        "club:Manchester City",
+        "club:Manchester United"
+      ],
+      "Alexander Young": [
+        "club:Manchester City",
+        "club:Tottenham"
+      ],
+      "Bruno Zuculini": [
+        "club:Manchester City",
+        "club:Valencia"
+      ],
+      "Dimităr Berbatov": [
+        "club:Bayer Leverkusen",
+        "club:Manchester United",
+        "club:Monaco",
+        "club:Tottenham"
+      ],
+      "Jesper Blomqvist": [
+        "club:Manchester United",
+        "club:Milan"
+      ],
+      "Alan Brazil": [
+        "club:Manchester United",
+        "club:Tottenham"
+      ],
+      "Jim Brown": [
+        "club:Manchester United",
+        "club:Tottenham"
+      ],
+      "Fraizer Campbell": [
+        "club:Manchester United",
+        "club:Tottenham"
+      ],
+      "Michael Carrick": [
+        "club:Manchester United",
+        "club:Tottenham"
+      ],
+      "Laurie Cunningham": [
+        "club:Manchester United",
+        "club:Marsiglia",
+        "club:Real Madrid"
+      ],
+      "Diogo Dalot": [
+        "club:Manchester United",
+        "club:Milan"
+      ],
+      "Martin Dúbravka": [
+        "club:Manchester United",
+        "club:Tottenham"
+      ],
+      "Omari Forson": [
+        "club:Manchester United",
+        "club:Tottenham"
+      ],
+      "Ezekiel Fryers": [
+        "club:Manchester United",
+        "club:Tottenham"
+      ],
+      "Terry Gibson": [
+        "club:Manchester United",
+        "club:Tottenham"
+      ],
+      "Javier Hernández": [
+        "club:Bayer Leverkusen",
+        "club:Manchester United",
+        "club:Real Madrid",
+        "club:Sevilla"
+      ],
+      "Andreas Pereira": [
+        "club:Manchester United",
+        "club:Valencia"
+      ],
+      "Rasmus Højlund": [
+        "club:Manchester United",
+        "club:Napoli"
+      ],
+      "Tom Huddlestone": [
+        "club:Manchester United",
+        "club:Tottenham"
+      ],
+      "Adnan Januzaj": [
+        "club:Borussia Dortmund",
+        "club:Manchester United",
+        "club:Sevilla"
+      ],
+      "Joe Jordan": [
+        "club:Manchester United",
+        "club:Milan"
+      ],
+      "Chris McGrath": [
+        "club:Manchester United",
+        "club:Tottenham"
+      ],
+      "Scott McTominay": [
+        "club:Manchester United",
+        "club:Napoli"
+      ],
+      "Hannibal Mejbri": [
+        "club:Manchester United",
+        "club:Monaco",
+        "club:Sevilla"
+      ],
+      "Vanja Milinković-Savić": [
+        "club:Manchester United",
+        "club:Napoli"
+      ],
+      "Nani": [
+        "club:Manchester United",
+        "club:Valencia"
+      ],
+      "Ruud van Nistelrooij": [
+        "club:Manchester United",
+        "club:Real Madrid"
+      ],
+      "Davide Petrucci": [
+        "club:Manchester United",
+        "club:Roma"
+      ],
+      "William Prunier": [
+        "club:Manchester United",
+        "club:Marsiglia",
+        "club:Napoli"
+      ],
+      "Largie Ramazani": [
+        "club:Manchester United",
+        "club:Valencia"
+      ],
+      "Louis Saha": [
+        "club:Manchester United",
+        "club:Tottenham"
+      ],
+      "Teddy Sheringham": [
+        "club:Manchester United",
+        "club:Tottenham"
+      ],
+      "Jaap Stam": [
+        "club:Manchester United",
+        "club:Milan"
+      ],
+      "Massimo Taibi": [
+        "club:Manchester United",
+        "club:Milan"
+      ],
+      "Axel Tuanzebe": [
+        "club:Manchester United",
+        "club:Napoli"
+      ],
+      "James Wilson": [
+        "club:Manchester United",
+        "club:Tottenham"
+      ],
+      "Carlos Bacca": [
+        "club:Milan",
+        "club:Sevilla"
+      ],
+      "Samu Castillejo": [
+        "club:Milan",
+        "club:Valencia"
+      ],
+      "Patrick Cutrone": [
+        "club:Milan",
+        "club:Valencia"
+      ],
+      "Youssouf Fofana": [
+        "club:Milan",
+        "club:Monaco",
+        "club:Sevilla"
+      ],
+      "Leonardo Nascimento de Araújo": [
+        "club:Milan",
+        "club:Paris Saint-Germain",
+        "club:Valencia"
+      ],
+      "Yunus Musah": [
+        "club:Milan",
+        "club:Valencia"
+      ],
+      "Lucas Ocampos": [
+        "club:Marsiglia",
+        "club:Milan",
+        "club:Monaco",
+        "club:Sevilla"
+      ],
+      "Ricardo Oliveira": [
+        "club:Milan",
+        "club:Valencia"
+      ],
+      "Adil Rami": [
+        "club:Marsiglia",
+        "club:Milan",
+        "club:Sevilla",
+        "club:Valencia"
+      ],
+      "André Silva": [
+        "club:Milan",
+        "club:Sevilla"
+      ],
+      "Adel Taarabt": [
+        "club:Milan",
+        "club:Tottenham"
+      ],
+      "Daniel Bertoni": [
+        "club:Napoli",
+        "club:Sevilla"
+      ],
+      "Vlad Chiricheș": [
+        "club:Napoli",
+        "club:Tottenham"
+      ],
+      "Luca Cigarini": [
+        "club:Napoli",
+        "club:Sevilla"
+      ],
+      "Cristiano Lucarelli": [
+        "club:Napoli",
+        "club:Valencia"
+      ],
+      "Tanguy Ndombele": [
+        "club:Lione",
+        "club:Napoli",
+        "club:Tottenham"
+      ],
+      "Anthony Réveillère": [
+        "club:Lione",
+        "club:Napoli",
+        "club:Valencia"
+      ],
+      "Marko Rog": [
+        "club:Napoli",
+        "club:Sevilla"
+      ],
+      "Víctor Ruiz": [
+        "club:Napoli",
+        "club:Valencia"
+      ],
+      "Salvatore Sirigu": [
+        "club:Napoli",
+        "club:Paris Saint-Germain",
+        "club:Sevilla"
+      ],
+      "Bruno Uvini": [
+        "club:Napoli",
+        "club:Tottenham"
+      ],
+      "Eduardo Vargas": [
+        "club:Napoli",
+        "club:Valencia"
+      ],
+      "Agostinho": [
+        "club:Paris Saint-Germain",
+        "club:Real Madrid",
+        "club:Sevilla"
+      ],
+      "Juan Bautista Agüero": [
+        "club:Real Madrid",
+        "club:Sevilla"
+      ],
+      "Rafael Alsúa": [
+        "club:Real Madrid",
+        "club:Valencia"
+      ],
+      "Manuel Barreiro Bustelo": [
+        "club:Real Madrid",
+        "club:Valencia"
+      ],
+      "Rafael Batista Hernández": [
+        "club:Real Madrid",
+        "club:Sevilla"
+      ],
+      "Manuel Bueno": [
+        "club:Real Madrid",
+        "club:Sevilla"
+      ],
+      "Francisco Buyo": [
+        "club:Real Madrid",
+        "club:Sevilla"
+      ],
+      "Martín Calderón": [
+        "club:Real Madrid",
+        "club:Sevilla"
+      ],
+      "Iván Campo": [
+        "club:Real Madrid",
+        "club:Valencia"
+      ],
+      "Sergio Canales": [
+        "club:Real Madrid",
+        "club:Valencia"
+      ],
+      "Canário": [
+        "club:Real Madrid",
+        "club:Sevilla"
+      ],
+      "Santiago Cañizares": [
+        "club:Real Madrid",
+        "club:Valencia"
+      ],
+      "Antonio Casas": [
+        "club:Real Madrid",
+        "club:Sevilla"
+      ],
+      "Pepillo": [
+        "club:Real Madrid",
+        "club:Sevilla"
+      ],
+      "Denis Čeryšev": [
+        "club:Real Madrid",
+        "club:Sevilla",
+        "club:Valencia"
+      ],
+      "Víctor Chust": [
+        "club:Real Madrid",
+        "club:Valencia"
+      ],
+      "Mariano Díaz Mejía": [
+        "club:Lione",
+        "club:Real Madrid",
+        "club:Sevilla"
+      ],
+      "Hugo Duro": [
+        "club:Real Madrid",
+        "club:Valencia"
+      ],
+      "Castor Elzo": [
+        "club:Real Madrid",
+        "club:Valencia"
+      ],
+      "Sebastián Fleitas": [
+        "club:Real Madrid",
+        "club:Sevilla"
+      ],
+      "Ezequiel Garay": [
+        "club:Real Madrid",
+        "club:Valencia"
+      ],
+      "Gerardo García": [
+        "club:Real Madrid",
+        "club:Valencia"
+      ],
+      "Dani Gómez": [
+        "club:Real Madrid",
+        "club:Valencia"
+      ],
+      "Peter González": [
+        "club:Real Madrid",
+        "club:Valencia"
+      ],
+      "Jaume Grau": [
+        "club:Real Madrid",
+        "club:Valencia"
+      ],
+      "Javi Hernández": [
+        "club:Real Madrid",
+        "club:Sevilla"
+      ],
+      "Simón Lecue": [
+        "club:Real Madrid",
+        "club:Valencia"
+      ],
+      "Jordi López": [
+        "club:Real Madrid",
+        "club:Sevilla"
+      ],
+      "Federico Magallanes": [
+        "club:Real Madrid",
+        "club:Sevilla"
+      ],
+      "Enrique Mateos": [
+        "club:Real Madrid",
+        "club:Sevilla"
+      ],
+      "Álvaro Medrán": [
+        "club:Real Madrid",
+        "club:Valencia"
+      ],
+      "Pedro Mendes": [
+        "club:Real Madrid",
+        "club:Tottenham"
+      ],
+      "John Metgod": [
+        "club:Real Madrid",
+        "club:Tottenham"
+      ],
+      "Predrag Mijatović": [
+        "club:Real Madrid",
+        "club:Valencia"
+      ],
+      "Rodrigo Moreno Machado": [
+        "club:Real Madrid",
+        "club:Valencia"
+      ],
+      "Carlos Neva": [
+        "club:Real Madrid",
+        "club:Sevilla"
+      ],
+      "José Manuel Ochotorena": [
+        "club:Real Madrid",
+        "club:Valencia"
+      ],
+      "Juan Otxoantezana": [
+        "club:Real Madrid",
+        "club:Valencia"
+      ],
+      "Daniel Parejo": [
+        "club:Real Madrid",
+        "club:Valencia"
+      ],
+      "Dejan Petković": [
+        "club:Real Madrid",
+        "club:Sevilla"
+      ],
+      "Juan Planelles": [
+        "club:Real Madrid",
+        "club:Valencia"
+      ],
+      "Luis Miguel Ramis": [
+        "club:Real Madrid",
+        "club:Sevilla"
+      ],
+      "Óscar Rodríguez Arnaiz": [
+        "club:Real Madrid",
+        "club:Sevilla"
+      ],
+      "Pablo Rodríguez": [
+        "club:Real Madrid",
+        "club:Valencia"
+      ],
+      "José Ángel Ruiz López": [
+        "club:Real Madrid",
+        "club:Sevilla"
+      ],
+      "José Antonio Salguero": [
+        "club:Real Madrid",
+        "club:Sevilla"
+      ],
+      "César Sánchez": [
+        "club:Real Madrid",
+        "club:Tottenham",
+        "club:Valencia"
+      ],
+      "Quique Sánchez Flores": [
+        "club:Real Madrid",
+        "club:Valencia"
+      ],
+      "Juan José Sánchez Maqueda": [
+        "club:Real Madrid",
+        "club:Valencia"
+      ],
+      "Pablo Sarabia": [
+        "club:Paris Saint-Germain",
+        "club:Real Madrid",
+        "club:Sevilla"
+      ],
+      "Mino Serrano": [
+        "club:Real Madrid",
+        "club:Sevilla"
+      ],
+      "Juan Cruz Sol": [
+        "club:Real Madrid",
+        "club:Valencia"
+      ],
+      "Óscar Téllez": [
+        "club:Real Madrid",
+        "club:Valencia"
+      ],
+      "Miguel Tendillo": [
+        "club:Real Madrid",
+        "club:Valencia"
+      ],
+      "Rafael van der Vaart": [
+        "club:Real Madrid",
+        "club:Tottenham"
+      ],
+      "Amedeo Carboni": [
+        "club:Roma",
+        "club:Valencia"
+      ],
+      "John Carew": [
+        "club:Lione",
+        "club:Roma",
+        "club:Valencia"
+      ],
+      "Rodrigo Defendi": [
+        "club:Roma",
+        "club:Tottenham"
+      ],
+      "Iago Falque": [
+        "club:Roma",
+        "club:Tottenham"
+      ],
+      "Federico Fazio": [
+        "club:Roma",
+        "club:Sevilla",
+        "club:Tottenham"
+      ],
+      "Maxime Gonalons": [
+        "club:Lione",
+        "club:Roma",
+        "club:Sevilla"
+      ],
+      "Justin Kluivert": [
+        "club:Roma",
+        "club:Valencia"
+      ],
+      "Erik Lamela": [
+        "club:Roma",
+        "club:Sevilla",
+        "club:Tottenham"
+      ],
+      "Pau López": [
+        "club:Marsiglia",
+        "club:Roma",
+        "club:Tottenham"
+      ],
+      "Mido": [
+        "club:Marsiglia",
+        "club:Roma",
+        "club:Tottenham"
+      ],
+      "Diego Perotti": [
+        "club:Roma",
+        "club:Sevilla"
+      ],
+      "Francesco Tavano": [
+        "club:Roma",
+        "club:Valencia"
+      ],
+      "Sadiq Umar": [
+        "club:Roma",
+        "club:Valencia"
+      ],
+      "Gonzalo Villar": [
+        "club:Roma",
+        "club:Valencia"
+      ],
+      "Alexis Ruano Delgado": [
+        "club:Sevilla",
+        "club:Valencia"
+      ],
+      "Juan Carlos Álvarez": [
+        "club:Sevilla",
+        "club:Valencia"
+      ],
+      "Mariano Barbosa": [
+        "club:Sevilla",
+        "club:Valencia"
+      ],
+      "Eduardo Cubells": [
+        "club:Sevilla",
+        "club:Valencia"
+      ],
+      "Ilie Dumitrescu": [
+        "club:Sevilla",
+        "club:Tottenham"
+      ],
+      "Bryan Gil": [
+        "club:Sevilla",
+        "club:Tottenham",
+        "club:Valencia"
+      ],
+      "Hedwiges Maduro": [
+        "club:Sevilla",
+        "club:Valencia"
+      ],
+      "Carlos Marchena": [
+        "club:Sevilla",
+        "club:Valencia"
+      ],
+      "Fernando Martínez Perales": [
+        "club:Sevilla",
+        "club:Valencia"
+      ],
+      "Javi Navarro": [
+        "club:Sevilla",
+        "club:Valencia"
+      ],
+      "Nicolás Olivera": [
+        "club:Sevilla",
+        "club:Valencia"
+      ],
+      "Andrés Palop": [
+        "club:Bayer Leverkusen",
+        "club:Sevilla",
+        "club:Valencia"
+      ],
+      "Diego Ribera": [
+        "club:Sevilla",
+        "club:Valencia"
+      ],
+      "Vinny Samways": [
+        "club:Sevilla",
+        "club:Tottenham"
+      ],
+      "Marius Stankevičius": [
+        "club:Sevilla",
+        "club:Valencia"
+      ],
+      "Alejo Véliz": [
+        "club:Sevilla",
+        "club:Tottenham"
+      ],
+      "Didier Zokora": [
+        "club:Sevilla",
+        "club:Tottenham"
+      ],
+      "Paulo Gazzaniga": [
+        "club:Tottenham",
+        "club:Valencia"
+      ],
+      "Arnaut Danjuma": [
+        "club:Tottenham",
+        "club:Valencia"
+      ],
+      "Hélder Postiga": [
+        "club:Tottenham",
+        "club:Valencia"
+      ],
+      "Moussa Saïb": [
+        "club:Monaco",
+        "club:Tottenham",
+        "club:Valencia"
+      ],
+      "Lucas Hernández": [
+        "club:Atletico Madrid",
+        "club:Bayern Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "Adolfo Valencia": [
+        "club:Atletico Madrid",
+        "club:Bayern Monaco"
+      ],
+      "Patrik Andersson": [
+        "club:Barcellona",
+        "club:Bayern Monaco"
+      ],
+      "Adam Aznou": [
+        "club:Barcellona",
+        "club:Bayern Monaco"
+      ],
+      "David Alaba": [
+        "club:Bayern Monaco",
+        "club:Real Madrid"
+      ],
+      "Bright Arrey-Mbi": [
+        "club:Bayern Monaco",
+        "club:Chelsea"
+      ],
+      "Markus Babbel": [
+        "club:Bayern Monaco",
+        "club:Liverpool"
+      ],
+      "Juan Bernat": [
+        "club:Bayern Monaco",
+        "club:Paris Saint-Germain",
+        "club:Valencia"
+      ],
+      "Thomas Berthold": [
+        "club:Bayern Monaco",
+        "club:Roma"
+      ],
+      "Daley Blind": [
+        "club:Bayern Monaco",
+        "club:Manchester United"
+      ],
+      "Jérôme Boateng": [
+        "club:Bayern Monaco",
+        "club:Lione",
+        "club:Manchester City"
+      ],
+      "Andreas Brehme": [
+        "club:Bayern Monaco",
+        "club:Inter"
+      ],
+      "Paul Breitner": [
+        "club:Bayern Monaco",
+        "club:Real Madrid"
+      ],
+      "Luis Díaz": [
+        "club:Bayern Monaco",
+        "club:Liverpool"
+      ],
+      "Eric Dier": [
+        "club:Bayern Monaco",
+        "club:Monaco",
+        "club:Tottenham"
+      ],
+      "Giovane Élber": [
+        "club:Bayern Monaco",
+        "club:Lione",
+        "club:Milan"
+      ],
+      "Ryan Gravenberch": [
+        "club:Bayern Monaco",
+        "club:Liverpool"
+      ],
+      "Hamit Altıntop": [
+        "club:Bayern Monaco",
+        "club:Real Madrid"
+      ],
+      "Pierre-Emile Højbjerg": [
+        "club:Bayern Monaco",
+        "club:Marsiglia",
+        "club:Tottenham"
+      ],
+      "Nicolas Jackson": [
+        "club:Bayern Monaco",
+        "club:Chelsea"
+      ],
+      "Erland Johnsen": [
+        "club:Bayern Monaco",
+        "club:Chelsea"
+      ],
+      "Kim Min-jae": [
+        "club:Bayern Monaco",
+        "club:Napoli"
+      ],
+      "Christoph Knasmüllner": [
+        "club:Bayern Monaco",
+        "club:Inter"
+      ],
+      "Jürgen Kohler": [
+        "club:Bayern Monaco",
+        "club:Borussia Dortmund",
+        "club:Juventus"
+      ],
+      "Robert Kovač": [
+        "club:Bayer Leverkusen",
+        "club:Bayern Monaco",
+        "club:Borussia Dortmund",
+        "club:Juventus"
+      ],
+      "Samuel Kuffour": [
+        "club:Bayern Monaco",
+        "club:Roma"
+      ],
+      "Lucimar Ferreira da Silva": [
+        "club:Bayer Leverkusen",
+        "club:Bayern Monaco",
+        "club:Inter"
+      ],
+      "Lothar Matthäus": [
+        "club:Bayern Monaco",
+        "club:Inter"
+      ],
+      "Noussair Mazraoui": [
+        "club:Bayern Monaco",
+        "club:Manchester United"
+      ],
+      "Tanguy Nianzou": [
+        "club:Bayern Monaco",
+        "club:Paris Saint-Germain",
+        "club:Sevilla"
+      ],
+      "Allan Nielsen": [
+        "club:Bayern Monaco",
+        "club:Tottenham"
+      ],
+      "Álvaro Odriozola": [
+        "club:Bayern Monaco",
+        "club:Real Madrid"
+      ],
+      "João Palhinha": [
+        "club:Bayern Monaco",
+        "club:Tottenham"
+      ],
+      "Jean-Pierre Papin": [
+        "club:Bayern Monaco",
+        "club:Marsiglia",
+        "club:Milan"
+      ],
+      "Paulo Sérgio": [
+        "club:Bayer Leverkusen",
+        "club:Bayern Monaco",
+        "club:Roma"
+      ],
+      "Benjamin Pavard": [
+        "club:Bayern Monaco",
+        "club:Inter",
+        "club:Marsiglia"
+      ],
+      "Stefan Reuter": [
+        "club:Bayern Monaco",
+        "club:Borussia Dortmund",
+        "club:Juventus"
+      ],
+      "Ruggiero Rizzitelli": [
+        "club:Bayern Monaco",
+        "club:Roma"
+      ],
+      "Karl-Heinz Rummenigge": [
+        "club:Bayern Monaco",
+        "club:Inter"
+      ],
+      "Marcel Sabitzer": [
+        "club:Bayern Monaco",
+        "club:Borussia Dortmund",
+        "club:Manchester United"
+      ],
+      "Hasan Salihamidžić": [
+        "club:Bayern Monaco",
+        "club:Juventus"
+      ],
+      "Roque Santa Cruz": [
+        "club:Bayern Monaco",
+        "club:Manchester City"
+      ],
+      "Ciriaco Sforza": [
+        "club:Bayern Monaco",
+        "club:Inter"
+      ],
+      "Yann Sommer": [
+        "club:Bayern Monaco",
+        "club:Inter"
+      ],
+      "Michael Tarnat": [
+        "club:Bayern Monaco",
+        "club:Manchester City"
+      ],
+      "Mathys Tel": [
+        "club:Bayern Monaco",
+        "club:Tottenham"
+      ],
+      "Piotr Trochowski": [
+        "club:Bayern Monaco",
+        "club:Sevilla"
+      ],
+      "Daniel Van Buyten": [
+        "club:Bayern Monaco",
+        "club:Manchester City",
+        "club:Marsiglia"
+      ],
+      "Bryan Zaragoza": [
+        "club:Bayern Monaco",
+        "club:Roma"
+      ],
+      "Zé Roberto": [
+        "club:Bayer Leverkusen",
+        "club:Bayern Monaco",
+        "club:Real Madrid"
+      ],
+      "Joshua Zirkzee": [
+        "club:Bayern Monaco",
+        "club:Manchester United"
+      ],
+      "Piero Hincapié": [
+        "club:Arsenal",
+        "club:Bayer Leverkusen"
+      ],
+      "Bernd Leno": [
+        "club:Arsenal",
+        "club:Bayer Leverkusen"
+      ],
+      "Michal Papadopulos": [
+        "club:Arsenal",
+        "club:Bayer Leverkusen"
+      ],
+      "Nathan Tella": [
+        "club:Arsenal",
+        "club:Bayer Leverkusen"
+      ],
+      "Santiago Arias": [
+        "club:Atletico Madrid",
+        "club:Bayer Leverkusen"
+      ],
+      "Alejandro Grimaldo": [
+        "club:Atletico Madrid",
+        "club:Bayer Leverkusen"
+      ],
+      "Kerim Alajbegović": [
+        "club:Bayer Leverkusen",
+        "club:Juventus"
+      ],
+      "Jarell Quansah": [
+        "club:Bayer Leverkusen",
+        "club:Liverpool"
+      ],
+      "Athirson": [
+        "club:Bayer Leverkusen",
+        "club:Juventus"
+      ],
+      "Sardar Azmoun": [
+        "club:Bayer Leverkusen",
+        "club:Roma"
+      ],
+      "Loïc Badé": [
+        "club:Bayer Leverkusen",
+        "club:Sevilla"
+      ],
+      "Leon Bailey": [
+        "club:Bayer Leverkusen",
+        "club:Roma"
+      ],
+      "Thierno Ballo": [
+        "club:Bayer Leverkusen",
+        "club:Chelsea"
+      ],
+      "Zvonko Bego": [
+        "club:Bayer Leverkusen",
+        "club:Bayern Monaco"
+      ],
+      "Thomas Brdarić": [
+        "club:Bayer Leverkusen",
+        "club:Manchester City"
+      ],
+      "Hans-Jörg Butt": [
+        "club:Bayer Leverkusen",
+        "club:Bayern Monaco"
+      ],
+      "Daniel Carvajal": [
+        "club:Bayer Leverkusen",
+        "club:Real Madrid"
+      ],
+      "Giulio Donati": [
+        "club:Bayer Leverkusen",
+        "club:Inter"
+      ],
+      "Landon Donovan": [
+        "club:Bayer Leverkusen",
+        "club:Bayern Monaco"
+      ],
+      "Bernd Dreher": [
+        "club:Bayer Leverkusen",
+        "club:Bayern Monaco"
+      ],
+      "Claudio Echeverri": [
+        "club:Bayer Leverkusen",
+        "club:Manchester City"
+      ],
+      "Ricardo Faty": [
+        "club:Bayer Leverkusen",
+        "club:Roma"
+      ],
+      "Timothy Fosu-Mensah": [
+        "club:Bayer Leverkusen",
+        "club:Manchester United"
+      ],
+      "Aleix García": [
+        "club:Bayer Leverkusen",
+        "club:Manchester City"
+      ],
+      "Vratislav Greško": [
+        "club:Bayer Leverkusen",
+        "club:Inter"
+      ],
+      "Andrés Guardado": [
+        "club:Bayer Leverkusen",
+        "club:Valencia"
+      ],
+      "Callum Hudson-Odoi": [
+        "club:Bayer Leverkusen",
+        "club:Chelsea"
+      ],
+      "Borja Iglesias": [
+        "club:Bayer Leverkusen",
+        "club:Valencia"
+      ],
+      "Tin Jedvaj": [
+        "club:Bayer Leverkusen",
+        "club:Roma"
+      ],
+      "Walter Junghans": [
+        "club:Bayer Leverkusen",
+        "club:Bayern Monaco"
+      ],
+      "Niko Kovač": [
+        "club:Bayer Leverkusen",
+        "club:Bayern Monaco"
+      ],
+      "Matěj Kovář": [
+        "club:Bayer Leverkusen",
+        "club:Manchester United"
+      ],
+      "Erik Meijer": [
+        "club:Bayer Leverkusen",
+        "club:Liverpool"
+      ],
+      "Markus Münch": [
+        "club:Bayer Leverkusen",
+        "club:Bayern Monaco"
+      ],
+      "Alois Reinhardt": [
+        "club:Bayer Leverkusen",
+        "club:Bayern Monaco"
+      ],
+      "Dominik Reinhardt": [
+        "club:Bayer Leverkusen",
+        "club:Bayern Monaco"
+      ],
+      "Michael Rensing": [
+        "club:Bayer Leverkusen",
+        "club:Bayern Monaco"
+      ],
+      "Claudio Reyna": [
+        "club:Bayer Leverkusen",
+        "club:Manchester City"
+      ],
+      "Jürgen Röber": [
+        "club:Bayer Leverkusen",
+        "club:Bayern Monaco"
+      ],
+      "Roque Júnior": [
+        "club:Bayer Leverkusen",
+        "club:Milan"
+      ],
+      "Patrik Schick": [
+        "club:Bayer Leverkusen",
+        "club:Roma"
+      ],
+      "André Schürrle": [
+        "club:Bayer Leverkusen",
+        "club:Borussia Dortmund",
+        "club:Chelsea"
+      ],
+      "Juan Silveira dos Santos": [
+        "club:Bayer Leverkusen",
+        "club:Roma"
+      ],
+      "Emir Spahić": [
+        "club:Bayer Leverkusen",
+        "club:Sevilla"
+      ],
+      "Josip Stanišić": [
+        "club:Bayer Leverkusen",
+        "club:Bayern Monaco"
+      ],
+      "Jonathan Tah": [
+        "club:Bayer Leverkusen",
+        "club:Bayern Monaco"
+      ],
+      "John Thorrington": [
+        "club:Bayer Leverkusen",
+        "club:Manchester United"
+      ],
+      "Malik Tillman": [
+        "club:Bayer Leverkusen",
+        "club:Bayern Monaco"
+      ],
+      "Gökhan Töre": [
+        "club:Bayer Leverkusen",
+        "club:Chelsea"
+      ],
+      "Lucas Vázquez": [
+        "club:Bayer Leverkusen",
+        "club:Real Madrid"
+      ],
+      "Andrij Voronin": [
+        "club:Bayer Leverkusen",
+        "club:Liverpool"
+      ],
+      "Mitchell Weiser": [
+        "club:Bayer Leverkusen",
+        "club:Bayern Monaco"
+      ],
+      "Helmut Winklhofer": [
+        "club:Bayer Leverkusen",
+        "club:Bayern Monaco"
+      ],
+      "Samed Yeşil": [
+        "club:Bayer Leverkusen",
+        "club:Liverpool"
+      ],
+      "Zé Elias": [
+        "club:Bayer Leverkusen",
+        "club:Inter"
+      ],
+      "Guy Demel": [
+        "club:Arsenal",
+        "club:Borussia Dortmund"
+      ],
+      "Thomas Eisfeld": [
+        "club:Arsenal",
+        "club:Borussia Dortmund"
+      ],
+      "Mikel Merino": [
+        "club:Arsenal",
+        "club:Borussia Dortmund"
+      ],
+      "Ethan Nwaneri": [
+        "club:Arsenal",
+        "club:Borussia Dortmund",
+        "club:Marsiglia"
+      ],
+      "Tomáš Rosický": [
+        "club:Arsenal",
+        "club:Borussia Dortmund"
+      ],
+      "Guillaume Warmuz": [
+        "club:Arsenal",
+        "club:Borussia Dortmund",
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Miroslav Votava": [
+        "club:Atletico Madrid",
+        "club:Borussia Dortmund"
+      ],
+      "Axel Witsel": [
+        "club:Atletico Madrid",
+        "club:Borussia Dortmund"
+      ],
+      "Karim Adeyemi": [
+        "club:Barcellona",
+        "club:Borussia Dortmund"
+      ],
+      "Marc Bartra": [
+        "club:Barcellona",
+        "club:Borussia Dortmund"
+      ],
+      "Mateu Morey": [
+        "club:Barcellona",
+        "club:Borussia Dortmund"
+      ],
+      "Ayman Azhil": [
+        "club:Bayer Leverkusen",
+        "club:Borussia Dortmund"
+      ],
+      "Sergej Barbarez": [
+        "club:Bayer Leverkusen",
+        "club:Borussia Dortmund"
+      ],
+      "Sven Bender": [
+        "club:Bayer Leverkusen",
+        "club:Borussia Dortmund"
+      ],
+      "Gonzalo Castro": [
+        "club:Bayer Leverkusen",
+        "club:Borussia Dortmund"
+      ],
+      "Kerem Demirbay": [
+        "club:Bayer Leverkusen",
+        "club:Borussia Dortmund"
+      ],
+      "Manuel Friedrich": [
+        "club:Bayer Leverkusen",
+        "club:Borussia Dortmund"
+      ],
+      "Heiko Herrlich": [
+        "club:Bayer Leverkusen",
+        "club:Borussia Dortmund"
+      ],
+      "Jonas Hofmann": [
+        "club:Bayer Leverkusen",
+        "club:Borussia Dortmund"
+      ],
+      "Kevin Kampl": [
+        "club:Bayer Leverkusen",
+        "club:Borussia Dortmund"
+      ],
+      "Martin Kree": [
+        "club:Bayer Leverkusen",
+        "club:Borussia Dortmund"
+      ],
+      "Marcel Lotka": [
+        "club:Bayer Leverkusen",
+        "club:Borussia Dortmund"
+      ],
+      "Ahmed Madouni": [
+        "club:Bayer Leverkusen",
+        "club:Borussia Dortmund"
+      ],
+      "Alexander Meyer": [
+        "club:Bayer Leverkusen",
+        "club:Borussia Dortmund"
+      ],
+      "Knut Reinhardt": [
+        "club:Bayer Leverkusen",
+        "club:Borussia Dortmund"
+      ],
+      "Ömer Toprak": [
+        "club:Bayer Leverkusen",
+        "club:Borussia Dortmund"
+      ],
+      "Christian Wörns": [
+        "club:Bayer Leverkusen",
+        "club:Borussia Dortmund",
+        "club:Paris Saint-Germain"
+      ],
+      "Markus Feulner": [
+        "club:Bayern Monaco",
+        "club:Borussia Dortmund"
+      ],
+      "Thorsten Fink": [
+        "club:Bayern Monaco",
+        "club:Borussia Dortmund"
+      ],
+      "Torsten Frings": [
+        "club:Bayern Monaco",
+        "club:Borussia Dortmund"
+      ],
+      "Raphaël Guerreiro": [
+        "club:Bayern Monaco",
+        "club:Borussia Dortmund"
+      ],
+      "Thomas Helmer": [
+        "club:Bayern Monaco",
+        "club:Borussia Dortmund"
+      ],
+      "Christian Nerlinger": [
+        "club:Bayern Monaco",
+        "club:Borussia Dortmund"
+      ],
+      "Marin Pongračić": [
+        "club:Bayern Monaco",
+        "club:Borussia Dortmund"
+      ],
+      "Grant-Leon Ranos": [
+        "club:Bayern Monaco",
+        "club:Borussia Dortmund"
+      ],
+      "Sebastian Rode": [
+        "club:Bayern Monaco",
+        "club:Borussia Dortmund"
+      ],
+      "Michael Rummenigge": [
+        "club:Bayern Monaco",
+        "club:Borussia Dortmund"
+      ],
+      "Harald Schumacher": [
+        "club:Bayern Monaco",
+        "club:Borussia Dortmund"
+      ],
+      "Niklas Süle": [
+        "club:Bayern Monaco",
+        "club:Borussia Dortmund"
+      ],
+      "Jürgen Wegmann": [
+        "club:Bayern Monaco",
+        "club:Borussia Dortmund"
+      ],
+      "Alexander Zickler": [
+        "club:Bayern Monaco",
+        "club:Borussia Dortmund"
+      ],
+      "Márcio Amoroso": [
+        "club:Borussia Dortmund",
+        "club:Milan"
+      ],
+      "Aaron Anselmino": [
+        "club:Borussia Dortmund",
+        "club:Chelsea"
+      ],
+      "Leonardo Balerdi": [
+        "club:Borussia Dortmund",
+        "club:Marsiglia",
+        "club:Roma"
+      ],
+      "Patrik Berger": [
+        "club:Borussia Dortmund",
+        "club:Liverpool"
+      ],
+      "Christopher Buchtmann": [
+        "club:Borussia Dortmund",
+        "club:Liverpool"
+      ],
+      "Carney Chukwuemeka": [
+        "club:Borussia Dortmund",
+        "club:Chelsea"
+      ],
+      "Flávio Conceição": [
+        "club:Borussia Dortmund",
+        "club:Real Madrid"
+      ],
+      "Philipp Degen": [
+        "club:Borussia Dortmund",
+        "club:Liverpool"
+      ],
+      "Thomas Delaney": [
+        "club:Borussia Dortmund",
+        "club:Sevilla"
+      ],
+      "Steffen Freund": [
+        "club:Borussia Dortmund",
+        "club:Tottenham"
+      ],
+      "Niclas Füllkrug": [
+        "club:Borussia Dortmund",
+        "club:Milan"
+      ],
+      "Eike Immel": [
+        "club:Borussia Dortmund",
+        "club:Manchester City"
+      ],
+      "Alexander Isak": [
+        "club:Borussia Dortmund",
+        "club:Liverpool"
+      ],
+      "Niclas Jensen": [
+        "club:Borussia Dortmund",
+        "club:Manchester City"
+      ],
+      "Júlio César da Silva": [
+        "club:Borussia Dortmund",
+        "club:Juventus"
+      ],
+      "Shinji Kagawa": [
+        "club:Borussia Dortmund",
+        "club:Manchester United"
+      ],
+      "Steffen Karl": [
+        "club:Borussia Dortmund",
+        "club:Manchester City"
+      ],
+      "Jovan Kirovski": [
+        "club:Borussia Dortmund",
+        "club:Manchester United"
+      ],
+      "Lee Young-pyo": [
+        "club:Borussia Dortmund",
+        "club:Tottenham"
+      ],
+      "Ian Maatsen": [
+        "club:Borussia Dortmund",
+        "club:Chelsea"
+      ],
+      "Donyell Malen": [
+        "club:Borussia Dortmund",
+        "club:Roma"
+      ],
+      "Christoph Metzelder": [
+        "club:Borussia Dortmund",
+        "club:Real Madrid"
+      ],
+      "Andreas Möller": [
+        "club:Borussia Dortmund",
+        "club:Juventus"
+      ],
+      "Felix Nmecha": [
+        "club:Borussia Dortmund",
+        "club:Manchester City"
+      ],
+      "Sunday Oliseh": [
+        "club:Borussia Dortmund",
+        "club:Juventus"
+      ],
+      "Steven Pienaar": [
+        "club:Borussia Dortmund",
+        "club:Tottenham"
+      ],
+      "Marvin Pourié": [
+        "club:Borussia Dortmund",
+        "club:Liverpool"
+      ],
+      "Karl-Heinz Riedle": [
+        "club:Borussia Dortmund",
+        "club:Liverpool"
+      ],
+      "Stephen Sama": [
+        "club:Borussia Dortmund",
+        "club:Liverpool"
+      ],
+      "Matthias Sammer": [
+        "club:Borussia Dortmund",
+        "club:Inter"
+      ],
+      "Jürgen Schütz": [
+        "club:Borussia Dortmund",
+        "club:Roma"
+      ],
+      "Rubén Sosa Ardaiz": [
+        "club:Borussia Dortmund",
+        "club:Inter"
+      ],
+      "Nelson Haedo Valdez": [
+        "club:Borussia Dortmund",
+        "club:Valencia"
+      ],
+      "Mikel Arteta": [
+        "club:Arsenal",
+        "club:Paris Saint-Germain"
+      ],
+      "Kaba Diawara": [
+        "club:Arsenal",
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "Grégory Coupet": [
+        "club:Atletico Madrid",
+        "club:Lione",
+        "club:Paris Saint-Germain"
+      ],
+      "Ramón Heredia": [
+        "club:Atletico Madrid",
+        "club:Paris Saint-Germain"
+      ],
+      "Hugo Leal": [
+        "club:Atletico Madrid",
+        "club:Paris Saint-Germain"
+      ],
+      "Peter Luccin": [
+        "club:Atletico Madrid",
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "Cristian Rodríguez": [
+        "club:Atletico Madrid",
+        "club:Paris Saint-Germain"
+      ],
+      "Frédéric Déhu": [
+        "club:Barcellona",
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "Richard Dutruel": [
+        "club:Barcellona",
+        "club:Paris Saint-Germain"
+      ],
+      "Dro Fernández": [
+        "club:Barcellona",
+        "club:Paris Saint-Germain"
+      ],
+      "Cristóbal Parralo": [
+        "club:Barcellona",
+        "club:Paris Saint-Germain"
+      ],
+      "Kays Ruiz-Atil": [
+        "club:Barcellona",
+        "club:Lione",
+        "club:Paris Saint-Germain"
+      ],
+      "Arnau Tenas": [
+        "club:Barcellona",
+        "club:Paris Saint-Germain"
+      ],
+      "Mitchel Bakker": [
+        "club:Bayer Leverkusen",
+        "club:Paris Saint-Germain"
+      ],
+      "Moussa Diaby": [
+        "club:Bayer Leverkusen",
+        "club:Paris Saint-Germain"
+      ],
+      "Nordi Mukiele": [
+        "club:Bayer Leverkusen",
+        "club:Paris Saint-Germain"
+      ],
+      "Axel Tape": [
+        "club:Bayer Leverkusen",
+        "club:Paris Saint-Germain"
+      ],
+      "Eric Maxim Choupo-Moting": [
+        "club:Bayern Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "Soumaïla Coulibaly": [
+        "club:Borussia Dortmund",
+        "club:Paris Saint-Germain"
+      ],
+      "Abdou Diallo": [
+        "club:Borussia Dortmund",
+        "club:Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "Joane Gadou": [
+        "club:Borussia Dortmund",
+        "club:Paris Saint-Germain"
+      ],
+      "Thomas Meunier": [
+        "club:Borussia Dortmund",
+        "club:Paris Saint-Germain"
+      ],
+      "Dan-Axel Zagadou": [
+        "club:Borussia Dortmund",
+        "club:Paris Saint-Germain"
+      ],
+      "Marcin Bułka": [
+        "club:Chelsea",
+        "club:Paris Saint-Germain"
+      ],
+      "Enrique de Lucas": [
+        "club:Chelsea",
+        "club:Paris Saint-Germain"
+      ],
+      "Ishak Belfodil": [
+        "club:Inter",
+        "club:Lione",
+        "club:Paris Saint-Germain"
+      ],
+      "Zoumana Camara": [
+        "club:Inter",
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "Benoît Cauet": [
+        "club:Inter",
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "Andy Diouf": [
+        "club:Inter",
+        "club:Paris Saint-Germain"
+      ],
+      "Khalilou Fadiga": [
+        "club:Inter",
+        "club:Paris Saint-Germain"
+      ],
+      "Mauro Icardi": [
+        "club:Inter",
+        "club:Paris Saint-Germain"
+      ],
+      "Vampeta": [
+        "club:Inter",
+        "club:Paris Saint-Germain"
+      ],
+      "Moise Kean": [
+        "club:Juventus",
+        "club:Paris Saint-Germain"
+      ],
+      "Timothy Weah": [
+        "club:Juventus",
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "Bradley Barcola": [
+        "club:Lione",
+        "club:Liverpool",
+        "club:Paris Saint-Germain"
+      ],
+      "Hugo Ekitike": [
+        "club:Liverpool",
+        "club:Paris Saint-Germain"
+      ],
+      "Chris Mavinga": [
+        "club:Liverpool",
+        "club:Paris Saint-Germain"
+      ],
+      "David N'Gog": [
+        "club:Liverpool",
+        "club:Paris Saint-Germain"
+      ],
+      "Mamadou Sakho": [
+        "club:Liverpool",
+        "club:Paris Saint-Germain"
+      ],
+      "Djamel Abdoun": [
+        "club:Manchester City",
+        "club:Paris Saint-Germain"
+      ],
+      "Djamel Belmadi": [
+        "club:Manchester City",
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "Ali Benarbia": [
+        "club:Manchester City",
+        "club:Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "Sylvain Distin": [
+        "club:Manchester City",
+        "club:Paris Saint-Germain"
+      ],
+      "Claudio Gomes": [
+        "club:Manchester City",
+        "club:Paris Saint-Germain"
+      ],
+      "Alioune Touré": [
+        "club:Manchester City",
+        "club:Paris Saint-Germain"
+      ],
+      "Ander Herrera": [
+        "club:Manchester United",
+        "club:Paris Saint-Germain"
+      ],
+      "Manuel Ugarte": [
+        "club:Manchester United",
+        "club:Paris Saint-Germain"
+      ],
+      "Yacine Adli": [
+        "club:Milan",
+        "club:Paris Saint-Germain"
+      ],
+      "Vikash Dhorasoo": [
+        "club:Lione",
+        "club:Milan",
+        "club:Paris Saint-Germain"
+      ],
+      "Bruno N'Gotty": [
+        "club:Lione",
+        "club:Marsiglia",
+        "club:Milan",
+        "club:Paris Saint-Germain"
+      ],
+      "Gonçalo Ramos": [
+        "club:Milan",
+        "club:Paris Saint-Germain"
+      ],
+      "Marco Simone": [
+        "club:Milan",
+        "club:Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "Mario Yepes": [
+        "club:Milan",
+        "club:Paris Saint-Germain"
+      ],
+      "Khvicha K'varatskhelia": [
+        "club:Napoli",
+        "club:Paris Saint-Germain"
+      ],
+      "Fabián Ruiz": [
+        "club:Napoli",
+        "club:Paris Saint-Germain"
+      ],
+      "Osvaldo Ardiles": [
+        "club:Paris Saint-Germain",
+        "club:Tottenham"
+      ],
+      "Alphonse Areola": [
+        "club:Paris Saint-Germain",
+        "club:Real Madrid"
+      ],
+      "Serge Aurier": [
+        "club:Paris Saint-Germain",
+        "club:Tottenham"
+      ],
+      "Yuri Berchiche": [
+        "club:Paris Saint-Germain",
+        "club:Tottenham"
+      ],
+      "Dominique Casagrande": [
+        "club:Paris Saint-Germain",
+        "club:Sevilla"
+      ],
+      "Gonçalo Guedes": [
+        "club:Paris Saint-Germain",
+        "club:Valencia"
+      ],
+      "David Ginola": [
+        "club:Paris Saint-Germain",
+        "club:Tottenham"
+      ],
+      "Sergio Rico": [
+        "club:Paris Saint-Germain",
+        "club:Sevilla"
+      ],
+      "Jesé Rodríguez": [
+        "club:Paris Saint-Germain",
+        "club:Real Madrid"
+      ],
+      "Giovani Lo Celso": [
+        "club:Paris Saint-Germain",
+        "club:Tottenham"
+      ],
+      "Lucas Moura": [
+        "club:Paris Saint-Germain",
+        "club:Tottenham"
+      ],
+      "Georges-Kévin N'Koudou": [
+        "club:Marsiglia",
+        "club:Monaco",
+        "club:Paris Saint-Germain",
+        "club:Tottenham"
+      ],
+      "Keylor Navas": [
+        "club:Paris Saint-Germain",
+        "club:Real Madrid"
+      ],
+      "Wilson Odobert": [
+        "club:Paris Saint-Germain",
+        "club:Tottenham"
+      ],
+      "Alain Roche": [
+        "club:Marsiglia",
+        "club:Paris Saint-Germain",
+        "club:Valencia"
+      ],
+      "Carlos Soler": [
+        "club:Paris Saint-Germain",
+        "club:Valencia"
+      ],
+      "Boubakary Soumaré": [
+        "club:Paris Saint-Germain",
+        "club:Sevilla"
+      ],
+      "Benjamin Stambouli": [
+        "club:Marsiglia",
+        "club:Paris Saint-Germain",
+        "club:Tottenham"
+      ],
+      "Abou Diaby": [
+        "club:Arsenal",
+        "club:Marsiglia"
+      ],
+      "Mattéo Guendouzi": [
+        "club:Arsenal",
+        "club:Marsiglia"
+      ],
+      "Sead Kolašinac": [
+        "club:Arsenal",
+        "club:Marsiglia"
+      ],
+      "William Saliba": [
+        "club:Arsenal",
+        "club:Marsiglia"
+      ],
+      "Nuno Tavares": [
+        "club:Arsenal",
+        "club:Marsiglia"
+      ],
+      "Sylvain Wiltord": [
+        "club:Arsenal",
+        "club:Lione",
+        "club:Marsiglia"
+      ],
+      "Larbi Ben Barek": [
+        "club:Atletico Madrid",
+        "club:Marsiglia"
+      ],
+      "Igor' Dobrovol'skij": [
+        "club:Atletico Madrid",
+        "club:Marsiglia"
+      ],
+      "Marcel Domingo": [
+        "club:Atletico Madrid",
+        "club:Marsiglia"
+      ],
+      "Dan Ekner": [
+        "club:Atletico Madrid",
+        "club:Marsiglia"
+      ],
+      "Jean-François Hernandez": [
+        "club:Atletico Madrid",
+        "club:Marsiglia"
+      ],
+      "Renan Lodi": [
+        "club:Atletico Madrid",
+        "club:Marsiglia"
+      ],
+      "Jovan Stanković": [
+        "club:Atletico Madrid",
+        "club:Marsiglia"
+      ],
+      "Stefano Torrisi": [
+        "club:Atletico Madrid",
+        "club:Marsiglia"
+      ],
+      "Arthur Vermeeren": [
+        "club:Atletico Madrid",
+        "club:Marsiglia"
+      ],
+      "Sonny Anderson": [
+        "club:Barcellona",
+        "club:Lione",
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Philippe Christanval": [
+        "club:Barcellona",
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Konrad de la Fuente": [
+        "club:Barcellona",
+        "club:Marsiglia"
+      ],
+      "Iván de la Peña": [
+        "club:Barcellona",
+        "club:Marsiglia"
+      ],
+      "Jaguaré Bezerra de Vasconcelos": [
+        "club:Barcellona",
+        "club:Marsiglia"
+      ],
+      "Steve Mokone": [
+        "club:Barcellona",
+        "club:Marsiglia"
+      ],
+      "Facundo Medina": [
+        "club:Bayer Leverkusen",
+        "club:Marsiglia"
+      ],
+      "Mickaël Cuisance": [
+        "club:Bayern Monaco",
+        "club:Marsiglia"
+      ],
+      "Luiz Gustavo Dias": [
+        "club:Bayern Monaco",
+        "club:Marsiglia"
+      ],
+      "Bixente Lizarazu": [
+        "club:Bayern Monaco",
+        "club:Marsiglia"
+      ],
+      "András Nagy": [
+        "club:Bayern Monaco",
+        "club:Marsiglia"
+      ],
+      "Bouna Sarr": [
+        "club:Bayern Monaco",
+        "club:Lione",
+        "club:Marsiglia"
+      ],
+      "Tony Cascarino": [
+        "club:Chelsea",
+        "club:Marsiglia"
+      ],
+      "Pierre Issa": [
+        "club:Chelsea",
+        "club:Marsiglia"
+      ],
+      "Frank Lebœuf": [
+        "club:Chelsea",
+        "club:Marsiglia"
+      ],
+      "Loïc Rémy": [
+        "club:Chelsea",
+        "club:Lione",
+        "club:Marsiglia"
+      ],
+      "Emran Soglo": [
+        "club:Chelsea",
+        "club:Marsiglia"
+      ],
+      "Valentín Carboni": [
+        "club:Inter",
+        "club:Marsiglia"
+      ],
+      "Luis Henrique": [
+        "club:Inter",
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Sabri Lamouchi": [
+        "club:Inter",
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Yūto Nagatomo": [
+        "club:Inter",
+        "club:Marsiglia"
+      ],
+      "Marley Aké": [
+        "club:Juventus",
+        "club:Marsiglia"
+      ],
+      "Rui Barros": [
+        "club:Juventus",
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Alen Bokšić": [
+        "club:Juventus",
+        "club:Marsiglia"
+      ],
+      "Paolo De Ceglie": [
+        "club:Juventus",
+        "club:Marsiglia"
+      ],
+      "Oscar Frey": [
+        "club:Juventus",
+        "club:Marsiglia"
+      ],
+      "Mauricio Isla": [
+        "club:Juventus",
+        "club:Marsiglia"
+      ],
+      "Mario Lemina": [
+        "club:Juventus",
+        "club:Marsiglia"
+      ],
+      "Pol Lirola": [
+        "club:Juventus",
+        "club:Marsiglia"
+      ],
+      "Roger Magnusson": [
+        "club:Juventus",
+        "club:Marsiglia"
+      ],
+      "Aidan McQueen": [
+        "club:Juventus",
+        "club:Marsiglia"
+      ],
+      "Fabrizio Ravanelli": [
+        "club:Juventus",
+        "club:Marsiglia"
+      ],
+      "Dimas Teixeira": [
+        "club:Juventus",
+        "club:Marsiglia"
+      ],
+      "Pegguy Arphexad": [
+        "club:Liverpool",
+        "club:Marsiglia"
+      ],
+      "Titi Camara": [
+        "club:Liverpool",
+        "club:Marsiglia"
+      ],
+      "Bruno Cheyrou": [
+        "club:Liverpool",
+        "club:Marsiglia"
+      ],
+      "Djibril Cissé": [
+        "club:Liverpool",
+        "club:Marsiglia"
+      ],
+      "Alou Diarra": [
+        "club:Lione",
+        "club:Liverpool",
+        "club:Marsiglia"
+      ],
+      "Djimi Traoré": [
+        "club:Liverpool",
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Joey Barton": [
+        "club:Manchester City",
+        "club:Marsiglia"
+      ],
+      "CJ Egan-Riley": [
+        "club:Manchester City",
+        "club:Marsiglia"
+      ],
+      "Tyrone Mears": [
+        "club:Manchester City",
+        "club:Marsiglia"
+      ],
+      "Iliman Ndiaye": [
+        "club:Manchester City",
+        "club:Marsiglia"
+      ],
+      "Olivier Ntcham": [
+        "club:Manchester City",
+        "club:Marsiglia"
+      ],
+      "Gerónimo Rulli": [
+        "club:Manchester City",
+        "club:Marsiglia"
+      ],
+      "David Sommeil": [
+        "club:Manchester City",
+        "club:Marsiglia"
+      ],
+      "Eric Bailly": [
+        "club:Manchester United",
+        "club:Marsiglia"
+      ],
+      "Fabien Barthez": [
+        "club:Manchester United",
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Éric Cantona": [
+        "club:Manchester United",
+        "club:Marsiglia"
+      ],
+      "Mason Greenwood": [
+        "club:Manchester United",
+        "club:Marsiglia"
+      ],
+      "Aymen Abdennour": [
+        "club:Marsiglia",
+        "club:Monaco",
+        "club:Valencia"
+      ],
+      "Fabrice Abriel": [
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "János Aknai": [
+        "club:Marsiglia",
+        "club:Valencia"
+      ],
+      "Jérôme Alonzo": [
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "William Ayache": [
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "Ibrahim Ba": [
+        "club:Marsiglia",
+        "club:Milan"
+      ],
+      "Abdelaziz Barrada": [
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "Hatem Ben Arfa": [
+        "club:Lione",
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "Habib Beye": [
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "Alain Boghossian": [
+        "club:Marsiglia",
+        "club:Napoli"
+      ],
+      "Angelo Bollano": [
+        "club:Marsiglia",
+        "club:Milan"
+      ],
+      "Daniel Bravo": [
+        "club:Lione",
+        "club:Marsiglia",
+        "club:Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "François Brisson": [
+        "club:Lione",
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "Lorik Cana": [
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "Édouard Cissé": [
+        "club:Marsiglia",
+        "club:Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "Patrick Colleter": [
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "Georges Dard": [
+        "club:Marsiglia",
+        "club:Sevilla"
+      ],
+      "Jean-Pierre Destrumelle": [
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "Brice Dja Djédjé": [
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "Jean Djorkaeff": [
+        "club:Lione",
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "Jean-Pierre Dogliani": [
+        "club:Marsiglia",
+        "club:Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "Fabrice Fiorèse": [
+        "club:Lione",
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "Laurent Fournier": [
+        "club:Lione",
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "Bruno Germain": [
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "Gerson": [
+        "club:Marsiglia",
+        "club:Roma"
+      ],
+      "Xavier Gravelaine": [
+        "club:Marsiglia",
+        "club:Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "Pape Gueye": [
+        "club:Marsiglia",
+        "club:Sevilla"
+      ],
+      "Giannelli Imbula": [
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "Salif Keïta": [
+        "club:Marsiglia",
+        "club:Valencia"
+      ],
+      "Roberto La Paz": [
+        "club:Marsiglia",
+        "club:Monaco",
+        "club:Napoli"
+      ],
+      "Thierry Laurey": [
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "Yvon Le Roux": [
+        "club:Marsiglia",
+        "club:Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "Jean-Louis Leonetti": [
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "Jérôme Leroy": [
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "Péguy Luyindula": [
+        "club:Lione",
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "Modeste M'Bami": [
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "Stéphane M'Bia": [
+        "club:Marsiglia",
+        "club:Sevilla"
+      ],
+      "Zinédine Machach": [
+        "club:Marsiglia",
+        "club:Napoli"
+      ],
+      "Neal Maupay": [
+        "club:Marsiglia",
+        "club:Sevilla"
+      ],
+      "Florian Maurice": [
+        "club:Lione",
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "Fabrice Moreau": [
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "André Luiz Moreira": [
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "Clinton N'Jie": [
+        "club:Lione",
+        "club:Marsiglia",
+        "club:Tottenham"
+      ],
+      "Pascal Nouma": [
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "Jacques Novi": [
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "Ilija Pantelić": [
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "Bernard Pardo": [
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "Reynald Pedros": [
+        "club:Lione",
+        "club:Marsiglia",
+        "club:Napoli"
+      ],
+      "Cyrille Pouget": [
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "Héctor Rial": [
+        "club:Marsiglia",
+        "club:Real Madrid"
+      ],
+      "Alberto Rivera Pizarro": [
+        "club:Marsiglia",
+        "club:Real Madrid"
+      ],
+      "Lucas Silva": [
+        "club:Marsiglia",
+        "club:Real Madrid"
+      ],
+      "Kevin Strootman": [
+        "club:Marsiglia",
+        "club:Roma"
+      ],
+      "Taye Taiwo": [
+        "club:Marsiglia",
+        "club:Milan"
+      ],
+      "Jean-Pierre Tokoto": [
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "Hamed Traorè": [
+        "club:Marsiglia",
+        "club:Napoli"
+      ],
+      "Cengiz Ünder": [
+        "club:Marsiglia",
+        "club:Roma"
+      ],
+      "William Vainqueur": [
+        "club:Marsiglia",
+        "club:Monaco",
+        "club:Roma"
+      ],
+      "Robinio Vaz": [
+        "club:Marsiglia",
+        "club:Roma"
+      ],
+      "Martín Vázquez": [
+        "club:Marsiglia",
+        "club:Real Madrid"
+      ],
+      "Jordan Veretout": [
+        "club:Lione",
+        "club:Marsiglia",
+        "club:Roma"
+      ],
+      "Chris Waddle": [
+        "club:Marsiglia",
+        "club:Tottenham"
+      ],
+      "Daniel Xuereb": [
+        "club:Lione",
+        "club:Marsiglia",
+        "club:Paris Saint-Germain"
+      ],
+      "André-Frank Anguissa": [
+        "club:Marsiglia",
+        "club:Napoli"
+      ],
+      "Folarin Balogun": [
+        "club:Arsenal",
+        "club:Monaco"
+      ],
+      "Nacer Barazite": [
+        "club:Arsenal",
+        "club:Monaco"
+      ],
+      "Mika Biereth": [
+        "club:Arsenal",
+        "club:Monaco"
+      ],
+      "Rémi Garde": [
+        "club:Arsenal",
+        "club:Lione"
+      ],
+      "Gilles Grimandi": [
+        "club:Arsenal",
+        "club:Monaco"
+      ],
+      "Bruno Guimarães": [
+        "club:Arsenal",
+        "club:Lione"
+      ],
+      "Kim Källström": [
+        "club:Arsenal",
+        "club:Lione"
+      ],
+      "Vito Mannone": [
+        "club:Arsenal",
+        "club:Monaco"
+      ],
+      "Park Chu-young": [
+        "club:Arsenal",
+        "club:Monaco"
+      ],
+      "Jeff Reine-Adélaïde": [
+        "club:Arsenal",
+        "club:Lione"
+      ],
+      "Christopher Wreh": [
+        "club:Arsenal",
+        "club:Monaco"
+      ],
+      "Thiago Almada": [
+        "club:Atletico Madrid",
+        "club:Lione"
+      ],
+      "Yannick Carrasco": [
+        "club:Atletico Madrid",
+        "club:Monaco"
+      ],
+      "Costinha": [
+        "club:Atletico Madrid",
+        "club:Monaco"
+      ],
+      "Jean-François Larios": [
+        "club:Atletico Madrid",
+        "club:Lione"
+      ],
+      "Benjamin Lecomte": [
+        "club:Atletico Madrid",
+        "club:Monaco"
+      ],
+      "Gelson Martins": [
+        "club:Atletico Madrid",
+        "club:Monaco"
+      ],
+      "Caio Henrique": [
+        "club:Atletico Madrid",
+        "club:Monaco"
+      ],
+      "Éric Abidal": [
+        "club:Barcellona",
+        "club:Lione",
+        "club:Monaco"
+      ],
+      "Marc Crosas": [
+        "club:Barcellona",
+        "club:Lione"
+      ],
+      "Edmílson": [
+        "club:Barcellona",
+        "club:Lione"
+      ],
+      "Ansu Fati": [
+        "club:Barcellona",
+        "club:Monaco"
+      ],
+      "Rafael Márquez": [
+        "club:Barcellona",
+        "club:Monaco"
+      ],
+      "Jordi Mboula": [
+        "club:Barcellona",
+        "club:Monaco"
+      ],
+      "Moussa N'Diaye": [
+        "club:Barcellona",
+        "club:Monaco"
+      ],
+      "Robert Navarro": [
+        "club:Barcellona",
+        "club:Monaco"
+      ],
+      "Adama Traoré": [
+        "club:Barcellona",
+        "club:Monaco"
+      ],
+      "Samuel Umtiti": [
+        "club:Barcellona",
+        "club:Lione"
+      ],
+      "Eliesse Ben Seghir": [
+        "club:Bayer Leverkusen",
+        "club:Monaco"
+      ],
+      "Cris": [
+        "club:Bayer Leverkusen",
+        "club:Lione"
+      ],
+      "Benjamin Henrichs": [
+        "club:Bayer Leverkusen",
+        "club:Monaco"
+      ],
+      "Lukáš Hrádecký": [
+        "club:Bayer Leverkusen",
+        "club:Monaco"
+      ],
+      "Afonso Moreira": [
+        "club:Bayer Leverkusen",
+        "club:Lione"
+      ],
+      "Martin Terrier": [
+        "club:Bayer Leverkusen",
+        "club:Lione"
+      ],
+      "Søren Lerby": [
+        "club:Bayern Monaco",
+        "club:Monaco"
+      ],
+      "Alexander Nübel": [
+        "club:Bayern Monaco",
+        "club:Monaco"
+      ],
+      "Willy Sagnol": [
+        "club:Bayern Monaco",
+        "club:Monaco"
+      ],
+      "Paris Brunner": [
+        "club:Borussia Dortmund",
+        "club:Monaco"
+      ],
+      "Julien Duranville": [
+        "club:Borussia Dortmund",
+        "club:Lione"
+      ],
+      "Victor Ikpeba": [
+        "club:Borussia Dortmund",
+        "club:Monaco"
+      ],
+      "Jan Koller": [
+        "club:Borussia Dortmund",
+        "club:Monaco"
+      ],
+      "Orel Mangala": [
+        "club:Borussia Dortmund",
+        "club:Lione"
+      ],
+      "Axel Disasi": [
+        "club:Chelsea",
+        "club:Monaco"
+      ],
+      "Malo Gusto": [
+        "club:Chelsea",
+        "club:Lione"
+      ],
+      "Maxence Lacroix": [
+        "club:Chelsea",
+        "club:Monaco"
+      ],
+      "Florent Malouda": [
+        "club:Chelsea",
+        "club:Lione"
+      ],
+      "Jonathan Panzo": [
+        "club:Chelsea",
+        "club:Monaco"
+      ],
+      "Malang Sarr": [
+        "club:Chelsea",
+        "club:Monaco"
+      ],
+      "Mamadou Sarr": [
+        "club:Chelsea",
+        "club:Lione"
+      ],
+      "Bertrand Traoré": [
+        "club:Chelsea",
+        "club:Lione"
+      ],
+      "Keita Baldé": [
+        "club:Inter",
+        "club:Monaco"
+      ],
+      "Jérémie Bréchet": [
+        "club:Inter",
+        "club:Lione"
+      ],
+      "Mohamed Kallon": [
+        "club:Inter",
+        "club:Monaco"
+      ],
+      "Lisandro López": [
+        "club:Inter",
+        "club:Lione"
+      ],
+      "Gaetano Monachello": [
+        "club:Inter",
+        "club:Monaco"
+      ],
+      "Sebastián Ribas": [
+        "club:Inter",
+        "club:Monaco"
+      ],
+      "Martín Satriano": [
+        "club:Inter",
+        "club:Lione"
+      ],
+      "Vincenzo Scifo": [
+        "club:Inter",
+        "club:Monaco"
+      ],
+      "Italo Zamberletti": [
+        "club:Inter",
+        "club:Monaco"
+      ],
+      "Sergio Bernardo Almirón": [
+        "club:Juventus",
+        "club:Monaco"
+      ],
+      "Jean-Alain Boumsong": [
+        "club:Juventus",
+        "club:Lione"
+      ],
+      "Raúl Conti": [
+        "club:Juventus",
+        "club:Monaco"
+      ],
+      "Olivier Kapo": [
+        "club:Juventus",
+        "club:Monaco"
+      ],
+      "Patrick Müller": [
+        "club:Juventus",
+        "club:Lione",
+        "club:Monaco"
+      ],
+      "Loïs Openda": [
+        "club:Juventus",
+        "club:Lione"
+      ],
+      "Yoan Severin": [
+        "club:Juventus",
+        "club:Lione"
+      ],
+      "Khéphren Thuram": [
+        "club:Juventus",
+        "club:Monaco"
+      ],
+      "David Trezeguet": [
+        "club:Juventus",
+        "club:Monaco"
+      ],
+      "Henri Alberto": [
+        "club:Lione",
+        "club:Monaco"
+      ],
+      "Manuel Amoros": [
+        "club:Lione",
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Zachary Athekame": [
+        "club:Lione",
+        "club:Milan"
+      ],
+      "Jean Baeza": [
+        "club:Lione",
+        "club:Monaco"
+      ],
+      "Farès Bahlouli": [
+        "club:Lione",
+        "club:Monaco"
+      ],
+      "Milan Baroš": [
+        "club:Lione",
+        "club:Liverpool"
+      ],
+      "Michel Bastos": [
+        "club:Lione",
+        "club:Roma"
+      ],
+      "Henri Bedimo": [
+        "club:Lione",
+        "club:Marsiglia"
+      ],
+      "Jean Belver": [
+        "club:Lione",
+        "club:Marsiglia"
+      ],
+      "Jérémy Berthod": [
+        "club:Lione",
+        "club:Monaco"
+      ],
+      "Milan Biševac": [
+        "club:Lione",
+        "club:Paris Saint-Germain"
+      ],
+      "Serge Blanc": [
+        "club:Lione",
+        "club:Marsiglia"
+      ],
+      "Mathieu Bodmer": [
+        "club:Lione",
+        "club:Paris Saint-Germain"
+      ],
+      "Luc Borrelli": [
+        "club:Lione",
+        "club:Paris Saint-Germain"
+      ],
+      "Ali Bouafia": [
+        "club:Lione",
+        "club:Marsiglia"
+      ],
+      "Stéphane Bruey": [
+        "club:Lione",
+        "club:Monaco"
+      ],
+      "Duje Ćaleta-Car": [
+        "club:Lione",
+        "club:Marsiglia"
+      ],
+      "Yves Chauveau": [
+        "club:Lione",
+        "club:Monaco"
+      ],
+      "Rayan Cherki": [
+        "club:Lione",
+        "club:Manchester City"
+      ],
+      "Jérémy Clément": [
+        "club:Lione",
+        "club:Paris Saint-Germain"
+      ],
+      "Pires Constantino": [
+        "club:Lione",
+        "club:Marsiglia"
+      ],
+      "Lucien Cossou": [
+        "club:Lione",
+        "club:Monaco"
+      ],
+      "Mouhamadou Dabo": [
+        "club:Lione",
+        "club:Sevilla"
+      ],
+      "Jean Lucas Oliveira": [
+        "club:Lione",
+        "club:Monaco"
+      ],
+      "James Debbah": [
+        "club:Lione",
+        "club:Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "Jason Denayer": [
+        "club:Lione",
+        "club:Manchester City"
+      ],
+      "Rémy Descamps": [
+        "club:Lione",
+        "club:Paris Saint-Germain"
+      ],
+      "Mouctar Diakhaby": [
+        "club:Lione",
+        "club:Valencia"
+      ],
+      "Mahamadou Diarra": [
+        "club:Lione",
+        "club:Monaco",
+        "club:Real Madrid"
+      ],
+      "Lamine Diatta": [
+        "club:Lione",
+        "club:Marsiglia"
+      ],
+      "Mahamadou Diawara": [
+        "club:Lione",
+        "club:Paris Saint-Germain"
+      ],
+      "Raymond Domenech": [
+        "club:Lione",
+        "club:Paris Saint-Germain"
+      ],
+      "Jean-François Domergue": [
+        "club:Lione",
+        "club:Marsiglia"
+      ],
+      "Jean-Philippe Durand": [
+        "club:Lione",
+        "club:Marsiglia"
+      ],
+      "Albert Emon": [
+        "club:Lione",
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Romain Faivre": [
+        "club:Lione",
+        "club:Monaco"
+      ],
+      "Pierre Flamion": [
+        "club:Lione",
+        "club:Marsiglia"
+      ],
+      "Marc-Vivien Foé": [
+        "club:Lione",
+        "club:Manchester City"
+      ],
+      "Pierre-Alain Frau": [
+        "club:Lione",
+        "club:Paris Saint-Germain"
+      ],
+      "Fred": [
+        "club:Lione",
+        "club:Manchester United"
+      ],
+      "Jordy Gaspar": [
+        "club:Lione",
+        "club:Monaco"
+      ],
+      "Franck Gava": [
+        "club:Lione",
+        "club:Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "Willem Geubbels": [
+        "club:Lione",
+        "club:Monaco"
+      ],
+      "Rachid Ghezzal": [
+        "club:Lione",
+        "club:Monaco"
+      ],
+      "Bafétimbi Gomis": [
+        "club:Lione",
+        "club:Marsiglia"
+      ],
+      "Amine Gouiri": [
+        "club:Lione",
+        "club:Marsiglia"
+      ],
+      "Yoann Gourcuff": [
+        "club:Lione",
+        "club:Milan"
+      ],
+      "Marco Grassi": [
+        "club:Lione",
+        "club:Monaco"
+      ],
+      "Clément Grenier": [
+        "club:Lione",
+        "club:Roma"
+      ],
+      "David Hellebuyck": [
+        "club:Lione",
+        "club:Paris Saint-Germain"
+      ],
+      "Angelo Hugues": [
+        "club:Lione",
+        "club:Monaco"
+      ],
+      "Christophe Jallet": [
+        "club:Lione",
+        "club:Paris Saint-Germain"
+      ],
+      "Roman Jaremčuk": [
+        "club:Lione",
+        "club:Valencia"
+      ],
+      "Erik Kuld Jensen": [
+        "club:Lione",
+        "club:Marsiglia"
+      ],
+      "Franck Jurietti": [
+        "club:Lione",
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Timothée Kolodziejczak": [
+        "club:Lione",
+        "club:Sevilla"
+      ],
+      "Billy Koumetio": [
+        "club:Lione",
+        "club:Liverpool"
+      ],
+      "Saël Kumbedi": [
+        "club:Lione",
+        "club:Paris Saint-Germain"
+      ],
+      "Félix Lacuesta": [
+        "club:Lione",
+        "club:Monaco"
+      ],
+      "Patrice Loko": [
+        "club:Lione",
+        "club:Paris Saint-Germain"
+      ],
+      "Dejan Lovren": [
+        "club:Lione",
+        "club:Liverpool"
+      ],
+      "Steed Malbranque": [
+        "club:Lione",
+        "club:Tottenham"
+      ],
+      "Petar Manola": [
+        "club:Lione",
+        "club:Napoli"
+      ],
+      "Steve Marlet": [
+        "club:Lione",
+        "club:Marsiglia"
+      ],
+      "Mick McCarthy": [
+        "club:Lione",
+        "club:Manchester City"
+      ],
+      "Alain Moizan": [
+        "club:Lione",
+        "club:Monaco"
+      ],
+      "Sylvain Monsoreau": [
+        "club:Lione",
+        "club:Monaco"
+      ],
+      "Endrick": [
+        "club:Lione",
+        "club:Real Madrid"
+      ],
+      "Jérémy Morel": [
+        "club:Lione",
+        "club:Marsiglia"
+      ],
+      "Tyler Morton": [
+        "club:Lione",
+        "club:Liverpool"
+      ],
+      "Jean-Jacques N'Domba": [
+        "club:Lione",
+        "club:Marsiglia"
+      ],
+      "Nicolas Nkoulou": [
+        "club:Lione",
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Marcel Nowak": [
+        "club:Lione",
+        "club:Monaco"
+      ],
+      "Pascal Olmeta": [
+        "club:Lione",
+        "club:Marsiglia"
+      ],
+      "Cenk Özkacar": [
+        "club:Lione",
+        "club:Valencia"
+      ],
+      "Benoît Pedretti": [
+        "club:Lione",
+        "club:Marsiglia"
+      ],
+      "Abedi Pelé": [
+        "club:Lione",
+        "club:Marsiglia"
+      ],
+      "Frédéric Piquionne": [
+        "club:Lione",
+        "club:Monaco"
+      ],
+      "Damien Plessis": [
+        "club:Lione",
+        "club:Liverpool"
+      ],
+      "Rafael Pereira da Silva": [
+        "club:Lione",
+        "club:Manchester United"
+      ],
+      "Sauveur Rodriguez": [
+        "club:Lione",
+        "club:Marsiglia"
+      ],
+      "Gilles Rousset": [
+        "club:Lione",
+        "club:Marsiglia"
+      ],
+      "Éric Roy": [
+        "club:Lione",
+        "club:Marsiglia"
+      ],
+      "Mouhamadou-Naby Sarr": [
+        "club:Lione",
+        "club:Paris Saint-Germain"
+      ],
+      "Jean-Luc Sassus": [
+        "club:Lione",
+        "club:Paris Saint-Germain"
+      ],
+      "Islam Slimani": [
+        "club:Lione",
+        "club:Monaco"
+      ],
+      "Ivo Šuprina": [
+        "club:Lione",
+        "club:Napoli"
+      ],
+      "Ciprian Tătărușanu": [
+        "club:Lione",
+        "club:Milan"
+      ],
+      "Jean Tigana": [
+        "club:Lione",
+        "club:Marsiglia"
+      ],
+      "Lucas Paquetá": [
+        "club:Lione",
+        "club:Milan"
+      ],
+      "Hussayn Touati": [
+        "club:Lione",
+        "club:Paris Saint-Germain"
+      ],
+      "Jérémy Toulalan": [
+        "club:Lione",
+        "club:Monaco"
+      ],
+      "Édouard Wawrzeniak": [
+        "club:Lione",
+        "club:Marsiglia"
+      ],
+      "Mapou Yanga-Mbiwa": [
+        "club:Lione",
+        "club:Roma"
+      ],
+      "Wilfried Zaha": [
+        "club:Lione",
+        "club:Manchester United"
+      ],
+      "Salif Diao": [
+        "club:Liverpool",
+        "club:Monaco"
+      ],
+      "Patrice Luzi": [
+        "club:Liverpool",
+        "club:Monaco"
+      ],
+      "Carl Medjani": [
+        "club:Liverpool",
+        "club:Monaco"
+      ],
+      "Takumi Minamino": [
+        "club:Liverpool",
+        "club:Monaco"
+      ],
+      "Sergio Romero": [
+        "club:Manchester United",
+        "club:Monaco"
+      ],
+      "John Sivebæk": [
+        "club:Manchester United",
+        "club:Monaco"
+      ],
+      "Youri Tielemans": [
+        "club:Manchester United",
+        "club:Monaco"
+      ],
+      "Yeso Amalfi": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Marcel Artélésa": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Lucas Bernardi": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Patrick Blondeau": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Basile Boli": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Laurent Bonnart": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Frédéric Brando": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Rolland Courbis": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Christian Delachet": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Patrick Delamontagne": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Éric Di Meco": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Marcel Dib": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Manuel dos Santos": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Franck Dumas": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Olivier Echouafni": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Eduardo Costa": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Bernard Genghini": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Valère Germain": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Gaël Givet": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Sébastien Hamel": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Pierre Lechantre": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Toifilou Maoulida": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Lilian Martin": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Camel Meriem": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Yohan Mollo": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Sylvain N'Diaye": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Raúl Nogués": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Franck Passi": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Stéphane Porato": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Laurent Robuschi": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Julien Rodriguez": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Cyril Rool": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Serge Roy": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Étienne Sansonetti": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Franck Sauzée": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Henri Stambouli": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Julien Stopyra": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Roger Vandooren": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Albert Vanucci": [
+        "club:Marsiglia",
+        "club:Monaco"
+      ],
+      "Leroy Abanda": [
+        "club:Milan",
+        "club:Monaco"
+      ],
+      "Fodé Ballo-Touré": [
+        "club:Milan",
+        "club:Monaco"
+      ],
+      "Oliver Bierhoff": [
+        "club:Milan",
+        "club:Monaco"
+      ],
+      "Mark Hateley": [
+        "club:Milan",
+        "club:Monaco"
+      ],
+      "Elia Legati": [
+        "club:Milan",
+        "club:Monaco"
+      ],
+      "Soualiho Meïté": [
+        "club:Milan",
+        "club:Monaco"
+      ],
+      "Mario Pašalić": [
+        "club:Milan",
+        "club:Monaco"
+      ],
+      "Strahinja Pavlović": [
+        "club:Milan",
+        "club:Monaco"
+      ],
+      "Judilson Mamadu Tuncara Gomes": [
+        "club:Milan",
+        "club:Monaco"
+      ],
+      "Pietro Pellegri": [
+        "club:Milan",
+        "club:Monaco"
+      ],
+      "Florin Răducioiu": [
+        "club:Milan",
+        "club:Monaco"
+      ],
+      "Flavio Roma": [
+        "club:Milan",
+        "club:Monaco"
+      ],
+      "Rabiu Afolabi": [
+        "club:Monaco",
+        "club:Napoli"
+      ],
+      "Maghnes Akliouche": [
+        "club:Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "Jimmy Algerino": [
+        "club:Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "Jean-Kévin Augustin": [
+        "club:Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "Anderson Luiz de Carvalho": [
+        "club:Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "Nacer Chadli": [
+        "club:Monaco",
+        "club:Tottenham"
+      ],
+      "Ernesto Chevantón": [
+        "club:Monaco",
+        "club:Sevilla"
+      ],
+      "Hélder Costa": [
+        "club:Monaco",
+        "club:Valencia"
+      ],
+      "Alain Couriol": [
+        "club:Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "Éric Cubilier": [
+        "club:Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "Leandro Cufré": [
+        "club:Monaco",
+        "club:Roma"
+      ],
+      "Omar Da Fonseca": [
+        "club:Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "Louis Floch": [
+        "club:Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "Marcelo Gallardo": [
+        "club:Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "Ignacio González": [
+        "club:Monaco",
+        "club:Valencia"
+      ],
+      "Bernard Guignedoux": [
+        "club:Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "Stanis Idumbo": [
+        "club:Monaco",
+        "club:Sevilla"
+      ],
+      "Gary Kagelmacher": [
+        "club:Monaco",
+        "club:Real Madrid"
+      ],
+      "Thilo Kehrer": [
+        "club:Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "Layvin Kurzawa": [
+        "club:Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "Mickaël Madar": [
+        "club:Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "Kévin Malcuit": [
+        "club:Monaco",
+        "club:Napoli"
+      ],
+      "Shabani Nonda": [
+        "club:Monaco",
+        "club:Roma"
+      ],
+      "Alex Nyarko": [
+        "club:Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "Mounir Obbadi": [
+        "club:Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "Joseph Dayo Oshadogan": [
+        "club:Monaco",
+        "club:Roma"
+      ],
+      "Christian Perez": [
+        "club:Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "José-Karl Pierre-Fanfan": [
+        "club:Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "Fabrice Poullain": [
+        "club:Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "Bruno Rodriguez": [
+        "club:Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "Jean-Paul Rostagni": [
+        "club:Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "Jérôme Rothen": [
+        "club:Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "Amara Simba": [
+        "club:Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "Maarten Stekelenburg": [
+        "club:Monaco",
+        "club:Roma"
+      ],
+      "Florian Valot": [
+        "club:Monaco",
+        "club:Paris Saint-Germain"
+      ],
+      "Carlos Vinícius": [
+        "club:Monaco",
+        "club:Tottenham"
       ]
     }
   },
@@ -7382,7 +13418,7 @@
     "criteria": {
       "film": "Ha recitato in",
       "serie": "Ha recitato nella serie",
-      "regista": "Diretto/a da",
+      "regista": "È stato/a diretto/a da",
       "premio": "Ha vinto un"
     },
     "subjects": {

@@ -12,6 +12,42 @@ const CATEGORY_TO_DATASET = {
   Geografia: 'geografia',
 };
 
+// Quali tipi di attributo possono fare da CRITERIO di riga/colonna, per dataset.
+//
+// PERCHÉ SERVE: la griglia accetta una risposta solo se il soggetto ha l'attributo nel database.
+// Se un tipo di dato è incompleto, il gioco RIFIUTA risposte giuste — che per chi gioca è
+// indistinguibile da un bug. Esempio reale: Yannick Carrasco è belga e ha giocato nell'Atlético,
+// ma nel database ha solo i club; una casella "Belgio × Atlético" lo darebbe per sbagliato.
+//
+// Quindi un tipo entra qui solo se è noto per (quasi) TUTTI i soggetti del dataset.
+// I tipi esclusi restano nel database e continuano a valere come informazione: semplicemente
+// non vengono mai proposti come intestazione di riga o colonna.
+const CRITERIA_TYPES = {
+  // I club sono completi per tutti i 2500+ calciatori (vengono dai roster).
+  // nazione (13% dei soggetti) e trofeo (8%) sono troppo sparsi: esclusi.
+  calcio: ['club'],
+  // Tutti i piloti hanno scuderia, nazionalità e compagni calcolati dagli anni.
+  formula1: ['team', 'nazione', 'titolo', 'compagno'],
+  // Dataset compilato a mano, ogni voce ha tutti i campi.
+  cinema: ['film', 'serie', 'regista', 'premio'],
+  geografia: ['confina', 'continente', 'mare', 'ue', 'euro', 'grande', 'popoloso'],
+};
+
+// I 24 club di cui è stato caricato il roster COMPLETO da Wikipedia.
+//
+// Nel database compaiono anche altri club (Ajax, Benfica, Porto...), ma solo perché citati
+// nella scheda di qualche giocatore: di quelli NON abbiamo la rosa completa. Usarli come
+// criterio ricrea lo stesso difetto della nazionalità — una casella "Ajax × Juventus"
+// rifiuterebbe un giocatore che ci ha giocato davvero ma la cui scheda non lo riporta.
+// Quando si carica il roster di un nuovo club, va aggiunto qui.
+const CLUB_CON_ROSTER_COMPLETO = new Set([
+  'Juventus', 'Milan', 'Inter', 'Napoli', 'Roma',
+  'Real Madrid', 'Barcellona', 'Atletico Madrid', 'Valencia', 'Sevilla', 'Athletic Bilbao',
+  'Manchester United', 'Liverpool', 'Arsenal', 'Chelsea', 'Manchester City', 'Tottenham',
+  'Bayern Monaco', 'Borussia Dortmund', 'Bayer Leverkusen',
+  'Paris Saint-Germain', 'Marsiglia', 'Lione', 'Monaco',
+]);
+
 function normalize(s) {
   return s
     .toLowerCase()
@@ -68,10 +104,19 @@ class GridGame {
     if (!datasetKey || !this.data[datasetKey]) return null;
     const subjects = this.data[datasetKey].subjects || {};
 
-    // Raccoglie tutti gli attributi che compaiono almeno 2 volte (altrimenti è troppo difficile).
+    // Raccoglie tutti gli attributi che compaiono almeno 2 volte (altrimenti è troppo difficile),
+    // limitandosi ai tipi il cui dato è completo (vedi CRITERIA_TYPES: usare un tipo incompleto
+    // farebbe rifiutare risposte corrette).
+    const allowedTypes = CRITERIA_TYPES[datasetKey] || Object.keys(this.data[datasetKey].criteria || {});
     const counts = {};
     for (const attrs of Object.values(subjects)) {
-      for (const a of attrs) counts[a] = (counts[a] || 0) + 1;
+      for (const a of attrs) {
+        const [tipo, valore] = a.split(':');
+        if (!allowedTypes.includes(tipo)) continue;
+        // Nel calcio, solo i club di cui abbiamo la rosa completa possono fare da criterio.
+        if (datasetKey === 'calcio' && tipo === 'club' && !CLUB_CON_ROSTER_COMPLETO.has(valore)) continue;
+        counts[a] = (counts[a] || 0) + 1;
+      }
     }
     const usable = Object.keys(counts).filter((a) => counts[a] >= 2);
     if (usable.length < 4) return null;

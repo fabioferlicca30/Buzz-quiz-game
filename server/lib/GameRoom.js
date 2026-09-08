@@ -27,6 +27,22 @@ function wait(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
+// Sostituisce ricorsivamente un id di socket dentro un payload già costruito (stringhe sciolte,
+// elementi di array, chiavi e valori di oggetti). Serve solo agli eventi conservati per il
+// rientro: sono istantanee immutabili, quindi vanno riscritte quando un giocatore cambia socket.
+function replaceIdDeep(value, oldId, newId) {
+  if (value === oldId) return newId;
+  if (Array.isArray(value)) return value.map((v) => replaceIdDeep(v, oldId, newId));
+  if (value && typeof value === 'object') {
+    const out = {};
+    for (const [k, v] of Object.entries(value)) {
+      out[k === oldId ? newId : k] = replaceIdDeep(v, oldId, newId);
+    }
+    return out;
+  }
+  return value;
+}
+
 function roundDifficulty(baseDifficulty, roundIndex) {
   const baseIdx = baseDifficulty === 'misto' ? 0 : DIFFICULTY_ORDER.indexOf(baseDifficulty);
   const idx = Math.min(DIFFICULTY_ORDER.length - 1, Math.max(0, baseIdx) + roundIndex);
@@ -44,8 +60,8 @@ class GameRoom {
     this.hostSocketId = hostSocketId;
     this.players = new Map(); // socketId -> player
     this.state = 'lobby'; // lobby | phase1 | elimination | finished
-    this.usedQuestionIds = new Set();
-    this.eliminationUsedIds = new Set();
+    this.usedQuestionIds = new Set(); // tutte le domande già uscite nella sessione (torneo + eliminazione)
+    this.eliminationUsedIds = new Set(); // solo la fase a eliminazione in corso, per il riciclo del mazzo
     this.currentQuestion = null;
     this.acceptingAnswers = false;
     this.currentAnswers = new Map(); // socketId -> {answerIndex, elapsedMs}
@@ -80,6 +96,24 @@ class GameRoom {
     this.currentGrid = null;
     this.gridProgress = new Map(); // socketId -> { filled: Map(cellIndex -> nome), done: bool }
     this._gridWatcher = null;
+
+    // ---- Riconnessione ----------------------------------------------------
+    // Chi è "in gara" adesso: null = tutti i collegati che non hanno abbandonato.
+    // Chi resta fuori è uno spettatore e non deve premere "Pronto".
+    this.activeCompetitorIds = null;
+    // Riferimento VIVO all'elenco di chi è ancora atteso sulla domanda in corso. Va tenuto
+    // perché la riconnessione deve poterci sostituire il vecchio socket col nuovo: è così che
+    // chi rientra mentre il tempo scorre ritrova la domanda e può ancora rispondere.
+    this.currentEligibleIds = null;
+    // Stessa ragione, per la fase brainfighting (elenco partecipanti e punteggi della fase).
+    this.bfParticipantIds = null;
+    this.bfScores = null;
+    // Ultimi eventi "di schermata" inviati alla stanza: servono a ricostruire quello che il
+    // giocatore aveva davanti, senza riprodurre a mano ogni fase. Il "contesto" è l'evento che
+    // apre una fase (es. inizio brainfighting), lo "step" è il momento preciso (domanda, pausa,
+    // griglia, attesa del buzz).
+    this.resumeContext = null;
+    this.resumeStep = []; // lista: es. domanda + esito, per ricostruire la pausa per intero
   }
 
   addPlayer(socketId, nickname) {
@@ -96,39 +130,72 @@ class GameRoom {
     });
   }
 
+  // Sposta ogni riferimento al vecchio socket sul nuovo. È il cuore della riconnessione: se ne
+  // sfugge anche uno, il giocatore rientra ma il gioco continua a parlare con un socket morto
+  // (non lo aspetta più, non gli conta le risposte, lo dà per uscito).
+  remapPlayerId(oldId, newId) {
+    if (!oldId || oldId === newId) return;
+
+    if (this.readyPlayers.delete(oldId)) this.readyPlayers.add(newId);
+    if (this.currentAnswers.has(oldId)) {
+      this.currentAnswers.set(newId, this.currentAnswers.get(oldId));
+      this.currentAnswers.delete(oldId);
+    }
+    if (this.gridProgress.has(oldId)) {
+      this.gridProgress.set(newId, this.gridProgress.get(oldId));
+      this.gridProgress.delete(oldId);
+    }
+    if (this.activeCompetitorIds && this.activeCompetitorIds.delete(oldId)) {
+      this.activeCompetitorIds.add(newId);
+    }
+    // Array VIVI condivisi con le fasi in corso: vanno modificati sul posto (non riassegnati),
+    // altrimenti la fase continua a usare la sua copia con il vecchio id dentro.
+    for (const list of [this.currentEligibleIds, this.bfParticipantIds]) {
+      if (!Array.isArray(list)) continue;
+      const i = list.indexOf(oldId);
+      if (i !== -1) list[i] = newId;
+    }
+    if (this.bfScores && this.bfScores.has(oldId)) {
+      this.bfScores.set(newId, this.bfScores.get(oldId));
+      this.bfScores.delete(oldId);
+    }
+    if (this.buzzedPlayerId === oldId) this.buzzedPlayerId = newId;
+    if (this.hostSocketId === oldId) this.hostSocketId = newId;
+
+    // Anche gli eventi conservati per il rientro contengono id (eligibleIds, punteggi...):
+    // vanno aggiornati, altrimenti chi rientra si vede sullo schermo come "non in gara".
+    const rewrite = (saved) => (saved ? { ...saved, payload: replaceIdDeep(saved.payload, oldId, newId) } : saved);
+    this.resumeContext = rewrite(this.resumeContext);
+    this.resumeStep = (this.resumeStep || []).map(rewrite);
+  }
+
   // Riaggancia un giocatore che aveva perso la connessione: la scheda (punteggio, stato di
   // eliminazione, qualificazione) viene spostata sul nuovo socket, così rientra esattamente
   // dove era rimasto invece di ripartire da zero. Il match si riconosce dal nickname.
-  reconnectPlayer(newSocketId, nickname) {
+  // `isLive` (opzionale) dice se un socket è ancora davvero collegato: serve a recuperare il
+  // posto anche quando la disconnessione non è ancora stata registrata dal server, caso tipico
+  // di chi chiude il browser e riapre subito.
+  reconnectPlayer(newSocketId, nickname, isLive = null) {
     const wanted = String(nickname || '').slice(0, 16).trim().toLowerCase();
     if (!wanted) return null;
 
-    for (const [oldId, p] of this.players.entries()) {
-      if (p.connected) continue; // solo chi risulta caduto
-      if (p.nickname.trim().toLowerCase() !== wanted) continue;
+    const matches = [...this.players.entries()].filter(
+      ([, p]) => p.nickname.trim().toLowerCase() === wanted,
+    );
+    // Prima chi risulta già caduto; poi, se serve, un posto il cui socket non risponde più.
+    const seat =
+      matches.find(([, p]) => !p.connected) ||
+      matches.find(([oldId]) => typeof isLive === 'function' && !isLive(oldId));
+    if (!seat) return null;
 
-      this.players.delete(oldId);
-      p.id = newSocketId;
-      p.connected = true;
-      this.players.set(newSocketId, p);
+    const [oldId, p] = seat;
+    this.players.delete(oldId);
+    p.id = newSocketId;
+    p.connected = true;
+    this.players.set(newSocketId, p);
+    this.remapPlayerId(oldId, newSocketId);
 
-      // Sposta anche i riferimenti al vecchio socket sparsi nello stato della partita,
-      // altrimenti il giocatore rientra ma il gioco continua ad aspettare il socket morto.
-      if (this.readyPlayers.delete(oldId)) this.readyPlayers.add(newSocketId);
-      if (this.currentAnswers.has(oldId)) {
-        this.currentAnswers.set(newSocketId, this.currentAnswers.get(oldId));
-        this.currentAnswers.delete(oldId);
-      }
-      if (this.gridProgress.has(oldId)) {
-        this.gridProgress.set(newSocketId, this.gridProgress.get(oldId));
-        this.gridProgress.delete(oldId);
-      }
-      if (this.buzzedPlayerId === oldId) this.buzzedPlayerId = newSocketId;
-      if (this.hostSocketId === oldId) this.hostSocketId = newSocketId;
-
-      return p;
-    }
-    return null;
+    return p;
   }
 
   removePlayer(socketId) {
@@ -284,21 +351,102 @@ class GameRoom {
     this.readyPlayers = new Set();
   }
 
-  // Chi deve cliccare "Pronto": tutti i giocatori collegati che NON hanno abbandonato
-  // questa partita (chi esce dalla partita non blocca più gli altri).
+  // Uno spettatore è un giocatore collegato che in questo momento NON è in gara: ha abbandonato
+  // la partita, è stato eliminato, o non partecipa alla fase in corso. Guarda e basta: non deve
+  // premere "Pronto" e non deve bloccare chi sta giocando.
+  isSpectator(player) {
+    if (!player || !player.connected) return false;
+    if (player.leftMatch) return true;
+    if (this.activeCompetitorIds && !this.activeCompetitorIds.has(player.id)) return true;
+    return false;
+  }
+
+  get spectatorIds() {
+    return this.playerList.filter((p) => p.connected && this.isSpectator(p)).map((p) => p.id);
+  }
+
+  // Chi deve cliccare "Pronto": solo chi è ancora in gara. Gli spettatori sono esclusi, così
+  // non si trovano davanti un pulsante da premere a ogni domanda per una partita che, per loro,
+  // è già finita.
   get requiredReadyIds() {
-    return this.playerList.filter((p) => p.connected && !p.leftMatch).map((p) => p.id);
+    return this.playerList.filter((p) => p.connected && !this.isSpectator(p)).map((p) => p.id);
   }
 
   readyStatusPayload() {
-    return { ready: this.readyPlayers.size, total: this.requiredReadyIds.length };
+    const requiredIds = this.requiredReadyIds;
+    return {
+      ready: requiredIds.filter((id) => this.readyPlayers.has(id)).length,
+      total: requiredIds.length,
+      requiredIds, // il client mostra il pulsante solo a chi è in questo elenco
+    };
   }
 
   markReady(socketId) {
     const player = this.players.get(socketId);
     if (!player || !player.connected) return;
+    if (this.isSpectator(player)) return; // gli spettatori non partecipano all'attesa
     this.readyPlayers.add(socketId);
     if (this._readyWatcher) this._readyWatcher();
+  }
+
+  // ---- Ripristino della schermata dopo un rientro ------------------------
+  // Invece di ricostruire a mano ogni fase, teniamo da parte gli eventi che disegnano lo
+  // schermo e li rimandiamo, a lui solo, a chi rientra. Il "contesto" apre una fase (inizio
+  // brainfighting, stato dell'eliminazione), gli "step" sono il momento preciso in cui siamo.
+  rememberContext(name, payload) {
+    this.resumeContext = { name, payload, ts: Date.now(), duration: null };
+    this.resumeStep = [];
+  }
+
+  rememberStep(name, payload, duration = null) {
+    this.resumeStep = [{ name, payload, ts: Date.now(), duration }];
+  }
+
+  appendStep(name, payload) {
+    if (!Array.isArray(this.resumeStep)) this.resumeStep = [];
+    this.resumeStep.push({ name, payload, ts: Date.now(), duration: null });
+  }
+
+  clearResume() {
+    this.resumeContext = null;
+    this.resumeStep = [];
+  }
+
+  // Rimanda a un singolo socket ciò che la stanza ha già visto, con i tempi ricalcolati su
+  // quanto resta davvero. Se la domanda è ancora aperta il giocatore può rispondere; se è
+  // chiusa la vede "congelata", con la sua risposta se aveva fatto in tempo a darla.
+  resumeFor(io, socketId) {
+    const player = this.players.get(socketId);
+    const send = (saved) => {
+      if (!saved) return;
+      let payload = { ...saved.payload, resumed: true };
+      if (saved.duration) {
+        const remaining = Math.max(0, saved.duration - (Date.now() - saved.ts));
+        const frozen = saved.name === 'game:question' ? !this.acceptingAnswers : remaining <= 0;
+        payload.timeLimitMs = frozen ? 0 : remaining;
+        payload.startTs = Date.now();
+        payload.frozen = frozen;
+      }
+      if (saved.name === 'game:question') {
+        const mine = this.currentAnswers.get(socketId);
+        payload.yourAnswerIndex = mine ? mine.answerIndex : null;
+      }
+      if (saved.name === 'grid:start') {
+        const prog = this.gridProgress.get(socketId);
+        payload.yourFilled = prog ? [...prog.filled.entries()] : [];
+      }
+      io.to(socketId).emit(saved.name, payload);
+    };
+
+    io.to(socketId).emit('game:resume', {
+      state: this.state,
+      matchNumber: this.matchNumber,
+      spectator: this.isSpectator(player),
+      leftMatch: Boolean(player && player.leftMatch),
+    });
+    send(this.resumeContext);
+    for (const step of this.resumeStep || []) send(step);
+    io.to(socketId).emit('game:readyStatus', this.readyStatusPayload());
   }
 
   // Il giocatore abbandona la partita in corso ma resta nella sessione (potrà rientrare
@@ -375,6 +523,13 @@ class GameRoom {
   // ---- Ciclo principale di UNA partita -----------------------------------
   async run(io) {
     this.state = 'phase1';
+    // Nuova partita: tutti tornano in gara e lo schermo da ricostruire per chi rientra riparte
+    // pulito (altrimenti chi era eliminato nella partita precedente resterebbe "spettatore").
+    this.activeCompetitorIds = null;
+    this.currentEligibleIds = null;
+    this.bfParticipantIds = null;
+    this.bfScores = null;
+    this.clearResume();
     io.to(this.code).emit('host:say', host.say('welcome', {}, { mode: this.hostMode }));
     await wait(1200);
 
@@ -450,12 +605,13 @@ class GameRoom {
     this.currentAnswers = new Map();
     this.acceptingAnswers = true;
     this.questionStartTs = Date.now();
-    this.activeCompetitorIds = activeIds; // null = tutti i giocatori collegati possono rispondere
+    this.activeCompetitorIds = activeIds ? new Set(activeIds) : null;
 
     const eligibleIds = activeIds ? [...activeIds] : this.playerList.filter((p) => p.connected && !p.leftMatch).map((p) => p.id);
+    this.currentEligibleIds = eligibleIds; // riferimento vivo: la riconnessione lo aggiorna
 
     io.to(this.code).emit('host:say', host.say('questionIntro', {}, { category: question.category, mode: this.hostMode }));
-    io.to(this.code).emit('game:question', {
+    const questionPayload = {
       phase,
       matchNumber: this.matchNumber,
       index,
@@ -468,19 +624,23 @@ class GameRoom {
       timeLimitMs: QUESTION_TIME_MS,
       startTs: Date.now(),
       eligibleIds: [...eligibleIds], // lista esplicita, mai null: riflette anche chi ha abbandonato la partita
-    });
+    };
+    io.to(this.code).emit('game:question', questionPayload);
+    this.rememberStep('game:question', questionPayload, QUESTION_TIME_MS);
 
     await this.waitForAnswers(eligibleIds, QUESTION_TIME_MS);
     this.acceptingAnswers = false;
 
     const result = this.resolveQuestion(scoringMode, question, activeIds);
-    io.to(this.code).emit('game:questionResult', {
+    const resultPayload = {
       phase,
       correctIndex: question.correctIndex,
       correctText: question.answers[question.correctIndex],
       results: result.perPlayer,
       scoreboard: this.scoreboard(),
-    });
+    };
+    io.to(this.code).emit('game:questionResult', resultPayload);
+    this.appendStep('game:questionResult', resultPayload);
 
     this.resetReadyTracking();
     io.to(this.code).emit('game:readyStatus', this.readyStatusPayload());
@@ -671,25 +831,35 @@ class GameRoom {
     await this.finish(io, finalOrder);
   }
 
-  // Pesca una domanda per la fase a eliminazione. Il pool si "ricicla" se esaurito, così la fase
-  // può proseguire teoricamente all'infinito finché non resta un solo sopravvissuto.
+  // Pesca una domanda per la fase a eliminazione. Esclude TUTTE le domande già uscite nella
+  // sessione (usedQuestionIds), torneo compreso: una domanda vista nel torneo non deve
+  // ricomparire all'eliminazione della stessa partita. Il pool si "ricicla" se esaurito, così la
+  // fase può proseguire teoricamente all'infinito finché non resta un solo sopravvissuto.
   pickEliminationQuestion(difficulty) {
-    let question = questionBank.pickQuestions({
+    const pick = () => questionBank.pickQuestions({
       count: 1,
       difficulty,
       category: this.categories,
-      excludeIds: this.eliminationUsedIds,
+      excludeIds: this.usedQuestionIds,
     })[0];
+
+    let question = pick();
     if (!question) {
-      this.eliminationUsedIds = new Set();
-      question = questionBank.pickQuestions({
-        count: 1,
-        difficulty,
-        category: this.categories,
-        excludeIds: this.eliminationUsedIds,
-      })[0];
+      // Mazzo di sessione esaurito: riparto dalle sole domande già fatte in QUESTA fase a
+      // eliminazione, così almeno il round in corso non si ripete su sé stesso.
+      this.usedQuestionIds = new Set(this.eliminationUsedIds);
+      question = pick();
     }
-    if (question) this.eliminationUsedIds.add(question.id);
+    if (!question) {
+      // Esaurito anche così (categoria molto di nicchia e fase lunghissima): azzero tutto.
+      this.usedQuestionIds = new Set();
+      this.eliminationUsedIds = new Set();
+      question = pick();
+    }
+    if (question) {
+      this.usedQuestionIds.add(question.id);
+      this.eliminationUsedIds.add(question.id);
+    }
     return question;
   }
 
@@ -697,9 +867,12 @@ class GameRoom {
   // eliminato. Se sbagliano tutti, nessuno viene eliminato e si continua. Dura finché non resta
   // un solo giocatore che non ha mai sbagliato in questa fase.
   async runElimination(io, qualifierIdsOrdered) {
-    // NOTA: eliminationUsedIds NON viene azzerato qui apposta, per lo stesso motivo di
-    // usedQuestionIds: le domande non devono ripetersi nella stessa sessione, non solo nella
-    // singola partita (il riciclo avviene solo se il mazzo si esaurisce davvero, in pickEliminationQuestion).
+    // La memoria "vera" delle domande già uscite è usedQuestionIds, che NON viene mai azzerato
+    // tra una partita e l'altra: le domande non si ripetono nella sessione, non solo nella
+    // singola partita. eliminationUsedIds tiene invece traccia della sola fase in corso e serve
+    // unicamente come rete di sicurezza per il riciclo del mazzo (vedi pickEliminationQuestion),
+    // quindi qui riparte da zero.
+    this.eliminationUsedIds = new Set();
     let active = qualifierIdsOrdered.slice();
     const eliminatedRounds = []; // array di array di id, un elemento per round in cui è avvenuta un'eliminazione
     let roundIndex = 0;
@@ -735,9 +908,10 @@ class GameRoom {
       this.acceptingAnswers = true;
       this.questionStartTs = Date.now();
       this.activeCompetitorIds = new Set(active);
+      this.currentEligibleIds = active; // riferimento vivo: la riconnessione lo aggiorna
 
       io.to(this.code).emit('host:say', host.say('eliminationRoundIntro', {}, { category: question.category, mode: this.hostMode }));
-      io.to(this.code).emit('game:question', {
+      const elimQuestionPayload = {
         phase: 'elimination',
         index: roundIndex,
         total: null,
@@ -750,7 +924,9 @@ class GameRoom {
         startTs: Date.now(),
         eligibleIds: [...active],
         remainingCount: active.length,
-      });
+      };
+      io.to(this.code).emit('game:question', elimQuestionPayload);
+      this.rememberStep('game:question', elimQuestionPayload, QUESTION_TIME_MS);
 
       await this.waitForAnswers(active, QUESTION_TIME_MS);
       this.acceptingAnswers = false;
@@ -811,12 +987,18 @@ class GameRoom {
         active = correctIds;
       }
 
-      io.to(this.code).emit('elimination:status', {
+      const elimStatusPayload = {
         round: roundIndex + 1,
         difficulty,
         active: active.map((id) => ({ id, nickname: this.players.get(id)?.nickname || '???' })),
         eliminatedNow: eliminatedNow.map((id) => ({ id, nickname: this.players.get(id)?.nickname || '???' })),
-      });
+      };
+      io.to(this.code).emit('elimination:status', elimStatusPayload);
+      this.appendStep('elimination:status', elimStatusPayload);
+
+      // Chi è appena stato eliminato diventa spettatore anche ai fini del "Pronto": da qui in
+      // poi guarda e basta, e la pausa non aspetta più il suo clic.
+      this.activeCompetitorIds = new Set(active);
 
       this.resetReadyTracking();
       io.to(this.code).emit('game:readyStatus', this.readyStatusPayload());
@@ -973,16 +1155,19 @@ class GameRoom {
 
       this.acceptingBuzz = true;
       this.buzzedPlayerId = null;
-      io.to(this.code).emit('brainfight:waitBuzz', {
+      const waitBuzzPayload = {
         category: question.category,
         difficulty: question.difficulty,
         text: question.text,
         optionsRemaining: remainingAnswers.length,
         eligibleIds: eligibleToBuzz,
         timeLimitMs: BUZZ_TIME_MS,
+        startTs: Date.now(),
         scores: scoreList(),
         needsCalculator: CALC_CATEGORIES.has(question.category),
-      });
+      };
+      io.to(this.code).emit('brainfight:waitBuzz', waitBuzzPayload);
+      this.rememberStep('brainfight:waitBuzz', waitBuzzPayload, BUZZ_TIME_MS);
 
       const buzzerId = await this.waitForBuzz(eligibleToBuzz, BUZZ_TIME_MS);
       this.acceptingBuzz = false;
@@ -1057,15 +1242,18 @@ class GameRoom {
     const scoreList = () =>
       participantIds.map((id) => ({ id, nickname: this.players.get(id)?.nickname || '???', score: scores.get(id) || 0 }));
 
-    io.to(this.code).emit('grid:start', {
+    const gridStartPayload = {
       category: grid.category,
       rows: grid.rows.map((r) => r.label),
       cols: grid.cols.map((c) => c.label),
       // Elenco completo dei nomi noti per l'autocomplete: NON rivela quali siano le soluzioni.
       suggestions: gridGame.allSubjectNames(grid.datasetKey),
       timeLimitMs: GRID_TIME_MS,
+      startTs: Date.now(),
       scores: scoreList(),
-    });
+    };
+    io.to(this.code).emit('grid:start', gridStartPayload);
+    this.rememberStep('grid:start', gridStartPayload, GRID_TIME_MS);
 
     const winnerId = await new Promise((resolve) => {
       let settled = false;
@@ -1131,11 +1319,19 @@ class GameRoom {
 
   async runBrainfighting(io, participantIds) {
     const scores = new Map(participantIds.map((id) => [id, 0]));
+    // Riferimenti vivi per la riconnessione: chi rientra deve ritrovare il suo posto e i suoi
+    // punti di questa fase, non ripartire da zero con un socket nuovo.
+    this.bfParticipantIds = participantIds;
+    this.bfScores = scores;
+    // Chi non partecipa al brainfighting è spettatore: niente "Pronto" da premere.
+    this.activeCompetitorIds = new Set(participantIds);
 
-    io.to(this.code).emit('brainfight:start', {
+    const bfStartPayload = {
       participants: participantIds.map((id) => ({ id, nickname: this.players.get(id)?.nickname || '???' })),
       winningScore: BRAINFIGHT_WINNING_SCORE,
-    });
+    };
+    io.to(this.code).emit('brainfight:start', bfStartPayload);
+    this.rememberContext('brainfight:start', bfStartPayload);
     io.to(this.code).emit('host:say', host.say('brainfightingStart', {}, { mode: this.hostMode }));
     await wait(BIG_PAUSE_MS);
 
@@ -1230,7 +1426,7 @@ class GameRoom {
 
     io.to(this.code).emit('host:say', champion ? host.say('finalWinner', { name: champion.nickname }, { mode: this.hostMode }) : { text: 'Partita conclusa!', mood: 'neutral' });
 
-    io.to(this.code).emit('game:final', {
+    const finalPayload = {
       matchNumber: this.matchNumber,
       championId,
       championName: champion ? champion.nickname : null,
@@ -1246,7 +1442,12 @@ class GameRoom {
       }),
       sessionBoard,
       sessionAwards: this.sessionAwards(),
-    });
+    };
+    io.to(this.code).emit('game:final', finalPayload);
+    // A partita finita non c'è più nessuno "in gara": tutti tornano giocatori in attesa della
+    // prossima, e chi rientra adesso deve ritrovare la classifica finale.
+    this.activeCompetitorIds = null;
+    this.rememberContext('game:final', finalPayload);
   }
 
   // Avvia una nuova partita nella stessa stanza, mantenendo la classifica di sessione accumulata.

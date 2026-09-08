@@ -19,6 +19,10 @@
   let lastScoreboardOrder = []; // id in ordine di classifica dell'ultimo render, per l'animazione dei sorpassi
   let iAmReady = false;
   let iHaveLeftMatch = false;
+  // Chi deve premere "Pronto" in questa pausa, secondo il server. null = ancora non lo sappiamo
+  // (prima domanda): in quel caso si assume di essere in gara.
+  let readyRequiredIds = null;
+  let hasConnectedOnce = false; // distingue il primo collegamento della pagina da una riconnessione
   let inBrainfight = false; // siamo nella fase finale "brainfighting"?
   let bfCanAnswer = false; // sono io il giocatore che si è prenotato in questo momento?
 
@@ -31,6 +35,36 @@
   function setError(id, msg) {
     const el = document.getElementById(id);
     if (el) el.textContent = msg || '';
+  }
+
+  // ---- Pausa tra una domanda e l'altra ---------------------------------
+  // Il pulsante "Pronto" riguarda solo chi è ancora in gara. Gli spettatori (eliminati, usciti
+  // dalla partita, o non partecipanti alla fase in corso) vedono la pausa ma non devono premere
+  // niente: la partita riparte da sola quando i giocatori sono pronti.
+  function iMustPressReady() {
+    if (iHaveLeftMatch) return false;
+    if (!Array.isArray(readyRequiredIds)) return true; // ancora nessuna indicazione dal server
+    return readyRequiredIds.includes(myId);
+  }
+
+  function applyReadyVisibility() {
+    const btnReady = document.getElementById('btn-ready');
+    const note = document.getElementById('ready-spectator-note');
+    const mustPress = iMustPressReady();
+    btnReady.classList.toggle('hidden', !mustPress);
+    if (note) note.classList.toggle('hidden', mustPress);
+    if (mustPress && !iAmReady) {
+      btnReady.disabled = false;
+      btnReady.textContent = 'Pronto! ✅';
+    }
+  }
+
+  function showReadyPanel() {
+    document.getElementById('host-bubble').classList.add('spotlight');
+    document.getElementById('screen-game').classList.add('with-ready-panel');
+    document.getElementById('ready-panel').classList.remove('hidden');
+    iAmReady = false;
+    applyReadyVisibility();
   }
 
   // ---- Presentatore: pupazzetto parlante --------------------------------
@@ -250,8 +284,36 @@
   document.getElementById('btn-nq-back').addEventListener('click', () => showScreen('screen-home'));
 
   // ---- Creazione partita ---------------------------------------------
+  // La sessione (codice stanza + nickname) va conservata nel browser: se la scheda viene
+  // chiusa — per rispondere a un messaggio, per un aggiornamento, per sbaglio — al ritorno
+  // il gioco deve poter chiedere da solo di rientrare, senza far ridigitare niente.
+  const SESSION_KEY = 'quizparty:session';
+
+  function saveSession() {
+    try {
+      localStorage.setItem(SESSION_KEY, JSON.stringify({ code: currentRoomCode, nickname: myNickname, ts: Date.now() }));
+    } catch (err) { /* modalità privata o storage pieno: si continua senza */ }
+  }
+
+  function loadSession() {
+    try {
+      const raw = localStorage.getItem(SESSION_KEY);
+      if (!raw) return null;
+      const s = JSON.parse(raw);
+      if (!s || !s.code || !s.nickname) return null;
+      // Una sessione vecchia di ore è quasi certamente una stanza che non esiste più.
+      if (Date.now() - (s.ts || 0) > 6 * 60 * 60 * 1000) return null;
+      return s;
+    } catch (err) { return null; }
+  }
+
+  function clearSession() {
+    try { localStorage.removeItem(SESSION_KEY); } catch (err) { /* niente da fare */ }
+  }
+
   function enterRoom() {
     document.getElementById('exit-menu-wrap').classList.remove('hidden');
+    saveSession();
   }
 
   document.getElementById('btn-create-confirm').addEventListener('click', () => {
@@ -492,6 +554,23 @@
       btn.classList.toggle('waiting', iAmEligible);
     });
 
+    // Rientro dopo una disconnessione: se avevamo già risposto la scelta va rimessa in evidenza,
+    // e se nel frattempo la domanda si è chiusa non si riparte con un timer che non esiste più.
+    if (q.resumed && q.yourAnswerIndex !== null && q.yourAnswerIndex !== undefined) {
+      answered = true;
+      buttons.forEach((btn, i) => {
+        btn.classList.toggle('selected', i === q.yourAnswerIndex);
+        btn.classList.remove('waiting');
+        btn.disabled = true;
+      });
+    }
+    if (q.frozen) {
+      answered = true;
+      stopTimer();
+      buttons.forEach((btn) => { btn.disabled = true; btn.classList.remove('waiting'); });
+      return;
+    }
+
     startTimer(q.timeLimitMs);
   });
 
@@ -616,6 +695,19 @@
     });
     document.getElementById('grid-status').textContent = '0/4 caselle completate';
 
+    // Rientro durante una griglia: le caselle già indovinate prima della disconnessione
+    // tornano al loro posto, non si ricomincia da zero.
+    if (data.resumed && Array.isArray(data.yourFilled)) {
+      data.yourFilled.forEach(([cellIndex, name]) => {
+        const cell = document.getElementById('grid-cell-' + cellIndex);
+        if (!cell) return;
+        cell.textContent = name;
+        cell.classList.add('filled');
+        gridFilled.add(cellIndex);
+      });
+      document.getElementById('grid-status').textContent = `${gridFilled.size}/4 caselle completate`;
+    }
+
     renderBrainfightScores(data.scores);
     startTimer(data.timeLimitMs);
   });
@@ -629,12 +721,7 @@
       ? `${data.nickname} ha completato la griglia!`
       : 'Tempo scaduto: nessuno ha completato la griglia';
 
-    document.getElementById('host-bubble').classList.add('spotlight');
-    document.getElementById('ready-panel').classList.remove('hidden');
-    iAmReady = false;
-    const btnReady = document.getElementById('btn-ready');
-    btnReady.disabled = false;
-    btnReady.textContent = 'Pronto! ✅';
+    showReadyPanel();
   });
 
   // ---- Calcolatrice della fase brainfighting ----------------------------
@@ -808,12 +895,7 @@
 
     // Il presentatore commenta; dopo la sua battuta arriverà un nuovo brainfight:waitBuzz
     // (stesso problema con un'opzione in meno, o uno nuovo) oppure game:final se c'è un vincitore.
-    document.getElementById('host-bubble').classList.add('spotlight');
-    document.getElementById('ready-panel').classList.remove('hidden');
-    iAmReady = false;
-    const btnReady = document.getElementById('btn-ready');
-    btnReady.disabled = false;
-    btnReady.textContent = 'Pronto! ✅';
+    showReadyPanel();
   });
 
   function renderMiniScoreboard(scoreboard, deltas) {
@@ -892,15 +974,7 @@
     (data.results || []).forEach((r) => { deltas[r.id] = r.points; });
     if (data.scoreboard) renderMiniScoreboard(data.scoreboard, deltas);
 
-    // Il presentatore passa in primo piano per la pausa, con il pulsante "Pronto".
-    document.getElementById('host-bubble').classList.add('spotlight');
-    document.getElementById('screen-game').classList.add('with-ready-panel');
-    const readyPanel = document.getElementById('ready-panel');
-    readyPanel.classList.remove('hidden');
-    iAmReady = false;
-    const btnReady = document.getElementById('btn-ready');
-    btnReady.disabled = false;
-    btnReady.textContent = 'Pronto! ✅';
+    showReadyPanel();
   });
 
   document.getElementById('btn-ready').addEventListener('click', () => {
@@ -915,6 +989,8 @@
   socket.on('game:readyStatus', (data) => {
     document.getElementById('ready-count').textContent = data.ready;
     document.getElementById('ready-total').textContent = data.total;
+    if (Array.isArray(data.requiredIds)) readyRequiredIds = data.requiredIds;
+    applyReadyVisibility();
   });
 
   // ---- Menu di uscita: dalla partita (resti in sessione) o dalla sessione intera --------
@@ -937,6 +1013,9 @@
   document.getElementById('btn-leave-session').addEventListener('click', () => {
     document.getElementById('exit-menu').classList.add('hidden');
     if (!confirm('Uscire dalla sessione? Non potrai rientrare in questa stanza.')) return;
+    // Uscita voluta: la sessione salvata va cancellata, altrimenti alla riapertura il gioco
+    // proverebbe a rimetterci dentro una stanza che abbiamo scelto di lasciare.
+    clearSession();
     socket.emit('session:leave');
     location.reload();
   });
@@ -1071,27 +1150,65 @@
       if (res && res.error) toast(res.error);
     });
   });
-  document.getElementById('btn-exit-session').addEventListener('click', () => location.reload());
+  document.getElementById('btn-exit-session').addEventListener('click', () => {
+    clearSession();
+    location.reload();
+  });
 
   socket.on('error', (data) => toast(data.message || 'Errore'));
 
-  socket.on('connect', () => {
-    const previousId = myId;
-    myId = socket.id;
+  // Ricostruisce la schermata di gioco per chi rientra. Gli eventi veri (domanda, pausa,
+  // griglia, buzz, classifica) arrivano subito dopo dal server e li gestiscono gli handler
+  // normali: qui ci limitiamo a portare il giocatore sullo schermo giusto e a ripulire lo
+  // stato locale rimasto dalla sessione precedente.
+  socket.on('game:resume', (data) => {
+    showScreen('screen-game');
+    enterRoom();
+    answered = false;
+    iAmReady = false;
+    inBrainfight = false;
+    bfCanAnswer = false;
+    iHaveLeftMatch = Boolean(data.leftMatch);
+    lastScoreboardOrder = [];
+    document.getElementById('game-match-label').textContent = `Partita ${data.matchNumber || 1}`;
+  });
 
-    // Riconnessione: se eravamo già in una partita e la connessione è caduta, proviamo a
-    // riprendere il posto invece di restare tagliati fuori. Il server riconosce il giocatore
-    // dal nickname e gli restituisce punteggio e stato esattamente come li aveva lasciati.
-    if (previousId && previousId !== socket.id && currentRoomCode && myNickname) {
-      socket.emit('lobby:reconnect', { code: currentRoomCode, nickname: myNickname }, (res) => {
-        if (res && res.ok) {
-          toast('Riconnesso alla partita ✅');
-          if (res.state !== 'lobby') showScreen('screen-game');
-        } else {
-          toast((res && res.error) || 'Non è stato possibile rientrare nella partita');
-        }
-      });
-    }
+  // Tenta il rientro con i dati salvati nel browser. Vale sia dopo una caduta di rete (stessa
+  // pagina) sia dopo aver chiuso e riaperto: in entrambi i casi il server ci ridà il posto.
+  function tryResumeSession({ silent = false } = {}) {
+    const saved = loadSession();
+    if (!saved) return;
+    myNickname = saved.nickname;
+    currentRoomCode = saved.code;
+    socket.emit('lobby:reconnect', { code: saved.code, nickname: saved.nickname }, (res) => {
+      if (res && res.ok) {
+        myId = res.you.id;
+        // Chi rientra può essere ancora il presentatore (o non esserlo più, se nel frattempo
+        // il ruolo è passato a qualcun altro): lo si legge dal riepilogo, non lo si assume.
+        const me = (res.summary.players || []).find((p) => p.nickname === res.you.nickname);
+        isHost = Boolean(me && me.isHost);
+        enterRoom();
+        renderLobby(res.summary);
+        if (res.state === 'lobby') showScreen('screen-lobby');
+        toast('Sei rientrato nella partita ✅');
+      } else {
+        // La stanza non c'è più (o il nome non corrisponde): si riparte dalla schermata
+        // iniziale invece di lasciare l'utente davanti a un gioco fermo.
+        clearSession();
+        currentRoomCode = null;
+        if (!silent) toast((res && res.error) || 'La partita precedente non è più attiva');
+      }
+    });
+  }
+
+  socket.on('connect', () => {
+    myId = socket.id;
+    // Se abbiamo una sessione salvata e non siamo (più) seduti al tavolo, proviamo a rientrare.
+    // Al primo caricamento della pagina è silenzioso: se la stanza non esiste più, l'utente non
+    // deve vedere un errore per una partita di ieri sera.
+    const firstConnect = !hasConnectedOnce;
+    hasConnectedOnce = true;
+    tryResumeSession({ silent: firstConnect });
   });
 
   socket.on('disconnect', () => {

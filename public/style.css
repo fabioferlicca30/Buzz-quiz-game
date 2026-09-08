@@ -341,6 +341,9 @@ input:focus, select:focus { outline: none; border-color: var(--yellow); backgrou
 .ready-status { background: var(--bg-raised); padding: 7px 16px; border-radius: 999px; font-size: 0.8rem; font-weight: 700; color: var(--text); }
 .ready-panel .btn { width: 100%; }
 .ready-panel .btn:disabled { opacity: 0.6; cursor: default; }
+.ready-panel .btn.hidden { display: none; }
+.ready-spectator { font-size: 0.78rem; font-weight: 600; color: var(--muted); }
+.ready-spectator.hidden { display: none; }
 
 .mascot { width: 68px; height: 68px; flex: none; filter: drop-shadow(0 6px 8px rgba(0,0,0,0.4)); animation: mascotBob 2.6s ease-in-out infinite; }
 @keyframes mascotBob { 0%, 100% { transform: translateY(0) rotate(-2deg); } 50% { transform: translateY(-3px) rotate(2deg); } }

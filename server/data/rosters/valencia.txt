@@ -1,0 +1,525 @@
+Max Aarons
+Aymen Abdennour
+Miguel Ángel Adorno
+Aritz Aduriz
+Julen Agirrezabala
+Pablo Aimar
+János Aknai
+Jordi Alba
+David Albelda
+Raúl Albiol
+Paco Alcácer
+Omar Alderete
+Pedro Alemañ
+Alexis Ruano Delgado
+André Almeida
+Diego Alonso
+Ricardo Alós
+Rafael Alsúa
+Juan Carlos Álvarez
+Diego Alves
+Selim Amallah
+Jocelyn Angloma
+Miguel Ángel Angulo
+Eloy Angulo
+Fernando Ansola
+Vinícius Araújo
+Esteban Areta
+Ricardo Arias
+Víctor Aristizábal
+Javier Arizmendi
+Frank Arnesen
+Carlos Arroyo Ayala
+Vicente Asensi
+José Aveiro
+Roberto Ayala
+Manuel Badenes
+Zakaria Bakkali
+Salva Ballesta
+Éver Banega
+Rubén Baraja
+Mariano Barbosa
+Danilo Barbosa da Silva
+Fernando Barrachina
+Antonio Barragán
+Manuel Barreiro Bustelo
+Enzo Barrenechea
+Osagi Bascome
+Michy Batshuayi
+Carlos Bellvís
+Miodrag Belodedici
+Lucas Beltrán
+José Ramón Bermell
+Juan Bernat
+Inocencio Bertolín Izquierdo
+Joachim Björklund
+Fabio Blanco
+Álex Blanco
+Joaquín Blázquez
+Rainer Bonhof
+José Bordalás
+Miguel Bossio
+Manuel Botubot
+Ludovic Butelle
+Eufemio Cabral
+Wilmar Cabrera
+Fernando Cáceres
+José Caeiro
+Víctor Camarasa
+Francisco Camarasa
+Iván Campo
+Sergio Canales
+Marco Caneira
+Santiago Cañizares
+Fabián Canobbio
+Sergi Canós
+Álex Carbonell
+Amedeo Carboni
+José Cardona
+John Carew
+Thiago Carleto
+José Carrete
+Federico Cartabia
+Filipe Augusto
+Lillo Castellano
+Ángel Castellanos
+Samu Castillejo
+José Catalá
+Maximiliano Caufriez
+João Cancelo
+Edinson Cavani
+Álex Centelles
+Cerra
+Álvaro Cervera
+José Cerveró
+Denis Čeryšev
+Iván Chapela
+Pedro Chirivella
+Víctor Chust
+Jasper Cillessen
+Aly Cissokho
+José Claramunt
+Enrique Claramunt
+Enrique Collar
+Eray Cömert
+José Copete
+Francis Coquelin
+Carlos Corberán
+Bernardo Corradi
+Thierry Correia
+Tino Costa
+Hélder Costa
+Ricardo Costa
+Jaume Costa
+Eduardo Cubells
+Patrick Cutrone
+Ricardo Zamora de Grassa
+Justin de Haas
+Aderlan Santos
+Miguel de las Cuevas
+Gonzalo de los Santos
+Rodrigo de Paul
+Ángel Dealbert
+Asier del Horno
+José Del Solar
+Didier Deschamps
+Marco Di Vaio
+Mouctar Diakhaby
+Ibrahim Diallo
+Carlos Diarte
+Aliou Dieng
+Stole Dimitrievski
+Aser Pierrick Dipanda
+Jaume Doménech
+Alejandro Damián Domínguez
+Miroslav Đukić
+Hugo Duro
+Ignacio Eizaguirre
+Munir El Haddadi
+Harvey Elliott
+Eloy Olaya
+Castor Elzo
+Achille Emana
+Vicente Engonga
+Aarón Escandell
+Fran Escribá
+Xabier Eskurza
+Vicente Esquerdo
+Fabián Estoyanoff
+Fábio Aurélio
+Daniel Fagiani
+Francisco Farinós
+Nicolás Fedor
+Sofiane Feghouli
+Darío Felman
+Emilio Fenoll
+Manuel Fernandes
+Rommel Fernández
+Epifanio Fernández Berridi
+Roberto Fernández Bonillo
+César Ferrando
+Patxi Ferreira
+Stefano Fiore
+Alessandro Florenzi
+Luis Enrique Flores
+Dimitri Foulquier
+Javi Fuego
+Antonio Fuertes
+Manu Fuster
+Fernando Gago
+José Gálvez Estévez
+Kévin Gameiro
+Gonçalo Guedes
+Ezequiel Garay
+Álvaro García Cantó
+Rubén García Santos
+Paquito García
+Óscar García Junyent
+Jorge Morcillo
+Pepelu
+Javier Garrido Ramírez
+Yarek Gasiorowski
+Eduardo César Gaspar
+Jaime Gavilán
+José Luis Gayà
+Paulo Gazzaniga
+Gerard López
+Gerardo García
+Roberto Gil
+Carles Gil
+Nacho Gil
+Bryan Gil
+Fernando Giner
+Severiano Goiburu
+André Gomes
+Dani Gómez
+Fernando Gómez
+Maximiliano Gómez
+Jonas
+Ignacio González
+Kily González
+Abelardo González
+Peter González
+Nicolás González
+Salvador González Marco
+Facundo González
+Tomás González Rivera
+Hugo González Sotos
+José Luis González Vázquez
+Guillermo Gorostiza
+Pablo Gozálbez
+Borja Granero
+Jaume Grau
+Arnaut Danjuma
+Vicente Guaita
+Andrés Guardado
+Javi Guerra
+Adrià Guerrero
+Hugo Guillamón
+Vicente Guillot
+Iván Helguera
+Pablo Hernández Domínguez
+Javier Hernández Gutiérrez
+Iago Herrerín
+Timo Hildebrand
+Andreas Pereira
+Iñaki Hurtado
+Amadeo Ibáñez
+Ignacio Ibáñez
+Robert Ibáñez
+Santiago Idígoras
+Borja Iglesias
+Silvestre Igoa
+Adrian Ilie
+Natxo Insa
+Isco
+Iván Jaime
+Kurt Jara
+Roman Jaremčuk
+Joaquín
+Joel Antônio Martins
+Joel Johnson
+José Enrique
+Juan Francisco García García
+Ferran Jutglà
+Valerij Karpin
+Kayne van Oevelen
+Salif Keïta
+Seydou Keita
+Mario Kempes
+Justin Kluivert
+Patrick Kluivert
+Koba Koindredi
+Geoffrey Kondogbia
+Ilaix Moriba
+Toni Lato
+Simón Lecue
+Lee Kang-in
+Leonardo Nascimento de Araújo
+Serge Leuko
+Samuel Lino
+Sergio Lloret
+Toni Martínez
+Claudio López
+Pedro López Muñoz
+Fran Manzanara
+Paco López
+Jorge López Montaña
+Diego López
+Jonathan López
+Natalio Lorenzo
+Anthony Lozano
+Cristiano Lucarelli
+José Manzanedo
+Luís Miguel Brito Garcia Monteiro
+Leandro Machado
+Waldo Machado
+Rabah Madjer
+Warren Madrigal
+Hedwiges Maduro
+Pablo Maffeo
+Nemanja Maksimović
+Giorgi Mamardashvili
+Eliaquim Mangala
+Daniel Mañó
+Marcelinho Carioca
+Carlos Marchena
+Walter Marciano
+Marcos André
+Alberto Marí
+Juan Marrero Pérez
+Víctor Marro
+Quique Martín
+José María Martín
+Antón Martínez
+Carles Martínez
+Fernando Martínez
+Arnau Martínez
+Fernando Martínez Perales
+Jérémy Mathieu
+Iomar do Nascimento
+Agus Medina
+Álvaro Medrán
+Mehmet Topal
+Gaizka Mendieta
+Manuel Mestre
+Miguel Alfonso Herrero
+Predrag Mijatović
+Luis Milla
+Santi Mina
+Rafa Mir
+Miguel Ángel Ferrer
+Ángel Montoro Sánchez
+Martín Montoya
+Salvador Monzó
+Juan Luis Mora
+José Antonio Morante Gutiérrez
+Fernando Morena
+Vicente Moreno
+Carlos David Moreno
+Rodrigo Moreno Machado
+Vicente Morera Amigó
+Emiliano Moretti
+Fernando Morientes
+Guillermo Morigi
+Cristhian Mosquera
+Gabriel Moya
+Miguel Ángel Moyà
+Francisco Javier Muñoz
+Jeison Murillo
+Yunus Musah
+Alexandru Musi
+Shkodran Mustafi
+Fernando García Puchades
+Nani
+David Navarro
+Javi Navarro
+Fran Navarro
+Joaquín Navarro Armero
+Álvaro Negredo
+Neto Murara
+Nathan Trott
+Basilio Nieto
+Aarón Ñíguez
+Jonathan Ñíguez
+Nolito
+Héctor Núñez
+Unai Núñez
+José Manuel Ochotorena
+Christian Oliva
+Ricardo Oliveira
+Nicolás Olivera
+José Luis Oltra
+Lucas Orbán
+Fabián Orellana
+Ariel Ortega
+Higinio Ortúzar
+Nicolás Otamendi
+Jorge Otero
+Juan Otxoantezana
+Cenk Özkacar
+Dorlan Pabón
+Miguel Pallardó
+Andrés Palop
+José Pardo
+José Paredes
+Daniel Parejo
+Luis Pasarín
+Pascu
+Gabriel Paulista
+Mauricio Pellegrino
+Carlos Pellicer Vázquez
+Ljuboslav Penev
+João Pedro da Silva Pereira
+Enzo Pérez
+Fran Pérez
+Pasieguito
+Vicente Pérez
+Guillermo Pérez Moreno
+José Manuel Pesudo
+Pablo Piatti
+Cristiano Piccini
+Vicente Piquer
+Juan Antonio Pizzi
+Juan Planelles
+Manuel Polinario
+Gabriel Popescu
+Cristian Portugués Manzanera
+Hélder Postiga
+Antonio Poyatos
+Antonio Puchades
+Juan Carlos Díaz Quincoces
+Dani Quintana
+Dani Raba
+Uroš Račić
+Largie Ramazani
+Adil Rami
+Juan Ramón Santiago
+David Rangel
+Álvaro Ratón
+Décio Recaman
+Mario Regueiro
+Francisco Reis Ferreira
+Jason Remeseiro
+Renan
+Johnny Rep
+Anthony Réveillère
+Diego Ribera
+Luis Rioja
+Alain Roche
+Rubén Rochina
+Guido Rodríguez
+Juan Carlos Rodríguez
+Pablo Rodríguez Aracil
+Pablo Rodríguez
+David Lombán
+Yoel Rodríguez
+Roger Martí Salvador
+Romário
+Enrique Romero
+Oriol Romeu
+Facundo Roncaglia
+Paulo Sérgio Rosa
+Luis Rubiales
+Gaspar Rubio
+Matías Rubio Navarro
+Oskar Boesen
+Francisco Rufete
+Abel Ruiz
+Salva Ruiz
+Víctor Ruiz
+Víctor Ruiz Abril
+Manuel Ruz
+Mathew Ryan
+Jorge Sáenz
+José Ignacio Saénz Marín
+Moussa Saïb
+Oleg Salenko
+Bruno Saltor
+César Sánchez
+Quique Sánchez Flores
+José María Sánchez Lage
+Juan José Sánchez Maqueda
+Juan Sánchez Romero
+Baptiste Santamaria
+Renzo Saravia
+Ryūnosuke Satō
+Enrique Saura
+Stefan Schwarz
+Vicente Seguí García
+José Manuel Sempere
+Philippe Senderos
+Francisco Sendra
+Darío Serra
+Quino Sierra
+José Manuel Suárez Rivas
+David Silva
+Guilherme Siqueira
+Sisinio González Martínez
+Mohamed Sissoko
+Andrés Pascual Santoja
+Antonio Sivera
+Rubén Sobrino
+Juan Cruz Sol
+Roberto Soldado
+Carlos Soler
+Daniel Solsona
+César Soriano
+Marius Stankevičius
+Mario Suárez Mata
+Edmundo Suárez
+Javier Subirats
+Sunday Stephen Obayan
+Gabriel Taltavull
+Rodrigo Tarín
+César Tárrega
+Francesco Tavano
+Óscar Téllez
+Miguel Tendillo
+Fausto Tienza
+David Timor
+Fernando Tirapu
+Curro Torres
+Ferran Torres
+Nabil Touaizi
+Tropi
+Filip Ugrinić
+Sadiq Umar
+Juan José Urruti
+José Antonio Urtiaga
+Pascal Vahirua
+Nelson Haedo Valdez
+Óscar Valdez
+Germán Valera
+José Luis Valiente
+Manu Vallejo
+Eduardo Vargas
+Jesús Vázquez
+Rúben Vezo
+Hugo Viana
+Vicente
+Vicente Iborra Richart
+Francisco Vidagany
+Ignacio Vidal Miralles
+Jonathan Viera
+Luciano Vietto
+David Villa
+Fran Villalba
+Gonzalo Villar
+Goran Vlaović
+Daniel Wass
+Kurt Welzl
+Faas Wilkes
+Loïc Williams
+Xeka
+Yellu Santiago
+Nando Yosu
+José Luis Zabala
+Wilfried Zahibo
+Luka Zahovič
+Zlatko Zahovič
+Denis Zanko
+Simone Zaza
+Nikola Žigić
+Andoni Zubizarreta
+Bruno Zuculini

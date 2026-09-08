@@ -104,12 +104,25 @@ io.on('connection', (socket) => {
     cb && cb({ lobbies: publicLobbies() });
   });
 
-  // Rientro dopo una caduta di connessione: il giocatore riprende la sua scheda
-  // (punteggio, eliminazione, qualificazione) invece di ripartire da capo.
+  // Rientro dopo una caduta di connessione o dopo aver chiuso il browser: il giocatore riprende
+  // la sua scheda (punteggio, eliminazione, qualificazione) invece di ripartire da capo, e il
+  // server gli ridisegna davanti esattamente il momento in cui è la partita.
   socket.on('lobby:reconnect', ({ code, nickname }, cb) => {
     const room = rooms.get((code || '').toUpperCase());
     if (!room) return cb && cb({ error: 'Partita non più attiva' });
-    const player = room.reconnectPlayer(socket.id, nickname);
+
+    // Un socket è "vivo" solo se il server ce l'ha ancora tra le connessioni aperte: se il
+    // browser è stato chiuso di colpo, la disconnessione può non essere ancora arrivata e il
+    // posto risulterebbe occupato da un socket fantasma.
+    const isLive = (id) => io.sockets.sockets.has(id) && id !== socket.id;
+    let player = room.reconnectPlayer(socket.id, nickname, isLive);
+
+    // In lobby chi si disconnette viene tolto del tutto dall'elenco: non c'è un posto da
+    // recuperare, ma non c'è neanche motivo di respingerlo. Rientra semplicemente.
+    if (!player && room.state === 'lobby' && nickname && nickname.trim()) {
+      room.addPlayer(socket.id, nickname.trim());
+      player = room.players.get(socket.id);
+    }
     if (!player) return cb && cb({ error: 'Nessun posto da recuperare con questo nome' });
 
     socketRoomCode.set(socket.id, room.code);
@@ -118,9 +131,18 @@ io.on('connection', (socket) => {
       ok: true,
       code: room.code,
       state: room.state,
-      you: { id: player.id, nickname: player.nickname, score: player.score, eliminated: player.eliminated },
+      you: {
+        id: player.id,
+        nickname: player.nickname,
+        score: player.score,
+        eliminated: player.eliminated,
+        spectator: room.isSpectator(player),
+      },
       summary: room.publicSummary(),
     });
+    // Ricostruisce la schermata: domanda ancora aperta col tempo che resta, pausa col pulsante
+    // "Pronto", griglia, buzz o classifica finale, a seconda di dove siamo arrivati.
+    if (room.state !== 'lobby') room.resumeFor(io, socket.id);
     room.notifyReadyWatcher();
     broadcastLobbyState(room);
   });

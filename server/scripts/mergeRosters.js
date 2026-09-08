@@ -37,6 +37,7 @@ const SLUG_TO_CLUB = {
   valencia: 'Valencia',
   siviglia: 'Sevilla',
   sevilla: 'Sevilla',
+  'athletic-bilbao': 'Athletic Bilbao',
   'manchester-united': 'Manchester United',
   liverpool: 'Liverpool',
   arsenal: 'Arsenal',
