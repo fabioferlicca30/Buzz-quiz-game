@@ -65,10 +65,10 @@ function broadcastLobbyState(room) {
 }
 
 io.on('connection', (socket) => {
-  socket.on('lobby:create', ({ nickname, visibility, mode, difficulty, categories, hostMode }, cb) => {
+  socket.on('lobby:create', ({ nickname, visibility, mode, difficulty, categories, hostMode, winningScore }, cb) => {
     if (!nickname || !nickname.trim()) return cb && cb({ error: 'Nickname mancante' });
     const code = generateCode();
-    const room = new GameRoom(code, socket.id, { visibility, mode, difficulty, categories, hostMode });
+    const room = new GameRoom(code, socket.id, { visibility, mode, difficulty, categories, hostMode, winningScore });
     room.addPlayer(socket.id, nickname.trim());
     rooms.set(code, room);
     socketRoomCode.set(socket.id, code);
@@ -191,6 +191,18 @@ io.on('connection', (socket) => {
     const room = rooms.get(code);
     if (!room) return cb && cb({ error: 'Stanza non trovata' });
     room.submitGridAnswer(socket.id, cellIndex, answer, cb);
+  });
+
+  // Sfida a griglia: il giocatore getta la spugna. Tiene le caselle già completate, ma smette
+  // di poterne aggiungere; se si arrendono tutti la griglia si chiude senza aspettare il tempo.
+  socket.on('grid:giveUp', (_payload, cb) => {
+    const code = socketRoomCode.get(socket.id);
+    const room = rooms.get(code);
+    if (!room) return cb && cb({ error: 'Stanza non trovata' });
+    const res = room.giveUpGrid(socket.id, cb);
+    if (res) {
+      io.to(room.code).emit('grid:gaveUp', { ...room.gridGiveUpStatus(), nickname: res.nickname, id: socket.id });
+    }
   });
 
   // Il giocatore conferma di essere pronto a passare alla domanda successiva.

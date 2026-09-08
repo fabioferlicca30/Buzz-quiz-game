@@ -14,7 +14,15 @@ const SESSION_POINTS = [1000, 500, 250]; // 1°, 2°, 3° posto di ogni partita;
 
 // ---- Fase "brainfighting" (calcoli a mente col pulsante buzz) --------------
 const BRAINFIGHT_TRIGGER_ROUNDS = 10; // dopo 10 round di eliminazione normale con 2+ superstiti, si passa qui
-const BRAINFIGHT_WINNING_SCORE = 3; // punti necessari per vincere l'intera partita
+const BRAINFIGHT_WINNING_SCORE = 3; // default se la stanza non sceglie niente
+const BRAINFIGHT_WINNING_SCORE_MIN = 1;
+const BRAINFIGHT_WINNING_SCORE_MAX = 10;
+
+function clampWinningScore(value) {
+  const n = Math.round(Number(value));
+  if (!Number.isFinite(n)) return BRAINFIGHT_WINNING_SCORE;
+  return Math.min(BRAINFIGHT_WINNING_SCORE_MAX, Math.max(BRAINFIGHT_WINNING_SCORE_MIN, n));
+}
 const BRAINFIGHT_MAX_WRONG_PER_PROBLEM = 3; // oltre questo numero di tentativi falliti, si cambia problema
 const BUZZ_TIME_MS = 120000; // 2 minuti per prenotarsi
 const BRAINFIGHT_ANSWER_LOCK_MS = 5000; // solo 5 secondi per rispondere dopo il buzz: bisogna prenotarsi già sapendo la risposta
@@ -57,6 +65,9 @@ class GameRoom {
     this.difficulty = settings.difficulty || 'misto'; // facile|medio|difficile|superdifficile|impossibile|misto
     this.categories = Array.isArray(settings.categories) ? settings.categories.filter(Boolean) : []; // [] = "tutte"
     this.hostMode = settings.hostMode === 'unfiltered' ? 'unfiltered' : 'family'; // presentatore: 'family' o 'unfiltered' (non family friendly)
+    // Punti necessari per vincere il brainfighting: lo sceglie chi crea la stanza, perché è
+    // ciò che decide quanto dura la sfida finale. Fuori dall'intervallo si ricade sul default.
+    this.winningScore = clampWinningScore(settings.winningScore);
     this.hostSocketId = hostSocketId;
     this.players = new Map(); // socketId -> player
     this.state = 'lobby'; // lobby | phase1 | elimination | finished
@@ -218,6 +229,7 @@ class GameRoom {
       difficulty: this.difficulty,
       categories: this.categories,
       hostMode: this.hostMode,
+      winningScore: this.winningScore,
       state: this.state,
       matchNumber: this.matchNumber,
       players: this.playerList.map((p) => ({ nickname: p.nickname, isHost: p.isHost, connected: p.connected })),
@@ -1204,7 +1216,7 @@ class GameRoom {
           scores: scoreList(),
         });
         await this.emitHostMessages(io, [host.say('brainfightCorrect', { name: buzzerNickname }, ctx)]);
-        if (newScore >= BRAINFIGHT_WINNING_SCORE) return { winnerId: buzzerId };
+        // Chi ha raggiunto il traguardo lo decide runBrainfighting guardando i punti di tutti.
         return { winnerId: null };
       }
 
@@ -1237,7 +1249,7 @@ class GameRoom {
   // chi completa per primo tutte e 4 le caselle con risposte valide.
   async runGridChallenge(io, grid, participantIds, scores) {
     this.currentGrid = grid;
-    this.gridProgress = new Map(participantIds.map((id) => [id, { filled: new Map(), done: false }]));
+    this.gridProgress = new Map(participantIds.map((id) => [id, { filled: new Map(), done: false, gaveUp: false }]));
 
     const scoreList = () =>
       participantIds.map((id) => ({ id, nickname: this.players.get(id)?.nickname || '???', score: scores.get(id) || 0 }));
@@ -1255,39 +1267,91 @@ class GameRoom {
     io.to(this.code).emit('grid:start', gridStartPayload);
     this.rememberStep('grid:start', gridStartPayload, GRID_TIME_MS);
 
-    const winnerId = await new Promise((resolve) => {
+    // La griglia finisce quando qualcuno la completa, quando si sono arresi tutti, o allo
+    // scadere del tempo. Non serve che tutti finiscano: chi ha esaurito le idee si arrende e
+    // non fa aspettare gli altri fino allo scadere.
+    await new Promise((resolve) => {
       let settled = false;
-      const finish = (id) => {
+      const settle = () => {
         if (settled) return;
         settled = true;
         this._gridWatcher = null;
         clearTimeout(timer);
-        resolve(id || null);
+        resolve();
       };
-      this._gridWatcher = (socketId) => {
-        const prog = this.gridProgress.get(socketId);
-        if (prog && prog.filled.size === 4) finish(socketId);
+      this._gridWatcher = () => {
+        const progs = participantIds.map((id) => this.gridProgress.get(id)).filter(Boolean);
+        if (progs.some((p) => p.filled.size === 4)) return settle();
+        if (progs.length > 0 && progs.every((p) => p.gaveUp)) return settle();
       };
-      const timer = setTimeout(() => finish(null), GRID_TIME_MS);
+      const timer = setTimeout(settle, GRID_TIME_MS);
+    });
+
+    const ctx = { category: grid.category, mode: this.hostMode };
+
+    // Il punto va a chi ha completato più caselle. A parità lo prendono tutti: nessuno ha fatto
+    // meglio degli altri, quindi non ha senso sceglierne uno a caso. Con la griglia in bianco
+    // per tutti, invece, il punto non lo prende nessuno.
+    const filledCount = (id) => this.gridProgress.get(id)?.filled.size || 0;
+    const best = participantIds.reduce((max, id) => Math.max(max, filledCount(id)), 0);
+    const winnerIds = best > 0 ? participantIds.filter((id) => filledCount(id) === best) : [];
+    winnerIds.forEach((id) => scores.set(id, (scores.get(id) || 0) + 1));
+
+    // Allo scadere del tempo le caselle rimaste vuote mostrano una risposta che sarebbe stata
+    // valida: è la parte più interessante della griglia, e senza non si impara niente.
+    const solutions = grid.cells.map((cell) => {
+      const names = gridGame.solutionsFor(grid.datasetKey, cell.row, cell.col) || [];
+      // Qualche esempio, non l'elenco completo: con i club di calcio sarebbero centinaia.
+      return names.sort(() => Math.random() - 0.5).slice(0, 3);
     });
 
     this.currentGrid = null;
-    const ctx = { category: grid.category, mode: this.hostMode };
 
-    if (!winnerId) {
-      io.to(this.code).emit('grid:end', { winnerId: null, nickname: null, scores: scoreList() });
+    io.to(this.code).emit('grid:end', {
+      winnerIds,
+      winners: winnerIds.map((id) => ({ id, nickname: this.players.get(id)?.nickname || '???' })),
+      best,
+      solutions,
+      results: participantIds.map((id) => ({
+        id,
+        nickname: this.players.get(id)?.nickname || '???',
+        filled: filledCount(id),
+        gaveUp: Boolean(this.gridProgress.get(id)?.gaveUp),
+      })),
+      scores: scoreList(),
+    });
+
+    if (winnerIds.length === 0) {
       await this.emitHostMessages(io, [host.say('gridNobodyFinished', {}, ctx)]);
-      await wait(1500);
-      return { winnerId: null };
+    } else {
+      const names = winnerIds.map((id) => this.players.get(id)?.nickname || '???').join(' e ');
+      await this.emitHostMessages(io, [host.say('gridWinner', { name: names }, ctx)]);
     }
+    await wait(1500);
+    return { winnerIds };
+  }
 
-    const newScore = (scores.get(winnerId) || 0) + 1;
-    scores.set(winnerId, newScore);
-    const nickname = this.players.get(winnerId)?.nickname || '???';
-    io.to(this.code).emit('grid:end', { winnerId, nickname, scores: scoreList() });
-    await this.emitHostMessages(io, [host.say('gridWinner', { name: nickname }, ctx)]);
-    if (newScore >= BRAINFIGHT_WINNING_SCORE) return { winnerId };
-    return { winnerId: null };
+  // Un giocatore getta la spugna sulla griglia in corso: tiene le caselle già completate, ma
+  // smette di poterne aggiungere. Se si arrendono tutti, la griglia si chiude subito.
+  giveUpGrid(socketId, cb) {
+    if (!this.currentGrid) return cb && cb({ error: 'Nessuna griglia in corso' });
+    const prog = this.gridProgress.get(socketId);
+    if (!prog) return cb && cb({ error: 'Non stai partecipando a questa griglia' });
+    if (prog.gaveUp) return cb && cb({ ok: true, alreadyGaveUp: true });
+
+    prog.gaveUp = true;
+    prog.done = true;
+    cb && cb({ ok: true, filled: prog.filled.size });
+    if (this._gridWatcher) this._gridWatcher(socketId);
+    return { nickname: this.players.get(socketId)?.nickname || '???' };
+  }
+
+  gridGiveUpStatus() {
+    const ids = [...this.gridProgress.keys()];
+    return {
+      gaveUp: ids.filter((id) => this.gridProgress.get(id).gaveUp).length,
+      total: ids.length,
+    };
   }
 
   // Chiamato quando un giocatore prova a riempire una casella della griglia.
@@ -1296,6 +1360,7 @@ class GameRoom {
     if (!this.currentGrid) return cb && cb({ error: 'Nessuna griglia in corso' });
     const prog = this.gridProgress.get(socketId);
     if (!prog || prog.done) return cb && cb({ error: 'Non stai partecipando a questa griglia' });
+    if (prog.gaveUp) return cb && cb({ error: 'Ti sei arreso su questa griglia' });
     if (typeof cellIndex !== 'number' || cellIndex < 0 || cellIndex > 3) return cb && cb({ error: 'Casella non valida' });
     if (prog.filled.has(cellIndex)) return cb && cb({ error: 'Casella già completata' });
 
@@ -1328,7 +1393,7 @@ class GameRoom {
 
     const bfStartPayload = {
       participants: participantIds.map((id) => ({ id, nickname: this.players.get(id)?.nickname || '???' })),
-      winningScore: BRAINFIGHT_WINNING_SCORE,
+      winningScore: this.winningScore,
     };
     io.to(this.code).emit('brainfight:start', bfStartPayload);
     this.rememberContext('brainfight:start', bfStartPayload);
@@ -1338,6 +1403,19 @@ class GameRoom {
     let problemIndex = 0;
     let winnerId = null;
     const SAFETY_MAX_PROBLEMS = 300; // rete di sicurezza anti-loop reale, non un limite di gioco
+
+    // La fase finisce quando UN SOLO giocatore è in testa e ha raggiunto il traguardo. Se due
+    // arrivano a pari punti (possibile ora che una griglia può premiare più giocatori insieme)
+    // si continua a oltranza finché uno non stacca l'altro: non si sorteggia un campione.
+    const leaderIfDecided = () => {
+      let best = -1;
+      let leaders = [];
+      for (const id of participantIds) {
+        const s = scores.get(id) || 0;
+        if (s > best) { best = s; leaders = [id]; } else if (s === best) { leaders.push(id); }
+      }
+      return best >= this.winningScore && leaders.length === 1 ? leaders[0] : null;
+    };
 
     while (!winnerId && problemIndex < SAFETY_MAX_PROBLEMS) {
       const connectedParticipants = participantIds.filter((id) => {
@@ -1381,9 +1459,10 @@ class GameRoom {
         result = await this.runBrainfightProblem(io, question, connectedParticipants, scores);
       }
 
-      if (result.winnerId) {
-        winnerId = result.winnerId;
-      } else {
+      // Vince chi arriva per primo al traguardo, non chi vince il terzo problema: la decisione
+      // sta qui, sui punti, e non dentro le singole sfide.
+      winnerId = leaderIfDecided();
+      if (!winnerId) {
         problemIndex++;
         this.resetReadyTracking();
         io.to(this.code).emit('game:readyStatus', this.readyStatusPayload());

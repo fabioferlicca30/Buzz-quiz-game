@@ -6,6 +6,7 @@
   "type": "commonjs",
   "scripts": {
     "start": "node server/server.js",
+    "test": "node test/test_reconnect_ready.js && node test/test_brainfight_rules.js",
     "import-csv": "node server/scripts/importCsv.js"
   },
   "engines": {

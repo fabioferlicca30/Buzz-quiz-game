@@ -6,7 +6,7 @@
   let myNickname = '';
   let currentRoomCode = null;
   let isHost = false;
-  let createSettings = { visibility: 'private', mode: 'rush', difficulty: 'misto', hostMode: 'family', categories: [] };
+  let createSettings = { visibility: 'private', mode: 'rush', difficulty: 'misto', hostMode: 'family', categories: [], winningScore: 3 };
   let newQuestionState = { difficulty: 'facile', correct: 0 };
   let playersById = new Map(); // id -> nickname (aggiornata da lobby/scoreboard)
   let currentEligibleIds = null;
@@ -251,6 +251,7 @@
     createSettings.hostMode = v;
     document.getElementById('hostmode-warning').style.display = v === 'unfiltered' ? 'block' : 'none';
   });
+  wireSegmented('opt-winningscore', (v) => (createSettings.winningScore = parseInt(v, 10)));
   wireSegmented('nq-difficulty', (v) => (newQuestionState.difficulty = v));
   wireSegmented('nq-correct', (v) => (newQuestionState.correct = parseInt(v, 10)));
 
@@ -319,7 +320,7 @@
   document.getElementById('btn-create-confirm').addEventListener('click', () => {
     socket.emit(
       'lobby:create',
-      { nickname: myNickname, visibility: createSettings.visibility, mode: createSettings.mode, difficulty: createSettings.difficulty, categories: createSettings.categories, hostMode: createSettings.hostMode },
+      { nickname: myNickname, visibility: createSettings.visibility, mode: createSettings.mode, difficulty: createSettings.difficulty, categories: createSettings.categories, hostMode: createSettings.hostMode, winningScore: createSettings.winningScore },
       (res) => {
         if (res.error) return setError('create-error', res.error);
         currentRoomCode = res.code;
@@ -678,7 +679,7 @@
     document.getElementById('game-phase-label').textContent = 'Griglia';
     document.getElementById('game-category').textContent = data.category;
     document.getElementById('game-progress').textContent = 'Completa tutte e 4 le caselle!';
-    document.getElementById('question-text').textContent = 'Chi completa per primo la griglia guadagna il punto';
+    document.getElementById('question-text').textContent = 'Il punto va a chi completa più caselle';
     document.getElementById('spectator-banner').classList.add('hidden');
     document.getElementById('buzz-wrap').classList.add('hidden');
     document.querySelector('.answers-grid').style.display = 'none';
@@ -691,9 +692,16 @@
     [0, 1, 2, 3].forEach((i) => {
       const c = document.getElementById('grid-cell-' + i);
       c.textContent = '+';
-      c.classList.remove('filled');
+      c.classList.remove('filled', 'revealed');
     });
     document.getElementById('grid-status').textContent = '0/4 caselle completate';
+
+    // Nuova griglia: il pulsante per arrendersi torna disponibile.
+    const giveUpBtn = document.getElementById('btn-grid-giveup');
+    giveUpBtn.classList.remove('hidden');
+    giveUpBtn.disabled = false;
+    giveUpBtn.textContent = 'Mi arrendo 🏳️';
+    document.getElementById('grid-giveup-status').classList.add('hidden');
 
     // Rientro durante una griglia: le caselle già indovinate prima della disconnessione
     // tornano al loro posto, non si ricomincia da zero.
@@ -715,13 +723,60 @@
   socket.on('grid:end', (data) => {
     stopTimer();
     closeGridInput();
-    document.getElementById('grid-wrap').classList.add('hidden');
+    document.getElementById('btn-grid-giveup').classList.add('hidden');
+    document.getElementById('grid-giveup-status').classList.add('hidden');
     renderBrainfightScores(data.scores);
-    document.getElementById('question-text').textContent = data.nickname
-      ? `${data.nickname} ha completato la griglia!`
-      : 'Tempo scaduto: nessuno ha completato la griglia';
+
+    // La griglia resta a schermo: nelle caselle che nessuno ha completato compare una risposta
+    // che sarebbe stata valida, così si scopre com'era. Sono in stile diverso dalle proprie,
+    // per non confonderle con quelle indovinate.
+    (data.solutions || []).forEach((names, i) => {
+      const cell = document.getElementById('grid-cell-' + i);
+      if (!cell || gridFilled.has(i)) return;
+      cell.textContent = names && names.length ? names[0] : '—';
+      cell.classList.add('revealed');
+    });
+
+    const label = document.getElementById('question-text');
+    if (!data.winners || data.winners.length === 0) {
+      label.textContent = 'Nessuna casella completata: il punto non lo prende nessuno';
+    } else if (data.winners.length === 1) {
+      label.textContent = `${data.winners[0].nickname} vince il punto con ${data.best}/4`;
+    } else {
+      const names = data.winners.map((w) => w.nickname).join(' e ');
+      label.textContent = `Parità a ${data.best}/4: il punto va a ${names}`;
+    }
+
+    document.getElementById('grid-status').textContent = (data.results || [])
+      .map((r) => `${r.nickname} ${r.filled}/4${r.gaveUp ? ' 🏳️' : ''}`)
+      .join(' · ');
 
     showReadyPanel();
+  });
+
+  // ---- Resa sulla griglia -----------------------------------------------
+  // Chi ha esaurito le idee non deve restare a fissare il timer, né far aspettare gli altri:
+  // si arrende, tiene le caselle già completate, e se lo fanno tutti si passa oltre subito.
+  document.getElementById('btn-grid-giveup').addEventListener('click', () => {
+    const btn = document.getElementById('btn-grid-giveup');
+    if (btn.disabled) return;
+    if (gridFilled.size < 4 && !confirm('Sicuro? Tieni le caselle già completate, ma non potrai aggiungerne altre.')) return;
+    btn.disabled = true;
+    btn.textContent = 'Ti sei arreso 🏳️';
+    closeGridInput();
+    socket.emit('grid:giveUp', {}, (res) => {
+      if (res && res.error) {
+        btn.disabled = false;
+        btn.textContent = 'Mi arrendo 🏳️';
+        toast(res.error);
+      }
+    });
+  });
+
+  socket.on('grid:gaveUp', (data) => {
+    const el = document.getElementById('grid-giveup-status');
+    el.classList.remove('hidden');
+    el.textContent = `${data.nickname} si è arreso — ${data.gaveUp}/${data.total} fuori`;
   });
 
   // ---- Calcolatrice della fase brainfighting ----------------------------

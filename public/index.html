@@ -121,6 +121,16 @@
     </div>
     <p class="error" id="hostmode-warning" style="display:none">⚠️ Il presentatore "sboccato" usa un linguaggio diretto, sarcastico e a tratti volgare (nessun contenuto discriminatorio, solo prese in giro sul gioco). Adatto a un pubblico adulto.</p>
 
+    <label>Punti per la vittoria (sfida finale)</label>
+    <div class="segmented" id="opt-winningscore">
+      <button class="seg-btn" data-value="1">1</button>
+      <button class="seg-btn" data-value="2">2</button>
+      <button class="seg-btn active" data-value="3">3</button>
+      <button class="seg-btn" data-value="5">5</button>
+      <button class="seg-btn" data-value="7">7</button>
+    </div>
+    <p class="muted small">Quanti punti servono per vincere il brainfighting, cioè la sfida che chiude la partita. Più alto, più lunga: con 3 si sta sui dieci minuti, con 7 si va molto oltre.</p>
+
     <button class="btn btn-primary" id="btn-create-confirm">Crea la partita</button>
     <button class="btn btn-ghost" id="btn-create-back">Indietro</button>
   </div>
@@ -284,6 +294,8 @@
       </tr>
     </table>
     <p class="muted small" id="grid-status">Tocca una casella per inserire la tua risposta</p>
+    <button class="btn btn-ghost btn-giveup" id="btn-grid-giveup">Mi arrendo 🏳️</button>
+    <p class="muted small hidden" id="grid-giveup-status"></p>
 
     <div id="grid-input-wrap" class="grid-input-wrap hidden">
       <div class="grid-input-label" id="grid-input-label"></div>

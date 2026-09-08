@@ -469,6 +469,10 @@ input:focus, select:focus { outline: none; border-color: var(--yellow); backgrou
   color: var(--muted); cursor: pointer; padding: 4px; line-height: 1.2;
 }
 .grid-cell.filled { background: linear-gradient(180deg, #0a2a18, #14304a); border: 2px solid var(--green); color: #fff; cursor: default; }
+/* Soluzione svelata a fine tempo: si deve distinguere a colpo d'occhio da quelle indovinate. */
+.grid-cell.revealed { background: rgba(255, 255, 255, 0.04); border: 2px dashed var(--muted); color: var(--muted); font-style: italic; cursor: default; }
+.btn-giveup { margin-top: 10px; }
+.btn-giveup:disabled { opacity: 0.5; cursor: default; }
 .grid-cell.shake { animation: shake 0.35s ease; }
 
 .grid-input-wrap {
