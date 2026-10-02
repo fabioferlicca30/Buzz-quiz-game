@@ -65,10 +65,10 @@ function broadcastLobbyState(room) {
 }
 
 io.on('connection', (socket) => {
-  socket.on('lobby:create', ({ nickname, visibility, mode, difficulty, categories, hostMode, winningScore }, cb) => {
+  socket.on('lobby:create', ({ nickname, visibility, mode, difficulty, categories, hostMode, winningScore, impostorManches }, cb) => {
     if (!nickname || !nickname.trim()) return cb && cb({ error: 'Nickname mancante' });
     const code = generateCode();
-    const room = new GameRoom(code, socket.id, { visibility, mode, difficulty, categories, hostMode, winningScore });
+    const room = new GameRoom(code, socket.id, { visibility, mode, difficulty, categories, hostMode, winningScore, impostorManches });
     room.addPlayer(socket.id, nickname.trim());
     rooms.set(code, room);
     socketRoomCode.set(socket.id, code);
@@ -204,6 +204,36 @@ io.on('connection', (socket) => {
       io.to(room.code).emit('grid:gaveUp', { ...room.gridGiveUpStatus(), nickname: res.nickname, id: socket.id });
     }
   });
+
+  // ---- Modalità impostore ------------------------------------------------
+  // Le risposte tornano solo a chi le manda: la parola segreta e i tiri della morra non devono
+  // mai finire in un evento di stanza.
+  const withRoom = (fn) => (payload, cb) => {
+    const room = rooms.get(socketRoomCode.get(socket.id));
+    if (!room) return cb && cb({ error: 'Stanza non trovata' });
+    fn(room, payload || {}, cb);
+  };
+
+  socket.on('impostor:submitWord', withRoom((room, { word }, cb) => {
+    room.submitImpostorWord(socket.id, word, cb);
+  }));
+
+  socket.on('impostor:vote', withRoom((room, { targetId }, cb) => {
+    const res = room.submitImpostorVote(socket.id, targetId, cb);
+    // Si dice quanti hanno votato, mai chi: il conteggio serve a far capire che si sta aspettando.
+    if (res) io.to(room.code).emit('impostor:voteStatus', res);
+  }));
+
+  socket.on('impostor:throw', withRoom((room, { symbol }, cb) => {
+    const res = room.submitImpostorThrow(socket.id, symbol, cb);
+    // Solo QUANTI hanno tirato. I simboli restano nascosti finché non hanno tirato tutti,
+    // altrimenti chi tira per ultimo vince sempre.
+    if (res) io.to(room.code).emit('impostor:throwStatus', res);
+  }));
+
+  socket.on('impostor:guess', withRoom((room, { word }, cb) => {
+    room.submitImpostorGuess(socket.id, word, cb);
+  }));
 
   // Il giocatore conferma di essere pronto a passare alla domanda successiva.
   socket.on('game:ready', () => {

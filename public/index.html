@@ -94,6 +94,7 @@
       <button class="seg-btn active" data-value="rush">Rush — punti in base alla velocità</button>
       <button class="seg-btn" data-value="classic">Classica — punti fissi, 10s per rispondere</button>
       <button class="seg-btn" data-value="brainfight">Solo Brainfighting 🧠 — subito calcoli e buzz</button>
+      <button class="seg-btn" data-value="impostor">Impostore 🕵️ — uno di voi bluffa (min. 5 giocatori)</button>
     </div>
     <p class="muted small">"Solo Brainfighting" salta fase 1 ed eliminazione: si va dritti ai problemi col pulsante rosso, vince chi arriva a 3 punti.</p>
 
@@ -130,6 +131,17 @@
       <button class="seg-btn" data-value="7">7</button>
     </div>
     <p class="muted small">Quanti punti servono per vincere il brainfighting, cioè la sfida che chiude la partita. Più alto, più lunga: con 3 si sta sui dieci minuti, con 7 si va molto oltre.</p>
+
+    <div id="impostor-settings" class="hidden">
+      <label>Manche (modalità Impostore)</label>
+      <div class="segmented" id="opt-manches">
+        <button class="seg-btn active" data-value="0">Una a testa</button>
+        <button class="seg-btn" data-value="3">3</button>
+        <button class="seg-btn" data-value="5">5</button>
+        <button class="seg-btn" data-value="8">8</button>
+      </div>
+      <p class="muted small">"Una a testa" significa tante manche quanti sono i giocatori. Chi fa l'impostore viene sorteggiato dando più probabilità a chi lo è stato meno volte, ma mai in modo prevedibile: nemmeno all'ultima manche si può sapere in anticipo a chi tocca.</p>
+    </div>
 
     <button class="btn btn-primary" id="btn-create-confirm">Crea la partita</button>
     <button class="btn btn-ghost" id="btn-create-back">Indietro</button>
@@ -303,6 +315,45 @@
       <div id="grid-suggestions" class="grid-suggestions"></div>
       <button class="btn btn-ghost" id="grid-cancel">Annulla</button>
     </div>
+  </div>
+
+  <!-- MODALITÀ IMPOSTORE -->
+  <div id="impostor-wrap" class="impostor-wrap hidden">
+    <div id="impostor-role" class="impostor-role"></div>
+
+    <div id="impostor-board" class="impostor-board"></div>
+
+    <div id="impostor-turn" class="impostor-turn hidden">
+      <div class="impostor-turn-label" id="impostor-turn-label"></div>
+      <input id="impostor-word-input" type="text" autocomplete="off" maxlength="24" placeholder="La tua parola..." />
+      <button class="btn btn-primary" id="impostor-word-send">Consegna</button>
+      <div class="error" id="impostor-word-error"></div>
+    </div>
+
+    <div id="impostor-vote-wrap" class="impostor-vote hidden">
+      <div class="impostor-turn-label">Chi è l'impostore?</div>
+      <div id="impostor-vote-buttons" class="impostor-vote-buttons"></div>
+      <div class="muted small" id="impostor-vote-status"></div>
+    </div>
+
+    <div id="impostor-rps-wrap" class="impostor-rps hidden">
+      <div class="impostor-turn-label" id="impostor-rps-label"></div>
+      <div class="impostor-rps-buttons">
+        <button class="btn btn-ghost rps-btn" data-symbol="sasso">🪨 Sasso</button>
+        <button class="btn btn-ghost rps-btn" data-symbol="carta">📄 Carta</button>
+        <button class="btn btn-ghost rps-btn" data-symbol="forbice">✂️ Forbice</button>
+      </div>
+      <div class="muted small" id="impostor-rps-status"></div>
+      <div id="impostor-rps-throws" class="impostor-rps-throws"></div>
+    </div>
+
+    <div id="impostor-guess-wrap" class="impostor-guess hidden">
+      <div class="impostor-turn-label" id="impostor-guess-label"></div>
+      <input id="impostor-guess-input" type="text" autocomplete="off" maxlength="24" placeholder="La parola era..." />
+      <button class="btn btn-primary" id="impostor-guess-send">Ci provo</button>
+    </div>
+
+    <div id="impostor-result" class="impostor-result hidden"></div>
   </div>
 
   <div id="mini-scoreboard" class="mini-scoreboard"></div>

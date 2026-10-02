@@ -2,6 +2,8 @@
 
 Quiz party multiplayer da salotto: risposte a scelta multipla abbinate a 4 tasti colorati (giallo, blu, arancione, verde), un presentatore-pupazzo animato con battute (anche cattive) e una fase a eliminazione che dura finché non resta un solo imbattuto. Il punteggio si accumula anche tra più partite giocate di fila nella stessa sessione.
 
+Quattro modalità: **Rush** e **Classica** (quiz a risposte con fase a eliminazione e sfida finale), **Solo Brainfighting** (dritti alla sfida finale), e **Impostore** (gioco di parole e bluff, vedi sotto).
+
 Stack: **Node.js + Express + Socket.io** sul backend, **HTML/CSS/JS puro** sul frontend (nessun build step, nessun framework). Le domande vivono in un file JSON, niente database esterno da configurare.
 
 ## Come funziona il gioco
@@ -30,13 +32,13 @@ Ho dovuto decidere alcuni dettagli che non avevi specificato — sono facilmente
 - **Punti modalità Classica**: 2 punti per risposta corretta, 0 per sbagliata/nessuna risposta. Modificabile in `server/lib/GameRoom.js`, funzione `resolveQuestion`.
 - **Nessuna risposta data (Rush)**: vale 0 punti, non -1 (la penalità si applica solo a una risposta sbagliata data attivamente). Durante la fase a eliminazione, invece, non rispondere in tempo conta come "sbagliare" ai fini dell'eliminazione (coerente con lo spirito "chi non risponge giusto è fuori").
 - **Piazzamento oltre il vincitore**: chi viene eliminato più tardi nella fase a eliminazione piazza meglio di chi è uscito prima; a parità di round di eliminazione, si usa come spareggio il punteggio di Fase 1. Chi non si è nemmeno qualificato per la fase a eliminazione piazza sotto tutti i qualificati, ordinato per punteggio di Fase 1.
-- **Riciclo delle domande in eliminazione**: per garantire che la fase possa davvero durare "all'infinito" anche con un mazzo di domande finito, una volta esaurite le domande disponibili per la difficoltà/categoria scelta il mazzo si ricicla (possono ripresentarsi domande già viste in quella fase). Fase 1 invece non ripete mai domande all'interno della stessa partita.
+- **Nessuna domanda ripetuta nella sessione**: torneo ed eliminazione attingono allo stesso registro di domande già uscite, che non viene azzerato tra una partita e l'altra. Una domanda vista nel torneo non può ricomparire all'eliminazione, né in una partita successiva della stessa stanza. Solo se il mazzo si esaurisce davvero (fase a eliminazione lunghissima su una categoria di nicchia) si ricicla, ripartendo comunque dalle domande non ancora viste in quella fase.
 - **Classifica di sessione per nickname**: il punteggio cumulativo di sessione è associato al nickname scelto dal giocatore (non al socket/dispositivo), così regge anche se qualcuno si riconnette con una scheda diversa. Di conseguenza, due giocatori con lo stesso identico nickname nella stessa sessione condividerebbero il punteggio cumulativo: è un'ipotesi ragionevole per un gioco tra amici, ma tienilo a mente se il tuo gruppo ama i nomi doppi.
 - **Battute "a sorpresa" sulla classifica**: circa una volta ogni tre domande della Fase 1, con più di 2 giocatori in gioco, il presentatore ha una probabilità di prendere in giro chi è ultimo in classifica invece del commento standard. È volutamente casuale, per non essere ripetitivo.
 - **Codice partita**: 5 caratteri alfanumerici (senza caratteri ambigui tipo 0/O o 1/I).
 - **Categorie di nicchia sempre escluse da "Tutte"**: l'esclusione vale anche nei casi limite in cui il mazzo di domande stesse per esaurirsi durante una partita lunghissima (es. una fase a eliminazione infinita) — il gioco allarga la ricerca ignorando la difficoltà, mai la categoria. Chi vuole giocare solo a Formula 1 o solo a Calcio deve selezionarli esplicitamente dai tasti categoria, e può combinarne quante ne vuole insieme (es. "Formula 1" + "Automobili e Motori").
 - **Posizione della risposta corretta**: per ogni categoria e ogni livello di difficoltà, la risposta giusta è distribuita in modo equilibrato tra le 4 posizioni (circa un quarto delle domande per posizione), così non è possibile "indovinare" un pattern (es. rispondere sempre la prima opzione).
-- **Pulsante "Pronto" — chi deve cliccarlo**: tutti i giocatori collegati alla stanza, non solo chi sta ancora gareggiando (anche gli "spettatori" della fase a eliminazione lo cliccano), così tutti restano sincronizzati sullo show. Se qualcuno si disconnette mentre si aspetta il suo "pronto", non blocca gli altri: viene escluso automaticamente dal conteggio.
+- **Pulsante "Pronto" — chi deve cliccarlo**: solo chi è ancora in gara. Gli spettatori — eliminati, chi ha abbandonato la partita, chi non partecipa al brainfighting — vedono la pausa ma non hanno niente da premere: la partita riparte da sola quando i giocatori sono pronti. Se qualcuno si disconnette mentre si aspetta il suo "pronto", non blocca gli altri: viene escluso automaticamente dal conteggio.
 - **Chi viene preso in giro sulla risposta specifica**: tra chi ha attivamente sbagliato (non tra chi non ha risposto affatto), a meno che nessuno abbia dato una risposta sbagliata attiva — in quel caso si prende in giro chi non ha risposto in tempo.
 - **Bug corretto in questa sessione**: la modalità Rush non assegnava mai punti in base alla velocità (mancava un parametro nella chiamata interna), dando sempre il punteggio fisso della modalità Classica. Ora Rush funziona davvero come descritto: più veloce = più punti.
 
@@ -147,16 +149,34 @@ quiz-party/
 │   │   ├── QuestionBank.js  # Caricamento/filtro/aggiunta domande del mazzo principale
 │   │   ├── BrainfightingBank.js  # Caricamento/filtro dei problemi della fase brainfighting
 │   │   ├── GridGame.js      # Generazione e validazione delle sfide a griglia 2x2
+│   │   ├── ImpostorGame.js  # Regole pure della modalità impostore (voto, morra, punteggio)
+│   │   ├── ImpostorPhase.js # Svolgimento della modalità impostore dentro la stanza
 │   │   └── Host.js          # Battute (e "umori") del presentatore virtuale
 │   ├── data/questions.json  # Le 1728 domande del mazzo principale (+ quelle aggiunte)
-│   ├── data/brainfighting.json  # I 375 problemi della fase brainfighting
+│   ├── data/brainfighting.json  # I 497 problemi della fase brainfighting
 │   ├── data/griddata.json   # Archivio soggetti/attributi per le sfide a griglia
-│   └── scripts/importCsv.js # Import in blocco da CSV
-└── public/
-    ├── index.html            # Schermate + markup del pupazzo SVG
-    ├── style.css             # Grafica in stile "show TV colorato" + animazioni
-    └── app.js                # Tutta la logica del client (schermate, socket, pupazzo)
+│   ├── data/impostorwords.json  # 400 coppie parola-indizio per la modalità impostore
+│   ├── data/rosters/        # Rose complete dei 24 club usati nella griglia del calcio
+│   └── scripts/             # Import da CSV, parsing delle categorie Wikipedia, merge dei roster, griglia F1
+├── public/
+│   ├── index.html            # Schermate + markup del pupazzo SVG
+│   ├── style.css             # Grafica in stile "show TV colorato" + animazioni
+│   └── app.js                # Tutta la logica del client (schermate, socket, pupazzo)
+└── test/                     # Test automatici: `npm test`
 ```
+
+## Test
+
+```
+npm test
+```
+
+Quattro suite, 145 controlli, nessuna dipendenza da installare oltre a quelle del progetto. Girano sulla logica di gioco senza avviare il server (`io` viene simulato):
+
+- `test_reconnect_ready.js` — chi deve premere "Pronto", e cosa ritrova chi rientra dopo una disconnessione;
+- `test_brainfight_rules.js` — traguardo configurabile, resa sulla griglia, pareggi, soluzioni mostrate;
+- `test_impostor.js` — regole della modalità impostore: parole, voto, morra, punteggio, imprevedibilità del ruolo;
+- `test_impostor_phase.js` — manche intere giocate dall'inizio alla fine, compresa la verifica che la parola segreta non finisca mai in un evento visibile a tutti.
 
 ## Fase "brainfighting"
 
@@ -170,17 +190,22 @@ Se dopo 10 round della fase a eliminazione normale restano ancora **2 o più sop
 - **Risposta giusta**: +1 punto, si passa a un problema completamente nuovo (opzioni fresche, difficoltà che sale di un livello).
 - **Risposta sbagliata**: 0 punti, quel giocatore non può più riprenotarsi su **questo stesso problema** (potrà farlo dal prossimo), e la sua opzione sparisce dalle scelte per chi si prenota dopo di lui.
 - Se **3 tentativi falliscono** sullo stesso problema, si passa comunque a uno nuovo, senza assegnare punti a nessuno: evita che qualcuno vinca un punto "per esclusione" sull'unica opzione rimasta, senza vero merito.
-- **Vince l'intera partita** chi arriva per primo a **3 punti**.
+- **Vince l'intera partita** chi arriva per primo al traguardo, che si sceglie alla creazione della stanza (**1, 2, 3, 5 o 7 punti**; 3 di default). Se due giocatori ci arrivano appaiati — possibile, perché una griglia può premiare più giocatori insieme — si continua a oltranza finché uno non stacca l'altro: nessun campione sorteggiato.
 
-Il mazzo dedicato (`server/data/brainfighting.json`, 375 problemi) non si ripete mai nella stessa sessione, con lo stesso criterio del mazzo principale.
+Il mazzo dedicato (`server/data/brainfighting.json`, 497 problemi) non si ripete mai nella stessa sessione, con lo stesso criterio del mazzo principale.
 
 ### Modalità "Solo Brainfighting"
 
-Alla creazione della partita si può scegliere **"Solo Brainfighting"** come modalità (accanto a Rush e Classica): si saltano del tutto fase 1 ed eliminazione, e si va dritti ai problemi col pulsante rosso tra tutti i giocatori collegati. Vince sempre chi arriva per primo a 3 punti.
+Alla creazione della partita si può scegliere **"Solo Brainfighting"** come modalità (accanto a Rush e Classica): si saltano del tutto fase 1 ed eliminazione, e si va dritti ai problemi col pulsante rosso tra tutti i giocatori collegati. Vince chi arriva per primo al traguardo scelto.
 
 ### Sfida a griglia 2×2
 
-Per alcune categorie, al posto del problema col buzzer può comparire una **griglia 2×2**: due criteri sulle righe, due sulle colonne, e ogni casella va riempita con un soggetto che soddisfa **entrambi** i criteri incrociati. Qui **non c'è il buzzer**: tutti giocano contemporaneamente e prende il punto **chi completa per primo tutte e quattro le caselle** (3 minuti di tempo).
+Per alcune categorie, al posto del problema col buzzer può comparire una **griglia 2×2**: due criteri sulle righe, due sulle colonne, e ogni casella va riempita con un soggetto che soddisfa **entrambi** i criteri incrociati. Qui **non c'è il buzzer**: tutti giocano contemporaneamente per 3 minuti.
+
+- Il punto va a **chi ha completato più caselle**. A parità lo prendono **tutti i pari merito**; se la griglia resta bianca per tutti, non lo prende nessuno.
+- Chi completa tutte e quattro le caselle chiude subito la sfida.
+- Il pulsante **"Mi arrendo"** permette di ritirarsi: si tengono le caselle già completate, ma non se ne possono aggiungere altre. Se si arrendono tutti si passa subito ai risultati, senza aspettare lo scadere.
+- A fine sfida, nelle caselle rimaste vuote compare **una risposta che sarebbe stata valida** (in corsivo, tratteggiata, per distinguerla da quelle indovinate).
 
 - **Calcio**: squadre in cui si è giocato, trofei vinti, nazionalità (es. "Ha giocato nella Juventus" × "Ha giocato nel Real Madrid" → Zidane, Higuaín, Di María, Cannavaro...)
 - **Formula 1**: scuderie per cui si è corso, titoli mondiali, nazionalità
@@ -191,13 +216,56 @@ Regole della griglia: **qualunque** risposta che rispetti entrambi i criteri è 
 
 L'archivio dei soggetti è in `server/data/griddata.json`. **È scritto a mano e quindi parziale**: una risposta corretta ma non presente in archivio verrà rifiutata. L'autocomplete mitiga il problema mostrando solo i nomi effettivamente riconosciuti. Ampliare l'archivio è semplice: basta aggiungere voci con i loro attributi.
 
+## Modalità "Impostore"
+
+Un gioco di parole e bluff, senza domande a risposta multipla. **Servono almeno 5 giocatori**: sotto, il voto diventa un lancio di dado.
+
+1. A ogni manche tutti ricevono la stessa **parola segreta**, tranne uno: l'**impostore**, che vede la scritta "Sei l'impostore" e solo un **indizio** della stessa famiglia (es. parola *Pizza*, indizio *Forno*).
+2. **Tre giri di parole**: a turno ognuno consegna una parola sola che dimostri di conoscere quella segreta, senza regalarla all'impostore. Il turno passa appena la parola arriva (al massimo 45 secondi). Chi apre cambia a ogni giro, perché parlare per ultimi è un vantaggio enorme. Tutti vedono tutte le parole, divise per giocatore e per giro.
+3. **Voto**: ognuno accusa chi pensa sia l'impostore. Vince l'accusa con più voti.
+4. **Pareggio**: i pari merito si sfidano a **sasso-carta-forbice**, tutti insieme. Chi tira il simbolo vincente si salva, chi resta per ultimo è l'accusato. I tiri restano nascosti finché non hanno tirato tutti.
+5. **Punti**:
+   - impostore scoperto → un punto a chi lo ha votato (non a lui, se ha votato se stesso per mimetizzarsi);
+   - impostore non scoperto → un punto a lui solo;
+   - impostore scoperto che **indovina la parola** → ribalta la manche: punto suo, tutti gli altri a zero.
+
+Chi crea la stanza sceglie il numero di manche (3, 5, 8, o **una a testa**, cioè tante quanti i giocatori). L'impostore viene sorteggiato dando più probabilità a chi lo è stato meno volte, ma mai in modo prevedibile: nemmeno all'ultima manche si può dedurre a chi tocca, e non capita mai due volte di fila alla stessa persona.
+
+Le parole sono in `server/data/impostorwords.json` (**400 coppie parola-indizio su 20 temi**) e **non si ripetono mai nella stessa sessione**. La parola segreta e il ruolo non passano mai per un evento di stanza: vengono mandati solo al diretto interessato, così nemmeno aprendo la console del browser si scopre chi bluffa.
+
 ## Riconnessione e statistiche
 
-Se un giocatore perde la connessione a metà partita, al ritorno della linea il client prova da solo a rientrare (evento `lobby:reconnect`): il server lo riconosce dal nickname e gli restituisce **punteggio, qualificazione e stato di eliminazione** esattamente come li aveva lasciati, spostando la sua scheda sul nuovo socket. Chi rientra torna anche a contare per il pulsante "Pronto", così la partita non resta bloccata ad aspettarlo né va avanti senza di lui.
+Si può chiudere il browser a metà partita — per rispondere a un messaggio, per sbaglio, per un aggiornamento — e rientrare. Codice stanza e nickname restano salvati nel browser (per sei ore), e alla riapertura il gioco chiede da solo di rientrare (evento `lobby:reconnect`). Il server riconosce il giocatore dal nickname, gli restituisce **punteggio, qualificazione e stato di eliminazione** esattamente come li aveva lasciati, e gli ridisegna davanti il momento preciso della partita:
+
+- **domanda ancora aperta**: la ritrova con il tempo che resta davvero, e può rispondere;
+- **domanda chiusa**: la vede congelata, con la sua risposta se aveva fatto in tempo a darla, e il pulsante "Pronto";
+- **griglia**: le caselle già indovinate tornano al loro posto;
+- **buzz, classifica finale, modalità impostore**: ritrova la schermata corrente (nell'impostore, il proprio ruolo gli viene rimandato in privato).
+
+Chi era spettatore resta spettatore, a meno che nel frattempo non sia iniziata una nuova partita. Il rientro funziona anche quando il server crede ancora che il vecchio socket sia collegato, caso tipico di chi chiude di colpo e riapre subito. Uscire volontariamente dalla sessione cancella il salvataggio.
+
+**Regola di gioco da sapere**: nella fase a eliminazione chi si disconnette viene trattato come eliminato al round successivo. Se rientra mentre la domanda è ancora aperta torna in gara; se rientra dopo, resta fuori come spettatore.
 
 Dopo ogni domanda, accanto al punteggio totale compaiono i **punti guadagnati o persi in quella domanda** (`+3`, `-1`, `0`), per capire a colpo d'occhio il perché di un sorpasso in classifica.
 
 A fine partita, sotto la classifica di sessione, compaiono le **statistiche della serata**: Dito più veloce, Cecchino (miglior percentuale), Mano pesante (più errori), Mister punti, Il pensatore (più lento a rispondere) e Colto in flagrante (più risposte non date in tempo). Compaiono solo i premi che hanno davvero un vincitore.
+
+## Criteri della griglia: attributi esaustivi e attributi parziali
+
+La griglia accetta una risposta solo se il soggetto ha quell'attributo nel database. Se un tipo di dato è stato compilato solo per una parte dei soggetti, il gioco **rifiuta risposte corrette** — che per chi gioca è indistinguibile da un bug.
+
+Il caso reale che ha fatto emergere il problema: Yannick Carrasco è belga e ha giocato nell'Atlético Madrid, ma nel database ha solo i club (è entrato tramite l'incrocio Atlético + Monaco, e i roster non portano la nazionalità). Una casella "Belgio × Atlético" lo dava per sbagliato.
+
+La distinzione che conta **non** è quanti soggetti hanno l'attributo, ma:
+
+- **Esaustivo** — se un soggetto ha quella proprietà, il database la conosce. "Ha vinto un Oscar" copre il 56% degli attori ed è corretto così: gli altri non l'hanno vinto.
+- **Parziale** — il dato è stato compilato solo per alcuni soggetti, altri lo avrebbero. La nazionalità nel calcio è nota per i 342 giocatori originali e ignota per i 2240 arrivati dai roster.
+
+Lo stesso vale **dentro** un tipo: nel database compaiono 81 club, ma di soli 24 abbiamo caricato la rosa completa. Gli altri (Ajax, Benfica, Porto…) ci sono solo perché citati nella scheda di qualche giocatore, quindi una casella "Ajax × Juventus" ricadrebbe nello stesso difetto. L'elenco dei club utilizzabili è in `CLUB_CON_ROSTER_COMPLETO`: caricando la rosa di un nuovo club, va aggiunto lì.
+
+Solo i tipi esaustivi possono fare da intestazione di riga o colonna. L'elenco è in `CRITERIA_TYPES` dentro `server/lib/GridGame.js`. Per il calcio è ristretto ai soli **club** (completi al 100%, vengono dai roster); nazionalità e trofei restano nel database come informazione ma non vengono più proposti come criterio. Se un giorno la nazionalità venisse compilata per tutti, basta rimetterla in quell'elenco.
+
+**Nota sulla categoria Cinema**: i soggetti sono gli **attori**, non i film. Una casella "diretto da Scorsese × diretto da Tarantino" chiede quindi un attore diretto da entrambi (DiCaprio), non un film co-diretto: è un incrocio valido. Le etichette dicono "È stato/a diretto/a da" proprio per evitare l'equivoco.
 
 ## Idee per migliorie future
 

@@ -6,7 +6,7 @@
   let myNickname = '';
   let currentRoomCode = null;
   let isHost = false;
-  let createSettings = { visibility: 'private', mode: 'rush', difficulty: 'misto', hostMode: 'family', categories: [], winningScore: 3 };
+  let createSettings = { visibility: 'private', mode: 'rush', difficulty: 'misto', hostMode: 'family', categories: [], winningScore: 3, impostorManches: 0 };
   let newQuestionState = { difficulty: 'facile', correct: 0 };
   let playersById = new Map(); // id -> nickname (aggiornata da lobby/scoreboard)
   let currentEligibleIds = null;
@@ -31,6 +31,28 @@
     document.querySelectorAll('.screen').forEach((s) => s.classList.remove('active'));
     document.getElementById(id).classList.add('active');
   }
+
+  // I nickname e le parole consegnate sono testo scritto dai giocatori: prima di finire in
+  // innerHTML vanno neutralizzati, altrimenti basta chiamarsi "<img onerror=...>" per fare danni.
+  function escapeHtml(value) {
+    return String(value == null ? '' : value)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#39;');
+  }
+
+  // Nomi delle modalità, in versione corta (elenco stanze) e lunga (lobby). Un solo posto da
+  // aggiornare quando se ne aggiunge una: con i ternari sparsi, l'impostore era finito a
+  // "Classica" senza che nessuno se ne accorgesse.
+  const MODE_LABELS = {
+    rush: { short: 'Rush', long: 'Rush (velocità)' },
+    classic: { short: 'Classica', long: 'Classica (10s, punti fissi)' },
+    brainfight: { short: 'Brainfighting 🧠', long: 'Solo Brainfighting 🧠' },
+    impostor: { short: 'Impostore 🕵️', long: 'Impostore 🕵️' },
+  };
+  const modeLabel = (mode, kind = 'long') => (MODE_LABELS[mode] || MODE_LABELS.classic)[kind];
 
   function setError(id, msg) {
     const el = document.getElementById(id);
@@ -245,13 +267,18 @@
   }
 
   wireSegmented('opt-visibility', (v) => (createSettings.visibility = v));
-  wireSegmented('opt-mode', (v) => (createSettings.mode = v));
+  wireSegmented('opt-mode', (v) => {
+    createSettings.mode = v;
+    // Le manche riguardano solo l'impostore: mostrarle sempre confonderebbe e basta.
+    document.getElementById('impostor-settings').classList.toggle('hidden', v !== 'impostor');
+  });
   wireSegmented('opt-difficulty', (v) => (createSettings.difficulty = v));
   wireSegmented('opt-hostmode', (v) => {
     createSettings.hostMode = v;
     document.getElementById('hostmode-warning').style.display = v === 'unfiltered' ? 'block' : 'none';
   });
   wireSegmented('opt-winningscore', (v) => (createSettings.winningScore = parseInt(v, 10)));
+  wireSegmented('opt-manches', (v) => (createSettings.impostorManches = parseInt(v, 10)));
   wireSegmented('nq-difficulty', (v) => (newQuestionState.difficulty = v));
   wireSegmented('nq-correct', (v) => (newQuestionState.correct = parseInt(v, 10)));
 
@@ -320,7 +347,7 @@
   document.getElementById('btn-create-confirm').addEventListener('click', () => {
     socket.emit(
       'lobby:create',
-      { nickname: myNickname, visibility: createSettings.visibility, mode: createSettings.mode, difficulty: createSettings.difficulty, categories: createSettings.categories, hostMode: createSettings.hostMode, winningScore: createSettings.winningScore },
+      { nickname: myNickname, visibility: createSettings.visibility, mode: createSettings.mode, difficulty: createSettings.difficulty, categories: createSettings.categories, hostMode: createSettings.hostMode, winningScore: createSettings.winningScore, impostorManches: createSettings.impostorManches },
       (res) => {
         if (res.error) return setError('create-error', res.error);
         currentRoomCode = res.code;
@@ -366,7 +393,7 @@
     lobbies.forEach((l) => {
       const div = document.createElement('div');
       div.className = 'lobby-item';
-      div.innerHTML = `<div><strong>${l.players} giocatori</strong><br/><span class="muted">${l.mode === 'rush' ? 'Rush' : l.mode === 'brainfight' ? 'Brainfighting 🧠' : 'Classica'} · ${l.difficulty} · ${formatCategories(l.categories)}</span></div>`;
+      div.innerHTML = `<div><strong>${l.players} giocatori</strong><br/><span class="muted">${modeLabel(l.mode, 'short')}${l.mode === 'impostor' ? '' : ` · ${l.difficulty} · ${formatCategories(l.categories)}`}</span></div>`;
       const btn = document.createElement('button');
       btn.textContent = 'Unisciti';
       btn.addEventListener('click', () => {
@@ -424,16 +451,19 @@
     } else {
       codeWrap.classList.add('hidden');
     }
-    const modeLabel = summary.mode === 'rush' ? 'Rush (velocità)' : summary.mode === 'brainfight' ? 'Solo Brainfighting 🧠' : 'Classica (10s, punti fissi)';
+    const modeText = modeLabel(summary.mode, 'long');
     const hostModeLabel = summary.hostMode === 'unfiltered' ? 'Sboccato 🔞' : 'Family friendly';
     document.getElementById('lobby-settings').textContent =
-      `${summary.visibility === 'public' ? 'Partita aperta' : 'Partita chiusa'} · ${modeLabel} · Livello: ${summary.difficulty} · Categorie: ${formatCategories(summary.categories)} · Presentatore: ${hostModeLabel}`;
+      summary.mode === 'impostor'
+        // Livello e categorie non c'entrano niente con l'impostore: conta solo quante manche.
+        ? `${summary.visibility === 'public' ? 'Partita aperta' : 'Partita chiusa'} · ${modeText} · Manche: ${summary.impostorManches > 0 ? summary.impostorManches : 'una a testa'} · Minimo 5 giocatori · Presentatore: ${hostModeLabel}`
+        : `${summary.visibility === 'public' ? 'Partita aperta' : 'Partita chiusa'} · ${modeText} · Livello: ${summary.difficulty} · Categorie: ${formatCategories(summary.categories)} · Brainfighting a ${summary.winningScore || 3} punti · Presentatore: ${hostModeLabel}`;
 
     const list = document.getElementById('lobby-players');
     list.innerHTML = '';
     summary.players.forEach((p) => {
       const li = document.createElement('li');
-      li.innerHTML = `<span>${p.nickname}${p.connected ? '' : ' (disconnesso)'}</span>${p.isHost ? '<span class="host-tag">HOST</span>' : ''}`;
+      li.innerHTML = `<span>${escapeHtml(p.nickname)}${p.connected ? '' : ' (disconnesso)'}</span>${p.isHost ? '<span class="host-tag">HOST</span>' : ''}`;
       list.appendChild(li);
     });
 
@@ -506,6 +536,7 @@
     document.getElementById('brainfight-scores').classList.add('hidden');
     document.getElementById('grid-wrap').classList.add('hidden');
     document.getElementById('mini-scoreboard').classList.remove('hidden');
+    document.getElementById('impostor-wrap').classList.add('hidden');
     document.querySelectorAll('.answer-btn').forEach((b) => { b.classList.remove('fume'); b.style.display = ''; });
 
     // Fine della pausa: si torna al presentatore in formato compatto e si nasconde "Pronto".
@@ -862,14 +893,15 @@
       const div = document.createElement('div');
       div.className = 'bf-score' + (p.id === myId ? ' me' : '');
       const dots = '●'.repeat(p.score) + '○'.repeat(Math.max(0, 3 - p.score));
-      div.innerHTML = `${p.nickname}<span class="bf-dots">${dots}</span>`;
+      div.innerHTML = `${escapeHtml(p.nickname)}<span class="bf-dots">${dots}</span>`;
       el.appendChild(div);
     });
   }
 
   socket.on('brainfight:start', (data) => {
     inBrainfight = true;
-    toast('Fase finale: brainfighting! Calcoli a mente, vince chi arriva a 3 punti.');
+    const traguardo = data.winningScore || 3;
+    toast(`Fase finale: brainfighting! Vince chi arriva a ${traguardo} ${traguardo === 1 ? 'punto' : 'punti'}.`);
     renderBrainfightScores(data.participants.map((p) => ({ id: p.id, nickname: p.nickname, score: 0 })));
   });
 
@@ -877,6 +909,7 @@
     showScreen('screen-game');
     hideResultPause();
     document.getElementById('grid-wrap').classList.add('hidden');
+    document.getElementById('impostor-wrap').classList.add('hidden');
     answered = false;
     bfCanAnswer = false;
     document.getElementById('game-phase-label').textContent = 'Brainfighting';
@@ -990,7 +1023,7 @@
         const txt = d > 0 ? `+${d}` : String(d);
         deltaHtml = `<span class="pts-delta${d === 0 ? ' zero' : ''}">${txt}</span>`;
       }
-      row.innerHTML = `<span>${i + 1}. ${arrow}${p.nickname}${p.eliminated ? ' ❌' : ''}${p.leftMatch ? ' 🚪' : ''}</span><span>${p.score} pt${deltaHtml}</span>`;
+      row.innerHTML = `<span>${i + 1}. ${arrow}${escapeHtml(p.nickname)}${p.eliminated ? ' ❌' : ''}${p.leftMatch ? ' 🚪' : ''}</span><span>${p.score} pt${deltaHtml}</span>`;
       el.appendChild(row);
     });
 
@@ -1085,7 +1118,7 @@
       playersById.set(p.id, p.nickname);
       const li = document.createElement('li');
       const qualified = data.qualifiers.includes(p.id);
-      li.innerHTML = `${p.nickname} — ${p.score} pt ${qualified ? '✅ passa alla fase a eliminazione' : '❌ eliminato'}`;
+      li.innerHTML = `${escapeHtml(p.nickname)} — ${p.score} pt ${qualified ? '✅ passa alla fase a eliminazione' : '❌ eliminato'}`;
       list.appendChild(li);
     });
   });
@@ -1134,7 +1167,7 @@
       const p = standings[i];
       const div = document.createElement('div');
       div.className = `step step-${i + 1}`;
-      div.innerHTML = `<span class="medal">${medals[i]}</span><span class="name">${p.nickname}</span>`;
+      div.innerHTML = `<span class="medal">${medals[i]}</span><span class="name">${escapeHtml(p.nickname)}</span>`;
       el.appendChild(div);
     }
   }
@@ -1146,6 +1179,7 @@
     document.getElementById('buzz-wrap').classList.add('hidden');
     document.getElementById('brainfight-scores').classList.add('hidden');
     document.getElementById('grid-wrap').classList.add('hidden');
+    document.getElementById('impostor-wrap').classList.add('hidden');
     document.querySelector('.answers-grid').style.display = '';
     showScreen('screen-final');
     document.getElementById('final-winner').textContent = data.championName ? `${data.championName} 🎉` : 'Nessun vincitore';
@@ -1166,7 +1200,7 @@
     (data.sessionBoard || []).forEach((p, i) => {
       const li = document.createElement('li');
       if (i === 0) li.className = 'top';
-      li.innerHTML = `<span>${i + 1}. ${p.nickname}</span><span>${p.sessionScore} pt</span>`;
+      li.innerHTML = `<span>${i + 1}. ${escapeHtml(p.nickname)}</span><span>${p.sessionScore} pt</span>`;
       sessionList.appendChild(li);
     });
 
@@ -1182,7 +1216,7 @@
       awards.forEach((a) => {
         const card = document.createElement('div');
         card.className = 'stat-card';
-        card.innerHTML = `<div class="stat-title">${a.title}</div><div class="stat-value">${a.nickname}</div><div class="stat-detail">${a.detail}</div>`;
+        card.innerHTML = `<div class="stat-title">${a.title}</div><div class="stat-value">${escapeHtml(a.nickname)}</div><div class="stat-detail">${a.detail}</div>`;
         awardsEl.appendChild(card);
       });
     }
@@ -1271,4 +1305,273 @@
   });
 
   loadCategories();
+
+  // ======================= MODALITÀ IMPOSTORE =============================
+  // Il client non sa mai chi è l'impostore: lo sa solo chi lo è, perché il server manda il
+  // ruolo sul suo socket e basta. Qui si disegna soltanto quello che arriva.
+
+  let impostorRole = null;
+  let impostorVoted = null;
+  let impostorThrown = null;
+
+  const impEl = (id) => document.getElementById(id);
+  const impShow = (id, on) => impEl(id).classList.toggle('hidden', !on);
+
+  // Mostra la sezione impostore e nasconde tutto ciò che appartiene al quiz a risposte.
+  function impostorEnterScreen() {
+    showScreen('screen-game');
+    hideResultPause();
+    impShow('impostor-wrap', true);
+    document.querySelector('.answers-grid').style.display = 'none';
+    impEl('buzz-wrap').classList.add('hidden');
+    impEl('grid-wrap').classList.add('hidden');
+    impEl('spectator-banner').classList.add('hidden');
+    impEl('elimination-chips').classList.add('hidden');
+    impEl('brainfight-scores').classList.add('hidden');
+  }
+
+  function impostorHidePanels() {
+    ['impostor-turn', 'impostor-vote-wrap', 'impostor-rps-wrap', 'impostor-guess-wrap', 'impostor-result']
+      .forEach((id) => impShow(id, false));
+  }
+
+  socket.on('impostor:role', (role) => {
+    impostorRole = role;
+    impostorEnterScreen();
+    const card = impEl('impostor-role');
+    card.classList.remove('innocente', 'impostore');
+    if (role.isImpostor) {
+      card.classList.add('impostore');
+      card.innerHTML = `<div class="role-label">Sei l'impostore 🕵️</div>
+        <div class="role-word">${escapeHtml(role.clue)}</div>
+        <div class="role-note">Questo è solo un indizio. Non sai la parola: fai finta di saperla.</div>`;
+    } else {
+      card.classList.add('innocente');
+      card.innerHTML = `<div class="role-label">La parola è</div>
+        <div class="role-word">${escapeHtml(role.word)}</div>
+        <div class="role-note">Dimostra di conoscerla senza regalarla all'impostore.</div>`;
+    }
+    impEl('game-category').textContent = role.theme;
+    impEl('game-progress').textContent = `Manche ${role.manche}/${role.totalManches}`;
+  });
+
+  socket.on('impostor:mancheStart', (data) => {
+    impostorEnterScreen();
+    impostorHidePanels();
+    impostorVoted = null;
+    impostorThrown = null;
+    impEl('question-text').textContent = `Tema: ${data.theme}`;
+  });
+
+  // Il tabellone con tutte le parole di tutti, giro per giro.
+  socket.on('impostor:board', (data) => {
+    impostorEnterScreen();
+    impShow('impostor-result', false);
+    impEl('game-progress').textContent = `Manche ${data.manche}/${data.totalManches} · giro ${Math.min(data.giro + 1, data.totalGiri)}/${data.totalGiri}`;
+
+    const board = impEl('impostor-board');
+    board.innerHTML = '';
+    data.players.forEach((p) => {
+      const col = document.createElement('div');
+      col.className = 'impostor-col' + (p.id === data.currentPlayerId ? ' turno' : '');
+      const parole = p.words.map((w) => `<div class="col-word">${escapeHtml(w.word)}</div>`).join('');
+      const vuote = Array.from({ length: Math.max(0, data.totalGiri - p.words.length) })
+        .map(() => '<div class="col-word vuota">·</div>').join('');
+      col.innerHTML = `<div class="col-name">${escapeHtml(p.nickname)}</div>${parole}${vuote}`;
+      board.appendChild(col);
+    });
+
+    const mioTurno = data.currentPlayerId === myId;
+    impShow('impostor-turn', mioTurno);
+    if (mioTurno) {
+      impEl('impostor-turn-label').textContent = 'Tocca a te: una parola sola';
+      impEl('impostor-word-error').textContent = '';
+      impEl('impostor-word-input').value = '';
+      impEl('impostor-word-send').disabled = false;
+      impEl('impostor-word-input').focus();
+    }
+    if (data.currentPlayerId && !mioTurno) {
+      const chi = data.players.find((p) => p.id === data.currentPlayerId);
+      impEl('question-text').textContent = chi ? `Tocca a ${chi.nickname}...` : '';
+    }
+    if (data.timeLimitMs) startTimer(data.timeLimitMs);
+    if (data.scoreboard) renderMiniScoreboard(data.scoreboard);
+  });
+
+  function inviaParolaImpostore() {
+    const input = impEl('impostor-word-input');
+    const parola = input.value.trim();
+    if (!parola) return;
+    impEl('impostor-word-send').disabled = true;
+    socket.emit('impostor:submitWord', { word: parola }, (res) => {
+      if (res && res.error) {
+        impEl('impostor-word-error').textContent = res.error;
+        impEl('impostor-word-send').disabled = false;
+        return;
+      }
+      impShow('impostor-turn', false);
+    });
+  }
+  impEl('impostor-word-send').addEventListener('click', inviaParolaImpostore);
+  impEl('impostor-word-input').addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') inviaParolaImpostore();
+  });
+
+  // ---- Voto -------------------------------------------------------------
+  socket.on('impostor:vote', (data) => {
+    impostorEnterScreen();
+    impShow('impostor-turn', false);
+    impShow('impostor-vote-wrap', true);
+    impostorVoted = null;
+    impEl('question-text').textContent = 'Chi bluffava?';
+    impEl('impostor-vote-status').textContent = '';
+
+    const wrap = impEl('impostor-vote-buttons');
+    wrap.innerHTML = '';
+    data.candidates.forEach((c) => {
+      const btn = document.createElement('button');
+      btn.className = 'btn btn-ghost';
+      btn.textContent = c.nickname + (c.id === myId ? ' (tu)' : '');
+      btn.addEventListener('click', () => {
+        if (impostorVoted) return;
+        impostorVoted = c.id;
+        [...wrap.children].forEach((b) => { b.disabled = true; });
+        btn.classList.add('scelto');
+        socket.emit('impostor:vote', { targetId: c.id }, (res) => {
+          if (res && res.error) {
+            impostorVoted = null;
+            [...wrap.children].forEach((b) => { b.disabled = false; });
+            btn.classList.remove('scelto');
+            toast(res.error);
+          }
+        });
+      });
+      wrap.appendChild(btn);
+    });
+    if (data.timeLimitMs) startTimer(data.timeLimitMs);
+  });
+
+  socket.on('impostor:voteStatus', (data) => {
+    impEl('impostor-vote-status').textContent = `Hanno votato ${data.voted}/${data.total}`;
+  });
+
+  socket.on('impostor:voteResult', (data) => {
+    stopTimer();
+    impShow('impostor-vote-wrap', false);
+    const righe = data.counts
+      .sort((a, b) => b.votes - a.votes)
+      .map((c) => `${escapeHtml(c.nickname)}: ${c.votes}`)
+      .join(' · ');
+    impEl('question-text').textContent = data.tied.length
+      ? `Parità tra ${data.tied.map((t) => t.nickname).join(' e ')} — ${righe}`
+      : righe;
+  });
+
+  // ---- Spareggio a sasso-carta-forbice ----------------------------------
+  socket.on('impostor:rps', (data) => {
+    impostorEnterScreen();
+    impShow('impostor-rps-wrap', true);
+    impEl('impostor-rps-throws').innerHTML = '';
+    impostorThrown = null;
+
+    const inGioco = data.players.some((p) => p.id === myId);
+    impEl('impostor-rps-label').textContent = inGioco
+      ? `Spareggio, giro ${data.giro}: tira!`
+      : `Spareggio tra ${data.players.map((p) => p.nickname).join(' e ')}`;
+    impEl('impostor-rps-status').textContent = '';
+
+    document.querySelectorAll('.rps-btn').forEach((btn) => {
+      btn.disabled = !inGioco;
+      btn.classList.remove('scelto');
+    });
+    if (data.timeLimitMs) startTimer(data.timeLimitMs);
+  });
+
+  document.querySelectorAll('.rps-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      if (impostorThrown) return;
+      impostorThrown = btn.dataset.symbol;
+      document.querySelectorAll('.rps-btn').forEach((b) => { b.disabled = true; });
+      btn.classList.add('scelto');
+      socket.emit('impostor:throw', { symbol: impostorThrown }, (res) => {
+        if (res && res.error) {
+          impostorThrown = null;
+          document.querySelectorAll('.rps-btn').forEach((b) => { b.disabled = false; });
+          btn.classList.remove('scelto');
+          toast(res.error);
+        }
+      });
+    });
+  });
+
+  socket.on('impostor:throwStatus', (data) => {
+    // Solo il conteggio: i simboli restano nascosti finché non hanno tirato tutti.
+    impEl('impostor-rps-status').textContent = `Hanno tirato ${data.thrown}/${data.total}`;
+  });
+
+  socket.on('impostor:rpsResult', (data) => {
+    stopTimer();
+    const emoji = { sasso: '🪨', carta: '📄', forbice: '✂️' };
+    impEl('impostor-rps-throws').innerHTML = data.throws
+      .map((t) => `<span class="tiro${data.safeIds.includes(t.id) ? ' salvo' : ''}">${escapeHtml(t.nickname)} ${emoji[t.symbol] || ''}</span>`)
+      .join('');
+    impEl('impostor-rps-status').textContent = data.decided
+      ? `Vince ${emoji[data.winningSymbol] || data.winningSymbol}: si salva chi l'ha tirato`
+      : 'Nessuno prevale: si ritira';
+  });
+
+  // ---- Tentativo finale dell'impostore ----------------------------------
+  socket.on('impostor:guessWait', (data) => {
+    impShow('impostor-rps-wrap', false);
+    impEl('question-text').textContent = `${data.nickname} è stato smascherato... ma può ancora indovinare la parola`;
+    if (data.timeLimitMs) startTimer(data.timeLimitMs);
+  });
+
+  socket.on('impostor:guessPrompt', () => {
+    impShow('impostor-guess-wrap', true);
+    impEl('impostor-guess-label').textContent = 'Ti hanno beccato. Se indovini la parola, il punto è tuo.';
+    impEl('impostor-guess-input').value = '';
+    impEl('impostor-guess-send').disabled = false;
+    impEl('impostor-guess-input').focus();
+  });
+
+  function inviaTentativoImpostore() {
+    const parola = impEl('impostor-guess-input').value.trim();
+    if (!parola) return;
+    impEl('impostor-guess-send').disabled = true;
+    socket.emit('impostor:guess', { word: parola }, () => impShow('impostor-guess-wrap', false));
+  }
+  impEl('impostor-guess-send').addEventListener('click', inviaTentativoImpostore);
+  impEl('impostor-guess-input').addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') inviaTentativoImpostore();
+  });
+
+  // ---- Esito della manche ------------------------------------------------
+  socket.on('impostor:mancheResult', (data) => {
+    stopTimer();
+    impostorHidePanels();
+    impShow('impostor-result', true);
+
+    const esiti = {
+      impostorCaught: `Beccato: era ${escapeHtml(data.impostorName)}`,
+      impostorEscaped: `L'impostore era ${escapeHtml(data.impostorName)}, e vi è sfuggito`,
+      impostorGuessed: `${escapeHtml(data.impostorName)} è stato beccato ma ha indovinato la parola`,
+    };
+    const punti = data.points.length
+      ? data.points.map((p) => `${escapeHtml(p.nickname)} +${p.points}`).join(' · ')
+      : 'Nessun punto assegnato';
+    impEl('impostor-result').innerHTML = `<div class="esito">${esiti[data.outcome] || ''}</div>
+      <div class="parola">La parola era <b>${escapeHtml(data.word)}</b> — indizio: ${escapeHtml(data.clue)}</div>
+      ${data.guess ? `<div class="parola">Tentativo: "${escapeHtml(data.guess)}" — ${data.guessCorrect ? 'giusto' : 'sbagliato'}</div>` : ''}
+      <div class="parola" style="margin-top:8px">${punti}</div>`;
+
+    impEl('question-text').textContent = '';
+    if (data.scoreboard) renderMiniScoreboard(data.scoreboard);
+    showReadyPanel();
+  });
+
+  socket.on('impostor:tooFew', (data) => {
+    toast(`Servono almeno ${data.needed} giocatori per la modalità impostore (siete in ${data.current})`);
+  });
+
 })();

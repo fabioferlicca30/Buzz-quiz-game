@@ -393,6 +393,57 @@ const LINES = {
       '{name} arriva a 3 punti e si aggiudica il brainfighting: per una volta il cervello ha battuto tutto il resto.',
     ],
   },
+  impostorStart: {
+    family: [
+      'Uno di voi non sa niente. Ha solo un indizio e tanta faccia tosta. Buona fortuna a tutti.',
+      'La parola è stata consegnata... quasi a tutti. Tre giri per capire chi bluffa.',
+      'Tra voi c\'è qualcuno che sta improvvisando. Il bello è che non sapete chi.',
+    ],
+    unfiltered: [
+      'Uno di voi è completamente a digiuno e dovrà inventarsi tutto. Gli altri: non fatevi fregare come al solito.',
+      'C\'è un impostore. Non sa niente, non capisce niente, e statisticamente vi frega lo stesso.',
+    ],
+  },
+  impostorVote: {
+    family: [
+      'Momento delle accuse. Puntate il dito e sperate di aver capito qualcosa.',
+      'Si vota. Ricordate: anche l\'impostore vota, e non voterà se stesso... probabilmente.',
+    ],
+    unfiltered: [
+      'Si vota. Cercate di non accusare l\'unico che aveva capito la parola, come fate sempre.',
+      'Dito puntato, coscienza pulita, cervello spento. Votate.',
+    ],
+  },
+  impostorTieByLot: {
+    family: ['Neanche la morra vi ha messo d\'accordo. A questo punto decide la sorte.'],
+    unfiltered: ['Otto giri di sasso-carta-forbice senza cavare un ragno dal buco. Decido io a caso, complimenti.'],
+  },
+  impostorCaught: {
+    family: [
+      'Beccato! {name} era l\'impostore, e la parola era "{word}".',
+      'Accusa azzeccata: {name}. La parola segreta era "{word}".',
+    ],
+    unfiltered: [
+      '{name}, sei stato smascherato. La parola era "{word}" e tu non ne avevi la minima idea.',
+    ],
+  },
+  impostorEscaped: {
+    family: [
+      'L\'impostore era {name}, e ve lo siete fatto scappare. La parola era "{word}".',
+      'Sbagliato: era {name}. Punto all\'impostore, e la parola era "{word}".',
+    ],
+    unfiltered: [
+      'Era {name}. Vi è passato davanti e avete guardato altrove. Parola: "{word}".',
+    ],
+  },
+  impostorGuessed: {
+    family: [
+      'Colpo di scena: {name} era l\'impostore, l\'avete beccato, ma ha indovinato "{word}". Punto suo, tutti gli altri a zero.',
+    ],
+    unfiltered: [
+      'L\'avete preso e vi ha fregato lo stesso: {name} ha tirato fuori "{word}" dal nulla. Punto suo, voi a mani vuote.',
+    ],
+  },
   gridNobodyFinished: {
     family: [
       'Tempo scaduto e la griglia è ancora lì, mezza vuota. Nessun punto per nessuno.',
@@ -523,6 +574,12 @@ const MOODS = {
   brainfightWinner: 'celebrate',
   gridNobodyFinished: 'laugh',
   gridWinner: 'celebrate',
+  impostorStart: 'evil',
+  impostorVote: 'evil',
+  impostorTieByLot: 'laugh',
+  impostorCaught: 'celebrate',
+  impostorEscaped: 'laugh',
+  impostorGuessed: 'evil',
 };
 
 function pick(list) {

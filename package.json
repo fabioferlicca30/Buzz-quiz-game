@@ -1,12 +1,12 @@
 {
   "name": "quiz-party",
-  "version": "1.0.0",
-  "description": "Quiz party game multiplayer con buzzer - Express + Socket.io",
+  "version": "1.1.0",
+  "description": "Quiz party multiplayer da salotto: quiz a eliminazione, sfida finale a buzzer e griglie, modalità Impostore - Express + Socket.io",
   "main": "server/server.js",
   "type": "commonjs",
   "scripts": {
     "start": "node server/server.js",
-    "test": "node test/test_reconnect_ready.js && node test/test_brainfight_rules.js",
+    "test": "node test/test_reconnect_ready.js && node test/test_brainfight_rules.js && node test/test_impostor.js && node test/test_impostor_phase.js",
     "import-csv": "node server/scripts/importCsv.js"
   },
   "engines": {

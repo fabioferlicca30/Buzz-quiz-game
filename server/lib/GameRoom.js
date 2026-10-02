@@ -1,6 +1,7 @@
 const questionBank = require('./QuestionBank');
 const brainfightingBank = require('./BrainfightingBank');
 const gridGame = require('./GridGame');
+const { ImpostorPhase } = require('./ImpostorPhase');
 const host = require('./Host');
 
 const PHASE1_QUESTIONS = 10;
@@ -17,6 +18,12 @@ const BRAINFIGHT_TRIGGER_ROUNDS = 10; // dopo 10 round di eliminazione normale c
 const BRAINFIGHT_WINNING_SCORE = 3; // default se la stanza non sceglie niente
 const BRAINFIGHT_WINNING_SCORE_MIN = 1;
 const BRAINFIGHT_WINNING_SCORE_MAX = 10;
+
+function clampManches(value) {
+  const n = Math.round(Number(value));
+  if (!Number.isFinite(n) || n <= 0) return 0; // 0 = una manche a testa
+  return Math.min(15, n);
+}
 
 function clampWinningScore(value) {
   const n = Math.round(Number(value));
@@ -61,13 +68,21 @@ class GameRoom {
   constructor(code, hostSocketId, settings) {
     this.code = code;
     this.visibility = settings.visibility === 'public' ? 'public' : 'private';
-    this.mode = ['classic', 'brainfight'].includes(settings.mode) ? settings.mode : 'rush'; // 'rush' | 'classic' | 'brainfight'
+    this.mode = ['classic', 'brainfight', 'impostor'].includes(settings.mode) ? settings.mode : 'rush'; // 'rush' | 'classic' | 'brainfight' | 'impostor'
     this.difficulty = settings.difficulty || 'misto'; // facile|medio|difficile|superdifficile|impossibile|misto
     this.categories = Array.isArray(settings.categories) ? settings.categories.filter(Boolean) : []; // [] = "tutte"
     this.hostMode = settings.hostMode === 'unfiltered' ? 'unfiltered' : 'family'; // presentatore: 'family' o 'unfiltered' (non family friendly)
     // Punti necessari per vincere il brainfighting: lo sceglie chi crea la stanza, perché è
     // ciò che decide quanto dura la sfida finale. Fuori dall'intervallo si ricade sul default.
     this.winningScore = clampWinningScore(settings.winningScore);
+    // Modalità impostore: quante manche prima di chiudere. 0 = una a testa, così tutti fanno
+    // l'impostore lo stesso numero di volte.
+    this.impostorManches = clampManches(settings.impostorManches);
+    // Parole già uscite: non si ripetono per tutta la SESSIONE, non solo nella partita.
+    this.impostorUsedWords = new Set();
+    this.impostorTimesAsImpostor = new Map();
+    this.impostorRound = null;
+    this._impostorWatcher = null;
     this.hostSocketId = hostSocketId;
     this.players = new Map(); // socketId -> player
     this.state = 'lobby'; // lobby | phase1 | elimination | finished
@@ -230,6 +245,7 @@ class GameRoom {
       categories: this.categories,
       hostMode: this.hostMode,
       winningScore: this.winningScore,
+      impostorManches: this.impostorManches,
       state: this.state,
       matchNumber: this.matchNumber,
       players: this.playerList.map((p) => ({ nickname: p.nickname, isHost: p.isHost, connected: p.connected })),
@@ -456,6 +472,11 @@ class GameRoom {
       spectator: this.isSpectator(player),
       leftMatch: Boolean(player && player.leftMatch),
     });
+    // Modalità impostore: il ruolo e la parola vanno rimandati SOLO a lui, prima del resto.
+    // Non passano mai per gli eventi conservati, che sono di stanza.
+    if (this.impostorRound && typeof this.emitImpostorRole === 'function') {
+      this.emitImpostorRole(io, socketId);
+    }
     send(this.resumeContext);
     for (const step of this.resumeStep || []) send(step);
     io.to(socketId).emit('game:readyStatus', this.readyStatusPayload());
@@ -557,6 +578,12 @@ class GameRoom {
         io.to(this.code).emit('host:say', line);
         await wait(2500);
       }
+    }
+
+    // Modalità "impostore": non c'è nessuna domanda a risposta multipla, si gioca a manche.
+    if (this.mode === 'impostor') {
+      await this.runImpostorMode(io);
+      return;
     }
 
     // Modalità "solo brainfighting": si salta fase 1 e fase a eliminazione, si va dritti ai
@@ -1552,5 +1579,9 @@ class GameRoom {
     return true;
   }
 }
+
+// I metodi della modalità impostore vivono in ImpostorPhase.js, ma sono metodi di stanza a
+// tutti gli effetti: qui vengono innestati sul prototipo.
+Object.assign(GameRoom.prototype, ImpostorPhase);
 
 module.exports = { GameRoom, roundDifficulty };

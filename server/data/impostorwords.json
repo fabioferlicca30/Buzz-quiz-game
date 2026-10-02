@@ -1,0 +1,2004 @@
+{
+ "pairs": [
+  {
+   "theme": "Cibo",
+   "word": "Pizza",
+   "clue": "Forno"
+  },
+  {
+   "theme": "Cibo",
+   "word": "Gelato",
+   "clue": "Estate"
+  },
+  {
+   "theme": "Cibo",
+   "word": "Caffè",
+   "clue": "Mattina"
+  },
+  {
+   "theme": "Cibo",
+   "word": "Pane",
+   "clue": "Lievito"
+  },
+  {
+   "theme": "Cibo",
+   "word": "Formaggio",
+   "clue": "Stagionatura"
+  },
+  {
+   "theme": "Cibo",
+   "word": "Cioccolato",
+   "clue": "Regalo"
+  },
+  {
+   "theme": "Cibo",
+   "word": "Zuppa",
+   "clue": "Cucchiaio"
+  },
+  {
+   "theme": "Cibo",
+   "word": "Sushi",
+   "clue": "Riso"
+  },
+  {
+   "theme": "Cibo",
+   "word": "Miele",
+   "clue": "Barattolo"
+  },
+  {
+   "theme": "Cibo",
+   "word": "Peperoncino",
+   "clue": "Bruciore"
+  },
+  {
+   "theme": "Cibo",
+   "word": "Lasagna",
+   "clue": "Domenica"
+  },
+  {
+   "theme": "Cibo",
+   "word": "Popcorn",
+   "clue": "Cinema"
+  },
+  {
+   "theme": "Cibo",
+   "word": "Anguria",
+   "clue": "Semi"
+  },
+  {
+   "theme": "Cibo",
+   "word": "Pancetta",
+   "clue": "Padella"
+  },
+  {
+   "theme": "Cibo",
+   "word": "Tiramisù",
+   "clue": "Cucchiaino"
+  },
+  {
+   "theme": "Cibo",
+   "word": "Olive",
+   "clue": "Salamoia"
+  },
+  {
+   "theme": "Cibo",
+   "word": "Baguette",
+   "clue": "Croccante"
+  },
+  {
+   "theme": "Cibo",
+   "word": "Zucchero",
+   "clue": "Filo"
+  },
+  {
+   "theme": "Cibo",
+   "word": "Pesto",
+   "clue": "Mortaio"
+  },
+  {
+   "theme": "Cibo",
+   "word": "Uovo",
+   "clue": "Guscio"
+  },
+  {
+   "theme": "Animali",
+   "word": "Leone",
+   "clue": "Savana"
+  },
+  {
+   "theme": "Animali",
+   "word": "Pinguino",
+   "clue": "Ghiaccio"
+  },
+  {
+   "theme": "Animali",
+   "word": "Ape",
+   "clue": "Fiore"
+  },
+  {
+   "theme": "Animali",
+   "word": "Squalo",
+   "clue": "Profondità"
+  },
+  {
+   "theme": "Animali",
+   "word": "Gatto",
+   "clue": "Divano"
+  },
+  {
+   "theme": "Animali",
+   "word": "Aquila",
+   "clue": "Vetta"
+  },
+  {
+   "theme": "Animali",
+   "word": "Serpente",
+   "clue": "Muta"
+  },
+  {
+   "theme": "Animali",
+   "word": "Delfino",
+   "clue": "Salto"
+  },
+  {
+   "theme": "Animali",
+   "word": "Formica",
+   "clue": "Colonia"
+  },
+  {
+   "theme": "Animali",
+   "word": "Pipistrello",
+   "clue": "Buio"
+  },
+  {
+   "theme": "Animali",
+   "word": "Cammello",
+   "clue": "Deserto"
+  },
+  {
+   "theme": "Animali",
+   "word": "Polpo",
+   "clue": "Tentacolo"
+  },
+  {
+   "theme": "Animali",
+   "word": "Riccio",
+   "clue": "Spina"
+  },
+  {
+   "theme": "Animali",
+   "word": "Fenicottero",
+   "clue": "Zampa"
+  },
+  {
+   "theme": "Animali",
+   "word": "Lumaca",
+   "clue": "Bava"
+  },
+  {
+   "theme": "Animali",
+   "word": "Koala",
+   "clue": "Eucalipto"
+  },
+  {
+   "theme": "Animali",
+   "word": "Zanzara",
+   "clue": "Ronzio"
+  },
+  {
+   "theme": "Animali",
+   "word": "Tartaruga",
+   "clue": "Corazza"
+  },
+  {
+   "theme": "Animali",
+   "word": "Lupo",
+   "clue": "Branco"
+  },
+  {
+   "theme": "Animali",
+   "word": "Colibrì",
+   "clue": "Battito"
+  },
+  {
+   "theme": "Oggetti",
+   "word": "Ombrello",
+   "clue": "Nuvola"
+  },
+  {
+   "theme": "Oggetti",
+   "word": "Chiave",
+   "clue": "Serratura"
+  },
+  {
+   "theme": "Oggetti",
+   "word": "Specchio",
+   "clue": "Riflesso"
+  },
+  {
+   "theme": "Oggetti",
+   "word": "Candela",
+   "clue": "Cera"
+  },
+  {
+   "theme": "Oggetti",
+   "word": "Valigia",
+   "clue": "Partenza"
+  },
+  {
+   "theme": "Oggetti",
+   "word": "Orologio",
+   "clue": "Lancetta"
+  },
+  {
+   "theme": "Oggetti",
+   "word": "Scala",
+   "clue": "Altezza"
+  },
+  {
+   "theme": "Oggetti",
+   "word": "Bussola",
+   "clue": "Nord"
+  },
+  {
+   "theme": "Oggetti",
+   "word": "Martello",
+   "clue": "Chiodo"
+  },
+  {
+   "theme": "Oggetti",
+   "word": "Occhiali",
+   "clue": "Lente"
+  },
+  {
+   "theme": "Oggetti",
+   "word": "Cuscino",
+   "clue": "Notte"
+  },
+  {
+   "theme": "Oggetti",
+   "word": "Forbici",
+   "clue": "Taglio"
+  },
+  {
+   "theme": "Oggetti",
+   "word": "Bottone",
+   "clue": "Asola"
+  },
+  {
+   "theme": "Oggetti",
+   "word": "Ventaglio",
+   "clue": "Afa"
+  },
+  {
+   "theme": "Oggetti",
+   "word": "Lucchetto",
+   "clue": "Combinazione"
+  },
+  {
+   "theme": "Oggetti",
+   "word": "Imbuto",
+   "clue": "Collo"
+  },
+  {
+   "theme": "Oggetti",
+   "word": "Spazzola",
+   "clue": "Nodo"
+  },
+  {
+   "theme": "Oggetti",
+   "word": "Termometro",
+   "clue": "Febbre"
+  },
+  {
+   "theme": "Oggetti",
+   "word": "Guinzaglio",
+   "clue": "Passeggiata"
+  },
+  {
+   "theme": "Oggetti",
+   "word": "Tappo",
+   "clue": "Bottiglia"
+  },
+  {
+   "theme": "Luoghi",
+   "word": "Spiaggia",
+   "clue": "Sabbia"
+  },
+  {
+   "theme": "Luoghi",
+   "word": "Biblioteca",
+   "clue": "Silenzio"
+  },
+  {
+   "theme": "Luoghi",
+   "word": "Aeroporto",
+   "clue": "Attesa"
+  },
+  {
+   "theme": "Luoghi",
+   "word": "Montagna",
+   "clue": "Sentiero"
+  },
+  {
+   "theme": "Luoghi",
+   "word": "Mercato",
+   "clue": "Bancarella"
+  },
+  {
+   "theme": "Luoghi",
+   "word": "Ospedale",
+   "clue": "Corsia"
+  },
+  {
+   "theme": "Luoghi",
+   "word": "Cantina",
+   "clue": "Umidità"
+  },
+  {
+   "theme": "Luoghi",
+   "word": "Faro",
+   "clue": "Scogliera"
+  },
+  {
+   "theme": "Luoghi",
+   "word": "Stadio",
+   "clue": "Tifo"
+  },
+  {
+   "theme": "Luoghi",
+   "word": "Deserto",
+   "clue": "Miraggio"
+  },
+  {
+   "theme": "Luoghi",
+   "word": "Castello",
+   "clue": "Torre"
+  },
+  {
+   "theme": "Luoghi",
+   "word": "Metropolitana",
+   "clue": "Tunnel"
+  },
+  {
+   "theme": "Luoghi",
+   "word": "Museo",
+   "clue": "Didascalia"
+  },
+  {
+   "theme": "Luoghi",
+   "word": "Serra",
+   "clue": "Vetro"
+  },
+  {
+   "theme": "Luoghi",
+   "word": "Porto",
+   "clue": "Ormeggio"
+  },
+  {
+   "theme": "Luoghi",
+   "word": "Miniera",
+   "clue": "Galleria"
+  },
+  {
+   "theme": "Luoghi",
+   "word": "Piazza",
+   "clue": "Fontana"
+  },
+  {
+   "theme": "Luoghi",
+   "word": "Rifugio",
+   "clue": "Quota"
+  },
+  {
+   "theme": "Luoghi",
+   "word": "Autogrill",
+   "clue": "Sosta"
+  },
+  {
+   "theme": "Luoghi",
+   "word": "Parcheggio",
+   "clue": "Strisce"
+  },
+  {
+   "theme": "Sport",
+   "word": "Calcio",
+   "clue": "Rigore"
+  },
+  {
+   "theme": "Sport",
+   "word": "Nuoto",
+   "clue": "Vasca"
+  },
+  {
+   "theme": "Sport",
+   "word": "Sci",
+   "clue": "Pendio"
+  },
+  {
+   "theme": "Sport",
+   "word": "Scacchi",
+   "clue": "Mossa"
+  },
+  {
+   "theme": "Sport",
+   "word": "Boxe",
+   "clue": "Guantone"
+  },
+  {
+   "theme": "Sport",
+   "word": "Maratona",
+   "clue": "Fatica"
+  },
+  {
+   "theme": "Sport",
+   "word": "Tennis",
+   "clue": "Rete"
+  },
+  {
+   "theme": "Sport",
+   "word": "Surf",
+   "clue": "Onda"
+  },
+  {
+   "theme": "Sport",
+   "word": "Ciclismo",
+   "clue": "Salita"
+  },
+  {
+   "theme": "Sport",
+   "word": "Pallavolo",
+   "clue": "Muro"
+  },
+  {
+   "theme": "Sport",
+   "word": "Arrampicata",
+   "clue": "Presa"
+  },
+  {
+   "theme": "Sport",
+   "word": "Freccette",
+   "clue": "Bersaglio"
+  },
+  {
+   "theme": "Sport",
+   "word": "Judo",
+   "clue": "Cintura"
+  },
+  {
+   "theme": "Sport",
+   "word": "Rugby",
+   "clue": "Mischia"
+  },
+  {
+   "theme": "Sport",
+   "word": "Golf",
+   "clue": "Buca"
+  },
+  {
+   "theme": "Sport",
+   "word": "Pattinaggio",
+   "clue": "Piroetta"
+  },
+  {
+   "theme": "Sport",
+   "word": "Canottaggio",
+   "clue": "Remo"
+  },
+  {
+   "theme": "Sport",
+   "word": "Bowling",
+   "clue": "Birillo"
+  },
+  {
+   "theme": "Sport",
+   "word": "Scherma",
+   "clue": "Affondo"
+  },
+  {
+   "theme": "Sport",
+   "word": "Pallanuoto",
+   "clue": "Cuffia"
+  },
+  {
+   "theme": "Mestieri",
+   "word": "Medico",
+   "clue": "Camice"
+  },
+  {
+   "theme": "Mestieri",
+   "word": "Pompiere",
+   "clue": "Sirena"
+  },
+  {
+   "theme": "Mestieri",
+   "word": "Insegnante",
+   "clue": "Lavagna"
+  },
+  {
+   "theme": "Mestieri",
+   "word": "Cuoco",
+   "clue": "Fornello"
+  },
+  {
+   "theme": "Mestieri",
+   "word": "Astronauta",
+   "clue": "Assenza"
+  },
+  {
+   "theme": "Mestieri",
+   "word": "Giudice",
+   "clue": "Sentenza"
+  },
+  {
+   "theme": "Mestieri",
+   "word": "Falegname",
+   "clue": "Segatura"
+  },
+  {
+   "theme": "Mestieri",
+   "word": "Fotografo",
+   "clue": "Scatto"
+  },
+  {
+   "theme": "Mestieri",
+   "word": "Pilota",
+   "clue": "Cabina"
+  },
+  {
+   "theme": "Mestieri",
+   "word": "Barbiere",
+   "clue": "Rasoio"
+  },
+  {
+   "theme": "Mestieri",
+   "word": "Contadino",
+   "clue": "Raccolto"
+  },
+  {
+   "theme": "Mestieri",
+   "word": "Archeologo",
+   "clue": "Scavo"
+  },
+  {
+   "theme": "Mestieri",
+   "word": "Sarto",
+   "clue": "Metro"
+  },
+  {
+   "theme": "Mestieri",
+   "word": "Postino",
+   "clue": "Citofono"
+  },
+  {
+   "theme": "Mestieri",
+   "word": "Bagnino",
+   "clue": "Fischietto"
+  },
+  {
+   "theme": "Mestieri",
+   "word": "Idraulico",
+   "clue": "Perdita"
+  },
+  {
+   "theme": "Mestieri",
+   "word": "Veterinario",
+   "clue": "Museruola"
+  },
+  {
+   "theme": "Mestieri",
+   "word": "Fioraio",
+   "clue": "Gambo"
+  },
+  {
+   "theme": "Mestieri",
+   "word": "Elettricista",
+   "clue": "Presa"
+  },
+  {
+   "theme": "Mestieri",
+   "word": "Panettiere",
+   "clue": "Alba"
+  },
+  {
+   "theme": "Natura",
+   "word": "Temporale",
+   "clue": "Lampo"
+  },
+  {
+   "theme": "Natura",
+   "word": "Vulcano",
+   "clue": "Cenere"
+  },
+  {
+   "theme": "Natura",
+   "word": "Arcobaleno",
+   "clue": "Pioggia"
+  },
+  {
+   "theme": "Natura",
+   "word": "Nebbia",
+   "clue": "Visibilità"
+  },
+  {
+   "theme": "Natura",
+   "word": "Marea",
+   "clue": "Luna"
+  },
+  {
+   "theme": "Natura",
+   "word": "Bosco",
+   "clue": "Muschio"
+  },
+  {
+   "theme": "Natura",
+   "word": "Cascata",
+   "clue": "Fragore"
+  },
+  {
+   "theme": "Natura",
+   "word": "Neve",
+   "clue": "Silenzio"
+  },
+  {
+   "theme": "Natura",
+   "word": "Terremoto",
+   "clue": "Scossa"
+  },
+  {
+   "theme": "Natura",
+   "word": "Alba",
+   "clue": "Orizzonte"
+  },
+  {
+   "theme": "Natura",
+   "word": "Vento",
+   "clue": "Mulino"
+  },
+  {
+   "theme": "Natura",
+   "word": "Palude",
+   "clue": "Fango"
+  },
+  {
+   "theme": "Natura",
+   "word": "Ghiacciaio",
+   "clue": "Crepaccio"
+  },
+  {
+   "theme": "Natura",
+   "word": "Duna",
+   "clue": "Cresta"
+  },
+  {
+   "theme": "Natura",
+   "word": "Grotta",
+   "clue": "Stalattite"
+  },
+  {
+   "theme": "Natura",
+   "word": "Scogliera",
+   "clue": "Salsedine"
+  },
+  {
+   "theme": "Natura",
+   "word": "Prateria",
+   "clue": "Distesa"
+  },
+  {
+   "theme": "Natura",
+   "word": "Geyser",
+   "clue": "Vapore"
+  },
+  {
+   "theme": "Natura",
+   "word": "Foresta",
+   "clue": "Chioma"
+  },
+  {
+   "theme": "Natura",
+   "word": "Fiume",
+   "clue": "Foce"
+  },
+  {
+   "theme": "Casa",
+   "word": "Frigorifero",
+   "clue": "Ronzio"
+  },
+  {
+   "theme": "Casa",
+   "word": "Balcone",
+   "clue": "Ringhiera"
+  },
+  {
+   "theme": "Casa",
+   "word": "Camino",
+   "clue": "Fumo"
+  },
+  {
+   "theme": "Casa",
+   "word": "Lavatrice",
+   "clue": "Centrifuga"
+  },
+  {
+   "theme": "Casa",
+   "word": "Soffitta",
+   "clue": "Polvere"
+  },
+  {
+   "theme": "Casa",
+   "word": "Tappeto",
+   "clue": "Briciole"
+  },
+  {
+   "theme": "Casa",
+   "word": "Campanello",
+   "clue": "Visita"
+  },
+  {
+   "theme": "Casa",
+   "word": "Rubinetto",
+   "clue": "Goccia"
+  },
+  {
+   "theme": "Casa",
+   "word": "Armadio",
+   "clue": "Gruccia"
+  },
+  {
+   "theme": "Casa",
+   "word": "Finestra",
+   "clue": "Tenda"
+  },
+  {
+   "theme": "Casa",
+   "word": "Materasso",
+   "clue": "Molla"
+  },
+  {
+   "theme": "Casa",
+   "word": "Citofono",
+   "clue": "Portone"
+  },
+  {
+   "theme": "Casa",
+   "word": "Scaffale",
+   "clue": "Ordine"
+  },
+  {
+   "theme": "Casa",
+   "word": "Cassetto",
+   "clue": "Fondo"
+  },
+  {
+   "theme": "Casa",
+   "word": "Zerbino",
+   "clue": "Ingresso"
+  },
+  {
+   "theme": "Casa",
+   "word": "Lampadario",
+   "clue": "Soffitto"
+  },
+  {
+   "theme": "Casa",
+   "word": "Piastrella",
+   "clue": "Fuga"
+  },
+  {
+   "theme": "Casa",
+   "word": "Portafoto",
+   "clue": "Mensola"
+  },
+  {
+   "theme": "Casa",
+   "word": "Cantinola",
+   "clue": "Chiave"
+  },
+  {
+   "theme": "Casa",
+   "word": "Bollitore",
+   "clue": "Fischio"
+  },
+  {
+   "theme": "Musica",
+   "word": "Chitarra",
+   "clue": "Palco"
+  },
+  {
+   "theme": "Musica",
+   "word": "Circo",
+   "clue": "Tendone"
+  },
+  {
+   "theme": "Musica",
+   "word": "Opera",
+   "clue": "Sipario"
+  },
+  {
+   "theme": "Musica",
+   "word": "Batteria",
+   "clue": "Ritmo"
+  },
+  {
+   "theme": "Musica",
+   "word": "Karaoke",
+   "clue": "Stonatura"
+  },
+  {
+   "theme": "Musica",
+   "word": "Balletto",
+   "clue": "Punta"
+  },
+  {
+   "theme": "Musica",
+   "word": "Trombone",
+   "clue": "Fiato"
+  },
+  {
+   "theme": "Musica",
+   "word": "Concerto",
+   "clue": "Bis"
+  },
+  {
+   "theme": "Musica",
+   "word": "Mimo",
+   "clue": "Gesto"
+  },
+  {
+   "theme": "Musica",
+   "word": "Coro",
+   "clue": "Insieme"
+  },
+  {
+   "theme": "Musica",
+   "word": "Violino",
+   "clue": "Archetto"
+  },
+  {
+   "theme": "Musica",
+   "word": "Discoteca",
+   "clue": "Bassi"
+  },
+  {
+   "theme": "Musica",
+   "word": "Metronomo",
+   "clue": "Costanza"
+  },
+  {
+   "theme": "Musica",
+   "word": "Pianoforte",
+   "clue": "Pedale"
+  },
+  {
+   "theme": "Musica",
+   "word": "Cornamusa",
+   "clue": "Sacca"
+  },
+  {
+   "theme": "Musica",
+   "word": "Fisarmonica",
+   "clue": "Mantice"
+  },
+  {
+   "theme": "Musica",
+   "word": "Arpa",
+   "clue": "Corda"
+  },
+  {
+   "theme": "Musica",
+   "word": "Tamburo",
+   "clue": "Pelle"
+  },
+  {
+   "theme": "Musica",
+   "word": "Spartito",
+   "clue": "Pentagramma"
+  },
+  {
+   "theme": "Musica",
+   "word": "Ukulele",
+   "clue": "Isola"
+  },
+  {
+   "theme": "Astratte",
+   "word": "Nostalgia",
+   "clue": "Fotografia"
+  },
+  {
+   "theme": "Astratte",
+   "word": "Bugia",
+   "clue": "Occhi"
+  },
+  {
+   "theme": "Astratte",
+   "word": "Coraggio",
+   "clue": "Passo"
+  },
+  {
+   "theme": "Astratte",
+   "word": "Noia",
+   "clue": "Orologio"
+  },
+  {
+   "theme": "Astratte",
+   "word": "Invidia",
+   "clue": "Confronto"
+  },
+  {
+   "theme": "Astratte",
+   "word": "Segreto",
+   "clue": "Promessa"
+  },
+  {
+   "theme": "Astratte",
+   "word": "Abitudine",
+   "clue": "Ripetizione"
+  },
+  {
+   "theme": "Astratte",
+   "word": "Fretta",
+   "clue": "Ritardo"
+  },
+  {
+   "theme": "Astratte",
+   "word": "Sorpresa",
+   "clue": "Regalo"
+  },
+  {
+   "theme": "Astratte",
+   "word": "Vergogna",
+   "clue": "Rossore"
+  },
+  {
+   "theme": "Astratte",
+   "word": "Speranza",
+   "clue": "Domani"
+  },
+  {
+   "theme": "Astratte",
+   "word": "Fiducia",
+   "clue": "Consegna"
+  },
+  {
+   "theme": "Astratte",
+   "word": "Rimpianto",
+   "clue": "Bivio"
+  },
+  {
+   "theme": "Astratte",
+   "word": "Curiosità",
+   "clue": "Domanda"
+  },
+  {
+   "theme": "Astratte",
+   "word": "Pazienza",
+   "clue": "Coda"
+  },
+  {
+   "theme": "Astratte",
+   "word": "Gelosia",
+   "clue": "Messaggio"
+  },
+  {
+   "theme": "Astratte",
+   "word": "Sollievo",
+   "clue": "Respiro"
+  },
+  {
+   "theme": "Astratte",
+   "word": "Imbarazzo",
+   "clue": "Silenzio"
+  },
+  {
+   "theme": "Astratte",
+   "word": "Orgoglio",
+   "clue": "Petto"
+  },
+  {
+   "theme": "Astratte",
+   "word": "Solitudine",
+   "clue": "Eco"
+  },
+  {
+   "theme": "Trasporti",
+   "word": "Bicicletta",
+   "clue": "Catena"
+  },
+  {
+   "theme": "Trasporti",
+   "word": "Treno",
+   "clue": "Binario"
+  },
+  {
+   "theme": "Trasporti",
+   "word": "Mongolfiera",
+   "clue": "Cesto"
+  },
+  {
+   "theme": "Trasporti",
+   "word": "Sottomarino",
+   "clue": "Periscopio"
+  },
+  {
+   "theme": "Trasporti",
+   "word": "Traghetto",
+   "clue": "Rampa"
+  },
+  {
+   "theme": "Trasporti",
+   "word": "Motocicletta",
+   "clue": "Casco"
+  },
+  {
+   "theme": "Trasporti",
+   "word": "Elicottero",
+   "clue": "Pala"
+  },
+  {
+   "theme": "Trasporti",
+   "word": "Monopattino",
+   "clue": "Marciapiede"
+  },
+  {
+   "theme": "Trasporti",
+   "word": "Camion",
+   "clue": "Rimorchio"
+  },
+  {
+   "theme": "Trasporti",
+   "word": "Funivia",
+   "clue": "Cavo"
+  },
+  {
+   "theme": "Trasporti",
+   "word": "Canoa",
+   "clue": "Pagaia"
+  },
+  {
+   "theme": "Trasporti",
+   "word": "Autobus",
+   "clue": "Fermata"
+  },
+  {
+   "theme": "Trasporti",
+   "word": "Slitta",
+   "clue": "Neve"
+  },
+  {
+   "theme": "Trasporti",
+   "word": "Taxi",
+   "clue": "Tassametro"
+  },
+  {
+   "theme": "Trasporti",
+   "word": "Aliscafo",
+   "clue": "Cuscino"
+  },
+  {
+   "theme": "Trasporti",
+   "word": "Roulotte",
+   "clue": "Traino"
+  },
+  {
+   "theme": "Trasporti",
+   "word": "Tram",
+   "clue": "Rotaia"
+  },
+  {
+   "theme": "Trasporti",
+   "word": "Ambulanza",
+   "clue": "Lampeggiante"
+  },
+  {
+   "theme": "Trasporti",
+   "word": "Deltaplano",
+   "clue": "Termica"
+  },
+  {
+   "theme": "Trasporti",
+   "word": "Zattera",
+   "clue": "Corrente"
+  },
+  {
+   "theme": "Corpo",
+   "word": "Ginocchio",
+   "clue": "Sbucciatura"
+  },
+  {
+   "theme": "Corpo",
+   "word": "Ciglia",
+   "clue": "Battito"
+  },
+  {
+   "theme": "Corpo",
+   "word": "Cicatrice",
+   "clue": "Ricordo"
+  },
+  {
+   "theme": "Corpo",
+   "word": "Impronta",
+   "clue": "Unico"
+  },
+  {
+   "theme": "Corpo",
+   "word": "Sbadiglio",
+   "clue": "Contagio"
+  },
+  {
+   "theme": "Corpo",
+   "word": "Singhiozzo",
+   "clue": "Spavento"
+  },
+  {
+   "theme": "Corpo",
+   "word": "Ombelico",
+   "clue": "Nodo"
+  },
+  {
+   "theme": "Corpo",
+   "word": "Caviglia",
+   "clue": "Storta"
+  },
+  {
+   "theme": "Corpo",
+   "word": "Ruga",
+   "clue": "Espressione"
+  },
+  {
+   "theme": "Corpo",
+   "word": "Gomito",
+   "clue": "Urto"
+  },
+  {
+   "theme": "Corpo",
+   "word": "Voce",
+   "clue": "Timbro"
+  },
+  {
+   "theme": "Corpo",
+   "word": "Respiro",
+   "clue": "Affanno"
+  },
+  {
+   "theme": "Corpo",
+   "word": "Polso",
+   "clue": "Battito"
+  },
+  {
+   "theme": "Corpo",
+   "word": "Lentiggine",
+   "clue": "Sole"
+  },
+  {
+   "theme": "Corpo",
+   "word": "Tallone",
+   "clue": "Vescica"
+  },
+  {
+   "theme": "Corpo",
+   "word": "Sopracciglio",
+   "clue": "Arco"
+  },
+  {
+   "theme": "Corpo",
+   "word": "Dente",
+   "clue": "Fatina"
+  },
+  {
+   "theme": "Corpo",
+   "word": "Capello",
+   "clue": "Nodo"
+  },
+  {
+   "theme": "Corpo",
+   "word": "Pelle",
+   "clue": "Oca"
+  },
+  {
+   "theme": "Corpo",
+   "word": "Lingua",
+   "clue": "Sapore"
+  },
+  {
+   "theme": "Feste",
+   "word": "Compleanno",
+   "clue": "Candelina"
+  },
+  {
+   "theme": "Feste",
+   "word": "Matrimonio",
+   "clue": "Riso"
+  },
+  {
+   "theme": "Feste",
+   "word": "Carnevale",
+   "clue": "Coriandolo"
+  },
+  {
+   "theme": "Feste",
+   "word": "Halloween",
+   "clue": "Bussata"
+  },
+  {
+   "theme": "Feste",
+   "word": "Capodanno",
+   "clue": "Conto"
+  },
+  {
+   "theme": "Feste",
+   "word": "Battesimo",
+   "clue": "Padrino"
+  },
+  {
+   "theme": "Feste",
+   "word": "Laurea",
+   "clue": "Corona"
+  },
+  {
+   "theme": "Feste",
+   "word": "Ferragosto",
+   "clue": "Grigliata"
+  },
+  {
+   "theme": "Feste",
+   "word": "Epifania",
+   "clue": "Calza"
+  },
+  {
+   "theme": "Feste",
+   "word": "Pasqua",
+   "clue": "Uovo"
+  },
+  {
+   "theme": "Feste",
+   "word": "Anniversario",
+   "clue": "Data"
+  },
+  {
+   "theme": "Feste",
+   "word": "Sagra",
+   "clue": "Stand"
+  },
+  {
+   "theme": "Feste",
+   "word": "Pigiama Party",
+   "clue": "Cuscino"
+  },
+  {
+   "theme": "Feste",
+   "word": "Addio",
+   "clue": "Fascia"
+  },
+  {
+   "theme": "Feste",
+   "word": "Inaugurazione",
+   "clue": "Nastro"
+  },
+  {
+   "theme": "Feste",
+   "word": "Processione",
+   "clue": "Corteo"
+  },
+  {
+   "theme": "Feste",
+   "word": "Fiera",
+   "clue": "Padiglione"
+  },
+  {
+   "theme": "Feste",
+   "word": "Veglione",
+   "clue": "Brindisi"
+  },
+  {
+   "theme": "Feste",
+   "word": "Cerimonia",
+   "clue": "Discorso"
+  },
+  {
+   "theme": "Feste",
+   "word": "Festa",
+   "clue": "Invito"
+  },
+  {
+   "theme": "Scuola",
+   "word": "Interrogazione",
+   "clue": "Sudore"
+  },
+  {
+   "theme": "Scuola",
+   "word": "Ricreazione",
+   "clue": "Panino"
+  },
+  {
+   "theme": "Scuola",
+   "word": "Zaino",
+   "clue": "Spalla"
+  },
+  {
+   "theme": "Scuola",
+   "word": "Gessetto",
+   "clue": "Polvere"
+  },
+  {
+   "theme": "Scuola",
+   "word": "Pagella",
+   "clue": "Firma"
+  },
+  {
+   "theme": "Scuola",
+   "word": "Gita",
+   "clue": "Pullman"
+  },
+  {
+   "theme": "Scuola",
+   "word": "Compito",
+   "clue": "Copiatura"
+  },
+  {
+   "theme": "Scuola",
+   "word": "Preside",
+   "clue": "Convocazione"
+  },
+  {
+   "theme": "Scuola",
+   "word": "Banco",
+   "clue": "Inciso"
+  },
+  {
+   "theme": "Scuola",
+   "word": "Diario",
+   "clue": "Scarabocchio"
+  },
+  {
+   "theme": "Scuola",
+   "word": "Appello",
+   "clue": "Presente"
+  },
+  {
+   "theme": "Scuola",
+   "word": "Bidello",
+   "clue": "Chiavi"
+  },
+  {
+   "theme": "Scuola",
+   "word": "Cattedra",
+   "clue": "Rialzo"
+  },
+  {
+   "theme": "Scuola",
+   "word": "Astuccio",
+   "clue": "Cerniera"
+  },
+  {
+   "theme": "Scuola",
+   "word": "Mensa",
+   "clue": "Vassoio"
+  },
+  {
+   "theme": "Scuola",
+   "word": "Verifica",
+   "clue": "Foglio"
+  },
+  {
+   "theme": "Scuola",
+   "word": "Corridoio",
+   "clue": "Corsa"
+  },
+  {
+   "theme": "Scuola",
+   "word": "Palestra",
+   "clue": "Quadro"
+  },
+  {
+   "theme": "Scuola",
+   "word": "Registro",
+   "clue": "Assenza"
+  },
+  {
+   "theme": "Scuola",
+   "word": "Cortile",
+   "clue": "Campanella"
+  },
+  {
+   "theme": "Tecnologia",
+   "word": "Password",
+   "clue": "Dimenticanza"
+  },
+  {
+   "theme": "Tecnologia",
+   "word": "Ricarica",
+   "clue": "Percentuale"
+  },
+  {
+   "theme": "Tecnologia",
+   "word": "Notifica",
+   "clue": "Vibrazione"
+  },
+  {
+   "theme": "Tecnologia",
+   "word": "Wifi",
+   "clue": "Tacche"
+  },
+  {
+   "theme": "Tecnologia",
+   "word": "Schermo",
+   "clue": "Crepa"
+  },
+  {
+   "theme": "Tecnologia",
+   "word": "Cavo",
+   "clue": "Groviglio"
+  },
+  {
+   "theme": "Tecnologia",
+   "word": "Cuffie",
+   "clue": "Isolamento"
+  },
+  {
+   "theme": "Tecnologia",
+   "word": "Aggiornamento",
+   "clue": "Riavvio"
+  },
+  {
+   "theme": "Tecnologia",
+   "word": "Stampante",
+   "clue": "Inceppo"
+  },
+  {
+   "theme": "Tecnologia",
+   "word": "Cestino",
+   "clue": "Recupero"
+  },
+  {
+   "theme": "Tecnologia",
+   "word": "Emoji",
+   "clue": "Fraintendimento"
+  },
+  {
+   "theme": "Tecnologia",
+   "word": "Selfie",
+   "clue": "Braccio"
+  },
+  {
+   "theme": "Tecnologia",
+   "word": "Backup",
+   "clue": "Rimpianto"
+  },
+  {
+   "theme": "Tecnologia",
+   "word": "Antenna",
+   "clue": "Segnale"
+  },
+  {
+   "theme": "Tecnologia",
+   "word": "Drone",
+   "clue": "Ronzio"
+  },
+  {
+   "theme": "Tecnologia",
+   "word": "Robot",
+   "clue": "Assemblaggio"
+  },
+  {
+   "theme": "Tecnologia",
+   "word": "Videochiamata",
+   "clue": "Ritardo"
+  },
+  {
+   "theme": "Tecnologia",
+   "word": "Tastiera",
+   "clue": "Tasto"
+  },
+  {
+   "theme": "Tecnologia",
+   "word": "Chiavetta",
+   "clue": "Verso"
+  },
+  {
+   "theme": "Tecnologia",
+   "word": "Caricabatterie",
+   "clue": "Prestito"
+  },
+  {
+   "theme": "Vestiti",
+   "word": "Cravatta",
+   "clue": "Nodo"
+  },
+  {
+   "theme": "Vestiti",
+   "word": "Sciarpa",
+   "clue": "Giro"
+  },
+  {
+   "theme": "Vestiti",
+   "word": "Calzino",
+   "clue": "Spaiato"
+  },
+  {
+   "theme": "Vestiti",
+   "word": "Cappello",
+   "clue": "Vento"
+  },
+  {
+   "theme": "Vestiti",
+   "word": "Impermeabile",
+   "clue": "Cappuccio"
+  },
+  {
+   "theme": "Vestiti",
+   "word": "Costume",
+   "clue": "Spogliatoio"
+  },
+  {
+   "theme": "Vestiti",
+   "word": "Cintura",
+   "clue": "Buco"
+  },
+  {
+   "theme": "Vestiti",
+   "word": "Guanto",
+   "clue": "Perdita"
+  },
+  {
+   "theme": "Vestiti",
+   "word": "Pigiama",
+   "clue": "Domenica"
+  },
+  {
+   "theme": "Vestiti",
+   "word": "Scarpone",
+   "clue": "Suola"
+  },
+  {
+   "theme": "Vestiti",
+   "word": "Papillon",
+   "clue": "Cerimonia"
+  },
+  {
+   "theme": "Vestiti",
+   "word": "Felpa",
+   "clue": "Tasca"
+  },
+  {
+   "theme": "Vestiti",
+   "word": "Sandalo",
+   "clue": "Fibbia"
+  },
+  {
+   "theme": "Vestiti",
+   "word": "Camicia",
+   "clue": "Colletto"
+  },
+  {
+   "theme": "Vestiti",
+   "word": "Bretelle",
+   "clue": "Spalla"
+  },
+  {
+   "theme": "Vestiti",
+   "word": "Jeans",
+   "clue": "Strappo"
+  },
+  {
+   "theme": "Vestiti",
+   "word": "Cappotto",
+   "clue": "Fodera"
+  },
+  {
+   "theme": "Vestiti",
+   "word": "Grembiule",
+   "clue": "Macchia"
+  },
+  {
+   "theme": "Vestiti",
+   "word": "Infradito",
+   "clue": "Rumore"
+  },
+  {
+   "theme": "Vestiti",
+   "word": "Tuta",
+   "clue": "Elastico"
+  },
+  {
+   "theme": "Cinema e TV",
+   "word": "Poltrona",
+   "clue": "Bracciolo"
+  },
+  {
+   "theme": "Cinema e TV",
+   "word": "Telecomando",
+   "clue": "Divano"
+  },
+  {
+   "theme": "Cinema e TV",
+   "word": "Sottotitolo",
+   "clue": "Lettura"
+  },
+  {
+   "theme": "Cinema e TV",
+   "word": "Colonna sonora",
+   "clue": "Brivido"
+  },
+  {
+   "theme": "Cinema e TV",
+   "word": "Comparsa",
+   "clue": "Sfondo"
+  },
+  {
+   "theme": "Cinema e TV",
+   "word": "Doppiaggio",
+   "clue": "Voce"
+  },
+  {
+   "theme": "Cinema e TV",
+   "word": "Ciak",
+   "clue": "Numero"
+  },
+  {
+   "theme": "Cinema e TV",
+   "word": "Titoli",
+   "clue": "Coda"
+  },
+  {
+   "theme": "Cinema e TV",
+   "word": "Trailer",
+   "clue": "Attesa"
+  },
+  {
+   "theme": "Cinema e TV",
+   "word": "Serie",
+   "clue": "Puntata"
+  },
+  {
+   "theme": "Cinema e TV",
+   "word": "Documentario",
+   "clue": "Voce narrante"
+  },
+  {
+   "theme": "Cinema e TV",
+   "word": "Quiz",
+   "clue": "Buzzer"
+  },
+  {
+   "theme": "Cinema e TV",
+   "word": "Telegiornale",
+   "clue": "Sigla"
+  },
+  {
+   "theme": "Cinema e TV",
+   "word": "Cartone",
+   "clue": "Domenica"
+  },
+  {
+   "theme": "Cinema e TV",
+   "word": "Thriller",
+   "clue": "Colpo"
+  },
+  {
+   "theme": "Cinema e TV",
+   "word": "Commedia",
+   "clue": "Risata"
+  },
+  {
+   "theme": "Cinema e TV",
+   "word": "Regista",
+   "clue": "Sedia"
+  },
+  {
+   "theme": "Cinema e TV",
+   "word": "Costumista",
+   "clue": "Prova"
+  },
+  {
+   "theme": "Cinema e TV",
+   "word": "Premiere",
+   "clue": "Tappeto"
+  },
+  {
+   "theme": "Cinema e TV",
+   "word": "Recensione",
+   "clue": "Stella"
+  },
+  {
+   "theme": "Giochi",
+   "word": "Nascondino",
+   "clue": "Conta"
+  },
+  {
+   "theme": "Giochi",
+   "word": "Dado",
+   "clue": "Lancio"
+  },
+  {
+   "theme": "Giochi",
+   "word": "Puzzle",
+   "clue": "Angolo"
+  },
+  {
+   "theme": "Giochi",
+   "word": "Aquilone",
+   "clue": "Filo"
+  },
+  {
+   "theme": "Giochi",
+   "word": "Altalena",
+   "clue": "Spinta"
+  },
+  {
+   "theme": "Giochi",
+   "word": "Biglie",
+   "clue": "Cerchio"
+  },
+  {
+   "theme": "Giochi",
+   "word": "Carte",
+   "clue": "Mazzo"
+  },
+  {
+   "theme": "Giochi",
+   "word": "Domino",
+   "clue": "Fila"
+  },
+  {
+   "theme": "Giochi",
+   "word": "Scivolo",
+   "clue": "Coda"
+  },
+  {
+   "theme": "Giochi",
+   "word": "Bolle",
+   "clue": "Sapone"
+  },
+  {
+   "theme": "Giochi",
+   "word": "Sasso",
+   "clue": "Morra"
+  },
+  {
+   "theme": "Giochi",
+   "word": "Tombola",
+   "clue": "Cartella"
+  },
+  {
+   "theme": "Giochi",
+   "word": "Freccia",
+   "clue": "Arco"
+  },
+  {
+   "theme": "Giochi",
+   "word": "Peluche",
+   "clue": "Cucitura"
+  },
+  {
+   "theme": "Giochi",
+   "word": "Trottola",
+   "clue": "Giro"
+  },
+  {
+   "theme": "Giochi",
+   "word": "Yoyo",
+   "clue": "Ritorno"
+  },
+  {
+   "theme": "Giochi",
+   "word": "Bandierina",
+   "clue": "Chiamata"
+  },
+  {
+   "theme": "Giochi",
+   "word": "Corda",
+   "clue": "Salto"
+  },
+  {
+   "theme": "Giochi",
+   "word": "Costruzioni",
+   "clue": "Mattoncino"
+  },
+  {
+   "theme": "Giochi",
+   "word": "Rincorsa",
+   "clue": "Presa"
+  },
+  {
+   "theme": "Viaggi",
+   "word": "Passaporto",
+   "clue": "Timbro"
+  },
+  {
+   "theme": "Viaggi",
+   "word": "Souvenir",
+   "clue": "Magnete"
+  },
+  {
+   "theme": "Viaggi",
+   "word": "Mappa",
+   "clue": "Piega"
+  },
+  {
+   "theme": "Viaggi",
+   "word": "Trolley",
+   "clue": "Ruota"
+  },
+  {
+   "theme": "Viaggi",
+   "word": "Ostello",
+   "clue": "Camerata"
+  },
+  {
+   "theme": "Viaggi",
+   "word": "Coincidenza",
+   "clue": "Corsa"
+  },
+  {
+   "theme": "Viaggi",
+   "word": "Cartolina",
+   "clue": "Francobollo"
+  },
+  {
+   "theme": "Viaggi",
+   "word": "Guida",
+   "clue": "Ombrello alzato"
+  },
+  {
+   "theme": "Viaggi",
+   "word": "Dogana",
+   "clue": "Fila"
+  },
+  {
+   "theme": "Viaggi",
+   "word": "Bagaglio",
+   "clue": "Nastro"
+  },
+  {
+   "theme": "Viaggi",
+   "word": "Prenotazione",
+   "clue": "Conferma"
+  },
+  {
+   "theme": "Viaggi",
+   "word": "Escursione",
+   "clue": "Partenza"
+  },
+  {
+   "theme": "Viaggi",
+   "word": "Crociera",
+   "clue": "Ponte"
+  },
+  {
+   "theme": "Viaggi",
+   "word": "Campeggio",
+   "clue": "Picchetto"
+  },
+  {
+   "theme": "Viaggi",
+   "word": "Fuso",
+   "clue": "Sonno"
+  },
+  {
+   "theme": "Viaggi",
+   "word": "Autostop",
+   "clue": "Pollice"
+  },
+  {
+   "theme": "Viaggi",
+   "word": "Itinerario",
+   "clue": "Tappa"
+  },
+  {
+   "theme": "Viaggi",
+   "word": "Noleggio",
+   "clue": "Cauzione"
+  },
+  {
+   "theme": "Viaggi",
+   "word": "Panorama",
+   "clue": "Belvedere"
+  },
+  {
+   "theme": "Viaggi",
+   "word": "Ritardo",
+   "clue": "Tabellone"
+  },
+  {
+   "theme": "Lavoro",
+   "word": "Riunione",
+   "clue": "Proiettore"
+  },
+  {
+   "theme": "Lavoro",
+   "word": "Scadenza",
+   "clue": "Notte"
+  },
+  {
+   "theme": "Lavoro",
+   "word": "Curriculum",
+   "clue": "Foto"
+  },
+  {
+   "theme": "Lavoro",
+   "word": "Colloquio",
+   "clue": "Stretta"
+  },
+  {
+   "theme": "Lavoro",
+   "word": "Pausa",
+   "clue": "Macchinetta"
+  },
+  {
+   "theme": "Lavoro",
+   "word": "Ferie",
+   "clue": "Sostituto"
+  },
+  {
+   "theme": "Lavoro",
+   "word": "Timbratura",
+   "clue": "Badge"
+  },
+  {
+   "theme": "Lavoro",
+   "word": "Straordinario",
+   "clue": "Buio"
+  },
+  {
+   "theme": "Lavoro",
+   "word": "Scrivania",
+   "clue": "Disordine"
+  },
+  {
+   "theme": "Lavoro",
+   "word": "Collega",
+   "clue": "Compleanno"
+  },
+  {
+   "theme": "Lavoro",
+   "word": "Capo",
+   "clue": "Porta"
+  },
+  {
+   "theme": "Lavoro",
+   "word": "Contratto",
+   "clue": "Firma"
+  },
+  {
+   "theme": "Lavoro",
+   "word": "Stipendio",
+   "clue": "Ventisette"
+  },
+  {
+   "theme": "Lavoro",
+   "word": "Trasferta",
+   "clue": "Valigetta"
+  },
+  {
+   "theme": "Lavoro",
+   "word": "Formazione",
+   "clue": "Attestato"
+  },
+  {
+   "theme": "Lavoro",
+   "word": "Turno",
+   "clue": "Cambio"
+  },
+  {
+   "theme": "Lavoro",
+   "word": "Badge",
+   "clue": "Tornello"
+  },
+  {
+   "theme": "Lavoro",
+   "word": "Ufficio",
+   "clue": "Fotocopie"
+  },
+  {
+   "theme": "Lavoro",
+   "word": "Promozione",
+   "clue": "Targa"
+  },
+  {
+   "theme": "Lavoro",
+   "word": "Dimissioni",
+   "clue": "Lettera"
+  }
+ ]
+}
